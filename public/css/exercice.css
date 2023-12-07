@@ -30,6 +30,10 @@ button {
     text-align: center;
 }
 
+audio {
+    display: none;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 480px) {

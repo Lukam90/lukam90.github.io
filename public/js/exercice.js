@@ -8,6 +8,7 @@ let timer;
 const elCounter = document.getElementById("counter");
 const elStep = document.getElementById("step");
 const btnPress = document.getElementById("press_btn");
+const myAudio = document.querySelector("audio");
 
 function myTimeout() {
     if (counter < 0) {
@@ -30,9 +31,13 @@ function setCounter() {
     if (started) {
         clearInterval(timer);
 
+        myAudio.pause();
+
         btnPress.innerText = "RELANCER";
     } else {
         timer = setInterval(myTimeout, 1000);
+
+        myAudio.play();
 
         btnPress.innerText = "PAUSE";
     }
