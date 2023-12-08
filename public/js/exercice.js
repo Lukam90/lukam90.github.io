@@ -19,6 +19,8 @@ function myTimeout() {
         elStep.innerText = "";
 
         clearInterval(timer);
+
+        myAudio.pause();
     }
 
     if (counter % 5 == 0 && counter % 10 == 0)  elStep.innerText = "INSPIRER" + NOTICE;
