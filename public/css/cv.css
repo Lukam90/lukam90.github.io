@@ -26,6 +26,14 @@ page[size="A4"] {
     margin: 0;
 }
 
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
 /* Sections */
 
 .container {
@@ -39,20 +47,50 @@ page[size="A4"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 27%;
+    width: 30%;
     background-color: rgba(7, 7, 192, 0.178);
     padding: 0.7cm;
 }
 
 #droite {
-    width: 73%;
+    width: 70%;
     padding: 0.7cm;
 }
 
 /* Gauche */
 
+/** Photo **/
+
+/** Compétences **/
+
+
+
+/** Langues **/
+
+#langues ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+#langues ul li span {
+
+}
+
+/** Certifications **/
+
+#certifications ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+/** Loisirs **/
+
+#loisirs ul {
+    padding: 0;
+    list-style-type: none;
+}
+
 /* Droite */
 
-h1 {
-    font-family: 'Julius Sans One', sans-serif;
-}
+/** Droite **/
+
