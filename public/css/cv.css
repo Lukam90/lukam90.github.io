@@ -31,12 +31,44 @@ h1, h2 {
 }
 
 h1 {
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
 }
 
 .intitule {
     font-weight: bold;
     color: blue;
+}
+
+.infos-lieu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nom-poste {
+    font-family: monospace;
+    color: blue;
+}
+
+.nom-lieu {
+    font-weight: bold;
+}
+
+/* Badges */
+
+.badge {
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+.badge-niveau {
+    background-color: rgba(7, 192, 32, 0.3);
+}
+
+.badge-contrat {
+    background-color: rgba(167, 179, 7, 0.3);
 }
 
 /* Sections */
@@ -60,12 +92,14 @@ h1 {
 #droite {
     width: 70%;
     padding: 0.7cm;
+    font-size: 15px;
 }
 
 /* Gauche */
 
 #gauche {
     text-align: center;
+    font-size: 15px;
 }
 
 /** Photo **/
@@ -83,13 +117,24 @@ h1 {
 
 /** Compétences **/
 
+#competences ul {
+    padding: 0;
+    list-style-type: none;
+}
 
+#competences ul li:not(:first-child) {
+    padding-top: 5px;
+}
 
 /** Langues **/
 
 #langues ul {
     padding: 0;
     list-style-type: none;
+}
+
+#langues h2 {
+    margin-top: 5px;
 }
 
 .drapeaux {
@@ -115,13 +160,20 @@ h1 {
     list-style-type: none;
 }
 
-.icones-loisirs {
-    display: flex;
-    flex-direction: row;
-    
+#loisirs h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.icones-loisirs span:nth-child(2) {
+.loisirs {
+    display: flex;
+}
+
+.loisirs:not(:first-child) {
+    padding-top: 20px;
+}
+
+.loisirs span:not(:first-child) {
     padding-left: 20px;
 }
 
@@ -134,6 +186,12 @@ header {
 }
 
 /** Expérience **/
+
+#experiences {
+    padding: 10px;
+    border: 2px dashed;
+    border-radius: 5px;
+}
 
 #experiences ul {
     padding: 0;
