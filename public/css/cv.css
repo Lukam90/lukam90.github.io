@@ -34,6 +34,11 @@ h1 {
     font-family: 'Julius Sans One', sans-serif;
 }
 
+.intitule {
+    font-weight: bold;
+    color: blue;
+}
+
 /* Sections */
 
 .container {
@@ -48,7 +53,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     width: 30%;
-    background-color: rgba(7, 7, 192, 0.178);
+    background-color: rgba(7, 7, 192, 0.15);
     padding: 0.7cm;
 }
 
@@ -59,7 +64,22 @@ h1 {
 
 /* Gauche */
 
+#gauche {
+    text-align: center;
+}
+
 /** Photo **/
+
+#photo img {
+    border-radius: 10px;
+}
+
+/** Informations **/
+
+.liens-externes {
+    display: flex;
+    justify-content: space-around;
+}
 
 /** Compétences **/
 
@@ -72,8 +92,13 @@ h1 {
     list-style-type: none;
 }
 
-#langues ul li span {
+.drapeaux {
+    display: flex;
+    justify-content: space-between;
+}
 
+.drapeaux span:not(:first-child) {
+    padding-left: 50px;
 }
 
 /** Certifications **/
@@ -90,7 +115,34 @@ h1 {
     list-style-type: none;
 }
 
+.icones-loisirs {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.icones-loisirs span:nth-child(2) {
+    padding-left: 20px;
+}
+
 /* Droite */
 
-/** Droite **/
+/** Bannière **/
 
+header {
+    text-align: center;
+}
+
+/** Expérience **/
+
+#experiences ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+/** Formation **/
+
+#formations ul {
+    padding: 0;
+    list-style-type: none;
+}
