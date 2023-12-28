@@ -1,0 +1,225 @@
+@charset "UTF-8";
+:root {
+  --font-family: "Muli", sans-serif;
+  --light: #00c3ff;
+  --primary: #2071e7;
+  --dark: #2980b9;
+  --text: #333;
+  --background: #fafafa;
+  --hint: #999;
+  --border: #ddd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text);
+  font-size: 1.6rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1rem 0 2rem 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5cm;
+  position: relative;
+}
+page[size=A4] {
+  width: 21cm;
+  height: 29.7cm;
+}
+
+@page {
+  size: 21cm 29.7cm;
+  margin: 0;
+}
+.mb-2 {
+  margin-bottom: 2rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 5rem !important;
+}
+
+.title-small {
+  letter-spacing: 0.5rem;
+  font-size: 1.7rem;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+.text-hint {
+  color: var(--hint);
+}
+
+@keyframes bounce {
+  0% {
+    transform: rotate(-45deg);
+  }
+  10% {
+    transform: rotate(-35deg);
+  }
+  70% {
+    transform: rotate(20deg);
+  }
+  80% {
+    transform: rotate(-10deg);
+  }
+  90% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* Landscape phones and down */
+/* Landscape phones to portrait tablet */
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */
+.intitule {
+  font-weight: bold;
+  color: blue;
+}
+
+.infos-lieu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nom-poste {
+  font-family: monospace;
+  color: blue;
+}
+
+.nom-lieu {
+  font-weight: bold;
+}
+
+/* Badges */
+.badge {
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 6px;
+}
+.badge-niveau {
+  background-color: rgba(7, 192, 32, 0.3);
+}
+.badge-contrat {
+  background-color: rgba(167, 179, 7, 0.3);
+}
+
+/* Sections */
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+/* Gauche */
+#gauche {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  background-color: rgba(7, 7, 192, 0.15);
+  padding: 0.7cm;
+  text-align: center;
+  font-size: 15px;
+}
+
+/** Photo **/
+#photo img {
+  border-radius: 10px;
+}
+
+/** Informations **/
+.liens-externes {
+  display: flex;
+  justify-content: space-around;
+}
+
+/** Compétences **/
+#competences ul li:not(:first-child) {
+  padding-top: 5px;
+}
+
+/** Langues **/
+#langues h2 {
+  margin-top: 5px;
+}
+
+.drapeaux {
+  display: flex;
+  justify-content: space-between;
+}
+.drapeaux span:not(:first-child) {
+  padding-left: 50px;
+}
+
+/** Loisirs **/
+#loisirs h2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.loisirs {
+  display: flex;
+}
+.loisirs:not(:first-child) {
+  padding-left: 50px;
+}
+.loisirs span:not(:first-child) {
+  padding-left: 20px;
+}
+
+/* Droite */
+#droite {
+  width: 70%;
+  padding: 0.7cm;
+  font-size: 15px;
+}
+
+/** Bannière **/
+header {
+  text-align: center;
+}
+
+/** Expérience **/
+#experiences {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=resume.css.map */

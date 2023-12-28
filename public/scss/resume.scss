@@ -1,0 +1,146 @@
+@import "resume/variables";
+@import "resume/reset";
+@import "resume/base";
+@import "resume/page";
+@import "resume/utils";
+@import "resume/classes";
+@import "resume/animations";
+@import "resume/media-queries";
+
+.intitule {
+    font-weight: bold;
+    color: blue;
+}
+
+.infos-lieu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nom-poste {
+    font-family: monospace;
+    color: blue;
+}
+
+.nom-lieu {
+    font-weight: bold;
+}
+
+/* Badges */
+
+.badge {
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 6px;
+
+    &-niveau {
+        background-color: rgba(7, 192, 32, 0.3);
+    }
+
+    &-contrat {
+        background-color: rgba(167, 179, 7, 0.3);
+    }
+}
+
+/* Sections */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+/* Gauche */
+
+#gauche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    background-color: rgba(7, 7, 192, 0.15);
+    padding: 0.7cm;
+
+    text-align: center;
+    font-size: 15px;
+}
+
+/** Photo **/
+
+#photo img {
+    border-radius: 10px;
+}
+
+/** Informations **/
+
+.liens-externes {
+    display: flex;
+    justify-content: space-around;
+}
+
+/** Compétences **/
+
+#competences {
+    ul li:not(:first-child) {
+        padding-top: 5px;
+    }
+}
+
+/** Langues **/
+
+#langues {
+    h2 {
+        margin-top: 5px;
+    }
+} 
+
+.drapeaux {
+    display: flex;
+    justify-content: space-between;
+
+    span:not(:first-child) {
+        padding-left: 50px;
+    }
+}
+
+/** Loisirs **/
+
+#loisirs {
+    h2 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+.loisirs {
+    display: flex;
+
+    &:not(:first-child) {
+        padding-left: 50px;
+    }
+
+    span:not(:first-child) {
+        padding-left: 20px;
+    }
+}
+
+/* Droite */
+
+#droite {
+    width: 70%;
+    padding: 0.7cm;
+    font-size: 15px;
+}
+
+/** Bannière **/
+
+header {
+    text-align: center;
+}
+
+/** Expérience **/
+
+#experiences {
+    padding: 10px;
+}
