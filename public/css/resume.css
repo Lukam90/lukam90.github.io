@@ -166,43 +166,73 @@ page[size=A4] {
 }
 
 /** Informations **/
-.liens-externes {
-  display: flex;
-  justify-content: space-around;
+#infos {
+  padding-top: 15px;
+}
+#infos td:first-child {
+  width: 20%;
+}
+#infos td:nth-child(2) {
+  width: 80%;
+}
+
+/* Liens */
+#liens {
+  padding-top: 15px;
+}
+#liens td:nth-child(1),
+#liens td:nth-child(2) {
+  padding-right: 15px;
 }
 
 /** Compétences **/
+#competences {
+  padding-top: 10px;
+}
 #competences ul li:not(:first-child) {
   padding-top: 5px;
 }
+#competences td:first-child {
+  width: 20%;
+}
+#competences td:nth-child(2) {
+  width: 80%;
+}
 
 /** Langues **/
+#langues {
+  padding-top: 10px;
+}
 #langues h2 {
   margin-top: 5px;
 }
-
-.drapeaux {
-  display: flex;
-  justify-content: space-between;
+#langues td:first-child {
+  width: 20%;
 }
-.drapeaux span:not(:first-child) {
-  padding-left: 50px;
+#langues td:nth-child(2) {
+  width: 80%;
+}
+
+/* Certifications */
+#certifications {
+  padding-top: 10px;
+}
+#certifications td:first-child {
+  width: 20%;
+}
+#certifications td:nth-child(2) {
+  width: 80%;
 }
 
 /** Loisirs **/
-#loisirs h2 {
-  margin-top: 5px;
-  margin-bottom: 5px;
+#loisirs {
+  padding-top: 10px;
 }
-
-.loisirs {
-  display: flex;
+#loisirs td:first-child {
+  width: 20%;
 }
-.loisirs:not(:first-child) {
-  padding-left: 50px;
-}
-.loisirs span:not(:first-child) {
-  padding-left: 20px;
+#loisirs td:nth-child(2) {
+  width: 80%;
 }
 
 /* Droite */
