@@ -107,6 +107,16 @@ page[size=A4] {
 /* Landscape phones to portrait tablet */
 /* Portrait tablet to landscape and desktop */
 /* Large desktop */
+.icone {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.gras {
+  font-weight: bold;
+}
+
 .intitule {
   font-weight: bold;
   color: blue;
@@ -207,10 +217,11 @@ page[size=A4] {
   margin-top: 5px;
 }
 #langues td:first-child {
-  width: 20%;
+  width: 80%;
+  padding-right: 30px;
 }
 #langues td:nth-child(2) {
-  width: 80%;
+  width: 20%;
 }
 
 /* Certifications */
