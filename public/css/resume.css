@@ -228,11 +228,8 @@ page[size=A4] {
 #certifications {
   padding-top: 10px;
 }
-#certifications td:first-child {
-  width: 20%;
-}
-#certifications td:nth-child(2) {
-  width: 80%;
+#certifications ul li:not(:first-child) {
+  padding-top: 15px;
 }
 
 /** Loisirs **/
@@ -240,10 +237,10 @@ page[size=A4] {
   padding-top: 10px;
 }
 #loisirs td:first-child {
-  width: 25%;
+  width: 50%;
 }
 #loisirs td:nth-child(2) {
-  width: 75%;
+  width: 50%;
 }
 
 /* Droite */
@@ -260,7 +257,12 @@ header {
 
 /** Expérience **/
 #experiences {
-  padding: 10px;
+  padding-top: 10px;
+}
+
+/** Formation **/
+#formations {
+  padding-top: 10px;
 }
 
 /*# sourceMappingURL=resume.css.map */

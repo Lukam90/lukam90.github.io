@@ -157,14 +157,8 @@
 #certifications {
     padding-top: 10px;
 
-    td {
-        &:first-child {
-            width: 20%;
-        }
-
-        &:nth-child(2) {
-            width: 80%;
-        }
+    ul li:not(:first-child) {
+        padding-top: 15px;
     }
 }
 
@@ -175,11 +169,11 @@
 
     td {
         &:first-child {
-            width: 25%;
+            width: 50%;
         }
 
         &:nth-child(2) {
-            width: 75%;
+            width: 50%;
         }
     }
 }
@@ -201,5 +195,11 @@ header {
 /** Expérience **/
 
 #experiences {
-    padding: 10px;
+    padding-top: 10px;
+}
+
+/** Formation **/
+
+#formations {
+    padding-top: 10px;
 }
