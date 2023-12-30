@@ -7,14 +7,7 @@
 @import "resume/animations";
 @import "resume/media-queries";
 
-ul {
-    text-align: left;
-    line-height: 1.5;
-}
-
-.gras {
-    font-weight: bold;
-}
+/* Classes utilitaires */
 
 .intitule {
     font-weight: bold;
@@ -45,10 +38,6 @@ ul {
     background-color: rgba(7, 7, 192, 0.15);
     padding: 0.7cm;
     font-size: 15px;
-
-    h2 {
-        text-align: center;
-    }
 }
 
 /** Photo **/
@@ -62,8 +51,6 @@ ul {
 /** Informations **/
 
 #infos {
-    padding-top: 10px;
-
     ul {
         text-align: center;
     }
@@ -75,56 +62,10 @@ ul {
     padding-top: 15px;
 }
 
-/** Compétences **/
-
-#competences {
-    padding-top: 10px;
-}
-
-/** Langues **/
-
-#langues {
-    padding-top: 10px;
-}
-
-/* Certifications */
-
-#certifications {
-    padding-top: 10px;
-
-    ul {
-        text-align: left;
-    }
-}
-
-/** Loisirs **/
-
-#loisirs {
-    padding-top: 10px;
-}
-
 /* Droite */
 
 #droite {
     width: 70%;
     padding: 0.7cm;
     font-size: 15px;
-}
-
-/** Bannière **/
-
-header {
-    text-align: center;
-}
-
-/** Expérience **/
-
-#experiences {
-    padding-top: 10px;
-}
-
-/** Formation **/
-
-#formations {
-    padding-top: 10px;
 }
