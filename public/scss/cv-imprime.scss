@@ -7,14 +7,24 @@
 @import "cv-imprime/animations";
 @import "cv-imprime/media-queries";
 
-/* Classes utilitaires */
+// Classes utilitaires
+
+.icone {
+    transform: scale(1.5);
+}
+
+.element-liste {
+    img, span {
+        vertical-align: middle;
+    }
+}
 
 .intitule {
     font-weight: bold;
     color: blue;
 }
 
-/* Conteneur */
+// Conteneur
 
 .container {
     display: flex;
@@ -23,17 +33,7 @@
     height: 100%;
 }
 
-/* Listes */
-
-ul {
-    list-style-position: inside;
-
-    .certificat {
-        list-style-image: url('/public/icons/certificat.svg');
-    }
-}
-
-/* Gauche */
+// Gauche
 
 #gauche {
     display: flex;
@@ -45,7 +45,7 @@ ul {
     font-size: 15px;
 }
 
-/* Gauche > Photo */
+// Gauche > Photo
 
 #photo {
     img {
@@ -53,21 +53,57 @@ ul {
     }
 }
 
-/* Gauche > Informations */
+// Gauche > Informations
 
 #infos {
-    ul {
-        text-align: center;
-    }
+    text-align: center;
 }
 
-/* Gauche > Liens */
+// Gauche > Liens
 
 #liens {
     padding-top: 15px;
+    display: flex;
+    gap: 25px;
+
+    img:hover {
+        transform: scale(1.5);
+    }
 }
 
-/* Droite */
+// Gauche > Certifications
+
+#certifications {
+    span {
+        padding-left: 5px;
+    }
+}
+
+// Gauche > Langues
+
+#langues {
+    span {
+        padding-left: 25px;
+    }
+
+    li:not(:first-child) {
+        padding-top: 8px;
+    }
+}
+
+// Gauche > Loisirs
+
+#loisirs {
+    span {
+        padding-left: 25px;
+    }
+
+    li:not(:first-child) {
+        padding-top: 8px;
+    }
+}
+
+// Droite
 
 #droite {
     width: 70%;

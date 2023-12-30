@@ -128,13 +128,19 @@ page[size=A4] {
 /* Landscape phones to portrait tablet */
 /* Portrait tablet to landscape and desktop */
 /* Large desktop */
-/* Classes utilitaires */
+.icone {
+  transform: scale(1.5);
+}
+
+.element-liste img, .element-liste span {
+  vertical-align: middle;
+}
+
 .intitule {
   font-weight: bold;
   color: blue;
 }
 
-/* Conteneur */
 .container {
   display: flex;
   flex-direction: row;
@@ -142,15 +148,6 @@ page[size=A4] {
   height: 100%;
 }
 
-/* Listes */
-ul {
-  list-style-position: inside;
-}
-ul .certificat {
-  list-style-image: url("/public/icons/certificat.svg");
-}
-
-/* Gauche */
 #gauche {
   display: flex;
   flex-direction: column;
@@ -161,22 +158,41 @@ ul .certificat {
   font-size: 15px;
 }
 
-/* Gauche > Photo */
 #photo img {
   border-radius: 10px;
 }
 
-/* Gauche > Informations */
-#infos ul {
+#infos {
   text-align: center;
 }
 
-/* Gauche > Liens */
 #liens {
   padding-top: 15px;
+  display: flex;
+  gap: 25px;
+}
+#liens img:hover {
+  transform: scale(1.5);
 }
 
-/* Droite */
+#certifications span {
+  padding-left: 5px;
+}
+
+#langues span {
+  padding-left: 25px;
+}
+#langues li:not(:first-child) {
+  padding-top: 8px;
+}
+
+#loisirs span {
+  padding-left: 25px;
+}
+#loisirs li:not(:first-child) {
+  padding-top: 8px;
+}
+
 #droite {
   width: 70%;
   padding: 0.7cm;
