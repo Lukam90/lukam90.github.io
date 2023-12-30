@@ -20,6 +20,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 1rem 0 2rem 0;
 }
 
+h1 {
+    font-family: monospace;
+    color: blue;
+}
+
 h2 {
     text-align: center;
 }
@@ -28,9 +33,12 @@ p {
     margin: 1rem 0;
 }
 
+hr {
+    margin-top: 10px;
+}
+
 ul {
     list-style: none;
-    text-align: left;
     line-height: 1.5;
 }
 
