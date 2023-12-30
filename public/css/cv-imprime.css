@@ -29,10 +29,6 @@ header {
   text-align: center;
 }
 
-section {
-  padding-top: 10px;
-}
-
 h1, h2, h3, h4, h5, h6 {
   margin: 1rem 0 2rem 0;
 }
@@ -92,6 +88,23 @@ page[size=A4] {
   margin-bottom: 5rem !important;
 }
 
+.gras {
+  font-weight: bold;
+}
+
+.icone {
+  transform: scale(1.5);
+}
+
+.element-liste img, .element-liste span {
+  vertical-align: middle;
+}
+
+.intitule {
+  font-weight: bold;
+  color: blue;
+}
+
 .title-small {
   letter-spacing: 0.5rem;
   font-size: 1.7rem;
@@ -128,19 +141,6 @@ page[size=A4] {
 /* Landscape phones to portrait tablet */
 /* Portrait tablet to landscape and desktop */
 /* Large desktop */
-.icone {
-  transform: scale(1.5);
-}
-
-.element-liste img, .element-liste span {
-  vertical-align: middle;
-}
-
-.intitule {
-  font-weight: bold;
-  color: blue;
-}
-
 .container {
   display: flex;
   flex-direction: row;
@@ -163,6 +163,7 @@ page[size=A4] {
 }
 
 #infos {
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -175,10 +176,29 @@ page[size=A4] {
   transform: scale(1.5);
 }
 
+#competences {
+  padding-top: 10px;
+}
+#competences span {
+  padding-left: 20px;
+}
+#competences li:not(:first-child) {
+  padding-top: 5px;
+}
+
+#certifications {
+  padding-top: 10px;
+}
 #certifications span {
   padding-left: 5px;
 }
+#certifications li:not(:first-child) {
+  padding-top: 5px;
+}
 
+#langues {
+  padding-top: 10px;
+}
 #langues span {
   padding-left: 25px;
 }
@@ -186,6 +206,9 @@ page[size=A4] {
   padding-top: 8px;
 }
 
+#loisirs {
+  padding-top: 10px;
+}
 #loisirs span {
   padding-left: 25px;
 }
@@ -197,6 +220,18 @@ page[size=A4] {
   width: 70%;
   padding: 0.7cm;
   font-size: 15px;
+}
+
+#experience {
+  padding-top: 10px;
+}
+
+#formation {
+  padding-top: 10px;
+}
+
+#projets {
+  padding-top: 10px;
 }
 
 /*# sourceMappingURL=cv-imprime.css.map */

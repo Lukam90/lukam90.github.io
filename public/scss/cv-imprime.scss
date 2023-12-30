@@ -7,23 +7,6 @@
 @import "cv-imprime/animations";
 @import "cv-imprime/media-queries";
 
-// Classes utilitaires
-
-.icone {
-    transform: scale(1.5);
-}
-
-.element-liste {
-    img, span {
-        vertical-align: middle;
-    }
-}
-
-.intitule {
-    font-weight: bold;
-    color: blue;
-}
-
 // Conteneur
 
 .container {
@@ -56,6 +39,7 @@
 // Gauche > Informations
 
 #infos {
+    padding-top: 10px;
     text-align: center;
 }
 
@@ -71,17 +55,39 @@
     }
 }
 
+// Gauche > Compétences
+
+#competences {
+    padding-top: 10px;
+
+    span {
+        padding-left: 20px;
+    }
+
+    li:not(:first-child) {
+        padding-top: 5px;
+    }
+}
+
 // Gauche > Certifications
 
 #certifications {
+    padding-top: 10px;
+
     span {
         padding-left: 5px;
+    }
+
+    li:not(:first-child) {
+        padding-top: 5px;
     }
 }
 
 // Gauche > Langues
 
 #langues {
+    padding-top: 10px;
+
     span {
         padding-left: 25px;
     }
@@ -94,6 +100,8 @@
 // Gauche > Loisirs
 
 #loisirs {
+    padding-top: 10px;
+
     span {
         padding-left: 25px;
     }
@@ -109,4 +117,22 @@
     width: 70%;
     padding: 0.7cm;
     font-size: 15px;
+}
+
+// Droite > Expérience
+
+#experience {
+    padding-top: 10px;
+}
+
+// Droite > Formation
+
+#formation {
+    padding-top: 10px;
+}
+
+// Droite > Projets
+
+#projets {
+    padding-top: 10px;
 }
