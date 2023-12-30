@@ -107,10 +107,9 @@ page[size=A4] {
 /* Landscape phones to portrait tablet */
 /* Portrait tablet to landscape and desktop */
 /* Large desktop */
-.icone {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
+ul {
+  text-align: left;
+  line-height: 1.5;
 }
 
 .gras {
@@ -122,32 +121,9 @@ page[size=A4] {
   color: blue;
 }
 
-.infos-lieu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .nom-poste {
   font-family: monospace;
   color: blue;
-}
-
-.nom-lieu {
-  font-weight: bold;
-}
-
-/* Badges */
-.badge {
-  border: 1px solid;
-  border-radius: 8px;
-  padding: 6px;
-}
-.badge-niveau {
-  background-color: rgba(7, 192, 32, 0.3);
-}
-.badge-contrat {
-  background-color: rgba(167, 179, 7, 0.3);
 }
 
 /* Sections */
@@ -166,8 +142,10 @@ page[size=A4] {
   width: 30%;
   background-color: rgba(7, 7, 192, 0.15);
   padding: 0.7cm;
-  text-align: center;
   font-size: 15px;
+}
+#gauche h2 {
+  text-align: center;
 }
 
 /** Photo **/
@@ -177,70 +155,38 @@ page[size=A4] {
 
 /** Informations **/
 #infos {
-  padding-top: 15px;
+  padding-top: 10px;
 }
-#infos td:first-child {
-  width: 20%;
-}
-#infos td:nth-child(2) {
-  width: 80%;
+#infos ul {
+  text-align: center;
 }
 
 /* Liens */
 #liens {
   padding-top: 15px;
 }
-#liens td:nth-child(1),
-#liens td:nth-child(2) {
-  padding-right: 15px;
-}
 
 /** Compétences **/
 #competences {
   padding-top: 10px;
-}
-#competences ul li:not(:first-child) {
-  padding-top: 5px;
-}
-#competences td:first-child {
-  width: 20%;
-}
-#competences td:nth-child(2) {
-  width: 80%;
 }
 
 /** Langues **/
 #langues {
   padding-top: 10px;
 }
-#langues h2 {
-  margin-top: 5px;
-}
-#langues td:first-child {
-  width: 80%;
-  padding-right: 30px;
-}
-#langues td:nth-child(2) {
-  width: 20%;
-}
 
 /* Certifications */
 #certifications {
   padding-top: 10px;
 }
-#certifications ul li:not(:first-child) {
-  padding-top: 15px;
+#certifications ul {
+  text-align: left;
 }
 
 /** Loisirs **/
 #loisirs {
   padding-top: 10px;
-}
-#loisirs td:first-child {
-  width: 50%;
-}
-#loisirs td:nth-child(2) {
-  width: 50%;
 }
 
 /* Droite */

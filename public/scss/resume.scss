@@ -7,10 +7,9 @@
 @import "resume/animations";
 @import "resume/media-queries";
 
-.icone {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+ul {
+    text-align: left;
+    line-height: 1.5;
 }
 
 .gras {
@@ -22,35 +21,9 @@
     color: blue;
 }
 
-.infos-lieu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .nom-poste {
     font-family: monospace;
     color: blue;
-}
-
-.nom-lieu {
-    font-weight: bold;
-}
-
-/* Badges */
-
-.badge {
-    border: 1px solid;
-    border-radius: 8px;
-    padding: 6px;
-
-    &-niveau {
-        background-color: rgba(7, 192, 32, 0.3);
-    }
-
-    &-contrat {
-        background-color: rgba(167, 179, 7, 0.3);
-    }
 }
 
 /* Sections */
@@ -71,9 +44,11 @@
     width: 30%;
     background-color: rgba(7, 7, 192, 0.15);
     padding: 0.7cm;
-
-    text-align: center;
     font-size: 15px;
+
+    h2 {
+        text-align: center;
+    }
 }
 
 /** Photo **/
@@ -87,16 +62,10 @@
 /** Informations **/
 
 #infos {
-    padding-top: 15px;
+    padding-top: 10px;
 
-    td {
-        &:first-child {
-            width: 20%;
-        }
-
-        &:nth-child(2) {
-            width: 80%;
-        }
+    ul {
+        text-align: center;
     }
 }
 
@@ -104,52 +73,18 @@
 
 #liens {
     padding-top: 15px;
-
-    td:nth-child(1),
-    td:nth-child(2) {
-        padding-right: 15px;
-    }
 }
 
 /** Compétences **/
 
 #competences {
     padding-top: 10px;
-
-    ul li:not(:first-child) {
-        padding-top: 5px;
-    }
-
-    td {
-        &:first-child {
-            width: 20%;
-        }
-
-        &:nth-child(2) {
-            width: 80%;
-        }
-    }
 }
 
 /** Langues **/
 
 #langues {
     padding-top: 10px;
-
-    h2 {
-        margin-top: 5px;
-    }
-
-    td {
-        &:first-child {
-            width: 80%;
-            padding-right: 30px;
-        }
-
-        &:nth-child(2) {
-            width: 20%;
-        }
-    }
 }
 
 /* Certifications */
@@ -157,8 +92,8 @@
 #certifications {
     padding-top: 10px;
 
-    ul li:not(:first-child) {
-        padding-top: 15px;
+    ul {
+        text-align: left;
     }
 }
 
@@ -166,16 +101,6 @@
 
 #loisirs {
     padding-top: 10px;
-
-    td {
-        &:first-child {
-            width: 50%;
-        }
-
-        &:nth-child(2) {
-            width: 50%;
-        }
-    }
 }
 
 /* Droite */
