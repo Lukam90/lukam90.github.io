@@ -1,0 +1,10 @@
+Bases de la POO : principes de base, héritage, encapsulation;
+Bases de la POO : surcharge, polymorphisme, abstraction, interfaces;
+Interfaces : comparaison avec une classe abstraite, héritage multiple;
+Conversion de type, instanceof. Une grande mission impliquant les interfaces;
+La surcharge de méthode, une fonction des appels de constructeur;
+Introduction aux threads : Thread, Runnable, start, join, interrupt, sleep;
+Introduction aux threads : synchronized, volatile, yield;
+Introduction aux flux : InputStream/OutputStream, FileInputStream, FileOutputStream;
+Introduction aux flux : Reader/Writer, FileReader/FileWriter;
+Sérialisation;
