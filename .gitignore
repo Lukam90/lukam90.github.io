@@ -2,4 +2,6 @@ _copy.sh
 *.css.map
 *-lock.json
 
+portfolio.html
+
 node_modules
