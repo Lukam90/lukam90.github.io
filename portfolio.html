@@ -1,3 +1,5 @@
+{% set path = "partials/portfolio/" %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -152,20 +154,7 @@
         </div> <!-- gauche -->
 
         <div id="droite">
-            <div id="intro">
-                <p>Etant passionné de développement web et mobile, j'ai songé à en faire mon métier.</p>
-
-                <p>Mes compétences de base sont :</p>
-
-                <ul>
-                    <li>- HTML, (S)CSS et JavaScript en front end</li>
-                    <li>- PHP (Symfony et Laravel) en back end</li>
-                    <li>- Dart (Flutter) en développement mobile</li>
-                    <li>- Python pour les scripts</li>
-                </ul>
-
-                <p>Je me suis ensuite tourné vers React, Java et Spring.</p>
-            </div> <!-- intro -->
+            {% include path + "p_intro.html" %}
 
             <div id="parcours">
                 <h2>Parcours</h2>
@@ -195,7 +184,7 @@
                     <div id="syllabus"></div>
                 </div>
 
-                <div class="experience">
+                <!--<div class="experience">
                     <h3>Développeur COBOL / Mainframe - CDI</h3>
 
                     <p><strong>Eastelson</strong>, Schiltigheim, avril - novembre 2023</p>
@@ -266,7 +255,7 @@
                         <li>- Développement back-end avec PHP et Symfony</li>
                     </ul>
                 </div>
-            </div>
+            </div>-->
 
             <div id="projets">
                 <h2>Projets</h2>
