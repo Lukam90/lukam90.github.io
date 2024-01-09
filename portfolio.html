@@ -1,4 +1,4 @@
-{% set path = "partials/portfolio/" %}
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,268 +12,154 @@
 
 <body>
     <div id="contenu">
-        <div id="gauche">
-            <div id="profil">
-                <div id="photo">
-                    <img src="public/images/photo-pro.png" alt="photo pro">
-                </div>
-
-                <h1>Lucien HAMM</h1>
-
-                <h2>Développeur Web et Mobile</h2>
-            </div> <!-- profil -->
-
-            <div id="liens">
-                <ul>
-                    <li>
-                        <i class="fa fa-globe" aria-hidden="true"></i>
-                        
-                        <a href="lukam90.github.io" target="_blank">lukam90.github.io</a>
-                    </li>
-
-                    <li>
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                        
-                        <a href="https://github.com/Lukam90" target="_blank">https://github.com/Lukam90</a>
-                    </li>
-
-                    <li>
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-
-                        <a href="linkedin.com/in/lucien-hamm" target="_blank">linkedin.com/in/lucien-hamm</a>
-                    </li>
-                </ul>
-            </div> <!-- liens -->
-
-            <div id="certifications">
-                <h2>Certifications</h2>
-
-                <ul>
-                    <li>
-                        <i class="fa fa-certificate" aria-hidden="true"></i>
-
-                        <a href="https://www.tosa.org/FR/Index?param=cWRPdjdpSUoxQkpYd1M1L2g4aEVGdjZ6ZlZQbmNFNlYwYkU5dDVSTDllL2tTbFlaK2VQdHhMZlB0d1UrZmtiVThmUGF3KzFuL2srUWFLTDRSYkFaQ1E9PTo6Cm2vbfXPWwWu5ZqdWIvxSw" target="_blank">Tosa PHP - 767/1000 (Avancé)</a>
-                    </li>
-
-                    <li>
-                        <i class="fa fa-calendar" aria-hidden="true"></i> 
-                        novembre 2023
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>
-                        <i class="fa fa-certificate" aria-hidden="true"></i>
-
-                        <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/38DNLJU4DN3E" target="_blank">IBM z/OS Mainframe Practitioner</a>
-                    </li>
-
-                    <li>
-                        <i class="fa fa-calendar" aria-hidden="true"></i> 
-                        juillet 2023
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>
-                        <i class="fa fa-certificate" aria-hidden="true"></i>
-
-                        <a href="https://coursera.org/verify/professional-cert/VU59298YW5LG" target="_blank">IBM Mainframe Developer</a>
-                    </li>
-                    
-                    <li>
-                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                        juin 2023
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>
-                        <i class="fa fa-certificate" aria-hidden="true"></i>
-                        SecNum Académie
-                    </li>
-
-                    <li>
-                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                        juin 2023
-                    </li>
-                </ul>
-
-                <ul>
-                    <li>
-                        <i class="fa fa-certificate" aria-hidden="true"></i>
-                        IBM Z Xplore (Advanced)
-                    </li>
-
-                    <li>
-                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                        mars 2023
-                    </li>
-                </ul>
-            </div> <!-- certificats -->
-
-            <div id="competences">
-                <h2>Compétences</h2>
-
-                <h3>Front End</h3>
-
-                <ul>
-                    <li>HTML, (S)CSS</li>
-                    <li>JavaScript, jQuery, React</li>
-                </ul>
-
-                <h3>Back End</h3>
-
-                <ul>
-                    <li>PHP, Symfony, Laravel</li>
-                    <li>Java, Spring Boot</li>
-                    <li>SQL, MongoDB</li>
-                </ul>
-
-                <h3>Mobile</h3>
-
-                <ul>
-                    <li>Dart, Flutter</li>
-                </ul>
-
-                <h3>DevOPS</h3>
-
-                <ul>
-                    <li>Git</li>
-                    <li>Docker</li>
-                </ul>
-
-                <h3>Soft skills</h3>
-
-                <ul>
-                    <li>Travail en équipe</li>
-                    <li>Gestion de projet</li>
-                    <li>Veille</li>
-                </ul>
+        <div id="profil">
+            <div id="photo">
+                <img src="public/images/photo-pro.png" alt="photo pro">
             </div>
-        </div> <!-- gauche -->
 
-        <div id="droite">
-            {% include path + "p_intro.html" %}
+            <h1>Lucien HAMM</h1>
 
-            <div id="parcours">
-                <h2>Parcours</h2>
+            <h2>Développeur Web et Mobile</h2>
+        </div>
 
-                <div class="formation">
-                    <h3>Dyma</h3>
+        <div id="intro">
+    <p>Etant passionné de développement web et mobile, j'ai songé à en faire mon métier.</p>
 
-                    <p><strong>Formation en ligne</strong>, novembre 2023 - actuel</p>
+    <p>Mes compétences de base sont :</p>
 
-                    <p>Apprentissage autodidacte sur :</p>
+    <ul>
+        <li>- HTML, (S)CSS et JavaScript en front end</li>
+        <li>- PHP (Symfony et Laravel) en back end</li>
+        <li>- Dart (Flutter) en développement mobile</li>
+        <li>- Python pour les scripts</li>
+    </ul>
+
+    <p>Je me suis ensuite tourné vers React, Java et Spring.</p>
+</div>
+
+        <div id="competences">
+    <h2>Compétences</h2>
+
+    <h3>Front End</h3>
+
+    <ul>
+        <li>HTML, (S)CSS</li>
+        <li>JavaScript, jQuery, React</li>
+    </ul>
+
+    <h3>Back End</h3>
+
+    <ul>
+        <li>PHP, Symfony, Laravel</li>
+        <li>Java, Spring Boot</li>
+        <li>SQL, MongoDB</li>
+    </ul>
+
+    <h3>Mobile</h3>
+
+    <ul>
+        <li>Dart, Flutter</li>
+    </ul>
+
+    <h3>DevOPS</h3>
+
+    <ul>
+        <li>Git</li>
+        <li>Docker</li>
+    </ul>
+
+    <h3>Soft skills</h3>
+
+    <ul>
+        <li>Travail en équipe</li>
+        <li>Gestion de projet</li>
+        <li>Veille</li>
+    </ul>
+</div>
+
+        <div id="certifications">
+    <h2>Certifications</h2>
+
+    <ul>
+        <li>
+            <i class="fa fa-certificate" aria-hidden="true"></i>
+
+            <a href="https://www.tosa.org/FR/Index?param=cWRPdjdpSUoxQkpYd1M1L2g4aEVGdjZ6ZlZQbmNFNlYwYkU5dDVSTDllL2tTbFlaK2VQdHhMZlB0d1UrZmtiVThmUGF3KzFuL2srUWFLTDRSYkFaQ1E9PTo6Cm2vbfXPWwWu5ZqdWIvxSw" target="_blank">Tosa PHP - 767/1000 (Avancé)</a>
+        </li>
+
+        <li>
+            <i class="fa fa-calendar" aria-hidden="true"></i> 
+            novembre 2023
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <i class="fa fa-certificate" aria-hidden="true"></i>
+
+            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/38DNLJU4DN3E" target="_blank">IBM z/OS Mainframe Practitioner</a>
+        </li>
+
+        <li>
+            <i class="fa fa-calendar" aria-hidden="true"></i> 
+            juillet 2023
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <i class="fa fa-certificate" aria-hidden="true"></i>
+
+            <a href="https://coursera.org/verify/professional-cert/VU59298YW5LG" target="_blank">IBM Mainframe Developer</a>
+        </li>
         
-                    <ul>
-                        <li>- React (17 %)</li>
-                        <li>- Java (66 %)</li>
-                    </ul>
-                </div>
+        <li>
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            juin 2023
+        </li>
+    </ul>
 
-                <div class="formation">
-                    <h3>CodeGym</h3>
+    <ul>
+        <li>
+            <i class="fa fa-certificate" aria-hidden="true"></i>
+            SecNum Académie
+        </li>
 
-                    <p><strong>Formation en ligne</strong>, novembre 2023 - actuel</p>
+        <li>
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            juin 2023
+        </li>
+    </ul>
 
-                    <p>Apprentissage autodidacte de Java avec des exercices pratiques</p>
+    <ul>
+        <li>
+            <i class="fa fa-certificate" aria-hidden="true"></i>
+            IBM Z Xplore (Advanced)
+        </li>
 
-                    <p>Niveau <strong>12</strong> / 40</p>
+        <li>
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            mars 2023
+        </li>
+    </ul>
+</div>
 
-                    <div id="syllabus"></div>
-                </div>
+        <div id="projets">
+    <h2>Projets</h2>
 
-                <!--<div class="experience">
-                    <h3>Développeur COBOL / Mainframe - CDI</h3>
+    <h3>Projet AACCP</h3>
 
-                    <p><strong>Eastelson</strong>, Schiltigheim, avril - novembre 2023</p>
+    <p>
+    Site d'actualités de l'<abbr title="Association Alsacienne des Collectionneurs de Cartes Postales">AACCP</abbr> 
+    et système de réservations pour les événements annuels
+    </p>
 
-                    <ul>
-                        <li>- Maintenance évolutive de programmes COBOL pour les livrets d’épargne chez Euro Information (Crédit Mutuel, CIC)</li>
-                        <li>- Compréhension des outils internes et des besoins du client</li>
-                        <li>- Tests unitaires et d'intégration</li>
-                    </ul>
-                </div>
-
-                <div class="experience">
-                    <h3>Développeur COBOL / Mainframe - Stage</h3>
-
-                    <p><strong>Proxiad</strong>, Schiltigheim, novembre - décembre 2022</p>
-
-                    <ul>
-                        <li>- Réadaptation de code existant avec programmes batch d’insertion et de recherche de données</li>
-                        <li>- Compréhension de l’architecture logicielle du client final</li>
-                        <li>- Reprise d’un code existant</li>
-                    </ul>
-                </div>              
-
-                <div class="formation">
-                    <h3>Développeur Grands Systèmes - Diplôme Universitaire</h3>
-
-                    <p><strong>SERFA</strong>, Strasbourg, septembre - décembre 2022</p>
-
-                    <ul>
-                        <li>- Programmation avec COBOL sur IDE et zOS</li>
-                        <li>- Initiation à l'environnement et aux outils Mainframe</li>
-                    </ul>
-                </div>
-
-                <div class="formation">
-                    <h3>Titre de Concepteur-Développeur - Niveau Bac + 3</h3>
-
-                    <p><strong>CCI Campus</strong>, Strasbourg, octobre 2021 - juillet 2022</p>
-
-                    <ul>
-                        <li>- Gestion de projet, méthodologie agile, initiation à Scrum</li>
-                        <li>- Modélisation de bases de données et d'objets en UML</li>
-                        <li>- Conception de maquettes et de chartes graphiques avec Figma</li>
-                        <li>- Veille technologique et concurrentielle</li>
-                        <li>- Webmarketing, référencement, utilisation de CMS (WordPress)</li>
-                        <li>- Réalisation d'un projet Trello en trinôme basé sur PHP</li>
-                    </ul>
-                </div>
-
-                <div class="experience">
-                    <h3>Développeur Mobile / Flutter sur Android - Stage</h3>
-
-                    <p><strong>Indoor Santé</strong>, Strasbourg, juin - juillet 2021</p>
-
-                    <ul>
-                        <li>- Développement de l’interface graphique d’une application mobile de séances d'entraînement adaptées</li>
-                        <li>- Travail en binôme avec un développeur back-end sur Go et MongoDB</li>
-                    </ul>
-                </div>
-
-                <div class="formation">
-                    <h3>Titre de Développeur Web et Mobile - Niveau Bac + 2</h3>
-
-                    <p><strong>Élan Formation</strong>, Strasbourg, février - septembre 2021</p>
-
-                    <ul>
-                        <li>- Développement front-end avec HTML, CSS et JavaScript</li>
-                        <li>- Développement back-end avec PHP et Symfony</li>
-                    </ul>
-                </div>
-            </div>-->
-
-            <div id="projets">
-                <h2>Projets</h2>
-
-                <h3>Projet AACCP</h3>
-
-                <p>
-                Site d'actualités de l'<abbr title="Association Alsacienne des Collectionneurs de Cartes Postales">AACCP</abbr> 
-                et système de réservations pour les événements annuels
-                </p>
-
-                <ul>
-                    <li>- Front end avec React</li>
-                    <li>- Back end avec Java et Spring</li>
-                    <li>- Base de données avec MongoDB</li>
-                </ul>
-            </div>
-        </div> <!-- droite -->
+    <ul>
+        <li>- Front end avec React</li>
+        <li>- Back end avec Java et Spring</li>
+        <li>- Base de données avec MongoDB</li>
+    </ul>
+</div>
     </div>
 </body>
 </html>

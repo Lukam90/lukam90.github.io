@@ -61,7 +61,7 @@ a {
 
 #contenu {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    //grid-template-columns: 1fr 2fr;
     width: 100%;
     max-width: 1440px;
     //min-height: 1000px;
@@ -69,6 +69,7 @@ a {
     background: #fff;
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 
+    /*
     #gauche {
         background: rgba(7, 7, 192, 0.15);
         padding: 40px;
@@ -78,6 +79,7 @@ a {
         background: #fff;
         padding: 40px;
     }
+    */
 }
 
 #profil {
