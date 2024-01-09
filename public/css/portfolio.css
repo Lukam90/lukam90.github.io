@@ -42,6 +42,10 @@ h2 {
   font-weight: 600;
 }
 
+hr {
+  margin-top: 20px;
+}
+
 p {
   color: #333;
   line-height: 2.5;
@@ -59,35 +63,25 @@ a:hover {
   transform: scale(2);
 }
 
-/* Grille */
+/* Contenu */
 #contenu {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
   width: 100%;
   max-width: 1440px;
+  text-align: center;
   margin: 50px;
   background: #fff;
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
-}
-#contenu #gauche {
-  background: rgba(7, 7, 192, 0.15);
-  padding: 40px;
-}
-#contenu #droite {
-  background: #fff;
-  padding: 40px;
+  padding-bottom: 20px;
 }
 
 #profil {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 #profil #photo {
-  width: 200px;
-  height: 200px;
+  margin-top: 10px;
 }
 #profil #photo img {
   width: 100%;
@@ -96,7 +90,15 @@ a:hover {
 }
 
 #liens {
-  padding-top: 20px;
+  display: flex;
+  gap: 25px;
+}
+#liens img:hover {
+  transform: scale(1.5);
+}
+
+#intro {
+  padding-top: 15px;
 }
 
 /*# sourceMappingURL=portfolio.css.map */

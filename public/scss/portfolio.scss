@@ -39,6 +39,10 @@ h2 {
     font-weight: 600;
 }
 
+hr {
+    margin-top: 20px;
+}
+
 p {
     color: #333;
     line-height: 2.5;
@@ -57,41 +61,26 @@ a {
     }
 }
 
-/* Grille */
+/* Contenu */
 
 #contenu {
-    display: grid;
-    //grid-template-columns: 1fr 2fr;
     width: 100%;
     max-width: 1440px;
-    //min-height: 1000px;
+    text-align: center;
     margin: 50px;
     background: #fff;
     box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
-
-    /*
-    #gauche {
-        background: rgba(7, 7, 192, 0.15);
-        padding: 40px;
-    }
-
-    #droite {
-        background: #fff;
-        padding: 40px;
-    }
-    */
+    padding-bottom: 20px;
 }
 
 #profil {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
     #photo {
-        width: 200px;
-        height: 200px;
+        margin-top: 10px;
 
         img {
             width: 100%;
@@ -102,5 +91,14 @@ a {
 }
 
 #liens {
-    padding-top: 20px;
+    display: flex;
+    gap: 25px;
+
+    img:hover {
+        transform: scale(1.5);
+    }
+}
+
+#intro {
+    padding-top: 15px;
 }
