@@ -29,5 +29,5 @@ def convert_list(path, files):
 
 #convert_list("exercices", exercices)
 
-#convert_jinja("cv-imprime")
+convert_jinja("cv-imprime")
 convert_jinja("portfolio")
