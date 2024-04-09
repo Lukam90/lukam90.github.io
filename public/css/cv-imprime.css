@@ -120,10 +120,6 @@ img {
   transform: scale(1.5);
 }
 
-.element-liste img, .element-liste span {
-  vertical-align: middle;
-}
-
 .intitule {
   font-weight: bold;
   color: blue;

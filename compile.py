@@ -10,7 +10,7 @@ exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-sonore", "ex-video"]
 
 def convert_jinja(filename):
     template_env = Environment(loader = FileSystemLoader(searchpath = "."))
-    template = template_env.get_template(filename + ".jinja")
+    template = template_env.get_template("templates/" + filename + ".jinja")
 
     with open(filename + ".html", "w") as file:
         file.write(

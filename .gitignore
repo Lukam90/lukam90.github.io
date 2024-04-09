@@ -1,8 +1,5 @@
-_copy.sh
 *.css.map
 *-lock.json
 
-portfolio.html
-
-draft
-node_modules
+draft/
+node_modules/
