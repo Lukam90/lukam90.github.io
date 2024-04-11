@@ -4,22 +4,53 @@ import re
 
 from jinja2 import Environment, FileSystemLoader
 
-# Remplacements
-
-replaces = {
-    "**:" : "<b>",
-    ":**" : "</b>",
-    "*:" : "<i>",
-    ":*" : "</i>"
-}
-
 # Listes
 
 exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-sonore", "ex-video"]
 
-# Conversion Jinja > HTML
+# Regex
 
-def convert_jinja(filename):
+def re_pattern(content, pattern, g1, g2):
+    regex = re.compile(pattern)
+
+    matches = regex.finditer(content)
+
+    for match in matches:
+        content = content.replace(match.group(1), g1)
+        content = content.replace(match.group(2), g2)
+    
+    return content
+
+## Regex > Gras
+
+def re_bold(content):
+    return re_pattern(content, r"(\*{2}).+(\*{2})", "<b>", "</b>")
+
+## Regex > Italique
+
+def re_italic(content):
+    return re_pattern(content, r"(\*{1}).+(\*{1})", "<i>", "</i>")
+
+# Remplacements
+
+## Remplacements > Titre
+
+def sub_title(line):
+    level = 0
+
+    while line[level] == "#":
+        level += 1
+    
+    line = line.replace("#", "")
+    line = line.lstrip()
+
+    return f"<h{level}>{line}</h{level}>\n"
+
+# Conversion - Jinja
+
+## Jinja > HTML
+
+def convert_jinja_single(filename):
     template_env = Environment(loader = FileSystemLoader(searchpath = "."))
     template = template_env.get_template("templates/" + filename + ".jinja")
 
@@ -30,21 +61,22 @@ def convert_jinja(filename):
 
         file.close()
 
-# Conversion Jinja > Liste
+## Jinja > Liste
 
-def convert_list(path, files):
+def convert_jinja_list(path, files):
     for file in files:
         filename = path + "/" + file
 
-        convert_jinja(filename)
+        convert_jinja_single(filename)
 
-# Conversion Markdown > HTML
+# Conversion - Markdown
 
-def convert_markdown(filename):
+## Markdown > HTML
+
+def convert_markdown_single(filename):
     filename = "posts/" + filename
 
-    md_content = ""
-    html_content = ""
+    content = ""
 
     # Lecture (MD)
 
@@ -56,36 +88,26 @@ def convert_markdown(filename):
 
             if line != "":
                 if line[0] == "#":
-                    level = 0
-
-                    while line[level] == "#":
-                        level += 1
-                    
-                    line = line.replace("#", "")
-                    line = line.lstrip()
-
-                    md_content += f"<h{level}>{line}</h{level}>\n"
+                    content += sub_title(line)
                 elif line[0] == "<":
-                    md_content += line + "\n"
+                    content += line + "\n"
                 else:
-                    md_content += "<p>" + line + "</p>\n"
+                    content += "<p>" + line + "</p>\n"
             else:
-                md_content += "\n"
+                content += "\n"
 
-        for key, value in replaces.items():
-            md_content = md_content.replace(key, value)
-
-        html_content = md_content
+        content = re_bold(content)
+        content = re_italic(content)
 
         file.close()
 
     # Ecriture (HTML)
 
     with open(filename + ".html", "w") as file:
-        file.write(html_content)
+        file.write(content)
         file.close()
 
-convert_markdown("test")
+convert_markdown_single("test")
 
-#convert_jinja("cv-imprime")
-#convert_jinja("portfolio")
+#convert_jinja_single("cv-imprime")
+#convert_jinja_single("portfolio")

@@ -14,6 +14,6 @@
 
 une nouvelle ligne
 
-**:un:** deux **:trois:** soleil
+**un** deux **trois** soleil *en italique*
 
-*:un:* deux *:trois:* soleil
+*un* deux *trois* soleil
