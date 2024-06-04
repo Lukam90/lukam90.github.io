@@ -6,7 +6,7 @@ from jinja2 import Environment, FileSystemLoader
 
 # Listes
 
-exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-sonore", "ex-video"]
+exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-sonore", "ex-video", "ex-nombres"]
 
 # Regex
 
@@ -109,5 +109,8 @@ def convert_markdown_single(filename):
 
 convert_markdown_single("test")
 
+convert_jinja_single("chants")
 convert_jinja_single("cv-imprime")
 #convert_jinja_single("portfolio")
+
+convert_jinja_list("exercices", exercices)
