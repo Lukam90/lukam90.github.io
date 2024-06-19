@@ -3,13 +3,7 @@
 {% set title = "Vidéo" %}
 
 {% block content %}
-<iframe 
-    width="560" 
-    height="315" 
-    src="https://www.youtube.com/embed/sGuuuE_t2Lw?si=0YPT9HxfiKqqeV6f" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    allowfullscreen>
-</iframe>
+
+{{ mc.yvideo("sGuuuE_t2Lw?si=f1EgnYmX3HtRCYmh") }}
+
 {% endblock %}
