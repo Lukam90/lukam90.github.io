@@ -12,12 +12,7 @@
 
 {% include rpath + "rs-ste-marie.html" %}
 
-<p>
-    {% for step in ["-", "foi", "espérance", "charité"] %}
-    <input type="radio" name="nbase" id="nbase_{{ loop.index }}" {% if loop.first %} checked {% endif %} />
-    <label for="nbase_{{ loop.index }}">{{ step }}</label>
-    {% endfor %}
-</p>
+{% include rpath + "rs-vertus.html" %}
 
 <p><a href="#b_gloire_pere" id="b_gloire_pere">===</a></p>
 

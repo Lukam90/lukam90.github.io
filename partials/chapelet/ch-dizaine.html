@@ -6,12 +6,7 @@
 
 {% include rpath + "rscl-ste-marie.html" %}
 
-<div>
-    {% for nb in range(0, 11, 2) %}
-    <input type="radio" name="nsuite" id="n{{ loop.index }}" {% if loop.first %} checked {% endif %} />
-    <label for="n{{ loop.index }}">{{ nb }}</label>
-    {% endfor %}
-</div>
+{% include rpath + "rs-grains.html" %}
 
 <p><a href="#d_gloire_pere" id="d_gloire_pere">===</a></p>
 
