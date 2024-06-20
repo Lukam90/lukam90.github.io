@@ -1,0 +1,31 @@
+{% extends "layouts/base.jinja" %}
+
+{% set title = "Psaumes" %}
+
+{% set path = "partials/psaumes/" %}
+
+{% block content %}
+<h1>Psaumes</h1>
+
+{% include path + "ps-142.html" %}
+
+{% include path + "ps-23.html" %}
+
+{# include path + "ps-29.html" #}
+
+{# include path + "ps-90.html" #}
+
+{# include path + "ps-120.html" #}
+
+{# include path + "ps-124.html" %}
+
+{# include path + "ps-125.html" #}
+
+{# include path + "ps-126.html" #}
+
+<hr />
+
+{% include path + "min-gloire.html" %}
+
+<p><a id="haut" href="#">Retour en haut</a></p>
+{% endblock %}

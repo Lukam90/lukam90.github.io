@@ -52,7 +52,7 @@ def sub_title(line):
 
 def convert_jinja_single(filename):
     template_env = Environment(loader = FileSystemLoader(searchpath = "."))
-    template = template_env.get_template("templates/" + filename + ".jinja")
+    template = template_env.get_template(filename + ".jinja")
 
     with open(filename + ".html", "w") as file:
         file.write(
@@ -111,6 +111,6 @@ convert_markdown_single("test")
 
 convert_jinja_single("chants")
 convert_jinja_single("cv-imprime")
-#convert_jinja_single("portfolio")
+convert_jinja_single("psaumes")
 
 convert_jinja_list("exercices", exercices)
