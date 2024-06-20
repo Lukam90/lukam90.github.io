@@ -1,0 +1,39 @@
+{% set path = "Rituel/Chapelet/" %}
+{% set rpath = path + "Rosaire/" %}
+
+{% extends "partials/min-layout.html" %}
+
+{% set title = "Neuvaine" %}
+
+{% block content %}
+<h1>Neuvaine</h1>
+
+{% include "Rituel/Signe-Croix.html" %}
+
+<hr>
+
+{% include rpath + "R-Notre-Pere.html" %}
+
+<p><a href="#ste_marie" id="ste_marie">===</a></p>
+
+{% include rpath + "R-Ste-Marie.html" %}
+
+<p>
+    {% for nb in range(0, 11, 2) %}
+    <input type="radio" name="nsuite" {% if loop.first %} id="btn_first" checked {% endif %} />{{ nb }}
+    {% endfor %}
+</p>
+
+<p><a href="#gloire_pere" id="gloire_pere">===</a></p>
+
+{% include rpath + "R-Gloire-Pere.html" %}
+
+<p><a href="#priere_medaille" id="priere_medaille">===</a></p>
+
+{% include "Rituel/Priere-Medaille.html" %}
+
+<hr>
+
+{% include "Rituel/Signe-Croix.html" %}
+
+{% endblock %}

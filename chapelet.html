@@ -1,0 +1,262 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Chapelet</title>
+
+    <link rel="stylesheet" href="/public/css/main.css" />
+</head>
+
+<body>
+    <main>
+    
+<h1>Chapelet</h1>
+
+<p class="priere">
+Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>. 
+<br>
+Amen.
+</p>
+
+<hr />
+
+<h2>Je crois en Dieu</h2>
+
+<p class="priere">
+Je crois en Dieu, le Père tout-puissant,<br>
+Créateur du Ciel et de la Terre,<br>
+et en Jésus-Christ, son Fils unique, notre Seigneur,<br>
+qui a été conçu du Saint-Esprit,<br>
+est né de la Vierge Marie,<br>
+a souffert sous Ponce Pilate,<br>
+a été crucifié, est mort et a été enseveli,<br>
+est descendu aux enfers,<br>
+le troisième jour est ressuscité des morts,<br>
+est monté aux cieux,<br>
+est assis à la droite de Dieu le Père tout-puissant,<br>
+d’où il viendra juger les vivants et les morts.<br>
+
+Je crois en l’Esprit-Saint,<br>
+à la Sainte Eglise Catholique,<br>
+à la communion des saints,<br>
+à la rémission des péchés,<br>
+à la résurrection de la chair,<br>
+à la vie éternelle.<br>
+
+Amen.
+</p>
+
+<p><a href="#b_notre_pere" id="b_notre_pere">===</a></p>
+
+<h2>Notre Père</h2>
+
+<p class="priere">
+Notre Père, qui est aux cieux,<br>
+que ton nom soit sanctifié,<br>
+que ton règne vienne,<br>
+que ta volonté soit faite, sur la terre comme au ciel.<br>
+Donne-nous aujourd'hui notre pain de ce jour,<br>
+et pardonne-nous nos offenses,<br>
+comme nous pardonnons aussi à ceux qui nous ont offensés,<br>
+et ne nous laisse pas entrer en tentation,<br>
+mais délivre-nous du mal.<br>
+Amen.
+</p>
+
+<p><a href="#b_ste_marie" id="b_ste_marie">===</a></p>
+
+<h2>Je vous salue Marie</h2>
+
+<p class="priere">
+Je vous salue Marie, pleine de grâce,<br>
+le Seigneur est avec vous.<br>
+Vous êtes bénie entre toutes les femmes,<br>
+et Jésus, le fruit de vos entrailles, est béni.<br>
+Sainte Marie, Mère de Dieu,<br>
+priez pour nous, pauvres pécheurs,<br>
+maintenant et à l'heure de notre mort.<br>
+Amen.
+</p>
+
+<p>
+    
+    <input type="radio" name="nbase" id="nbase_1"  checked  />
+    <label for="nbase_1">-</label>
+    
+    <input type="radio" name="nbase" id="nbase_2"  />
+    <label for="nbase_2">foi</label>
+    
+    <input type="radio" name="nbase" id="nbase_3"  />
+    <label for="nbase_3">espérance</label>
+    
+    <input type="radio" name="nbase" id="nbase_4"  />
+    <label for="nbase_4">charité</label>
+    
+</p>
+
+<p><a href="#b_gloire_pere" id="b_gloire_pere">===</a></p>
+
+<h2>Gloire au Père</h2>
+
+<p class="priere">
+Gloire au Père, et au Fils, et au Saint-Esprit,<br>
+comme il était au commencement,<br>
+maintenant et toujours,<br>
+pour les siècles des siècles.<br>
+Amen.
+</p>
+
+<p><a href="#b_salut_reine" id="b_salut_reine">===</a></p>
+
+<h2>Salut, ô Reine</h2>
+
+<p class="priere">
+Salut, ô Reine, mère de miséricorde,<br>
+notre vie, notre douceur et notre espérance. Salut !<br>
+Enfants d'Eve, exilés, nous crions vers vous.<br>
+Vers vous, nous soupirons,<br>
+gémissant et pleurant dans cette vallée de larmes.<br>
+Ô vous, notre avocate,<br>
+tournez vers nous vos regards miséricordieux.<br>
+Et après cet exil, montrez-nous Jésus, le fruit béni de vos entrailles.<br>
+Ô clémente, ô pieuse, ô douce Vierge Marie.<br>
+Amen.
+</p>
+
+<hr id="haut" />
+
+<p><b>joyeux</b> (L, S) - <b>lumineux</b> (J) - <b>douloureux</b> (Ma, V) - <b>glorieux</b> (Me, D)</p>
+
+<p>
+    <select id="s_type" onchange="majListes()">
+        <option>joyeux</option>
+        <option>lumineux</option>
+        <option>douloureux</option>
+        <option>glorieux</option>
+    </select>
+
+    <select id="s_mysteres" onchange="majInfo()">
+        <option>1. L'annonciation</option>
+        <option>2. La visitation</option>
+        <option>3. La nativité</option>
+        <option>4. La présentation de Jésus au temple</option>
+        <option>5. Le recouvrement de Jésus au temple</option>
+    </select>
+</p>
+
+<p><a href="#d_notre_pere" id="d_notre_pere">===</a></p>
+
+<h2>Notre Père</h2>
+
+<p class="priere">
+Notre Père, qui est aux cieux,<br>
+que ton nom soit sanctifié,<br>
+que ton règne vienne,<br>
+que ta volonté soit faite, sur la terre comme au ciel.<br>
+Donne-nous aujourd'hui notre pain de ce jour,<br>
+et pardonne-nous nos offenses,<br>
+comme nous pardonnons aussi à ceux qui nous ont offensés,<br>
+et ne nous laisse pas entrer en tentation,<br>
+mais délivre-nous du mal.<br>
+Amen.
+</p>
+
+<p><a href="#d_ste_marie" id="d_ste_marie">===</a></p>
+
+<h2>Je vous salue Marie</h2>
+
+<p class="priere">
+Je vous salue Marie, pleine de grâce,<br>
+le Seigneur est avec vous.<br>
+Vous êtes bénie entre toutes les femmes,<br>
+et Jésus, <span id="clausule" class="gras">incarné</span>, est béni.<br>
+Sainte Marie, Mère de Dieu,<br>
+priez pour nous, pauvres pécheurs,<br>
+maintenant et à l'heure de notre mort.<br>
+Amen.
+</p>
+
+<div>
+    
+    <input type="radio" name="nsuite" id="n1"  checked  />
+    <label for="n1">0</label>
+    
+    <input type="radio" name="nsuite" id="n2"  />
+    <label for="n2">2</label>
+    
+    <input type="radio" name="nsuite" id="n3"  />
+    <label for="n3">4</label>
+    
+    <input type="radio" name="nsuite" id="n4"  />
+    <label for="n4">6</label>
+    
+    <input type="radio" name="nsuite" id="n5"  />
+    <label for="n5">8</label>
+    
+    <input type="radio" name="nsuite" id="n6"  />
+    <label for="n6">10</label>
+    
+</div>
+
+<p><a href="#d_gloire_pere" id="d_gloire_pere">===</a></p>
+
+<h2>Gloire au Père</h2>
+
+<p class="priere">
+Gloire au Père, et au Fils, et au Saint-Esprit,<br>
+comme il était au commencement,<br>
+maintenant et toujours,<br>
+pour les siècles des siècles.<br>
+Amen.
+</p>
+
+<p><a href="#d_priere_fatima" id="d_priere_fatima">===</a></p>
+
+<h2>Prière de Fatima</h2>
+
+<p class="priere">
+Ô mon Jésus,<br>
+pardonne-nous nos pêchés,<br>
+préserve-nous du feu de l'enfer,<br>
+et conduis au Ciel toutes les âmes,<br>
+surtout celles qui ont le plus besoin de ta sainte miséricorde.<br>
+Amen.
+</p>
+
+<p><a href="#haut">Revenir en haut</a></p>
+
+<hr />
+
+<h2>Oraison finale</h2>
+
+<p class="priere">
+<b>Coeur Sacré de Jésus</b>, j'ai confiance en toi.<br>
+<b>Coeur Immaculé de Marie</b>, priez pour nous.<br>
+<b>Saint Joseph</b>, priez pour nous.<br>
+<b>Notre Dame de Lourdes</b>, priez pour nous.<br>
+<b>Saint Michel Archange</b>, priez pour nous.<br>
+<b>Saint Raphaël Archange</b>, priez pour nous.<br>
+<b>Notre saint ange gardien</b>, veillez sur nous.<br>
+<b>Tous les anges et tous les saints</b>, priez pour nous.<br>
+
+Ô Marie, conçue sans péché, priez pour nous qui avons recours à vous. (x 3)
+</p>
+
+<hr />
+
+<p class="priere">
+Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>. 
+<br>
+Amen.
+</p>
+
+<script src="/public/js/chapelet.js"></script>
+
+
+    </main>
+</body>

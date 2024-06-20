@@ -1,0 +1,28 @@
+<h2>Dizaine</h2>
+
+<select onchange="resetFirst();">
+    {% for nb in range(1, 6) %}
+    <option>Ronde n°{{ nb }}</option>
+    {% endfor %}
+</select>
+
+<p class="priere">
+Père Éternel,<br> 
+je Vous offre le corps et le sang,<br>
+l'âme et la divinité de Votre Fils bien-aimé, <br>
+notre Seigneur Jésus-Christ, <br>
+en réparation de nos péchés <br>
+et de ceux du monde entier.
+</p>
+
+<p>***</p>
+
+<p class="priere">
+Par sa douloureuse passion,<br> 
+soyez miséricordieux pour nous<br>
+et pour le monde entier.
+</p>
+
+{% for nb in range(0, 11, 2) %}
+<input type="radio" name="passion" {% if loop.first %} id="p_first" checked {% endif %} />{{ nb }}
+{% endfor %}

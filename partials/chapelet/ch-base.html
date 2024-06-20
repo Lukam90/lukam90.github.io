@@ -1,0 +1,32 @@
+<p class="priere">
+Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>. 
+<br>
+Amen.
+</p>
+
+<hr />
+
+{% include rpath + "rs-credo.html" %}
+
+<p><a href="#b_notre_pere" id="b_notre_pere">===</a></p>
+
+{% include rpath + "rs-notre-pere.html" %}
+
+<p><a href="#b_ste_marie" id="b_ste_marie">===</a></p>
+
+{% include rpath + "rs-ste-marie.html" %}
+
+<p>
+    {% for step in ["-", "foi", "espérance", "charité"] %}
+    <input type="radio" name="nbase" id="nbase_{{ loop.index }}" {% if loop.first %} checked {% endif %} />
+    <label for="nbase_{{ loop.index }}">{{ step }}</label>
+    {% endfor %}
+</p>
+
+<p><a href="#b_gloire_pere" id="b_gloire_pere">===</a></p>
+
+{% include rpath + "rs-gloire-pere.html" %}
+
+<p><a href="#b_salut_reine" id="b_salut_reine">===</a></p>
+
+{% include rpath + "rs-salut-reine.html" %}

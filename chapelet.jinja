@@ -1,0 +1,27 @@
+{% extends "layouts/base.jinja" %}
+
+{% set cpath = "partials/chapelet/" %}
+{% set rpath = cpath + "rosaire/" %}
+
+{% set title = "Chapelet" %}
+
+{% block content %}
+<h1>Chapelet</h1>
+
+{% include cpath + "ch-base.html" %}
+
+<hr id="haut" />
+
+{% include cpath + "ch-choix.html" %}
+
+{% include cpath + "ch-dizaine.html" %}
+
+<p><a href="#haut">Revenir en haut</a></p>
+
+<hr />
+
+{% include cpath + "ch-fin.html" %}
+
+<script src="/public/js/chapelet.js"></script>
+
+{% endblock %}

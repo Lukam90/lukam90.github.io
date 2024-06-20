@@ -1,0 +1,22 @@
+<p><a href="#d_notre_pere" id="d_notre_pere">===</a></p>
+
+{% include rpath + "rs-notre-pere.html" %}
+
+<p><a href="#d_ste_marie" id="d_ste_marie">===</a></p>
+
+{% include rpath + "rscl-ste-marie.html" %}
+
+<div>
+    {% for nb in range(0, 11, 2) %}
+    <input type="radio" name="nsuite" id="n{{ loop.index }}" {% if loop.first %} checked {% endif %} />
+    <label for="n{{ loop.index }}">{{ nb }}</label>
+    {% endfor %}
+</div>
+
+<p><a href="#d_gloire_pere" id="d_gloire_pere">===</a></p>
+
+{% include rpath + "rs-gloire-pere.html" %}
+
+<p><a href="#d_priere_fatima" id="d_priere_fatima">===</a></p>
+
+{% include rpath + "rs-priere-fatima.html" %}
