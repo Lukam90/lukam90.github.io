@@ -1,0 +1,6 @@
+<p>
+    {% for nb in range(0, 11, 2) %}
+    <input type="radio" name="nsuite" id="n{{ loop.index }}" {% if loop.first %} checked {% endif %} />
+    <label for="n{{ loop.index }}">{{ nb }}</label>
+    {% endfor %}
+</p>

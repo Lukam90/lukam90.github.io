@@ -112,6 +112,7 @@ convert_markdown_single("test")
 convert_jinja_single("chants")
 convert_jinja_single("chapelet")
 convert_jinja_single("cv-imprime")
+convert_jinja_single("neuvaine")
 convert_jinja_single("psaumes")
 
-convert_jinja_list("exercices", exercices)
+#convert_jinja_list("exercices", exercices)

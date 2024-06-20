@@ -1,39 +1,43 @@
-{% set path = "Rituel/Chapelet/" %}
-{% set rpath = path + "Rosaire/" %}
 
-{% extends "partials/min-layout.html" %}
+
+{% extends "layouts/prieres.jinja" %}
+
+{% set path = "partials/chapelet/" %}
+{% set npath = "partials/prieres/" %}
+{% set rpath = path + "rosaire/" %}
 
 {% set title = "Neuvaine" %}
 
 {% block content %}
 <h1>Neuvaine</h1>
 
-{% include "Rituel/Signe-Croix.html" %}
+{% include npath + "pr-signe-croix.html" %}
 
 <hr>
 
-{% include rpath + "R-Notre-Pere.html" %}
+{% include rpath + "rs-notre-pere.html" %}
 
 <p><a href="#ste_marie" id="ste_marie">===</a></p>
 
-{% include rpath + "R-Ste-Marie.html" %}
+{% include rpath + "rs-ste-marie.html" %}
 
-<p>
+<div>
     {% for nb in range(0, 11, 2) %}
-    <input type="radio" name="nsuite" {% if loop.first %} id="btn_first" checked {% endif %} />{{ nb }}
+    <input type="radio" name="nsuite" id="n{{ loop.index }}" {% if loop.first %} checked {% endif %} />
+    <label for="n{{ loop.index }}">{{ nb }}</label>
     {% endfor %}
-</p>
+</div>
 
 <p><a href="#gloire_pere" id="gloire_pere">===</a></p>
 
-{% include rpath + "R-Gloire-Pere.html" %}
+{% include rpath + "rs-gloire-pere.html" %}
 
 <p><a href="#priere_medaille" id="priere_medaille">===</a></p>
 
-{% include "Rituel/Priere-Medaille.html" %}
+{% include npath + "nv-medaille.html" %}
 
 <hr>
 
-{% include "Rituel/Signe-Croix.html" %}
+{% include npath + "pr-signe-croix.html" %}
 
 {% endblock %}
