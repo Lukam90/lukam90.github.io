@@ -7,7 +7,7 @@ from jinja2 import Environment, FileSystemLoader
 # Listes
 
 exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-sonore", "ex-video", "ex-nombres"]
-prieres = ["c-anges", "c-misericorde", "chapelet", "neuvaine", "psaumes"]
+prieres = ["chapelet", "c-anges", "c-misericorde", "c-sacrement", "neuvaine", "psaumes"]
 
 # Regex
 

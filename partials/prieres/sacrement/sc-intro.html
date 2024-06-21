@@ -1,0 +1,16 @@
+{% include path + "signe-croix.html" %}
+
+<hr />
+
+{% include path + "notre-pere.html" %}
+
+{% include path + "ste-marie.html" %}
+
+<p>
+    {% for nb in range(0, 4) %}
+    <input type="radio" name="nbase" id="nbase_{{ loop.index }}" {% if loop.first %} checked {% endif %} />
+    <label for="nbase_{{ loop.index }}">{{ nb }}</label>
+    {% endfor %}
+</p>
+
+{% include path + "gloire-pere.html" %}

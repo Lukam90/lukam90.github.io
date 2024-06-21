@@ -1,0 +1,24 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set path = "partials/prieres/" %}
+
+{% set cpath = path + "chapelet/" %}
+{% set spath = path + "sacrement/" %}
+
+{% set title = "C-Sacrement" %}
+
+{% block content %}
+<h1>Chapelet du Saint Sacrement de l'Eucharistie</h1>
+
+{% include spath + "sc-intro.html" %}
+
+<hr id="haut" />
+
+{% include spath + "sc-mysteres.html" %}
+
+<hr />
+
+{% include path + "signe-croix.html" %}
+
+<script src="/public/js/reset.js"></script>
+{% endblock %}

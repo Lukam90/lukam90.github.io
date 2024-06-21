@@ -1,0 +1,28 @@
+{% set mysteres = [
+    "1. en mémoire de sa passion et de sa mort",
+    "2. pour demeurer auprès de nous chaque jour de notre vie",
+    "3. pour perpétuer son sacrifice pour nous sur tous les autels de la chrétienté, jusqu’à la fin des temps",
+    "4. pour être le pain et le vin de notre âme, notre nourriture spirituelle",
+    "5. nous visiter au moment de notre mort et nous emmener avec lui au paradis",
+] %}
+
+<p>Jésus a institué le Saint Sacrement</p>
+
+{% for mystere in mysteres %}
+<p>
+    <input type="radio" name="mysteres" id="mystere_{{ loop.index }}" {% if loop.first %} checked {% endif %} />
+    <label for="mystere_{{ loop.index }}">{{ mystere }}</label>
+</p>
+{% endfor %}
+
+<p class="priere">
+Jésus, sois loué à chaque instant,<br> 
+dans le Saint Sacrement, aujourd’hui et toujours.<br>
+Jésus, sois loué dans le Saint Sacrement.
+</p>
+
+{% include path + "dz-grains.html" %}
+
+{% include path + "notre-pere.html" %}
+
+<p><a href="#haut">Retour en haut</a></p>
