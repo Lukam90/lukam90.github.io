@@ -1,5 +1,6 @@
 *.css.map
 *-lock.json
 
+_old/
 draft/
 node_modules/
