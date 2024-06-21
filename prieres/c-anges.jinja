@@ -1,10 +1,10 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set path = "partials/prieres/" %}
-{% set cpath = path + "chapelet/" %}
 
-{% set apath = cpath + "anges/" %}
-{% set rpath = cpath + "rosaire/" %}
+{% set cpath = path + "chapelet/" %}
+{% set apath = path + "anges/" %}
+{% set rpath = path + "rosaire/" %}
 
 {% set title = "C-Anges" %}
 
@@ -13,69 +13,15 @@
 {% block content %}
 <h1>Chapelet de St Michel et des anges</h1>
 
-{% include path + "signe-croix.html" %}
+{% include apath + "an-intro.html" %}
 
 <hr />
 
-<p class="priere">
-Saint Michel Archange, grand prince des milices célestes,<br>
-défendez-nous dans le combat pour que nous ne périssions pas au jour du jugement.<br>
-Ô Dieu, venez à mon aide,<br>
-Seigneur, hâtez-vous de me secourir.
-</p>
-
-<p><a href="#intro_notre_pere" id="intro_notre_pere">===</a></p>
-
-{% include path + "notre-pere.html" %}
-
-<p>
-    {% for step in ["St Michel", "St Gabriel", "St Raphaël", "Ange gardien"] %}
-    <input type="radio" name="nbase" id="nbase_{{ loop.index }}" {% if loop.first %} checked {% endif %} />
-    <label for="nbase_{{ loop.index }}">{{ step }}</label>
-    {% endfor %}
-</p>
+{% include apath + "an-choeurs.html" %}
 
 <hr />
 
-<p><a href="#ancre_choeurs" id="ancre_choeurs">===</a></p>
-
-<h2 id="haut">Choeurs</h2>
-
-<p>
-    <select id="sel_choeurs" onchange="updateText();">
-        {% for choeur in choeurs %}
-        <option value="{{ choeur }}">{{ loop.index }}. {{ choeur }}</option>
-        {% endfor %}
-    </select>
-</p>
-
-<p>
-Par l'intercession de Saint Michel et du choeur céleste des <span id="choeur" class="gras">séraphins</span>,<br>
-que le Seigneur <span id="suite" class="gras">nous rende dignes de brûler du feu de la charité parfaite</span>.<br>
-
-Amen.
-</p>
-
-<p><a href="#choeur_notre_pere" id="choeur_notre_pere">===</a></p>
-
-{% include path + "notre-pere.html" %}
-
-<p><a href="#choeur_ste_marie" id="choeur_ste_marie">===</a></p>
-
-{% include path + "ste-marie.html" %}
-
-<p>
-    {% for nb in range(0, 4) %}
-    <input type="radio" name="nsuite" id="n{{ loop.index }}" {% if loop.first %} checked {% endif %} />
-    <label for="n{{ loop.index }}">{{ nb }}</label>
-    {% endfor %}
-</p>
-
-<p><a href="#haut">Revenir en haut</a></p>
-
-<hr />
-
-{% include path + "signe-croix.html" %}
+{% include apath + "an-fin.html" %}
 
 <script src="/public/js/ch-anges.js"></script>
 {% endblock %}

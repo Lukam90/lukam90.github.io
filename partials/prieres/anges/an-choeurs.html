@@ -1,0 +1,33 @@
+<p><a href="#ancre_choeurs" id="ancre_choeurs">===</a></p>
+
+<h2 id="haut">Choeurs</h2>
+
+<p>
+    <select id="sel_choeurs" onchange="updateText();">
+        {% for choeur in choeurs %}
+        <option value="{{ choeur }}">{{ loop.index }}. {{ choeur }}</option>
+        {% endfor %}
+    </select>
+</p>
+
+<p class="priere">
+Par l'intercession de Saint Michel et du choeur céleste des <span id="choeur" class="gras">séraphins</span>,<br>
+que le Seigneur <span id="suite" class="gras">nous rende dignes de brûler du feu de la charité parfaite</span>.<br>
+
+Amen.
+</p>
+
+{% include path + "notre-pere.html" %}
+
+<p><a href="#choeur_ste_marie" id="choeur_ste_marie">===</a></p>
+
+{% include path + "ste-marie.html" %}
+
+<p>
+    {% for nb in range(0, 4) %}
+    <input type="radio" name="nsuite" id="n{{ loop.index }}" {% if loop.first %} checked {% endif %} />
+    <label for="n{{ loop.index }}">{{ nb }}</label>
+    {% endfor %}
+</p>
+
+<p><a href="#haut">Revenir en haut</a></p>
