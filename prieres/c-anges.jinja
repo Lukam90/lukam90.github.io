@@ -13,7 +13,7 @@
 {% block content %}
 <h1>Chapelet de St Michel et des anges</h1>
 
-{% include path + "pr-signe-croix.html" %}
+{% include path + "signe-croix.html" %}
 
 <hr />
 
@@ -26,7 +26,7 @@ Seigneur, hâtez-vous de me secourir.
 
 <p><a href="#intro_notre_pere" id="intro_notre_pere">===</a></p>
 
-{% include rpath + "rs-notre-pere.html" %}
+{% include path + "notre-pere.html" %}
 
 <p>
     {% for step in ["St Michel", "St Gabriel", "St Raphaël", "Ange gardien"] %}
@@ -36,6 +36,8 @@ Seigneur, hâtez-vous de me secourir.
 </p>
 
 <hr />
+
+<p><a href="#ancre_choeurs" id="ancre_choeurs">===</a></p>
 
 <h2 id="haut">Choeurs</h2>
 
@@ -56,11 +58,11 @@ Amen.
 
 <p><a href="#choeur_notre_pere" id="choeur_notre_pere">===</a></p>
 
-{% include rpath + "rs-notre-pere.html" %}
+{% include path + "notre-pere.html" %}
 
 <p><a href="#choeur_ste_marie" id="choeur_ste_marie">===</a></p>
 
-{% include rpath + "rs-ste-marie.html" %}
+{% include path + "ste-marie.html" %}
 
 <p>
     {% for nb in range(0, 4) %}
@@ -73,7 +75,7 @@ Amen.
 
 <hr />
 
-{% include path + "pr-signe-croix.html" %}
+{% include path + "signe-croix.html" %}
 
 <script src="/public/js/ch-anges.js"></script>
 {% endblock %}

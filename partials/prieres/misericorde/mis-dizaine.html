@@ -23,7 +23,4 @@ soyez miséricordieux pour nous<br>
 et pour le monde entier.
 </p>
 
-{% for nb in range(0, 11, 2) %}
-<input type="radio" name="passion" id="n{{ loop.index }}" {% if loop.first %} checked {% endif %} />
-<label for="n{{ loop.index }}">{{ nb }}</label>
-{% endfor %}
+{% include path + "dz-grains.html" %}
