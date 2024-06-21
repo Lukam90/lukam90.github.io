@@ -5,9 +5,12 @@ target="$HOME/Téléchargements/Copies/CP-$name-$date"
 
 mkdir -p $target
 
+cp -r data $target
 cp -r exercices $target
 cp -r layouts $target
 cp -r partials $target
+cp -r posts $target
+cp -r prieres $target
 cp -r public $target
 
 cp *.js* $target

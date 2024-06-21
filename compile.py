@@ -110,8 +110,8 @@ def convert_markdown_single(filename):
 
 convert_markdown_single("test")
 
-convert_jinja_single("chants")
-convert_jinja_single("cv-imprime")
+#convert_jinja_single("cv-imprime")
+convert_jinja_single("test")
 
 #convert_jinja_list("exercices", exercices)
 convert_jinja_list("prieres", prieres)

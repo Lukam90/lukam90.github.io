@@ -1,0 +1,34 @@
+<h2>Litanies de Saint Charbel Makhlouf</h2>
+
+{% include lpath + "Lit-Intro.html" %}
+
+<hr />
+
+<ul class="priere gauche">
+    <li><b>Saint Charbel</b>, prie pour nous.</li>
+    
+    {% for louange in data["st-charbel"] %}
+    <li><a href="#st_charbel_{{ loop.index }}" id="st_charbel_{{ loop.index }}">{{ louange }}</a>, ...</li>
+    {% endfor %}
+</ul>
+
+<hr />
+
+{% include lpath + "Lit-Agneau-Dieu.html" %}
+
+<hr />
+
+<p class="priere">
+Nous te louons, ô Dieu,<br>
+pour la victoire de ton Fils,<br>
+notre Seigneur Jésus-Christ.<br>
+
+Nous te louons pour notre Mère, la Vierge Marie,<br>
+et pour notre puissant intercesseur Saint Charbel.<br>
+
+Par leur intercession, accorde-nous la délivrance des maux qui nous affligent,<br>
+libère-nous des ténèbres et des dangers de l'âme et du corps,<br>
+afin que nous vivions dans la liberté des enfants de Dieu.<br>
+
+Amen.
+</p>
