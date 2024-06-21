@@ -2,30 +2,31 @@
 
 {% set title = "Psaumes" %}
 
-{% set path = "partials/psaumes/" %}
+{% set path = "partials/prieres/" %}
+{% set xpath = path + "psaumes/" %}
 
 {% block content %}
 <h1>Psaumes</h1>
 
-{% include path + "ps-142.html" %}
+{% include xpath + "ps-142.html" %}
 
-{% include path + "ps-23.html" %}
+{% include xpath + "ps-23.html" %}
 
-{# include path + "ps-29.html" #}
+{# include xpath + "ps-29.html" #}
 
-{# include path + "ps-90.html" #}
+{# include xpath + "ps-90.html" #}
 
-{# include path + "ps-120.html" #}
+{# include xpath + "ps-120.html" #}
 
-{# include path + "ps-124.html" %}
+{# include xpath + "ps-124.html" %}
 
-{# include path + "ps-125.html" #}
+{# include xpath + "ps-125.html" #}
 
-{# include path + "ps-126.html" #}
+{# include xpath + "ps-126.html" #}
 
 <hr />
 
-{% include path + "min-gloire.html" %}
+{% include xpath + "min-gloire.html" %}
 
 <p><a id="haut" href="#">Retour en haut</a></p>
 {% endblock %}
