@@ -1,0 +1,35 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set cpath = "partials/chapelet/" %}
+{% set npath = "partials/prieres/" %}
+
+{% set rpath = cpath + "rosaire/" %}
+{% set mpath = cpath + "misericorde/" %}
+
+{% set title = "C-Misericorde" %}
+
+{% block content %}
+<h1>Chapelet de la Miséricorde Divine</h1>
+
+{% include mpath + "mis-intro.html" %}
+
+<hr />
+
+{% include rpath + "rs-notre-pere.html" %}
+
+{% include rpath + "rs-ste-marie.html" %}
+
+{% include rpath + "rs-credo.html" %}
+
+<hr />
+
+{% include mpath + "mis-dizaine.html" %}
+
+<hr />
+
+{% include mpath + "mis-fin.html" %}
+
+<p><a href="#">Revenir en haut</a></p>
+
+<script src="/public/js/reset.js"></script>
+{% endblock %}

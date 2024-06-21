@@ -9,7 +9,7 @@
 <p class="priere">
 Père Éternel,<br> 
 je Vous offre le corps et le sang,<br>
-l'âme et la divinité de Votre Fils bien-aimé, <br>
+l'âme et la divinité de votre Fils bien-aimé, <br>
 notre Seigneur Jésus-Christ, <br>
 en réparation de nos péchés <br>
 et de ceux du monde entier.
@@ -24,5 +24,6 @@ et pour le monde entier.
 </p>
 
 {% for nb in range(0, 11, 2) %}
-<input type="radio" name="passion" {% if loop.first %} id="p_first" checked {% endif %} />{{ nb }}
+<input type="radio" name="passion" id="n{{ loop.index }}" {% if loop.first %} checked {% endif %} />
+<label for="n{{ loop.index }}">{{ nb }}</label>
 {% endfor %}
