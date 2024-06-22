@@ -3,17 +3,21 @@
     "2. pour demeurer auprès de nous chaque jour de notre vie",
     "3. pour perpétuer son sacrifice pour nous sur tous les autels de la chrétienté, jusqu’à la fin des temps",
     "4. pour être le pain et le vin de notre âme, notre nourriture spirituelle",
-    "5. nous visiter au moment de notre mort et nous emmener avec lui au paradis",
+    "5. pour nous visiter au moment de notre mort et nous emmener avec lui au paradis",
 ] %}
+
+<p><a href="#haut" id="haut">===</a></p>
 
 <p>Jésus a institué le Saint Sacrement</p>
 
 {% for mystere in mysteres %}
 <p>
-    <input type="radio" name="mysteres" id="mystere_{{ loop.index }}" {% if loop.first %} checked {% endif %} />
+    <input type="radio" name="mysteres" id="mystere_{{ loop.index }}" {% if loop.first %} checked {% endif %} onclick="resetFirst();" />
     <label for="mystere_{{ loop.index }}">{{ mystere }}</label>
 </p>
 {% endfor %}
+
+<p>***</p>
 
 <p class="priere">
 Jésus, sois loué à chaque instant,<br> 
@@ -23,6 +27,8 @@ Jésus, sois loué dans le Saint Sacrement.
 
 {% include path + "dz-grains.html" %}
 
+<p><a href="#dz_notre_pere" id="dz_notre_pere">===</a></p>
+
 {% include path + "notre-pere.html" %}
 
-<p><a href="#haut">Retour en haut</a></p>
+<p><a href="#haut" class="bleu">Retour en haut</a></p>
