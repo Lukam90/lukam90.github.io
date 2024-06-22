@@ -1,13 +1,9 @@
 #coding: utf8
 
 import re
+import json
 
 from jinja2 import Environment, FileSystemLoader
-
-# Listes
-
-exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-sonore", "ex-video", "ex-nombres"]
-prieres = ["chapelet", "c-anges", "c-misericorde", "c-sacrement", "neuvaine", "psaumes"]
 
 # Regex
 
@@ -49,15 +45,44 @@ def sub_title(line):
 
 # Conversion - Jinja
 
+## Texte > Données
+
+def convert_text_data(filename):
+    data = []
+
+    with open(f"data/{filename}.txt", "r") as file:
+        lines = file.readlines()
+
+        for line in lines:
+            line = line.strip()
+
+            data.append(line)
+
+        file.close()
+
+    return data
+
+## JSON > Données
+
+def convert_json_data(filename):
+    data = []
+
+    with open(f"data/json/{filename}.json", "r") as file:
+        content = file.read()
+
+        data = json.loads(content)
+
+    return data
+
 ## Jinja > HTML
 
-def convert_jinja_single(filename):
+def convert_jinja_single(filename, data = None):
     template_env = Environment(loader = FileSystemLoader(searchpath = "."))
     template = template_env.get_template(filename + ".jinja")
 
     with open(filename + ".html", "w") as file:
         file.write(
-            template.render()
+            template.render(data = data)
         )
 
         file.close()
@@ -65,10 +90,16 @@ def convert_jinja_single(filename):
 ## Jinja > Liste
 
 def convert_jinja_list(path, files):
-    for file in files:
-        filename = path + "/" + file
+    for element in files:
+        if len(element) == 1:
+            filename = path + "/" + element
 
-        convert_jinja_single(filename)
+            convert_jinja_single(filename)
+        elif len(element) == 2:
+            filename = path + "/" + element[0]
+            data = element[1]
+
+            convert_jinja_single(filename, data)
 
 # Conversion - Markdown
 
@@ -108,10 +139,24 @@ def convert_markdown_single(filename):
         file.write(content)
         file.close()
 
-convert_markdown_single("test")
+# Données
+
+psaumes = {}
+psaumes["ps-23"] = convert_json_data("psaumes/ps-23")
+
+# Listes
+
+exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-sonore", "ex-video", "ex-nombres"]
+prieres = ["chapelet", "c-anges", "c-eucharistie", "c-misericorde", "c-sacrement", "neuvaine", ("psaumes", psaumes)]
+
+# Exécution
+
+#convert_markdown_single("test")
 
 #convert_jinja_single("cv-imprime")
 convert_jinja_single("test")
 
 #convert_jinja_list("exercices", exercices)
 convert_jinja_list("prieres", prieres)
+
+#print(convert_json_data("psaumes/ps-23"))

@@ -3,26 +3,27 @@
 {% set title = "Psaumes" %}
 
 {% set path = "partials/prieres/" %}
-{% set xpath = path + "psaumes/" %}
 
 {% block content %}
 <h1>Psaumes</h1>
 
-{# include xpath + "ps-22.html" #}
+<h2 id="ps23"><a href="#ps23">Psaume 23</a></h2>
 
-{# include xpath + "ps-29.html" #}
+{% for content in data["ps-23"] %}
+<p class="priere">
+    {% set id = "ps23_" + loop.index | string %}
+    {% set number = content["number"] %}
+    {% set lines = content["lines"] %}
 
-{# include xpath + "ps-90.html" #}
+    <a href="#{{ id }}" id="{{ id }}">{{ number }}</a><br>
 
-{# include xpath + "ps-120.html" #}
+    {% for line in lines %}
+        {{ line }}
 
-{# include xpath + "ps-124.html" %}
-
-{# include xpath + "ps-125.html" #}
-
-{# include xpath + "ps-126.html" #}
-
-{# include xpath + "ps-142.html" #}
+        {% if not loop.last %}<br>{% endif %}
+    {% endfor %}
+</p>
+{% endfor %}
 
 <hr />
 

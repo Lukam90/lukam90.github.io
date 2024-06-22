@@ -1,0 +1,34 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set path = "partials/prieres/" %}
+
+{% set cpath = path + "chapelet/" %}
+{% set spath = path + "sacrement/" %}
+
+{% set title = "C-Eucharistie" %}
+
+{% block content %}
+<h1>Chapelet de l'Eucharistie</h1>
+
+{% include path + "signe-croix.html" %}
+
+<hr />
+
+<p class="priere">
+Comme je ne peux pas vous recevoir, mon Jésus,<br>
+dans la sainte Communion,<br>
+venez spirituellement dans mon cœur,<br> 
+et faites qu’il soit toujours votre.
+</p>
+
+<hr />
+
+<p>Jésus, présent dans le Saint Sacrement sur l’autel, ayez pitié de nous.</p>
+
+<p>
+    {% for nb in range(0, 34, 3) %}
+    <input type="radio" name="eucharistie" id="n{{ loop.index }}" {% if loop.first %} checked {% endif %} />
+    <label for="n{{ loop.index }}">{{ nb }}</label>
+    {% endfor %}
+</p>
+{% endblock %}
