@@ -1,114 +1,112 @@
-{
-    "psaume" : [
-        {
-            "number" : "01",
-            "lines" : [
-                "Quand je me tiens sous l'abri du Très-Haut et repose à l'ombre du Puissant,"
-            ]
-        },
-        {
-            "number" : "02",
-            "lines" : [
-                "Je dis au Seigneur :",
-                "\"Mon refuge, mon rempart, mon Dieu, dont je suis sûr !\""
-            ]
-        },
-        {
-            "number" : "03",
-            "lines" : [
-                "C'est lui qui te sauve des filets du chasseur et de la peste maléfique."
-            ]
-        },
-        {
-            "number" : "04",
-            "lines" : [
-                "Il te couvre et te protège. ",
-                "Tu trouves sous son aile un refuge.",
-                "Sa fidélité est une armure, un bouclier."
-            ]
-        },
-        {
-            "number" : "05",
-            "lines" : [
-                "Tu ne craindras ni les terreurs de la nuit. ",
-                "Ni la flèche qui vole au grand jour."
-            ]
-        },
-        {
-            "number" : "06",
-            "lines" : [
-                "Ni la peste qui rôde dans le noir. ",
-                "Ni le fléau qui frappe à midi."
-            ]
-        },
-        {
-            "number" : "07",
-            "lines" : [
-                "Qu'il en tombe mille à tes côtés.",
-                "Qu'il en tombe dix mille à ta droite.",
-                "Toi, tu restes hors d'atteinte."
-            ]
-        },
-        {
-            "number" : "08",
-            "lines" : [
-                "Il suffit que tu ouvres les yeux.",
-                "Tu verras le salaire du méchant."
-            ]
-        },
-        {
-            "number" : "09",
-            "lines" : [
-                "Oui, le Seigneur est ton refuge.",
-                "Tu as fait du Très-Haut ta forteresse."
-            ]
-        },
-        {
-            "number" : "10",
-            "lines" : [
-                "Le malheur ne pourra te toucher, ni le danger, approcher de ta demeure."
-            ]
-        },
-        {
-            "number" : "11",
-            "lines" : [
-                "Il donne mission à ses anges de te garder sur tous tes chemins."
-            ]
-        },
-        {
-            "number" : "12",
-            "lines" : [
-                "Ils te porteront sur leurs mains pour que ton pied ne heurte les pierres."
-            ]
-        },
-        {
-            "number" : "13",
-            "lines" : [
-                "Tu marcheras sur la vipère et le scorpion. ",
-                "Tu écraseras le lion et le dragon."
-            ]
-        },
-        {
-            "number" : "14",
-            "lines" : [
-                "Puisqu'il s'attache à moi, je le délivre.",
-                "Je le défends, car il connaît mon nom."
-            ]
-        },
-        {
-            "number" : "15",
-            "lines" : [
-                "Il m'appelle, et moi, je lui réponds.",
-                "Je suis avec lui dans son épreuve.",
-                "Je veux le libérer, le glorifier."
-            ]
-        },
-        {
-            "number" : "16",
-            "lines" : [
-                "De longs jours, je veux le rassasier.",
-                "Et je ferai qu'il voie mon salut."
-            ]
-        }
-    ]
-}
+[
+    {
+        "number" : "01",
+        "lines" : [
+            "Quand je me tiens sous l'abri du Très-Haut et repose à l'ombre du Puissant,"
+        ]
+    },
+    {
+        "number" : "02",
+        "lines" : [
+            "Je dis au Seigneur :",
+            "\"Mon refuge, mon rempart, mon Dieu, dont je suis sûr !\""
+        ]
+    },
+    {
+        "number" : "03",
+        "lines" : [
+            "C'est lui qui te sauve des filets du chasseur et de la peste maléfique."
+        ]
+    },
+    {
+        "number" : "04",
+        "lines" : [
+            "Il te couvre et te protège. ",
+            "Tu trouves sous son aile un refuge.",
+            "Sa fidélité est une armure, un bouclier."
+        ]
+    },
+    {
+        "number" : "05",
+        "lines" : [
+            "Tu ne craindras ni les terreurs de la nuit. ",
+            "Ni la flèche qui vole au grand jour."
+        ]
+    },
+    {
+        "number" : "06",
+        "lines" : [
+            "Ni la peste qui rôde dans le noir. ",
+            "Ni le fléau qui frappe à midi."
+        ]
+    },
+    {
+        "number" : "07",
+        "lines" : [
+            "Qu'il en tombe mille à tes côtés.",
+            "Qu'il en tombe dix mille à ta droite.",
+            "Toi, tu restes hors d'atteinte."
+        ]
+    },
+    {
+        "number" : "08",
+        "lines" : [
+            "Il suffit que tu ouvres les yeux.",
+            "Tu verras le salaire du méchant."
+        ]
+    },
+    {
+        "number" : "09",
+        "lines" : [
+            "Oui, le Seigneur est ton refuge.",
+            "Tu as fait du Très-Haut ta forteresse."
+        ]
+    },
+    {
+        "number" : "10",
+        "lines" : [
+            "Le malheur ne pourra te toucher, ni le danger, approcher de ta demeure."
+        ]
+    },
+    {
+        "number" : "11",
+        "lines" : [
+            "Il donne mission à ses anges de te garder sur tous tes chemins."
+        ]
+    },
+    {
+        "number" : "12",
+        "lines" : [
+            "Ils te porteront sur leurs mains pour que ton pied ne heurte les pierres."
+        ]
+    },
+    {
+        "number" : "13",
+        "lines" : [
+            "Tu marcheras sur la vipère et le scorpion. ",
+            "Tu écraseras le lion et le dragon."
+        ]
+    },
+    {
+        "number" : "14",
+        "lines" : [
+            "Puisqu'il s'attache à moi, je le délivre.",
+            "Je le défends, car il connaît mon nom."
+        ]
+    },
+    {
+        "number" : "15",
+        "lines" : [
+            "Il m'appelle, et moi, je lui réponds.",
+            "Je suis avec lui dans son épreuve.",
+            "Je veux le libérer, le glorifier."
+        ]
+    },
+    {
+        "number" : "16",
+        "lines" : [
+            "De longs jours, je veux le rassasier.",
+            "Et je ferai qu'il voie mon salut."
+        ]
+    }
+]

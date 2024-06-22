@@ -141,8 +141,12 @@ def convert_markdown_single(filename):
 
 # Données
 
+index = convert_json_data("index")
+
 psaumes = {}
 psaumes["ps-23"] = convert_json_data("psaumes/ps-23")
+psaumes["ps-70"] = convert_json_data("psaumes/ps-70")
+psaumes["ps-91"] = convert_json_data("psaumes/ps-91")
 
 # Listes
 
@@ -153,6 +157,7 @@ prieres = ["chapelet", "c-anges", "c-eucharistie", "c-misericorde", "c-sacrement
 
 #convert_markdown_single("test")
 
+convert_jinja_single("index", index)
 #convert_jinja_single("cv-imprime")
 convert_jinja_single("test")
 

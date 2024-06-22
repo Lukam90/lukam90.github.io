@@ -4,30 +4,43 @@
 
 {% set path = "partials/prieres/" %}
 
+<!-- Macro -->
+
+{% macro psaume(nb) %}
+    {% set root = "ps-" + nb | string %}
+
+    <h2 id="{{ root }}"><a href="#{{ root }}">Psaume {{ nb }}</a></h2>
+
+    {% for content in data[root] %}
+    <p class="priere">
+        {% set id = root + "-" + loop.index | string %}
+
+        {% set number = content["number"] %}
+        {% set lines = content["lines"] %}
+
+        <a href="#{{ id }}" id="{{ id }}">{{ number }}</a><br>
+
+        {% for line in lines %}
+            {{ line }}
+
+            {% if not loop.last %}<br>{% endif %}
+        {% endfor %}
+    </p>
+    {% endfor %}
+{% endmacro %}
+
+<!-- Page -->
+
 {% block content %}
 <h1>Psaumes</h1>
 
-<h2 id="ps23"><a href="#ps23">Psaume 23</a></h2>
+{{ psaume(23) }}
+{{ psaume(70) }}
+{{ psaume(91) }}
 
-{% for content in data["ps-23"] %}
-<p class="priere">
-    {% set id = "ps23_" + loop.index | string %}
-    {% set number = content["number"] %}
-    {% set lines = content["lines"] %}
-
-    <a href="#{{ id }}" id="{{ id }}">{{ number }}</a><br>
-
-    {% for line in lines %}
-        {{ line }}
-
-        {% if not loop.last %}<br>{% endif %}
-    {% endfor %}
-</p>
-{% endfor %}
-
-<hr />
+<p><a id="gloire_pere" href="#gloire_pere">===</a></p>
 
 {% include path + "gloire-pere.html" %}
 
-<p><a id="haut" href="#">Retour en haut</a></p>
+<p><a id="haut" href="#" class="bleu">Retour en haut</a></p>
 {% endblock %}
