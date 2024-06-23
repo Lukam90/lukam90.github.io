@@ -8,15 +8,14 @@
 
 {% macro psaume(nb) %}
     {% set root = "ps-" + nb | string %}
+    {% set content = data[root] %}
 
     <h2 id="{{ root }}"><a href="#{{ root }}">Psaume {{ nb }}</a></h2>
 
-    {% for content in data[root] %}
+    {% for number in content %}
     <p class="priere">
         {% set id = root + "-" + loop.index | string %}
-
-        {% set number = content["number"] %}
-        {% set lines = content["lines"] %}
+        {% set lines = content[number] %}
 
         <a href="#{{ id }}" id="{{ id }}">{{ number }}</a><br>
 

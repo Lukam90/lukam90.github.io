@@ -139,6 +139,7 @@ index = convert_json_data("index")
 
 psaumes = {}
 psaumes["ps-23"] = convert_json_data("psaumes/ps-23")
+psaumes["ps-35"] = convert_json_data("psaumes/ps-35")
 psaumes["ps-70"] = convert_json_data("psaumes/ps-70")
 psaumes["ps-91"] = convert_json_data("psaumes/ps-91")
 
@@ -164,7 +165,7 @@ convert_jinja_single("index", index)
 
 ## Prières
 
-convert_jinja_list("prieres", prieres)
+#convert_jinja_list("prieres", prieres)
 
 convert_jinja_single("prieres/psaumes", psaumes)
 
