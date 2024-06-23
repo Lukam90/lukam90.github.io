@@ -147,6 +147,7 @@ psaumes["ps-91"] = convert_json_data("psaumes/ps-91")
 
 exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-sonore", "ex-video", "ex-nombres"]
 prieres = ["chapelet", "c-anges", "c-eucharistie", "c-misericorde", "c-sacrement", "neuvaine"]
+profil = ["cv-imprime", "portfolio"]
 
 # Compilation
 
@@ -169,4 +170,6 @@ convert_jinja_single("index", index)
 
 convert_jinja_single("prieres/psaumes", psaumes)
 
-#print(convert_json_data("psaumes/ps-23"))
+## Profil
+
+convert_jinja_list("profil", profil)

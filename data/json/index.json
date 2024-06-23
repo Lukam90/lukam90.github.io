@@ -1,21 +1,22 @@
 {
-    "cv-portfolio" : [
-        { "link" : "cv-imprime", "title" : "Mon nouveau CV" },
-        { "link" : "portfolio", "title" : "Ma page de portfolio (en cours)" }
+    "profil" : [
+        { "href" : "cv-imprime", "title" : "Mon nouveau CV" },
+        { "href" : "portfolio", "title" : "Ma page de portfolio (en cours)" }
     ],
     "prieres" : [
-        { "link" : "neuvaine", "title" : "Neuvaine de la médaille miraculeuse" },
-        { "link" : "psaumes", "title" : "Psaumes de délivrance (en cours)" },
-        { "link" : "chapelet", "title" : "Chapelet traditionnel (rosaire)" },
-        { "link" : "c-anges", "title" : "Chapelet de St Michel et des anges" },
-        { "link" : "c-misericorde", "title" : "Chapelet de la miséricorde divine" },
-        { "link" : "c-sacrement", "title" : "Chapelet du St Sacrement et de l'Eucharistie" }
+        { "href" : "neuvaine", "title" : "Neuvaine de la médaille miraculeuse" },
+        { "href" : "psaumes", "title" : "Psaumes de délivrance (en cours)" },
+        { "href" : "chapelet", "title" : "Chapelet traditionnel (rosaire)" },
+        { "href" : "c-anges", "title" : "Chapelet de St Michel et des anges" },
+        { "href" : "c-eucharistie", "title" : "Chapelet de l'Eucharistie" },
+        { "href" : "c-misericorde", "title" : "Chapelet de la miséricorde divine" },
+        { "href" : "c-sacrement", "title" : "Chapelet du Saint Sacrement" }
     ],
     "exercices" : [
-        { "link" : "ex-base", "title" : "Cohérence cardiaque" },
-        { "link" : "ex-sonore", "title" : "Cohérence cardiaque (version sonore)" },
-        { "link" : "ex-video", "title" : "Cohérence cardiaque (en vidéo)" },
-        { "link" : "ex-carre", "title" : "Respiration carrée" },
-        { "link" : "ex-dormir", "title" : "Respiration 4 - 7 - 8" }
+        { "href" : "ex-base", "title" : "Cohérence cardiaque" },
+        { "href" : "ex-sonore", "title" : "Cohérence cardiaque (version sonore)" },
+        { "href" : "ex-video", "title" : "Cohérence cardiaque (en vidéo)" },
+        { "href" : "ex-carre", "title" : "Respiration carrée" },
+        { "href" : "ex-dormir", "title" : "Respiration 4 - 7 - 8" }
     ]
 }
