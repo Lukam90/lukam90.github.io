@@ -90,16 +90,10 @@ def convert_jinja_single(filename, data = None):
 ## Jinja > Liste
 
 def convert_jinja_list(path, files):
-    for element in files:
-        if len(element) == 1:
-            filename = path + "/" + element
+    for file in files:
+        filename = path + "/" + file
 
-            convert_jinja_single(filename)
-        elif len(element) == 2:
-            filename = path + "/" + element[0]
-            data = element[1]
-
-            convert_jinja_single(filename, data)
+        convert_jinja_single(filename)
 
 # Conversion - Markdown
 
@@ -148,20 +142,30 @@ psaumes["ps-23"] = convert_json_data("psaumes/ps-23")
 psaumes["ps-70"] = convert_json_data("psaumes/ps-70")
 psaumes["ps-91"] = convert_json_data("psaumes/ps-91")
 
-# Listes
+# Listes de fichiers
 
 exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-sonore", "ex-video", "ex-nombres"]
-prieres = ["chapelet", "c-anges", "c-eucharistie", "c-misericorde", "c-sacrement", "neuvaine", ("psaumes", psaumes)]
+prieres = ["chapelet", "c-anges", "c-eucharistie", "c-misericorde", "c-sacrement", "neuvaine"]
 
-# Exécution
+# Compilation
+
+## Markdown
 
 #convert_markdown_single("test")
 
+## Pages
+
 convert_jinja_single("index", index)
 #convert_jinja_single("cv-imprime")
-convert_jinja_single("test")
+
+## Exercices
 
 #convert_jinja_list("exercices", exercices)
+
+## Prières
+
 convert_jinja_list("prieres", prieres)
+
+convert_jinja_single("prieres/psaumes", psaumes)
 
 #print(convert_json_data("psaumes/ps-23"))
