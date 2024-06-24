@@ -2,25 +2,10 @@
 
 {% set title = "Portfolio" %}
 
-{% macro links(path, title) %}
-<h2>{{ title }}</h2>
-
-<ul>
-    {% for link in data[path] %}
-    <li><a href="{{ path }}/{{ link.href }}.html" target="_blank">{{ link.title }}</a></li>
-    {% endfor %}
-</ul>
-{% endmacro %}
-
 {% block content %}
-<p>La construction du site et du portfolio est en cours.</p>
 
-<p>En attendant, vous pouvez accéder aux pages suivantes classées par catégories :</p>
-
-{{ links("profil", "CV et Portfolio") }}
-
-{{ links("prieres", "Prières") }}
-
-{{ links("exercices", "Exercices de respiration") }}
+{{ mc.links(data, "profil", "CV et Portfolio") }}
+{{ mc.links(data, "prieres", "Prières") }}
+{{ mc.links(data, "exercices", "Exercices de respiration") }}
 
 {% endblock %}

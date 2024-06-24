@@ -47,9 +47,18 @@ label:hover {
     font-weight: bold;
 }
 
-.gras,
-.nature,
-.mystere {
+/* Classes */
+
+.bleu {
+    color: blue;
+}
+
+.gauche {
+    text-align: left; 
+    display: inline-block;
+}
+
+.gras {
     font-weight: bold;
 }
 
@@ -66,11 +75,7 @@ label:hover {
     color: blue;
 }
 
-.gauche {
-    text-align: left; 
-    display: inline-block;
-}
-
-.bleu {
+.signe:hover {
+    cursor: pointer;
     color: blue;
 }

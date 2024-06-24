@@ -15,20 +15,23 @@
 <hr />
 
 <p class="priere">
-Comme je ne peux pas vous recevoir, mon Jésus,<br>
-dans la sainte Communion,<br>
-venez spirituellement dans mon cœur,<br> 
-et faites qu’il soit toujours votre.
+Comme je ne peux pas te recevoir, mon Jésus,<br>
+dans la sainte communion,<br>
+viens spirituellement dans mon cœur,<br> 
+et fais qu’il soit toujours tien.
 </p>
 
 <hr />
 
-<p>Jésus, présent dans le Saint Sacrement sur l’autel, ayez pitié de nous.</p>
+<p>Jésus, présent dans le Saint Sacrement sur l’autel, aie pitié de nous.</p>
 
-<p>
-    {% for nb in range(0, 34, 3) %}
-    <input type="radio" name="eucharistie" id="n{{ loop.index }}" {% if loop.first %} checked {% endif %} />
-    <label for="n{{ loop.index }}">{{ nb }}</label>
-    {% endfor %}
-</p>
+<h3>
+    <span class="signe" onclick="decrement()">-</span>
+    &nbsp;
+    <span id="counter">0</span>
+    &nbsp;
+    <span class="signe" onclick="increment()">+</span>
+</h3>
+
+<script src="/public/js/counter.js"></script>
 {% endblock %}

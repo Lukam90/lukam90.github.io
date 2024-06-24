@@ -1,3 +1,5 @@
+<!-- Vidéo YouTube -->
+
 {% macro yvideo(link) %}
 <iframe 
     width="560" 
@@ -9,4 +11,16 @@
     referrerpolicy="strict-origin-when-cross-origin" 
     allowfullscreen>
 </iframe>
+{% endmacro %}
+
+<!-- Liste de liens -->
+
+{% macro links(data, path, title) %}
+<h2>{{ title }}</h2>
+
+<ul>
+    {% for link in data[path] %}
+    <li><a href="{{ path }}/{{ link.href }}.html" target="_blank">{{ link.title }}</a></li>
+    {% endfor %}
+</ul>
 {% endmacro %}
