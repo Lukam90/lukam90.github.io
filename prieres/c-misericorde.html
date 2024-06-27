@@ -110,23 +110,31 @@ Amen.
 
 <h2 id="mis_dizaine"><a href="#mis_dizaine">Dizaine</a></h2>
 
-<!--
-<select onchange="resetFirst();">
-    
-    <option>Ronde n°1</option>
-    
-    <option>Ronde n°2</option>
-    
-    <option>Ronde n°3</option>
-    
-    <option>Ronde n°4</option>
-    
-    <option>Ronde n°5</option>
-    
-</select>
--->
-
 <p>
+    <input type="radio" name="m_type" id="t_chapelet" onclick="changeType('chapelet');" checked />
+    <label for="t_chapelet">Chapelet</label>
+
+    <input type="radio" name="m_type" id="t_rosaire" onclick="changeType('rosaire');" />
+    <label for="t_rosaire">Rosaire</label>
+</p>
+
+<div id="m_chapelet">
+    <select onchange="resetFirst();">
+        
+        <option>Ronde n°1</option>
+        
+        <option>Ronde n°2</option>
+        
+        <option>Ronde n°3</option>
+        
+        <option>Ronde n°4</option>
+        
+        <option>Ronde n°5</option>
+        
+    </select>
+</div>
+
+<div id="m_rosaire" style="display: none;">
     Miséricorde pour
 
     <select onchange="resetFirst();">
@@ -143,7 +151,7 @@ Amen.
         
         <option>6. l'unité des chrétiens</option>
         
-        <option>7. les coups et les célibataires</option>
+        <option>7. les couples et les célibataires</option>
         
         <option>8. l'humanité entière</option>
         
@@ -172,7 +180,7 @@ Amen.
         <option>20. les âmes du purgatoire</option>
         
     </select>
-</p>
+</div>
 
 <p class="priere">
 Père Éternel,<br> 
@@ -248,7 +256,7 @@ Amen.
 
 <p><a href="#" class="bleu">Revenir en haut</a></p>
 
-<script src="/public/js/reset.js"></script>
+<script src="/public/js/ch-misericorde.js"></script>
 
     </main>
 </body>
