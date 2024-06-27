@@ -157,11 +157,13 @@ convert_jinja_single("index", index)
 ## Exercices
 
 #convert_jinja_list("exercices", exercices)
+convert_jinja_single("exercices/ex-nombres")
 
 ## Prières
 
-convert_jinja_list("prieres", prieres)
+#convert_jinja_list("prieres", prieres)
+convert_jinja_single("prieres/c-misericorde")
 
 ## Profil
 
-convert_jinja_list("profil", profil)
+#convert_jinja_list("profil", profil)
