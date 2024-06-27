@@ -50,7 +50,7 @@ def sub_title(line):
 def convert_text_data(filename):
     data = []
 
-    with open(f"data/{filename}.txt", "r") as file:
+    with open(f"data/text/{filename}.txt", "r") as file:
         lines = file.readlines()
 
         for line in lines:
@@ -143,6 +143,11 @@ exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-sonore", "ex-video", "ex-no
 prieres = ["chapelet", "c-anges", "c-eucharistie", "c-misericorde", "c-sacrement", "neuvaine"]
 profil = ["cv-imprime", "portfolio"]
 
+# Données
+
+m_data = {}
+m_data["misericorde"] = convert_text_data("misericorde")
+
 # Compilation
 
 ## Markdown
@@ -162,7 +167,7 @@ convert_jinja_single("exercices/ex-nombres")
 ## Prières
 
 #convert_jinja_list("prieres", prieres)
-convert_jinja_single("prieres/c-misericorde")
+convert_jinja_single("prieres/c-misericorde", m_data)
 
 ## Profil
 

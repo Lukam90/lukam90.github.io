@@ -13,7 +13,7 @@
 
     <select onchange="resetFirst();">
         {% for line in data["misericorde"] %}
-        <option>{{ line }}</option>
+        <option>{{ loop.index }}. {{ line }}</option>
         {% endfor %}
     </select>
 </p>
