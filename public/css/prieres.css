@@ -53,6 +53,10 @@ label:hover {
     color: blue;
 }
 
+.centre {
+    text-align: center;
+}
+
 .gauche {
     text-align: left; 
     display: inline-block;

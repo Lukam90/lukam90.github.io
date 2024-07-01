@@ -3,7 +3,7 @@
 {% set title = "Exercice des Nombres" %}
 
 {% block content %}
-<div style="text-align: center;">
+<div class="centre">
     <p>/!\ L'exercice suivant ne remplace pas un suivi ou un traîtement médical.</p>
 
     <p>Répétez mentalement ou à haute voix chaque série de chiffres, au moins 3 fois.</p>
@@ -22,9 +22,17 @@
 
     <p>1 9 7 5 1</p>
 
-    <hr />
+    <h2>Ex Afformations</h2>
 
-    <p>Vidéo Bonus</p>
+    <p>Les afformations suivantes sont à réciter à haute voix :</p>
+
+    <ul class="priere">
+        {% for afformation in data %}
+        <li>Pourquoi <b>{{ afformation }}</b> ?</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Vidéo Bonus</h2>
 
     {{ mc.yvideo("SRZHMrr87DY?si=k--NshIMfhw_vDk-") }}
 </div>
