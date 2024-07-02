@@ -1,12 +1,8 @@
 {% extends "layouts/prieres.jinja" %}
 
-{% set path = "partials/prieres/" %}
-
-{% set cpath = path + "chapelet/" %}
-{% set rpath = path + "rosaire/" %}
-{% set mpath = path + "misericorde/" %}
-
 {% set title = "C-St-Antoine" %}
+
+{% set path = "partials/prieres/" %}
 
 {% block content %}
 <h1>Chapelet de St Antoine</h1>
@@ -17,15 +13,21 @@
 
 <div>
     <select id="sel_ronde" onchange="setSuite();">
-        {% for nb in range(1, 14) %}
-        <option>Ronde n°{{ nb }}</option>
+        {% for nb in range(0, 14) %}
+            {% if nb > 0 %}
+            <option>Ronde n°{{ nb }}</option>
+            {% else %}
+            <option>Bref de St Antoine</option>
+            {% endif %}
         {% endfor %}
     </select>
 </div>
 
-<p class="priere">
-Saint Antoine,<br>
-<span class="gras" id="suite">qui avez ressuscité les morts,<br>priez pour ces chrétiens maintenant à l'agonie,<br>et pour nos chers défunts</span>.
+<p class="priere" id="suite">
+Voici la croix du Seigneur !<br>
+Fuyez, puissances ennemis !<br>
+Le lion de la tribu de Juda, le rejeton de David, a vaincu !<br>
+Alléluia !
 </p>
 
 <p><a href="#notre_pere" id="notre_pere">===</a></p>
