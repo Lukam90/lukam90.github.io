@@ -1,0 +1,56 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set path = "partials/prieres/" %}
+
+{% set cpath = path + "chapelet/" %}
+{% set rpath = path + "rosaire/" %}
+{% set mpath = path + "misericorde/" %}
+
+{% set title = "C-St-Antoine" %}
+
+{% block content %}
+<h1>Chapelet de St Antoine</h1>
+
+{% include path + "signe-croix.html" %}
+
+<hr />
+
+<div>
+    <select id="sel_ronde" onchange="setSuite();">
+        {% for nb in range(1, 14) %}
+        <option>Ronde n°{{ nb }}</option>
+        {% endfor %}
+    </select>
+</div>
+
+<p class="priere">
+Saint Antoine,<br>
+<span class="gras" id="suite">qui avez ressuscité les morts,<br>priez pour ces chrétiens maintenant à l'agonie,<br>et pour nos chers défunts</span>.
+</p>
+
+<p><a href="#notre_pere" id="notre_pere">===</a></p>
+
+{% include path + "notre-pere.html" %}
+
+<p><a href="#ste_marie" id="ste_marie">===</a></p>
+
+{% include path + "ste-marie.html" %}
+
+<p><a href="#gloire_pere" id="gloire_pere">===</a></p>
+
+{% include path + "gloire-pere.html" %}
+
+<p><a href="#" class="bleu">Revenir en haut</a></p>
+
+<hr />
+
+{% include path + "st-antoine.html" %}
+
+<hr />
+
+{% include path + "signe-croix.html" %}
+
+<p><a href="#" class="bleu">Revenir en haut</a></p>
+
+<script src="/public/js/ch-st-antoine.js"></script>
+{% endblock %}
