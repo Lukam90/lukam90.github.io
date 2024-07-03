@@ -148,7 +148,8 @@ profil = ["cv-imprime", "portfolio"]
 m_data = {}
 m_data["misericorde"] = convert_text_data("misericorde")
 
-afformations = convert_text_data("afformations")
+litanies = {}
+litanies["st-charbel"] = convert_text_data("st-charbel")
 
 # Compilation
 
@@ -164,7 +165,7 @@ convert_jinja_single("index", index)
 ## Exercices
 
 #convert_jinja_list("exercices", exercices)
-convert_jinja_single("exercices/ex-nombres", afformations)
+convert_jinja_single("exercices/ex-nombres", litanies)
 
 ## Prières
 

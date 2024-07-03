@@ -1,0 +1,30 @@
+{% include lpath + "lit-intro.html" %}
+
+<hr />
+
+<ul class="priere gauche">
+    {% for louange in data["st-charbel"] %}
+    <li><a href="#st_charbel_{{ loop.index }}" id="st_charbel_{{ loop.index }}" class="gras">{{ louange }}</a>, prie pour nous.</li>
+    {% endfor %}
+</ul>
+
+<hr />
+
+{% include lpath + "lit-agneau-dieu.html" %}
+
+<hr />
+
+<p class="priere">
+Nous te louons, ô Dieu,<br>
+pour la victoire de ton Fils,<br>
+notre Seigneur Jésus-Christ.<br>
+
+Nous te louons pour notre Mère, la Vierge Marie,<br>
+et pour notre puissant intercesseur Saint Charbel.<br>
+
+Par leur intercession, accorde-nous la délivrance des maux qui nous affligent,<br>
+libère-nous des ténèbres et des dangers de l'âme et du corps,<br>
+afin que nous vivions dans la liberté des enfants de Dieu.<br>
+
+Amen.
+</p>

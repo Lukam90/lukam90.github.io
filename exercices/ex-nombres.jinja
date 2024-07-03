@@ -2,6 +2,8 @@
 
 {% set title = "Exercice des Nombres" %}
 
+{% set lpath = "partials/prieres/litanies/" %}
+
 {% block content %}
 <div class="centre">
     <h2>Ex Nombres</h2>
@@ -24,18 +26,16 @@
 
     <p>1 9 7 5 1</p>
 
-    <h2>Ex Afformations</h2>
+    <h2>Ex Litanies</h2>
 
-    <p>Les afformations suivantes sont à réciter à haute voix :</p>
-
-    <ul class="priere">
-        {% for afformation in data %}
-        <li>Pourquoi <b>{{ afformation }}</b> ?</li>
-        {% endfor %}
-    </ul>
+    {% include lpath + "lit-st-charbel.html" %}
 
     <h2>Vidéo Bonus</h2>
 
     {{ mc.yvideo("SRZHMrr87DY?si=k--NshIMfhw_vDk-") }}
+
+    <h2>Ex Bonus</h2>
+
+    {{ mc.yvideo("ie7GkORhTZM?si=xXc_WIey6HBYqLSE") }}
 </div>
 {% endblock %}
