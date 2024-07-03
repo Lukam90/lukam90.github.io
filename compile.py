@@ -139,8 +139,8 @@ index = convert_json_data("index")
 
 # Listes de fichiers
 
-exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-sonore", "ex-video", "ex-nombres"]
-prieres = ["chapelet", "c-anges", "c-eucharistie", "c-misericorde", "c-sacrement", "c-st-antoine", "neuvaine"]
+exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-nombres", "ex-sonore", "ex-video"]
+prieres = ["chapelet", "c-anges", "c-eucharistie", "c-misericorde", "c-sacrement", "c-st-antoine", "c-st-charbel", "neuvaine"]
 profil = ["cv-imprime", "portfolio"]
 
 # Données
@@ -168,8 +168,8 @@ convert_jinja_single("exercices/ex-nombres", afformations)
 
 ## Prières
 
-convert_jinja_list("prieres", prieres)
-#convert_jinja_single("prieres/c-misericorde", m_data)
+#convert_jinja_list("prieres", prieres)
+convert_jinja_single("prieres/c-st-charbel")
 
 ## Profil
 

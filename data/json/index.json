@@ -10,7 +10,8 @@
         { "href" : "c-eucharistie", "title" : "Chapelet de l'Eucharistie" },
         { "href" : "c-misericorde", "title" : "Chapelet de la Miséricorde Divine" },
         { "href" : "c-sacrement", "title" : "Chapelet du Saint Sacrement" },
-        { "href" : "c-st-antoine", "title" : "Chapelet de St Antoine" }
+        { "href" : "c-st-antoine", "title" : "Chapelet de St Antoine" },
+        { "href" : "c-st-charbel", "title" : "Chapelet de St Charbel" }
     ],
     "exercices" : [
         { "href" : "ex-base", "title" : "Cohérence cardiaque" },
