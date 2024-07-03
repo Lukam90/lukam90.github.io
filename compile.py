@@ -170,6 +170,7 @@ convert_jinja_single("exercices/ex-nombres", litanies)
 ## Prières
 
 #convert_jinja_list("prieres", prieres)
+convert_jinja_single("prieres/c-misericorde")
 convert_jinja_single("prieres/c-st-charbel")
 
 ## Profil
