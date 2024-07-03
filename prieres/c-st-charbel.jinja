@@ -22,7 +22,7 @@
 <p><a href="#rondes" id="rondes">===</a></p>
 
 <div>
-    <select id="sel_ronde">
+    <select id="sel_ronde" onchange="resetFirst();">
         <option>1. voeu de pauvreté</option>
         <option>2. voeu de chasteté</option>
         <option>3. voeu d'obéissance</option>
@@ -34,7 +34,7 @@
 
 {% include path + "ste-marie.html" %}
 
-{% include path + "tri-grains.html" %}
+{% include path + "trio-grains.html" %}
 
 <p><a href="#d_notre_pere" id="d_notre_pere">===</a></p>
 
@@ -51,4 +51,6 @@
 {% include path + "signe-croix.html" %}
 
 <p><a href="#" class="bleu">Revenir en haut</a></p>
+
+<script src="/public/js/reset.js"></script>
 {% endblock %}

@@ -49,7 +49,7 @@ Amen.
 <p><a href="#rondes" id="rondes">===</a></p>
 
 <div>
-    <select id="sel_ronde">
+    <select id="sel_ronde" onchange="resetFirst();">
         <option>1. voeu de pauvreté</option>
         <option>2. voeu de chasteté</option>
         <option>3. voeu d'obéissance</option>
@@ -74,17 +74,17 @@ Amen.
 
 <p>
     
-    <input type="radio" name="n_tri" id="n_tri_1"  checked  />
-    <label for="n_tri_1">0</label>
+    <input type="radio" name="n_trio" id="n1"  checked  />
+    <label for="n1">0</label>
     
-    <input type="radio" name="n_tri" id="n_tri_2"  />
-    <label for="n_tri_2">1</label>
+    <input type="radio" name="n_trio" id="n2"  />
+    <label for="n2">1</label>
     
-    <input type="radio" name="n_tri" id="n_tri_3"  />
-    <label for="n_tri_3">2</label>
+    <input type="radio" name="n_trio" id="n3"  />
+    <label for="n3">2</label>
     
-    <input type="radio" name="n_tri" id="n_tri_4"  />
-    <label for="n_tri_4">3</label>
+    <input type="radio" name="n_trio" id="n4"  />
+    <label for="n4">3</label>
     
 </p>
 
@@ -109,7 +109,7 @@ Amen.
 
 <hr />
 
-<h2>Prière à Saint Charbel</h2>
+<h2 id="st_charbel"><a href="#st_charbel">Prière à Saint Charbel</a></h2>
 
 <p class="priere">
 Dieu, infiniment saint et glorifié dans vos Saints,<br>
@@ -137,6 +137,8 @@ Amen.
 </p>
 
 <p><a href="#" class="bleu">Revenir en haut</a></p>
+
+<script src="/public/js/reset.js"></script>
 
     </main>
 </body>
