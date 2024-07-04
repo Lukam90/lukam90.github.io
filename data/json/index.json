@@ -8,7 +8,8 @@
         { "href" : "chapelet", "title" : "Chapelet traditionnel (rosaire)" },
         { "href" : "c-anges", "title" : "Chapelet de St Michel et des anges" },
         { "href" : "c-eucharistie", "title" : "Chapelet de l'Eucharistie" },
-        { "href" : "c-misericorde", "title" : "Chapelet de la Miséricorde Divine" },
+        { "href" : "c-liberation", "title" : "Chapelet de la libération" },
+        { "href" : "c-misericorde", "title" : "Chapelet de la miséricorde divine" },
         { "href" : "c-sacrement", "title" : "Chapelet du Saint Sacrement" },
         { "href" : "c-st-antoine", "title" : "Chapelet de St Antoine" },
         { "href" : "c-st-charbel", "title" : "Chapelet de St Charbel" }

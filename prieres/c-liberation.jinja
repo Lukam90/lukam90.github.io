@@ -1,0 +1,61 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set path = "partials/prieres/" %}
+{% set lpath = path + "liberation/" %}
+
+{% set title = "C-Liberation" %}
+
+{% block content %}
+<h1>Chapelet de libération</h1>
+
+{% include path + "signe-croix.html" %}
+
+<hr />
+
+{% include path + "credo.html" %}
+
+<p id="base_min_jesus"><a href="#base_min_jesus">===</a></p>
+
+{% include lpath + "lib-jesus.html" %}
+
+<p id="base_trio"><a href="#base_trio">===</a></p>
+
+{% include lpath + "lib-fils.html" %}
+
+<p>
+{% for nb in range(0, 4) %}
+<input type="radio" name="n_trio" id="trio_{{ loop.index }}" {% if loop.first %} checked {% endif %} />
+<label for="trio_{{ loop.index }}">{{ nb }}</label>
+{% endfor %}
+</p>
+
+<hr />
+
+<p id="rondes"><a href="#rondes">===</a></p>
+
+<select onchange="resetFirst();">
+    {% for nb in range(1, 6) %}
+    <option>Ronde n°{{ nb }}</option>
+    {% endfor %}
+</select>
+
+{% include lpath + "lib-jesus.html" %}
+
+<p>***</p>
+
+{% include lpath + "lib-fils.html" %}
+
+{% include path + "dz-grains.html" %}
+
+<hr />
+
+{% include path + "salut-reine.html" %}
+
+<hr />
+
+{% include path + "signe-croix.html" %}
+
+<p><a href="#" class="bleu">Revenir en haut</a></p>
+
+<script src="/public/js/reset.js"></script>
+{% endblock %}
