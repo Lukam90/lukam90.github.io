@@ -9,20 +9,11 @@
 
 {% include path + "signe-croix.html" %}
 
-<hr />
-
-<p>Ô Père de vérité, voici votre Fils, victime pour vous plaire.</p>
-
-<p><a href="#b_notre_pere" id="b_notre_pere">===</a></p>
-
-{% include path + "notre-pere.html" %}
-
-<hr />
-
 <p><a href="#rondes" id="rondes">===</a></p>
 
 <div>
-    <select id="sel_ronde" onchange="resetFirst();">
+    <select id="sel_rondes" onchange="setSuites();">
+        <option>Bref de St Charbel</option>
         <option>1. voeu de pauvreté</option>
         <option>2. voeu de chasteté</option>
         <option>3. voeu d'obéissance</option>
@@ -32,15 +23,19 @@
     </select>
 </div>
 
-{% include path + "ste-marie.html" %}
+<p id="bref">Ô Père de vérité, voici votre Fils, victime pour vous plaire.</p>
 
-{% include path + "trio-grains.html" %}
+<div id="suite">
+    {% include path + "notre-pere.html" %}
 
-<p><a href="#d_notre_pere" id="d_notre_pere">===</a></p>
+    <p><a href="#trio_ste_marie" id="trio_ste_marie">===</a></p>
 
-{% include path + "notre-pere.html" %}
+    {% include path + "ste-marie.html" %}
 
-<p><a href="#rondes" class="bleu">Revenir en haut</a></p>
+    {% include path + "trio-grains.html" %}
+
+    <p><a href="#rondes" class="bleu">Revenir en haut</a></p>
+</div>
 
 <hr />
 
@@ -52,5 +47,5 @@
 
 <p><a href="#" class="bleu">Revenir en haut</a></p>
 
-<script src="/public/js/reset.js"></script>
+<script src="/public/js/ch-st-charbel.js"></script>
 {% endblock %}

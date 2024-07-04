@@ -23,13 +23,24 @@ Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>.
 Amen.
 </p>
 
-<hr />
+<p><a href="#rondes" id="rondes">===</a></p>
 
-<p>Ô Père de vérité, voici votre Fils, victime pour vous plaire.</p>
+<div>
+    <select id="sel_rondes" onchange="setSuites();">
+        <option>Bref de St Charbel</option>
+        <option>1. voeu de pauvreté</option>
+        <option>2. voeu de chasteté</option>
+        <option>3. voeu d'obéissance</option>
+        <option>4. messe quotidienne</option>
+        <option>5. Sainte Eucharistie</option>
+        <option>6. dévotion pour Ste Marie</option>
+    </select>
+</div>
 
-<p><a href="#b_notre_pere" id="b_notre_pere">===</a></p>
+<p id="bref">Ô Père de vérité, voici votre Fils, victime pour vous plaire.</p>
 
-<h2>Notre Père</h2>
+<div id="suite">
+    <h2>Notre Père</h2>
 
 <p class="priere">
 Notre Père, qui est aux cieux,<br>
@@ -44,22 +55,9 @@ mais délivre-nous du mal.<br>
 Amen.
 </p>
 
-<hr />
+    <p><a href="#trio_ste_marie" id="trio_ste_marie">===</a></p>
 
-<p><a href="#rondes" id="rondes">===</a></p>
-
-<div>
-    <select id="sel_ronde" onchange="resetFirst();">
-        <option>1. voeu de pauvreté</option>
-        <option>2. voeu de chasteté</option>
-        <option>3. voeu d'obéissance</option>
-        <option>4. messe quotidienne</option>
-        <option>5. Sainte Eucharistie</option>
-        <option>6. dévotion pour Ste Marie</option>
-    </select>
-</div>
-
-<h2>Je vous salue Marie</h2>
+    <h2>Je vous salue Marie</h2>
 
 <p class="priere">
 Je vous salue Marie, pleine de grâce,<br>
@@ -72,7 +70,7 @@ maintenant et à l'heure de notre mort.<br>
 Amen.
 </p>
 
-<p>
+    <p>
     
     <input type="radio" name="n_trio" id="n1"  checked  />
     <label for="n1">0</label>
@@ -88,24 +86,8 @@ Amen.
     
 </p>
 
-<p><a href="#d_notre_pere" id="d_notre_pere">===</a></p>
-
-<h2>Notre Père</h2>
-
-<p class="priere">
-Notre Père, qui est aux cieux,<br>
-que ton nom soit sanctifié,<br>
-que ton règne vienne,<br>
-que ta volonté soit faite, sur la terre comme au ciel.<br>
-Donne-nous aujourd'hui notre pain de ce jour,<br>
-et pardonne-nous nos offenses,<br>
-comme nous pardonnons aussi à ceux qui nous ont offensés,<br>
-et ne nous laisse pas entrer en tentation,<br>
-mais délivre-nous du mal.<br>
-Amen.
-</p>
-
-<p><a href="#rondes" class="bleu">Revenir en haut</a></p>
+    <p><a href="#rondes" class="bleu">Revenir en haut</a></p>
+</div>
 
 <hr />
 
@@ -138,7 +120,7 @@ Amen.
 
 <p><a href="#" class="bleu">Revenir en haut</a></p>
 
-<script src="/public/js/reset.js"></script>
+<script src="/public/js/ch-st-charbel.js"></script>
 
     </main>
 </body>
