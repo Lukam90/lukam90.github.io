@@ -171,8 +171,9 @@ convert_jinja_single("exercices/ex-nombres", litanies)
 
 #convert_jinja_list("prieres", prieres)
 convert_jinja_single("prieres/c-liberation")
-convert_jinja_single("prieres/c-misericorde")
-convert_jinja_single("prieres/c-st-charbel")
+convert_jinja_single("prieres/c-sacrement")
+#convert_jinja_single("prieres/c-misericorde")
+#convert_jinja_single("prieres/c-st-charbel")
 
 ## Profil
 

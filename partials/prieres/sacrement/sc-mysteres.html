@@ -1,12 +1,10 @@
 {% set mysteres = [
-    "1. en mémoire de sa passion et de sa mort",
-    "2. pour demeurer auprès de nous chaque jour de notre vie",
-    "3. pour perpétuer son sacrifice pour nous sur tous les autels de la chrétienté, jusqu’à la fin des temps",
-    "4. pour être le pain et le vin de notre âme, notre nourriture spirituelle",
-    "5. pour nous visiter au moment de notre mort et nous emmener avec lui au paradis",
+    "1. en mémoire de sa passion et de sa mort.",
+    "2. pour demeurer auprès de nous chaque jour de notre vie.",
+    "3. pour perpétuer son sacrifice pour nous sur tous les autels de la chrétienté, jusqu’à la fin des temps.",
+    "4. pour être le pain et le vin de notre âme, notre nourriture spirituelle.",
+    "5. pour nous visiter au moment de notre mort et nous emmener avec lui au paradis.",
 ] %}
-
-<p><a href="#haut" id="haut">===</a></p>
 
 <p>Jésus a institué le Saint Sacrement</p>
 
@@ -17,18 +15,17 @@
 </p>
 {% endfor %}
 
-<p>***</p>
+<p id="dz_notre_pere"><a href="#dz_notre_pere">===</a></p>
+
+{% include path + "notre-pere.html" %}
+
+<p id="dz_min"><a href="#dz_min">***</a></p>
 
 <p class="priere">
 Jésus, sois loué à chaque instant,<br> 
-dans le Saint Sacrement, aujourd’hui et toujours.<br>
-Jésus, sois loué dans le Saint Sacrement.
+dans le Saint Sacrement, aujourd’hui et toujours.
 </p>
 
 {% include path + "dz-grains.html" %}
 
-<p><a href="#dz_notre_pere" id="dz_notre_pere">===</a></p>
-
-{% include path + "notre-pere.html" %}
-
-<p><a href="#haut" class="bleu">Retour en haut</a></p>
+<p><a href="#mysteres" class="bleu">Retour en haut</a></p>

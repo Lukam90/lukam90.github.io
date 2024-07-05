@@ -2,20 +2,13 @@
 
 <hr />
 
-<p><a href="#b_notre_pere" id="b_notre_pere">===</a></p>
-
 {% include path + "notre-pere.html" %}
 
 <p><a href="#b_ste_marie" id="b_ste_marie">===</a></p>
 
 {% include path + "ste-marie.html" %}
 
-<p>
-    {% for nb in range(0, 4) %}
-    <input type="radio" name="nbase" id="nbase_{{ loop.index }}" {% if loop.first %} checked {% endif %} />
-    <label for="nbase_{{ loop.index }}">{{ nb }}</label>
-    {% endfor %}
-</p>
+{% include path + "trio-vertus.html" %}
 
 <p><a href="#b_gloire_pere" id="b_gloire_pere">===</a></p>
 
