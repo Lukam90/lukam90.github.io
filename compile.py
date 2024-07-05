@@ -149,7 +149,7 @@ m_data = {}
 m_data["misericorde"] = convert_text_data("misericorde")
 
 litanies = {}
-litanies["st-charbel"] = convert_text_data("st-charbel")
+litanies["pere-eternel"] = convert_text_data("pere-eternel")
 
 # Compilation
 
