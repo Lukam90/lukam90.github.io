@@ -24,3 +24,21 @@
     {% endfor %}
 </ul>
 {% endmacro %}
+
+<!-- Titres (H2) -->
+
+{% macro header(id, title) %}
+<h2 id="{{ id }}"><a href="#{{ id }}">{{ title }}</a></h2>
+{% endmacro %}
+
+<!-- Ancres -->
+
+{% macro anchor(id) %}
+<div id="{{ id }}"><a href="#{{ id }}">***</a></div>
+{% endmacro %}
+
+<!-- Lien de retour vers le haut -->
+
+{% macro return_link(id = "") %}
+<p><a href="#{{ id }}" class="bleu">Retour en haut</a></p>
+{% endmacro %}

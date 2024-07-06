@@ -1,6 +1,4 @@
-<p><a href="#ancre_choeurs" id="ancre_choeurs">===</a></p>
-
-<h2 id="haut">Choeurs</h2>
+{{ mc.header("choeurs", "Choeurs") }}
 
 <p>
     <select id="sel_choeurs" onchange="updateText();">
@@ -19,7 +17,7 @@ Amen.
 
 {% include path + "notre-pere.html" %}
 
-<p><a href="#choeur_ste_marie" id="choeur_ste_marie">===</a></p>
+{{ mc.anchor("choeur_ste_marie") }}
 
 {% include path + "ste-marie.html" %}
 
@@ -30,4 +28,4 @@ Amen.
     {% endfor %}
 </p>
 
-<p><a href="#haut" class="bleu">Revenir en haut</a></p>
+{{ mc.return_link("choeurs") }}
