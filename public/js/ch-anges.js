@@ -1,8 +1,11 @@
+const selAnges = document.getElementById("sel_anges");
 const selChoeurs = document.getElementById("sel_choeurs");
-const firstRadioBtn = document.getElementById('n1');
 
+const spanAnge = document.getElementById("ange");
 const spanChoeur = document.getElementById("choeur");
 const spanSuite = document.getElementById("suite");
+
+const firstRadioBtn = document.getElementById('n1');
 
 const suites = {
     "séraphins" : "nous rende dignes de brûler du feu de la charité parfaite",
@@ -25,6 +28,14 @@ function updateText() {
     spanChoeur.innerText = choeur;
     spanSuite.innerText = suite;
 
+    resetFirst();
+}
+
+function updateAngel()
+{
+    spanAnge.innerText = selAnges.value;
+    selChoeurs.selectedIndex = 0;
+    
     resetFirst();
 }
 

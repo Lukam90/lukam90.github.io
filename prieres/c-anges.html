@@ -79,6 +79,17 @@ Amen.
 
 
 <p>
+    Je prie ce chapelet à l'attention de 
+
+    <select id="sel_anges" onchange="updateAngel();">
+        <option>Saint Michel</option>
+        <option>Saint Raphaël</option>
+        <option>Saint Gabriel</option>
+        <option>mon ange gardien</option>
+    </select>
+</p>
+
+<p>
     <select id="sel_choeurs" onchange="updateText();">
         
         <option value="séraphins">1. séraphins</option>
@@ -103,7 +114,7 @@ Amen.
 </p>
 
 <p class="priere">
-Par l'intercession de Saint Michel et du choeur céleste des <span id="choeur" class="gras">séraphins</span>,<br>
+Par l'intercession de <span id="ange" class="gras">Saint Michel</span> et du choeur céleste des <span id="choeur" class="gras">séraphins</span>,<br>
 que le Seigneur <span id="suite" class="gras">nous rende dignes de brûler du feu de la charité parfaite</span>.<br>
 
 Amen.
