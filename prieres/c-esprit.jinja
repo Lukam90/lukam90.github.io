@@ -1,0 +1,72 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set title = "C-Esprit" %}
+
+{% set path = "partials/prieres/" %}
+{% set gpath = path + "grains/" %}
+
+{% block content %}
+<h1>Chapelet des 7 dons du Saint-Esprit</h1>
+
+{% include path + "signe-croix.html" %}
+
+<hr />
+
+{% include path + "credo.html" %}
+
+{{ mc.anchor("b_notre_pere") }}
+
+{% include path + "notre-pere.html" %}
+
+{{ mc.anchor("b_ste_marie") }}
+
+{% include path + "ste-marie.html" %}
+
+{% include gpath + "trio-vertus.html" %}
+
+{{ mc.anchor("b_gloire_pere") }}
+
+{% include path + "gloire-pere.html" %}
+
+<hr id="dons" />
+
+{% set dons = ["de sagesse", "de conseil", "de force", "d'intelligence", "de science", "de piété", "de la crainte de Dieu"] %}
+
+<select onchange="resetFirst();">
+    <option>1. le don de sagesse</option>
+    <option>2. le don de conseil</option>
+    <option>3. le don de force</option>
+    <option>4. le don d'intelligence</option>
+    <option>5. le don de science</option>
+    <option>6. le don de piété</option>
+    <option>7. le don de la crainte de Dieu</option>
+</select>
+
+<p class="priere">
+_
+</p>
+
+<p>***</p>
+
+<p class="priere">
+Viens, Esprit-Saint,<br>
+remplis le coeur de tes fidèles<br>
+et allume en eux le feu de ton amour.
+</p>
+
+{% include gpath + "septaine.html" %}
+
+<hr />
+
+{% include path + "gloire-pere.html" %}
+
+{% include gpath + "trio-grains.html" %}
+
+<hr />
+
+{% include path + "signe-croix.html" %}
+
+{{ mc.return_link() }}
+
+<script src="/public/js/reset.js"></script>
+{% endblock %}

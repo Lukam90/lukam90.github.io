@@ -64,10 +64,11 @@ Amen.
 
 
 <p class="priere">
-Jésus, <b>aie pitié de</b> moi !<br>
-Jésus, <b>guéris</b>-moi !<br>
-Jésus, <b>sauve</b>-moi !<br>
-Jésus, <b>libère</b>-moi !
+Jésus, <b>aie pitié de</b> __ !<br>
+Jésus, <b>guéris</b> __ !<br>
+Jésus, <b>sauve</b> __ !<br>
+Jésus, <b>libère</b> __ !<br>
+Jésus, <b>convertis</b> __ !<br>
 </p>
 
 <p>
@@ -88,7 +89,7 @@ Jésus, <b>libère</b>-moi !
 
 <hr id="rondes" />
 
-<select onchange="resetFirst();">
+<select id="sel_rondes" onchange="updateText();">
     
     <option>Ronde n°1</option>
     
@@ -106,12 +107,7 @@ Jésus, <b>libère</b>-moi !
 
 <p>***</p>
 
-<p class="priere">
-Jésus, <b>aie pitié de</b> moi !<br>
-Jésus, <b>guéris</b>-moi !<br>
-Jésus, <b>sauve</b>-moi !<br>
-Jésus, <b>libère</b>-moi !
-</p>
+<p>Jésus, <span id="clausule" class="gras">aie pitié de</span> __ !</p>
 
 <p>
     
@@ -166,7 +162,7 @@ Amen.
 <p><a href="#" class="bleu">Retour en haut</a></p>
 
 
-<script src="/public/js/reset.js"></script>
+<script src="/public/js/ch-liberation.js"></script>
 
     </main>
 </body>
