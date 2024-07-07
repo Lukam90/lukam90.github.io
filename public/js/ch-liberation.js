@@ -1,15 +1,14 @@
-const selRondes = document.getElementById("sel_rondes");
 const spanClausule = document.getElementById("clausule");
 
 const firstRadioBtn = document.getElementById('n1');
 
-const clausules = ["aie pitié de", "guéris", "sauve", "libère", "convertis"];
+const clausules = ["aie pitié de nous", "guéris-nous", "sauve-nous", "libère-nous", "aide-nous"];
 
 let index = 0;
 
-function updateText()
+function updateText(value)
 {
-    index = selRondes.selectedIndex;
+    index = parseInt(value) - 1;
 
     spanClausule.innerText = clausules[index];
 

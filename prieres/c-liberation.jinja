@@ -31,17 +31,18 @@
 
 <hr id="rondes" />
 
-<select id="sel_rondes" onchange="updateText();">
+<p>
     {% for nb in range(1, 6) %}
-    <option>Ronde n°{{ nb }}</option>
+    <input type="radio" name="rondes" id="rondes_{{ loop.index }}" onclick="updateText('{{ nb }}');" {% if loop.first %} checked {% endif %} />
+    <label for="rondes_{{ loop.index }}">{{ nb }}</label>
     {% endfor %}
-</select>
+</p>
 
 {% include lpath + "lib-fils.html" %}
 
 <p>***</p>
 
-<p>Jésus, <span id="clausule" class="gras">aie pitié de</span> __ !</p>
+<p>Jésus, <span id="clausule" class="gras">aie pitié de nous</span> !</p>
 
 {% include path + "dz-grains.html" %}
 
