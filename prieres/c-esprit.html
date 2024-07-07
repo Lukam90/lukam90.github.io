@@ -119,9 +119,9 @@ pour les siècles des siècles.<br>
 Amen.
 </p>
 
-<hr id="dons" />
+<hr id="a_dons" />
 
-<select onchange="resetFirst();">
+<select id="sel_dons" onchange="setSuite();">
     <option>1. la sagesse</option>
     <option>2. le conseil</option>
     <option>3. la force</option>
@@ -131,8 +131,11 @@ Amen.
     <option>7. la crainte de Dieu</option>
 </select>
 
-<p class="priere">
-_
+<p id="suite" class="priere">
+Esprit Saint, accorde-nous le don de la sagesse,<br>
+que nous sachions reconnaître Dieu présent et manifesté dans le monde,<br>
+considérant toutes choses dans sa lumière<br>
+et dans le souvenir permanent de la vie éternelle.
 </p>
 
 <p>***</p>
@@ -176,17 +179,17 @@ Amen.
 
 <p>
     
-    <input type="radio" name="n_trio" id="n1"  checked  />
-    <label for="n1">0</label>
+    <input type="radio" name="n_trio" id="trio_1"  checked  />
+    <label for="trio_1">0</label>
     
-    <input type="radio" name="n_trio" id="n2"  />
-    <label for="n2">1</label>
+    <input type="radio" name="n_trio" id="trio_2"  />
+    <label for="trio_2">1</label>
     
-    <input type="radio" name="n_trio" id="n3"  />
-    <label for="n3">2</label>
+    <input type="radio" name="n_trio" id="trio_3"  />
+    <label for="trio_3">2</label>
     
-    <input type="radio" name="n_trio" id="n4"  />
-    <label for="n4">3</label>
+    <input type="radio" name="n_trio" id="trio_4"  />
+    <label for="trio_4">3</label>
     
 </p>
 
@@ -202,7 +205,7 @@ Amen.
 <p><a href="#" class="bleu">Retour en haut</a></p>
 
 
-<script src="/public/js/reset.js"></script>
+<script src="/public/js/ch-esprit.js"></script>
 
     </main>
 </body>
