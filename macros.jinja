@@ -15,6 +15,15 @@
 
 <!-- Liste de liens -->
 
+{% macro vlatine(id) %}
+<p>
+    <input type="checkbox" name="langue" id="{{ id }}_latin" onchange="switchLang();" />
+    <label for="{{ id }}_latin">Version latine</label>
+</p>
+{% endmacro %}
+
+<!-- Liste de liens -->
+
 {% macro links(data, path, title) %}
 <h2>{{ title }}</h2>
 

@@ -83,3 +83,9 @@ label:hover {
     cursor: pointer;
     color: blue;
 }
+
+/* Attributs */
+
+[lang="latin"] {
+    display: none;
+}

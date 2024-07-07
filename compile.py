@@ -148,9 +148,6 @@ profil = ["cv-imprime", "portfolio"]
 m_data = {}
 m_data["misericorde"] = convert_text_data("misericorde")
 
-litanies = {}
-litanies["pere-eternel"] = convert_text_data("pere-eternel")
-
 # Compilation
 
 ## Markdown
@@ -165,7 +162,7 @@ convert_jinja_single("index", index)
 ## Exercices
 
 #convert_jinja_list("exercices", exercices)
-convert_jinja_single("exercices/ex-nombres", litanies)
+convert_jinja_single("exercices/ex-nombres")
 
 ## Prières
 
