@@ -1,9 +1,9 @@
-[
+const m_douloureux = [
     {
-        "nom" : "1. L'agonie de Jésus",
-        "fruit" : "le regret de nos péchés",
-        "intro" : "m_agonie_jesus",
-        "clausules" : [
+        nom : "1. L'agonie de Jésus",
+        fruit : "le regret de nos péchés",
+        intro : "m_agonie_jesus",
+        clausules : [
             "qui prend sur lui tous nos péchés",
             "dont l’âme est triste à en mourir",
             "qui prie dans l’angoisse",
@@ -17,10 +17,10 @@
         ]
     },
     {
-        "nom" : "2. La flagellation",
-        "fruit" : "la maîtrise des sens",
-        "intro" : "m_flagellation",
-        "clausules" : [
+        nom : "2. La flagellation",
+        fruit : "la maîtrise des sens",
+        intro : "m_flagellation",
+        clausules : [
             "le plus beau des enfants des hommes",
             "qui est flagellé jusqu’au sang",
             "dont le corps devient une plaie",
@@ -34,10 +34,10 @@
         ]
     },
     {
-        "nom" : "3. Le couronnement d'épines",
-        "fruit" : "l'humilité et le pardon de nos péchés d'orgueil",
-        "intro" : "m_couronnement_epines",
-        "clausules" : [
+        nom : "3. Le couronnement d'épines",
+        fruit : "l'humilité et le pardon de nos péchés d'orgueil",
+        intro : "m_couronnement_epines",
+        clausules : [
             "qui est notre seul roi",
             "humilié pour expier notre orgueil",
             "que les soldats couronnent d’épines",
@@ -51,10 +51,10 @@
         ]
     },
     {
-        "nom" : "4. Le portement de croix",
-        "fruit" : "la patience dans les épreuves",
-        "intro" : "m_portement_croix",
-        "clausules" : [
+        nom : "4. Le portement de croix",
+        fruit : "la patience dans les épreuves",
+        intro : "m_portement_croix",
+        clausules : [
             "dont Ponce Pilate proclame l’innocence",
             "condamné à mort et chargé de sa croix",
             "qui tombe trois fois sous le poids de la croix",
@@ -68,10 +68,10 @@
         ]
     },
     {
-        "nom" : "5. La crucifixion",
-        "fruit" : "la soif du salut des âmes",
-        "intro" : "m_crucifixion",
-        "clausules" : [
+        nom : "5. La crucifixion",
+        fruit : "la soif du salut des âmes",
+        intro : "m_crucifixion",
+        clausules : [
             "dépouillé de ses vêtements",
             "crucifié entre deux malfaiteurs",
             "qui crie : \"J’ai soif.\"",

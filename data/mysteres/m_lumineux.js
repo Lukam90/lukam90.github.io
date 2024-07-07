@@ -1,9 +1,9 @@
-[
+const m_lumineux = [
     {
-        "nom" : "1. Le baptême de Jésus",
-        "fruit" : "la fidelité aux promesses de notre baptême",
-        "intro" : "m_bapteme_jesus",
-        "clausules" : [
+        nom : "1. Le baptême de Jésus",
+        fruit : "la fidelité aux promesses de notre baptême",
+        intro : "m_bapteme_jesus",
+        clausules : [
             "qui reçoit le baptême de St Jean dans le Jourdain",
             "qui a voulu s’assimiler à l’humanité pécheresse",
             "qui a pris sur lui tous les péchés du monde",
@@ -17,10 +17,10 @@
         ]
     },
     {
-        "nom" : "2. Les noces de Cana",
-        "fruit" : "la confiance en Marie",
-        "intro" : "m_noces_cana",
-        "clausules" : [
+        nom : "2. Les noces de Cana",
+        fruit : "la confiance en Marie",
+        intro : "m_noces_cana",
+        clausules : [
             "qui est invité au repas de noce",
             "à qui sa mère dit : \"Ils n’ont plus de vin.\"",
             "qui dit à Ste Marie : \"Femme, qu’y a-t-il entre toi et moi ?\"",
@@ -34,10 +34,10 @@
         ]
     },
     {
-        "nom" : "3. L'annonce du royaume",
-        "fruit" : "la conversion des coeurs",
-        "intro" : "m_annonce_royaume",
-        "clausules" : [
+        nom : "3. L'annonce du royaume",
+        fruit : "la conversion des coeurs",
+        intro : "m_annonce_royaume",
+        clausules : [
             "qui vient nous annoncer la Bonne Nouvelle",
             "qui nous appelle au repentir et à la foi",
             "qui est venu pardonner nos péchés",
@@ -51,10 +51,10 @@
         ]
     },
     {
-        "nom" : "4. La transfiguration",
-        "fruit" : "la grâce d'une vie intérieure",
-        "intro" : "m_transfiguration",
-        "clausules" : [
+        nom : "4. La transfiguration",
+        fruit : "la grâce d'une vie intérieure",
+        intro : "m_transfiguration",
+        clausules : [
             "qui invite St Pierre, St Jacques et St Jean sur la montagne",
             "qui est transfiguré durant sa prière",
             "qui devient d’une blancheur fulgurante",
@@ -68,10 +68,10 @@
         ]
     },
     {
-        "nom" : "5. L'institution de l'eucharistie",
-        "fruit" : "l'amour de l'eucharistie",
-        "intro" : "m_eucharistie",
-        "clausules" : [
+        nom : "5. L'institution de l'eucharistie",
+        fruit : "l'amour de l'eucharistie",
+        intro : "m_eucharistie",
+        clausules : [
             "qui célèbre la pâque avec ses disciples",
             "qui bénit le pain et la coupe en rendant grâce",
             "qui dit \"Ceci est mon corps livré pour vous.\"",

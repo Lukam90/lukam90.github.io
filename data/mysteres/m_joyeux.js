@@ -1,9 +1,9 @@
-[
+const m_joyeux = [
     {
-        "nom" : "1. L'annonciation",
-        "fruit" : "l'humilité",
-        "intro" : "m_annonciation",
-        "clausules" : [
+        nom : "1. L'annonciation",
+        fruit : "l'humilité",
+        intro : "m_annonciation",
+        clausules : [
             "dont l'archange Gabriel annonce la venue",
             "qui est le fils bien-aimé de Dieu",
             "qui vient en toi par l'Esprit Saint",
@@ -17,10 +17,10 @@
         ]
     },
     {
-        "nom" : "2. La visitation",
-        "fruit" : "la charité fraternelle",
-        "intro" : "m_visitation",
-        "clausules" : [
+        nom : "2. La visitation",
+        fruit : "la charité fraternelle",
+        intro : "m_visitation",
+        clausules : [
             "que tu portes en toi chez Ste Elisabeth",
             "qui te transporte d’allégresse",
             "qui apporte la joie à St Elisabeth",
@@ -34,10 +34,10 @@
         ]
     },
     {
-        "nom" : "3. La nativité",
-        "fruit" : "l'esprit de pauvreté",
-        "intro" : "m_nativite",
-        "clausules" : [
+        nom : "3. La nativité",
+        fruit : "l'esprit de pauvreté",
+        intro : "m_nativite",
+        clausules : [
             "petit bébé dans la crèche",
             "image du Dieu invisible",
             "né pour nous à Bethléem",
@@ -51,10 +51,10 @@
         ]
     },
     {
-        "nom" : "4. La présentation de Jésus au temple",
-        "fruit" : "la pureté et l'esprit d'obéissance",
-        "intro" : "m_presentation_temple",
-        "clausules" : [
+        nom : "4. La présentation de Jésus au temple",
+        fruit : "la pureté et l'esprit d'obéissance",
+        intro : "m_presentation_temple",
+        clausules : [
             "que tu présentes au Temple",
             "qui s’offre à son Père",
             "que Siméon poussé par l’Esprit",
@@ -68,10 +68,10 @@
         ]
     },
     {
-        "nom" : "5. Le recouvrement de Jésus au temple",
-        "fruit" : "la recherche de Dieu en tout",
-        "intro" : "m_recouvrement_temple",
-        "clausules" : [
+        nom : "5. Le recouvrement de Jésus au temple",
+        fruit : "la recherche de Dieu en tout",
+        intro : "m_recouvrement_temple",
+        clausules : [
             "qui vient prier au temple avec toi et Joseph",
             "qui reste au temple à votre insu",
             "qui s’occupe des affaires de son Père",
@@ -84,4 +84,4 @@
             "dont tu médites les paroles en ton cœur"
         ]
     }
-]
+];

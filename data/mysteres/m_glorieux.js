@@ -1,9 +1,9 @@
-[
+const m_glorieux = [
     {
-        "nom" : "1. La résurrection",
-        "fruit" : "la foi et la conversion des coeurs",
-        "intro" : "m_resurrection",
-        "clausules" : [
+        nom : "1. La résurrection",
+        fruit : "la foi et la conversion des coeurs",
+        intro : "m_resurrection",
+        clausules : [
             "qui sort glorieux du tombeau",
             "dont les anges annoncent la résurrection",
             "dont St Pierre et St Jean trouvent le tombeau vide",
@@ -17,10 +17,10 @@
         ]
     },
     {
-        "nom" : "2. L'ascension",
-        "fruit" : "l'espérance et le désir du ciel",
-        "intro" : "m_ascension",
-        "clausules" : [
+        nom : "2. L'ascension",
+        fruit : "l'espérance et le désir du ciel",
+        intro : "m_ascension",
+        clausules : [
             "qui monte glorieux au Ciel",
             "qui règne glorieux à la droite du Père",
             "qui nous prépare une place auprès de lui",
@@ -34,10 +34,10 @@
         ]
     },
     {
-        "nom" : "3. La Pentecôte",
-        "fruit" : "la charité et le zèle apostolique",
-        "intro" : "m_pentecote",
-        "clausules" : [
+        nom : "3. La Pentecôte",
+        fruit : "la charité et le zèle apostolique",
+        intro : "m_pentecote",
+        clausules : [
             "qui envoie le Saint Esprit aux apôtres",
             "dont l’Esprit descend comme des langues de feu",
             "dont l’Esprit éclaire les apôtres",
@@ -51,10 +51,10 @@
         ]
     },
     {
-        "nom" : "4. L'assomption",
-        "fruit" : "la grâce d'une bonne mort et la dévotion filiale à Marie",
-        "intro" : "m_assomption",
-        "clausules" : [
+        nom : "4. L'assomption",
+        fruit : "la grâce d'une bonne mort et la dévotion filiale à Marie",
+        intro : "m_assomption",
+        clausules : [
             "qui nous a donné sa mère",
             "qui te préserve de la corruption du tombeau",
             "qui t’élève corps et âme dans sa gloire",
@@ -68,10 +68,10 @@
         ]
     },
     {
-        "nom" : "5. Le couronnement de Marie",
-        "fruit" : "la persévérance finale et la confiance en Marie",
-        "intro" : "m_couronnement_marie",
-        "clausules" : [
+        nom : "5. Le couronnement de Marie",
+        fruit : "la persévérance finale et la confiance en Marie",
+        intro : "m_couronnement_marie",
+        clausules : [
             "qui te couronne reine du Ciel",
             "qui fait de toi la reine des apôtres",
             "qui fait de toi la reine des martyrs",

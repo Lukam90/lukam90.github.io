@@ -1,3 +1,10 @@
+const rosaire = {
+    "joyeux" : m_joyeux,
+    "lumineux" : m_lumineux,
+    "douloureux" : m_douloureux,
+    "glorieux" : m_glorieux
+}
+
 const selType = document.getElementById("s_type");
 const selMysteres = document.getElementById("s_mysteres");
 
@@ -5,6 +12,8 @@ const spanClausule = document.getElementById("clausule");
 
 const dzPremier = document.getElementById('n1');
 const dzFin = document.getElementById("fin_dizaine");
+
+let btnRadio;
 
 let chapelet, reponse;
 
@@ -17,6 +26,12 @@ let clausule;
 
 getDonnees(type);
 
+for (let i = 0 ; i < 10 ; i++)
+{
+    btnRadio = document.getElementById("n" + (i + 1));
+    btnRadio.addEventListener("click", () => setClausule(i));
+}
+
 function reset()
 {
     dzPremier.checked = true;
@@ -25,7 +40,7 @@ function reset()
     setClausule(0);
 }
 
-async function getDonnees(type) 
+function getDonnees(type) 
 {
     mysteres = [];
     fruits = [];
@@ -33,8 +48,7 @@ async function getDonnees(type)
     dizaines = [];
     clausules = [];
 
-    reponse = await fetch(`/data/json/mysteres/${type}.json`);
-    chapelet = await reponse.json();
+    chapelet = rosaire[type];
 
     for (let mystere of chapelet) 
     {
@@ -47,13 +61,13 @@ async function getDonnees(type)
     clausules = dizaines[0];
 }
 
-async function majListes() 
+function majListes() 
 {
     index = 0;
 
     type = selType.value;
 
-    await getDonnees(type);
+    getDonnees(type);
 
     for (let optMystere of selMysteres.children) {
         optMystere.innerText = mysteres[index++];
@@ -73,10 +87,8 @@ function majClausules()
     reset();
 }
 
-function setClausule(value)
+function setClausule(index)
 {
-    index = parseInt(value) - 1;
-
     clausule = clausules[index];
 
     spanClausule.textContent = clausule;
