@@ -24,13 +24,19 @@ let index = 0;
 let type = "joyeux";
 let clausule;
 
-getDonnees(type);
+// Initialisation des données
+
+majDonnees(type);
+
+// Ajout de l'événement de clic sur les boutons radio
 
 for (let i = 0 ; i < 10 ; i++)
 {
     btnRadio = document.getElementById("n" + (i + 1));
     btnRadio.addEventListener("click", () => setClausule(i));
 }
+
+// Réinitialisation des cases et de la clausule
 
 function reset()
 {
@@ -40,7 +46,9 @@ function reset()
     setClausule(0);
 }
 
-function getDonnees(type) 
+// MAJ des données d'un chapelet selon le type
+
+function majDonnees(type) 
 {
     mysteres = [];
     fruits = [];
@@ -61,13 +69,15 @@ function getDonnees(type)
     clausules = dizaines[0];
 }
 
+// MAJ de la liste des mystères selon le type
+
 function majListes() 
 {
     index = 0;
 
     type = selType.value;
 
-    getDonnees(type);
+    majDonnees(type);
 
     for (let optMystere of selMysteres.children) {
         optMystere.innerText = mysteres[index++];
@@ -78,6 +88,8 @@ function majListes()
     reset();
 }
 
+// MAJ des clausules lors de la sélection du mystère
+
 function majClausules() 
 {
     index = selMysteres.selectedIndex;
@@ -86,6 +98,8 @@ function majClausules()
 
     reset();
 }
+
+// MAJ de la clausule lors du clic sur un bouton radio
 
 function setClausule(index)
 {

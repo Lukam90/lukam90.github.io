@@ -50,3 +50,9 @@
 {% macro return_link(id = "") %}
 <p><a href="#{{ id }}" class="bleu">Retour en haut</a></p>
 {% endmacro %}
+
+<!-- Lien simple -->
+
+{% macro link(href, content) %}
+<a href="{{ href }}" class="bleu" target="_blank">{{ content }}</a>
+{% endmacro %}
