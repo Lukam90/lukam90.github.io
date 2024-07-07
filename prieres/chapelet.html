@@ -154,14 +154,14 @@ Amen.
 <p><b>joyeux</b> (L, S) - <b>lumineux</b> (J) - <b>douloureux</b> (Ma, V) - <b>glorieux</b> (Me, D)</p>
 
 <p>
-    <select id="s_type" onchange="majListes()">
+    <select id="s_type" onchange="majListes();">
         <option>joyeux</option>
         <option>lumineux</option>
         <option>douloureux</option>
         <option>glorieux</option>
     </select>
 
-    <select id="s_mysteres" onchange="majInfo()">
+    <select id="s_mysteres" onchange="majClausules();">
         <option>1. L'annonciation</option>
         <option>2. La visitation</option>
         <option>3. La nativité</option>
@@ -198,51 +198,51 @@ Amen.
 <h2>Je vous salue Marie</h2>
 
 <p class="priere" lang="fr">
-Je vous salue Marie, pleine de grâce,<br>
-le Seigneur est avec vous.<br>
-Vous êtes bénie entre toutes les femmes,<br>
-et Jésus, <span id="clausule" class="gras">incarné</span>, est béni.<br>
+Je te salue Marie, pleine de grâce,<br>
+le Seigneur est avec toi.<br>
+Tu es bénie entre toutes les femmes,<br>
+et Jésus, <span id="clausule" class="gras">dont l'archange Gabriel annonce la venue</span>, est béni.<br>
 Sainte Marie, Mère de Dieu,<br>
-priez pour nous, pauvres pécheurs,<br>
+prie pour nous, pauvres pécheurs,<br>
 maintenant et à l'heure de notre mort.<br>
 Amen.
 </p>
 
 <p>
     
-    <input type="radio" name="n_dizaine" id="n1"  checked  />
-    <label for="n1">0</label>
+    <input type="radio" name="n_dizaine" id="n1"  checked  onclick="setClausule('1');" />
+    <label for="n1">1</label>
     
-    <input type="radio" name="n_dizaine" id="n2"  />
-    <label for="n2">1</label>
+    <input type="radio" name="n_dizaine" id="n2"  onclick="setClausule('2');" />
+    <label for="n2">2</label>
     
-    <input type="radio" name="n_dizaine" id="n3"  />
-    <label for="n3">2</label>
+    <input type="radio" name="n_dizaine" id="n3"  onclick="setClausule('3');" />
+    <label for="n3">3</label>
     
-    <input type="radio" name="n_dizaine" id="n4"  />
-    <label for="n4">3</label>
+    <input type="radio" name="n_dizaine" id="n4"  onclick="setClausule('4');" />
+    <label for="n4">4</label>
     
-    <input type="radio" name="n_dizaine" id="n5"  />
-    <label for="n5">4</label>
+    <input type="radio" name="n_dizaine" id="n5"  onclick="setClausule('5');" />
+    <label for="n5">5</label>
     
-    <input type="radio" name="n_dizaine" id="n6"  />
-    <label for="n6">5</label>
+    <input type="radio" name="n_dizaine" id="n6"  onclick="setClausule('6');" />
+    <label for="n6">6</label>
     
-    <input type="radio" name="n_dizaine" id="n7"  />
-    <label for="n7">6</label>
+    <input type="radio" name="n_dizaine" id="n7"  onclick="setClausule('7');" />
+    <label for="n7">7</label>
     
-    <input type="radio" name="n_dizaine" id="n8"  />
-    <label for="n8">7</label>
+    <input type="radio" name="n_dizaine" id="n8"  onclick="setClausule('8');" />
+    <label for="n8">8</label>
     
-    <input type="radio" name="n_dizaine" id="n9"  />
-    <label for="n9">8</label>
+    <input type="radio" name="n_dizaine" id="n9"  onclick="setClausule('9');" />
+    <label for="n9">9</label>
     
-    <input type="radio" name="n_dizaine" id="n10"  />
-    <label for="n10">9</label>
+    <input type="radio" name="n_dizaine" id="n10"  onclick="setClausule('10');" />
+    <label for="n10">10</label>
     
-    <input type="radio" name="n_dizaine" id="n11"  />
-    <label for="n11">10</label>
-    
+
+    <input type="checkbox" id="fin_dizaine" />
+    <label for="fin_dizaine">Fini</label>
 </p>
 
 

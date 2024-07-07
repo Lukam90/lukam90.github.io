@@ -4,7 +4,15 @@
 
 {% include rpath + "clausules-ste-marie.html" %}
 
-{% include gpath + "dz-grains.html" %}
+<p>
+    {% for nb in range(1, 11) %}
+    <input type="radio" name="n_dizaine" id="n{{ loop.index }}" {% if loop.first %} checked {% endif %} onclick="setClausule('{{ nb }}');" />
+    <label for="n{{ loop.index }}">{{ nb }}</label>
+    {% endfor %}
+
+    <input type="checkbox" id="fin_dizaine" />
+    <label for="fin_dizaine">Fini</label>
+</p>
 
 {{ mc.anchor("dz_gloire_pere") }}
 

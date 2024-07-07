@@ -1,10 +1,10 @@
 [
     {
-        "mystere" : "1. L'annonciation",
+        "nom" : "1. L'annonciation",
         "fruit" : "l'humilité",
         "intro" : "m_annonciation",
         "clausules" : [
-            "dont Gabriel annonce la venue",
+            "dont l'archange Gabriel annonce la venue",
             "qui est le fils bien-aimé de Dieu",
             "qui vient en toi par l'Esprit Saint",
             "dont tu es la mère toujours vierge",
@@ -17,7 +17,7 @@
         ]
     },
     {
-        "mystere" : "2. La visitation",
+        "nom" : "2. La visitation",
         "fruit" : "la charité fraternelle",
         "intro" : "m_visitation",
         "clausules" : [
@@ -34,7 +34,7 @@
         ]
     },
     {
-        "mystere" : "3. La nativité",
+        "nom" : "3. La nativité",
         "fruit" : "l'esprit de pauvreté",
         "intro" : "m_nativite",
         "clausules" : [
@@ -51,7 +51,7 @@
         ]
     },
     {
-        "mystere" : "4. La présentation de Jésus au temple",
+        "nom" : "4. La présentation de Jésus au temple",
         "fruit" : "la pureté et l'esprit d'obéissance",
         "intro" : "m_presentation_temple",
         "clausules" : [
@@ -68,7 +68,7 @@
         ]
     },
     {
-        "mystere" : "5. Le recouvrement de Jésus au temple",
+        "nom" : "5. Le recouvrement de Jésus au temple",
         "fruit" : "la recherche de Dieu en tout",
         "intro" : "m_recouvrement_temple",
         "clausules" : [

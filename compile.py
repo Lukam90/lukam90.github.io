@@ -158,6 +158,7 @@ m_data["misericorde"] = convert_text_data("misericorde")
 
 convert_jinja_single("index", index)
 #convert_jinja_single("cv-imprime")
+convert_jinja_single("test")
 
 ## Exercices
 

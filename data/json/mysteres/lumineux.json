@@ -1,6 +1,6 @@
 [
     {
-        "mystere" : "1. Le baptême de Jésus",
+        "nom" : "1. Le baptême de Jésus",
         "fruit" : "la fidelité aux promesses de notre baptême",
         "intro" : "m_bapteme_jesus",
         "clausules" : [
@@ -17,7 +17,7 @@
         ]
     },
     {
-        "mystere" : "2. Les noces de Cana",
+        "nom" : "2. Les noces de Cana",
         "fruit" : "la confiance en Marie",
         "intro" : "m_noces_cana",
         "clausules" : [
@@ -34,7 +34,7 @@
         ]
     },
     {
-        "mystere" : "3. L'annonce du royaume",
+        "nom" : "3. L'annonce du royaume",
         "fruit" : "la conversion des coeurs",
         "intro" : "m_annonce_royaume",
         "clausules" : [
@@ -51,7 +51,7 @@
         ]
     },
     {
-        "mystere" : "4. La transfiguration",
+        "nom" : "4. La transfiguration",
         "fruit" : "la grâce d'une vie intérieure",
         "intro" : "m_transfiguration",
         "clausules" : [
@@ -68,7 +68,7 @@
         ]
     },
     {
-        "mystere" : "5. L'institution de l'eucharistie",
+        "nom" : "5. L'institution de l'eucharistie",
         "fruit" : "l'amour de l'eucharistie",
         "intro" : "m_eucharistie",
         "clausules" : [

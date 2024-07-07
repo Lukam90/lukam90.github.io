@@ -1,6 +1,6 @@
 [
     {
-        "mystere" : "1. L'agonie de Jésus",
+        "nom" : "1. L'agonie de Jésus",
         "fruit" : "le regret de nos péchés",
         "intro" : "m_agonie_jesus",
         "clausules" : [
@@ -17,7 +17,7 @@
         ]
     },
     {
-        "mystere" : "2. La flagellation",
+        "nom" : "2. La flagellation",
         "fruit" : "la maîtrise des sens",
         "intro" : "m_flagellation",
         "clausules" : [
@@ -34,7 +34,7 @@
         ]
     },
     {
-        "mystere" : "3. Le couronnement d'épines",
+        "nom" : "3. Le couronnement d'épines",
         "fruit" : "l'humilité et le pardon de nos péchés d'orgueil",
         "intro" : "m_couronnement_epines",
         "clausules" : [
@@ -51,7 +51,7 @@
         ]
     },
     {
-        "mystere" : "4. Le portement de croix",
+        "nom" : "4. Le portement de croix",
         "fruit" : "la patience dans les épreuves",
         "intro" : "m_portement_croix",
         "clausules" : [
@@ -68,7 +68,7 @@
         ]
     },
     {
-        "mystere" : "5. La crucifixion",
+        "nom" : "5. La crucifixion",
         "fruit" : "la soif du salut des âmes",
         "intro" : "m_crucifixion",
         "clausules" : [
