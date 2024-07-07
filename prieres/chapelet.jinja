@@ -11,15 +11,13 @@
 {% block content %}
 <h1>Chapelet</h1>
 
-{% include "partials/vlatine.html" %}
-
 {% include path + "signe-croix.html" %}
 
 <hr id="base" />
 
 {% include cpath + "ch-base.html" %}
 
-<hr id="dizaines" />
+{{ mc.anchor("dizaines", "=") }}
 
 {% include cpath + "ch-choix.html" %}
 
@@ -31,6 +29,5 @@
 
 {% include path + "signe-croix.html" %}
 
-<script src="/public/js/latin.js"></script>
 <script src="/public/js/chapelet.js"></script>
 {% endblock %}

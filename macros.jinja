@@ -33,8 +33,16 @@
 
 <!-- Ancres -->
 
-{% macro anchor(id) %}
-<div id="{{ id }}"><a href="#{{ id }}">***</a></div>
+{% macro anchor(id, type = "*") %}
+<div id="{{ id }}">
+    <a href="#{{ id }}">
+    {% if type == "=" %}
+    ===
+    {% else %}
+    ***
+    {% endif %}
+    </a>
+</div>
 {% endmacro %}
 
 <!-- Lien de retour vers le haut -->

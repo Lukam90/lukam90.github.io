@@ -17,7 +17,7 @@ function showParts(parts)
 {
     for (let part of parts)
     {
-        part.style.display = "inline-block";
+        part.style.display = "block";
     }
 }
 

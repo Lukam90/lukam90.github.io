@@ -54,13 +54,10 @@ function majListes()
 
 function majInfo() 
 {
-    if (lang == "fr")
-    {
-        index = selMysteres.selectedIndex;
+    index = selMysteres.selectedIndex;
 
-        clausule = clausules[index];
-        spanClausule.textContent = clausule;
-    }
+    clausule = clausules[index];
+    spanClausule.textContent = clausule;
 
     resetFirstButton();
 }
