@@ -1,6 +1,7 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set path = "partials/prieres/" %}
+{% set gpath = path + "grains/" %}
 {% set lpath = path + "liberation/" %}
 
 {% set title = "C-Liberation" %}
@@ -44,7 +45,7 @@
 
 <p>Jésus, <span id="clausule" class="gras">aie pitié de nous</span> !</p>
 
-{% include path + "dz-grains.html" %}
+{% include gpath + "dz-grains.html" %}
 
 <hr />
 
