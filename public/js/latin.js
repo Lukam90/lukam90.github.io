@@ -10,8 +10,6 @@ function hideParts(parts)
     for (let part of parts)
     {
         part.style.display = "none";
-
-        console.log(part);
     }
 }
 
@@ -20,15 +18,11 @@ function showParts(parts)
     for (let part of parts)
     {
         part.style.display = "inline-block";
-
-        console.log(part);
     }
 }
 
 function switchLang() 
 {
-    console.log(frParts, latinParts, latinCheckBox.checked)
-
     if (latinCheckBox.checked)
     {
         lang = "latin";
