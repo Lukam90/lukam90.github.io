@@ -34,7 +34,8 @@ function resetFirstButton()
     firstBtn.checked = true;
 }
 
-function majListes() {
+function majListes() 
+{
     index = 0;
 
     type = selType.value;
@@ -51,11 +52,15 @@ function majListes() {
     majInfo();
 }
 
-function majInfo() {
-    index = selMysteres.selectedIndex;
+function majInfo() 
+{
+    if (lang == "fr")
+    {
+        index = selMysteres.selectedIndex;
 
-    clausule = clausules[index];
-    spanClausule.textContent = clausule;
+        clausule = clausules[index];
+        spanClausule.textContent = clausule;
+    }
 
     resetFirstButton();
 }

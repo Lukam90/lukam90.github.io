@@ -17,23 +17,25 @@
     
 <h1>Chapelet</h1>
 
-<p class="priere">
-Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>. 
-<br>
+<p>
+    <input type="checkbox" name="langue" id="vlatine" onchange="switchLang();" />
+    <label for="vlatine">Version latine</label>
+</p>
+
+<p class="priere" lang="fr">
+Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>.<br>
 Amen.
 </p>
 
-<hr />
+<p class="priere" lang="latin">
+In Nomine <b>Patris</b>, et <b>Filii</b>, et <b>Spiritus Sancti</b>.<br>
+Amen.
+</p>
+
+<hr id="base" />
 
 
 <h2 id="credo"><a href="#credo">Je crois en Dieu</a></h2>
-
-
-
-<p>
-    <input type="checkbox" name="langue" id="credo_latin" onchange="switchLang();" />
-    <label for="credo_latin">Version latine</label>
-</p>
 
 
 <p class="priere" lang="fr">
@@ -49,14 +51,14 @@ le troisième jour est ressuscité des morts,<br>
 est monté aux cieux,<br>
 est assis à la droite de Dieu le Père tout-puissant,<br>
 d’où il viendra juger les vivants et les morts.<br>
-
+<br>
 Je crois en l’Esprit-Saint,<br>
 à la Sainte Eglise catholique,<br>
 à la communion des saints,<br>
 à la rémission des péchés,<br>
 à la résurrection de la chair,<br>
 à la vie éternelle.<br>
-
+<br>
 Amen.
 </p>
 
@@ -73,14 +75,14 @@ tertia die resurrexit a mortuis,<br>
 ascendit ad caelos,<br>
 sedet ad dexteram Dei Patris omnipotentis,<br>
 inde venturus est iudicare vivos et mortuos.<br>
-
+<br>
 Credo in Spiritum Sanctum,<br>
 sanctam Ecclesiam catholicam,<br>
 sanctorum communionem,<br>
 remissionem peccatorum,<br>
 carnis resurrectionem,<br>
 vitam aeternam.<br>
-
+<br>
 Amen.
 </p>
 
@@ -89,13 +91,6 @@ Amen.
 
 
 <h2>Notre Père</h2>
-
-
-<p>
-    <input type="checkbox" name="langue" id="notre_pere_latin" onchange="switchLang();" />
-    <label for="notre_pere_latin">Version latine</label>
-</p>
-
 
 <p class="priere" lang="fr">
 Notre Père, qui est aux cieux,<br>
@@ -128,13 +123,6 @@ Amen.
 
 
 <h2>Je vous salue Marie</h2>
-
-
-<p>
-    <input type="checkbox" name="langue" id="ste_marie_latin" onchange="switchLang();" />
-    <label for="ste_marie_latin">Version latine</label>
-</p>
-
 
 <p class="priere" lang="fr">
 Je vous salue Marie, pleine de grâce,<br>
@@ -180,13 +168,6 @@ Amen.
 
 <h2>Gloire au Père</h2>
 
-
-<p>
-    <input type="checkbox" name="langue" id="gloire_pere_latin" onchange="switchLang();" />
-    <label for="gloire_pere_latin">Version latine</label>
-</p>
-
-
 <p class="priere" lang="fr">
 Gloire au Père, et au Fils, et au Saint-Esprit,<br>
 comme il était au commencement,<br>
@@ -200,44 +181,6 @@ Gloria Patri, et Filio, et Spiritui Sancto,<br>
 sicut erat in principio,<br>
 et nunc et semper,<br>
 et in saecula saeculorum.<br>
-Amen.
-</p>
-
-
-<h2 id="salut_reine"><a href="#salut_reine">Salut, ô Reine</a></h2>
-
-
-
-<p>
-    <input type="checkbox" name="langue" id="salut_reine_latin" onchange="switchLang();" />
-    <label for="salut_reine_latin">Version latine</label>
-</p>
-
-
-<p class="priere" lang="fr">
-Salut, ô Reine, Mère de miséricorde,<br>
-notre vie, notre douceur et notre espérance. Salut !<br>
-Enfants d'Eve, exilés, nous crions vers vous.<br>
-Vers vous, nous soupirons,<br>
-gémissant et pleurant dans cette vallée de larmes.<br>
-Ô vous, notre avocate,<br>
-tournez vers nous vos regards miséricordieux.<br>
-Et après cet exil, montrez-nous Jésus, le fruit béni de vos entrailles.<br>
-Ô clémente, ô pieuse, ô douce Vierge Marie.<br>
-Amen.
-</p>
-
-<p class="priere" lang="latin"><br>
-Salve, Regina, Mater misericordiae,<br>
-vita, dulcedo, et spes nostra. Salve !<br>
-ad te clamamus exsules filii Evae,<br>
-ad te suspiramus, gementes et flentes<br>
-in hac lacrimarum valle.<br>
-Eia, ergo, advocata nostra,<br>
-illos tuos misericordes oculos ad nos converte.<br>
-Et Iesum, benedictum fructum ventris tui,<br>
-nobis post hoc exsilium ostende.<br>
-O clemens, O pia, O dulcis Virgo Maria.<br>
 Amen.
 </p>
 
@@ -263,13 +206,6 @@ Amen.
 </p>
 
 <h2>Notre Père</h2>
-
-
-<p>
-    <input type="checkbox" name="langue" id="notre_pere_latin" onchange="switchLang();" />
-    <label for="notre_pere_latin">Version latine</label>
-</p>
-
 
 <p class="priere" lang="fr">
 Notre Père, qui est aux cieux,<br>
@@ -302,13 +238,6 @@ Amen.
 
 
 <h2>Je vous salue Marie</h2>
-
-
-<p>
-    <input type="checkbox" name="langue" id="rs_ste_marie_latin" onchange="switchLang();" />
-    <label for="rs_ste_marie_latin">Version latine</label>
-</p>
-
 
 <p class="priere" lang="fr">
 Je vous salue Marie, pleine de grâce,<br>
@@ -360,13 +289,6 @@ Amen.
 
 <h2>Gloire au Père</h2>
 
-
-<p>
-    <input type="checkbox" name="langue" id="gloire_pere_latin" onchange="switchLang();" />
-    <label for="gloire_pere_latin">Version latine</label>
-</p>
-
-
 <p class="priere" lang="fr">
 Gloire au Père, et au Fils, et au Saint-Esprit,<br>
 comme il était au commencement,<br>
@@ -384,18 +306,7 @@ Amen.
 </p>
 
 
-<div id="dz_priere_fatima"><a href="#dz_priere_fatima">***</a></div>
-
-
-
 <h2 id="priere_fatima"><a href="#priere_fatima">Prière de Fatima</a></h2>
-
-
-
-<p>
-    <input type="checkbox" name="langue" id="priere_fatima_latin" onchange="switchLang();" />
-    <label for="priere_fatima_latin">Version latine</label>
-</p>
 
 
 <p class="priere" lang="fr">
@@ -420,14 +331,19 @@ Amen.
 <p><a href="#dizaines" class="bleu">Retour en haut</a></p>
 
 
-<hr />
+<hr id="fin" />
 
-<p class="priere">
-Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>. 
-<br>
+<p class="priere" lang="fr">
+Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>.<br>
 Amen.
 </p>
 
+<p class="priere" lang="latin">
+In Nomine <b>Patris</b>, et <b>Filii</b>, et <b>Spiritus Sancti</b>.<br>
+Amen.
+</p>
+
+<script src="/public/js/latin.js"></script>
 <script src="/public/js/chapelet.js"></script>
 
     </main>
