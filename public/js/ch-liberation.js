@@ -1,22 +1,20 @@
 const spanClausule = document.getElementById("clausule");
 
-const firstRadioBtn = document.getElementById('n1');
-
 const clausules = ["aie pitié de nous", "guéris-nous", "sauve-nous", "libère-nous", "aide-nous"];
 
-let index = 0;
+// Ajout de l'événement de clic sur les boutons radio
 
-function updateText(value)
+let btnRadio;
+
+for (let i = 0 ; i < 5 ; i++)
 {
-    index = parseInt(value) - 1;
-
-    spanClausule.innerText = clausules[index];
-
-    resetFirst();
+    btnRadio = document.getElementById("n" + (i + 1));
+    btnRadio.addEventListener("click", () => updateText(i));
 }
 
-function resetFirst()
+// MAJ des clausules
+
+function updateText(index)
 {
-    firstRadioBtn.checked = true;
-    firstRadioBtn.focus();
+    spanClausule.innerText = clausules[index];
 }
