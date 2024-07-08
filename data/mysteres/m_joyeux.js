@@ -23,7 +23,7 @@ const m_joyeux = [
         clausules : [
             "que tu portes en toi chez Ste Elisabeth",
             "qui te transporte d’allégresse",
-            "qui apporte la joie à St Elisabeth",
+            "qui apporte la joie à Ste Elisabeth",
             "qui fait tressaillir de joie St Jean-Baptiste",
             "qui t’inspire le Magnificat",
             "qui a fait pour toi des merveilles",
@@ -42,7 +42,7 @@ const m_joyeux = [
             "image du Dieu invisible",
             "né pour nous à Bethléem",
             "que tu couches dans la mangeoire",
-            "que tu adores avec Joseph",
+            "que tu adores avec St Joseph",
             "dont les anges annoncent la naissance",
             "que les bergers viennent adorer",
             "devant qui se prosternent les mages",
@@ -55,7 +55,7 @@ const m_joyeux = [
         fruit : "la pureté et l'esprit d'obéissance",
         intro : "m_presentation_temple",
         clausules : [
-            "que tu présentes au Temple",
+            "que tu présentes au temple",
             "qui s’offre à son Père",
             "que Siméon poussé par l’Esprit",
             "en qui Siméon reconnaît le Sauveur",
@@ -72,14 +72,14 @@ const m_joyeux = [
         fruit : "la recherche de Dieu en tout",
         intro : "m_recouvrement_temple",
         clausules : [
-            "qui vient prier au temple avec toi et Joseph",
+            "qui vient prier au temple avec toi et St Joseph",
             "qui reste au temple à votre insu",
             "qui s’occupe des affaires de son Père",
             "qui nous apprend à chercher d’abord le Royaume des Cieux",
             "dont la sagesse étonne les docteurs de la Loi",
             "que Joseph et toi cherchiez avec angoisse",
             "qui, à 12 ans, éprouve votre foi",
-            "qui se soumet à toi et à Joseph",
+            "qui se soumet à toi et à St Joseph",
             "avec qui tu as vécu cachée à Nazareth",
             "dont tu médites les paroles en ton cœur"
         ]
