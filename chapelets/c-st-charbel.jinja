@@ -2,12 +2,15 @@
 
 {% set title = "C-St-Charbel" %}
 
-{% set path = "partials/prieres/" %}
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/saints/" %}
+
+{% set gpath = "chapelets/grains/" %}
 
 {% block content %}
 <h1>Chapelet de St Charbel</h1>
 
-{% include path + "signe-croix.jinja" %}
+{% include bpath + "signe-croix.jinja" %}
 
 <hr />
 
@@ -26,28 +29,26 @@
 <p id="bref">Ô Père de vérité, voici votre Fils, victime pour vous plaire.</p>
 
 <div id="suite">
-    {% include path + "notre-pere.jinja" %}
+    {% include bpath + "notre-pere.jinja" %}
 
     {{ mc.anchor("trio_ste_marie") }}
 
-    {% include path + "ste-marie.jinja" %}
+    {% include bpath + "ste-marie.jinja" %}
 
-    {% include path + "trio-grains.jinja" %}
+    {% include gpath + "trio-grains.jinja" %}
 
-    {{ mc.return_link("rondes") }}
+    {{ mc.return_link() }}
 </div>
 
 <hr />
 
-{% include path + "st-charbel.jinja" %}
+{% include spath + "st-charbel.jinja" %}
 
 <hr />
 
-{% include path + "signe-croix.jinja" %}
+{% include bpath + "signe-croix.jinja" %}
 
 {{ mc.return_link() }}
-
-<p><a href="#" class="bleu">Revenir en haut</a></p>
 
 <script src="/public/js/chapelets/ch-st-charbel.js"></script>
 {% endblock %}

@@ -2,12 +2,13 @@
 
 {% set title = "C-St-Antoine" %}
 
-{% set path = "partials/prieres/" %}
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/saints/" %}
 
 {% block content %}
 <h1>Chapelet de St Antoine</h1>
 
-{% include path + "signe-croix.jinja" %}
+{% include bpath + "signe-croix.jinja" %}
 
 <hr />
 
@@ -30,29 +31,29 @@ Le lion de la tribu de Juda, le rejeton de David, a vaincu !<br>
 Alléluia !
 </p>
 
-<p><a href="#notre_pere" id="notre_pere">===</a></p>
+{{ mc.anchor("notre_pere") }}
 
-{% include path + "notre-pere.jinja" %}
+{% include bpath + "notre-pere.jinja" %}
 
-<p><a href="#ste_marie" id="ste_marie">===</a></p>
+{{ mc.anchor("ste_marie") }}
 
-{% include path + "ste-marie.jinja" %}
+{% include bpath + "ste-marie.jinja" %}
 
-<p><a href="#gloire_pere" id="gloire_pere">===</a></p>
+{{ mc.anchor("gloire_pere") }}
 
-{% include path + "gloire-pere.jinja" %}
+{% include bpath + "gloire-pere.jinja" %}
 
-<p><a href="#" class="bleu">Revenir en haut</a></p>
-
-<hr />
-
-{% include path + "st-antoine.jinja" %}
+{{ mc.return_link() }}
 
 <hr />
 
-{% include path + "signe-croix.jinja" %}
+{% include spath + "st-antoine.jinja" %}
 
-<p><a href="#" class="bleu">Revenir en haut</a></p>
+<hr />
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link() }}
 
 <script src="/public/js/chapelets/ch-st-antoine.js"></script>
 {% endblock %}

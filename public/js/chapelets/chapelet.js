@@ -13,7 +13,10 @@ const spanClausule = document.getElementById("clausule");
 const dzPremier = document.getElementById('n1');
 const dzFin = document.getElementById("fin_dizaine");
 
+const pIntros = document.getElementsByClassName("intro");
+
 let btnRadio;
+let pIntro;
 
 let chapelet, reponse;
 
@@ -27,6 +30,10 @@ let clausule;
 // Initialisation des données
 
 majDonnees(type);
+
+hideIntros();
+
+showIntro("m_annonciation");
 
 // Ajout de l'événement de clic sur les boutons radio
 
@@ -44,6 +51,24 @@ function reset()
     dzFin.checked = false;
 
     setClausule(0);
+}
+
+// Cacher l'ensemble des intros
+
+function hideIntros()
+{
+    for (let paragraph of pIntros)
+    {
+        paragraph.style.display = "none";
+    }
+}
+
+// Afficher une intro
+
+function showIntro(id)
+{
+    pIntro = document.getElementById(id);
+    pIntro.style.display = "inline-block";
 }
 
 // MAJ des données d'un chapelet selon le type

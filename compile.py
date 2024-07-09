@@ -168,7 +168,11 @@ profil = ["cv-imprime", "portfolio"]
 
 ## Chapelets
 
-chapelets = ["chapelet", "c-anges", "c-eucharistie", "c-liberation", "c-misericorde", "c-sacrement", "c-st-antoine", "c-st-charbel"]
+chapelets = [
+    "chapelet", "c-anges", "c-esprit", 
+    "c-eucharistie", "c-liberation", "c-misericorde", 
+    "c-sacrement", "c-st-antoine", "c-st-charbel"
+]
 
 convert_jinja_list("chapelets", chapelets)
 
