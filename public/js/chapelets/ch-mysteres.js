@@ -14,9 +14,18 @@ const m_joyeux = {
 // Mystères lumineux
 
 const m_lumineux = {
-    "mysteres" : [],
-    "fruits" : [],
-    "clausules" : [],
+    "mysteres" : [
+        "1. Le baptême de Jésus", "2. Les noces de Cana", "3. L'annonce du royaume", 
+        "4. La transfiguration", "5. L'institution de l'eucharistie"
+    ],
+    "fruits" : [
+        "la fidelité aux promesses de notre baptême", "la confiance en Marie", "transfiguré devant les apôtres", 
+        "la conversion des coeurs", "la grâce d'une vie intérieure"
+    ],
+    "clausules" : [
+        "baptisé dans le Jourdain", "qui vous exauça à Cana", "qui annonça la Bonne Nouvelle", 
+        "qui donna le sacrement de son amour", "l'amour de l'eucharistie"
+    ],
     "intros" : [
         `
         

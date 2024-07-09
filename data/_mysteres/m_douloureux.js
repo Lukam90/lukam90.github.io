@@ -2,7 +2,7 @@ const m_douloureux = [
     {
         nom : "1. L'agonie de Jésus",
         fruit : "le regret de nos péchés",
-        intro : "m_agonie_jesus",
+
         clausules : [
             "qui prend sur lui tous nos péchés",
             "dont l’âme est triste à en mourir",
@@ -19,7 +19,7 @@ const m_douloureux = [
     {
         nom : "2. La flagellation",
         fruit : "la maîtrise des sens",
-        intro : "m_flagellation",
+
         clausules : [
             "le plus beau des enfants des hommes",
             "qui est flagellé jusqu’au sang",
@@ -36,7 +36,7 @@ const m_douloureux = [
     {
         nom : "3. Le couronnement d'épines",
         fruit : "l'humilité et le pardon de nos péchés d'orgueil",
-        intro : "m_couronnement_epines",
+
         clausules : [
             "qui est notre seul roi",
             "humilié pour expier notre orgueil",
@@ -53,7 +53,7 @@ const m_douloureux = [
     {
         nom : "4. Le portement de croix",
         fruit : "la patience dans les épreuves",
-        intro : "m_portement_croix",
+
         clausules : [
             "dont Ponce Pilate proclame l’innocence",
             "condamné à mort et chargé de sa croix",
@@ -70,7 +70,7 @@ const m_douloureux = [
     {
         nom : "5. La crucifixion",
         fruit : "la soif du salut des âmes",
-        intro : "m_crucifixion",
+
         clausules : [
             "dépouillé de ses vêtements",
             "crucifié entre deux malfaiteurs",
