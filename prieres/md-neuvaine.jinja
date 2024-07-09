@@ -1,0 +1,43 @@
+
+
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set npath = "prieres/neuvaines/" %}
+
+{% set gpath = "chapelets/grains/" %}
+
+{% set title = "Neuvaine" %}
+
+{% block content %}
+<h1>Neuvaine</h1>
+
+{% include bpath + "signe-croix.jinja" %}
+
+<hr>
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("ste_marie") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+{% include gpath + "dz-grains.jinja" %}
+
+{{ mc.anchor("gloire_pere") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{% include npath + "medaille-miraculeuse.jinja" %}
+
+<hr>
+
+{% include bpath + "signe-croix.jinja" %}
+
+<hr>
+
+<h2>Vidéo d'exemple</h2>
+
+{{ mc.yvideo("Xj8YPt1WQ_c?si=RGcbFKWfGGpGzVE_") }}
+
+{% endblock %}

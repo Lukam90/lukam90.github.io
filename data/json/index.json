@@ -15,8 +15,7 @@
         { "href" : "c-st-charbel", "title" : "Chapelet de St Charbel" }
     ],
     "prieres" : [
-        { "href" : "ex-eucharistie", "title" : "Dizaine du mystère de l'eucharistie" },
-        { "href" : "neuvaine", "title" : "Neuvaine de la médaille miraculeuse" }
+        { "href" : "md-neuvaine", "title" : "Neuvaine de la médaille miraculeuse" }
     ],
     "exercices" : [
         { "href" : "ex-base", "title" : "Cohérence cardiaque" },

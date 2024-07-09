@@ -133,21 +133,6 @@ def convert_markdown_single(filename):
         file.write(content)
         file.close()
 
-# Données
-
-index = convert_json_data("index")
-
-# Listes de fichiers
-
-
-
-
-
-# Données
-
-m_data = {}
-m_data["misericorde"] = convert_text_data("misericorde")
-
 # Compilation
 
 ## Markdown
@@ -155,6 +140,8 @@ m_data["misericorde"] = convert_text_data("misericorde")
 #convert_markdown_single("test")
 
 ## Pages (générales)
+
+index = convert_json_data("index")
 
 convert_jinja_single("index", index)
 #convert_jinja_single("cv-imprime")
@@ -174,11 +161,11 @@ chapelets = [
     "c-sacrement", "c-st-antoine", "c-st-charbel"
 ]
 
-convert_jinja_list("chapelets", chapelets)
+#convert_jinja_list("chapelets", chapelets)
 
-#convert_jinja_single("prieres/chapelet")
-#convert_jinja_single("prieres/c-esprit")
-#convert_jinja_single("prieres/c-liberation")
+convert_jinja_single("chapelets/chapelet")
+#convert_jinja_single("chapelets/c-esprit")
+#convert_jinja_single("chapelets/c-liberation")
 
 ## Exercices
 
@@ -189,7 +176,7 @@ exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-nombres", "ex-sonore", "ex-
 
 ## Prières (simples)
 
-prieres = ["ex-eucharistie", "neuvaine"]
+prieres = ["md-neuvaine"]
 
 #convert_jinja_list("prieres", prieres)
 
