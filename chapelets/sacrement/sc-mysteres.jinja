@@ -15,11 +15,11 @@
 </p>
 {% endfor %}
 
-<p id="dz_notre_pere"><a href="#dz_notre_pere">===</a></p>
+{{ mc.anchor("dz_notre_pere") }}
 
 {% include path + "notre-pere.html" %}
 
-<p id="dz_min"><a href="#dz_min">***</a></p>
+{{ mc.anchor("dz_min") }}
 
 <p class="priere">
 Jésus, sois loué à chaque instant,<br> 
@@ -28,4 +28,4 @@ dans le Saint Sacrement, aujourd’hui et toujours.
 
 {% include path + "dz-grains.html" %}
 
-<p><a href="#mysteres" class="bleu">Retour en haut</a></p>
+{{ mc.return_link("mysteres") }}

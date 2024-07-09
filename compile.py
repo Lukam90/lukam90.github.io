@@ -140,7 +140,7 @@ index = convert_json_data("index")
 # Listes de fichiers
 
 exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-nombres", "ex-sonore", "ex-video"]
-prieres = ["chapelet", "c-anges", "c-eucharistie", "c-liberation", "c-misericorde", "c-sacrement", "c-st-antoine", "c-st-charbel", "neuvaine"]
+
 profil = ["cv-imprime", "portfolio"]
 
 # Données
@@ -154,23 +154,32 @@ m_data["misericorde"] = convert_text_data("misericorde")
 
 #convert_markdown_single("test")
 
-## Pages
+## Pages (générales)
 
 convert_jinja_single("index", index)
 #convert_jinja_single("cv-imprime")
 convert_jinja_single("test")
+
+## Chapelets
+
+chapelets = ["chapelet", "c-anges", "c-eucharistie", "c-liberation", "c-misericorde", "c-sacrement", "c-st-antoine", "c-st-charbel"]
+
+convert_jinja_list("chapelets", chapelets)
+
+#convert_jinja_single("prieres/chapelet")
+#convert_jinja_single("prieres/c-esprit")
+#convert_jinja_single("prieres/c-liberation")
 
 ## Exercices
 
 #convert_jinja_list("exercices", exercices)
 convert_jinja_single("exercices/ex-nombres")
 
-## Prières
+## Prières (simples)
 
-#convert_jinja_list("prieres", prieres)
-convert_jinja_single("prieres/chapelet")
-convert_jinja_single("prieres/c-esprit")
-convert_jinja_single("prieres/c-liberation")
+prieres = ["ex-eucharistie", "neuvaine"]
+
+convert_jinja_list("prieres", prieres)
 
 ## Profil
 

@@ -3,8 +3,7 @@
         { "href" : "cv-imprime", "title" : "Mon nouveau CV" },
         { "href" : "portfolio", "title" : "Ma page de portfolio (en cours)" }
     ],
-    "prieres" : [
-        { "href" : "neuvaine", "title" : "Neuvaine de la médaille miraculeuse" },
+    "chapelets" : [
         { "href" : "chapelet", "title" : "Chapelet traditionnel (rosaire)" },
         { "href" : "c-anges", "title" : "Chapelet de St Michel et des anges" },
         { "href" : "c-esprit", "title" : "Chapelet des 7 dons de l'Esprit Saint" },
@@ -14,6 +13,10 @@
         { "href" : "c-sacrement", "title" : "Chapelet du Saint Sacrement" },
         { "href" : "c-st-antoine", "title" : "Chapelet de St Antoine" },
         { "href" : "c-st-charbel", "title" : "Chapelet de St Charbel" }
+    ],
+    "prieres" : [
+        { "href" : "ex-eucharistie", "title" : "Dizaine du mystère de l'eucharistie" },
+        { "href" : "neuvaine", "title" : "Neuvaine de la médaille miraculeuse" }
     ],
     "exercices" : [
         { "href" : "ex-base", "title" : "Cohérence cardiaque" },
