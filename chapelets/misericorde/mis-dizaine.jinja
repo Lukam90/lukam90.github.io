@@ -1,4 +1,4 @@
-<h2 id="mis_dizaine"><a href="#mis_dizaine">Dizaine</a></h2>
+{{ mc.header("mis_dizaine", "Dizaine") }}
 
 <p>
     Je prie à l'intention de
@@ -21,7 +21,7 @@ en réparation de nos péchés <br>
 et de ceux du monde entier.
 </p>
 
-<p>***</p>
+{{ mc.anchor("mis_grains") }}
 
 <p class="priere">
 Par sa douloureuse passion,<br> 
@@ -29,4 +29,4 @@ soyez miséricordieux pour nous<br>
 et pour le monde entier.
 </p>
 
-{% include path + "dz-grains.html" %}
+{% include gpath + "dz-grains.jinja" %}

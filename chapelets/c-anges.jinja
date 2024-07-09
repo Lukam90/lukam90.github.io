@@ -1,9 +1,7 @@
 {% extends "layouts/prieres.jinja" %}
 
-{% set path = "partials/prieres/" %}
-
-{% set cpath = path + "chapelet/" %}
-{% set apath = path + "anges/" %}
+{% set apath = "chapelets/anges/" %}
+{% set bpath = "prieres/base/" %}
 
 {% set title = "C-Anges" %}
 
@@ -12,15 +10,15 @@
 {% block content %}
 <h1>Chapelet de St Michel et des anges</h1>
 
-{% include apath + "an-intro.html" %}
+{% include apath + "an-intro.jinja" %}
 
 <hr />
 
-{% include apath + "an-choeurs.html" %}
+{% include apath + "an-choeurs.jinja" %}
 
 <hr />
 
-{% include apath + "an-fin.html" %}
+{% include apath + "an-fin.jinja" %}
 
 <script src="/public/js/chapelets/ch-anges.js"></script>
 {% endblock %}

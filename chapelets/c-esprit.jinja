@@ -8,25 +8,25 @@
 {% block content %}
 <h1>Chapelet des 7 dons du Saint-Esprit</h1>
 
-{% include path + "signe-croix.html" %}
+{% include path + "signe-croix.jinja" %}
 
 <hr />
 
-{% include path + "credo.html" %}
+{% include path + "credo.jinja" %}
 
 {{ mc.anchor("b_notre_pere") }}
 
-{% include path + "notre-pere.html" %}
+{% include path + "notre-pere.jinja" %}
 
 {{ mc.anchor("b_ste_marie") }}
 
-{% include path + "ste-marie.html" %}
+{% include path + "ste-marie.jinja" %}
 
-{% include gpath + "trio-vertus.html" %}
+{% include gpath + "trio-vertus.jinja" %}
 
 {{ mc.anchor("b_gloire_pere") }}
 
-{% include path + "gloire-pere.html" %}
+{% include path + "gloire-pere.jinja" %}
 
 <hr id="a_dons" />
 
@@ -55,17 +55,17 @@ remplis le coeur de tes fidèles<br>
 et allume en eux le feu de ton amour.
 </p>
 
-{% include gpath + "septaine.html" %}
+{% include gpath + "septaine.jinja" %}
 
 <hr />
 
-{% include path + "gloire-pere.html" %}
+{% include path + "gloire-pere.jinja" %}
 
-{% include gpath + "trio-grains.html" %}
+{% include gpath + "trio-grains.jinja" %}
 
 <hr />
 
-{% include path + "signe-croix.html" %}
+{% include path + "signe-croix.jinja" %}
 
 {{ mc.return_link() }}
 

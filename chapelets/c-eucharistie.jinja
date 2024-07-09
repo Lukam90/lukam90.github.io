@@ -1,16 +1,13 @@
 {% extends "layouts/prieres.jinja" %}
 
-{% set path = "partials/prieres/" %}
-
-{% set cpath = path + "chapelet/" %}
-{% set spath = path + "sacrement/" %}
+{% set bpath = "prieres/base/" %}
 
 {% set title = "C-Eucharistie" %}
 
 {% block content %}
 <h1>Chapelet de l'Eucharistie</h1>
 
-{% include path + "signe-croix.html" %}
+{% include bpath + "signe-croix.jinja" %}
 
 <hr />
 

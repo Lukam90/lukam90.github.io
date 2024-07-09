@@ -1,27 +1,27 @@
 {% extends "layouts/prieres.jinja" %}
 
-{% set path = "partials/prieres/" %}
-{% set gpath = path + "grains/" %}
-{% set lpath = path + "liberation/" %}
+{% set bpath = "prieres/base/" %}
+{% set gpath = "chapelets/grains/" %}
+{% set lpath = "chapelets/liberation/" %}
 
 {% set title = "C-Liberation" %}
 
 {% block content %}
 <h1>Chapelet de libération</h1>
 
-{% include path + "signe-croix.html" %}
+{% include bpath + "signe-croix.jinja" %}
 
 <hr />
 
-{% include path + "credo.html" %}
+{% include bpath + "credo.jinja" %}
 
 {{ mc.anchor("base_fils") }}
 
-{% include lpath + "lib-fils.html" %}
+{% include lpath + "lib-fils.jinja" %}
 
 {{ mc.anchor("base_jesus") }}
 
-{% include lpath + "lib-jesus.html" %}
+{% include lpath + "lib-jesus.jinja" %}
 
 <p>x 3</p>
 
@@ -34,7 +34,7 @@
     {% endfor %}
 </p>
 
-{% include lpath + "lib-fils.html" %}
+{% include lpath + "lib-fils.jinja" %}
 
 <p>***</p>
 
@@ -44,11 +44,11 @@
 
 <hr />
 
-{% include path + "salut-reine.html" %}
+{% include bpath + "salut-reine.jinja" %}
 
 <hr />
 
-{% include path + "signe-croix.html" %}
+{% include bpath + "signe-croix.jinja" %}
 
 {{ mc.return_link() }}
 

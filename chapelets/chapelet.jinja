@@ -1,46 +1,37 @@
 {% extends "layouts/prieres.jinja" %}
 
-{% set path = "partials/prieres/" %}
+{% set bpath = "prieres/base/" %}
 
-{% set cpath = path + "chapelet/" %}
-{% set gpath = path + "grains/" %}
-{% set rpath = path + "rosaire/" %}
+{% set ipath = "chapelets/intros/" %}
+{% set gpath = "chapelets/grains/" %}
+{% set rpath = "chapelets/rosaire/" %}
 
 {% set title = "Chapelet" %}
 
 {% block content %}
 <h1>Chapelet</h1>
 
-<p>
-Les clauses sont inspirées de Jean-Paul II avec le site de 
-{{ mc.link("https://www.mariedenazareth.com", "Marie de Nazareth") }}.
-</p>
-
-<p>
-Le chapelet basé sur le rosaire traditionnel s'inspire de l'application 
-{{ mc.link("https://rosario.app/", "Rosario") }} par
-{{ mc.link("https://hozana.org/", "Hozana") }}.
-</p>
+{% include "partials/ex-sources.jinja" %}
 
 <hr />
 
-{% include path + "signe-croix.html" %}
+{% include bpath + "signe-croix.jinja" %}
 
 <hr id="base" />
 
-{% include cpath + "ch-base.html" %}
+{% include rpath + "rs-base.jinja" %}
 
 {{ mc.anchor("dizaines", "=") }}
 
-{% include cpath + "ch-choix.html" %}
+{% include rpath + "rs-choix.jinja" %}
 
-{% include cpath + "ch-dizaine.html" %}
+{% include rpath + "rs-dizaine.jinja" %}
 
 {{ mc.return_link("dizaines") }}
 
 <hr id="fin" />
 
-{% include path + "signe-croix.html" %}
+{% include bpath + "signe-croix.jinja" %}
 
 <script src="/data/mysteres/m_joyeux.js"></script>
 <script src="/data/mysteres/m_lumineux.js"></script>

@@ -1,8 +1,8 @@
-{% include path + "signe-croix.html" %}
+{% include bpath + "signe-croix.jinja" %}
 
 <hr />
 
-<h2 id="mis_intro"><a href="#mis_intro">Intro</a></h2>
+{{ mc.header("mis_intro", "Intro") }}
 
 <p class="priere">
 Vous avez été à l’agonie, Jésus,<br>
@@ -23,14 +23,12 @@ j'ai confiance en vous.<br>
 Amen.
 </p>
 
-<hr />
+{{ mc.anchor("mis_notre_pere") }}
 
-<p><a href="#mis_notre_pere" id="mis_notre_pere">===</a></p>
+{% include bpath + "notre-pere.jinja" %}
 
-{% include path + "notre-pere.html" %}
+{{ mc.anchor("mis_ste_marie") }}
 
-<p><a href="#mis_ste_marie" id="mis_ste_marie">===</a></p>
+{% include bpath + "ste-marie.jinja" %}
 
-{% include path + "ste-marie.html" %}
-
-{% include path + "credo.html" %}
+{% include bpath + "credo.jinja" %}

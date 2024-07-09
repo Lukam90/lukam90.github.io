@@ -7,9 +7,9 @@
 {% block content %}
 <h1>Chapelet de St Charbel</h1>
 
-{% include path + "signe-croix.html" %}
+{% include path + "signe-croix.jinja" %}
 
-<p><a href="#rondes" id="rondes">===</a></p>
+<hr />
 
 <div>
     <select id="sel_rondes" onchange="setSuites();">
@@ -26,24 +26,26 @@
 <p id="bref">Ô Père de vérité, voici votre Fils, victime pour vous plaire.</p>
 
 <div id="suite">
-    {% include path + "notre-pere.html" %}
+    {% include path + "notre-pere.jinja" %}
 
-    <p><a href="#trio_ste_marie" id="trio_ste_marie">===</a></p>
+    {{ mc.anchor("trio_ste_marie") }}
 
-    {% include path + "ste-marie.html" %}
+    {% include path + "ste-marie.jinja" %}
 
-    {% include path + "trio-grains.html" %}
+    {% include path + "trio-grains.jinja" %}
 
-    <p><a href="#rondes" class="bleu">Revenir en haut</a></p>
+    {{ mc.return_link("rondes") }}
 </div>
 
 <hr />
 
-{% include path + "st-charbel.html" %}
+{% include path + "st-charbel.jinja" %}
 
 <hr />
 
-{% include path + "signe-croix.html" %}
+{% include path + "signe-croix.jinja" %}
+
+{{ mc.return_link() }}
 
 <p><a href="#" class="bleu">Revenir en haut</a></p>
 

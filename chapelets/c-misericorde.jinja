@@ -1,25 +1,24 @@
 {% extends "layouts/prieres.jinja" %}
 
-{% set path = "partials/prieres/" %}
+{% set bpath = "prieres/base/" %}
 
-{% set cpath = path + "chapelet/" %}
-{% set rpath = path + "rosaire/" %}
-{% set mpath = path + "misericorde/" %}
+{% set gpath = "chapelets/grains/" %}
+{% set mpath = "chapelets/misericorde/" %}
 
 {% set title = "C-Misericorde" %}
 
 {% block content %}
 <h1>Chapelet de la Miséricorde Divine</h1>
 
-{% include mpath + "mis-intro.html" %}
+{% include mpath + "mis-intro.jinja" %}
 
 <hr />
 
-{% include mpath + "mis-dizaine.html" %}
+{% include mpath + "mis-dizaine.jinja" %}
 
 <hr />
 
-{% include mpath + "mis-fin.html" %}
+{% include mpath + "mis-fin.jinja" %}
 
 <p><a href="#" class="bleu">Revenir en haut</a></p>
 

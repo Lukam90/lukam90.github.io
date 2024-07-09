@@ -170,7 +170,7 @@ profil = ["cv-imprime", "portfolio"]
 
 chapelets = ["chapelet", "c-anges", "c-eucharistie", "c-liberation", "c-misericorde", "c-sacrement", "c-st-antoine", "c-st-charbel"]
 
-#convert_jinja_list("chapelets", chapelets)
+convert_jinja_list("chapelets", chapelets)
 
 #convert_jinja_single("prieres/chapelet")
 #convert_jinja_single("prieres/c-esprit")

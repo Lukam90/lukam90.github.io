@@ -10,15 +10,15 @@
 {% block content %}
 <h1>Chapelet du Saint Sacrement</h1>
 
-{% include spath + "sc-intro.html" %}
+{% include spath + "sc-intro.jinja" %}
 
 <hr id="mysteres" />
 
-{% include spath + "sc-mysteres.html" %}
+{% include spath + "sc-mysteres.jinja" %}
 
 <hr />
 
-{% include path + "signe-croix.html" %}
+{% include path + "signe-croix.jinja" %}
 
 <script src="/public/js/reset.js"></script>
 {% endblock %}
