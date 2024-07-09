@@ -1,20 +1,18 @@
+/* Données des mystères */
+
 // Mystères joyeux
 
 const m_joyeux = {
-    "mysteres" : ["1. L'annonciation", "2. La visitation", "3. La nativité", "4. La présentation de Jésus au temple", "5. Le recouvrement de Jésus au temple"],
+    "liste" : ["1. L'annonciation", "2. La visitation", "3. La nativité", "4. La présentation de Jésus au temple", "5. Le recouvrement de Jésus au temple"],
     "fruits" : ["l'humilité", "la charité fraternelle", "l'esprit de pauvreté", "la pureté et l'esprit d'obéissance", "la recherche de Dieu en tout"],
     "clausules" : ["incarné", "le fruit de vos entrailles", "né à Bethléem", "présenté au temple", "perdu et retrouvé au temple"],
-    "intros" : [
-        `
-        
-        `
-    ]
+    "intros" : intros_joyeux
 };
 
 // Mystères lumineux
 
 const m_lumineux = {
-    "mysteres" : [
+    "liste" : [
         "1. Le baptême de Jésus", "2. Les noces de Cana", "3. L'annonce du royaume", 
         "4. La transfiguration", "5. L'institution de l'eucharistie"
     ],
@@ -26,33 +24,25 @@ const m_lumineux = {
         "baptisé dans le Jourdain", "qui vous exauça à Cana", "qui annonça la Bonne Nouvelle", 
         "qui donna le sacrement de son amour", "l'amour de l'eucharistie"
     ],
-    "intros" : [
-        `
-        
-        `
-    ]
+    "intros" : intros_lumineux
 };
 
 // Mystères douloureux
 
 const m_douloureux = {
-    "mysteres" : ["1. L'agonie de Jésus", "2. La flagellation", "3. Le couronnement d'épines", "4. Le portement de croix", "5. La crucifixion"],
+    "liste" : ["1. L'agonie de Jésus", "2. La flagellation", "3. Le couronnement d'épines", "4. Le portement de croix", "5. La crucifixion"],
     "fruits" : [
         "le regret de nos péchés", "la maîtrise des sens", "l'humilité et le pardon de nos péchés d'orgueil",
         "la patience dans les épreuves", "la soif du salut des âmes"
     ],
     "clausules" : ["agonisant au jardin de Gethsémani", "flagellé", "couronné d'épines", "portant sa croix jusqu'au Golgotha", "crucifié"],
-    "intros" : [
-        `
-        
-        `
-    ]
+    "intros" : intros_douloureux
 };
 
 // Mystères glorieux
 
 const m_glorieux = {
-    "mysteres" : ["1. La résurrection", "2. L'ascension", "3. La Pentecôte", "4. L'Assomption", "5. Le couronnement de Marie"],
+    "liste" : ["1. La résurrection", "2. L'ascension", "3. La Pentecôte", "4. L'Assomption", "5. Le couronnement de Marie"],
     "fruits" : [
         "la foi et la conversion des coeurs", "l'espérance et le désir du ciel", "la charité et le zèle apostolique", 
         "la grâce d'une bonne mort et la dévotion filiale à Marie", "la persévérance finale et la confiance en Marie"
@@ -61,11 +51,7 @@ const m_glorieux = {
         "ressuscité", "monté aux cieux", "dont le Père envoya le Saint-Esprit sur les apôtres", 
         "qui vous eleva au ciel", "qui vous a couronnée reine des anges"
     ],
-    "intros" : [
-        `
-        
-        `
-    ]
+    "intros" : intros_glorieux
 };
 
 // Mystères du rosaire
