@@ -139,9 +139,9 @@ index = convert_json_data("index")
 
 # Listes de fichiers
 
-exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-nombres", "ex-sonore", "ex-video"]
 
-profil = ["cv-imprime", "portfolio"]
+
+
 
 # Données
 
@@ -160,11 +160,17 @@ convert_jinja_single("index", index)
 #convert_jinja_single("cv-imprime")
 convert_jinja_single("test")
 
+## Profil
+
+profil = ["cv-imprime", "portfolio"]
+
+#convert_jinja_list("profil", profil)
+
 ## Chapelets
 
 chapelets = ["chapelet", "c-anges", "c-eucharistie", "c-liberation", "c-misericorde", "c-sacrement", "c-st-antoine", "c-st-charbel"]
 
-convert_jinja_list("chapelets", chapelets)
+#convert_jinja_list("chapelets", chapelets)
 
 #convert_jinja_single("prieres/chapelet")
 #convert_jinja_single("prieres/c-esprit")
@@ -172,15 +178,14 @@ convert_jinja_list("chapelets", chapelets)
 
 ## Exercices
 
+exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-nombres", "ex-sonore", "ex-video"]
+
 #convert_jinja_list("exercices", exercices)
-convert_jinja_single("exercices/ex-nombres")
+#convert_jinja_single("exercices/ex-nombres")
 
 ## Prières (simples)
 
 prieres = ["ex-eucharistie", "neuvaine"]
 
-convert_jinja_list("prieres", prieres)
+#convert_jinja_list("prieres", prieres)
 
-## Profil
-
-#convert_jinja_list("profil", profil)

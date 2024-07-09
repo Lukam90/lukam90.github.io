@@ -1,4 +1,4 @@
-{% set path = "partials/cv/" %}
+{% set path = "profil/cv/" %}
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -20,17 +20,17 @@
                     <img src="/public/images/photo-pro.png" alt="photo" />
                 </section>
 
-                {% include path + "cv_infos.html" %}
+                {% include path + "cv_infos.jinja" %}
 
-                {% include path + "cv_liens.html" %}
+                {% include path + "cv_liens.jinja" %}
 
-                {% include path + "cv_competences.html" %}
+                {% include path + "cv_competences.jinja" %}
 
-                {% include path + "cv_certifications.html" %}
+                {% include path + "cv_certifications.jinja" %}
 
-                {% include path + "cv_langues.html" %}
+                {% include path + "cv_langues.jinja" %}
 
-                {% include path + "cv_loisirs.html" %}
+                {% include path + "cv_loisirs.jinja" %}
             </div>
 
             <div id="droite">
@@ -42,9 +42,9 @@
 
                 <hr />
 
-                {% include path + "cv_experience.html" %}
+                {% include path + "cv_experience.jinja" %}
 
-                {% include path + "cv_formation.html" %}
+                {% include path + "cv_formation.jinja" %}
             </div>
         </div>
     </page>
