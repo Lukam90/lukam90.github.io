@@ -13,7 +13,7 @@ let fruit, clausule;
 let index = 0;
 let type = "joyeux";
 
-let url, reponse;
+let url, resultat;
 
 initData("joyeux");
 
@@ -31,12 +31,23 @@ async function initData(type)
 {
     url = "/data/json/mysteres/" + type + ".json";
 
-    reponse = await fetch(url);
-    chapelet = await reponse.json();
+    try 
+    {
+        resultat = await fetch(url);
 
-    liste = chapelet["liste"];
-    fruits = chapelet["fruits"];
-    clausules = chapelet["clausules"];
+        if (resultat.status == 200)
+        {
+            chapelet = await resultat.json();
+    
+            liste = chapelet["liste"];
+            fruits = chapelet["fruits"];
+            clausules = chapelet["clausules"];
+        }
+    } 
+    catch (error) 
+    {
+        console.error(error);
+    }
 
     //chDebug();
 }
