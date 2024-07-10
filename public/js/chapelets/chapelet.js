@@ -15,6 +15,8 @@ let fruit, clausule, intro;
 let index = 0;
 let type = "joyeux";
 
+let url, reponse;
+
 initData("joyeux");
 
 // Debug
@@ -27,9 +29,12 @@ function chDebug()
 
 // Initialisation des données
 
-function initData(type)
+async function initData(type)
 {
-    chapelet = rosaire[type];
+    url = "/data/json/mysteres/" + type + ".json";
+
+    reponse = await fetch(url);
+    chapelet = await reponse.json();
 
     liste = chapelet["liste"];
     fruits = chapelet["fruits"];
@@ -41,13 +46,13 @@ function initData(type)
 
 // MAJ des données d'un chapelet selon le type
 
-function majChapelet() 
+async function majChapelet() 
 {
     index = 0;
 
     type = selType.value;
 
-    initData(type);
+    await initData(type);
 
     for (let optMystere of selMysteres.children) {
         optMystere.innerText = liste[index++];
@@ -68,9 +73,15 @@ function majInfos()
     intro = intros[index];
     clausule = clausules[index];
 
-    pIntro.innerText = intro;
     spanClausule.innerText = clausule;
     spanFruit.innerText = fruit;
+
+    pIntro.innerText = "";
+
+    for (let ligne of intro)
+    {
+        pIntro.innerText += ligne;
+    }
 
     resetFirst();
 }
