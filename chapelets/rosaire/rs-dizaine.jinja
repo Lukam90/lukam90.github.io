@@ -1,18 +1,12 @@
+{{ mc.anchor("dz_notre_pere") }}
+
 {% include bpath + "notre-pere.jinja" %}
 
 {{ mc.anchor("dz_ste_marie") }}
 
 {% include rpath + "rs-clausules-ste-marie.jinja" %}
 
-<p>
-    {% for nb in range(1, 11) %}
-    <input type="radio" name="n_dizaine" id="n{{ loop.index }}" {% if loop.first %} checked {% endif %} />
-    <label for="n{{ loop.index }}">{{ nb }}</label>
-    {% endfor %}
-
-    <input type="checkbox" id="fin_dizaine" />
-    <label for="fin_dizaine">Fini</label>
-</p>
+{% include gpath + "dz-grains.jinja" %}
 
 {{ mc.anchor("dz_gloire_pere") }}
 

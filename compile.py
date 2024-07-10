@@ -161,9 +161,9 @@ chapelets = [
     "c-sacrement", "c-st-antoine", "c-st-charbel"
 ]
 
-#convert_jinja_list("chapelets", chapelets)
+convert_jinja_list("chapelets", chapelets)
 
-convert_jinja_single("chapelets/chapelet")
+#convert_jinja_single("chapelets/chapelet")
 #convert_jinja_single("chapelets/c-esprit")
 #convert_jinja_single("chapelets/c-liberation")
 
@@ -178,5 +178,5 @@ exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-nombres", "ex-sonore", "ex-
 
 prieres = ["md-neuvaine"]
 
-#convert_jinja_list("prieres", prieres)
+convert_jinja_list("prieres", prieres)
 

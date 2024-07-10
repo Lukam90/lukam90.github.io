@@ -23,14 +23,14 @@
 
 {% include lpath + "lib-jesus.jinja" %}
 
-<p>x 3</p>
+{% include gpath + "trio-grains.jinja" %}
 
 <hr id="rondes" />
 
 <p>
     {% for nb in range(1, 6) %}
-    <input type="radio" name="rondes" id="n{{ loop.index }}" {% if loop.first %} checked {% endif %} />
-    <label for="n{{ loop.index }}">{{ nb }}</label>
+    <input type="radio" name="rondes" id="rondes_{{ loop.index }}" {% if loop.first %} checked {% endif %} />
+    <label for="rondes_{{ loop.index }}">{{ nb }}</label>
     {% endfor %}
 </p>
 
@@ -40,7 +40,7 @@
 
 <p>Jésus, <span id="clausule" class="gras">aie pitié de nous</span> !</p>
 
-<p>x 10</p>
+{% include gpath + "dz-grains.jinja" %}
 
 <hr />
 

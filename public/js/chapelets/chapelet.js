@@ -1,134 +1,80 @@
-const rosaire = {
-    "joyeux" : m_joyeux,
-    "lumineux" : m_lumineux,
-    "douloureux" : m_douloureux,
-    "glorieux" : m_glorieux
-}
-
 const selType = document.getElementById("s_type");
 const selMysteres = document.getElementById("s_mysteres");
 
+const pIntro = document.getElementById("intro");
+
+const spanFruit = document.getElementById("fruit");
 const spanClausule = document.getElementById("clausule");
 
 const dzPremier = document.getElementById('n1');
-const dzFin = document.getElementById("fin_dizaine");
 
-const pIntros = document.getElementsByClassName("intro");
-
-let btnRadio;
-let pIntro;
-
-let chapelet, reponse;
-
-let mysteres, fruits, intros;
-let dizaines, clausules;
+let chapelet, liste, fruits, clausules, intros;
+let mystere, fruit, clausule, intro;
 
 let index = 0;
 let type = "joyeux";
-let clausule;
 
 // Initialisation des données
 
-majDonnees(type);
+initChapelet("joyeux");
 
-hideIntros();
-
-showIntro("m_annonciation");
-
-// Ajout de l'événement de clic sur les boutons radio
-
-for (let i = 0 ; i < 10 ; i++)
+function initChapelet(type)
 {
-    btnRadio = document.getElementById("n" + (i + 1));
-    btnRadio.addEventListener("click", () => setClausule(i));
-}
+    chapelet = rosaire[type];
 
-// Réinitialisation des cases et de la clausule
+    liste = chapelet["liste"];
+    fruits = chapelet["fruits"];
+    intros = chapelet["intros"];
+    clausules = chapelet["clausules"];
 
-function reset()
-{
-    dzPremier.checked = true;
-    dzFin.checked = false;
-
-    setClausule(0);
-}
-
-// Cacher l'ensemble des intros
-
-function hideIntros()
-{
-    for (let paragraph of pIntros)
-    {
-        paragraph.style.display = "none";
-    }
-}
-
-// Afficher une intro
-
-function showIntro(id)
-{
-    pIntro = document.getElementById(id);
-    pIntro.style.display = "inline-block";
+    mystere = liste[0];
+    fruit = fruits[0];
+    intro = fruits[0];
+    clausule = clausules[0];
 }
 
 // MAJ des données d'un chapelet selon le type
 
-function majDonnees(type) 
+function majChapelet() 
 {
-    mysteres = [];
-    fruits = [];
-    intros = [];
-    dizaines = [];
-    clausules = [];
+    type = selMysteres.value;
 
-    chapelet = rosaire[type];
+    
 
-    for (let mystere of chapelet) 
-    {
-        mysteres.push(mystere.nom);
-        fruits.push(mystere.fruit);
-        intros.push(mystere.intro);
-        dizaines.push(mystere.clausules);
-    }
-
-    clausules = dizaines[0];
+    resetFirst();
 }
 
-// MAJ de la liste des mystères selon le type
+// MAJ des données selon le mystère sélectionné
 
-function majListes() 
+function majInfos() 
 {
     index = 0;
 
     type = selType.value;
 
-    majDonnees(type);
-
     for (let optMystere of selMysteres.children) {
-        optMystere.innerText = mysteres[index++];
+        optMystere.innerText = liste[index++];
     }
 
-    selMysteres.selectedIndex = 0;
+    //selMysteres.selectedIndex = 0;
 
-    reset();
+    resetFirst();
 }
 
-// MAJ des clausules lors de la sélection du mystère
+// MAJ des champs textes
 
-function majClausules() 
+function updateText()
 {
-    index = selMysteres.selectedIndex;
+    pIntro.innerText = intro;
+    spanClausule.innerText = clausule;
+    spanFruit.innerText = fruit;
 
-    clausules = dizaines[index];
-
-    reset();
+    resetFirst();
 }
 
-// MAJ de la clausule lors du clic sur un bouton radio
+// Retour à la 1ère case
 
-function setClausule(index)
+function resetFirst()
 {
-    clausule = clausules[index];
-
-    spanClausule.textContent = clausule;
+    dzPremier.checked = true;
 }

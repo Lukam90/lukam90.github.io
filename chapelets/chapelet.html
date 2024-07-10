@@ -18,13 +18,6 @@
 <h1>Chapelet</h1>
 
 <p>
-Les clauses sont inspirées de Jean-Paul II avec le site de 
-
-<a href="https://www.mariedenazareth.com" class="bleu" target="_blank">Marie de Nazareth</a>
-.
-</p>
-
-<p>
 Le chapelet basé sur le rosaire traditionnel s'inspire de l'application 
 
 <a href="https://rosario.app/" class="bleu" target="_blank">Rosario</a>
@@ -172,144 +165,41 @@ Amen.
 
 <p><b>joyeux</b> (L, S) - <b>lumineux</b> (J) - <b>douloureux</b> (Ma, V) - <b>glorieux</b> (Me, D)</p>
 
-<p>
-    <select id="s_type" onchange="majListes();">
+<div>
+    <select id="s_type" onchange="majChapelet();">
         <option>joyeux</option>
         <option>lumineux</option>
         <option>douloureux</option>
         <option>glorieux</option>
     </select>
 
-    <select id="s_mysteres" onchange="majClausules();">
+    <select id="s_mysteres" onchange="majInfos();">
         <option>1. L'annonciation</option>
         <option>2. La visitation</option>
         <option>3. La nativité</option>
         <option>4. La présentation de Jésus au temple</option>
         <option>5. Le recouvrement de Jésus au temple</option>
     </select>
-</p>
+</div>
 
 <p>Fruit : <span id="fruit" class="gras">l'humilité</span></p>
 
-<p class="priere intro" id="m_annonciation">
+<p id="intro" class="priere">
 Je t'offre cette première dizaine, Seigneur Jésus,<br>
 en l'honneur du mystère de l'annonciation,<br>
 et je te demande, par ce mystère et l'annonciation de ta sainte mère,<br>
 une profonde humilité de coeur.
 </p>
 
-<p class="priere intro" id="m_visitation">
-Je t'offre, Seigneur Jésus, cette dizaine en l'honneur de la visitation de ta sainte mère à sa cousine Ste Elisabeth,<br>
-et je te demande, par ce mystère et l'intercession de Marie,<br>
-une parfaite charité envers mon prochain.
-</p>
 
-<p class="priere intro" id="m_nativite">
-Je t'offre, cette dizaine, enfant Jésus, en l'honneur de ta nativité,<br>
-et je te demande, par ce mystère et l'intercession de ta sainte mère,<br>
-le détachement des biens du monde, l'amour de la pauvreté et des pauvres.
-</p>
+<div id="dz_notre_pere">
+    <a href="#dz_notre_pere">
+    
+    ***
+    
+    </a>
+</div>
 
-<p class="priere intro" id="m_presentation_temple">
-Je t'offre, Seigneur Jésus, cette dizaine en l'honneur de ta présentation au temple,<br>
-et je te demande, par ce mystère et l'intercession de ta sainte mère,<br>
-le don de la sagesse et la pureté de coeur et de corps.
-</p>
-
-<p class="priere intro" id="m_recouvrement_temple">
-Je t'offre, Seigneur Jésus, cette dizaine en l'honneur de ton recouvrement au temple<br>
-et je te demande, par ce mystère et l'intercession de ta sainte mère,<br>
-ma conversion et celle de tous les pécheurs.
-</p>
-
-<p class="priere intro" id="m_bapteme_jesus">
-Je t'offre, Seigneur Jésus, cette dizaine en l'honneur de ton baptême dans le Jourdain<br>
-et je te demande, par ce mystère et l'intercession de ta sainte mère,<br>
-une parfaite fidélité aux promesses de mon baptême.
-</p>
-
-<p class="priere intro" id="m_noces_cana">
-Je t'offre, Seigneur Jésus, cette dizaine en l'honneur des noces de Cana<br>
-et je te demande, par ce mystère et l'intercession de ta sainte mère,<br>
-une parfaite confiance en elle.
-</p>
-
-<p class="priere intro" id="m_annonce_royaume">
-Je t'offre, Seigneur Jésus, cette dizaine en l'honneur de l'annonce du Royaume de Dieu,<br>
-et je te demande, par ce mystère et l'intercession de ta sainte mère,<br>
-une parfaite conversion de mon coeur.
-</p>
-
-<p class="priere intro" id="m_transfiguration">
-Je t'offre, Seigneur Jésus, cette dizaine en l'honneur de ta transfiguration<br>
-et je te demande, par ce mystère et l'intercession de ta sainte mère,<br>
-un plus grand recueillement dans mes prières.
-</p>
-
-<p class="priere intro" id="m_eucharistie">
-Je t'offre, Seigneur Jésus, cette dizaine en l'honneur de l'institution du sacrement de l'eucharistie,<br>
-et je te demande, par ce mystère et l'intercession de ta sainte mère,<br>
-une plus grande dévotion au très saint sacrement.
-</p>
-
-<p class="priere intro" id="m_agonie_jesus">
-Jésus, agonissant au jardin de Gethsémani,<br>
-et pleinement soumis à la volonté du Père,<br>
-nous te louons, te bénissons et t'adorons.
-</p>
-
-<p class="priere intro" id="m_flagellation">
-Jésus, cruellement flagellé pour nos péchés de sensualité et d'impureté,<br>
-nous te louons, te bénissons et t'adorons.
-</p>
-
-<p class="priere intro" id="m_couronnement_epines">
-Jésus, couronné d'épines et outragé,<br>
-nous te louons, te bénissons et t'adorons.
-</p>
-
-<p class="priere intro" id="m_portement_croix">
-Jésus, portant sa croix et marchant vers le Golgotha,<br>
-nous te louons, te bénissons et t'adorons.
-</p>
-
-<p class="priere intro" id="m_crucifixion">
-Jésus, cloué et mort sur la croix, et au coeur transpercé,<br>
-nous te louons, te bénissons et t'adorons.
-</p>
-
-<p class="priere intro" id="m_resurrection">
-Je t'offre, Seigneur Jésus, cette dizaine en l'honneur de ta triomphante ressurection,<br>
-et je te demande, par ce mystère et l'intercession de ta sainte mère, une vive foi.
-</p>
-
-<p class="priere intro" id="m_ascension">
-Je t'offre, Seigneur Jésus, cette dizaine en l'honneur de ta glorieuse ascension,<br>
-et je te demande, par ce mystère et l'intercession de ta sainte mère,<br>
-une ferme espérance et un grand désir du paradis.
-</p>
-
-<p class="priere intro" id="m_pentecote">
-Je t'offre, Seigneur Jésus, cette dizaine en l'honneur du mystère de la Pentecôte,<br>
-et je te demande, par ce mystère et l'intercession de Marie,<br>
-la divine sagesse pour connaître, goûter et pratiquer la vérité 
-et la faire participer à tout le monde.
-</p>
-
-<p class="priere intro" id="m_assomption">
-Je t'offre, Seigneur Jésus, cette dizaine en l'honneur de l'Immaculée Conception<br>
-et de l'Assomption en corps et en âme de ta sainte mère dans les cieux,<br>
-et je te demande, par ces deux mystères et son intercession,<br>
-une vraie dévotion envers elle pour bien vivre et bien mourir.
-</p>
-
-<p class="priere intro" id="m_couronnement_marie">
-Je t'offre, Seigneur Jésus, par les 20 mystères de ta vie, ta mort et ta passion, <br>
-ta gloire et les mérites de ta sainte mère, de convertir les pécheurs, <br>
-d'aider les agonisants, de délivrer les âmes du purgatoire, <br>
-de nous donner à tous ta grâce pour bien vivre et mourir,<br>
-et ta gloire pour te voir face à face et t'aimer pour l'éternité.
-</p>
 
 <h2>Notre Père</h2>
 
@@ -339,12 +229,12 @@ Amen.
 <h2>Je vous salue Marie</h2>
 
 <p class="priere" lang="fr">
-Je te salue Marie, pleine de grâce,<br>
-le Seigneur est avec toi.<br>
-Tu es bénie entre toutes les femmes,<br>
-et Jésus, <span id="clausule" class="gras">dont l'archange Gabriel annonce la venue</span>, est béni.<br>
+Je vous salue Marie, pleine de grâce,<br>
+le Seigneur est avec vous.<br>
+Vous êtes bénie entre toutes les femmes,<br>
+et Jésus, <span id="clausule" class="gras">incarné</span>, est béni.<br>
 Sainte Marie, Mère de Dieu,<br>
-prie pour nous, pauvres pécheurs,<br>
+priez pour nous, pauvres pécheurs,<br>
 maintenant et à l'heure de notre mort.<br>
 Amen.
 </p>
@@ -352,38 +242,23 @@ Amen.
 <p>
     
     <input type="radio" name="n_dizaine" id="n1"  checked  />
-    <label for="n1">1</label>
+    <label for="n1">0</label>
     
     <input type="radio" name="n_dizaine" id="n2"  />
     <label for="n2">2</label>
     
     <input type="radio" name="n_dizaine" id="n3"  />
-    <label for="n3">3</label>
+    <label for="n3">4</label>
     
     <input type="radio" name="n_dizaine" id="n4"  />
-    <label for="n4">4</label>
+    <label for="n4">6</label>
     
     <input type="radio" name="n_dizaine" id="n5"  />
-    <label for="n5">5</label>
+    <label for="n5">8</label>
     
     <input type="radio" name="n_dizaine" id="n6"  />
-    <label for="n6">6</label>
+    <label for="n6">10</label>
     
-    <input type="radio" name="n_dizaine" id="n7"  />
-    <label for="n7">7</label>
-    
-    <input type="radio" name="n_dizaine" id="n8"  />
-    <label for="n8">8</label>
-    
-    <input type="radio" name="n_dizaine" id="n9"  />
-    <label for="n9">9</label>
-    
-    <input type="radio" name="n_dizaine" id="n10"  />
-    <label for="n10">10</label>
-    
-
-    <input type="checkbox" id="fin_dizaine" />
-    <label for="fin_dizaine">Fini</label>
 </p>
 
 
@@ -444,11 +319,8 @@ In Nomine <b>Patris</b>, et <b>Filii</b>, et <b>Spiritus Sancti</b>.<br>
 Amen.
 </p>
 
-<script src="/data/mysteres/m_joyeux.js"></script>
-<script src="/data/mysteres/m_lumineux.js"></script>
-<script src="/data/mysteres/m_douloureux.js"></script>
-<script src="/data/mysteres/m_glorieux.js"></script>
-
+<script src="/public/js/chapelets/ch-intros.js"></script>
+<script src="/public/js/chapelets/ch-mysteres.js"></script>
 <script src="/public/js/chapelets/chapelet.js"></script>
 
     </main>
