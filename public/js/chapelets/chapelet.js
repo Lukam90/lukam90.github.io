@@ -8,17 +8,26 @@ const spanClausule = document.getElementById("clausule");
 
 const dzPremier = document.getElementById('n1');
 
-let chapelet, liste, fruits, clausules, intros;
-let mystere, fruit, clausule, intro;
+let chapelet, liste; 
+let fruits, clausules, intros;
+let fruit, clausule, intro;
 
 let index = 0;
 let type = "joyeux";
 
+initData("joyeux");
+
+// Debug
+
+function chDebug()
+{
+    console.log("type : ", type);
+    console.log("chapelet : ", chapelet);
+}
+
 // Initialisation des données
 
-initChapelet("joyeux");
-
-function initChapelet(type)
+function initData(type)
 {
     chapelet = rosaire[type];
 
@@ -27,44 +36,38 @@ function initChapelet(type)
     intros = chapelet["intros"];
     clausules = chapelet["clausules"];
 
-    mystere = liste[0];
-    fruit = fruits[0];
-    intro = fruits[0];
-    clausule = clausules[0];
+    //chDebug();
 }
 
 // MAJ des données d'un chapelet selon le type
 
 function majChapelet() 
 {
-    type = selMysteres.value;
+    index = 0;
 
-    
+    type = selType.value;
 
-    resetFirst();
+    initData(type);
+
+    for (let optMystere of selMysteres.children) {
+        optMystere.innerText = liste[index++];
+    }
+
+    selMysteres.selectedIndex = 0;
+
+    majInfos();
 }
 
 // MAJ des données selon le mystère sélectionné
 
 function majInfos() 
 {
-    index = 0;
+    index = selMysteres.selectedIndex;
 
-    type = selType.value;
+    fruit = fruits[index];
+    intro = intros[index];
+    clausule = clausules[index];
 
-    for (let optMystere of selMysteres.children) {
-        optMystere.innerText = liste[index++];
-    }
-
-    //selMysteres.selectedIndex = 0;
-
-    resetFirst();
-}
-
-// MAJ des champs textes
-
-function updateText()
-{
     pIntro.innerText = intro;
     spanClausule.innerText = clausule;
     spanFruit.innerText = fruit;

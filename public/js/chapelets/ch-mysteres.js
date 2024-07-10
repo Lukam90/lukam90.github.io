@@ -17,12 +17,12 @@ const m_lumineux = {
         "4. La transfiguration", "5. L'institution de l'eucharistie"
     ],
     "fruits" : [
-        "la fidelité aux promesses de notre baptême", "la confiance en Marie", "transfiguré devant les apôtres", 
-        "la conversion des coeurs", "la grâce d'une vie intérieure"
+        "la fidelité aux promesses de notre baptême", "la confiance en Marie", "la conversion des coeurs",
+        "la grâce d'une vie intérieure", "l'amour de l'eucharistie"
     ],
     "clausules" : [
         "baptisé dans le Jourdain", "qui vous exauça à Cana", "qui annonça la Bonne Nouvelle", 
-        "qui donna le sacrement de son amour", "l'amour de l'eucharistie"
+        "transfiguré devant les apôtres", "qui donna le sacrement de son amour"
     ],
     "intros" : intros_lumineux
 };
@@ -49,7 +49,7 @@ const m_glorieux = {
     ],
     "clausules" : [
         "ressuscité", "monté aux cieux", "dont le Père envoya le Saint-Esprit sur les apôtres", 
-        "qui vous eleva au ciel", "qui vous a couronnée reine des anges"
+        "qui vous éleva au ciel", "qui vous a couronnée reine des anges"
     ],
     "intros" : intros_glorieux
 };
