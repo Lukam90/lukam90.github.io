@@ -1,16 +1,14 @@
 const selType = document.getElementById("s_type");
 const selMysteres = document.getElementById("s_mysteres");
 
-const pIntro = document.getElementById("intro");
-
 const spanFruit = document.getElementById("fruit");
 const spanClausule = document.getElementById("clausule");
 
 const dzPremier = document.getElementById('n1');
 
 let chapelet, liste; 
-let fruits, clausules, intros;
-let fruit, clausule, intro;
+let fruits, clausules;
+let fruit, clausule;
 
 let index = 0;
 let type = "joyeux";
@@ -38,7 +36,6 @@ async function initData(type)
 
     liste = chapelet["liste"];
     fruits = chapelet["fruits"];
-    intros = chapelet["intros"];
     clausules = chapelet["clausules"];
 
     //chDebug();
@@ -69,19 +66,11 @@ function majInfos()
 {
     index = selMysteres.selectedIndex;
 
-    fruit = fruits[index];
-    intro = intros[index];
     clausule = clausules[index];
+    fruit = fruits[index];
 
     spanClausule.innerText = clausule;
     spanFruit.innerText = fruit;
-
-    pIntro.innerText = "";
-
-    for (let ligne of intro)
-    {
-        pIntro.innerText += ligne;
-    }
 
     resetFirst();
 }
