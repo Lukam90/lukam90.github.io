@@ -11,7 +11,7 @@
 
 {% include bpath + "signe-croix.jinja" %}
 
-<hr />
+{{ mc.anchor("credo", "=") }}
 
 {% include bpath + "credo.jinja" %}
 
@@ -25,7 +25,7 @@
 
 {% include gpath + "trio-grains.jinja" %}
 
-<hr id="rondes" />
+{{ mc.anchor("rondes", "=") }}
 
 <p>
     {% for nb in range(1, 6) %}
@@ -42,7 +42,7 @@
 
 {% include gpath + "dz-grains.jinja" %}
 
-<hr />
+{{ mc.anchor("salut_reine", "=") }}
 
 {% include bpath + "salut-reine.jinja" %}
 
@@ -52,5 +52,6 @@
 
 {{ mc.return_link() }}
 
+<script src="/public/js/latin.js"></script>
 <script src="/public/js/chapelets/ch-liberation.js"></script>
 {% endblock %}

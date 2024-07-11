@@ -173,15 +173,13 @@ chapelets = [
 
 #convert_jinja_list("chapelets", chapelets)
 
-### Rosaire
+names = ["credo", "notre-pere", "ste-marie", "gloire-pere", "priere-fatima", "salut-reine"]
 
-files = ["credo", "notre-pere", "ste-marie", "gloire-pere", "priere-fatima"]
+base = convert_json_data_list("traductions", names)
 
-base = convert_json_data_list("traductions", files)
-
-convert_jinja_single("chapelets/chapelet", base)
+#convert_jinja_single("chapelets/chapelet", base)
 #convert_jinja_single("chapelets/c-esprit")
-#convert_jinja_single("chapelets/c-liberation")
+convert_jinja_single("chapelets/c-liberation", base)
 
 ## Exercices
 
