@@ -17,7 +17,7 @@
 
 {% include bpath + "signe-croix.jinja" %}
 
-<hr id="base" />
+{{ mc.anchor("base", "=") }}
 
 {% include rpath + "rs-base.jinja" %}
 
@@ -33,5 +33,6 @@
 
 {% include bpath + "signe-croix.jinja" %}
 
+<script src="/public/js/latin.js"></script>
 <script src="/public/js/chapelets/chapelet.js"></script>
 {% endblock %}

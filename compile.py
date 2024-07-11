@@ -74,6 +74,16 @@ def convert_json_data(filename):
 
     return data
 
+## JSON > Liste > Dictionnaire
+
+def convert_json_data_list(path, names):
+    list = {}
+
+    for name in names:
+        list[name] = convert_json_data(path + "/" + name)
+
+    return list
+
 ## Jinja > HTML
 
 def convert_jinja_single(filename, data = None):
@@ -161,9 +171,15 @@ chapelets = [
     "c-sacrement", "c-st-antoine", "c-st-charbel"
 ]
 
-convert_jinja_list("chapelets", chapelets)
+#convert_jinja_list("chapelets", chapelets)
 
-#convert_jinja_single("chapelets/chapelet")
+### Rosaire
+
+files = ["credo", "notre-pere", "ste-marie", "gloire-pere", "priere-fatima"]
+
+base = convert_json_data_list("traductions", files)
+
+convert_jinja_single("chapelets/chapelet", base)
 #convert_jinja_single("chapelets/c-esprit")
 #convert_jinja_single("chapelets/c-liberation")
 
@@ -178,5 +194,5 @@ exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-nombres", "ex-sonore", "ex-
 
 prieres = ["md-neuvaine"]
 
-convert_jinja_list("prieres", prieres)
+#convert_jinja_list("prieres", prieres)
 

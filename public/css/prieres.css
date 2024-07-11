@@ -76,11 +76,15 @@ label:hover {
     font-weight: bold;
 }
 
-.priere a:hover {
+.signe:hover {
+    cursor: pointer;
     color: blue;
 }
 
-.signe:hover {
+/* Evénements */
+
+.priere a:hover,
+.traduction:hover {
     cursor: pointer;
     color: blue;
 }

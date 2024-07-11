@@ -1,40 +1,32 @@
-const latinCheckBox = document.getElementById("vlatine");
+const listFr = document.querySelectorAll("p[lang='fr']");
+const listLatin = document.querySelectorAll("p[lang='latin']");
 
-const frParts = document.querySelectorAll("p[lang='fr']");
-const latinParts = document.querySelectorAll("p[lang='latin']");
-
-let lang = "fr";
-
-function hideParts(parts)
+function hideAll(list)
 {
-    for (let part of parts)
+    for (let block of list)
     {
-        part.style.display = "none";
+        block.style.display = "none";
     }
 }
 
-function showParts(parts)
+function showAll(list)
 {
-    for (let part of parts)
+    for (let block of list)
     {
-        part.style.display = "block";
+        block.style.display = "block";
     }
 }
 
-function switchLang() 
+function switchLang(code)
 {
-    if (latinCheckBox.checked)
+    if (code == "latin")
     {
-        lang = "latin";
-
-        hideParts(frParts);
-        showParts(latinParts);
+        hideAll(listFr);
+        showAll(listLatin);
     }
     else
     {
-        lang = "fr";
-
-        hideParts(latinParts);
-        showParts(frParts);
+        hideAll(listLatin);
+        showAll(listFr);
     }
 }
