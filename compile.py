@@ -183,7 +183,8 @@ base = convert_json_data_list("traductions", names)
 #convert_jinja_single("chapelets/c-liberation", base)
 #convert_jinja_single("chapelets/c-misericorde", base)
 #convert_jinja_single("chapelets/c-sacrement", base)
-convert_jinja_single("chapelets/c-st-charbel", base)
+convert_jinja_single("chapelets/c-st-antoine", base)
+#convert_jinja_single("chapelets/c-st-charbel", base)
 
 ## Exercices
 
