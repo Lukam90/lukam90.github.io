@@ -177,7 +177,8 @@ names = ["credo", "notre-pere", "ste-marie", "gloire-pere", "priere-fatima", "sa
 
 base = convert_json_data_list("traductions", names)
 
-convert_jinja_single("chapelets/chapelet", base)
+#convert_jinja_single("chapelets/chapelet", base)
+convert_jinja_single("chapelets/c-anges", base)
 #convert_jinja_single("chapelets/c-esprit", base)
 #convert_jinja_single("chapelets/c-liberation", base)
 
