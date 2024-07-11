@@ -165,26 +165,19 @@ profil = ["cv-imprime", "portfolio"]
 
 ## Chapelets
 
-chapelets = [
-    "chapelet", "c-anges", "c-esprit", 
-    "c-eucharistie", "c-liberation", "c-misericorde", 
-    "c-sacrement", "c-st-antoine", "c-st-charbel"
-]
+chapelets = ["chapelet", "c-anges",  "c-eucharistie", "c-liberation", "c-misericorde", "c-sacrement"]
 
-#convert_jinja_list("chapelets", chapelets)
+ch_saints = ["c-st-antoine", "c-st-esprit", "c-st-charbel"]
 
 names = ["credo", "notre-pere", "ste-marie", "gloire-pere", "priere-fatima", "salut-reine"]
 
 base = convert_json_data_list("traductions", names)
 
-#convert_jinja_single("chapelets/chapelet", base)
-#convert_jinja_single("chapelets/c-anges", base)
-#convert_jinja_single("chapelets/c-esprit", base)
-#convert_jinja_single("chapelets/c-liberation", base)
-#convert_jinja_single("chapelets/c-misericorde", base)
-#convert_jinja_single("chapelets/c-sacrement", base)
-convert_jinja_single("chapelets/c-st-antoine", base)
-#convert_jinja_single("chapelets/c-st-charbel", base)
+for chapelet in chapelets:
+    convert_jinja_single(f"chapelets/{chapelet}", base)
+
+for chapelet in ch_saints:
+    convert_jinja_single(f"chapelets/saints/{chapelet}", base)
 
 ## Exercices
 
