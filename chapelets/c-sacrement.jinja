@@ -15,7 +15,7 @@
 
 {% include spath + "sc-intro.jinja" %}
 
-<hr id="mysteres" />
+{{ mc.anchor("mysteres", "=") }}
 
 {% include spath + "sc-mysteres.jinja" %}
 
@@ -23,5 +23,7 @@
 
 {% include bpath + "signe-croix.jinja" %}
 
-<script src="/public/js/reset.js"></script>
+{{ mc.script("latin.js") }}
+{{ mc.script("reset.js") }}
+
 {% endblock %}
