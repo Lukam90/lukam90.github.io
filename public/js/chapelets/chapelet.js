@@ -27,40 +27,24 @@ function chDebug()
 
 // Initialisation des données
 
-async function initData(type)
+function initData(type)
 {
-    url = "/data/json/mysteres/" + type + ".json";
+    chapelet = mysteres[type];
 
-    try 
-    {
-        resultat = await fetch(url);
-
-        if (resultat.status == 200)
-        {
-            chapelet = await resultat.json();
-    
-            liste = chapelet["liste"];
-            fruits = chapelet["fruits"];
-            clausules = chapelet["clausules"];
-        }
-    } 
-    catch (error) 
-    {
-        console.error(error);
-    }
-
-    //chDebug();
+    liste = chapelet["liste"];
+    fruits = chapelet["fruits"];
+    clausules = chapelet["clausules"];
 }
 
 // MAJ des données d'un chapelet selon le type
 
-async function majChapelet() 
+function majChapelet() 
 {
     index = 0;
 
     type = selType.value;
 
-    await initData(type);
+    initData(type);
 
     for (let optMystere of selMysteres.children) {
         optMystere.innerText = liste[index++];

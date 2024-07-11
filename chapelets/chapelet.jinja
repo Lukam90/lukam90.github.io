@@ -33,6 +33,8 @@
 
 {% include bpath + "signe-croix.jinja" %}
 
-<script src="/public/js/latin.js"></script>
-<script src="/public/js/chapelets/chapelet.js"></script>
+{{ mc.script("latin.js") }}
+{{ mc.script("data/d.mysteres.js") }}
+{{ mc.script("chapelets/chapelet.js") }}
+
 {% endblock %}
