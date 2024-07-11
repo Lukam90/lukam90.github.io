@@ -5,8 +5,6 @@
 
 {% set title = "C-Anges" %}
 
-{% set choeurs = ["séraphins", "chérubins", "trônes", "dominations", "puissances", "vertus", "principautés", "archanges", "anges"] %}
-
 {% block content %}
 <h1>Chapelet de St Michel et des anges</h1>
 
@@ -20,6 +18,7 @@
 
 {% include apath + "an-fin.jinja" %}
 
+{{ mc.script("utils.js") }}
 {{ mc.script("latin.js") }}
 {{ mc.script("data/d.choeurs.js") }}
 {{ mc.script("chapelets/ch-anges.js") }}

@@ -5,7 +5,7 @@ const spanAnge = document.getElementById("ange");
 const spanChoeur = document.getElementById("choeur");
 const spanSuite = document.getElementById("suite");
 
-const firstRadioBtn = document.getElementById('n1');
+const dzPremier = document.getElementById('n1');
 
 let choeurs, suites;
 let choeur, suite;
@@ -57,9 +57,4 @@ function updateAngel()
     selChoeurs.selectedIndex = 0;
     
     resetFirst();
-}
-
-function resetFirst()
-{
-    firstRadioBtn.checked = true;
 }

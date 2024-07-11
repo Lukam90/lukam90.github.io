@@ -69,10 +69,3 @@ function majInfos()
 
     resetFirst();
 }
-
-// Retour à la 1ère case
-
-function resetFirst()
-{
-    dzPremier.checked = true;
-}

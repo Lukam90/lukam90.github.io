@@ -3,6 +3,8 @@
 {% set title = "C-Esprit" %}
 
 {% set bpath = "prieres/base/" %}
+{% set ipath = "prieres/intros/" %}
+
 {% set gpath = "chapelets/grains/" %}
 
 {% block content %}
@@ -42,12 +44,7 @@
     </select>
 </p>
 
-<p id="suite" class="priere">
-Esprit Saint, accorde-nous le don de la sagesse,<br>
-que nous sachions reconnaître Dieu présent et manifesté dans le monde,<br>
-considérant toutes choses dans sa lumière<br>
-et dans le souvenir permanent de la vie éternelle.
-</p>
+{% include ipath + "intros-st-esprit.jinja" %}
 
 <p>***</p>
 
@@ -71,6 +68,7 @@ et allume en eux le feu de ton amour.
 
 {{ mc.return_link() }}
 
+<script src="/public/js/utils.js"></script>
 <script src="/public/js/latin.js"></script>
 <script src="/public/js/chapelets/ch-esprit.js"></script>
 {% endblock %}
