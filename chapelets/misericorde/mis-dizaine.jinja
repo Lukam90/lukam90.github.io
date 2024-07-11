@@ -3,14 +3,13 @@
 <p>
     Je prie à l'intention de
 
-    <input type="text" />
+    <input id="intention" type="text" />
 </p>
 
-<select onchange="resetFirst();">
-    {% for nb in range(1, 6) %}
-    <option>Ronde n°{{ nb }}</option>
-    {% endfor %}
-</select>
+{% for nb in range(1, 6) %}
+<input type="radio" name="rondes" id="rondes_{{ loop.index }}" onclick="resetFirst();" {% if loop.first %} checked {% endif %} />
+<label for="rondes_{{ loop.index }}">{{ nb }}</label>
+{% endfor %}
 
 <p class="priere">
 Père Éternel,<br> 

@@ -179,8 +179,9 @@ base = convert_json_data_list("traductions", names)
 
 #convert_jinja_single("chapelets/chapelet", base)
 #convert_jinja_single("chapelets/c-anges", base)
-convert_jinja_single("chapelets/c-esprit", base)
+#convert_jinja_single("chapelets/c-esprit", base)
 #convert_jinja_single("chapelets/c-liberation", base)
+convert_jinja_single("chapelets/c-misericorde", base)
 
 ## Exercices
 

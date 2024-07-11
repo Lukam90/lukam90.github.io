@@ -1,7 +1,7 @@
-const firstRadioBtn = document.getElementById('n1');
+const dzPremier = document.getElementById('n1');
 
 function resetFirst()
 {
-    firstRadioBtn.checked = true;
-    firstRadioBtn.focus();
+    dzPremier.checked = true;
+    dzPremier.focus();
 }

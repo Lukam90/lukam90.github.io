@@ -20,7 +20,9 @@
 
 {% include mpath + "mis-fin.jinja" %}
 
-<p><a href="#" class="bleu">Revenir en haut</a></p>
+{{ mc.return_link() }}
 
-<script src="/public/js/reset.js"></script>
+{{ mc.script("latin.js") }}
+{{ mc.script("reset.js") }}
+
 {% endblock %}
