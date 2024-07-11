@@ -1,3 +1,12 @@
+// Masquage d'un bloc
+
+function hideBlock(id)
+{
+    const block = document.getElementById(id);
+
+    block.style.display = "none";
+}
+
 // Masquage de l'ensemble des blocs
 
 function hideAll(blocks)

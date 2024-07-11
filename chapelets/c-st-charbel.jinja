@@ -2,10 +2,10 @@
 
 {% set title = "C-St-Charbel" %}
 
+{% set gpath = "chapelets/grains/" %}
+
 {% set bpath = "prieres/base/" %}
 {% set spath = "prieres/saints/" %}
-
-{% set gpath = "chapelets/grains/" %}
 
 {% block content %}
 <h1>Chapelet de St Charbel</h1>
@@ -14,9 +14,12 @@
 
 <hr />
 
+<p>Ô Père de vérité, voici votre Fils, victime pour vous plaire.</p>
+
+<hr />
+
 <div>
-    <select id="sel_rondes" onchange="setSuites();">
-        <option>Bref de St Charbel</option>
+    <select id="sel_rondes" onclick="resetFirst();">
         <option>1. voeu de pauvreté</option>
         <option>2. voeu de chasteté</option>
         <option>3. voeu d'obéissance</option>
@@ -26,23 +29,19 @@
     </select>
 </div>
 
-<p id="bref">Ô Père de vérité, voici votre Fils, victime pour vous plaire.</p>
+{% include bpath + "notre-pere.jinja" %}
 
-<div id="suite">
-    {% include bpath + "notre-pere.jinja" %}
+{{ mc.anchor("trio_ste_marie") }}
 
-    {{ mc.anchor("trio_ste_marie") }}
+{% include bpath + "ste-marie.jinja" %}
 
-    {% include bpath + "ste-marie.jinja" %}
+{% include gpath + "trio-grains.jinja" %}
 
-    {% include gpath + "trio-grains.jinja" %}
-
-    {{ mc.return_link() }}
-</div>
+{{ mc.return_link() }}
 
 <hr />
 
-{% include spath + "st-charbel.jinja" %}
+{% include spath + "fin-st-charbel.jinja" %}
 
 <hr />
 
@@ -50,5 +49,6 @@
 
 {{ mc.return_link() }}
 
-<script src="/public/js/chapelets/ch-st-charbel.js"></script>
+{{ mc.script("latin.js") }}
+
 {% endblock %}

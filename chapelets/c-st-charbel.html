@@ -17,21 +17,19 @@
     
 <h1>Chapelet de St Charbel</h1>
 
-<p class="priere" lang="fr">
+<p class="priere">
 Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>.<br>
-Amen.
-</p>
-
-<p class="priere" lang="latin">
-In Nomine <b>Patris</b>, et <b>Filii</b>, et <b>Spiritus Sancti</b>.<br>
 Amen.
 </p>
 
 <hr />
 
+<p>Ô Père de vérité, voici votre Fils, victime pour vous plaire.</p>
+
+<hr />
+
 <div>
-    <select id="sel_rondes" onchange="setSuites();">
-        <option>Bref de St Charbel</option>
+    <select id="sel_rondes" onclick="resetFirst();">
         <option>1. voeu de pauvreté</option>
         <option>2. voeu de chasteté</option>
         <option>3. voeu d'obéissance</option>
@@ -41,25 +39,64 @@ Amen.
     </select>
 </div>
 
-<p id="bref">Ô Père de vérité, voici votre Fils, victime pour vous plaire.</p>
+<h2>
+<span class="traduction" onclick="switchLang('fr');">Notre Père</span>
+ &minus; 
+<span class="traduction" onclick="switchLang('latin');">Pater Noster</span>
+</h2>
 
-<div id="suite">
-    <h2>Notre Père</h2>
 
 <p class="priere" lang="fr">
-Notre Père, qui est aux cieux,<br>
-que ton nom soit sanctifié,<br>
-que ton règne vienne,<br>
-que ta volonté soit faite, sur la terre comme au ciel.<br>
-Donne-nous aujourd'hui notre pain de ce jour,<br>
-et pardonne-nous nos offenses,<br>
-comme nous pardonnons aussi à ceux qui nous ont offensés,<br>
-et ne nous laisse pas entrer en tentation,<br>
-mais délivre-nous du mal.<br>
-Amen.
+
+    Notre Père, qui est aux cieux,<br>
+
+    que ton nom soit sanctifié,<br>
+
+    que ton règne vienne,<br>
+
+    que ta volonté soit faite, sur la terre comme au ciel.<br>
+
+    Donne-nous aujourd'hui notre pain de ce jour,<br>
+
+    et pardonne-nous nos offenses,<br>
+
+    comme nous pardonnons aussi à ceux qui nous ont offensés,<br>
+
+    et ne nous laisse pas entrer en tentation,<br>
+
+    mais délivre-nous du mal.<br>
+
+    Amen.<br>
+
 </p>
 
-    
+
+<p class="priere" lang="latin">
+
+    Pater Noster, qui es in caelis,<br>
+
+    sanctificetur nomen tuum,<br>
+
+    adveniat regnum tuum,<br>
+
+    fiat voluntas tua, sicut in caelo et in terra.<br>
+
+    Panem nostrum quotidianum da nobis hodie,<br>
+
+    et dimitte nobis debita nostra,<br>
+
+    sicut et nos dimittimus debitoribus nostris,<br>
+
+    et ne nos inducas in tentationem,<br>
+
+    sed libera nos a malo.<br>
+
+    Amen.<br>
+
+</p>
+
+
+
 <div id="trio_ste_marie">
     <a href="#trio_ste_marie">
     
@@ -69,20 +106,56 @@ Amen.
 </div>
 
 
-    <h2>Je vous salue Marie</h2>
+<h2>
+<span class="traduction" onclick="switchLang('fr');">Je vous salue Marie</span>
+ &minus; 
+<span class="traduction" onclick="switchLang('latin');">Ava Maria</span>
+</h2>
+
 
 <p class="priere" lang="fr">
-Je vous salue Marie, pleine de grâce,<br>
-le Seigneur est avec vous.<br>
-Vous êtes bénie entre toutes les femmes,<br>
-et Jésus, le fruit de vos entrailles, est béni.<br>
-Sainte Marie, Mère de Dieu,<br>
-priez pour nous, pauvres pécheurs,<br>
-maintenant et à l'heure de notre mort.<br>
-Amen.
+
+    Je vous salue Marie, pleine de grâce,<br>
+
+    le Seigneur est avec vous.<br>
+
+    Vous êtes bénie entre toutes les femmes,<br>
+
+    et Jésus, le fruit de vos entrailles, est béni.<br>
+
+    Sainte Marie, Mère de Dieu,<br>
+
+    priez pour nous, pauvres pécheurs,<br>
+
+    maintenant et à l'heure de notre mort.<br>
+
+    Amen.<br>
+
 </p>
 
-    <p>
+
+<p class="priere" lang="latin">
+
+    Ave Maria, gratia plena,<br>
+
+    Dominus tecum.<br>
+
+    Benedicta tu in mulieribus,<br>
+
+    et benedictus fructus ventris tui, Jesus.<br>
+
+    Sancta Maria, Mater Dei,<br>
+
+    ora pro nobis, peccatoribus,<br>
+
+    nunc et in ora mortis nostrae.<br>
+
+    Amen.<br>
+
+</p>
+
+
+<p>
     
     <input type="radio" name="n_trio" id="trio_1"  checked  />
     <label for="trio_1">0</label>
@@ -98,14 +171,15 @@ Amen.
     
 </p>
 
-    
+
 <p><a href="#" class="bleu">Retour en haut</a></p>
 
-</div>
 
 <hr />
 
-<h2 id="st_charbel"><a href="#st_charbel">Prière à Saint Charbel</a></h2>
+
+<h2 id="fin_st_charbel"><a href="#fin_st_charbel">Prière à Saint Charbel</a></h2>
+
 
 <p class="priere">
 Dieu, infiniment saint et glorifié dans vos Saints,<br>
@@ -126,13 +200,8 @@ Amen.
 
 <hr />
 
-<p class="priere" lang="fr">
+<p class="priere">
 Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>.<br>
-Amen.
-</p>
-
-<p class="priere" lang="latin">
-In Nomine <b>Patris</b>, et <b>Filii</b>, et <b>Spiritus Sancti</b>.<br>
 Amen.
 </p>
 
@@ -140,7 +209,10 @@ Amen.
 <p><a href="#" class="bleu">Retour en haut</a></p>
 
 
-<script src="/public/js/chapelets/ch-st-charbel.js"></script>
+
+<script src="/public/js/latin.js"></script>
+
+
 
     </main>
 </body>
