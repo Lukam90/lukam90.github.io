@@ -62,19 +62,3 @@
 {% macro link(href, content) %}
 <a href="{{ href }}" class="bleu" target="_blank">{{ content }}</a>
 {% endmacro %}
-
-<!-- Version FR - Latine -->
-
-{% macro vtranslate(fr, title) %}
-<span class="traduction" onclick="switchLang('{{ fr }}');">{{ title }}</span>
-{% endmacro %}
-
-<!-- Paragraphes (extraits de JSON, FR - Latin) -->
-
-{% macro paragraph(data, id, lang) %}
-<p class="priere" lang="{{ lang }}">
-{% for line in data[id][lang] %}
-    {{ line }}<br>
-{% endfor %}
-</p>
-{% endmacro %}

@@ -169,15 +169,13 @@ chapelets = ["chapelet", "c-anges",  "c-eucharistie", "c-liberation", "c-miseric
 
 ch_saints = ["c-st-antoine", "c-st-esprit", "c-st-charbel"]
 
-names = ["credo", "notre-pere", "ste-marie", "gloire-pere", "priere-fatima", "salut-reine"]
+convert_jinja_list("chapelets", chapelets)
 
-base = convert_json_data_list("traductions", names)
+#for chapelet in chapelets:
+#    convert_jinja_single(f"chapelets/{chapelet}", base)
 
-for chapelet in chapelets:
-    convert_jinja_single(f"chapelets/{chapelet}", base)
-
-for chapelet in ch_saints:
-    convert_jinja_single(f"chapelets/saints/{chapelet}", base)
+#for chapelet in ch_saints:
+#    convert_jinja_single(f"chapelets/saints/{chapelet}", base)
 
 ## Exercices
 
