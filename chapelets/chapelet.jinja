@@ -3,7 +3,6 @@
 {% set bpath = "prieres/base/" %}
 
 {% set ipath = "chapelets/intros/" %}
-{% set gpath = "chapelets/grains/" %}
 {% set rpath = "chapelets/rosaire/" %}
 
 {% set title = "Chapelet" %}
@@ -11,7 +10,11 @@
 {% block content %}
 <h1>Chapelet</h1>
 
-{% include "partials/ex-sources.jinja" %}
+<p>
+Le chapelet basé sur le rosaire traditionnel s'inspire de l'application 
+{{ mc.link("https://rosario.app/", "Rosario") }} par
+{{ mc.link("https://hozana.org/", "Hozana") }}.
+</p>
 
 <hr />
 

@@ -4,7 +4,7 @@ const selMysteres = document.getElementById("s_mysteres");
 const spanFruit = document.getElementById("fruit");
 const spanClausule = document.getElementById("clausule");
 
-const dzPremier = document.getElementById('n1');
+const btnPremier = document.getElementById('dz_grains_1');
 
 let chapelet, liste; 
 let fruits, clausules;
@@ -67,5 +67,5 @@ function majInfos()
     spanClausule.innerText = clausule;
     spanFruit.innerText = fruit;
 
-    resetFirst();
+    checkFirst();
 }
