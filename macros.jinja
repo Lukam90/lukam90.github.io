@@ -62,3 +62,28 @@
 {% macro link(href, content) %}
 <a href="{{ href }}" class="bleu" target="_blank">{{ content }}</a>
 {% endmacro %}
+
+<!-- Boutons radio -->
+
+{% macro radio_buttons(type, name) %}
+    {% if type == "trio" %}
+        {% set list = range(0, 4) %}
+    {% elif type == "septaine" %}
+        {% set list = [0, 2, 4, 6, 7] %}
+    {% elif type == "dizaine" %}
+        {% set list = range(0, 11, 2) %}
+    {% elif type == "anges" %}
+        {% set list = ["-", "St Michel", "St Gabriel", "St Raphaël", "Ange gardien"] %}
+    {% else %}
+        {% set list = ["-", "foi", "espérance", "charité"] %}
+    {% endif %}
+
+    <p>
+    {% for nb in list %}
+        {% set id = name + "_" + loop.index | string %}
+
+        <input type="radio" name="{{ name }}" id="{{ id }}" {% if loop.first %} checked {% endif %} />
+        <label for="{{ id }}">{{ nb }}</label>
+    {% endfor %}
+    </p>
+{% endmacro %}

@@ -5,8 +5,6 @@
 {% set bpath = "prieres/base/" %}
 {% set ipath = "prieres/intros/" %}
 
-{% set gpath = "chapelets/grains/" %}
-
 {% block content %}
 <h1>Chapelet des 7 dons du Saint-Esprit</h1>
 
@@ -24,7 +22,7 @@
 
 {% include bpath + "ste-marie.jinja" %}
 
-{% include gpath + "trio-vertus.jinja" %}
+{{ mc.radio_buttons("vertus", "trio_vertus") }}
 
 {{ mc.anchor("b_gloire_pere") }}
 
@@ -54,13 +52,13 @@ remplis le coeur de tes fidèles<br>
 et allume en eux le feu de ton amour.
 </p>
 
-{% include gpath + "septaine.jinja" %}
+{{ mc.radio_buttons("septaine", "serie") }}
 
 {{ mc.anchor("fin_gloire_pere", "=") }}
 
 {% include bpath + "gloire-pere.jinja" %}
 
-{% include gpath + "trio-grains.jinja" %}
+{{ mc.radio_buttons("trio", "fin_trio") }}
 
 <hr />
 

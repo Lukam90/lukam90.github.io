@@ -3,7 +3,7 @@ const selDons = document.getElementById('sel_dons');
 const intros = document.getElementsByClassName("intro");
 const spanIntro = document.getElementById('intro');
 
-const dzPremier = document.getElementById('n1');
+const btnPremier = document.getElementById('serie_1');
 
 let index = 0;
 let intro = "";
@@ -21,5 +21,5 @@ function setSuite()
     hideAll(intros);
     showBlock(id);
 
-    resetFirst();
+    checkFirst();
 }

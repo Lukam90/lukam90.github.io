@@ -169,7 +169,8 @@ chapelets = ["chapelet", "c-anges",  "c-eucharistie", "c-liberation", "c-miseric
 
 ch_saints = ["c-st-antoine", "c-st-esprit", "c-st-charbel"]
 
-convert_jinja_list("chapelets", chapelets)
+#convert_jinja_list("chapelets", chapelets)
+convert_jinja_list("chapelets/saints", ch_saints)
 
 #for chapelet in chapelets:
 #    convert_jinja_single(f"chapelets/{chapelet}", base)

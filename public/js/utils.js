@@ -26,9 +26,9 @@ function showBlock(id)
     block.style.display = "block";
 }
 
-// Retour à la 1ère case (dizaine)
+// Retour à la 1ère case
 
-function resetFirst()
+function checkFirst()
 {
-    dzPremier.checked = true;
+    btnPremier.checked = true;
 }
