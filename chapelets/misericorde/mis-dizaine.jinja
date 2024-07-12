@@ -6,10 +6,7 @@
     <input id="intention" type="text" />
 </p>
 
-{% for nb in range(1, 6) %}
-<input type="radio" name="rondes" id="rondes_{{ loop.index }}" onclick="resetFirst();" {% if loop.first %} checked {% endif %} />
-<label for="rondes_{{ loop.index }}">{{ nb }}</label>
-{% endfor %}
+{{ mc.grains("rondes", "quinte") }}
 
 <p class="priere">
 Père Éternel,<br> 
@@ -28,4 +25,4 @@ soyez miséricordieux pour nous<br>
 et pour le monde entier.
 </p>
 
-{% include gpath + "dz-grains.jinja" %}
+{{ mc.grains("dizaine", "dz_grains") }}

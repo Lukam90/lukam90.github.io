@@ -10,7 +10,23 @@
 {% block content %}
 <h1>Chapelet de la Miséricorde Divine</h1>
 
+{% include bpath + "signe-croix.jinja" %}
+
+<hr />
+
 {% include mpath + "mis-intro.jinja" %}
+
+{{ mc.anchor("mis_notre_pere") }}
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("mis_ste_marie") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.anchor("mis_credo") }}
+
+{% include bpath + "credo.jinja" %}
 
 <hr />
 
@@ -20,8 +36,10 @@
 
 {% include mpath + "mis-fin.jinja" %}
 
-{{ mc.return_link() }}
+<hr />
 
-{{ mc.script("reset.js") }}
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link() }}
 
 {% endblock %}
