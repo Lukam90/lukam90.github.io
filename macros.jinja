@@ -63,9 +63,23 @@
 <a href="{{ href }}" class="bleu" target="_blank">{{ content }}</a>
 {% endmacro %}
 
-<!-- Boutons radio -->
+<!-- Bouton radio (simple) -->
 
-{% macro radio_buttons(type, name) %}
+{% macro radio_btn(value, name, id) %}
+<input 
+    type="radio" 
+    name="{{ name }}" 
+    id="{{ id }}"
+
+    {% if value == "-" or value == 0 %} checked {% endif %}
+/>
+
+<label for="{{ id }}">{{ value }}</label>
+{% endmacro %}
+
+<!-- Boutons radios => Grains -->
+
+{% macro grains(type, name) %}
     {% if type == "trio" %}
         {% set list = range(0, 4) %}
     {% elif type == "septaine" %}
@@ -82,8 +96,7 @@
     {% for nb in list %}
         {% set id = name + "_" + loop.index | string %}
 
-        <input type="radio" name="{{ name }}" id="{{ id }}" {% if loop.first %} checked {% endif %} />
-        <label for="{{ id }}">{{ nb }}</label>
+        {{ radio_btn(nb, name, id) }}
     {% endfor %}
     </p>
 {% endmacro %}

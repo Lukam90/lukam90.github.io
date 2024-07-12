@@ -1,7 +1,6 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set bpath = "prieres/base/" %}
-{% set gpath = "chapelets/grains/" %}
 {% set spath = "chapelets/sacrement/" %}
 
 {% set title = "C-Sacrement" %}
@@ -13,16 +12,51 @@
 
 <hr />
 
-{% include spath + "sc-intro.jinja" %}
+<!-- Intro -->
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("b_ste_marie") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.grains("vertus", "trio_ste_marie") }}
+
+{{ mc.anchor("b_gloire_pere") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+<!-- Mystères -->
 
 {{ mc.anchor("mysteres", "=") }}
 
-{% include spath + "sc-mysteres.jinja" %}
+<p>Jésus a institué le Saint Sacrement</p>
+
+<ul class="priere">
+    <li>{{ mc.radio_btn("1. en mémoire de sa passion et de sa mort.", "mysteres", "mystere_1") }}</li>
+    <li>{{ mc.radio_btn("2. pour demeurer auprès de nous chaque jour de notre vie", "mysteres", "mystere_2") }}</li>
+    <li>{{ mc.radio_btn("3. pour perpétuer son sacrifice pour nous sur tous les autels de la chrétienté, jusqu’à la fin des temps.", "mysteres", "mystere_3") }}</li>
+    <li>{{ mc.radio_btn("4. pour être le pain et le vin de notre âme, notre nourriture spirituelle.", "mysteres", "mystere_4") }}</li>
+    <li>{{ mc.radio_btn("5. pour nous visiter au moment de notre mort et nous emmener avec lui au paradis.", "mysteres", "mystere_5") }}</li>
+</ul>
+
+{{ mc.anchor("dz_notre_pere") }}
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("dz_min") }}
+
+<p class="priere">
+Jésus, sois loué à chaque instant,<br> 
+dans le Saint Sacrement, aujourd’hui et toujours.
+</p>
+
+{{ mc.grains("dizaine", "dz_mysteres") }}
+
+{{ mc.return_link("mysteres") }}
 
 <hr />
 
 {% include bpath + "signe-croix.jinja" %}
-
-{{ mc.script("reset.js") }}
 
 {% endblock %}
