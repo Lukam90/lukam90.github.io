@@ -1,7 +1,7 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set bpath = "prieres/base/" %}
-{% set gpath = "chapelets/grains/" %}
+
 {% set lpath = "chapelets/liberation/" %}
 
 {% set title = "C-Liberation" %}
@@ -11,36 +11,35 @@
 
 {% include bpath + "signe-croix.jinja" %}
 
-{{ mc.anchor("credo", "=") }}
+<hr />
+
+<!-- Base -->
 
 {% include bpath + "credo.jinja" %}
 
-{{ mc.anchor("base_fils") }}
+{{ mc.anchor("base_st_jean") }}
 
 <p>"Si donc le Fils vous libère, vous serez réellement libres." (Jn 8,36)</p>
 
 {{ mc.anchor("base_jesus") }}
 
-{% include lpath + "lib-jesus.jinja" %}
+{% include bpath + "ex-jesus.jinja" %}
 
-{% include gpath + "trio-grains.jinja" %}
+{{ mc.grains("trio", "base_trio") }}
+
+<!-- Rondes -->
 
 {{ mc.anchor("rondes", "=") }}
 
-<p>
-    {% for nb in range(1, 6) %}
-    <input type="radio" name="rondes" id="rondes_{{ loop.index }}" {% if loop.first %} checked {% endif %} />
-    <label for="rondes_{{ loop.index }}">{{ nb }}</label>
-    {% endfor %}
-</p>
+{{ mc.grains("rondes", "quinte") }}
 
-<p>"Si donc le Fils vous libère, vous serez réellement libres." (Jn 8,36)</p>
+{% include bpath + "notre-pere.jinja" %}
 
 <p>***</p>
 
-<p>Jésus, <span id="clausule" class="gras">aie pitié de nous</span> !</p>
+{% include bpath + "ex-jesus.jinja" %}
 
-{% include gpath + "dz-grains.jinja" %}
+{{ mc.grains("dizaine", "dz_grains") }}
 
 {{ mc.anchor("salut_reine", "=") }}
 
