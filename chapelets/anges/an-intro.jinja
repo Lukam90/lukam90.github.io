@@ -1,7 +1,3 @@
-{% include bpath + "signe-croix.jinja" %}
-
-<hr />
-
 <p class="priere">
 Saint Michel Archange,<br> 
 grand prince des milices célestes,<br>
@@ -9,15 +5,4 @@ défendez-nous dans le combat<br>
 pour que nous ne périssions pas au jour du jugement.<br>
 Ô Dieu, venez à mon aide,<br>
 Seigneur, hâtez-vous de me secourir.
-</p>
-
-{{ mc.anchor("intro_notre_pere") }}
-
-{% include bpath + "notre-pere.jinja" %}
-
-<p>
-    {% for step in ["-", "St Michel", "St Gabriel", "St Raphaël", "Ange gardien"] %}
-    <input type="radio" name="nbase" id="nbase_{{ loop.index }}" {% if loop.first %} checked {% endif %} />
-    <label for="nbase_{{ loop.index }}">{{ step }}</label>
-    {% endfor %}
 </p>

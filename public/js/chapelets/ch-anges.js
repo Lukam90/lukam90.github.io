@@ -5,8 +5,6 @@ const spanAnge = document.getElementById("ange");
 const spanChoeur = document.getElementById("choeur");
 const spanSuite = document.getElementById("suite");
 
-const dzPremier = document.getElementById('n1');
-
 let choeurs, suites;
 let choeur, suite;
 let index;
@@ -47,14 +45,10 @@ function updateText() {
 
     spanChoeur.innerText = choeur;
     spanSuite.innerText = suite;
-
-    resetFirst();
 }
 
 function updateAngel()
 {
     spanAnge.innerText = selAnges.value;
     selChoeurs.selectedIndex = 0;
-    
-    resetFirst();
 }

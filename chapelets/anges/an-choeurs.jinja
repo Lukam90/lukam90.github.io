@@ -13,30 +13,11 @@
 
 <p>
     <select id="sel_choeurs" onchange="updateText();">
-        {% for choeur in choeurs %}
-        <option value="{{ choeur }}">{{ loop.index }}. {{ choeur }}</option>
-        {% endfor %}
     </select>
 </p>
 
 <p class="priere">
 Par l'intercession de <span id="ange" class="gras">Saint Michel</span> et du choeur céleste des <span id="choeur" class="gras">séraphins</span>,<br>
 que le Seigneur <span id="suite" class="gras">nous rende dignes de brûler du feu de la charité parfaite</span>.<br>
-
 Amen.
 </p>
-
-{% include bpath + "notre-pere.jinja" %}
-
-{{ mc.anchor("choeur_ste_marie") }}
-
-{% include bpath + "ste-marie.jinja" %}
-
-<p>
-    {% for nb in range(0, 4) %}
-    <input type="radio" name="nsuite" id="n{{ loop.index }}" {% if loop.first %} checked {% endif %} />
-    <label for="n{{ loop.index }}">{{ nb }}</label>
-    {% endfor %}
-</p>
-
-{{ mc.return_link("choeurs") }}
