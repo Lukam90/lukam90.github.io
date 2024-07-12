@@ -2,8 +2,6 @@
 
 {% set title = "C-St-Charbel" %}
 
-{% set gpath = "chapelets/grains/" %}
-
 {% set bpath = "prieres/base/" %}
 {% set spath = "prieres/saints/" %}
 
@@ -19,7 +17,7 @@
 <hr />
 
 <div>
-    <select id="sel_rondes" onclick="resetFirst();">
+    <select id="sel_rondes">
         <option>1. voeu de pauvreté</option>
         <option>2. voeu de chasteté</option>
         <option>3. voeu d'obéissance</option>
@@ -35,7 +33,7 @@
 
 {% include bpath + "ste-marie.jinja" %}
 
-{% include gpath + "trio-grains.jinja" %}
+{{ mc.radio_buttons("trio", "ste_marie_trio") }}
 
 {{ mc.return_link() }}
 

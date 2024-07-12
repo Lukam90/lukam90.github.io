@@ -1,6 +1,0 @@
-<p>
-    {% for nb in range(0, 4) %}
-    <input type="radio" name="n_trio" id="trio_{{ loop.index }}" {% if loop.first %} checked {% endif %} />
-    <label for="trio_{{ loop.index }}">{{ nb }}</label>
-    {% endfor %}
-</p>

@@ -1,6 +1,0 @@
-<p>
-    {% for step in ["-", "foi", "espérance", "charité"] %}
-    <input type="radio" name="vertus" id="vertus_{{ loop.index }}" {% if loop.first %} checked {% endif %} />
-    <label for="vertus_{{ loop.index }}">{{ step }}</label>
-    {% endfor %}
-</p>
