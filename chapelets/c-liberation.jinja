@@ -9,6 +9,8 @@
 {% block content %}
 <h1>Chapelet de libération</h1>
 
+<p>Je prie à l'intention de __.</p>
+
 {% include bpath + "signe-croix.jinja" %}
 
 <hr />
@@ -31,9 +33,9 @@
 
 {{ mc.anchor("rondes", "=") }}
 
-{{ mc.grains("rondes", "quinte") }}
+{{ mc.rondes() }}
 
-{% include bpath + "notre-pere.jinja" %}
+<p>"Si donc le Fils vous libère, vous serez réellement libres." (Jn 8,36)</p>
 
 <p>***</p>
 
@@ -50,5 +52,9 @@
 {% include bpath + "signe-croix.jinja" %}
 
 {{ mc.return_link() }}
+
+{{ mc.first_btn("dz_grains_1") }}
+
+{{ mc.script("utils.js") }}
 
 {% endblock %}

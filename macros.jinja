@@ -1,3 +1,15 @@
+<!-- Listes > Grains -->
+
+{%
+    set lists = {
+        "vertus" : ["-", "foi", "espérance", "charité"],
+        "anges" : ["-", "St Michel", "St Gabriel", "St Raphaël", "Ange gardien"],
+        "trio" : range(0, 4),
+        "septaine" : [0, 2, 4, 6, 7],
+        "dizaine" : range(0, 11, 2)
+    }
+%}
+
 <!-- Script JS -->
 
 {% macro script(path) %}
@@ -70,28 +82,34 @@
 <label for="{{ id }}">{{ value }}</label>
 {% endmacro %}
 
+<!-- Premier bouton avec son ID -->
+
+{% macro first_btn(id) %}
+<script>const btnPremier = document.getElementById("{{ id }}");</script>
+{% endmacro %}
+
 <!-- Boutons radios => Grains -->
 
 {% macro grains(type, name) %}
-    {% if type == "trio" %}
-        {% set list = range(0, 4) %}
-    {% elif type == "rondes" %}
-        {% set list = range(1, 6) %}
-    {% elif type == "septaine" %}
-        {% set list = [0, 2, 4, 6, 7] %}
-    {% elif type == "dizaine" %}
-        {% set list = range(0, 11, 2) %}
-    {% elif type == "anges" %}
-        {% set list = ["-", "St Michel", "St Gabriel", "St Raphaël", "Ange gardien"] %}
-    {% else %}
-        {% set list = ["-", "foi", "espérance", "charité"] %}
-    {% endif %}
+    {% set values = lists[type] %}
 
     <p>
-    {% for nb in list %}
+    {% for val in values %}
         {% set id = name + "_" + loop.index | string %}
 
-        {{ radio_btn(nb, name, id) }}
+        {{ radio_btn(val, name, id) }}
     {% endfor %}
     </p>
+{% endmacro %}
+
+<!-- Rondes (liste de choix) -->
+
+{% macro rondes() %}
+<p>
+    <select onchange="checkFirst();">
+        {% for nb in range(1, 6) %}
+        <option>Ronde n°{{ nb }}</option>
+        {% endfor %}
+    </select>
+</p>
 {% endmacro %}

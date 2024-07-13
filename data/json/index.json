@@ -9,11 +9,7 @@
         { "href" : "c-eucharistie", "title" : "Chapelet de l'Eucharistie" },
         { "href" : "c-liberation", "title" : "Chapelet de la libération" },
         { "href" : "c-misericorde", "title" : "Chapelet de la miséricorde divine" },
-        { "href" : "c-sacrement", "title" : "Chapelet du Saint Sacrement" },
-
-        { "href" : "saints/c-st-antoine", "title" : "Chapelet de St Antoine" },
-        { "href" : "saints/c-st-charbel", "title" : "Chapelet de St Charbel" },
-        { "href" : "saints/c-st-esprit", "title" : "Chapelet des 7 dons de l'Esprit Saint" }
+        { "href" : "c-sacrement", "title" : "Chapelet du Saint Sacrement" }
     ],
     "prieres" : [
         { "href" : "md-neuvaine", "title" : "Neuvaine de la médaille miraculeuse" }
