@@ -173,7 +173,7 @@ ch_saints = ["c-ste-rita"]
 convert_jinja_list("chapelets/saints", ch_saints)
 
 #convert_jinja_single("chapelets/chapelet")
-#convert_jinja_single("chapelets/c-liberation")
+convert_jinja_single("chapelets/c-liberation")
 
 ## Exercices
 

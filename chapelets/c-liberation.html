@@ -133,7 +133,7 @@ Jésus, <b>libère</b>-moi !
 
 
 <p>
-    <select onchange="checkFirst();">
+    <select id="sel_rondes" onchange="checkFirst();">
         
         <option>Ronde n°1</option>
         
@@ -247,11 +247,15 @@ Amen.
 
 
 
-<script>const btnPremier = document.getElementById("dz_grains_1");</script>
-
-
-
 <script src="/public/js/utils.js"></script>
+
+
+
+<script>
+const btnPremier = document.getElementById("dz_grains_1");
+
+checkFirst();
+</script>
 
 
 

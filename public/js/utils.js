@@ -36,4 +36,5 @@ function showBlock(id)
 function checkFirst()
 {
     btnPremier.checked = true;
+    btnPremier.focus();
 }
