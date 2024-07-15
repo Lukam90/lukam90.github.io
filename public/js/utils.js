@@ -1,8 +1,13 @@
+// Fonctions en mode "jQuery"
+
+const $ = (selector) => document.querySelector(selector);
+const $all = (selector) => document.querySelectorAll(selector);
+
 // Masquage d'un bloc
 
 function hideBlock(id)
 {
-    const block = document.getElementById(id);
+    const block = $("#" + id);
 
     block.style.display = "none";
 }
@@ -21,7 +26,7 @@ function hideAll(blocks)
 
 function showBlock(id)
 {
-    const block = document.getElementById(id);
+    const block = $("#" + id);
 
     block.style.display = "block";
 }

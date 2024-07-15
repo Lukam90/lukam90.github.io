@@ -104,10 +104,10 @@
 
 <!-- Rondes (liste de choix) -->
 
-{% macro rondes() %}
+{% macro rondes(end = 5) %}
 <p>
     <select onchange="checkFirst();">
-        {% for nb in range(1, 6) %}
+        {% for nb in range(1, end + 1) %}
         <option>Ronde n°{{ nb }}</option>
         {% endfor %}
     </select>

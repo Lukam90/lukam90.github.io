@@ -5,8 +5,6 @@
 {% set bpath = "prieres/base/" %}
 {% set npath = "prieres/neuvaines/" %}
 
-{% set gpath = "chapelets/grains/" %}
-
 {% set title = "Neuvaine" %}
 
 {% block content %}
@@ -22,7 +20,7 @@
 
 {% include bpath + "ste-marie.jinja" %}
 
-{% include gpath + "dz-grains.jinja" %}
+{{ mc.grains("dizaine", "dz_grains") }}
 
 {{ mc.anchor("gloire_pere") }}
 

@@ -1,0 +1,46 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set title = "C-Ste-Rita" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/saints/" %}
+
+{% block content %}
+<h1>Chapelet de Sainte Rita</h1>
+
+{% include bpath + "signe-croix.jinja" %}
+
+<hr />
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("rondes", "=") }}
+
+<p>
+    <select id="sel_rondes" onchange="setClausule();">
+        {% for nb in range(1, 4) %}
+        <option>Ronde n°{{ nb }}</option>
+        {% endfor %}
+    </select>
+</p>
+
+{% include bpath + "ste-marie-clausule.jinja" %}
+
+{{ mc.grains("septaine", "sept") }}
+
+{{ mc.anchor("gloire_pere") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.return_link("rondes") }}
+
+<hr />
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link() }}
+
+{{ mc.script("utils.js") }}
+{{ mc.script("chapelets/saints/ch-ste-rita.js") }}
+
+{% endblock %}
