@@ -17,7 +17,7 @@
 {{ mc.anchor("rondes", "=") }}
 
 <p>
-    <select id="sel_rondes" onchange="setClausule();">
+    <select id="sel_rondes" onchange="updateText();">
         {% for nb in range(1, 4) %}
         <option>Ronde n°{{ nb }}</option>
         {% endfor %}
@@ -27,8 +27,6 @@
 {% include bpath + "ste-marie-clausule.jinja" %}
 
 {{ mc.grains("septaine", "sept") }}
-
-{{ mc.anchor("gloire_pere") }}
 
 {% include bpath + "gloire-pere.jinja" %}
 
