@@ -9,6 +9,8 @@
 {% block content %}
 <h1>Chapelet de la Miséricorde Divine</h1>
 
+{{ mc.vlatine() }}
+
 {% include bpath + "signe-croix.jinja" %}
 
 <hr />
@@ -40,5 +42,10 @@
 {% include bpath + "signe-croix.jinja" %}
 
 {{ mc.return_link() }}
+
+{{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
+
+{{ mc.first_btn("dz_grains_1") }}
 
 {% endblock %}

@@ -3,6 +3,8 @@
 const $ = (selector) => document.querySelector(selector);
 const $all = (selector) => document.querySelectorAll(selector);
 
+const $name = (name) => document.getElementsByName(name);
+
 // Masquage d'un bloc
 
 function hideBlock(id)

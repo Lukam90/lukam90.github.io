@@ -11,6 +11,8 @@
 
 <p>Je prie à l'intention de __.</p>
 
+{{ mc.vlatine() }}
+
 {% include bpath + "signe-croix.jinja" %}
 
 <hr />
@@ -54,6 +56,7 @@
 {{ mc.return_link() }}
 
 {{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
 
 {{ mc.first_btn("dz_grains_1") }}
 
