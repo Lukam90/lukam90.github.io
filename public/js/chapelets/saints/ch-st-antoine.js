@@ -1,21 +1,20 @@
-const intros = document.getElementsByClassName("intro");
-const spanIntro = document.getElementById('intro');
+const intros = $all(".intro");
 
-const selRonde = document.getElementById('sel_ronde');
+const selRondes = $('#sel_rondes');
 
 let index = 0;
-let intro = "";
-let id = "";
 
-hideAll(intros);
-showBlock("st_antoine_1");
+switchBlocks("#st_antoine_1");
+
+function switchBlocks(id)
+{
+    hideAll(intros);
+    showBlock(id);
+}
 
 function setIntro()
 {
-    index = selRonde.selectedIndex + 1;
+    index = selRondes.selectedIndex + 1;
 
-    id = "st_antoine_" + index;
-
-    hideAll(intros);
-    showBlock(id);
+    switchBlocks("#st_antoine_" + index)
 }

@@ -9,7 +9,10 @@
         { "href" : "c-eucharistie", "title" : "Chapelet de l'Eucharistie" },
         { "href" : "c-liberation", "title" : "Chapelet de la libération" },
         { "href" : "c-misericorde", "title" : "Chapelet de la miséricorde divine" },
-        { "href" : "c-sang", "title" : "Chapelet du Précieux Sang de Jésus" }
+        { "href" : "c-sang", "title" : "Chapelet du Précieux Sang de Jésus" },
+
+        { "href" : "saints/c-st-antoine", "title" : "Chapelet de St Antoine" },
+        { "href" : "saints/c-ste-rita", "title" : "Chapelet de Ste Rita" }
     ],
     "prieres" : [
         { "href" : "md-neuvaine", "title" : "Neuvaine de la médaille miraculeuse" }

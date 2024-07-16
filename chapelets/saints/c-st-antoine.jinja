@@ -9,12 +9,14 @@
 {% block content %}
 <h1>Chapelet de St Antoine</h1>
 
+{{ mc.vlatine() }}
+
 {% include bpath + "signe-croix.jinja" %}
 
-<hr />
+{{ mc.anchor("rondes", "=") }}
 
 <p>
-    <select id="sel_ronde" onchange="setIntro();">
+    <select id="sel_rondes" onchange="setIntro();">
         {% for nb in range(1, 14) %}
         <option>Ronde n°{{ nb }}</option>
         {% endfor %}
@@ -37,11 +39,11 @@
 
 {{ mc.return_link() }}
 
-<hr />
+{{ mc.anchor("bref_st_antoine", "=") }}
 
 {% include spath + "bref-st-antoine.jinja" %}
 
-<hr />
+{{ mc.anchor("fin_st_antoine", "=") }}
 
 {% include spath + "fin-st-antoine.jinja" %}
 
@@ -52,6 +54,7 @@
 {{ mc.return_link() }}
 
 {{ mc.script("utils.js") }}
-{{ mc.script("chapelets/ch-st-antoine.js") }}
+{{ mc.script("latin.js") }}
+{{ mc.script("chapelets/saints/ch-st-antoine.js") }}
 
 {% endblock %}
