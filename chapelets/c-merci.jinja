@@ -1,0 +1,35 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set ipath = "prieres/intros/" %}
+
+{% set title = "C-Merci" %}
+
+{% block content %}
+<h1>Chapelet des 1000 mercis</h1>
+
+{% include bpath + "signe-croix.jinja" %}
+
+<p>Embrasser la croix</p>
+
+<hr />
+
+{% include ipath + "intro-merci.jinja" %}
+
+<hr />
+
+{{ mc.rondes(20) }}
+
+<p>Oh, merci Jésus !</p>
+
+{{ mc.anchor("grains") }}
+
+{{ mc.grains("dizaine", "dz_grains") }}
+
+<p>Merci Jésus !</p>
+
+{{ mc.script("utils.js") }}
+
+{{ mc.first_btn("dz_grains_1") }}
+
+{% endblock %}
