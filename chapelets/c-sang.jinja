@@ -1,0 +1,80 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set ipath = "prieres/intros/" %}
+{% set opath = "prieres/outros/" %}
+
+{% set mpath = "chapelets/misericorde/" %}
+
+{% set title = "C-Sang" %}
+
+{% block content %}
+<h1>Chapelet du Précieux Sang de Jésus</h1>
+
+{{ mc.vlatine() }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.anchor("credo", "=") }}
+
+{% include bpath + "credo.jinja" %}
+
+{{ mc.anchor("intro_base", "=") }}
+
+<p class="priere">
+Que le précieux sang qui jaillit de la tête sacrée de notre Seigneur Jésus-Christ,<br>
+nous couvre maintenant et pour toujours.
+</p>
+
+{{ mc.anchor("mysteres", "=") }}
+
+<p>
+    <select id="sel_mysteres" onchange="updateText();">
+        <option>1. La main droite de Jésus</option>
+        <option>2. La main gauche de Jésus</option>
+        <option>3. Le pied droit de Jésus</option>
+        <option>4. Le pied gauche de Jésus</option>
+        <option>5. Le côté sacré de Jésus</option>
+    </select>
+</p>
+
+{% include ipath + "intros-sang.jinja" %}
+
+{{ mc.anchor("notre_pere") }}
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("ste_marie") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.anchor("grains") }}
+
+<p class="priere">
+Précieux Sang de Jésus-Christ,<br>
+sauve-nous et le monde entier.
+</p>
+
+{{ mc.grains("dizaine", "dz_grains") }}
+
+{{ mc.return_link("mysteres") }}
+
+{{ mc.anchor("salut_reine", "=") }}
+
+{% include bpath + "salut-reine.jinja" %}
+
+{{ mc.anchor("outro_sang", "=") }}
+
+{% include opath + "outro-sang.jinja" %}
+
+<hr />
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link() }}
+
+{{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
+{{ mc.script("chapelets/ch-sang.js") }}
+
+{% endblock %}

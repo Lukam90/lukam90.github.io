@@ -9,7 +9,7 @@ const $name = (name) => document.getElementsByName(name);
 
 function hideBlock(id)
 {
-    const block = $("#" + id);
+    const block = $(id);
 
     block.style.display = "none";
 }
@@ -28,7 +28,7 @@ function hideAll(blocks)
 
 function showBlock(id)
 {
-    const block = $("#" + id);
+    const block = $(id);
 
     block.style.display = "block";
 }
@@ -48,5 +48,4 @@ function showAll(blocks)
 function checkFirst()
 {
     btnPremier.checked = true;
-    btnPremier.focus();
 }

@@ -1,0 +1,425 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>C-Sang</title>
+
+    <link rel="stylesheet" href="/public/css/prieres.css" />
+</head>
+
+<body>
+    <main>
+    
+<h1>Chapelet du Précieux Sang de Jésus</h1>
+
+
+<p>
+    <input type="checkbox" id="vlatine" name="vlatine" onclick="switchLang();" />
+    <label for="vlatine">Version latine</label>
+</p>
+
+
+<ul class="priere" lang="fr">
+    <li>Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>.</li>
+    <li>Amen.</li>
+</ul>
+
+<ul class="priere" lang="latin">
+    <li>In nomine <b>Patris</b>, et <b>Filii</b> et <b>Spiritus Sancti</b>.</li>
+    <li>Amen.</li>
+</ul>
+
+
+<div id="credo">
+    <a href="#credo">
+    
+    ===
+    
+    </a>
+</div>
+
+
+<h2>Je crois en Dieu</h2>
+
+<ul class="priere" lang="fr">
+	<li>Je crois en Dieu, le Père tout-puissant,</li>
+	<li>Créateur du Ciel et de la Terre,</li>
+	<li>et en Jésus-Christ, son Fils unique, notre Seigneur,</li>
+	<li>qui a été conçu du Saint-Esprit,</li>
+	<li>est né de la Vierge Marie,</li>
+	<li>a souffert sous Ponce Pilate,</li>
+	<li>a été crucifié, est mort et a été enseveli,</li>
+	<li>est descendu aux enfers,</li>
+	<li>le troisième jour est ressuscité des morts,</li>
+	<li>est monté aux cieux,</li>
+	<li>est assis à la droite de Dieu le Père tout-puissant,</li>
+	<li>d’où il viendra juger les vivants et les morts.</li>
+	<li class="separation"></li>
+	<li>Je crois en l’Esprit-Saint,</li>
+	<li>à la Sainte Eglise catholique,</li>
+	<li>à la communion des saints,</li>
+	<li>à la rémission des péchés,</li>
+	<li>à la résurrection de la chair,</li>
+	<li>à la vie éternelle.</li>
+	<li class="separation"></li>
+	<li>Amen.</li>
+</ul>
+
+<ul class="priere" lang="latin">
+	<li>Credo in Deum, Patrem omnipotentem,</li>
+	<li>Creatorem caeli et terrae,</li>
+	<li>et in Iesum Christum, Filium eius unicum, Dominum nostrum,</li>
+	<li>qui conceptus est de Spiritu Sancto,</li>
+	<li>natus ex Maria Virgine,</li>
+	<li>passus sub Pontio Pilato,</li>
+	<li>crucifixus, mortuus, et sepultus,</li>
+	<li>descendit ad inferos,</li>
+	<li>tertia die resurrexit a mortuis,</li>
+	<li>ascendit ad caelos,</li>
+	<li>sedet ad dexteram Dei Patris omnipotentis,</li>
+	<li>inde venturus est iudicare vivos et mortuos.</li>
+	<li class="separation"></li>
+	<li>Credo in Spiritum Sanctum,</li>
+	<li>sanctam Ecclesiam catholicam,</li>
+	<li>sanctorum communionem,</li>
+	<li>remissionem peccatorum,</li>
+	<li>carnis resurrectionem,</li>
+	<li>vitam aeternam.</li>
+	<li class="separation"></li>
+	<li>Amen.</li>
+</ul>
+
+
+<div id="intro_base">
+    <a href="#intro_base">
+    
+    ===
+    
+    </a>
+</div>
+
+
+<p class="priere">
+Que le précieux sang qui jaillit de la tête sacrée de notre Seigneur Jésus-Christ,<br>
+nous couvre maintenant et pour toujours.
+</p>
+
+
+<div id="mysteres">
+    <a href="#mysteres">
+    
+    ===
+    
+    </a>
+</div>
+
+
+<p>
+    <select id="sel_mysteres" onchange="updateText();">
+        <option>1. La main droite de Jésus</option>
+        <option>2. La main gauche de Jésus</option>
+        <option>3. Le pied droit de Jésus</option>
+        <option>4. Le pied gauche de Jésus</option>
+        <option>5. Le côté sacré de Jésus</option>
+    </select>
+</p>
+
+<p class="intro" id="mystere_1">
+Par la précieuse plaie de ta main droite<br>
+et par la douleur causée par le clou qui l’a transpercée,<br>
+que le Précieux Sang qui en jaillit<br>
+convertisse de nombreuses âmes<br>
+et sauve les pécheurs du monde entier.<br>
+Amen.
+</p>
+
+<p class="intro" id="mystere_2">
+Par la précieuse plaie de ta main gauche<br>
+et par la douleur causée par le clou qui l’a transpercée,<br>
+que le Précieux Sang qui en jaillit<br>
+délivre les âmes du purgatoire et protège les mourants<br>
+contre les attaques des esprits du mal.<br>
+Amen.
+</p>
+
+<p class="intro" id="mystere_3">
+Par la précieuse plaie de ton pied droit<br>
+et par la douleur causée par le clou qui l’a transpercé,<br>
+que le Précieux Sang qui en jaillit<br>
+protège les fondations de l’Église catholique<br>
+contre les plans du malin et des ennemis de la foi.<br>
+Amen.
+</p>
+
+<p class="intro" id="mystere_4">
+Par la précieuse plaie de ton pied gauche<br>
+et par la douleur causée par le clou qui l’a transpercé,<br>
+que le Précieux Sang qui en jaillit<br>
+nous protège sur tous nos chemins de vie<br>
+contre les plans et les attaques des esprits mauvais<br>
+et de ceux qui les suivent.<br>
+Amen.
+</p>
+
+<p class="intro" id="mystere_5">
+Par la précieuse plaie de ton côté sacré,<br>
+transpercé par la lance,<br>
+que le Précieux Sang et Eau qui en jaillit,<br>
+guérissent les malades,<br>
+apportent les repentir aux mourants<br>
+et nous amènent au bonheur éternel avec Dieu.<br>
+Amen.
+</p>
+
+
+<div id="notre_pere">
+    <a href="#notre_pere">
+    
+    ***
+    
+    </a>
+</div>
+
+
+<h2>Notre Père</h2>
+
+<ul class="priere" lang="fr">
+	<li>Notre Père, qui est aux cieux,</li>
+	<li>que ton nom soit sanctifié,</li>
+	<li>que ton règne vienne,</li>
+	<li>que ta volonté soit faite, sur la terre comme au ciel.</li>
+	<li>Donne-nous aujourd'hui notre pain de ce jour,</li>
+	<li>et pardonne-nous nos offenses,</li>
+	<li>comme nous pardonnons aussi à ceux qui nous ont offensés,</li>
+	<li>et ne nous laisse pas entrer en tentation,</li>
+	<li>mais délivre-nous du mal.</li>
+	<li>Amen.</li>
+</ul>
+
+<ul class="priere" lang="latin">
+	<li>Pater Noster, qui es in caelis,</li>
+	<li>sanctificetur nomen tuum,</li>
+	<li>adveniat regnum tuum,</li>
+	<li>fiat voluntas tua, sicut in caelo et in terra.</li>
+	<li>Panem nostrum quotidianum da nobis hodie,</li>
+	<li>et dimitte nobis debita nostra,</li>
+	<li>sicut et nos dimittimus debitoribus nostris,</li>
+	<li>et ne nos inducas in tentationem,</li>
+	<li>sed libera nos a malo.</li>
+	<li>Amen.</li>
+</ul>
+
+
+<div id="ste_marie">
+    <a href="#ste_marie">
+    
+    ***
+    
+    </a>
+</div>
+
+
+<h2>Je vous salue Marie</h2>
+
+<ul class="priere" lang="fr">
+	<li>Je vous salue Marie, pleine de grâce,</li>
+	<li>le Seigneur est avec vous.</li>
+	<li>Vous êtes bénie entre toutes les femmes,</li>
+	<li>et Jésus, le fruit de vos entrailles, est béni.</li>
+	<li>Sainte Marie, Mère de Dieu,</li>
+	<li>priez pour nous, pauvres pécheurs,</li>
+	<li>maintenant et à l'heure de notre mort.</li>
+	<li>Amen.</li>
+</ul>
+
+<ul class="priere" lang="latin">
+	<li>Ave Maria, gratia plena,</li>
+	<li>Dominus tecum.</li>
+	<li>Benedicta tu in mulieribus,</li>
+	<li>et benedictus fructus ventris tui, Jesus.</li>
+	<li>Sancta Maria, Mater Dei,</li>
+	<li>ora pro nobis, peccatoribus,</li>
+	<li>nunc et in ora mortis nostrae.</li>
+	<li>Amen.</li>
+</ul>
+
+
+<div id="grains">
+    <a href="#grains">
+    
+    ***
+    
+    </a>
+</div>
+
+
+<p class="priere">
+Précieux Sang de Jésus-Christ,<br>
+sauve-nous et le monde entier.
+</p>
+
+
+    
+
+    <p>
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_1" />
+<label for="dz_grains_1">0</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_2" />
+<label for="dz_grains_2">2</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_3" />
+<label for="dz_grains_3">4</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_4" />
+<label for="dz_grains_4">6</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_5" />
+<label for="dz_grains_5">8</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_6" />
+<label for="dz_grains_6">10</label>
+
+    
+    </p>
+
+
+
+<p><a href="#mysteres" class="bleu">Retour en haut</a></p>
+
+
+
+<div id="salut_reine">
+    <a href="#salut_reine">
+    
+    ===
+    
+    </a>
+</div>
+
+
+<h2>Salut ô Reine</h2>
+
+<ul class="priere" lang="fr">
+	<li>Salut, ô Reine, Mère de miséricorde,</li>
+	<li>notre vie, notre douceur et notre espérance. Salut !</li>
+	<li>Enfants d'Eve, exilés, nous crions vers vous.</li>
+	<li>Vers vous, nous soupirons,</li>
+	<li>gémissant et pleurant dans cette vallée de larmes.</li>
+	<li>Ô vous, notre avocate,</li>
+	<li>tournez vers nous vos regards miséricordieux.</li>
+	<li>Et après cet exil, montrez-nous Jésus, le fruit béni de vos entrailles.</li>
+	<li>Ô clémente, ô pieuse, ô douce Vierge Marie.</li>
+	<li>Amen.</li>
+</ul>
+
+<ul class="priere" lang="latin">
+	<li>Salve, Regina, Mater misericordiae,</li>
+	<li>vita, dulcedo, et spes nostra. Salve !</li>
+	<li>Ad te clamamus exsules filii Evae,</li>
+	<li>ad te suspiramus, gementes et flentes</li>
+	<li>in hac lacrimarum valle.</li>
+	<li>Eia, ergo, advocata nostra,</li>
+	<li>illos tuos misericordes oculos ad nos converte.</li>
+	<li>Et Iesum, benedictum fructum ventris tui,</li>
+	<li>nobis post hoc exsilium ostende.</li>
+	<li>O clemens, O pia, O dulcis Virgo Maria.</li>
+	<li>Amen.</li>
+</ul>
+
+
+<div id="outro_sang">
+    <a href="#outro_sang">
+    
+    ===
+    
+    </a>
+</div>
+
+
+<p class="priere">
+Ô Très Précieux Sang de Jésus-Christ,<br>
+nous t'honorons, nous te bénissons et nous t'adorons.<br>
+Guéris les blessures de nos âmes et lave les péchés du monde entier.<br>
+Ô Précieux Sang, prends pitié de nous et du monde entier.<br>
+Amen.
+</p>
+
+
+<div id="outro_fin">
+    <a href="#outro_fin">
+    
+    ***
+    
+    </a>
+</div>
+
+
+<ul class="priere">
+    <li><b>Cœur Sacré de Jésus</b>, j'ai confiance en toi.</li>
+    <li><b>Cœur Immaculé de Marie</b>, prie pour nous.</li>
+    <li><b>Saint Joseph</b>, prie pour nous.</li>
+    <li><b>Saint Pierre</b> et <b>Saint Paul</b>, priez pour nous.</li>
+    <li><b>Saint Jean</b> au pied de la Croix, prie pour nous.</li>
+    <li><b>Sainte Marie-Madeleine</b>, prie pour nous.</li>
+    <li>Tous les <b>saints</b> et les <b>anges</b> du Ciel, priez pour nous.</li>
+</ul>
+
+<hr />
+
+<ul class="priere" lang="fr">
+    <li>Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>.</li>
+    <li>Amen.</li>
+</ul>
+
+<ul class="priere" lang="latin">
+    <li>In nomine <b>Patris</b>, et <b>Filii</b> et <b>Spiritus Sancti</b>.</li>
+    <li>Amen.</li>
+</ul>
+
+
+<p><a href="#" class="bleu">Retour en haut</a></p>
+
+
+
+<script src="/public/js/utils.js"></script>
+
+
+<script src="/public/js/latin.js"></script>
+
+
+<script src="/public/js/chapelets/ch-sang.js"></script>
+
+
+
+    </main>
+</body>

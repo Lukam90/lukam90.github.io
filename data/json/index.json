@@ -9,8 +9,7 @@
         { "href" : "c-eucharistie", "title" : "Chapelet de l'Eucharistie" },
         { "href" : "c-liberation", "title" : "Chapelet de la libération" },
         { "href" : "c-misericorde", "title" : "Chapelet de la miséricorde divine" },
-
-        { "href" : "saints/c-ste-rita", "title" : "Chapelet de Sainte Rita" }
+        { "href" : "c-sang", "title" : "Chapelet du Précieux Sang de Jésus" }
     ],
     "prieres" : [
         { "href" : "md-neuvaine", "title" : "Neuvaine de la médaille miraculeuse" }
