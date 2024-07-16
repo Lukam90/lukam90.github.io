@@ -42,11 +42,6 @@ hr {
     width: 30%;
 }
 
-label:hover {
-    cursor: pointer;
-    font-weight: bold;
-}
-
 /* Classes */
 
 .bleu {
@@ -55,6 +50,11 @@ label:hover {
 
 .centre {
     text-align: center;
+}
+
+.intro,
+.priere {
+    line-height: 2rem;
 }
 
 .gauche {
@@ -66,24 +66,24 @@ label:hover {
     font-weight: bold;
 }
 
-.intro,
-.priere {
-    line-height: 2rem;
-}
-
 .priere a {
     color: black;
     font-weight: bold;
 }
 
-.signe:hover {
-    cursor: pointer;
-    color: blue;
+.separation {
+    padding-top: 20px;
 }
 
 /* Evénements */
 
+label:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
 .priere a:hover,
+.signe:hover,
 .traduction:hover {
     cursor: pointer;
     color: blue;

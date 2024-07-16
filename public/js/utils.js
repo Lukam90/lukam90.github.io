@@ -31,6 +31,16 @@ function showBlock(id)
     block.style.display = "block";
 }
 
+// Affichage de l'ensemble des blocs
+
+function showAll(blocks)
+{
+    for (let block of blocks)
+    {
+        block.style.display = "block";
+    }
+}
+
 // Retour à la 1ère case
 
 function checkFirst()

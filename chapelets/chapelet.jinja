@@ -18,6 +18,8 @@ Le chapelet basé sur le rosaire traditionnel s'inspire de l'application
 
 <hr />
 
+{{ mc.vlatine() }}
+
 {% include bpath + "signe-croix.jinja" %}
 
 {{ mc.anchor("base", "=") }}
@@ -37,6 +39,7 @@ Le chapelet basé sur le rosaire traditionnel s'inspire de l'application
 {% include bpath + "signe-croix.jinja" %}
 
 {{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
 {{ mc.script("data/d.mysteres.js") }}
 {{ mc.script("chapelets/chapelet.js") }}
 
