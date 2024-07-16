@@ -8,6 +8,8 @@
 {% block content %}
 <h1>Chapelet de St Michel et des anges</h1>
 
+{{ mc.vlatine() }}
+
 {% include bpath + "signe-croix.jinja" %}
 
 <hr />
@@ -45,7 +47,10 @@
 {% include bpath + "signe-croix.jinja" %}
 
 {{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
 {{ mc.script("data/d.choeurs.js") }}
 {{ mc.script("chapelets/ch-anges.js") }}
+
+{{ mc.first_btn("trio_ste_marie_1") }}
 
 {% endblock %}

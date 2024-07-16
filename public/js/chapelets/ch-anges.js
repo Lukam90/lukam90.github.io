@@ -45,10 +45,14 @@ function updateText() {
 
     spanChoeur.innerText = choeur;
     spanSuite.innerText = suite;
+
+    checkFirst();
 }
 
 function updateAngel()
 {
     spanAnge.innerText = selAnges.value;
     selChoeurs.selectedIndex = 0;
+
+    checkFirst();
 }

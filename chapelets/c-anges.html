@@ -17,6 +17,13 @@
     
 <h1>Chapelet de St Michel et des anges</h1>
 
+
+<p>
+    <input type="checkbox" id="vlatine" name="vlatine" onclick="switchLang();" />
+    <label for="vlatine">Version latine</label>
+</p>
+
+
 <ul class="priere" lang="fr">
     <li>Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>.</li>
     <li>Amen.</li>
@@ -311,10 +318,21 @@ Amen.
 <script src="/public/js/utils.js"></script>
 
 
+<script src="/public/js/latin.js"></script>
+
+
 <script src="/public/js/data/d.choeurs.js"></script>
 
 
 <script src="/public/js/chapelets/ch-anges.js"></script>
+
+
+
+<script>
+const btnPremier = document.getElementById("trio_ste_marie_1");
+
+checkFirst();
+</script>
 
 
 
