@@ -11,6 +11,8 @@
 {% block content %}
 <h1>Chapelet du Précieux Sang de Jésus</h1>
 
+<!-- Base -->
+
 {{ mc.vlatine() }}
 
 {% include bpath + "signe-croix.jinja" %}
@@ -19,12 +21,14 @@
 
 {% include bpath + "credo.jinja" %}
 
-{{ mc.anchor("intro_base", "=") }}
+{{ mc.anchor("intro_base") }}
 
 <p class="priere">
 Que le précieux sang qui jaillit de la tête sacrée de notre Seigneur Jésus-Christ,<br>
 nous couvre maintenant et pour toujours.
 </p>
+
+<!-- Rondes -->
 
 {{ mc.anchor("mysteres", "=") }}
 
@@ -48,7 +52,7 @@ nous couvre maintenant et pour toujours.
 
 {% include bpath + "ste-marie.jinja" %}
 
-{{ mc.anchor("grains") }}
+<p id="rappel" class="gras">1. La main droite de Jésus</p>
 
 <p class="priere">
 Précieux Sang de Jésus-Christ,<br>
@@ -57,13 +61,19 @@ sauve-nous et le monde entier.
 
 {{ mc.grains("dizaine", "dz_grains") }}
 
+{{ mc.anchor("gloire_pere") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
 {{ mc.return_link("mysteres") }}
+
+<!-- Fin -->
 
 {{ mc.anchor("salut_reine", "=") }}
 
 {% include bpath + "salut-reine.jinja" %}
 
-{{ mc.anchor("outro_sang", "=") }}
+{{ mc.anchor("outro_sang") }}
 
 {% include opath + "outro-sang.jinja" %}
 
