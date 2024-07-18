@@ -26,13 +26,15 @@
 
     <p>1 9 7 5 1</p>
 
-    <h2>Ex Prière</h2>
+    <h2>Ex Affirmations</h2>
 
-    <p>Joindre les deux mains et réciter :</p>
+    <p>Répéter les phrases seules :</p>
 
-    <hr />
-
-    {% include spath + "st-esprit.jinja" %}
+    <ul>
+        {% for nb in range(1, 26) %}
+        <ol>{{ nb }}. Je suis guéri dans l'amour.</ol>
+        {% endfor %}
+    </ul>
 
     <h2>Vidéo Bonus</h2>
 

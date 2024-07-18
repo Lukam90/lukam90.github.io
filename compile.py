@@ -180,7 +180,7 @@ convert_jinja_single("chapelets/c-sang")
 exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-nombres", "ex-sonore", "ex-video"]
 
 #convert_jinja_list("exercices", exercices)
-#convert_jinja_single("exercices/ex-nombres")
+convert_jinja_single("exercices/ex-nombres")
 
 ## Prières (simples)
 
