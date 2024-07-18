@@ -63,6 +63,12 @@
 </div>
 {% endmacro %}
 
+<!-- Ancre d'une liste -->
+
+{% macro list_anchor(id, text) %}
+<a href="#{{ id }}" id="{{ id }}">{{ text }}</a>
+{% endmacro %}
+
 <!-- Lien de retour vers le haut -->
 
 {% macro return_link(id = "") %}

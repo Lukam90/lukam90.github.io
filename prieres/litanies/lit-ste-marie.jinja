@@ -1,0 +1,38 @@
+<h2>Litanies de Lorette</h2>
+
+{% include lpath + "lit-intro.jinja" %}
+
+{{ mc.anchor("louanges") }}
+
+<ul class="priere gauche">
+{% for louange in data %}
+    {% set loop_id = "litanies" + loop.index | string %}
+
+    <li>{{ mc.list_anchor(loop_id, louange) }}, prie pour nous.</li>
+{% endfor %}
+</ul>
+
+{{ mc.anchor("agneau_dieu") }}
+
+{% include lpath + "lit-agneau-dieu.jinja" %}
+ 
+{{ mc.anchor("dialogue_final") }}
+
+<p class="priere">
+V. Prie pour nous, Sainte Mère de Dieu.<br>
+R. Afin que nous devenions dignes des promesses de Jésus-Christ.
+</p>
+
+{{ mc.anchor("priere_finale") }}
+
+<p class="priere">
+Seigneur, daignez nous accorder, à nous vos serviteurs,<br> 
+de jouir toujours de la santé de l’âme et du corps,<br>
+et par la glorieuse intercession de la bienheureuse Marie toujours vierge,<br> 
+délivrez-nous des tristesses de la vie présente,<br> 
+et donnez-nous d’avoir part aux joies éternelles.<br>
+
+Par Jésus-Christ, notre Seigneur.<br>
+
+Amen.
+</p>

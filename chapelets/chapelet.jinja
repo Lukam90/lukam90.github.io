@@ -1,6 +1,7 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set bpath = "prieres/base/" %}
+{% set lpath = "prieres/litanies/" %}
 {% set spath = "prieres/saints/" %}
 
 {% set ipath = "chapelets/intros/" %}
@@ -35,7 +36,13 @@ Le chapelet basé sur le rosaire traditionnel s'inspire de l'application
 
 {{ mc.return_link("dizaines") }}
 
-<hr id="fin" />
+{{ mc.anchor("litanies", "=") }}
+
+{% include lpath + "lit-ste-marie.jinja" %}
+
+{{ mc.return_link("louanges") }}
+
+<hr />
 
 {% include bpath + "signe-croix.jinja" %}
 

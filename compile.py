@@ -143,6 +143,10 @@ def convert_markdown_single(filename):
         file.write(content)
         file.close()
 
+# Données
+
+litanies = convert_text_data("ste-marie")
+
 # Compilation
 
 ## Markdown
@@ -172,8 +176,8 @@ ch_saints = ["c-st-antoine", "c-ste-rita"]
 #convert_jinja_list("chapelets", chapelets)
 #convert_jinja_list("chapelets/saints", ch_saints)
 
-#convert_jinja_single("chapelets/chapelet")
-convert_jinja_single("chapelets/c-sang")
+convert_jinja_single("chapelets/chapelet", litanies)
+#convert_jinja_single("chapelets/c-sang")
 
 ## Exercices
 
