@@ -9,25 +9,33 @@
 {% block content %}
 <h1>Chapelet de libération</h1>
 
-<p>Je prie à l'intention de __.</p>
+<p>
+Le chapelet est inspiré de la 2ème méthode décrite dans la 
+{{ mc.link("https://boutique.labonnenouvelle.net/revues-voici-ta-mere-/776-chapelet-de-la-liberation-en-telechargement.html", "revue dédiée") }}
+<br>de la boutique de la <b>Bonne Nouvelle</b>.
+</p>
+
+<hr />
+
+<p>Je prie à l'intention de <input id="intention" type="text" />.</p>
 
 {{ mc.vlatine() }}
 
 {% include bpath + "signe-croix.jinja" %}
 
-<hr />
-
 <!-- Base -->
+
+{{ mc.anchor("credo", "=") }}
 
 {% include bpath + "credo.jinja" %}
 
-{{ mc.anchor("base_st_jean") }}
+{{ mc.anchor("base", "=") }}
 
-<p>"Si donc le Fils vous libère, vous serez réellement libres." (Jn 8,36)</p>
+{% include bpath + "notre-pere.jinja" %}
 
-{{ mc.anchor("base_jesus") }}
+<hr />
 
-{% include bpath + "ex-jesus.jinja" %}
+<p>"Si Jésus me libère, je serai vraiment libre." (Jn 8,36)</p>
 
 {{ mc.grains("trio", "base_trio") }}
 
@@ -37,13 +45,15 @@
 
 {{ mc.rondes() }}
 
-<p>"Si donc le Fils vous libère, vous serez réellement libres." (Jn 8,36)</p>
+{% include bpath + "notre-pere.jinja" %}
 
-<p>***</p>
+<hr />
 
-{% include bpath + "ex-jesus.jinja" %}
+<p>"Si Jésus me libère, je serai vraiment libre." (Jn 8,36)</p>
 
-{{ mc.grains("dizaine", "dz_grains") }}
+{{ mc.grains("vrapide", "dz_grains") }}
+
+<!-- Fin -->
 
 {{ mc.anchor("salut_reine", "=") }}
 
