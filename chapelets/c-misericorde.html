@@ -209,6 +209,8 @@ Amen.
 </div>
 
 
+
+
 <h2>Dizaine</h2>
 
 <p>
@@ -217,53 +219,41 @@ Amen.
     <input id="intention" type="text" />
 </p>
 
-
 <p>
-    <select id="sel_rondes" onchange="checkFirst();">
+    Rondes
+
+    &nbsp;
+
+    <select id="sel_rang" onchange="selectRange();">
         
-        <option>Ronde n°1</option>
+        <option>1-5</option>
         
-        <option>Ronde n°2</option>
+        <option>6-10</option>
         
-        <option>Ronde n°3</option>
+        <option>11-15</option>
         
-        <option>Ronde n°4</option>
-        
-        <option>Ronde n°5</option>
-        
-        <option>Ronde n°6</option>
-        
-        <option>Ronde n°7</option>
-        
-        <option>Ronde n°8</option>
-        
-        <option>Ronde n°9</option>
-        
-        <option>Ronde n°10</option>
-        
-        <option>Ronde n°11</option>
-        
-        <option>Ronde n°12</option>
-        
-        <option>Ronde n°13</option>
-        
-        <option>Ronde n°14</option>
-        
-        <option>Ronde n°15</option>
-        
-        <option>Ronde n°16</option>
-        
-        <option>Ronde n°17</option>
-        
-        <option>Ronde n°18</option>
-        
-        <option>Ronde n°19</option>
-        
-        <option>Ronde n°20</option>
+        <option>16-20</option>
         
     </select>
-</p>
 
+    &nbsp;
+
+    
+<select id="sel_rondes" onchange="checkFirst();">
+    
+    <option>N°1</option>
+    
+    <option>N°2</option>
+    
+    <option>N°3</option>
+    
+    <option>N°4</option>
+    
+    <option>N°5</option>
+    
+</select>
+
+</p>
 
 <p class="priere">
 Père Éternel,<br> 
@@ -434,12 +424,7 @@ Amen.
 <script src="/public/js/latin.js"></script>
 
 
-
-<script>
-const btnPremier = document.getElementById("dz_grains_1");
-
-checkFirst();
-</script>
+<script src="/public/js/chapelets/ch-misericorde.js"></script>
 
 
 

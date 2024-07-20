@@ -1,3 +1,5 @@
+{% set rangs = ["1-5", "6-10", "11-15", "16-20"] %}
+
 <h2>Dizaine</h2>
 
 <p>
@@ -6,7 +8,21 @@
     <input id="intention" type="text" />
 </p>
 
-{{ mc.rondes(20) }}
+<p>
+    Rondes
+
+    &nbsp;
+
+    <select id="sel_rang" onchange="selectRange();">
+        {% for rang in rangs %}
+        <option>{{ rang }}</option>
+        {% endfor %}
+    </select>
+
+    &nbsp;
+
+    {{ mc.rondes() }}
+</p>
 
 <p class="priere">
 Père Éternel,<br> 
