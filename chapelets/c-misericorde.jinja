@@ -9,11 +9,13 @@
 {% block content %}
 <h1>Chapelet de la Miséricorde Divine</h1>
 
+<p>(*) Prières optionnelles, en intro et en conclusion</p>
+
 {{ mc.vlatine() }}
 
 {% include bpath + "signe-croix.jinja" %}
 
-<hr />
+{{ mc.anchor("mis_intro", "=") }}
 
 {% include mpath + "mis-intro.jinja" %}
 
@@ -29,11 +31,11 @@
 
 {% include bpath + "credo.jinja" %}
 
-<hr />
+{{ mc.anchor("mis_dizaine", "=") }}
 
 {% include mpath + "mis-dizaine.jinja" %}
 
-<hr />
+{{ mc.anchor("mis_fin", "=") }}
 
 {% include mpath + "mis-fin.jinja" %}
 
