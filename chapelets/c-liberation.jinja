@@ -1,6 +1,7 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set bpath = "prieres/base/" %}
+{% set opath = "prieres/outros/" %}
 
 {% set lpath = "chapelets/liberation/" %}
 
@@ -10,7 +11,7 @@
 <h1>Chapelet de libération</h1>
 
 <p>
-Le chapelet est inspiré de la 2ème méthode décrite dans la 
+Le chapelet est inspiré de la 1ère méthode décrite dans la 
 {{ mc.link("https://boutique.labonnenouvelle.net/revues-voici-ta-mere-/776-chapelet-de-la-liberation-en-telechargement.html", "revue dédiée") }}
 <br>de la boutique de la <b>Bonne Nouvelle</b>.
 </p>
@@ -31,11 +32,11 @@ Le chapelet est inspiré de la 2ème méthode décrite dans la
 
 {{ mc.anchor("base", "=") }}
 
-{% include bpath + "notre-pere.jinja" %}
+<p>"Si Jésus me libère, je serai vraiment libre." (Jn 8,36)</p>
 
 <hr />
 
-<p>"Si Jésus me libère, je serai vraiment libre." (Jn 8,36)</p>
+{% include bpath + "ex-jesus.jinja" %}
 
 {{ mc.grains("trio", "base_trio") }}
 
@@ -45,19 +46,23 @@ Le chapelet est inspiré de la 2ème méthode décrite dans la
 
 {{ mc.rondes() }}
 
-{% include bpath + "notre-pere.jinja" %}
+<p>"Si Jésus me libère, je serai vraiment libre." (Jn 8,36)</p>
 
 <hr />
 
-<p>"Si Jésus me libère, je serai vraiment libre." (Jn 8,36)</p>
+{% include bpath + "ex-jesus.jinja" %}
 
-{{ mc.grains("vrapide", "dz_grains") }}
+{{ mc.grains("dizaine", "dz_grains") }}
 
 <!-- Fin -->
 
 {{ mc.anchor("salut_reine", "=") }}
 
 {% include bpath + "salut-reine.jinja" %}
+
+{{ mc.anchor("priere_finale") }}
+
+{% include opath + "outro-liberation.jinja" %}
 
 <hr />
 
