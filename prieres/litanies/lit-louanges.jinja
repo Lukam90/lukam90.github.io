@@ -1,0 +1,13 @@
+{%
+    set louanges = [
+        ("")
+    ]
+%}
+
+<ul class="priere gauche">
+{% for louange in data %}
+    {% set loop_id = "litanies" + loop.index | string %}
+
+    <li>{{ mc.list_anchor(loop_id, louange) }}, prie pour nous.</li>
+{% endfor %}
+</ul>
