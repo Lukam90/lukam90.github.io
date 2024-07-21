@@ -1,7 +1,5 @@
 
 
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -17,18 +15,30 @@
 <body>
     <main>
     
-<h1>Neuvaine</h1>
+<h1>Neuvaine de la Médaille Miraculeuse</h1>
 
-<p class="priere">
-Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>.<br>
-Amen.
+
+<p>
+    <input type="checkbox" id="vlatine" name="vlatine" onclick="switchLang();" />
+    <label for="vlatine">Version latine</label>
 </p>
+
+
+<ul class="priere" lang="fr">
+    <li>Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>.</li>
+    <li>Amen.</li>
+</ul>
+
+<ul class="priere" lang="latin">
+    <li>In nomine <b>Patris</b>, et <b>Filii</b> et <b>Spiritus Sancti</b>.</li>
+    <li>Amen.</li>
+</ul>
 
 <hr>
 
 <h2>Notre Père</h2>
 
-<ul class="priere">
+<ul class="priere" lang="fr">
 	<li>Notre Père, qui est aux cieux,</li>
 	<li>que ton nom soit sanctifié,</li>
 	<li>que ton règne vienne,</li>
@@ -38,6 +48,19 @@ Amen.
 	<li>comme nous pardonnons aussi à ceux qui nous ont offensés,</li>
 	<li>et ne nous laisse pas entrer en tentation,</li>
 	<li>mais délivre-nous du mal.</li>
+	<li>Amen.</li>
+</ul>
+
+<ul class="priere" lang="latin">
+	<li>Pater Noster, qui es in caelis,</li>
+	<li>sanctificetur nomen tuum,</li>
+	<li>adveniat regnum tuum,</li>
+	<li>fiat voluntas tua, sicut in caelo et in terra.</li>
+	<li>Panem nostrum quotidianum da nobis hodie,</li>
+	<li>et dimitte nobis debita nostra,</li>
+	<li>sicut et nos dimittimus debitoribus nostris,</li>
+	<li>et ne nos inducas in tentationem,</li>
+	<li>sed libera nos a malo.</li>
 	<li>Amen.</li>
 </ul>
 
@@ -53,7 +76,7 @@ Amen.
 
 <h2>Je vous salue Marie</h2>
 
-<ul class="priere">
+<ul class="priere" lang="fr">
 	<li>Je vous salue Marie, pleine de grâce,</li>
 	<li>le Seigneur est avec vous.</li>
 	<li>Vous êtes bénie entre toutes les femmes,</li>
@@ -61,6 +84,17 @@ Amen.
 	<li>Sainte Marie, Mère de Dieu,</li>
 	<li>priez pour nous, pauvres pécheurs,</li>
 	<li>maintenant et à l'heure de notre mort.</li>
+	<li>Amen.</li>
+</ul>
+
+<ul class="priere" lang="latin">
+	<li>Ave Maria, gratia plena,</li>
+	<li>Dominus tecum.</li>
+	<li>Benedicta tu in mulieribus,</li>
+	<li>et benedictus fructus ventris tui, Jesus.</li>
+	<li>Sancta Maria, Mater Dei,</li>
+	<li>ora pro nobis, peccatoribus,</li>
+	<li>nunc et in ora mortis nostrae.</li>
 	<li>Amen.</li>
 </ul>
 
@@ -126,11 +160,19 @@ Amen.
 
 <h2>Gloire au Père</h2>
 
-<ul class="priere">
+<ul class="priere" lang="fr">
 	<li>Gloire au Père, et au Fils, et au Saint-Esprit,</li>
 	<li>comme il était au commencement,</li>
 	<li>maintenant et toujours,</li>
 	<li>pour les siècles des siècles.</li>
+	<li>Amen.</li>
+</ul>
+
+<ul class="priere" lang="latin">
+	<li>Gloria Patri, et Filio, et Spiritui Sancto,</li>
+	<li>sicut erat in principio,</li>
+	<li>et nunc et semper,</li>
+	<li>et in saecula saeculorum.</li>
 	<li>Amen.</li>
 </ul>
 
@@ -187,10 +229,15 @@ priez pour nous qui avons recours à vous. (x 3)
 
 <hr>
 
-<p class="priere">
-Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>.<br>
-Amen.
-</p>
+<ul class="priere" lang="fr">
+    <li>Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>.</li>
+    <li>Amen.</li>
+</ul>
+
+<ul class="priere" lang="latin">
+    <li>In nomine <b>Patris</b>, et <b>Filii</b> et <b>Spiritus Sancti</b>.</li>
+    <li>Amen.</li>
+</ul>
 
 <hr>
 
@@ -207,6 +254,13 @@ Amen.
     referrerpolicy="strict-origin-when-cross-origin" 
     allowfullscreen>
 </iframe>
+
+
+
+<script src="/public/js/utils.js"></script>
+
+
+<script src="/public/js/latin.js"></script>
 
 
 

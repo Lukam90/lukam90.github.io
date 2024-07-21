@@ -1,5 +1,3 @@
-
-
 {% extends "layouts/prieres.jinja" %}
 
 {% set bpath = "prieres/base/" %}
@@ -8,7 +6,9 @@
 {% set title = "Neuvaine" %}
 
 {% block content %}
-<h1>Neuvaine</h1>
+<h1>Neuvaine de la Médaille Miraculeuse</h1>
+
+{{ mc.vlatine() }}
 
 {% include bpath + "signe-croix.jinja" %}
 
@@ -37,5 +37,8 @@
 <h2>Vidéo d'exemple</h2>
 
 {{ mc.yvideo("Xj8YPt1WQ_c?si=RGcbFKWfGGpGzVE_") }}
+
+{{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
 
 {% endblock %}
