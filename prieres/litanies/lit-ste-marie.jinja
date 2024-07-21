@@ -16,23 +16,10 @@
 
 {% include lpath + "lit-agneau-dieu.jinja" %}
  
-{{ mc.anchor("dialogue_final") }}
+{{ mc.anchor("dialogue") }}
 
-<p class="priere">
-V. Prie pour nous, Sainte Mère de Dieu.<br>
-R. Afin que nous devenions dignes des promesses de Jésus-Christ.
-</p>
+{% include lpath + "lit-dialogue.jinja" %}
 
 {{ mc.anchor("priere_finale") }}
 
-<p class="priere">
-Seigneur, daignez nous accorder, à nous vos serviteurs,<br> 
-de jouir toujours de la santé de l’âme et du corps,<br>
-et par la glorieuse intercession de la bienheureuse Marie toujours vierge,<br> 
-délivrez-nous des tristesses de la vie présente,<br> 
-et donnez-nous d’avoir part aux joies éternelles.<br>
-
-Par Jésus-Christ, notre Seigneur.<br>
-
-Amen.
-</p>
+{% include lpath + "lit-fin.jinja" %}
