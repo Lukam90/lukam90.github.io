@@ -1,5 +1,15 @@
 <ul class="priere gauche">
-    {{ mc.bilang_line(1, "", "") }}
-    {{ mc.bilang_line(2, "", "") }}
-    {{ mc.bilang_line(3, "", "") }}
+{% for louange in data %}
+    {% set loop_id = "louanges" + loop.index | string %}
+
+    {% set latin = louange[0] %}
+    {% set fr = louange[1] %}
+
+    <li>{{ mc.list_anchor(loop_id, latin) }}, ora pro nobis.</li>
+    <li><b>{{ fr }}</b>, priez pour nous.</li>
+
+    {% if not loop.last %}
+        {{ mc.list_separator() }}
+    {% endif %}
+{% endfor %}
 </ul>

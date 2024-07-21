@@ -76,17 +76,6 @@
 <li class="separation"></li>
 {% endmacro %}
 
-<!-- Lignes de litanies Latin - FR -->
-
-{% macro bilang_line(id, latin, fr, last = False) %}
-    <li><a href="#louanges{{ id }}" id="louanges{{ id }}">{{ latin }}</a>, ora pro nobis.</li>
-    <li><b>{{ fr }}</b>, priez pour nous.</li>
-
-    {% if not last %}
-    <li class="separation"></li>
-    {% endif %}
-{% endmacro %}
-
 <!-- Lien de retour vers le haut -->
 
 {% macro return_link(id = "") %}

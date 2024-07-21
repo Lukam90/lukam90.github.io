@@ -62,6 +62,24 @@ def convert_text_data(filename):
 
     return data
 
+## CSV > Données
+
+def convert_csv_data(filename):
+    data = []
+
+    with open(f"data/csv/{filename}.csv", "r") as file:
+        lines = file.readlines()
+
+        for line in lines:
+            line = line.strip()
+            cols = line.split(";")
+
+            data.append(cols)
+
+        file.close()
+
+    return data
+
 ## JSON > Données
 
 def convert_json_data(filename):
@@ -145,7 +163,7 @@ def convert_markdown_single(filename):
 
 # Données
 
-litanies = convert_text_data("ste-marie")
+litanies = convert_csv_data("ste-marie")
 
 # Compilation
 
@@ -177,9 +195,10 @@ ch_saints = ["c-st-antoine", "c-ste-rita"]
 #convert_jinja_list("chapelets/saints", ch_saints)
 
 convert_jinja_single("chapelets/chapelet", litanies)
+
 convert_jinja_single("chapelets/c-liberation")
-convert_jinja_single("chapelets/c-misericorde")
-convert_jinja_single("chapelets/c-sang")
+#convert_jinja_single("chapelets/c-misericorde")
+#convert_jinja_single("chapelets/c-sang")
 
 ## Exercices
 
