@@ -11,7 +11,7 @@
 <h1>Chapelet de libération</h1>
 
 <p>
-Le chapelet est inspiré de la 1ère méthode décrite dans la 
+Le chapelet est inspiré de la 2ème méthode décrite dans la 
 {{ mc.link("https://boutique.labonnenouvelle.net/revues-voici-ta-mere-/776-chapelet-de-la-liberation-en-telechargement.html", "revue dédiée") }}
 <br>de la boutique de la <b>Bonne Nouvelle</b>.
 </p>
@@ -30,13 +30,13 @@ Le chapelet est inspiré de la 1ère méthode décrite dans la
 
 {% include bpath + "credo.jinja" %}
 
-{{ mc.anchor("base", "=") }}
+{{ mc.anchor("base") }}
 
-<p>"Si le Fils vous libère, vous serez vraiment libres." (Jn 8,36)</p>
+{% include bpath + "notre-pere.jinja" %}
 
 <hr />
 
-{% include bpath + "ex-jesus.jinja" %}
+<p>"Si le Fils vous libère, vous serez vraiment libres." (Jn 8,36)</p>
 
 {{ mc.grains("trio", "base_trio") }}
 
@@ -46,11 +46,11 @@ Le chapelet est inspiré de la 1ère méthode décrite dans la
 
 <p>{{ mc.rondes() }}</p>
 
-<p>"Si le Fils vous libère, vous serez vraiment libres." (Jn 8,36)</p>
+{% include bpath + "notre-pere.jinja" %}
 
 <hr />
 
-{% include bpath + "ex-jesus.jinja" %}
+<p>"Si le Fils vous libère, vous serez vraiment libres." (Jn 8,36)</p>
 
 {{ mc.grains("dizaine", "dz_grains") }}
 
