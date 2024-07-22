@@ -205,12 +205,12 @@ convert_jinja_single("chapelets/c-plaies")
 exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-nombres", "ex-sonore", "ex-video"]
 
 #convert_jinja_list("exercices", exercices)
-convert_jinja_single("exercices/ex-nombres")
+#convert_jinja_single("exercices/ex-nombres")
 
 ## Prières (simples)
 
 prieres = ["md-neuvaine"]
 
 convert_jinja_single("prieres/lit-ste-marie", litanies)
-convert_jinja_list("prieres", prieres)
+#convert_jinja_list("prieres", prieres)
 
