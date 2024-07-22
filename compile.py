@@ -163,7 +163,7 @@ def convert_markdown_single(filename):
 
 # Données
 
-litanies = convert_csv_data("ste-marie")
+# _
 
 # Compilation
 
