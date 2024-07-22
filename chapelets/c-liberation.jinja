@@ -7,6 +7,8 @@
 
 {% set title = "C-Liberation" %}
 
+{% set ex_jesus = "\"Si le Fils vous libère, vous serez vraiment libres.\" (Jn 8,36)" %}
+
 {% block content %}
 <h1>Chapelet de libération</h1>
 
@@ -36,7 +38,7 @@ Le chapelet est inspiré de la 2ème méthode décrite dans la
 
 <hr />
 
-<p>"Si le Fils vous libère, vous serez vraiment libres." (Jn 8,36)</p>
+<p>{{ ex_jesus }}</p>
 
 {{ mc.grains("trio", "base_trio") }}
 
@@ -50,7 +52,7 @@ Le chapelet est inspiré de la 2ème méthode décrite dans la
 
 <hr />
 
-<p>"Si le Fils vous libère, vous serez vraiment libres." (Jn 8,36)</p>
+<p>{{ ex_jesus }}</p>
 
 {{ mc.grains("dizaine", "dz_grains") }}
 
@@ -72,7 +74,6 @@ Le chapelet est inspiré de la 2ème méthode décrite dans la
 
 {{ mc.script("utils.js") }}
 {{ mc.script("latin.js") }}
-
-{{ mc.first_btn("dz_grains_1") }}
+{{ mc.script("chapelets/ch-reset.js") }}
 
 {% endblock %}

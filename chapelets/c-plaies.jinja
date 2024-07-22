@@ -1,0 +1,64 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+
+{% set title = "C-Plaies" %}
+
+{% set ex_gros = "Père éternel, je t’offre les plaies de notre Seigneur Jésus-Christ pour guérir celles de nos âmes." %}
+{% set ex_petit = "Mon Jésus, pardon et miséricorde, par les mérites de tes saintes plaies." %}
+
+{% block content %}
+<h1>Chapelet des 5 plaies de Jésus</h1>
+
+{% include bpath + "signe-croix.jinja" %}
+
+<hr />
+
+{% include bpath + "ex-jesus.jinja" %}
+
+{{ mc.anchor("base", "=") }}
+
+<p>{{ ex_gros }}</p>
+
+<hr />
+
+<p>{{ ex_petit }}</p>
+
+{{ mc.grains("trio", "base_trio") }}
+
+{{ mc.anchor("series", "=") }}
+
+<p>
+    <select id="sel_mysteres" onchange="checkFirst();">
+        <option>1. Les mains</option>
+        <option>2. Les pieds</option>
+        <option>3. Le dos</option>
+        <option>4. La tête</option>
+        <option>5. Le coeur</option>
+    </select>
+</p>
+
+<p>{{ ex_gros }}</p>
+
+<hr />
+
+<p>{{ ex_petit }}</p>
+
+{{ mc.grains("dizaine", "dz_grains") }}
+
+{{ mc.anchor("fin", "=") }}
+
+<p>{{ ex_gros }}</p>
+
+{{ mc.grains("trio", "fin_trio") }}
+
+<hr />
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link() }}
+
+{{ mc.script("utils.js") }}
+{{ mc.script("chapelets/ch-reset.js") }}
+
+{% endblock %}
