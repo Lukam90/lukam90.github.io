@@ -132,12 +132,8 @@
 </p>
 {% endmacro %}
 
-<!-- Premier bouton avec son ID -->
+<!-- Elément d'une liste de litanies -->
 
-{% macro first_btn(id) %}
-<script>
-const btnPremier = $("#{{ id }}");
-
-checkFirst();
-</script>
+{% macro litany(id, text) %}
+<li>{{ list_anchor(id, text) }}, prie pour nous.</li>
 {% endmacro %}

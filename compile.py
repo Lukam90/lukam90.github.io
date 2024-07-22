@@ -209,8 +209,8 @@ exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-nombres", "ex-sonore", "ex-
 
 ## Prières (simples)
 
-prieres = ["md-neuvaine"]
+prieres = ["lit-ste-marie", "md-neuvaine"]
 
-convert_jinja_single("prieres/lit-ste-marie", litanies)
+convert_jinja_single("prieres/lit-ste-marie")
 #convert_jinja_list("prieres", prieres)
 
