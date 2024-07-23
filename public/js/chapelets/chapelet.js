@@ -1,14 +1,17 @@
-const selType = document.getElementById("s_type");
-const selMysteres = document.getElementById("s_mysteres");
+const selType = $("#sel_type");
+const selMysteres = $("#sel_mysteres");
 
-const spanFruit = document.getElementById("fruit");
-const spanClausule = document.getElementById("clausule");
+const spanFruit = $("#fruit");
+const spanClausule = $("#clausule");
 
-const btnPremier = document.getElementById('dz_grains_1');
+const btnPremier = $('#dz_grains_1');
+
+const intros = $all(".intro");
 
 let chapelet, liste; 
 let fruits, clausules;
 let fruit, clausule;
+let intro, id;
 
 let index = 0;
 let type = "joyeux";
@@ -16,6 +19,7 @@ let type = "joyeux";
 let url, resultat;
 
 initData("joyeux");
+showBlock("#joyeux_1");
 
 // Debug
 
@@ -34,6 +38,8 @@ function initData(type)
     liste = chapelet["liste"];
     fruits = chapelet["fruits"];
     clausules = chapelet["clausules"];
+
+    hideAll(intros);
 }
 
 // MAJ des données d'un chapelet selon le type
@@ -66,6 +72,11 @@ function majInfos()
 
     spanClausule.innerText = clausule;
     spanFruit.innerText = fruit;
+
+    id = "#" + type + "_" + (index + 1);
+
+    hideAll(intros);
+    showBlock(id);
 
     checkFirst();
 }
