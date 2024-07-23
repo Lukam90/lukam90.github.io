@@ -17,7 +17,6 @@
         { "href" : "saints/c-ste-rita", "title" : "Chapelet de Ste Rita" }
     ],
     "prieres" : [
-        { "href" : "lit-ste-marie", "title" : "Litanies de Lorette (Ste Marie)" },
         { "href" : "md-neuvaine", "title" : "Neuvaine de la médaille miraculeuse" }
     ],
     "exercices" : [

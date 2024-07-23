@@ -40,6 +40,10 @@ Le chapelet basé sur le rosaire traditionnel s'inspire de l'application
 
 {% include bpath + "signe-croix.jinja" %}
 
+{{ mc.anchor("litanies", "=") }}
+
+{% include lpath + "lit-ste-marie.jinja" %}
+
 {{ mc.script("utils.js") }}
 {{ mc.script("latin.js") }}
 {{ mc.script("data/d.mysteres.js") }}

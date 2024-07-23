@@ -1,11 +1,4 @@
-{% extends "layouts/prieres.jinja" %}
-
-{% set lpath = "prieres/litanies/" %}
-
-{% set title = "Litanies de Lorette" %}
-
-{% block content %}
-<h1>Litanies de Lorette</h1>
+<h2>Litanies de Lorette</h2>
 
 {% include lpath + "lit-intro.jinja" %}
 
@@ -26,5 +19,3 @@
 {% include lpath + "lit-fin.jinja" %}
 
 {{ mc.return_link("louanges") }}
-
-{% endblock %}

@@ -49,32 +49,6 @@ const m_lumineux = {
     ]
 };
 
-// Mystères glorieux
-
-const m_glorieux = {
-    liste : [
-        "1. La résurrection", 
-        "2. L'ascension", 
-        "3. La Pentecôte", 
-        "4. L'Assomption", 
-        "5. Le couronnement de Marie"
-    ],
-    fruits : [
-        "la foi et la conversion des coeurs", 
-        "l'espérance et le désir du ciel", 
-        "la charité et le zèle apostolique", 
-        "la grâce d'une bonne mort et la dévotion filiale à Marie", 
-        "la persévérance finale et la confiance en Marie"
-    ],
-    clausules : [
-        "ressuscité", 
-        "monté aux cieux", 
-        "dont le Père envoya le Saint-Esprit sur les apôtres", 
-        "qui vous éleva au ciel", 
-        "qui vous a couronnée reine des anges"
-    ]
-};
-
 // Mystères douloureux
 
 const m_douloureux = {
@@ -98,6 +72,32 @@ const m_douloureux = {
         "couronné d'épines", 
         "portant sa croix jusqu'au Golgotha", 
         "crucifié"
+    ]
+};
+
+// Mystères glorieux
+
+const m_glorieux = {
+    liste : [
+        "1. La résurrection", 
+        "2. L'ascension de Jésus", 
+        "3. La Pentecôte", 
+        "4. L'Assomption de Marie", 
+        "5. Le couronnement de Marie"
+    ],
+    fruits : [
+        "la foi et la conversion des coeurs", 
+        "l'espérance et le désir du ciel", 
+        "la charité et le zèle apostolique", 
+        "la grâce d'une bonne mort et la dévotion filiale à Marie", 
+        "la persévérance finale et la confiance en Marie"
+    ],
+    clausules : [
+        "ressuscité", 
+        "monté aux cieux", 
+        "dont le Père envoya le Saint-Esprit sur les apôtres", 
+        "qui vous éleva au ciel", 
+        "qui vous a couronnée reine des anges"
     ]
 };
 
