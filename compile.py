@@ -187,7 +187,7 @@ profil = ["cv-imprime", "portfolio"]
 
 ## Chapelets
 
-chapelets = ["chapelet", "c-anges", "c-coeur", "c-eucharistie", "c-liberation", "c-merci", "c-misericorde", "c-sang"]
+chapelets = ["chapelet", "c-anges", "c-eucharistie", "c-liberation", "c-merci", "c-misericorde", "c-sang"]
 
 ch_saints = ["c-st-antoine", "c-ste-rita"]
 
@@ -195,7 +195,7 @@ ch_saints = ["c-st-antoine", "c-ste-rita"]
 #convert_jinja_list("chapelets/saints", ch_saints)
 
 convert_jinja_single("chapelets/chapelet")
-#convert_jinja_single("chapelets/c-liberation")
+convert_jinja_single("chapelets/c-liberation")
 #convert_jinja_single("chapelets/c-sang")
 
 ## Exercices
@@ -203,7 +203,7 @@ convert_jinja_single("chapelets/chapelet")
 exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-nombres", "ex-sonore", "ex-video"]
 
 #convert_jinja_list("exercices", exercices)
-convert_jinja_single("exercices/ex-nombres")
+#convert_jinja_single("exercices/ex-nombres")
 
 ## Prières (simples)
 

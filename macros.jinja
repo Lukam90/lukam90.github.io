@@ -109,7 +109,7 @@
 {% macro grains(type, name) %}
     {% set values = lists[type] %}
 
-    <p>
+    <p class="grains" id="{{ name }}">
     {% for val in values %}
         {% set id = name + "_" + loop.index | string %}
 

@@ -7,13 +7,11 @@
 
 {% set title = "C-Liberation" %}
 
-{% set ex_jesus = "\"Si le Fils vous libère, vous serez vraiment libres.\" (Jn 8,36)" %}
-
 {% block content %}
 <h1>Chapelet de libération</h1>
 
 <p>
-Le chapelet est inspiré de la 2ème méthode décrite dans la 
+Le chapelet est inspiré de la 1ère méthode décrite dans la 
 {{ mc.link("https://boutique.labonnenouvelle.net/revues-voici-ta-mere-/776-chapelet-de-la-liberation-en-telechargement.html", "revue dédiée") }}
 <br>de la boutique de la <b>Bonne Nouvelle</b>.
 </p>
@@ -32,27 +30,26 @@ Le chapelet est inspiré de la 2ème méthode décrite dans la
 
 {% include bpath + "credo.jinja" %}
 
-{{ mc.anchor("base") }}
-
-{% include bpath + "notre-pere.jinja" %}
-
-<hr />
-
-<p>{{ ex_jesus }}</p>
-
-{{ mc.grains("trio", "base_trio") }}
-
 <!-- Rondes -->
 
-{{ mc.anchor("rondes", "=") }}
+{{ mc.anchor("serie", "=") }}
 
-<p>{{ mc.rondes() }}</p>
+<p>
+    <select id="sel_rondes" onchange="setSuite();">
+        <option>Base</option>
+        {% for nb in range(1, 6) %}
+        <option>Ronde n°{{ nb }}</option>
+        {% endfor %}
+    </select>
+</p>
 
-{% include bpath + "notre-pere.jinja" %}
+<p>Si Jésus vous libère, vous serez vraiment libres." (Jn 8,36)</p>
 
 <hr />
 
-<p>{{ ex_jesus }}</p>
+{% include bpath + "ex-jesus.jinja" %}
+
+{{ mc.grains("trio", "base_trio") }}
 
 {{ mc.grains("dizaine", "dz_grains") }}
 
@@ -74,6 +71,6 @@ Le chapelet est inspiré de la 2ème méthode décrite dans la
 
 {{ mc.script("utils.js") }}
 {{ mc.script("latin.js") }}
-{{ mc.script("chapelets/ch-reset.js") }}
+{{ mc.script("chapelets/ch-liberation.js") }}
 
 {% endblock %}

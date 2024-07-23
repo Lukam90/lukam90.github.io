@@ -18,7 +18,7 @@
 <h1>Chapelet de libération</h1>
 
 <p>
-Le chapelet est inspiré de la 2ème méthode décrite dans la 
+Le chapelet est inspiré de la 1ère méthode décrite dans la 
 
 <a href="https://boutique.labonnenouvelle.net/revues-voici-ta-mere-/776-chapelet-de-la-liberation-en-telechargement.html" class="bleu" target="_blank">revue dédiée</a>
 
@@ -108,52 +108,58 @@ Le chapelet est inspiré de la 2ème méthode décrite dans la
 	<li>Amen.</li>
 </ul>
 
+<!-- Rondes -->
 
-<div id="base">
-    <a href="#base">
+
+<div id="serie">
+    <a href="#serie">
     
-    ***
+    ===
     
     </a>
 </div>
 
 
-<h2>Notre Père</h2>
+<p>
+    <select id="sel_rondes" onchange="setSuite();">
+        <option>Base</option>
+        
+        <option>Ronde n°1</option>
+        
+        <option>Ronde n°2</option>
+        
+        <option>Ronde n°3</option>
+        
+        <option>Ronde n°4</option>
+        
+        <option>Ronde n°5</option>
+        
+    </select>
+</p>
 
-<ul class="priere" lang="fr">
-	<li>Notre Père, qui est aux cieux,</li>
-	<li>que ton nom soit sanctifié,</li>
-	<li>que ton règne vienne,</li>
-	<li>que ta volonté soit faite, sur la terre comme au ciel.</li>
-	<li>Donne-nous aujourd'hui notre pain de ce jour,</li>
-	<li>et pardonne-nous nos offenses,</li>
-	<li>comme nous pardonnons aussi à ceux qui nous ont offensés,</li>
-	<li>et ne nous laisse pas entrer en tentation,</li>
-	<li>mais délivre-nous du mal.</li>
-	<li>Amen.</li>
-</ul>
-
-<ul class="priere" lang="latin">
-	<li>Pater Noster, qui es in caelis,</li>
-	<li>sanctificetur nomen tuum,</li>
-	<li>adveniat regnum tuum,</li>
-	<li>fiat voluntas tua, sicut in caelo et in terra.</li>
-	<li>Panem nostrum quotidianum da nobis hodie,</li>
-	<li>et dimitte nobis debita nostra,</li>
-	<li>sicut et nos dimittimus debitoribus nostris,</li>
-	<li>et ne nos inducas in tentationem,</li>
-	<li>sed libera nos a malo.</li>
-	<li>Amen.</li>
-</ul>
+<p>Si Jésus vous libère, vous serez vraiment libres." (Jn 8,36)</p>
 
 <hr />
 
-<p>"Si le Fils vous libère, vous serez vraiment libres." (Jn 8,36)</p>
+<p class="priere">
+    Ô Jésus, divin rédempteur,<br>
+    sois miséricordieux pour nous et pour le monde entier.<br>
+
+    Dieu saint, Dieu fort, Dieu immortel,<br>
+    aie pitié de nous et du monde entier.<br>
+
+    Ô père éternel, traite-nous avec miséricorde<br>
+    par le sang de Jésus, ton Fils unique.<br>
+
+    Traite-nous avec miséricorde, nous t’en conjurons.<br>
+
+    Amen.
+</p>
 
 
     
 
-    <p>
+    <p class="grains" id="base_trio">
     
         
 
@@ -186,74 +192,10 @@ Le chapelet est inspiré de la 2ème méthode décrite dans la
     </p>
 
 
-<!-- Rondes -->
-
-
-<div id="rondes">
-    <a href="#rondes">
-    
-    ===
-    
-    </a>
-</div>
-
-
-<p>
-<p>
-    Ronde
-
-    <select id="sel_rondes" onchange="checkFirst();">
-        
-        <option>n°1</option>
-        
-        <option>n°2</option>
-        
-        <option>n°3</option>
-        
-        <option>n°4</option>
-        
-        <option>n°5</option>
-        
-    </select>
-</p>
-</p>
-
-<h2>Notre Père</h2>
-
-<ul class="priere" lang="fr">
-	<li>Notre Père, qui est aux cieux,</li>
-	<li>que ton nom soit sanctifié,</li>
-	<li>que ton règne vienne,</li>
-	<li>que ta volonté soit faite, sur la terre comme au ciel.</li>
-	<li>Donne-nous aujourd'hui notre pain de ce jour,</li>
-	<li>et pardonne-nous nos offenses,</li>
-	<li>comme nous pardonnons aussi à ceux qui nous ont offensés,</li>
-	<li>et ne nous laisse pas entrer en tentation,</li>
-	<li>mais délivre-nous du mal.</li>
-	<li>Amen.</li>
-</ul>
-
-<ul class="priere" lang="latin">
-	<li>Pater Noster, qui es in caelis,</li>
-	<li>sanctificetur nomen tuum,</li>
-	<li>adveniat regnum tuum,</li>
-	<li>fiat voluntas tua, sicut in caelo et in terra.</li>
-	<li>Panem nostrum quotidianum da nobis hodie,</li>
-	<li>et dimitte nobis debita nostra,</li>
-	<li>sicut et nos dimittimus debitoribus nostris,</li>
-	<li>et ne nos inducas in tentationem,</li>
-	<li>sed libera nos a malo.</li>
-	<li>Amen.</li>
-</ul>
-
-<hr />
-
-<p>"Si le Fils vous libère, vous serez vraiment libres." (Jn 8,36)</p>
-
 
     
 
-    <p>
+    <p class="grains" id="dz_grains">
     
         
 
@@ -391,7 +333,7 @@ Amen.
 <script src="/public/js/latin.js"></script>
 
 
-<script src="/public/js/chapelets/ch-reset.js"></script>
+<script src="/public/js/chapelets/ch-liberation.js"></script>
 
 
 
