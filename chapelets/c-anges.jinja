@@ -8,11 +8,9 @@
 {% block content %}
 <h1>Chapelet de St Michel et des anges</h1>
 
-{{ mc.vlatine() }}
-
 {% include bpath + "signe-croix.jinja" %}
 
-<hr />
+{{ mc.anchor("base", "=") }}
 
 {% include apath + "an-intro.jinja" %}
 
@@ -22,9 +20,11 @@
 
 {{ mc.grains("anges", "nbase") }}
 
-<hr />
+{{ mc.anchor("choeurs", "=") }}
 
 {% include apath + "an-choeurs.jinja" %}
+
+{{ mc.anchor("choeur_notre_pere") }}
 
 {% include bpath + "notre-pere.jinja" %}
 
@@ -36,9 +36,11 @@
 
 {{ mc.return_link("choeurs") }}
 
-<hr />
+{{ mc.anchor("antienne", "=") }}
 
 {% include apath + "an-antienne.jinja" %}
+
+{{ mc.anchor("oraison_st_michel") }}
 
 {% include apath + "an-oraison-finale.jinja" %}
 
@@ -46,11 +48,11 @@
 
 {% include bpath + "signe-croix.jinja" %}
 
+{{ mc.return_link() }}
+
 {{ mc.script("utils.js") }}
 {{ mc.script("latin.js") }}
 {{ mc.script("data/d.choeurs.js") }}
 {{ mc.script("chapelets/ch-anges.js") }}
-
-{{ mc.first_btn("trio_ste_marie_1") }}
 
 {% endblock %}

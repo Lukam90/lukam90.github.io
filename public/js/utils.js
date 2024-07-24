@@ -7,11 +7,9 @@ const $name = (name) => document.getElementsByName(name);
 
 // Masquage d'un bloc
 
-function hideBlock(id)
+function hideBlock(element)
 {
-    const block = $(id);
-
-    block.style.display = "none";
+    element.style.display = "none";
 }
 
 // Masquage de l'ensemble des blocs
@@ -26,11 +24,9 @@ function hideAll(blocks)
 
 // Affichage d'un bloc
 
-function showBlock(id)
+function showBlock(element)
 {
-    const block = $(id);
-
-    block.style.display = "block";
+    element.style.display = "block";
 }
 
 // Affichage de l'ensemble des blocs

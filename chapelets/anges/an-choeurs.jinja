@@ -1,23 +1,21 @@
-{{ mc.header("choeurs", "Choeurs") }}
-
-<p>
-    Je prie ce chapelet à l'attention de 
-
-    <select id="sel_anges" onchange="updateAngel();">
-        <option>Saint Michel</option>
-        <option>Saint Raphaël</option>
-        <option>Saint Gabriel</option>
-        <option>mon ange gardien</option>
-    </select>
-</p>
+<h2>Choeurs</h2>
 
 <p>
     <select id="sel_choeurs" onchange="updateText();">
+        <option>1. séraphins</option>
+        <option>2. chérubins</option>
+        <option>3. trônes</option>
+        <option>4. dominations</option>
+        <option>5. puissances</option>
+        <option>6. vertus</option>
+        <option>7. principautés</option>
+        <option>8. archanges</option>
+        <option>9. anges</option>
     </select>
 </p>
 
 <p class="priere">
-Par l'intercession de <span id="ange" class="gras">Saint Michel</span> et du choeur céleste des <span id="choeur" class="gras">séraphins</span>,<br>
+Par l'intercession de <b>Saint Michel</b> et du choeur céleste des <span id="choeur" class="gras">séraphins</span>,<br>
 que le Seigneur <span id="suite" class="gras">nous rende dignes de brûler du feu de la charité parfaite</span>.<br>
 Amen.
 </p>
