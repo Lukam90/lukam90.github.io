@@ -45,3 +45,13 @@ function checkFirst()
 {
     btnPremier.checked = true;
 }
+
+// Changement de blocs
+
+function switchBlocks(hidden, last)
+{
+    hideAll(hidden);
+    showBlock(last);
+
+    checkFirst();
+}

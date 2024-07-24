@@ -11,15 +11,16 @@ const intros = $all(".intro");
 let chapelet, liste; 
 let fruits, clausules;
 let fruit, clausule;
-let intro, id;
 
 let index = 0;
 let type = "joyeux";
 
 let url, resultat;
 
+let id, elIntro = $("#joyeux_1");
+
 initData("joyeux");
-showBlock("#joyeux_1");
+showBlock(elIntro);
 
 // Debug
 
@@ -75,8 +76,7 @@ function majInfos()
 
     id = "#" + type + "_" + (index + 1);
 
-    hideAll(intros);
-    showBlock(id);
+    elIntro = $(id);
 
-    checkFirst();
+    switchBlocks(intros, elIntro);
 }

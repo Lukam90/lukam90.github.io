@@ -4,17 +4,12 @@ const btnPremier = $("#dz_grains_1");
 
 const intros = $all(".intro");
 
+let elIntro = $("#mystere_1");
+
 let index = 0;
 let mystere = "";
 
-switchBlocks("#mystere_1");
-
-function switchBlocks(id)
-{
-    hideAll(intros);
-    showBlock(id);
-    checkFirst();
-}
+switchBlocks(intros, elIntro);
 
 function updateText()
 {
@@ -23,5 +18,7 @@ function updateText()
 
     pRappel.innerText = mystere;
 
-    switchBlocks("#mystere_" + index);
+    elIntro = $("#mystere_" + index);
+
+    switchBlocks(intros, elIntro);
 }

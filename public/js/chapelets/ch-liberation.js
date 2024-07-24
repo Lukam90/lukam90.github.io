@@ -1,4 +1,6 @@
 const blocs = $all(".grains");
+const trio = $("#base_trio");
+const dizaine = $("#dz_grains");
 
 const selRondes = $("#sel_rondes");
 
@@ -6,15 +8,7 @@ const btnPremier = $("#dz_grains_1");
 
 let index = 0;
 
-switchBlocks("#base_trio");
-
-function switchBlocks(id)
-{
-    hideAll(blocs);
-    showBlock(id);
-
-    checkFirst();
-}
+switchBlocks(blocs, trio);
 
 function setSuite()
 {
@@ -22,10 +16,10 @@ function setSuite()
 
     if (index == 0)
     {
-        switchBlocks("#base_trio");
+        switchBlocks(blocs, trio);
     }
     else
     {
-        switchBlocks("#dz_grains");
+        switchBlocks(blocs, dizaine);
     }
 }
