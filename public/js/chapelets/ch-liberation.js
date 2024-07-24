@@ -1,14 +1,12 @@
-const blocs = $all(".blocs");
+const blocs = $all(".grains");
 
 const selRondes = $("#sel_rondes");
-const btnPremier = $("#dz_grains_1");
-const spanClausule = $("#clausule");
 
-const clausules = ["aie pitié de", "guéris", "sauve", "libère", "aide"];
+const btnPremier = $("#dz_grains_1");
 
 let index = 0;
 
-switchBlocks("#bloc_trio");
+switchBlocks("#base_trio");
 
 function switchBlocks(id)
 {
@@ -18,23 +16,16 @@ function switchBlocks(id)
     checkFirst();
 }
 
-function setClausule(index)
-{
-    spanClausule.textContent = clausules[index];
-}
-
 function setSuite()
 {
     index = selRondes.selectedIndex;
 
     if (index == 0)
     {
-        switchBlocks("#bloc_trio");
+        switchBlocks("#base_trio");
     }
     else
     {
-        switchBlocks("#bloc_dizaine");
-
-        setClausule(index - 1);
+        switchBlocks("#dz_grains");
     }
 }

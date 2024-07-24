@@ -18,8 +18,6 @@ Le chapelet est inspiré de la 1ère méthode décrite dans la
 
 <hr />
 
-<p>Je prie à l'intention de <input id="intention" type="text" />.</p>
-
 {% include bpath + "signe-croix.jinja" %}
 
 <!-- Base -->
@@ -31,6 +29,20 @@ Le chapelet est inspiré de la 1ère méthode décrite dans la
 <!-- Rondes -->
 
 {{ mc.anchor("serie", "=") }}
+
+<p>
+    Je prie à l'intention de 
+
+    <select id="sel_intention">
+        <option>moi</option>
+        <option>nous</option>
+        <option></option>
+    </select>
+</p>
+
+<div>
+    <input type="text" id="txt_name" />
+</div>
 
 <p>
     <select id="sel_rondes" onchange="setSuite();">
@@ -45,17 +57,11 @@ Le chapelet est inspiré de la 1ère méthode décrite dans la
 
 <hr />
 
-<div class="blocs" id="bloc_trio">
-    {% include bpath + "ex-jesus.jinja" %}
+{% include bpath + "ex-jesus.jinja" %}
 
-    {{ mc.grains("trio", "base_trio") }}
-</div>
+{{ mc.grains("trio", "base_trio") }}
 
-<div class="blocs" id="bloc_dizaine">
-    <p>Jésus, <span id="clausule" class="gras">aié pitié de</span> __.</p>
-
-    {{ mc.grains("dizaine", "dz_grains") }}
-</div>
+{{ mc.grains("dizaine", "dz_grains") }}
 
 <!-- Fin -->
 

@@ -27,15 +27,8 @@ Le chapelet est inspiré de la 1ère méthode décrite dans la
 
 <hr />
 
-<p>Je prie à l'intention de <input id="intention" type="text" />.</p>
-
-<ul class="priere" lang="fr">
+<ul class="priere">
     <li>Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>.</li>
-    <li>Amen.</li>
-</ul>
-
-<ul class="priere" lang="latin">
-    <li>In nomine <b>Patris</b>, et <b>Filii</b> et <b>Spiritus Sancti</b>.</li>
     <li>Amen.</li>
 </ul>
 
@@ -51,7 +44,9 @@ Le chapelet est inspiré de la 1ère méthode décrite dans la
 </div>
 
 
-<h2>Je crois en Dieu</h2>
+<h2>Je crois en Dieu 
+&RightArrow; <span class="traduction" onclick="switchLang(event);">Latin</span>
+</h2>
 
 <ul class="priere" lang="fr">
 	<li>Je crois en Dieu, le Père tout-puissant,</li>
@@ -114,6 +109,20 @@ Le chapelet est inspiré de la 1ère méthode décrite dans la
 
 
 <p>
+    Je prie à l'intention de 
+
+    <select id="sel_intention">
+        <option>moi</option>
+        <option>nous</option>
+        <option></option>
+    </select>
+</p>
+
+<div>
+    <input type="text" id="txt_name" />
+</div>
+
+<p>
     <select id="sel_rondes" onchange="setSuite();">
         <option>Base</option>
         
@@ -134,19 +143,17 @@ Le chapelet est inspiré de la 1ère méthode décrite dans la
 
 <hr />
 
-<div class="blocs" id="bloc_trio">
-    <ul class="priere">
-    <li>Jésus, <b>aie pitié de</b> moi.</li>
-    <li>Jésus, <b>guéris</b>-moi.</li>
-    <li>Jésus, <b>sauve</b>-moi.</li>
-    <li>Jésus, <b>libère</b>-moi.</li>
-    <li>Jésus, <b>aide</b>-moi.</li>
+<ul class="priere">
+    <li>Jésus, <b>aie pitié de</b> __.</li>
+    <li>Jésus, <b>guéris</b> __.</li>
+    <li>Jésus, <b>sauve</b> __.</li>
+    <li>Jésus, <b>libère</b> __.</li>
 </ul>
 
-    
+
     
 
-    <p>
+    <p class="grains" id="base_trio">
     
         
 
@@ -178,15 +185,11 @@ Le chapelet est inspiré de la 1ère méthode décrite dans la
     
     </p>
 
-</div>
 
-<div class="blocs" id="bloc_dizaine">
-    <p>Jésus, <span id="clausule" class="gras">aié pitié de</span> __.</p>
 
     
-    
 
-    <p>
+    <p class="grains" id="dz_grains">
     
         
 
@@ -232,7 +235,6 @@ Le chapelet est inspiré de la 1ère méthode décrite dans la
     
     </p>
 
-</div>
 
 <!-- Fin -->
 
@@ -279,13 +281,8 @@ Le chapelet est inspiré de la 1ère méthode décrite dans la
 
 <hr />
 
-<ul class="priere" lang="fr">
+<ul class="priere">
     <li>Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>.</li>
-    <li>Amen.</li>
-</ul>
-
-<ul class="priere" lang="latin">
-    <li>In nomine <b>Patris</b>, et <b>Filii</b> et <b>Spiritus Sancti</b>.</li>
     <li>Amen.</li>
 </ul>
 
