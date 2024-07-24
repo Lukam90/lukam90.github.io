@@ -163,7 +163,7 @@ def convert_markdown_single(filename):
 
 # Données
 
-# _
+litanies = convert_text_data("ste-marie")
 
 # Compilation
 
@@ -187,14 +187,14 @@ profil = ["cv-imprime", "portfolio"]
 
 ## Chapelets
 
-chapelets = ["chapelet", "c-anges", "c-eucharistie", "c-liberation", "c-merci", "c-misericorde", "c-sang"]
+chapelets = ["c-anges", "c-eucharistie", "c-liberation", "c-merci", "c-misericorde", "c-sang"]
 
 ch_saints = ["c-st-antoine", "c-ste-rita"]
 
 #convert_jinja_list("chapelets", chapelets)
-convert_jinja_list("chapelets/saints", ch_saints)
+#convert_jinja_list("chapelets/saints", ch_saints)
 
-convert_jinja_single("chapelets/chapelet")
+convert_jinja_single("chapelets/chapelet", litanies)
 #convert_jinja_single("chapelets/c-liberation")
 #convert_jinja_single("chapelets/c-merci")
 #convert_jinja_single("chapelets/c-misericorde")

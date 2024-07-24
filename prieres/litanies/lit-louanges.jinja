@@ -1,75 +1,7 @@
 <ul class="priere gauche">
-    <!-- Base (3) -->
+    {% for text in data %}
+        {% set id = "litanies_" + loop.index | string %}
 
-    {{ mc.litany("base1", "Sainte Marie") }}
-    {{ mc.litany("base2", "Sainte Mère de Dieu") }}
-    {{ mc.litany("base3", "Sainte Vierge des vierges") }}
-
-    {{ mc.list_separator() }}
-
-    <!-- Mère (12) -->
-
-    {{ mc.litany("mere1", "Mère du Christ") }}
-    {{ mc.litany("mere2", "Mère de l'Eglise") }}
-    {{ mc.litany("mere3", "Mère de la divine grâce") }}
-    {{ mc.litany("mere4", "Mère très pure") }}
-    {{ mc.litany("mere5", "Mère très chaste") }}
-    {{ mc.litany("mere6", "Mère toujours vierge") }}
-    {{ mc.litany("mere7", "Mère sans tache") }}
-    {{ mc.litany("mere8", "Mère aimable") }}
-    {{ mc.litany("mere9", "Mère admirable") }}
-    {{ mc.litany("mere10", "Mère du bon conseil") }}
-    {{ mc.litany("mere11", "Mère du Créateur") }}
-    {{ mc.litany("mere12", "Mère du Sauveur") }}
-
-    {{ mc.list_separator() }}
-
-    <!-- Vierge (6) -->
-
-    {{ mc.litany("vierge1", "Vierge très prudente") }}
-    {{ mc.litany("vierge2", "Vierge vénérable") }}
-    {{ mc.litany("vierge3", "Vierge digne de louanges") }}
-    {{ mc.litany("vierge4", "Vierge puissante") }}
-    {{ mc.litany("vierge5", "Vierge clémente") }}
-    {{ mc.litany("vierge6", "Vierge fidèle") }}
-
-    {{ mc.list_separator() }}
-
-    <!-- Noms (17) -->
-
-    {{ mc.litany("noms1", "Miroir de justice") }}
-    {{ mc.litany("noms2", "Siège de la sagesse") }}
-    {{ mc.litany("noms3", "Cause de notre joie") }}
-    {{ mc.litany("noms4", "Vase spirituel") }}
-    {{ mc.litany("noms5", "Vase honorable") }}
-    {{ mc.litany("noms6", "Vase insigne de la dévotion") }}
-    {{ mc.litany("noms7", "Rose mystique") }}
-    {{ mc.litany("noms8", "Tour de David") }}
-    {{ mc.litany("noms9", "Tour d'ivoire") }}
-    {{ mc.litany("noms10", "Maison d'or") }}
-    {{ mc.litany("noms11", "Arche d'alliance") }}
-    {{ mc.litany("noms12", "Porte du Ciel") }}
-    {{ mc.litany("noms13", "Etoile du matin") }}
-    {{ mc.litany("noms14", "Salut des infirmes") }}
-    {{ mc.litany("noms15", "Refuge des pécheurs") }}
-    {{ mc.litany("noms16", "Consolatrice des affligés") }}
-    {{ mc.litany("noms17", "Secours des chrétiens") }}
-
-    {{ mc.list_separator() }}
-
-    <!-- Reine (13) -->
-
-    {{ mc.litany("reine1", "Reine des anges") }}
-    {{ mc.litany("reine2", "Reine des patriarches") }}
-    {{ mc.litany("reine3", "Reine des prophètes") }}
-    {{ mc.litany("reine4", "Reine des apôtres") }}
-    {{ mc.litany("reine5", "Reine des martyrs") }}
-    {{ mc.litany("reine6", "Reine des confesseurs") }}
-    {{ mc.litany("reine7", "Reine des vierges") }}
-    {{ mc.litany("reine8", "Reine de tous les saints") }}
-    {{ mc.litany("reine9", "Reine conçue sans le péché originel") }}
-    {{ mc.litany("reine10", "Reine élevée au ciel") }}
-    {{ mc.litany("reine11", "Reine du très saint Rosaire") }}
-    {{ mc.litany("reine12", "Reine des familles") }}
-    {{ mc.litany("reine13", "Reine de la paix") }}
+        <li>{{ mc.list_anchor(id, text) }}, prie pour nous.</li>
+    {% endfor %}
 </ul>

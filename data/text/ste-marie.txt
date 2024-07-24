@@ -1,9 +1,9 @@
 Sainte Marie
-Sainte mère de Dieu
-Sainte vierge des vierges
+Sainte Mère de Dieu
+Sainte Vierge des vierges
 Mère du Christ
+Mère de l'Eglise
 Mère de la divine grâce
-Mère de l’Eglise
 Mère très pure
 Mère très chaste
 Mère toujours vierge
@@ -15,23 +15,23 @@ Mère du Créateur
 Mère du Sauveur
 Vierge très prudente
 Vierge vénérable
-Vierge digne de louange
+Vierge digne de louanges
 Vierge puissante
 Vierge clémente
 Vierge fidèle
 Miroir de justice
-Trône de la sagesse
+Siège de la sagesse
 Cause de notre joie
 Vase spirituel
-Vase d’honneur
+Vase honorable
 Vase insigne de la dévotion
 Rose mystique
 Tour de David
-Tour d’ivoire
-Maison d’or
-Arche d’alliance
-Porte du ciel
-Étoile du matin
+Tour d'ivoire
+Maison d'or
+Arche d'alliance
+Porte du Ciel
+Etoile du matin
 Salut des infirmes
 Refuge des pécheurs
 Consolatrice des affligés
@@ -47,4 +47,5 @@ Reine de tous les saints
 Reine conçue sans le péché originel
 Reine élevée au ciel
 Reine du très saint Rosaire
+Reine des familles
 Reine de la paix
