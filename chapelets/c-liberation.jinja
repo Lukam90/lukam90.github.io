@@ -20,8 +20,6 @@ Le chapelet est inspiré de la 1ère méthode décrite dans la
 
 <p>Je prie à l'intention de <input id="intention" type="text" />.</p>
 
-{{ mc.vlatine() }}
-
 {% include bpath + "signe-croix.jinja" %}
 
 <!-- Base -->
@@ -43,25 +41,27 @@ Le chapelet est inspiré de la 1ère méthode décrite dans la
     </select>
 </p>
 
-<p>Si Jésus vous libère, vous serez vraiment libres." (Jn 8,36)</p>
+<p>Si le Fils vous libère, vous serez vraiment libres." (Jn 8,36)</p>
 
 <hr />
 
-{% include bpath + "ex-jesus.jinja" %}
+<div class="blocs" id="bloc_trio">
+    {% include bpath + "ex-jesus.jinja" %}
 
-{{ mc.grains("trio", "base_trio") }}
+    {{ mc.grains("trio", "base_trio") }}
+</div>
 
-{{ mc.grains("dizaine", "dz_grains") }}
+<div class="blocs" id="bloc_dizaine">
+    <p>Jésus, <span id="clausule" class="gras">aié pitié de</span> __.</p>
+
+    {{ mc.grains("dizaine", "dz_grains") }}
+</div>
 
 <!-- Fin -->
 
 {{ mc.anchor("salut_reine", "=") }}
 
 {% include bpath + "salut-reine.jinja" %}
-
-{{ mc.anchor("priere_finale") }}
-
-{% include opath + "outro-liberation.jinja" %}
 
 <hr />
 

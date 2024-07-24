@@ -32,6 +32,12 @@
 </iframe>
 {% endmacro %}
 
+<!-- Version latine -->
+
+{% macro vlatine() %}
+&RightArrow; <span class="traduction" onclick="switchLang(event);">Latin</span>
+{% endmacro %}
+
 <!-- Liste de liens -->
 
 {% macro links(data, path, title) %}
@@ -95,21 +101,12 @@
 <label for="{{ id }}">{{ value }}</label>
 {% endmacro %}
 
-<!-- Case pour la version latine -->
-
-{% macro vlatine() %}
-<p>
-    <input type="checkbox" id="vlatine" name="vlatine" onclick="switchLang();" />
-    <label for="vlatine">Version latine</label>
-</p>
-{% endmacro %}
-
 <!-- Boutons radios => Grains -->
 
 {% macro grains(type, name) %}
     {% set values = lists[type] %}
 
-    <p class="grains" id="{{ name }}">
+    <p>
     {% for val in values %}
         {% set id = name + "_" + loop.index | string %}
 
