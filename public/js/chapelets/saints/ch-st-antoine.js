@@ -4,17 +4,21 @@ const selRondes = $('#sel_rondes');
 
 let index = 0;
 
-switchBlocks("#st_antoine_1");
+let elIntro = $("#st_antoine_1");
 
-function switchBlocks(id)
+showIntro(elIntro);
+
+function showIntro(element)
 {
     hideAll(intros);
-    showBlock(id);
+    showBlock(element);
 }
 
 function setIntro()
 {
     index = selRondes.selectedIndex + 1;
 
-    switchBlocks("#st_antoine_" + index)
+    elIntro = $("#st_antoine_" + index);
+
+    showIntro(elIntro);
 }
