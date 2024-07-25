@@ -198,7 +198,7 @@ convert_jinja_single("chapelets/chapelet", litanies)
 #convert_jinja_single("chapelets/c-liberation")
 #convert_jinja_single("chapelets/c-merci")
 #convert_jinja_single("chapelets/c-misericorde")
-#convert_jinja_single("chapelets/c-sang")
+convert_jinja_single("chapelets/c-sang")
 
 ## Exercices
 
