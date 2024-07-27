@@ -198,14 +198,14 @@ ch_saints = ["c-st-antoine", "c-ste-rita"]
 convert_jinja_single("chapelets/c-liberation")
 #convert_jinja_single("chapelets/c-merci")
 #convert_jinja_single("chapelets/c-misericorde")
-convert_jinja_single("chapelets/c-sang")
+#convert_jinja_single("chapelets/c-sang")
 
 ## Exercices
 
 exercices = ["ex-base", "ex-carre", "ex-dormir", "ex-nombres", "ex-sonore", "ex-video"]
 
 #convert_jinja_list("exercices", exercices)
-#convert_jinja_single("exercices/ex-nombres")
+convert_jinja_single("exercices/ex-nombres")
 
 ## Prières (simples)
 
