@@ -12,45 +12,21 @@
 {% block content %}
 <h1>Chapelet du Précieux Sang de Jésus</h1>
 
-<p>Le chapelet est inspiré de la révélation de Jésus à Barnabas Nwoye le 15 mars 1997.</p>
-
 <!-- Base -->
 
 {% include bpath + "signe-croix.jinja" %}
 
-<hr />
-
-{% include bpath + "ex-chant.jinja" %}
-
 {{ mc.anchor("base", "=") }}
-
-{% include spath + "st-esprit.jinja" %}
-
-{{ mc.anchor("credo") }}
 
 {% include bpath + "credo.jinja" %}
 
-{{ mc.anchor("credo_outro") }}
+{{ mc.anchor("intro") }}
 
-{% include opath + "outro-dz-sang.jinja" %}
-
-{{ mc.anchor("b_notre_pere") }}
-
-{% include bpath + "notre-pere.jinja" %}
-
-{{ mc.anchor("b_ste_marie") }}
-
-{% include bpath + "ste-marie.jinja" %}
-
-{{ mc.grains("trinite", "base_trio") }}
-
-{{ mc.anchor("b_gloire_pere") }}
-
-{% include bpath + "gloire-pere.jinja" %}
-
-{{ mc.anchor("intro_base") }}
-
-{% include opath + "outro-dz-sang.jinja" %}
+<p>
+Que le précieux sang qui jaillit de la tête sacrée<br>
+de notre Seigneur Jésus-Christ,<br>
+nous couvre maintenant et pour toujours. 
+</p>
 
 <!-- Rondes -->
 
@@ -68,11 +44,6 @@
 
 {% include ipath + "intros-sang.jinja" %}
 
-<p class="priere">
-Ô Très Précieux Sang de Jésus-Christ,<br>
-cicatrise les plaies du Très Saint Cœur de Jésus. 
-</p>
-
 {{ mc.anchor("notre_pere") }}
 
 {% include bpath + "notre-pere.jinja" %}
@@ -88,15 +59,11 @@ Précieux Sang de Jésus-Christ,<br>
 sauve-nous et le monde entier.
 </p>
 
-{{ mc.grains("douzaine", "dz_grains") }}
+{{ mc.grains("dizaine", "dz_grains") }}
 
 {{ mc.anchor("gloire_pere") }}
 
 {% include bpath + "gloire-pere.jinja" %}
-
-{{ mc.anchor("outro_dizaine") }}
-
-{% include opath + "outro-dz-sang.jinja" %}
 
 {{ mc.return_link("mysteres") }}
 
@@ -106,9 +73,9 @@ sauve-nous et le monde entier.
 
 {% include bpath + "salut-reine.jinja" %}
 
-{{ mc.anchor("outro_fin_sang") }}
+{{ mc.anchor("outro_sang") }}
 
-{% include opath + "outro-fin-sang.jinja" %}
+{% include opath + "outro-sang.jinja" %}
 
 <hr />
 
