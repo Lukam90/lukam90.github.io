@@ -10,14 +10,6 @@
 {% block content %}
 <h1>Chapelet de libération</h1>
 
-<p>
-Le chapelet est inspiré de la 2ème méthode décrite dans la 
-{{ mc.link("https://boutique.labonnenouvelle.net/revues-voici-ta-mere-/776-chapelet-de-la-liberation-en-telechargement.html", "revue dédiée") }}
-<br>de la boutique de la <b>Bonne Nouvelle</b>.
-</p>
-
-<hr />
-
 {% include bpath + "signe-croix.jinja" %}
 
 <!-- Base -->
@@ -31,6 +23,16 @@ Le chapelet est inspiré de la 2ème méthode décrite dans la
 {{ mc.anchor("serie", "=") }}
 
 <p>
+    Je prie à l'intention de
+
+    <select id="sel_intention">
+        <option>-moi</option>
+        <option>nous</option>
+        <option></option>
+    </select>
+</p>
+
+<p>
     <select id="sel_rondes" onchange="setSuite();">
         <option>Base</option>
         {% for nb in range(1, 6) %}
@@ -39,19 +41,20 @@ Le chapelet est inspiré de la 2ème méthode décrite dans la
     </select>
 </p>
 
-{% include bpath + "notre-pere.jinja" %}
+<p>"Si le Fils vous libère, vous serez vraiment libres." (Jn 8,36)</p>
 
 <hr />
 
-<p>"Si le Fils vous libère, vous serez vraiment libres." (Jn 8,36)</p>
+<ul class="priere">
+    <li>Jésus, <b>aie pitié de</b> __ !</li>
+    <li>Jésus, <b>guéris</b> __ !</li>
+    <li>Jésus, <b>sauve</b> __ !</li>
+    <li>Jésus, <b>libère</b> __ !</li>
+</ul>
 
 {{ mc.grains("trio", "base_trio") }}
 
 {{ mc.grains("dizaine", "dz_grains") }}
-
-{{ mc.anchor("fin_dizaine") }}
-
-{% include spath + "fin-dz-liberation.jinja" %}
 
 {{ mc.return_link("serie") }}
 
