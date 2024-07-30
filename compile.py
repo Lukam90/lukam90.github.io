@@ -211,5 +211,5 @@ convert_jinja_single("exercices/ex-nombres")
 
 prieres = ["md-neuvaine"]
 
-#convert_jinja_list("prieres", prieres)
+convert_jinja_list("prieres", prieres)
 
