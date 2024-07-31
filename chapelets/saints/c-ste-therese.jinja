@@ -1,0 +1,67 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set title = "C-Ste-Therese" %}
+
+{% set bpath = "prieres/base/" %}
+
+{% block content %}
+<h1>Chapelet de Sainte Thérèse de l'Enfant Jésus</h1>
+
+{% include bpath + "signe-croix.jinja" %}
+
+<hr />
+
+<h2>Sur les 24 perles</h2>
+
+<p class="priere">
+Sainte Thérèse de l'Enfant-Jésus et de la Sainte-Face,<br>
+souvenez-vous de votre promesse de faire du bien sur la terre,<br>
+répandez avec abondance votre pluie de roses sur ceux qui vous invoquent,<br>
+et obtenez-nous de Dieu les grâces que nous attendons de sa bonté infinie.<br>
+Amen.
+</p>
+
+{{ mc.grains("ste-therese", "perles") }}
+
+{{ mc.anchor("medaille", "=") }}
+
+<h2>Sur la médaille</h2>
+
+<p class="priere">
+Ô notre Père des Cieux qui, par sainte Thérèse de l'Enfant-Jésus,<br>
+voulez rappeler au monde l'Amour miséricordieux qui remplit votre cœur<br>
+et la confiance filiale qu'on doit avoir en vous,<br>
+nous vous remercions humblement d'avoir comblé de tant de gloire<br>
+celle qui fut toujours votre enfant si fidèle<br>
+et de lui donner une puissance merveilleuse<br>
+pour vous attirer chaque jour un grand nombre d'âmes<br>
+qui vous loueront éternellement.<br>
+Amen.
+</p>
+
+{{ mc.anchor("dernier", "=") }}
+
+<h2>Sur le dernier grain</h2>
+
+<p class="priere">
+Ô sainte Thérèse de l'Enfant-Jésus et de la Sainte-Face,<br>
+qui avez mérité d'être proclamée patronne des missions catholiques du monde entier.<br>
+Docteure de l'Église, souvenez-vous de votre promesse d'aider les prêtres,<br>
+les missionnaires et toute l'Église.<br>
+Amen.
+</p>
+
+{{ mc.anchor("fin", "=") }}
+
+{% include bpath + "notre-pere.jinja" %}
+
+<hr />
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link() }}
+
+{{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
+
+{% endblock %}
