@@ -186,15 +186,16 @@ convert_jinja_list("profil", profil)
 
 ## Chapelets
 
-chapelets = ["chapelet", "c-anges", "c-eucharistie", "c-liberation", "c-merci", "c-misericorde", "c-sang"]
+chapelets = ["chapelet", "c-anges", "c-eucharistie", "c-liberation", "c-louanges", "c-merci", "c-misericorde", "c-sang"]
 
 ch_saints = ["c-st-antoine", "c-ste-rita", "c-ste-therese"]
 
 #convert_jinja_list("chapelets", chapelets)
 #convert_jinja_list("chapelets/saints", ch_saints)
 
-#convert_jinja_single("chapelets/chapelet")
-convert_jinja_single("chapelets/c-liberation")
+convert_jinja_single("chapelets/chapelet")
+#convert_jinja_single("chapelets/c-liberation")
+convert_jinja_single("chapelets/c-louanges")
 #convert_jinja_single("chapelets/c-merci")
 #convert_jinja_single("chapelets/c-misericorde")
 #convert_jinja_single("chapelets/c-sang")

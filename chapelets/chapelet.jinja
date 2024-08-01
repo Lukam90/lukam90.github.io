@@ -22,25 +22,37 @@ Le chapelet basé sur le rosaire traditionnel s'inspire de l'application
 
 {% include bpath + "signe-croix.jinja" %}
 
+<!-- Base -->
+
 {{ mc.anchor("base", "=") }}
 
 {% include rpath + "rs-base.jinja" %}
 
-{{ mc.anchor("dizaines", "=") }}
+{{ mc.anchor("st_benoit") }}
+
+{% include spath + "st-benoit.jinja" %}
+
+<!-- Mystères -->
+
+{{ mc.anchor("mysteres", "=") }}
 
 {% include rpath + "rs-choix.jinja" %}
 
 {% include rpath + "rs-dizaine.jinja" %}
 
-{{ mc.return_link("dizaines") }}
+{{ mc.return_link("mysteres") }}
 
 <hr />
 
 {% include bpath + "signe-croix.jinja" %}
 
+<!-- Litanies -->
+
 {{ mc.anchor("litanies", "=") }}
 
 {% include lpath + "lit-ste-marie.jinja" %}
+
+<!-- Scripts -->
 
 {{ mc.script("utils.js") }}
 {{ mc.script("latin.js") }}
