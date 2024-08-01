@@ -78,7 +78,6 @@ const intros_douloureux = [
     nous te louons, nous te bénissons et nous t'adorons.`,
 ];
 
-
 // Intros - Glorieux
 
 const intros_glorieux = [

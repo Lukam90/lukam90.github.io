@@ -19,8 +19,6 @@ let fruit, clausule, intro;
 let index = 0;
 let type = "joyeux";
 
-let url, resultat;
-
 initData("joyeux");
 
 // Debug
@@ -72,9 +70,12 @@ function majInfos()
 
     clausule = clausules[index];
     fruit = fruits[index];
+    intro = intros[index];
 
     spanClausule.innerText = clausule;
     spanFruit.innerText = fruit;
 
-    pIntro.innerText = intros[index];
+    pIntro.innerText = intro;
+
+    checkFirst();
 }
