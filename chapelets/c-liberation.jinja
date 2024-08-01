@@ -10,6 +10,14 @@
 {% block content %}
 <h1>Chapelet de libération</h1>
 
+<p>
+La méthode est inspirée du
+{{ mc.link("https://boutique.labonnenouvelle.net/revues-voici-ta-mere-/776-chapelet-de-la-liberation-en-telechargement.html", "livret") }} 
+de <b>La Bonne Nouvelle</b>.
+</p>
+
+<hr />
+
 {% include bpath + "signe-croix.jinja" %}
 
 <!-- Base -->
@@ -37,16 +45,11 @@
     </select>
 </p>
 
-<p>"Si le Fils vous libère, vous serez vraiment libres." (Jn 8,36)</p>
+{% include bpath + "notre-pere.jinja" %}
 
 <hr />
 
-<ul class="priere">
-    <li>Jésus, <b>aie pitié de</b> nous !</li>
-    <li>Jésus, <b>guéris</b>-nous !</li>
-    <li>Jésus, <b>sauve</b>-nous !</li>
-    <li>Jésus, <b>libère</b>-nous !</li>
-</ul>
+<p>"Si le Fils vous libère, vous serez vraiment libres." (Jn 8,36)</p>
 
 {{ mc.grains("trio", "base_trio") }}
 
