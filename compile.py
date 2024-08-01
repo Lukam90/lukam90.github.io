@@ -176,14 +176,13 @@ litanies = convert_text_data("ste-marie")
 index = convert_json_data("index")
 
 convert_jinja_single("index", index)
-#convert_jinja_single("cv-imprime")
 convert_jinja_single("test")
 
 ## Profil
 
 profil = ["cv-imprime", "portfolio"]
 
-#convert_jinja_list("profil", profil)
+convert_jinja_list("profil", profil)
 
 ## Chapelets
 
@@ -200,7 +199,7 @@ convert_jinja_single("chapelets/c-liberation")
 #convert_jinja_single("chapelets/c-misericorde")
 #convert_jinja_single("chapelets/c-sang")
 
-#convert_jinja_single("chapelets/saints/c-ste-therese")
+convert_jinja_single("chapelets/saints/c-ste-therese")
 
 ## Exercices
 
