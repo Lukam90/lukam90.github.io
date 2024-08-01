@@ -1,15 +1,15 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set bpath = "prieres/base/" %}
-{% set vpath = "prieres/versets/" %}
 
 {% set lpath = "chapelets/louanges/" %}
 {% set rpath = "chapelets/rosaire/" %}
+{% set vpath = "chapelets/versets/" %}
 
 {% set title = "C-Louanges" %}
 
 {% block content %}
-<h1>C-Louanges</h1>
+<h1>Chapelet de louange</h1>
 
 <p>
 Le chapelet est basé sur la méthode de <b>La Bonne Nouvelle</b> et décrite sur le site de 
@@ -32,7 +32,7 @@ Le chapelet est basé sur la méthode de <b>La Bonne Nouvelle</b> et décrite su
 
 {% include rpath + "rs-choix.jinja" %}
 
-{% include rpath + "cl-dizaine.jinja" %}
+{% include lpath + "cl-dizaine.jinja" %}
 
 {{ mc.return_link("mysteres") }}
 
@@ -51,6 +51,6 @@ Le chapelet est basé sur la méthode de <b>La Bonne Nouvelle</b> et décrite su
 {{ mc.script("utils.js") }}
 {{ mc.script("latin.js") }}
 {{ mc.script("data/d.mysteres.js") }}
-{{ mc.script("chapelets/ch-louanges.js") }}
+{{ mc.script("chapelets/ch-louange.js") }}
 
 {% endblock %}
