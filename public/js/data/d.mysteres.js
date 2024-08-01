@@ -1,7 +1,7 @@
 // Mystères joyeux
 
-const m_joyeux = {
-    liste : [
+const ch_joyeux = {
+    mysteres : [
         "1. L'annonciation",
         "2. La visitation",
         "3. La nativité",
@@ -25,8 +25,8 @@ const m_joyeux = {
 
 // Mystères lumineux
 
-const m_lumineux = {
-    liste : [
+const ch_lumineux = {
+    mysteres : [
         "1. Le baptême de Jésus",
         "2. Les noces de Cana",
         "3. L'annonce du Royaume de Dieu",
@@ -51,8 +51,8 @@ const m_lumineux = {
 
 // Mystères douloureux
 
-const m_douloureux = {
-    liste : [
+const ch_douloureux = {
+    mysteres : [
         "1. L'agonie de Jésus",
         "2. La flagellation",
         "3. Le couronnement d'épines",
@@ -77,8 +77,8 @@ const m_douloureux = {
 
 // Mystères glorieux
 
-const m_glorieux = {
-    liste : [
+const ch_glorieux = {
+    mysteres : [
         "1. La résurrection",
         "2. L'ascension de Jésus",
         "3. La Pentecôte",
@@ -103,9 +103,9 @@ const m_glorieux = {
 
 // Mystères au complet
 
-const mysteres = {
-    joyeux : m_joyeux,
-    lumineux : m_lumineux,
-    douloureux : m_douloureux,
-    glorieux : m_glorieux
+const ch_mysteres = {
+    joyeux : ch_joyeux,
+    lumineux : ch_lumineux,
+    douloureux : ch_douloureux,
+    glorieux : ch_glorieux
 };

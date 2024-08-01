@@ -1,26 +1,27 @@
+// Eléments
+
 const selType = $("#sel_type");
 const selMysteres = $("#sel_mysteres");
 
 const spanFruit = $("#fruit");
 const spanClausule = $("#clausule");
 
+const pIntro = $("#intro");
+
 const btnPremier = $('#dz_grains_1');
 
-const intros = $all(".intro");
+// Variables
 
-let chapelet, liste; 
-let fruits, clausules;
-let fruit, clausule;
+let chapelet, mysteres; 
+let fruits, clausules, intros;
+let fruit, clausule, intro;
 
 let index = 0;
 let type = "joyeux";
 
 let url, resultat;
 
-let id, elIntro = $("#joyeux_1");
-
 initData("joyeux");
-showBlock(elIntro);
 
 // Debug
 
@@ -34,13 +35,14 @@ function chDebug()
 
 function initData(type)
 {
-    chapelet = mysteres[type];
+    chapelet = ch_mysteres[type];
+    intros = ch_intros[type];
 
-    liste = chapelet["liste"];
+    mysteres = chapelet["mysteres"];
     fruits = chapelet["fruits"];
     clausules = chapelet["clausules"];
 
-    hideAll(intros);
+    pIntro.innerText = intros[0];
 }
 
 // MAJ des données d'un chapelet selon le type
@@ -54,7 +56,7 @@ function majChapelet()
     initData(type);
 
     for (let optMystere of selMysteres.children) {
-        optMystere.innerText = liste[index++];
+        optMystere.innerText = mysteres[index++];
     }
 
     selMysteres.selectedIndex = 0;
@@ -74,9 +76,5 @@ function majInfos()
     spanClausule.innerText = clausule;
     spanFruit.innerText = fruit;
 
-    id = "#" + type + "_" + (index + 1);
-
-    elIntro = $(id);
-
-    switchBlocks(intros, elIntro);
+    pIntro.innerText = intros[index];
 }
