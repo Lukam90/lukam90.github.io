@@ -119,16 +119,14 @@
     </p>
 {% endmacro %}
 
-<!-- Rondes (liste de choix) -->
+<!-- Liste de choix -->
 
-{% macro rondes(end = 5) %}
-<p>
-    Ronde
+{% macro select(id, start = 1, end = 5, default = False) %}
+<select id="{{ id }}" onchange="checkFirst();">
+    {% if default %}<option>---</option>{% endif %}
 
-    <select id="sel_rondes" onchange="checkFirst();">
-        {% for nb in range(1, end + 1) %}
-        <option>n°{{ nb }}</option>
-        {% endfor %}
-    </select>
-</p>
+    {% for nb in range(start, end + 1) %}
+    <option>n°{{ nb }}</option>
+    {% endfor %}
+</select>
 {% endmacro %}

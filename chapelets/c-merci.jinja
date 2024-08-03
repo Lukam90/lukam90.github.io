@@ -12,17 +12,21 @@
 
 <p>Embrasser la croix</p>
 
-<hr />
+{{ mc.anchor("intro", "=") }}
 
 {% include ipath + "intro-merci.jinja" %}
 
-<hr />
+{{ mc.anchor("rondes", "=") }}
 
-{{ mc.rondes(20) }}
+<p>
+    Ronde
+
+    {{ mc.select("sel_rondes", 1, 20) }}
+</p>
 
 <p>Oh, merci Jésus !</p>
 
-{{ mc.anchor("grains") }}
+<hr />
 
 {{ mc.grains("dizaine", "dz_grains") }}
 

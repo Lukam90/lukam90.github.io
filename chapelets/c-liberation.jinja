@@ -10,12 +10,6 @@
 {% block content %}
 <h1>Chapelet de libération</h1>
 
-<p>
-La méthode est inspirée du
-{{ mc.link("https://boutique.labonnenouvelle.net/revues-voici-ta-mere-/776-chapelet-de-la-liberation-en-telechargement.html", "livret") }} 
-de <b>La Bonne Nouvelle</b>.
-</p>
-
 <hr />
 
 {% include bpath + "signe-croix.jinja" %}
@@ -33,6 +27,14 @@ de <b>La Bonne Nouvelle</b>.
 <p>
     Je prie à l'intention de
 
+    <select id="cible">
+        <option></option>
+        <option>moi</option>
+        <option>nous</option>
+    </select>
+
+    avec
+
     <input type="text" id="intention" />
 </p>
 
@@ -45,11 +47,11 @@ de <b>La Bonne Nouvelle</b>.
     </select>
 </p>
 
-{% include bpath + "notre-pere.jinja" %}
+<p>"Si Jésus vous libère, vous serez vraiment libres." (Jn 8,36)</p>
 
 <hr />
 
-<p>"Si le Fils vous libère, vous serez vraiment libres." (Jn 8,36)</p>
+{% include spath + "ex-jesus.jinja" %}
 
 {{ mc.grains("trio", "base_trio") }}
 
