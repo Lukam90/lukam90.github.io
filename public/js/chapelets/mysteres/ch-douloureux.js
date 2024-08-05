@@ -23,10 +23,15 @@ const ch_douloureux = {
         "crucifié"
     ],
     versets : [
+        // 1
         `"Mon âme est triste à en mourir. Restez ici et veillez avec moi." (Mt 26, 38)`,
+        // 2
         `"Je suis innocent du sang de cet homme : cela vous regarde !" (Mt 27, 24)`,
+        // 3
         `Ils le revêtent de pourpre, et lui posent sur la tête une couronne d’épines qu’ils ont tressée. (Mc 15, 17)`,
+        // 4
         `Et lui-même, portant sa croix, sortit en direction du lieu dit Le Crâne. (Jn 19, 17)`,
+        // 5
         `"Mon Dieu, mon Dieu, pourquoi m’as-tu abandonné ?" (Mt 27, 46)`,
     ]
 };

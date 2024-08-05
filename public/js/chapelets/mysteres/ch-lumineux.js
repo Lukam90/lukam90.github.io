@@ -23,13 +23,26 @@ const ch_lumineux = {
         "qui donna le sacrement de son amour"
     ],
     versets : [
-        `"Celui-ci est mon Fils bien-aimé, en qui je trouve ma joie." (Mt 3, 17)`,
+        // 1
+        `Et aussitôt en remontant de l'eau, il vit les cieux se déchirer
+        et l'Esprit descendre sur lui comme une colombe.
+        Il y eut une voix venant des cieux :
+        "Tu es mon Fils bien-aimé. En toi, je trouve ma joie. (Mc 1, 10-11)`,
+        // 2
         `C’était à Cana de Galilée. 
         Il manifesta sa gloire, et ses disciples crurent en lui. (Jn 2, 11)`,
-        `"Convertissez-vous, car le royaume des Cieux est tout proche." (Mt 3, 2)`,
+        // 3
+        `"Les temps sont accomplis. Le Règne de Dieu est tout proche.
+        Convertissez-vous et croyez à la Bonne Nouvelle." (Mc 1, 15)`,
+        // 4
         `Il fut transfiguré devant eux. 
         Son visage devint brillant comme le soleil, 
         et ses vêtements, blancs comme la lumière. (Mt 17, 2)`,
-        `"Prenez, ceci est mon corps." (Mc 14, 22)`,
+        // 5
+        `Pendant le repas, Jésus ayant pris du pain et prononcé la bénédiction, le rompit et leur donna, et dit :
+        "Prenez, ceci est mon corps."
+        Puis ayant pris une coupe et ayant rendu grâce, il la leur donna, et ils en burent tous.
+        Et il leur dit :
+        "Ceci est mon sang, le sang de l'Alliance, versé pour la multitude." (Mc 14, 22-24)`,
     ]
 };

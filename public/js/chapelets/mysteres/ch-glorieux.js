@@ -23,13 +23,18 @@ const ch_glorieux = {
         "qui vous a couronnée reine des anges"
     ],
     versets : [
+        // 1
         `"Il n’est pas ici, car il est ressuscité, comme il l’avait dit." (Mt 28, 6)`,
+        // 2
         `"Ainsi est-il écrit que le Christ souffrirait, 
         qu’il ressusciterait d’entre les morts le 3ème jour." (Lc 24, 46)`,
+        // 2
         `Tous furent remplis d’Esprit Saint. 
         Ils se mirent à parler en d’autres langues, 
         et chacun s’exprimait selon le don de l’Esprit. (Ac 2, 4)`,
+        // 4
         `"Le Puissant fit pour moi des merveilles. Saint est son nom !" (Lc 1, 49)`,
+        // 5
         `Un grand signe apparut dans le ciel :
         une Femme, ayant le soleil pour manteau, 
         la lune sous les pieds, et sur la tête, 
