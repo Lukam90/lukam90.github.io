@@ -24,14 +24,24 @@ const ch_douloureux = {
     ],
     versets : [
         // 1
-        `"Mon âme est triste à en mourir. Restez ici et veillez avec moi." (Mt 26, 38)`,
+        `Il disait : "Père, tout est possible pour toi.
+        Eloigne de moi cette coupe.
+        Cependant, non pas ce que moi, je veux,
+        mais ce que toi, tu veux !" (Mc 14, 36)`,
         // 2
-        `"Je suis innocent du sang de cet homme : cela vous regarde !" (Mt 27, 24)`,
+        `Ponce Pilate, voulant contenter la foule, relâcha Barabbas,
+        et après avoir fait flagellé Jésus,
+        il le livra pour qu'il soit crucifié. (Mc 15, 15)`,
         // 3
-        `Ils le revêtent de pourpre, et lui posent sur la tête une couronne d’épines qu’ils ont tressée. (Mc 15, 17)`,
+        `Les soldats tressèrent avec des épines une couronne qu'ils lui posèrent sur la tête.
+        Puis ils le revêtirent d'un manteau pourpre. (Jn 19, 2)`,
         // 4
-        `Et lui-même, portant sa croix, sortit en direction du lieu dit Le Crâne. (Jn 19, 17)`,
+        `Et lui-même, portant sa croix, sortit en direction du lieu dit Le Crâne (ou Calvaire),
+        qui se dit en hébreu Golgotha. (Jn 19, 17)`,
         // 5
-        `"Mon Dieu, mon Dieu, pourquoi m’as-tu abandonné ?" (Mt 27, 46)`,
+        `Vers 3 heures de l'après-midi, Jésus s'écria : 
+        "Mon Dieu, mon Dieu, pourquoi m’as-tu abandonné ?"
+        Jésus poussa de nouveau un grand cri et rendit l'esprit.
+        (Mt 27, 46, 50)`,
     ]
 };
