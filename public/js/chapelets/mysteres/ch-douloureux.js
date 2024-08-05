@@ -1,6 +1,6 @@
 // Mystères douloureux
 
-export const ch_douloureux = {
+const ch_douloureux = {
     mysteres : [
         "1. L'agonie de Jésus",
         "2. La flagellation",

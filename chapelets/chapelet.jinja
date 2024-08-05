@@ -4,6 +4,7 @@
 {% set lpath = "prieres/litanies/" %}
 {% set spath = "prieres/saints/" %}
 
+{% set mpath = "chapelets/mysteres/" %}
 {% set rpath = "chapelets/rosaire/" %}
 
 {% set title = "Chapelet" %}
@@ -55,8 +56,12 @@ Le chapelet basé sur le rosaire traditionnel s'inspire de l'application
 
 {{ mc.script("utils.js") }}
 {{ mc.script("latin.js") }}
-{{ mc.script("data/d.mysteres.js") }}
-{{ mc.script("data/d.intros.js") }}
+
+{{ mc.script(mpath + "ch-joyeux.js") }}
+{{ mc.script(mpath + "ch-lumineux.js") }}
+{{ mc.script(mpath + "ch-douloureux.js") }}
+{{ mc.script(mpath + "ch-glorieux.js") }}
+
 {{ mc.script("chapelets/chapelet.js") }}
 
 {% endblock %}

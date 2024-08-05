@@ -317,6 +317,15 @@ Amen.
 </div>
 
 
+<p>
+    Version : 
+
+    <select id="sel_version" onchange="majVersion();">
+        <option>Classique</option>
+        <option>Louanges</option>
+    </select>
+</p>
+
 <p><b>joyeux</b> (L, S) - <b>lumineux</b> (J) - <b>douloureux</b> (Ma, V) - <b>glorieux</b> (Me, D)</p>
 
 <p>Je prie à l'intention de <input id="intention" type="text" /></p>
@@ -339,8 +348,6 @@ Amen.
 </div>
 
 <p>Fruit : <span id="fruit" class="gras">l'humilité</span></p>
-
-<p class="priere" id="intro"></p>
 
 
 <div id="dz_notre_pere">
@@ -392,6 +399,7 @@ Amen.
 </div>
 
 
+<div id="dizaine">
 <h2>Je vous salue Marie 
 &RightArrow; <span class="traduction" onclick="switchLang(event);">Latin</span>
 </h2>
@@ -417,6 +425,11 @@ Amen.
 	<li>nunc et in ora mortis nostrae.</li>
 	<li>Amen.</li>
 </ul>
+</div>
+
+<p id="verset">
+"Je te salue, comblée de grâce. Le Seigneur est avec toi." (Lc 1, 28)
+</p>
 
 
     
@@ -800,10 +813,18 @@ Amen.
 <script src="/public/js/latin.js"></script>
 
 
-<script src="/public/js/data/d.mysteres.js"></script>
+
+<script src="/public/js/chapelets/mysteres/ch-joyeux.js"></script>
 
 
-<script src="/public/js/data/d.intros.js"></script>
+<script src="/public/js/chapelets/mysteres/ch-lumineux.js"></script>
+
+
+<script src="/public/js/chapelets/mysteres/ch-douloureux.js"></script>
+
+
+<script src="/public/js/chapelets/mysteres/ch-glorieux.js"></script>
+
 
 
 <script src="/public/js/chapelets/chapelet.js"></script>

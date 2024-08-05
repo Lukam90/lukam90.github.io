@@ -1,6 +1,6 @@
 // Mystères lumineux
 
-export const ch_lumineux = {
+const ch_lumineux = {
     mysteres : [
         "1. Le baptême de Jésus",
         "2. Les noces de Cana",
@@ -24,9 +24,12 @@ export const ch_lumineux = {
     ],
     versets : [
         `"Celui-ci est mon Fils bien-aimé, en qui je trouve ma joie." (Mt 3, 17)`,
-        `C’était à Cana de Galilée. Il manifesta sa gloire, et ses disciples crurent en lui. (Jn 2, 11)`,
+        `C’était à Cana de Galilée. 
+        Il manifesta sa gloire, et ses disciples crurent en lui. (Jn 2, 11)`,
         `"Convertissez-vous, car le royaume des Cieux est tout proche." (Mt 3, 2)`,
-        `Il fut transfiguré devant eux. Son visage devint brillant comme le soleil, et ses vêtements, blancs comme la lumière. (Mt 17, 2)`,
+        `Il fut transfiguré devant eux. 
+        Son visage devint brillant comme le soleil, 
+        et ses vêtements, blancs comme la lumière. (Mt 17, 2)`,
         `"Prenez, ceci est mon corps." (Mc 14, 22)`,
     ]
 };

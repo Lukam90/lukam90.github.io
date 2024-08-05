@@ -1,25 +1,37 @@
+// Mystères
+
+const ch_mysteres = {
+    joyeux : ch_joyeux,
+    lumineux : ch_lumineux,
+    douloureux : ch_douloureux,
+    glorieux : ch_glorieux
+};
+
 // Eléments
 
 const selType = $("#sel_type");
+const selVersion = $("#sel_version");
 const selMysteres = $("#sel_mysteres");
 
 const spanFruit = $("#fruit");
 const spanClausule = $("#clausule");
 
-const pIntro = $("#intro");
+const divDizaine = $("#dizaine");
+const pVerset = $("#verset");
 
 const btnPremier = $('#dz_grains_1');
 
 // Variables
 
-let chapelet, mysteres; 
-let fruits, clausules, intros;
-let fruit, clausule, intro;
+let chapelet, mysteres, version; 
+let fruits, clausules, versets;
+let fruit, clausule, verset;
 
 let index = 0;
 let type = "joyeux";
 
 initData("joyeux");
+hideBlock(pVerset);
 
 // Debug
 
@@ -34,13 +46,29 @@ function chDebug()
 function initData(type)
 {
     chapelet = ch_mysteres[type];
-    intros = ch_intros[type];
 
     mysteres = chapelet["mysteres"];
     fruits = chapelet["fruits"];
     clausules = chapelet["clausules"];
+    versets = chapelet["versets"];
+}
 
-    pIntro.innerText = intros[0];
+// MAJ de la version
+
+function majVersion()
+{
+    index = selVersion.selectedIndex;
+
+    if (index == 0)
+    {
+        showBlock(divDizaine);
+        hideBlock(pVerset);
+    }
+    else
+    {
+        showBlock(pVerset);
+        hideBlock(divDizaine);
+    }
 }
 
 // MAJ des données d'un chapelet selon le type
@@ -70,12 +98,12 @@ function majInfos()
 
     clausule = clausules[index];
     fruit = fruits[index];
-    intro = intros[index];
+    verset = versets[index];
 
     spanClausule.innerText = clausule;
     spanFruit.innerText = fruit;
 
-    pIntro.innerText = intro;
+    pVerset.innerText = verset;
 
     checkFirst();
 }
