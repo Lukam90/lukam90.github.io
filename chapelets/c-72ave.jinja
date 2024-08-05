@@ -1,0 +1,76 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set ipath = "prieres/intros/" %}
+
+{% set title = "C-Joies" %}
+
+{% block content %}
+<h1>Chapelet des 72 Ave</h1>
+
+<p>On parle aussi des 7 allégresses de Ste Marie, avec ses 72 ans de vie.</p>
+
+{% include bpath + "signe-croix.jinja" %}
+
+<hr />
+
+<!-- Intro -->
+
+{% include ipath + "intro-72ave.jinja" %}
+
+<!-- Mystères -->
+
+{{ mc.anchor("mysteres", "=") }}
+
+<p>
+    <select id="sel_mysteres" onchange="majSuite();">
+        <option>1. L'annonciation</option>
+        <option>2. La visitation</option>
+        <option>3. La naissance de Jésus</option>
+        <option>4. L'adoration des Rois Mages</option>
+        <option>5. La découverte de Jésus au temple</option>
+        <option>6. La résurrection de Jésus</option>
+        <option>7. L'Assomption de Marie</option>
+    </select>
+</p>
+
+<p>Joie de Marie <span id="suite" class="gras">d'enfanter Jésus, le Fils du Très Haut</span>.</p>
+
+<hr />
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("ste_marie") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.grains("dizaine", "dz_grains") }}
+
+{{ mc.anchor("gloire_pere") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.return_link("mysteres") }}
+
+<!-- Final -> 72 ans -->
+
+{{ mc.anchor("final", "=") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.grains("duo", "duo_72ans") }}
+
+<hr />
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link() }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
+
+{{ mc.script("chapelets/ch-72ave.js") }}
+
+{% endblock %}

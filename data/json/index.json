@@ -12,6 +12,7 @@
         { "href" : "c-merci", "title" : "Chapelet des 1000 mercis" },
         { "href" : "c-misericorde", "title" : "Chapelet de la miséricorde divine" },
         { "href" : "c-sang", "title" : "Chapelet du Précieux Sang de Jésus" },
+        { "href" : "c-72ave", "title" : "Chapelet des 72 ave" },
 
         { "href" : "saints/c-st-antoine", "title" : "Chapelet de St Antoine" },
         { "href" : "saints/c-ste-rita", "title" : "Chapelet de Ste Rita" },
