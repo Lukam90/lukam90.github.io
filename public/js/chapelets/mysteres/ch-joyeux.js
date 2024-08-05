@@ -22,12 +22,20 @@ const ch_joyeux = {
         "perdu et retrouvé au temple"
     ],
     versets : [
-        `"Je te salue, comblée de grâce. Le Seigneur est avec toi." (Lc 1, 28)`,
-        `"Tu es bénie entre toutes les femmes, et le fruit de tes entrailles est béni." (Lc 1, 42)`,
-        `"Quand ils virent l’étoile, ils se réjouirent d’une très grande joie." (Mt 2, 10)`,
-        `"Maintenant, ô Maître souverain, 
-        tu peux laisser ton serviteur s’en aller en paix, selon ta parole." (Lc 2, 29)`,
-        `"Comment se fait-il que vous m’ayez cherché ?
+        // 1
+        `Marie dit alors : "Voici la servante du Seigneur. Que tout se passe selon ta parole." (Lc 1, 38)`,
+        // 2
+        `Alors Elisabeth fut remplie d'Esprit Saint s'écria d'une voix forte : 
+        "Tu es bénie entre toutes les femmes, et le fruit de tes entrailles est béni." (Lc 1, 41-42)`,
+        // 3
+        `Et elle mit au monde son fils premier-né.
+        Elle l'emmaillota et le coucha dans une mangeoire,
+        car il n'y avait pas de place pour eux dans la salle commune. (Lc 2, 7)`,
+        // 4
+        `Quand fut accompli le temps prescrit par la loi de Moïse pour la purification,
+        les parents de Jésus l'amenèrent à Jérusalem pour le présenter au Seigneur." (Lc 2, 22)`,
+        // 5
+        `Jésus leur dit : "Comment se fait-il que vous m’ayez cherché ?
         Ne saviez-vous pas qu’il me faut être chez mon Père ?" (Lc 2, 49)`,
     ]
 };

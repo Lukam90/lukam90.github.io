@@ -10,20 +10,18 @@ const ch_mysteres = {
 // Eléments
 
 const selType = $("#sel_type");
-const selVersion = $("#sel_version");
 const selMysteres = $("#sel_mysteres");
 
 const spanFruit = $("#fruit");
 const spanClausule = $("#clausule");
 
-const divDizaine = $("#dizaine");
 const pVerset = $("#verset");
 
 const btnPremier = $('#dz_grains_1');
 
 // Variables
 
-let chapelet, mysteres, version; 
+let chapelet, mysteres; 
 let fruits, clausules, versets;
 let fruit, clausule, verset;
 
@@ -31,7 +29,6 @@ let index = 0;
 let type = "joyeux";
 
 initData("joyeux");
-hideBlock(pVerset);
 
 // Debug
 
@@ -51,24 +48,6 @@ function initData(type)
     fruits = chapelet["fruits"];
     clausules = chapelet["clausules"];
     versets = chapelet["versets"];
-}
-
-// MAJ de la version
-
-function majVersion()
-{
-    index = selVersion.selectedIndex;
-
-    if (index == 0)
-    {
-        showBlock(divDizaine);
-        hideBlock(pVerset);
-    }
-    else
-    {
-        showBlock(pVerset);
-        hideBlock(divDizaine);
-    }
 }
 
 // MAJ des données d'un chapelet selon le type
