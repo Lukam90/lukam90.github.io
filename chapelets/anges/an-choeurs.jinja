@@ -1,18 +1,6 @@
 <h2>Choeurs</h2>
 
-<p>
-    <select id="sel_choeurs" onchange="updateText();">
-        <option>1. séraphins</option>
-        <option>2. chérubins</option>
-        <option>3. trônes</option>
-        <option>4. dominations</option>
-        <option>5. puissances</option>
-        <option>6. vertus</option>
-        <option>7. principautés</option>
-        <option>8. archanges</option>
-        <option>9. anges</option>
-    </select>
-</p>
+{% include bpath + "choeurs.jinja" %}
 
 <p class="priere">
 Par l'intercession de <b>Saint Michel</b> et du choeur céleste des <span id="choeur" class="gras">séraphins</span>,<br>

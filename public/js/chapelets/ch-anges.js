@@ -1,11 +1,5 @@
 // Constantes de texte
 
-const choeurs = [
-    "séraphins", "chérubins", "trônes", 
-    "dominations", "puissances", "vertus", 
-    "principautés", "archanges", "anges"
-];
-
 const suites = [
     "nous rende dignes de brûler du feu de la charité parfaite",
     "nous fasse la grâce d'abandonner la voie du péché et de courir dans celle de la perfection chrétienne",
@@ -36,8 +30,8 @@ let choeur, suite;
 
 function updateText() {
     index = selChoeurs.selectedIndex;
+    choeur = selChoeurs.value.replace(/\d\.\s/, "");
 
-    choeur = choeurs[index];
     suite = suites[index];
 
     spanChoeur.innerText = choeur;
