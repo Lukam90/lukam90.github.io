@@ -188,7 +188,7 @@ convert_jinja_list("profil", profil)
 
 chapelets = ["chapelet", "c-anges", "c-eucharistie", "c-liberation", "c-misericorde", "c-sang", "c-72ave"]
 
-ch_saints = ["c-st-antoine", "c-ste-rita", "c-ste-therese"]
+ch_saints = ["c-st-antoine", "c-st-raphael", "c-ste-rita", "c-ste-therese"]
 
 #convert_jinja_list("chapelets", chapelets)
 #convert_jinja_list("chapelets/saints", ch_saints)
@@ -199,6 +199,7 @@ ch_saints = ["c-st-antoine", "c-ste-rita", "c-ste-therese"]
 convert_jinja_single("chapelets/c-sang")
 #convert_jinja_single("chapelets/c-72ave")
 
+convert_jinja_single("chapelets/saints/c-st-raphael")
 #convert_jinja_single("chapelets/saints/c-ste-therese")
 
 ## Exercices

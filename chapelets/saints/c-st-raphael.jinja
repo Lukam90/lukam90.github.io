@@ -1,0 +1,59 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set title = "C-St-Raphael" %}
+
+{% set bpath = "prieres/base/" %}
+
+{% block content %}
+<h1>Chapelet de Saint Raphaël</h1>
+
+{% include bpath + "signe-croix.jinja" %}
+
+<hr />
+
+<p class="priere gauche">
+Tu es Raphaël, le guérisseur.<br>
+Tu es Raphaël, le guide.<br>
+Tu es Raphaël, le compagnon,<br>
+toujours à l’aide des douleurs humaines.
+</p>
+
+{{ mc.anchor("trio", "=") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.grains("trio", "trio_ste_marie") }}
+
+{{ mc.anchor("choeurs", "=") }}
+
+{% include bpath + "choeurs.jinja" %}
+
+<p>En l'honneur du choeur des <span id="choeur" class="gras">séraphins</span> :</p>
+
+<p class="priere">
+Saint, Saint, Saint le Seigneur, Dieu de l’univers.<br>
+Le ciel et la terre sont remplis de ta gloire !<br>
+Gloire au Père et au Fils et au Saint Esprit.
+</p>
+
+{{ mc.anchor("final", "=") }}
+
+<p class="priere">
+Saint Raphaël,<br>
+ange de la santé, de l’amour,<br>
+de la joie et de la lumière,<br>
+priez pour nous.
+</p>
+
+<hr />
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link() }}
+
+{{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
+
+{{ mc.script("chapelets/saints/ch-st-raphael.js") }}
+
+{% endblock %}
