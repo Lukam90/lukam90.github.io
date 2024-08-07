@@ -22,6 +22,18 @@
 <script src="/public/js/{{ path }}"></script>
 {% endmacro %}
 
+<!-- Audio -->
+
+{% macro audio(name, type = "mpeg") %}
+<p>
+    <audio controls>
+        <source src="/public/music/{{ name }}" type="audio/{{ type }}">
+    
+        Le navigateur ne supporte pas le format audio.
+    </audio>
+</p>
+{% endmacro %}
+
 <!-- Vidéo YouTube -->
 
 {% macro yvideo(link) %}

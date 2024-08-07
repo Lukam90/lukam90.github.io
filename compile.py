@@ -194,7 +194,7 @@ ch_saints = ["c-st-antoine", "c-st-raphael", "c-ste-rita", "c-ste-therese"]
 #convert_jinja_list("chapelets/saints", ch_saints)
 
 #convert_jinja_single("chapelets/chapelet")
-convert_jinja_single("chapelets/c-anges")
+#convert_jinja_single("chapelets/c-anges")
 #convert_jinja_single("chapelets/c-liberation")
 #convert_jinja_single("chapelets/c-misericorde")
 #convert_jinja_single("chapelets/c-sang")
