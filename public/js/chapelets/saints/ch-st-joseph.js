@@ -62,4 +62,6 @@ function majChapelet()
     }
 
     selMysteres.selectedIndex = 0;
+
+    checkFirst();
 }
