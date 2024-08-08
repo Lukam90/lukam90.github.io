@@ -8,8 +8,8 @@
         { "href" : "c-anges", "title" : "Chapelet des anges" },
         { "href" : "c-eucharistie", "title" : "Chapelet de l'Eucharistie" },
         { "href" : "c-liberation", "title" : "Chapelet de libération" },
-        { "href" : "c-louange", "title" : "Chapelet de louange" },
         { "href" : "c-misericorde", "title" : "Chapelet de la miséricorde divine" },
+        { "href" : "c-reparation", "title" : "Chapelet de réparation" },
         { "href" : "c-sang", "title" : "Chapelet du Précieux Sang de Jésus" },
         { "href" : "c-72ave", "title" : "Chapelet des 72 ave" },
 

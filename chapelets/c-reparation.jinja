@@ -1,0 +1,45 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/special/" %}
+
+{% set lpath = "chapelets/liberation/" %}
+
+{% set title = "C-Reparation" %}
+
+{% block content %}
+<h1>Chapelet de réparation</h1>
+
+<p>Le chapelet est inspiré de la version de <b>Jean Pliya</b>.</p>
+
+<hr />
+
+<p>Embrasser la croix en signe d'amour</p>
+
+<p>Jésus, tu es le <b>Chemin</b>, la <b>Vérité</b> et la <b>Vie</b>.</p>
+
+<p>Mon Dieu, je t'aime à la place de ceux qui refusent de t'aimer. (x 3)</p>
+
+{{ mc.anchor("rondes", "=") }}
+
+<p>Rondes {{ mc.select("sel_rondes") }}</p>
+
+<p>Jésus, tu es le <b>Chemin</b>, la <b>Vérité</b> et la <b>Vie</b>.</p>
+
+<hr />
+
+<p>Mon Dieu, je t'adore à la place de ceux qui te rejettent.</p>
+
+{{ mc.grains("dizaine", "dz_grains") }}
+
+<hr />
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link() }}
+
+{{ mc.script("utils.js") }}
+
+{{ mc.script("chapelets/ch-reset.js") }}
+
+{% endblock %}

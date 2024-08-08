@@ -36,7 +36,7 @@ const ch_glorieux = {
         voici que, devant eux, se tenait deux hommes en vêtements blancs,
         qui leur dirent : "Galiléens, pourquoi restez-vous là à regarder vers le ciel ?
         Ce Jésus qui a été enlevé au ciel d'auprès de vous, viendra de la même manière
-        que vous l'avez vu s'en aller vers le ciel. (Ac 1, 9-11)`,
+        que vous l'avez vu s'en aller vers le ciel." (Ac 1, 9-11)`,
         // 3
         `Soudain, un bruit survint du ciel comme un violent coup de vent.
         La maison où ils étaient assis en fut remplie toute entière.
