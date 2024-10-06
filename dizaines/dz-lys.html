@@ -1,0 +1,229 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dizaines de lys de St Joseph</title>
+
+    <link rel="stylesheet" href="/public/css/prieres.css" />
+</head>
+
+<body>
+    <main>
+        <h1>Dizaines de lys de St Joseph</h1>
+
+        
+<p class="priere">
+Les dizaines sont basées sur le rosaire dédié à St Joseph.<br>
+Chaque prière récitée est symbolisée par un lys.
+</p>
+
+<hr />
+
+<p>(Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>. Amen.)</p>
+
+
+<div id="mysteres">
+    <a href="#mysteres">
+    
+    ===
+    
+    </a>
+</div>
+
+
+<p><b>joyeux</b> (L, S) - <b>douloureux</b> (Ma, V) - <b>glorieux</b> (Me, J, D)</p>
+
+<p>
+    <select id="sel_type" onchange="majChapelet()">
+        <option>joyeux</option>
+        <option>douloureux</option>
+        <option>glorieux</option>
+    </select>
+
+    <select id="sel_mysteres" onchange="checkFirst()">
+        <option>1. L'annonciation à Joseph</option>
+        <option>2. La naissance de Jésus</option>
+        <option>3. La circoncision et l’attribution du nom de Jésus</option>
+        <option>4. La présentation de Jésus au temple de Jérusalem</option>
+        <option>5. Le recouvrement de Jésus au temple de Jérusalem</option>
+    </select>
+</p>
+
+<h2>Notre Père</h2>
+
+<p class="maskable">
+Notre Père, qui est aux cieux,<br>
+que ton nom soit sanctifié,<br>
+que ton règne vienne,<br>
+que ta volonté soit faite, sur la terre comme au ciel.<br>
+Donne-nous aujourd'hui notre pain de ce jour,<br>
+et pardonne-nous nos offenses,<br>
+comme nous pardonnons aussi à ceux qui nous ont offensés,<br>
+et ne nous laisse pas entrer en tentation,<br>
+mais délivre-nous du mal.<br>
+Amen.
+</p>
+
+
+<div id="dizaine">
+    <a href="#dizaine">
+    
+    ***
+    
+    </a>
+</div>
+
+
+<h2>Je vous salue Joseph</h2>
+
+<p class="maskable">
+Je vous salue, Joseph, docile à l'Esprit Saint<br>
+le Seigneur est avec vous.<br>
+Vous êtes l'époux virginal de Marie,<br>
+et Jésus, que Dieu vous confia, est béni.<br>
+Saint Joseph, père par le coeur,<br>
+priez pour nous, pauvres pécheurs,<br>
+maintenant et à l'heure de notre mort.<br>
+Amen.
+</p>
+
+
+    
+
+    <p class="grains" id="dz_grains">
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_1"  />
+<label for="dz_grains_1">0</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_2"  />
+<label for="dz_grains_2">1</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_3"  />
+<label for="dz_grains_3">2</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_4"  />
+<label for="dz_grains_4">3</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_5"  />
+<label for="dz_grains_5">4</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_6"  />
+<label for="dz_grains_6">5</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_7"  />
+<label for="dz_grains_7">6</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_8"  />
+<label for="dz_grains_8">7</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_9"  />
+<label for="dz_grains_9">8</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_10"  />
+<label for="dz_grains_10">9</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_11"  />
+<label for="dz_grains_11">10</label>
+
+    
+    </p>
+
+
+
+<div id="gloire">
+    <a href="#gloire">
+    
+    ***
+    
+    </a>
+</div>
+
+
+<h2>Gloire au Père</h2>
+
+<p class="maskable">
+Gloire au Père, et au Fils, et au Saint-Esprit,<br>
+comme il était au commencement,<br>
+maintenant et toujours,<br>
+pour les siècles des siècles.<br>
+Amen.
+</p>
+
+
+<p><a href="#mysteres" class="bleu" >Retour en haut</a></p>
+
+
+<hr />
+
+<p>(Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>. Amen.)</p>
+
+<!-- Scripts -->
+
+
+<script src="/public/js/utils.js"></script>
+
+
+
+<script src="/public/js/chapelets/mysteres/ch-trio.js"></script>
+
+
+<script src="/public/js/chapelets/dz-lys.js"></script>
+
+
+
+<p><a href="#" class="bleu"  onclick="resetAll()" >Recommencer</a></p>
+
+
+
+    </main>
+</body>

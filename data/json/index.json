@@ -1,0 +1,22 @@
+{
+    "profil" : [
+        { "href" : "cv-imprime", "title" : "Mon nouveau CV" },
+        { "href" : "portfolio", "title" : "Ma page de portfolio (en cours)" }
+    ],
+    "chapelets" : [
+        { "href" : "chapelet", "title" : "Chapelet traditionnel (rosaire)" },
+        { "href" : "c-misericorde", "title" : "Chapelet de la miséricorde divine" },
+        { "href" : "c-plaies", "title" : "Chapelet des saintes plaies" }
+    ],
+    "dizaines" : [
+        { "href" : "dz-lys", "title" : "Dizaines de lys de St Joseph" },
+        { "href" : "dz-neuvaine", "title" : "Dizaines de neuvaine" }
+    ],
+    "exercices" : [
+        { "href" : "ex-base", "title" : "Cohérence cardiaque" },
+        { "href" : "ex-sonore", "title" : "Cohérence cardiaque (version sonore)" },
+        { "href" : "ex-video", "title" : "Cohérence cardiaque (en vidéo)" },
+        { "href" : "ex-carre", "title" : "Respiration carrée" },
+        { "href" : "ex-dormir", "title" : "Respiration 4 - 7 - 8" }
+    ]
+}

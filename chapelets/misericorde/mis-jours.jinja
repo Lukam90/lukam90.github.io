@@ -1,0 +1,14 @@
+<p>
+    Jour
+
+    <select id="sel_jours" onchange="majTheme()">
+        <option>---</option>
+        {% for nb in range(1, 10) %}
+        <option>{{ nb }}</option>
+        {% endfor %}
+    </select>
+</p>
+
+<p id="ames">
+les <b>âmes <span id="theme">les âmes des pécheurs du monde entier</b></span>
+</p>

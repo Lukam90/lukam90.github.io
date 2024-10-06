@@ -1,0 +1,39 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/saints/" %}
+
+{% set rpath = "chapelets/rosaire/" %}
+
+{% set title = "Dizaines de lys de St Joseph" %}
+
+{% block content %}
+<p class="priere">
+Les dizaines sont basées sur le rosaire dédié à St Joseph.<br>
+Chaque prière récitée est symbolisée par un lys.
+</p>
+
+<hr />
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.anchor("mysteres", "=") }}
+
+{% include rpath + "rs-dizaine-lys.jinja" %}
+
+{{ mc.return_link("mysteres") }}
+
+<hr />
+
+{% include bpath + "signe-croix.jinja" %}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+
+{{ mc.script("chapelets/mysteres/ch-trio.js") }}
+{{ mc.script("chapelets/dz-lys.js") }}
+
+{{ mc.return_link(label = "Recommencer", reset = true) }}
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+
+{% set title = "Dizaines de neuvaine" %}
+
+{% block content %}
+<p>Je prie à l'intention de <input type="text" id="intention" />.</p>
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("ste_marie") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.grains("cdizaine", "dz_grains") }}
+
+{{ mc.anchor("gloire") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.return_link() }}
+
+{{ mc.script("utils.js") }}
+
+{% endblock %}

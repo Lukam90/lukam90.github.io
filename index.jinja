@@ -1,0 +1,12 @@
+{% extends "layouts/base.jinja" %}
+
+{% set title = "Portfolio" %}
+
+{% block content %}
+
+{{ mc.links(data, "profil", "CV et Portfolio") }}
+{{ mc.links(data, "chapelets", "Chapelets") }}
+{{ mc.links(data, "dizaines", "Dizaines") }}
+{{ mc.links(data, "exercices", "Exercices de respiration") }}
+
+{% endblock %}

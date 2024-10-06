@@ -1,0 +1,29 @@
+<p><b>joyeux</b> (L, S) - <b>douloureux</b> (Ma, V) - <b>glorieux</b> (Me, J, D)</p>
+
+<p>
+    <select id="sel_type" onchange="majChapelet()">
+        <option>joyeux</option>
+        <option>douloureux</option>
+        <option>glorieux</option>
+    </select>
+
+    <select id="sel_mysteres" onchange="checkFirst()">
+        <option>1. L'annonciation à Joseph</option>
+        <option>2. La naissance de Jésus</option>
+        <option>3. La circoncision et l’attribution du nom de Jésus</option>
+        <option>4. La présentation de Jésus au temple de Jérusalem</option>
+        <option>5. Le recouvrement de Jésus au temple de Jérusalem</option>
+    </select>
+</p>
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("dizaine") }}
+
+{% include spath + "st-joseph.jinja" %}
+
+{{ mc.grains("cdizaine", "dz_grains") }}
+
+{{ mc.anchor("gloire") }}
+
+{% include bpath + "gloire-pere.jinja" %}

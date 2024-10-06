@@ -1,0 +1,42 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set lpath = "prieres/litanies/" %}
+
+{% set title = "Litanies de Notre-Dame de Montligeon" %}
+
+{% block content %}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.anchor("ml_liste") }}
+
+{% include lpath + "nd-montligeon-liste.jinja" %}
+
+{{ mc.anchor("ml_dialogue") }}
+
+<p>
+Sainte Mère de Dieu, venez en aide à nos frères défunts.<br>
+Afin qu’ils deviennent dignes des promesses de Jésus-Christ.
+</p>
+
+{{ mc.anchor("ml_oraison_finale") }}
+
+<p>
+Seigneur, notre Dieu,<br>
+par l’intercession de la bienheureuse Vierge Marie,<br>
+répands ta miséricorde sur nos frères défunts.<br>
+Et donne-nous de persévérer, avec ta grâce,<br>
+sur le chemin de la vie éternelle<br>
+où nous serons réunis dans ton amour.<br>
+Par Jésus-Christ, ton Fils, notre Seigneur.<br>
+Amen.
+</p>
+
+{{ mc.anchor("ml_fin") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link() }}
+
+{% endblock %}

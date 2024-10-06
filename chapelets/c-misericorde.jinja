@@ -1,0 +1,47 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+
+{% set mpath = "chapelets/misericorde/" %}
+
+{% set title = "Chapelet de la miséricorde divine" %}
+
+{% block content %}
+<p>{{ mc.cb_version() }}</p>
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.anchor("base", "=") }}
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("ste_marie") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.anchor("credo") }}
+
+{% include bpath + "credo.jinja" %}
+
+{{ mc.anchor("dizaines", "=") }}
+
+{% include mpath + "mis-dizaines.jinja" %}
+
+{{ mc.anchor("fin", "=") }}
+
+{% include bpath + "dieu-saint.jinja" %}
+
+{{ mc.grains("trio", "fin_trio") }}
+
+<hr />
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link() }}
+
+{{ mc.script("utils.js") }}
+{{ mc.script("versions.js") }}
+
+{{ mc.script("chapelets/ch-misericorde.js") }}
+
+{% endblock %}
