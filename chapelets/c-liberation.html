@@ -20,48 +20,18 @@
 
         
 <p>
-Ce chapelet est personnel et basé sur la <b>méthode Ho'oponopono</b> et les 4 phrases.<br>
-La <b>prière de Morrnah</b>, revue et simplifiée, se récite sur la croix.
+Ce chapelet est personnel et basé sur la <b>méthode Ho'oponopono</b>.<br>
+La <b>prière de Morrnah</b>, revue et simplifiée, se récite sur les gros grains.<br>
+Le <b>mantra de base</b> se récite sur les petits grains des dizaines.
 </p>
 
+<hr />
+
 <!-- Intention -->
-
-
-<div id="intention">
-    <a href="#intention">
-    
-    ===
-    
-    </a>
-</div>
-
 
 <p>(Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>. Amen.)</p>
 
 <p>Je prie à l'intention de <input type="text" id="txt_intention" /></p>
-
-<!-- Croix -->
-
-
-<div id="croix">
-    <a href="#croix">
-    
-    ===
-    
-    </a>
-</div>
-
-
-<p>
-Créateur Divin,<br>
-si moi, ma famille, mes proches ou mes ancêtres,<br>
-vous ont offensé ou ont offensé<br>
-votre famille, vos proches ou vos ancêtres,<br>
-en pensées, en paroles ou en actions,<br>
-nous vous demandons pardon.<br>
-Que toutes ces mémoires du passé<br>
-soient transmutées en amour divin.
-</p>
 
 <!-- Rondes -->
 
@@ -75,37 +45,40 @@ soient transmutées en amour divin.
 </div>
 
 
-<p>
-    <select id="sel_rondes" onchange="setBlock()">
-        <option>Base</option>
-        
-        <option>Ronde n°1</option>
-        
-        <option>Ronde n°2</option>
-        
-        <option>Ronde n°3</option>
-        
-        <option>Ronde n°4</option>
-        
-        <option>Ronde n°5</option>
-        
-    </select>
+<p>Ronde 
+<select id="sel_rondes" onchange="checkFirst();">
+    
+
+    
+    <option>n°1</option>
+    
+    <option>n°2</option>
+    
+    <option>n°3</option>
+    
+    <option>n°4</option>
+    
+    <option>n°5</option>
+    
+</select>
 </p>
 
-<p>Créateur Divin, je demande à être libéré dans l'amour.</p>
+<p>
+Créateur Divin,<br>
+si moi, ma famille, mes proches ou mes ancêtres,<br>
+vous ont offensé ou ont offensé<br>
+votre famille, vos proches ou vos ancêtres,<br>
+en pensées, en paroles ou en actions,<br>
+nous vous demandons pardon.<br>
+Que toutes ces mémoires du passé<br>
+soient transmutées en amour divin.
+</p>
 
 <hr />
 
-<p id="trio">
-Je suis désolé.<br>
-Je ne savais pas que j'avais tout ça en moi.<br>
-Je te demande pardon.
-</p>
+<p>Je te remercie. Je t'aime.</p>
 
-<div id="dizaines">
-    <p>Désolé. &minus; Pardon. &minus; Merci. &minus; Je t'aime.</p>
 
-    
     
 
     <p class="grains" id="dz_grains">
@@ -189,7 +162,6 @@ Je te demande pardon.
     
     </p>
 
-</div>
 
 <!-- Fin -->
 

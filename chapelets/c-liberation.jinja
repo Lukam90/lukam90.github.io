@@ -7,52 +7,32 @@
 
 {% block content %}
 <p>
-Ce chapelet est personnel et basé sur la <b>méthode Ho'oponopono</b> et les 4 phrases.<br>
-La <b>prière de Morrnah</b>, revue et simplifiée, se récite sur la croix.
+Ce chapelet est personnel et basé sur la <b>méthode Ho'oponopono</b>.<br>
+La <b>prière de Morrnah</b>, revue et simplifiée, se récite sur les gros grains.<br>
+Le <b>mantra de base</b> se récite sur les petits grains des dizaines.
 </p>
 
-<!-- Intention -->
+<hr />
 
-{{ mc.anchor("intention", "=") }}
+<!-- Intention -->
 
 {% include bpath + "signe-croix.jinja" %}
 
 <p>Je prie à l'intention de <input type="text" id="txt_intention" /></p>
 
-<!-- Croix -->
-
-{{ mc.anchor("croix", "=") }}
-
-{% include spath + "ex-hopono.jinja" %}
-
 <!-- Rondes -->
 
 {{ mc.anchor("rondes", "=") }}
 
-<p>
-    <select id="sel_rondes" onchange="setBlock()">
-        <option>Base</option>
-        {% for nb in range(1, 6) %}
-        <option>Ronde n°{{ nb }}</option>
-        {% endfor %}
-    </select>
-</p>
+<p>Ronde {{ mc.select("sel_rondes") }}</p>
 
-<p>Créateur Divin, je demande à être libéré dans l'amour.</p>
+{% include spath + "ex-hopono.jinja" %}
 
 <hr />
 
-<p id="trio">
-Je suis désolé.<br>
-Je ne savais pas que j'avais tout ça en moi.<br>
-Je te demande pardon.
-</p>
+<p>Je te remercie. Je t'aime.</p>
 
-<div id="dizaines">
-    <p>Désolé. &minus; Pardon. &minus; Merci. &minus; Je t'aime.</p>
-
-    {{ mc.grains("cdizaine", "dz_grains") }}
-</div>
+{{ mc.grains("cdizaine", "dz_grains") }}
 
 <!-- Fin -->
 
