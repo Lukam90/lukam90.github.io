@@ -5,8 +5,8 @@
     ],
     "chapelets" : [
         { "href" : "chapelet", "title" : "Chapelet traditionnel (rosaire)" },
-        { "href" : "c-misericorde", "title" : "Chapelet de la miséricorde divine" },
-        { "href" : "c-plaies", "title" : "Chapelet des saintes plaies" }
+        { "href" : "c-liberation", "title" : "Chapelet de libération des mémoires" },
+        { "href" : "c-misericorde", "title" : "Chapelet de la miséricorde divine" }
     ],
     "dizaines" : [
         { "href" : "dz-lys", "title" : "Dizaines de lys de St Joseph" },

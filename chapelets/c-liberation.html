@@ -9,26 +9,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Chapelet des saintes plaies</title>
+    <title>Chapelet de libération des mémoires</title>
 
     <link rel="stylesheet" href="/public/css/prieres.css" />
 </head>
 
 <body>
     <main>
-        <h1>Chapelet des saintes plaies</h1>
+        <h1>Chapelet de libération des mémoires</h1>
 
         
+<p>
+Ce chapelet est personnel et basé sur la <b>méthode Ho'oponopono</b> et les 4 phrases.<br>
+La <b>prière de Morrnah</b>, revue et simplifiée, se récite sur la croix.
+</p>
+
+<!-- Intention -->
+
+
+<div id="intention">
+    <a href="#intention">
+    
+    ===
+    
+    </a>
+</div>
+
 
 <p>(Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>. Amen.)</p>
 
 <p>Je prie à l'intention de <input type="text" id="txt_intention" /></p>
 
-<!-- Intro -->
+<!-- Croix -->
 
 
-<div id="intro">
-    <a href="#intro">
+<div id="croix">
+    <a href="#croix">
     
     ===
     
@@ -37,19 +53,21 @@
 
 
 <p>
-Ô Jésus, Divin Rédempteur, sois miséricordieux pour nous et pour le monde entier. Amen.<br>
-<br>
-Dieu saint, Dieu fort, Dieu immortel, aie pitié de nous et du monde entier. Amen.<br>
-<br>
-Ô Père Eternel, traite-nous avec miséricorde par le sang de Jésus, ton Fils unique.<br>
-Traite-nous avec miséricorde, nous t’en conjurons. Amen.
+Créateur Divin,<br>
+si moi, ma famille, mes proches ou mes ancêtres,<br>
+vous ont offensé ou ont offensé<br>
+votre famille, vos proches ou vos ancêtres,<br>
+en pensées, en paroles ou en actions,<br>
+nous vous demandons pardon.<br>
+Que toutes ces mémoires du passé<br>
+soient transmutées en amour divin.
 </p>
 
-<!-- Mystères -->
+<!-- Rondes -->
 
 
-<div id="mysteres">
-    <a href="#mysteres">
+<div id="rondes">
+    <a href="#rondes">
     
     ===
     
@@ -58,22 +76,34 @@ Traite-nous avec miséricorde, nous t’en conjurons. Amen.
 
 
 <p>
-    <select id="sel_mysteres" onchange="updateText()">
-        <option>1. les mains</option>
-        <option>2. les pieds</option>
-        <option>3. le dos</option>
-        <option>4. la tête</option>
-        <option>5. le cœur</option>
-        <option>Fin</option>
+    <select id="sel_rondes" onchange="setBlock()">
+        <option>Base</option>
+        
+        <option>Ronde n°1</option>
+        
+        <option>Ronde n°2</option>
+        
+        <option>Ronde n°3</option>
+        
+        <option>Ronde n°4</option>
+        
+        <option>Ronde n°5</option>
+        
     </select>
 </p>
 
-<p>Père Eternel, je t’offre les plaies de notre Seigneur Jésus-Christ pour guérir celles de nos âmes.</p>
+<p>Créateur Divin, je demande à être libéré dans l'amour.</p>
+
+<hr />
+
+<p id="trio">
+Je suis désolé.<br>
+Je ne savais pas que j'avais tout ça en moi.<br>
+Je te demande pardon.
+</p>
 
 <div id="dizaines">
-    <hr />
-
-    <p>Mon Jésus, pardon et miséricorde, par les mérites de tes saintes plaies.</p>
+    <p>Désolé. &minus; Pardon. &minus; Merci. &minus; Je t'aime.</p>
 
     
     
@@ -161,44 +191,6 @@ Traite-nous avec miséricorde, nous t’en conjurons. Amen.
 
 </div>
 
-<div id="trio">
-
-    
-
-    <p class="grains" id="fin_trio">
-    
-        
-
-        
-<input type="radio" name="fin_trio" id="fin_trio_1"  />
-<label for="fin_trio_1">0</label>
-
-    
-        
-
-        
-<input type="radio" name="fin_trio" id="fin_trio_2"  />
-<label for="fin_trio_2">1</label>
-
-    
-        
-
-        
-<input type="radio" name="fin_trio" id="fin_trio_3"  />
-<label for="fin_trio_3">2</label>
-
-    
-        
-
-        
-<input type="radio" name="fin_trio" id="fin_trio_4"  />
-<label for="fin_trio_4">3</label>
-
-    
-    </p>
-
-</div>
-
 <!-- Fin -->
 
 
@@ -227,7 +219,7 @@ Traite-nous avec miséricorde, nous t’en conjurons. Amen.
 
 
 
-<script src="/public/js/chapelets/ch-plaies.js"></script>
+<script src="/public/js/chapelets/ch-liberation.js"></script>
 
 
 

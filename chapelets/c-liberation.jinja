@@ -1,0 +1,72 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/special/" %}
+
+{% set title = "Chapelet de libération des mémoires" %}
+
+{% block content %}
+<p>
+Ce chapelet est personnel et basé sur la <b>méthode Ho'oponopono</b> et les 4 phrases.<br>
+La <b>prière de Morrnah</b>, revue et simplifiée, se récite sur la croix.
+</p>
+
+<!-- Intention -->
+
+{{ mc.anchor("intention", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+<p>Je prie à l'intention de <input type="text" id="txt_intention" /></p>
+
+<!-- Croix -->
+
+{{ mc.anchor("croix", "=") }}
+
+{% include spath + "ex-hopono.jinja" %}
+
+<!-- Rondes -->
+
+{{ mc.anchor("rondes", "=") }}
+
+<p>
+    <select id="sel_rondes" onchange="setBlock()">
+        <option>Base</option>
+        {% for nb in range(1, 6) %}
+        <option>Ronde n°{{ nb }}</option>
+        {% endfor %}
+    </select>
+</p>
+
+<p>Créateur Divin, je demande à être libéré dans l'amour.</p>
+
+<hr />
+
+<p id="trio">
+Je suis désolé.<br>
+Je ne savais pas que j'avais tout ça en moi.<br>
+Je te demande pardon.
+</p>
+
+<div id="dizaines">
+    <p>Désolé. &minus; Pardon. &minus; Merci. &minus; Je t'aime.</p>
+
+    {{ mc.grains("cdizaine", "dz_grains") }}
+</div>
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link(label = "Recommencer", reset = true) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("versions.js") }}
+
+{{ mc.script("chapelets/ch-liberation.js") }}
+
+{% endblock %}
