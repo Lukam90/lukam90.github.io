@@ -9,29 +9,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Chapelet de libération des mémoires</title>
+    <title>Chapelet de libération</title>
 
     <link rel="stylesheet" href="/public/css/prieres.css" />
 </head>
 
 <body>
     <main>
-        <h1>Chapelet de libération des mémoires</h1>
+        <h1>Chapelet de libération</h1>
 
         
-<p>
-Ce chapelet est personnel et basé sur la <b>méthode Ho'oponopono</b>.<br>
-La <b>prière de Morrnah</b>, revue et simplifiée, se récite sur les gros grains.<br>
-Le <b>mantra de base</b> se récite sur les petits grains des dizaines.
-</p>
-
-<hr />
-
 <!-- Intention -->
 
 <p>(Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>. Amen.)</p>
 
 <p>Je prie à l'intention de <input type="text" id="txt_intention" /></p>
+
+<!-- Croix -->
+
+
+<div id="croix">
+    <a href="#croix">
+    
+    ===
+    
+    </a>
+</div>
+
+
+<h2>Je crois en Dieu</h2>
+
+<p class="maskable">
+Je crois en Dieu, le Père tout-puissant,<br>
+Créateur du Ciel et de la Terre,<br>
+et en Jésus-Christ, son Fils unique, notre Seigneur,<br>
+qui a été conçu du Saint-Esprit,<br>
+est né de la Vierge Marie,<br>
+a souffert sous Ponce Pilate,<br>
+a été crucifié, est mort et a été enseveli,<br>
+est descendu aux enfers,<br>
+le troisième jour est ressuscité des morts,<br>
+est monté aux cieux,<br>
+est assis à la droite de Dieu le Père tout-puissant,<br>
+d’où il viendra juger les vivants et les morts.<br>
+<br>
+Je crois en l’Esprit-Saint,<br>
+à la Sainte Eglise catholique,<br>
+à la communion des saints,<br>
+à la rémission des péchés,<br>
+à la résurrection de la chair,<br>
+à la vie éternelle.<br>
+<br>
+Amen.
+</p>
 
 <!-- Rondes -->
 
@@ -45,39 +75,76 @@ Le <b>mantra de base</b> se récite sur les petits grains des dizaines.
 </div>
 
 
-<p>Ronde 
-<select id="sel_rondes" onchange="checkFirst();">
-    
-
-    
-    <option>n°1</option>
-    
-    <option>n°2</option>
-    
-    <option>n°3</option>
-    
-    <option>n°4</option>
-    
-    <option>n°5</option>
-    
-</select>
+<p>
+    <select id="sel_rondes" onchange="setBlock()">
+        <option>Base</option>
+        
+        <option>Ronde n°1</option>
+        
+        <option>Ronde n°2</option>
+        
+        <option>Ronde n°3</option>
+        
+        <option>Ronde n°4</option>
+        
+        <option>Ronde n°5</option>
+        
+    </select>
 </p>
 
 <p>
-Créateur Divin,<br>
-si moi, ma famille, mes proches ou mes ancêtres,<br>
-vous ont offensé ou ont offensé<br>
-votre famille, vos proches ou vos ancêtres,<br>
-en pensées, en paroles ou en actions,<br>
-nous vous demandons pardon.<br>
-Que toutes ces mémoires du passé<br>
-soient transmutées en amour divin.
+"Si Jésus <span id="prefixe" class="gras">me</span> libère <span id="suffixe" class="gras"></span>,
+<span id="suite" class="gras">je serai</span> vraiment libre." (Jean 8, 36)
 </p>
 
 <hr />
 
-<p>Je te remercie. Je t'aime.</p>
+<p>
+Jésus, aie pitié de <b>moi</b> !<br>
+Jésus, guéris-<b>moi</b> !<br>
+Jésus, sauve-<b>moi</b> !<br>
+Jésus, libère-<b>moi</b> !
+</p>
 
+<div id="trio">
+
+    
+
+    <p class="grains" id="base_trio">
+    
+        
+
+        
+<input type="radio" name="base_trio" id="base_trio_1"  />
+<label for="base_trio_1">0</label>
+
+    
+        
+
+        
+<input type="radio" name="base_trio" id="base_trio_2"  />
+<label for="base_trio_2">1</label>
+
+    
+        
+
+        
+<input type="radio" name="base_trio" id="base_trio_3"  />
+<label for="base_trio_3">2</label>
+
+    
+        
+
+        
+<input type="radio" name="base_trio" id="base_trio_4"  />
+<label for="base_trio_4">3</label>
+
+    
+    </p>
+
+</div>
+
+<div id="dizaines">
 
     
 
@@ -162,12 +229,52 @@ soient transmutées en amour divin.
     
     </p>
 
+</div>
 
 <!-- Fin -->
 
 
 <div id="fin">
     <a href="#fin">
+    
+    ===
+    
+    </a>
+</div>
+
+
+<h2>Salut ô Reine</h2>
+
+<p class="maskable">
+<b>Salve, Regina, Mater misericordiae,</b><br>
+Salut, ô Reine, Mère de miséricorde,<br>
+
+<b>Vita, dulcedo et spes nostra. Salve !</b><br>
+notre vie, notre douceur et notre espérance. Salut !<br>
+
+<b>Ad te clamamus, exsules filii Evae.</b><br>
+Enfants d'Eve, exilés, nous crions vers vous.<br>
+
+<b>Ad te suspiramus, gementes et flentes in hac lacrimarum valle.</b><br>
+Vers vous, nous soupirons, gémissant et pleurant dans cette vallée de larmes.<br>
+
+<b>Eia ergo, advocata nostra, illos tuos misericordes oculos ad nos converte.</b><br>
+Ô vous, notre avocate, tournez vers nous vos regards miséricordieux.<br>
+
+<b>Et Jesum, benedictum fructum ventris tui, nobis post hoc exilium ostende.</b><br>
+Et après cet exil, montrez-nous Jésus, le fruit béni de vos entrailles.<br>
+
+<b>O clemens, o pia, o dulcis Virgo Maria.</b><br>
+Ô clémente, ô pieuse, ô douce Vierge Marie.<br>
+
+<b>Amen.</b>
+</p>
+
+<!-- Réinitialisation -->
+
+
+<div id="reset">
+    <a href="#reset">
     
     ===
     

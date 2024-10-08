@@ -3,40 +3,65 @@
 {% set bpath = "prieres/base/" %}
 {% set spath = "prieres/special/" %}
 
-{% set title = "Chapelet de libération des mémoires" %}
+{% set title = "Chapelet de libération" %}
 
 {% block content %}
-<p>
-Ce chapelet est personnel et basé sur la <b>méthode Ho'oponopono</b>.<br>
-La <b>prière de Morrnah</b>, revue et simplifiée, se récite sur les gros grains.<br>
-Le <b>mantra de base</b> se récite sur les petits grains des dizaines.
-</p>
-
-<hr />
-
 <!-- Intention -->
 
 {% include bpath + "signe-croix.jinja" %}
 
 <p>Je prie à l'intention de <input type="text" id="txt_intention" /></p>
 
+<!-- Croix -->
+
+{{ mc.anchor("croix", "=") }}
+
+{% include bpath + "credo.jinja" %}
+
 <!-- Rondes -->
 
 {{ mc.anchor("rondes", "=") }}
 
-<p>Ronde {{ mc.select("sel_rondes") }}</p>
+<p>
+    <select id="sel_rondes" onchange="setBlock()">
+        <option>Base</option>
+        {% for nb in range(1, 6) %}
+        <option>Ronde n°{{ nb }}</option>
+        {% endfor %}
+    </select>
+</p>
 
-{% include spath + "ex-hopono.jinja" %}
+<p>
+"Si Jésus <span id="prefixe" class="gras">me</span> libère <span id="suffixe" class="gras"></span>,
+<span id="suite" class="gras">je serai</span> vraiment libre." (Jean 8, 36)
+</p>
 
 <hr />
 
-<p>Je te remercie. Je t'aime.</p>
+<p>
+Jésus, aie pitié de <b>moi</b> !<br>
+Jésus, guéris-<b>moi</b> !<br>
+Jésus, sauve-<b>moi</b> !<br>
+Jésus, libère-<b>moi</b> !
+</p>
 
+<div id="trio">
+{{ mc.grains("trio", "base_trio") }}
+</div>
+
+<div id="dizaines">
 {{ mc.grains("cdizaine", "dz_grains") }}
+</div>
 
 <!-- Fin -->
 
 {{ mc.anchor("fin", "=") }}
+
+{% include bpath + "salut-reine.jinja" %}
+
+<!-- Réinitialisation -->
+
+{{ mc.anchor("reset", "=") }}
 
 {% include bpath + "signe-croix.jinja" %}
 

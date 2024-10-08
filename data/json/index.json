@@ -5,7 +5,7 @@
     ],
     "chapelets" : [
         { "href" : "chapelet", "title" : "Chapelet traditionnel (rosaire)" },
-        { "href" : "c-liberation", "title" : "Chapelet de libération des mémoires" },
+        { "href" : "c-liberation", "title" : "Chapelet de libération" },
         { "href" : "c-misericorde", "title" : "Chapelet de la miséricorde divine" }
     ],
     "dizaines" : [
