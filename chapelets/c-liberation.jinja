@@ -6,21 +6,29 @@
 {% set title = "Chapelet de libération" %}
 
 {% block content %}
-<!-- Intention -->
+<p>{{ mc.cb_version() }}</p>
+
+<p>
+Ce chapelet reprend sa version d'origine,<br>
+à la différence du <b>Je vous salue Marie</b> placé à la fin,<br>
+pour des questions de simplicité.
+</p>
+
+<p>Le {{ mc.link("/chapelets/chapelet.html", "rosaire") }} reste la dévotion quotidienne de base.</p>
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
 
 {% include bpath + "signe-croix.jinja" %}
-
-<p>Je prie à l'intention de <input type="text" id="txt_intention" /></p>
-
-<!-- Croix -->
-
-{{ mc.anchor("croix", "=") }}
 
 {% include bpath + "credo.jinja" %}
 
 <!-- Rondes -->
 
 {{ mc.anchor("rondes", "=") }}
+
+<p>Je prie à l'intention de <input type="text" id="txt_intention" onkeyup="updateText()" /></p>
 
 <p>
     <select id="sel_rondes" onchange="setBlock()">
@@ -33,17 +41,17 @@
 
 <p>
 "Si Jésus <span id="prefixe" class="gras">me</span> libère <span id="suffixe" class="gras"></span>,
-<span id="suite" class="gras">je serai</span> vraiment libre." (Jean 8, 36)
+<span id="pronom" class="gras">je</span> <span id="verbe">serai</span> vraiment libre." (Jean 8, 36)
 </p>
 
 <hr />
 
-<p>
-Jésus, aie pitié de <b>moi</b> !<br>
-Jésus, guéris-<b>moi</b> !<br>
-Jésus, sauve-<b>moi</b> !<br>
-Jésus, libère-<b>moi</b> !
-</p>
+<ul class="priere">
+    <li>Jésus, aie pitié de <span class="gras">moi</span> !<br></li>
+    <li>Jésus, guéris<span class="gras">-moi</span> !<br></li>
+    <li>Jésus, sauve<span class="gras">-moi</span> !<br></li>
+    <li>Jésus, libère<span class="gras">-moi</span> !</li>
+</ul>
 
 <div id="trio">
 {{ mc.grains("trio", "base_trio") }}
@@ -57,7 +65,7 @@ Jésus, libère-<b>moi</b> !
 
 {{ mc.anchor("fin", "=") }}
 
-{% include bpath + "salut-reine.jinja" %}
+{% include bpath + "ste-marie.jinja" %}
 
 <!-- Réinitialisation -->
 

@@ -19,23 +19,34 @@
         <h1>Chapelet de libération</h1>
 
         
-<!-- Intention -->
+<p>
+<input type="checkbox" id="v_resumee" onchange="switchVersion()" />
+<label for="v_resumee">Version résumée</label>
+</p>
 
-<p>(Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>. Amen.)</p>
+<p>
+Ce chapelet reprend sa version d'origine,<br>
+à la différence du <b>Je vous salue Marie</b> placé à la fin,<br>
+pour des questions de simplicité.
+</p>
 
-<p>Je prie à l'intention de <input type="text" id="txt_intention" /></p>
+<p>Le 
+<a href="/chapelets/chapelet.html" class="bleu" target="_blank">rosaire</a>
+ reste la dévotion quotidienne de base.</p>
 
-<!-- Croix -->
+<!-- Base -->
 
 
-<div id="croix">
-    <a href="#croix">
+<div id="base">
+    <a href="#base">
     
     ===
     
     </a>
 </div>
 
+
+<p>(Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>. Amen.)</p>
 
 <h2>Je crois en Dieu</h2>
 
@@ -75,6 +86,8 @@ Amen.
 </div>
 
 
+<p>Je prie à l'intention de <input type="text" id="txt_intention" onkeyup="updateText()" /></p>
+
 <p>
     <select id="sel_rondes" onchange="setBlock()">
         <option>Base</option>
@@ -94,17 +107,17 @@ Amen.
 
 <p>
 "Si Jésus <span id="prefixe" class="gras">me</span> libère <span id="suffixe" class="gras"></span>,
-<span id="suite" class="gras">je serai</span> vraiment libre." (Jean 8, 36)
+<span id="pronom" class="gras">je</span> <span id="verbe">serai</span> vraiment libre." (Jean 8, 36)
 </p>
 
 <hr />
 
-<p>
-Jésus, aie pitié de <b>moi</b> !<br>
-Jésus, guéris-<b>moi</b> !<br>
-Jésus, sauve-<b>moi</b> !<br>
-Jésus, libère-<b>moi</b> !
-</p>
+<ul class="priere">
+    <li>Jésus, aie pitié de <span class="gras">moi</span> !<br></li>
+    <li>Jésus, guéris<span class="gras">-moi</span> !<br></li>
+    <li>Jésus, sauve<span class="gras">-moi</span> !<br></li>
+    <li>Jésus, libère<span class="gras">-moi</span> !</li>
+</ul>
 
 <div id="trio">
 
@@ -243,31 +256,17 @@ Jésus, libère-<b>moi</b> !
 </div>
 
 
-<h2>Salut ô Reine</h2>
+<h2>Je vous salue Marie</h2>
 
 <p class="maskable">
-<b>Salve, Regina, Mater misericordiae,</b><br>
-Salut, ô Reine, Mère de miséricorde,<br>
-
-<b>Vita, dulcedo et spes nostra. Salve !</b><br>
-notre vie, notre douceur et notre espérance. Salut !<br>
-
-<b>Ad te clamamus, exsules filii Evae.</b><br>
-Enfants d'Eve, exilés, nous crions vers vous.<br>
-
-<b>Ad te suspiramus, gementes et flentes in hac lacrimarum valle.</b><br>
-Vers vous, nous soupirons, gémissant et pleurant dans cette vallée de larmes.<br>
-
-<b>Eia ergo, advocata nostra, illos tuos misericordes oculos ad nos converte.</b><br>
-Ô vous, notre avocate, tournez vers nous vos regards miséricordieux.<br>
-
-<b>Et Jesum, benedictum fructum ventris tui, nobis post hoc exilium ostende.</b><br>
-Et après cet exil, montrez-nous Jésus, le fruit béni de vos entrailles.<br>
-
-<b>O clemens, o pia, o dulcis Virgo Maria.</b><br>
-Ô clémente, ô pieuse, ô douce Vierge Marie.<br>
-
-<b>Amen.</b>
+Je vous salue Marie, pleine de grâce,<br>
+le Seigneur est avec vous.<br>
+Vous êtes bénie entre toutes les femmes,<br>
+et Jésus, votre enfant, est béni.<br>
+Sainte Marie, Mère de Dieu,<br>
+priez pour nous, pauvres pécheurs,<br>
+maintenant et à l'heure de notre mort.<br>
+Amen.
 </p>
 
 <!-- Réinitialisation -->
