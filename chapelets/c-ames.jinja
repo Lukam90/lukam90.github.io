@@ -1,0 +1,70 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/saints/" %}
+
+{% set rpath = "chapelets/rosaire/" %}
+
+{% set title = "Chapelet du salut des âmes" %}
+
+{% block content %}
+<p>{{ mc.cb_version() }}</p>
+
+<p>La récitation du chapelet permet de libérer jusqu'à <b>5000 âmes</b> sur <b>4 générations</b>.</p>
+
+<p>Les {{ mc.link("/prieres/lit-ames.html", "litanies de Notre-Dame de Montligeon") }} sont complémentaires.</p>
+
+<hr />
+
+{% include bpath + "signe-croix.jinja" %}
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+{% include rpath + "rs-base.jinja" %}
+
+<!-- Rondes -->
+
+{{ mc.anchor("rondes", "=") }}
+
+<p>Ronde {{ mc.select("sel_rondes") }}</p>
+
+<p>
+Père Eternel, je vous offre le Sacré-Cœur de Jésus et le Cœur Immaculé de Marie<br>
+pour le salut de nos âmes, de nos familles et du monde entier.
+</p>
+
+<hr />
+
+<p>
+Sacré-Cœur de Jésus, ayez pitié de nous.<br>
+Cœur Immaculé de Marie, priez pour nous.
+</p>
+
+{{ mc.grains("cdizaine", "dz_grains") }}
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.grains("ames", "fin_trio") }}
+
+<!-- Réinitialisation -->
+
+{{ mc.anchor("reset", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link(label = "Recommencer", reset = true) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("versions.js") }}
+
+{{ mc.script("chapelets/ch-ames.js") }}
+
+{% endblock %}

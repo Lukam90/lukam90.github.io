@@ -9,14 +9,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Chapelet traditionnel du rosaire</title>
+    <title>Chapelet du salut des âmes</title>
 
     <link rel="stylesheet" href="/public/css/prieres.css" />
 </head>
 
 <body>
     <main>
-        <h1>Chapelet traditionnel du rosaire</h1>
+        <h1>Chapelet du salut des âmes</h1>
 
         
 <p>
@@ -24,18 +24,10 @@
 <label for="v_resumee">Version résumée</label>
 </p>
 
-<p>
-Le <b>chapelet</b> basé sur le <b>rosaire</b> traditionnel s'inspire de l'application 
-
-<a href="https://rosario.app/" class="bleu" target="_blank">Rosario</a>
- par
-
-<a href="https://hozana.org/" class="bleu" target="_blank">Hozana</a>
-.
-</p>
+<p>La récitation du chapelet permet de libérer jusqu'à <b>5000 âmes</b> sur <b>4 générations</b>.</p>
 
 <p>Les 
-<a href="/prieres/lit-lorette.html" class="bleu" target="_blank">Litanies de Lorette</a>
+<a href="/prieres/lit-ames.html" class="bleu" target="_blank">litanies de Notre-Dame de Montligeon</a>
  sont complémentaires.</p>
 
 <hr />
@@ -205,11 +197,11 @@ surtout celles qui ont le plus besoin de ta sainte miséricorde.<br>
 Amen.
 </p>
 
-<!-- Médaille -->
+<!-- Rondes -->
 
 
-<div id="md_st_benoit">
-    <a href="#md_st_benoit">
+<div id="rondes">
+    <a href="#rondes">
     
     ===
     
@@ -217,99 +209,34 @@ Amen.
 </div>
 
 
-<h2>Médaille &minus; Prière à St Benoît</h2>
+<p>Ronde 
+<select id="sel_rondes" onchange="checkFirst();">
+    
 
-<p>
-Dieu notre Père,<br>
-par la bienveillante intercession de saint Benoît,<br>
-exauce dans ta miséricorde et ta bonté<br>
-les prières que nous t’adressons<br>
-pour la liberté et l'exaltation de la Sainte Eglise Universelle, notre Mère,<br>
-pour les vocations sacerdotales, monastiques et religieuses,<br>
-pour la conversion des pécheurs,<br>
-pour la santé des malades,<br>
-pour la consolation des affligés,<br>
-pour le salut des vivants,<br>
-pour tous ceux qui se recommandent ou sont recommandés à nos prières,<br>
-pour le soulagement ou la délivrance des défunts,<br>
-pour nos familles,<br>
-pour nos amis<br>
-et spécialement pour nos intentions particulières.<br>
-Par Jésus, le Christ, notre Seigneur.<br>
-Amen.
+    
+    <option>n°1</option>
+    
+    <option>n°2</option>
+    
+    <option>n°3</option>
+    
+    <option>n°4</option>
+    
+    <option>n°5</option>
+    
+</select>
 </p>
 
-<!-- Mystères -->
-
-
-<div id="mysteres">
-    <a href="#mysteres">
-    
-    ===
-    
-    </a>
-</div>
-
-
-<p><b>joyeux</b> (L, S) - <b>lumineux</b> (J) - <b>douloureux</b> (Ma, V) - <b>glorieux</b> (Me, D)</p>
-
-<p>Je prie à l'intention de <input id="intention" type="text" /></p>
-
 <p>
-    <select id="sel_type" onchange="majMysteres();">
-        <option>joyeux</option>
-        <option>lumineux</option>
-        <option>douloureux</option>
-        <option>glorieux</option>
-    </select>
-
-    <select id="sel_mysteres" onchange="majInfos();">
-        <option>1. L'annonciation</option>
-        <option>2. La visitation</option>
-        <option>3. La nativité</option>
-        <option>4. La présentation de Jésus au temple</option>
-        <option>5. Le recouvrement de Jésus au temple</option>
-    </select>
+Père Eternel, je vous offre le Sacré-Cœur de Jésus et le Cœur Immaculé de Marie<br>
+pour le salut de nos âmes, de nos familles et du monde entier.
 </p>
 
-<p>Fruit : <span id="fruit" class="gras">l'humilité</span></p>
-
-<h2>Notre Père</h2>
-
-<p class="maskable">
-Notre Père, qui est aux cieux,<br>
-que ton nom soit sanctifié,<br>
-que ton règne vienne,<br>
-que ta volonté soit faite, sur la terre comme au ciel.<br>
-Donne-nous aujourd'hui notre pain de ce jour,<br>
-et pardonne-nous nos offenses,<br>
-comme nous pardonnons aussi à ceux qui nous ont offensés,<br>
-et ne nous laisse pas entrer en tentation,<br>
-mais délivre-nous du mal.<br>
-Amen.
-</p>
-
-
-<div id="dz_ste_marie">
-    <a href="#dz_ste_marie">
-    
-    ***
-    
-    </a>
-</div>
-
-
-<h2>Je vous salue Marie</h2>
+<hr />
 
 <p>
-Je vous salue Marie, pleine de grâce,<br>
-le Seigneur est avec vous.<br>
-Vous êtes bénie entre toutes les femmes,<br>
-et Jésus, <span id="clausule" class="gras">incarné</span>, est béni.<br>
-Sainte Marie, Mère de Dieu,<br>
-priez pour nous, pauvres pécheurs,<br>
-maintenant et à l'heure de notre mort.<br>
-Amen.
+Sacré-Cœur de Jésus, ayez pitié de nous.<br>
+Cœur Immaculé de Marie, priez pour nous.
 </p>
 
 
@@ -397,11 +324,13 @@ Amen.
     </p>
 
 
+<!-- Fin -->
 
-<div id="dz_gloire_pere">
-    <a href="#dz_gloire_pere">
+
+<div id="fin">
+    <a href="#fin">
     
-    ***
+    ===
     
     </a>
 </div>
@@ -418,35 +347,46 @@ Amen.
 </p>
 
 
-<div id="dz_fatima">
-    <a href="#dz_fatima">
     
-    ***
+
+    <p class="grains" id="fin_trio">
     
-    </a>
-</div>
+        
+
+        
+<input type="radio" name="fin_trio" id="fin_trio_1"  />
+<label for="fin_trio_1">-</label>
+
+    
+        
+
+        
+<input type="radio" name="fin_trio" id="fin_trio_2"  />
+<label for="fin_trio_2">Père</label>
+
+    
+        
+
+        
+<input type="radio" name="fin_trio" id="fin_trio_3"  />
+<label for="fin_trio_3">Fils</label>
+
+    
+        
+
+        
+<input type="radio" name="fin_trio" id="fin_trio_4"  />
+<label for="fin_trio_4">St Esprit</label>
+
+    
+    </p>
 
 
-<h2>Prière de Fatima</h2>
-
-<p class="maskable">
-Ô mon Jésus,<br>
-pardonne-nous nos pêchés,<br>
-préserve-nous du feu de l'enfer,<br>
-et conduis au Ciel toutes les âmes,<br>
-surtout celles qui ont le plus besoin de ta sainte miséricorde.<br>
-Amen.
-</p>
+<!-- Réinitialisation -->
 
 
-<p><a href="#mysteres" class="bleu" >Retour en haut</a></p>
-
-
-<!-- Fin -->
-
-
-<div id="fin">
-    <a href="#fin">
+<div id="reset">
+    <a href="#reset">
     
     ===
     
@@ -457,12 +397,10 @@ Amen.
 <p>(Au nom du <b>Père</b>, et du <b>Fils</b> et du <b>Saint-Esprit</b>. Amen.)</p>
 
 
-<p><a href="#" class="bleu" >Recommencer</a></p>
+<p><a href="#" class="bleu"  onclick="resetAll()" >Recommencer</a></p>
 
 
 <!-- Scripts -->
-
-
 
 
 <script src="/public/js/utils.js"></script>
@@ -472,20 +410,7 @@ Amen.
 
 
 
-<script src="/public/js/chapelets/mysteres/ch-joyeux.js"></script>
-
-
-<script src="/public/js/chapelets/mysteres/ch-lumineux.js"></script>
-
-
-<script src="/public/js/chapelets/mysteres/ch-douloureux.js"></script>
-
-
-<script src="/public/js/chapelets/mysteres/ch-glorieux.js"></script>
-
-
-
-<script src="/public/js/chapelets/chapelet.js"></script>
+<script src="/public/js/chapelets/ch-ames.js"></script>
 
 
 
