@@ -1,19 +1,15 @@
 {% extends "layouts/prieres.jinja" %}
 
-{% set root = "https://boutique.labonnenouvelle.net/chapelets-et-rosaire/" %}
-{% set url = root + "1073-chapelet-des-ames-du-purgatoire-9502379583487.html" %}
-
 {% set bpath = "prieres/base/" %}
-{% set spath = "prieres/special/" %}
 
 {% set rpath = "chapelets/rosaire/" %}
 
-{% set title = "Chapelet des âmes" %}
+{% set title = "Chapelet pour le salut des âmes" %}
 
 {% block content %}
 <p>{{ mc.cb_version() }}</p>
 
-<p>Il s'agit du {{ mc.link(url, "chapelet en l'honneur des 13 vertus de Notre-Dame") }}.</p>
+<p>La récitation du chapelet permet de libérer jusqu'à <b>5000 âmes</b> sur <b>4 générations</b>.</p>
 
 <hr />
 
@@ -21,45 +17,37 @@
 
 <!-- Base -->
 
-{{ mc.anchor("croix", "=") }}
+{{ mc.anchor("base", "=") }}
 
-{% include bpath + "credo.jinja" %}
+{% include rpath + "rs-base.jinja" %}
 
-{{ mc.anchor("notre_pere") }}
+<!-- Mystères -->
 
-{% include bpath + "notre-pere.jinja" %}
+{{ mc.anchor("mysteres", "=") }}
 
-{{ mc.anchor("gloire_pere") }}
+{% include rpath + "rs-mysteres.jinja" %}
 
-{% include bpath + "gloire-pere.jinja" %}
+<p id="clausule" class="invisible"></p>
 
-{{ mc.grains("ames", "base_trio") }}
+<p>
+Père Eternel,<br>
+je vous offre le Sacré-Cœur de Jésus<br>
+et le Cœur Immaculé de Marie<br>
+pour le salut de nos âmes,<br>
+de nos familles<br>
+et du monde entier.
+</p>
 
-{{ mc.anchor("base_ste_mere") }}
+{{ mc.anchor("coeurs") }}
 
-{% include bpath + "ste-marie.jinja" %}
+<p>
+Sacré-Cœur de Jésus, ayez pitié de nous.<br>
+Cœur Immaculé de Marie, priez pour nous.
+</p>
 
-<!-- Médaille -->
+{{ mc.grains("cdizaine", "dz_grains") }}
 
-{{ mc.anchor("medaille", "=") }}
-
-{% include spath + "ex-medaille.jinja" %}
-
-<!-- Niveaux -->
-
-{{ mc.anchor("niveaux", "=") }}
-
-{% include spath + "ex-niveaux.jinja" %}
-
-{% include bpath + "ste-marie.jinja" %}
-
-{{ mc.anchor("repos") }}
-
-{% include spath + "ex-repos.jinja" %}
-
-{{ mc.grains("trio", "fin_trio") }}
-
-{{ mc.return_link("niveaux") }}
+{{ mc.return_link("mysteres") }}
 
 <!-- Fin -->
 
@@ -67,13 +55,10 @@
 
 {% include bpath + "signe-croix.jinja" %}
 
-{{ mc.return_link(label = "Recommencer", reset = true) }}
+{{ mc.return_link(label = "Recommencer") }}
 
 <!-- Scripts -->
 
-{{ mc.script("utils.js") }}
-{{ mc.script("versions.js") }}
-
-{{ mc.script("chapelets/ch-ames.js") }}
+{% include rpath + "rs-scripts.jinja" %}
 
 {% endblock %}
