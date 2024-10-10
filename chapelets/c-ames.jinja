@@ -1,18 +1,19 @@
 {% extends "layouts/prieres.jinja" %}
 
+{% set root = "https://boutique.labonnenouvelle.net/chapelets-et-rosaire/" %}
+{% set url = root + "1073-chapelet-des-ames-du-purgatoire-9502379583487.html" %}
+
 {% set bpath = "prieres/base/" %}
-{% set spath = "prieres/saints/" %}
+{% set spath = "prieres/special/" %}
 
 {% set rpath = "chapelets/rosaire/" %}
 
-{% set title = "Chapelet du salut des âmes" %}
+{% set title = "Chapelet des âmes" %}
 
 {% block content %}
 <p>{{ mc.cb_version() }}</p>
 
-<p>La récitation du chapelet permet de libérer jusqu'à <b>5000 âmes</b> sur <b>4 générations</b>.</p>
-
-<p>Les {{ mc.link("/prieres/lit-ames.html", "litanies de Notre-Dame de Montligeon") }} sont complémentaires.</p>
+<p>Il s'agit du {{ mc.link(url, "chapelet en l'honneur des 13 vertus de Notre-Dame") }}.</p>
 
 <hr />
 
@@ -20,41 +21,49 @@
 
 <!-- Base -->
 
-{{ mc.anchor("base", "=") }}
+{{ mc.anchor("croix", "=") }}
 
-{% include rpath + "rs-base.jinja" %}
+{% include bpath + "credo.jinja" %}
 
-<!-- Rondes -->
+{{ mc.anchor("notre_pere") }}
 
-{{ mc.anchor("rondes", "=") }}
+{% include bpath + "notre-pere.jinja" %}
 
-<p>Ronde {{ mc.select("sel_rondes") }}</p>
+{{ mc.anchor("gloire_pere") }}
 
-<p>
-Père Eternel, je vous offre le Sacré-Cœur de Jésus et le Cœur Immaculé de Marie<br>
-pour le salut de nos âmes, de nos familles et du monde entier.
-</p>
+{% include bpath + "gloire-pere.jinja" %}
 
-<hr />
+{{ mc.grains("ames", "base_trio") }}
 
-<p>
-Sacré-Cœur de Jésus, ayez pitié de nous.<br>
-Cœur Immaculé de Marie, priez pour nous.
-</p>
+{{ mc.anchor("base_ste_mere") }}
 
-{{ mc.grains("cdizaine", "dz_grains") }}
+{% include bpath + "ste-marie.jinja" %}
+
+<!-- Médaille -->
+
+{{ mc.anchor("medaille", "=") }}
+
+{% include spath + "ex-medaille.jinja" %}
+
+<!-- Niveaux -->
+
+{{ mc.anchor("niveaux", "=") }}
+
+{% include spath + "ex-niveaux.jinja" %}
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.anchor("repos") }}
+
+{% include spath + "ex-repos.jinja" %}
+
+{{ mc.grains("trio", "fin_trio") }}
+
+{{ mc.return_link("niveaux") }}
 
 <!-- Fin -->
 
 {{ mc.anchor("fin", "=") }}
-
-{% include bpath + "gloire-pere.jinja" %}
-
-{{ mc.grains("ames", "fin_trio") }}
-
-<!-- Réinitialisation -->
-
-{{ mc.anchor("reset", "=") }}
 
 {% include bpath + "signe-croix.jinja" %}
 

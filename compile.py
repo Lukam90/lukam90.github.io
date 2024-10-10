@@ -27,7 +27,7 @@ convert_jinja_list("profil", profil)
 
 ## Chapelets
 
-chapelets = ["chapelet", "c-ames", "c-liberation", "c-misericorde", "c-passion"]
+chapelets = ["chapelet", "c-ames", "c-liberation", "c-misericorde"]
 
 #convert_jinja_list("chapelets", chapelets)
 
@@ -35,7 +35,6 @@ chapelets = ["chapelet", "c-ames", "c-liberation", "c-misericorde", "c-passion"]
 convert_jinja_single("chapelets/c-ames")
 #convert_jinja_single("chapelets/c-liberation")
 #convert_jinja_single("chapelets/c-misericorde")
-#convert_jinja_single("chapelets/c-passion")
 
 ## Dizaines
 
@@ -55,9 +54,8 @@ convert_jinja_single("exercices/ex-nombres")
 
 ## Prières (simples)
 
-prieres = ["lit-ames", "lit-lorette"]
+prieres = ["lit-lorette"]
 
 #convert_jinja_list("prieres", prieres)
 
-convert_jinja_single("prieres/lit-ames")
 #convert_jinja_single("prieres/lit-lorette")

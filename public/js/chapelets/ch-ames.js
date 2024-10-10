@@ -1,9 +1,8 @@
 // Eléments
 
-const selRondes = $("#sel_rondes");
+const selNiveaux = $("#sel_niveaux");
 
-const basePremier = $("#ste_marie_vertus_1");
-const btnPremier = $("#dz_grains_1");
+const basePremier = $("#base_trio_1");
 const finPremier = $("#fin_trio_1");
 
 /* Fonctions */
@@ -11,13 +10,19 @@ const finPremier = $("#fin_trio_1");
 //hideAll(maskable);
 resetAll();
 
+// Réinitialisation des boutons
+
+function resetButtons()
+{
+    checkButton(basePremier);
+    checkButton(finPremier);
+}
+
 // Réinitialisation du chapelet
 
 function resetAll()
 {
-    selRondes.selectedIndex = 0;
+    selNiveaux.selectedIndex = 0;
 
-    checkButton(basePremier);
-    checkButton(btnPremier);
-    checkButton(finPremier);
+    resetButtons();
 }
