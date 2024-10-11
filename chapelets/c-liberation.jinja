@@ -9,12 +9,11 @@
 <p>{{ mc.cb_version() }}</p>
 
 <p>
-Ce chapelet reprend sa version d'origine,<br>
-à la différence du <b>Je vous salue Marie</b> placé à la fin,<br>
-pour des questions de simplicité.
+Ce chapelet est personnel.<br>
+Le <b>bref de St Antoine</b> se récite sur la croix.<br>
+Le <b>Notre Père</b> se récite sur les gros grains.<br>
+Le <b>verset</b> se récite sur les petits grains des dizaines.
 </p>
-
-<p>Le {{ mc.link("/chapelets/chapelet.html", "rosaire") }} reste la dévotion quotidienne de base.</p>
 
 <!-- Base -->
 
@@ -22,7 +21,7 @@ pour des questions de simplicité.
 
 {% include bpath + "signe-croix.jinja" %}
 
-{% include bpath + "credo.jinja" %}
+{% include spath + "ex-bref.jinja" %}
 
 <!-- Rondes -->
 
@@ -39,19 +38,14 @@ pour des questions de simplicité.
     </select>
 </p>
 
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("verset") }}
+
 <p>
 "Si Jésus <span id="prefixe" class="gras">me</span> libère <span id="suffixe" class="gras"></span>,
 <span id="pronom" class="gras">je</span> <span id="verbe">serai</span> vraiment libre." (Jean 8, 36)
 </p>
-
-<hr />
-
-<ul class="priere">
-    <li>Jésus, aie pitié de <span class="gras">moi</span> !<br></li>
-    <li>Jésus, guéris<span class="gras">-moi</span> !<br></li>
-    <li>Jésus, sauve<span class="gras">-moi</span> !<br></li>
-    <li>Jésus, libère<span class="gras">-moi</span> !</li>
-</ul>
 
 <div id="trio">
 {{ mc.grains("trio", "base_trio") }}
@@ -60,12 +54,6 @@ pour des questions de simplicité.
 <div id="dizaines">
 {{ mc.grains("cdizaine", "dz_grains") }}
 </div>
-
-<!-- Fin -->
-
-{{ mc.anchor("fin", "=") }}
-
-{% include bpath + "ste-marie.jinja" %}
 
 <!-- Réinitialisation -->
 

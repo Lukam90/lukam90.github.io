@@ -10,8 +10,6 @@ const spanSuffixe = $("#suffixe");
 const spanPronom = $("#pronom");
 const spanVerbe = $("#verbe");
 
-const lignes = $all("li .gras");
-
 const divTrio = $("#trio");
 const divDizaines = $("#dizaines");
 
@@ -21,7 +19,6 @@ const dzPremier = $("#dz_grains_1");
 // Variables
 
 let index = 0;
-let numLigne = 0;
 
 let nom = "";
 
@@ -64,32 +61,9 @@ function updateText()
     nom = txtIntention.value;
 
     if (nom) {
-        // Verset
-
         setVerset("", nom, nom, "sera");
-
-        // Lignes
-
-        for (let ligne of lignes) {
-            ligne.textContent = " " + nom;
-        }
     } else {
-        // Verset
-
         setVerset("me", "", "je", "serai");
-
-        // Lignes
-
-        numLigne = 0;
-        nom = "moi";
-
-        for (let ligne of lignes) {
-            if (numLigne > 0)   nom = "-moi";
-
-            ligne.textContent = nom;
-            
-            numLigne++;
-        }
     }
 }
 
