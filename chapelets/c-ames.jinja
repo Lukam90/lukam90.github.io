@@ -5,14 +5,13 @@
 
 {% set rpath = "chapelets/rosaire/" %}
 
-{% set title = "Chapelet des âmes" %}
+{% set title = "Chapelet du salut des âmes" %}
 
 {% block content %}
 <p>{{ mc.cb_version() }}</p>
 
 <p>
-Ce chapelet est inspiré de celui révélé à Ste Gertrude par Jésus.<br>
-Chaque récitation de la <b>prière des dizaines</b> permet de libérer jusqu'à <b>1000 âmes</b> du purgatoire.<br>
+Ce chapelet permet de libérer jusqu'à <b>5000 âmes</b> sur <b>4 générations</b>.<br>
 Les mystères sont repris du {{ mc.link("/chapelets/chapelet.html", "rosaire") }} restant la dévotion quotidienne de base.
 </p>
 
@@ -34,11 +33,11 @@ Les mystères sont repris du {{ mc.link("/chapelets/chapelet.html", "rosaire") }
 
 <p id="clausule" class="invisible"></p>
 
-{% include spath + "ex-coeurs.jinja" %}
-
-{{ mc.anchor("dz_pere_eternel") }}
-
 {% include spath + "ex-pere-eternel.jinja" %}
+
+<hr />
+
+{% include spath + "ex-coeurs.jinja" %}
 
 {{ mc.grains("cdizaine", "dz_grains") }}
 
