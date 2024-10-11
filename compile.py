@@ -27,13 +27,11 @@ convert_jinja_list("profil", profil)
 
 ## Chapelets
 
-chapelets = ["chapelet", "c-ames", "c-liberation", "c-misericorde"]
+chapelets = ["chapelet", "c-misericorde"]
 
 #convert_jinja_list("chapelets", chapelets)
 
-#convert_jinja_single("chapelets/chapelet")
-#convert_jinja_single("chapelets/c-ames")
-convert_jinja_single("chapelets/c-liberation")
+convert_jinja_single("chapelets/chapelet")
 #convert_jinja_single("chapelets/c-misericorde")
 
 ## Dizaines
