@@ -1,0 +1,79 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/special/" %}
+
+{% set title = "Chapelet de libération" %}
+
+{% block content %}
+<p>{{ mc.cb_version() }}</p>
+
+<p>
+Ce chapelet est personnel.<br>
+Le <b>Credo</b> se récite sur la croix.<br>
+Le <b>Notre Père</b> se récite sur les gros grains.<br>
+Le <b>verset</b> se récite sur les petits grains des dizaines.<br>
+Le <b>Je vous salue Marie</b> se récite à la fin.
+</p>
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{% include bpath + "credo.jinja" %}
+
+<!-- Rondes -->
+
+{{ mc.anchor("rondes", "=") }}
+
+<p>Je prie à l'intention de <input type="text" id="txt_intention" /></p>
+
+<p>
+    <select id="sel_rondes" onchange="updateBlock()">
+        <option>Base</option>
+        {% for nb in range(1, 6) %}
+        <option>Ronde n°{{ nb }}</option>
+        {% endfor %}
+    </select>
+</p>
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("verset") }}
+
+<div id="trio">
+    {% include spath + "ex-bref.jinja" %}
+
+    {{ mc.grains("trio", "base_trio") }}
+</div>
+
+<div id="dizaines">
+    <p>"Si Jésus nous libère, nous serons vraiment libres." (Jean 8, 36)</p>
+
+    {{ mc.grains("cdizaine", "dz_grains") }}
+</div>
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+<!-- Réinitialisation -->
+
+{{ mc.anchor("reset", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link(label = "Recommencer", reset = true) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("versions.js") }}
+
+{{ mc.script("chapelets/ch-liberation.js") }}
+
+{% endblock %}
