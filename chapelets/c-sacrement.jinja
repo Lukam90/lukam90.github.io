@@ -1,0 +1,61 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set lpath = "prieres/litanies/" %}
+{% set spath = "prieres/saints/" %}
+
+{% set rpath = "chapelets/rosaire/" %}
+
+{% set title = "Chapelet du Saint Sacrement" %}
+
+{% block content %}
+<p>{{ mc.cb_version() }}</p>
+
+<p>
+Ce chapelet est inspiré de celui de 
+{{ mc.link("https://hozana.org/priere/chapelet/saint-sacrement", "Hozana") }},
+sous une forme simplifiée.<br>
+L'<b>Agnus Dei</b> se récite sur les gros grains des dizaines.<br>
+La <b>phrase de louange</b> se récite sur les petits grains.
+</p>
+
+<hr />
+
+{% include bpath + "signe-croix.jinja" %}
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+{% include rpath + "rs-base.jinja" %}
+
+<!-- Rondes -->
+
+{{ mc.anchor("rondes", "=") }}
+
+<p>Ronde {{ mc.select("sel_rondes") }}</p>
+
+{% include lpath + "lit-agneau-dieu.jinja" %}
+
+<hr />
+
+<p>Jésus, sois loué à chaque instant, dans le Saint Sacrement.</p>
+
+{{ mc.grains("cdizaine", "dz_grains") }}
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link(label = "Recommencer", reset = true) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("versions.js") }}
+
+{{ mc.script("chapelets/ch-reset.js") }}
+
+{% endblock %}
