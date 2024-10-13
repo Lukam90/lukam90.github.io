@@ -1,6 +1,7 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set bpath = "prieres/base/" %}
+{% set spath = "prieres/saints/" %}
 
 {% set title = "Dizaines de neuvaine" %}
 
@@ -18,6 +19,20 @@
 {{ mc.anchor("gloire") }}
 
 {% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.return_link() }}
+
+<h2>Trentain de Ste Thérèse (*)</h2>
+
+<p>
+Les prières du trentain sont optionnelles et suivent la dizaine.<br>
+Je les ai rajoutées à l'occasion de la dernière <b>veillée de Ste Thérèse</b><br>
+à l'église <b>St-Pierre-le-Jeune</b> catholique de Strasbourg.
+</p>
+
+{{ mc.anchor("suite") }}
+
+{% include spath + "ste-therese.jinja" %}
 
 {{ mc.return_link() }}
 
