@@ -10,10 +10,9 @@
 
 <p>
 Ce chapelet est personnel.<br>
-Le <b>Credo</b> se récite sur la croix.<br>
+Le <b>bref de St Antoine</b> se récite sur la croix.<br>
 Le <b>Notre Père</b> se récite sur les gros grains.<br>
-Le <b>verset</b> se récite sur les petits grains des dizaines.<br>
-Le <b>Je vous salue Marie</b> se récite à la fin.
+Le <b>verset</b> se récite sur les petits grains des dizaines.
 </p>
 
 <!-- Base -->
@@ -22,7 +21,7 @@ Le <b>Je vous salue Marie</b> se récite à la fin.
 
 {% include bpath + "signe-croix.jinja" %}
 
-{% include bpath + "credo.jinja" %}
+{% include spath + "ex-bref.jinja" %}
 
 <!-- Rondes -->
 
@@ -44,13 +43,13 @@ Le <b>Je vous salue Marie</b> se récite à la fin.
 {{ mc.anchor("verset") }}
 
 <div id="trio">
-    {% include spath + "ex-bref.jinja" %}
+    <p>Je demande à être libéré dans l'amour.</p>
 
     {{ mc.grains("trio", "base_trio") }}
 </div>
 
 <div id="dizaines">
-    <p>"Si Jésus nous libère, nous serons vraiment libres." (Jean 8, 36)</p>
+    <p>"Si Jésus me libère, je serai vraiment libre." (Jean 8, 36)</p>
 
     {{ mc.grains("cdizaine", "dz_grains") }}
 </div>
@@ -58,12 +57,6 @@ Le <b>Je vous salue Marie</b> se récite à la fin.
 <!-- Fin -->
 
 {{ mc.anchor("fin", "=") }}
-
-{% include bpath + "ste-marie.jinja" %}
-
-<!-- Réinitialisation -->
-
-{{ mc.anchor("reset", "=") }}
 
 {% include bpath + "signe-croix.jinja" %}
 
