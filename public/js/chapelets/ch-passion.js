@@ -7,27 +7,24 @@ const txtIntention = $("#txt_intention");
 const divTrio = $("#trio");
 const divDizaines = $("#dizaines");
 
-const trioPremier = $("#base_trio_1");
 const dzPremier = $("#dz_grains_1");
+const trioPremier = $("#fin_trio_1");
 
 // Variables
 
 let index = 0;
 
-let nom = "";
-
 /* Fonctions */
 
-//hideAll(maskable);
 resetAll();
 
 // MAJ des blocs
 
-function updateBlock()
+function setBlock()
 {
     index = selRondes.selectedIndex;
 
-    if (index == 0) {
+    if (index == 5) {
         switchBlocks(divTrio, divDizaines);
     } else {
         switchBlocks(divDizaines, divTrio);
@@ -44,5 +41,5 @@ function resetAll()
     selRondes.selectedIndex = 0;
     txtIntention.value = "";
 
-    updateBlock();
+    setBlock();
 }

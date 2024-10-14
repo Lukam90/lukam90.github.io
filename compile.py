@@ -33,7 +33,7 @@ chapelets = ["chapelet", "c-misericorde", "c-passion"]
 
 #convert_jinja_single("chapelets/chapelet")
 #convert_jinja_single("chapelets/c-misericorde")
-#convert_jinja_single("chapelets/c-passion")
+convert_jinja_single("chapelets/c-passion")
 
 ## Dizaines
 

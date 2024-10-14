@@ -1,0 +1,71 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/special/" %}
+
+{% set title = "Chapelet de la passion du Christ" %}
+
+{% block content %}
+<p>
+Il s'agit du <b>chapelet des saintes plaies</b>,<br>
+renommé en hommage aux <b>mystères douloureux</b> du 
+{{ mc.link("/chapelets/chapelet.html", "rosaire") }}<br>
+restant la dévotion quotidienne de base.
+</p>
+
+{{ mc.anchor("intention", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+<p>Je prie à l'intention de <input type="text" id="txt_intention" />.</p>
+
+<!-- Croix -->
+
+{{ mc.anchor("croix", "=") }}
+
+{% include spath + "ex-intro.jinja" %}
+
+<!-- Rondes -->
+
+{{ mc.anchor("rondes", "=") }}
+
+<p>
+    <select id="sel_rondes" onchange="setBlock()">
+        <option>1ère - les mains</option>
+        <option>2ème - les pieds</option>
+        <option>3ème - le dos</option>
+        <option>4ème - la tête</option>
+        <option>5ème - le coeur</option>
+        <option>Fin</option>
+    </select>
+</p>
+
+<p>Père Eternel, je t’offre les plaies de notre Seigneur Jésus-Christ, pour guérir celles de nos âmes.</p>
+
+<div id="dizaines">
+    <hr />
+
+    <p>Mon Jésus, pardon et miséricorde, par les mérites de tes saintes plaies.</p>
+
+    {{ mc.grains("cdizaine", "dz_grains") }}
+</div>
+
+<div id="trio">
+    {{ mc.grains("trio", "fin_trio") }}
+</div>
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link(label = "Recommencer", reset = true) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+
+{{ mc.script("chapelets/ch-passion.js") }}
+
+{% endblock %}
