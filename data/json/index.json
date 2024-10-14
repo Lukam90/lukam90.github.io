@@ -5,14 +5,12 @@
     ],
     "chapelets" : [
         { "href" : "chapelet", "title" : "Chapelet traditionnel (rosaire)" },
-        { "href" : "c-ames", "title" : "Chapelet du salut des âmes" },
-        { "href" : "c-liberation", "title" : "Chapelet de libération" },
-        { "href" : "c-misericorde", "title" : "Chapelet de la miséricorde divine" },
-        { "href" : "c-sacrement", "title" : "Chapelet du Saint Sacrement" }
+        { "href" : "c-misericorde", "title" : "Chapelet de la miséricorde divine" }
     ],
     "dizaines" : [
         { "href" : "dz-lys", "title" : "Dizaines de lys de St Joseph" },
-        { "href" : "dz-neuvaine", "title" : "Dizaines de neuvaine" }
+        { "href" : "dz-neuvaine", "title" : "Dizaines de neuvaine" },
+        { "href" : "ex-trentain", "title" : "Trentain de Ste Thérèse" }
     ],
     "exercices" : [
         { "href" : "ex-base", "title" : "Cohérence cardiaque" },
