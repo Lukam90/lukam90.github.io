@@ -17,23 +17,24 @@ from functions import *
 index = convert_json_data("index")
 
 convert_jinja_single("index", index)
-convert_jinja_single("test")
+#convert_jinja_single("test")
 
 ## Profil
 
 profil = ["cv-imprime", "portfolio"]
 
-convert_jinja_list("profil", profil)
+#convert_jinja_list("profil", profil)
 
 ## Chapelets
 
-chapelets = ["chapelet", "c-misericorde", "c-passion"]
+chapelets = ["chapelet", "c-ames", "c-misericorde", "c-passion"]
 
 #convert_jinja_list("chapelets", chapelets)
 
 #convert_jinja_single("chapelets/chapelet")
+convert_jinja_single("chapelets/c-ames")
 #convert_jinja_single("chapelets/c-misericorde")
-convert_jinja_single("chapelets/c-passion")
+#convert_jinja_single("chapelets/c-passion")
 
 ## Dizaines
 
