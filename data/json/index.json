@@ -5,11 +5,11 @@
     ],
     "chapelets" : [
         { "href" : "chapelet", "title" : "Chapelet traditionnel (rosaire)" },
-        { "href" : "c-ames", "title" : "Chapelet de libération des âmes" },
         { "href" : "c-misericorde", "title" : "Chapelet de la miséricorde divine" },
         { "href" : "c-passion", "title" : "Chapelet de la passion du Christ" }
     ],
     "dizaines" : [
+        { "href" : "dz-ames", "title" : "Dizaines de libération des âmes" },
         { "href" : "dz-lys", "title" : "Dizaines de lys de St Joseph" },
         { "href" : "dz-neuvaine", "title" : "Dizaines de neuvaine" },
         { "href" : "ex-trentain", "title" : "Trentain de Ste Thérèse" }

@@ -5,14 +5,12 @@
 
 {% set rpath = "chapelets/rosaire/" %}
 
-{% set title = "Chapelet de libération des âmes" %}
+{% set title = "Dizaines de libération des âmes" %}
 
 {% block content %}
-<p>{{ mc.cb_version() }}</p>
-
 <p>
-Le chapelet est inspiré de celui révélé à Ste Gertrude par Jésus.<br>
-Chaque récitation de la <b>prière des dizaines</b> peut libérer jusqu'à <b>1000 âmes</b>.
+Les dizaines reprennent les prières du chapelet révélé à Ste Gertrude par Jésus.<br>
+Chaque récitation de la <b>prière des dizaines</b> peut libérer jusqu'à <b>1000 âmes</b> du purgatoire.
 </p>
 
 <p>
@@ -23,12 +21,6 @@ restant la dévotion quotidienne de base.
 <hr />
 
 {% include bpath + "signe-croix.jinja" %}
-
-<!-- Base -->
-
-{{ mc.anchor("base", "=") }}
-
-{% include rpath + "rs-base.jinja" %}
 
 <!-- Mystères -->
 
@@ -50,11 +42,9 @@ restant la dévotion quotidienne de base.
 
 <!-- Fin -->
 
-{{ mc.anchor("fin", "=") }}
+<hr />
 
 {% include bpath + "signe-croix.jinja" %}
-
-{{ mc.return_link(label = "Recommencer") }}
 
 <!-- Scripts -->
 
