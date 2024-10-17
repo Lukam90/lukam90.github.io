@@ -5,12 +5,10 @@
 
 {% set rpath = "chapelets/rosaire/" %}
 
-{% set title = "Chapelet du salut des âmes" %}
+{% set title = "Chapelet de libération des âmes" %}
 
 {% block content %}
 <p>{{ mc.cb_version() }}</p>
-
-<p>La récitation du chapelet permet de libérer jusqu'à <b>5000 âmes</b> sur <b>4 générations</b>.</p>
 
 <p>
 Les mystères sont repris du {{ mc.link("/chapelets/chapelet.html", "rosaire") }}
@@ -35,11 +33,11 @@ restant la dévotion quotidienne de base.
 
 <p id="clausule" class="invisible"></p>
 
-{% include spath + "ex-pere-eternel.jinja" %}
+{% include spath + "ex-repos.jinja" %}
 
 {{ mc.anchor("dz_coeurs") }}
 
-{% include spath + "ex-coeurs.jinja" %}
+<p>Doux Cœur de Marie, Soyez mon salut.</p>
 
 {{ mc.grains("cdizaine", "dz_grains") }}
 
