@@ -5,6 +5,7 @@
     ],
     "chapelets" : [
         { "href" : "chapelet", "title" : "Chapelet traditionnel (rosaire)" },
+        { "href" : "c-ames", "title" : "Chapelet du salut des âmes" },
         { "href" : "c-misericorde", "title" : "Chapelet de la miséricorde divine" },
         { "href" : "c-passion", "title" : "Chapelet de la passion du Christ" }
     ],
