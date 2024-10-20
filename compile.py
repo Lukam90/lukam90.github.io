@@ -34,16 +34,15 @@ chapelets = ["chapelet", "c-ames", "c-misericorde", "c-passion"]
 #convert_jinja_single("chapelets/chapelet")
 #convert_jinja_single("chapelets/c-ames")
 #convert_jinja_single("chapelets/c-misericorde")
-#convert_jinja_single("chapelets/c-passion")
+convert_jinja_single("chapelets/c-passion")
 
 ## Dizaines
 
-dizaines = ["dz-lys", "dz-min", "dz-neuvaine", "ex-trentain"]
+dizaines = ["dz-lys", "dz-neuvaine", "ex-trentain"]
 
 #convert_jinja_list("dizaines", dizaines)
 
 #convert_jinja_single("dizaines/dz-lys")
-convert_jinja_single("dizaines/dz-min")
 #convert_jinja_single("dizaines/dz-neuvaine")
 #convert_jinja_single("dizaines/ex-trentain")
 
