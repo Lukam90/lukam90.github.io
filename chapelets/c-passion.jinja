@@ -31,16 +31,14 @@ restant la dévotion quotidienne de base.
 
 <p>
     <select id="sel_rondes" onchange="setBlock()">
-        <option>1. la main droite de Jésus</option>
-        <option>2. la main gauche de Jésus</option>
-        <option>3. le pied droit de Jésus</option>
-        <option>4. le pied gauche de Jésus</option>
-        <option>5. le côté sacré de Jésus</option>
+        <option>1. les mains</option>
+        <option>2. les pieds</option>
+        <option>3. le dos</option>
+        <option>4. la tête</option>
+        <option>5. le coeur</option>
         <option>Fin</option>
     </select>
 </p>
-
-<p id="intro" class="priere"></p>
 
 <p>Père Eternel, je t’offre les plaies de notre Seigneur Jésus-Christ, pour guérir celles de nos âmes.</p>
 
@@ -68,7 +66,6 @@ restant la dévotion quotidienne de base.
 
 {{ mc.script("utils.js") }}
 
-{{ mc.script("chapelets/mysteres/ch-intros.js") }}
 {{ mc.script("chapelets/ch-passion.js") }}
 
 {% endblock %}
