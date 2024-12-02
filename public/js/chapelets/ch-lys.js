@@ -36,4 +36,6 @@ function majMysteres()
     }
 
     selMysteres.selectedIndex = 0;
+
+    checkFirst();
 }
