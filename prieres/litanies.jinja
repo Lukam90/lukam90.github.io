@@ -1,0 +1,49 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set lpath = "prieres/litanies/" %}
+
+{% set title = "Litanies de Lorette" %}
+
+{% block content %}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.anchor("lor_intro") }}
+
+{% include lpath + "lit-intro.jinja" %}
+
+{{ mc.anchor("lor_louanges") }}
+
+{% include lpath + "lit-ste-marie.jinja" %}
+
+{{ mc.anchor("lor_agneau_dieu") }}
+
+{% include lpath + "lit-agneau-dieu.jinja" %}
+
+{{ mc.anchor("lor_dialogue") }}
+
+<p>
+Sainte Mère de Dieu, priez pour nous.<br>
+Afin que nous devenions dignes des promesses de Jésus-Christ.
+</p>
+
+{{ mc.anchor("lor_oraison_finale") }}
+
+<p>
+Seigneur, daignez nous accorder, à nous vos serviteurs,<br>
+de jouir toujours de la santé de l’âme et du corps,<br>
+et par la glorieuse intercession de la bienheureuse Marie toujours vierge,<br>
+délivrez-nous des tristesses de la vie présente,<br>
+et donnez-nous d’avoir part aux joies éternelles.<br>
+Par Jésus-Christ, notre Seigneur.<br>
+Amen.
+</p>
+
+{{ mc.anchor("lor_fin") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link() }}
+
+{% endblock %}

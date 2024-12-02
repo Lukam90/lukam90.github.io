@@ -1,0 +1,19 @@
+{
+    "profil" : [
+        { "href" : "cv-imprime", "title" : "Mon nouveau CV" },
+        { "href" : "portfolio", "title" : "Ma page de portfolio (en cours)" }
+    ],
+    "prieres" : [
+        { "href" : "chapelet", "title" : "Chapelet traditionnel (rosaire)" },
+        { "href" : "dizaines", "title" : "Dizaines de neuvaine" },
+        { "href" : "ex-trentain", "title" : "Trentain de Ste Thérèse" },
+        { "href" : "litanies", "title" : "Litanies de Lorette" }
+    ],
+    "exercices" : [
+        { "href" : "ex-base", "title" : "Cohérence cardiaque" },
+        { "href" : "ex-sonore", "title" : "Cohérence cardiaque (version sonore)" },
+        { "href" : "ex-video", "title" : "Cohérence cardiaque (en vidéo)" },
+        { "href" : "ex-carre", "title" : "Respiration carrée" },
+        { "href" : "ex-dormir", "title" : "Respiration 4 - 7 - 8" }
+    ]
+}

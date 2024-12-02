@@ -1,0 +1,31 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set rpath = "prieres/rosaire/" %}
+{% set spath = "prieres/special/" %}
+
+{% set title = "Dizaines minimales" %}
+
+{% block content %}
+
+{% include bpath + "signe-croix.jinja" %}
+
+<hr />
+
+{% include rpath + "rs-mysteres.jinja" %}
+
+{% include spath + "ex-hopono.jinja" %}
+
+<hr />
+
+{% include bpath + "ste-marie-min.jinja" %}
+
+{{ mc.grains("dizaine", "dz_grains") }}
+
+{{ mc.return_link("mysteres") }}
+
+<!-- Scripts -->
+
+{% include rpath + "rs-scripts.jinja" %}
+
+{% endblock %}

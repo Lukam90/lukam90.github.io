@@ -1,0 +1,15 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set title = "Tests" %}
+
+{% set lpath = "prieres/latin/lt-" %}
+
+{% set name = lpath + "pater-noster"  %}
+
+{% block content %}
+
+{% include name + ".jinja" %}
+
+{{ mc.grains("cdizaine", "dz_grains") }}
+
+{% endblock %}
