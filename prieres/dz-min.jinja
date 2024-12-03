@@ -10,19 +10,27 @@
 
 {% include bpath + "signe-croix.jinja" %}
 
-<hr />
+{{ mc.anchor("mysteres", "=") }}
 
 {% include rpath + "rs-mysteres.jinja" %}
 
-{% include spath + "ex-hopono.jinja" %}
+{% include bpath + "notre-pere.jinja" %}
 
-<hr />
+{{ mc.anchor("ave") }}
 
 {% include bpath + "ste-marie-min.jinja" %}
 
 {{ mc.grains("dizaine", "dz_grains") }}
 
+{{ mc.anchor("gloria") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
 {{ mc.return_link("mysteres") }}
+
+{{ mc.anchor("fin", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
 
 <!-- Scripts -->
 
