@@ -16,15 +16,19 @@
 
 {% include bpath + "notre-pere.jinja" %}
 
-<hr />
+{{ mc.anchor("ave") }}
 
 {% include spath + "st-joseph-min.jinja" %}
 
 {{ mc.grains("dizaine", "dz_grains") }}
 
-<hr />
+{{ mc.anchor("gloire") }}
 
-{% include bpath + "gloire-pere-min.jinja" %}
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.anchor("fatima") }}
+
+{% include bpath + "priere-fatima.jinja" %}
 
 {{ mc.return_link("mysteres") }}
 
