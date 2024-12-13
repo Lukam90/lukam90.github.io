@@ -1,0 +1,13 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set spath = "prieres/special/" %}
+
+{% set title = "Dizaines de la médaille de St Benoît" %}
+
+{% block content %}
+
+{% include spath + "ex-medaille.jinja" %}
+
+{{ mc.grains("dizaine", "dz_grains") }}
+
+{% endblock %}
