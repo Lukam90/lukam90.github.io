@@ -86,6 +86,13 @@
 <li class="separation"></li>
 {% endmacro %}
 
+<!-- Louange -->
+
+{% macro louange(id, latin, fr) %}
+<a href="#{{ id }}" id="{{ id }}" class="gras">{{ latin }}</a>, ora pro nobis.<br>
+{{ fr }}, prie pour nous.<br>
+{% endmacro %}
+
 <!-- Lien simple -->
 
 {% macro link(href, content) %}

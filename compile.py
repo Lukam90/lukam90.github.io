@@ -31,10 +31,10 @@ prieres = ["chapelet", "dizaines", "ex-trentain", "litanies"]
 
 #convert_jinja_list("prieres", prieres)
 
-convert_jinja_single("prieres/chapelet")
-convert_jinja_single("prieres/dizaines")
-convert_jinja_single("prieres/ex-trentain")
-#convert_jinja_single("prieres/litanies")
+#convert_jinja_single("prieres/chapelet")
+#convert_jinja_single("prieres/dizaines")
+#convert_jinja_single("prieres/ex-trentain")
+convert_jinja_single("prieres/litanies")
 
 ## Exercices
 
