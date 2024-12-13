@@ -1,0 +1,35 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set rpath = "prieres/rosaire/" %}
+{% set spath = "prieres/special/" %}
+
+{% set title = "Dizaines minimales" %}
+
+{% block content %}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.anchor("mysteres", "=") }}
+
+{% include rpath + "rs-mysteres.jinja" %}
+
+<p>"Si donc le Fils vous libère, vous serez réellement libres." (Jean 8, 36)</p>
+
+<hr />
+
+{% include bpath + "ste-marie-min.jinja" %}
+
+{{ mc.grains("dizaine", "dz_grains") }}
+
+{{ mc.return_link("mysteres") }}
+
+{{ mc.anchor("fin", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+<!-- Scripts -->
+
+{% include rpath + "rs-scripts.jinja" %}
+
+{% endblock %}
