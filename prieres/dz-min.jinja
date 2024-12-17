@@ -8,17 +8,23 @@
 
 {% block content %}
 
+<p>{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}</p>
+
 {% include bpath + "signe-croix.jinja" %}
 
 {{ mc.anchor("mysteres", "=") }}
 
 {% include rpath + "rs-mysteres.jinja" %}
 
-{% include spath + "ex-hopono.jinja" %}
+{% include bpath + "notre-pere.jinja" %}
 
-{{ mc.anchor("dz_min") }}
+{{ mc.anchor("ave") }}
 
-{% include bpath + "ste-marie-min.jinja" %}
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.anchor("gloria") }}
+
+{% include bpath + "gloire-pere.jinja" %}
 
 {{ mc.grains("dizaine", "dz_grains") }}
 
