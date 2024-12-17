@@ -8,8 +8,6 @@
 
 {% block content %}
 
-<p>{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}</p>
-
 {% include bpath + "signe-croix.jinja" %}
 
 {{ mc.anchor("mysteres", "=") }}
@@ -18,13 +16,13 @@
 
 {% include bpath + "notre-pere.jinja" %}
 
-{{ mc.anchor("ave") }}
+<hr />
 
-{% include bpath + "ste-marie.jinja" %}
+{% include bpath + "ste-marie-min.jinja" %}
 
 {{ mc.grains("dizaine", "dz_grains") }}
 
-{{ mc.anchor("gloria") }}
+<hr />
 
 {% include bpath + "gloire-pere.jinja" %}
 
