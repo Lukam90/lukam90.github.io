@@ -8,6 +8,8 @@
 
 {% block content %}
 
+<p>{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}</p>
+
 {% include bpath + "signe-croix.jinja" %}
 
 {{ mc.anchor("mysteres", "=") }}
