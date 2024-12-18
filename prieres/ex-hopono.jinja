@@ -1,0 +1,41 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/special/" %}
+
+{% set title = "Chapelet de la méthode Ho'oponopono" %}
+
+{% block content %}
+<p>
+Le chapelet s'inspire de la <b>méthode Ho'oponopono</b>.<br>
+La <b>prière de transmutation</b> se récite sur la <b>croix</b>.
+</p>
+
+{{ mc.anchor("croix", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+<p>
+Je demande la transmutation divine de toutes ces mémoires négatives en moi<br>
+et liées à <input type="text" id="txt_intention" placeholder="ma situation actuelle" />
+en amour inconditionnel.
+</p>
+
+{{ mc.anchor("rondes", "=") }}
+
+<p>Ronde {{ mc.select("sel_rondes") }}</p>
+
+<p>
+Que toutes ces mémoires négatives du passé<br>
+soient transmutées en amour inconditionnel.
+</p>
+
+<hr />
+
+<p>Je te remercie. Je t'aime. (x 10)</p>
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+
+{% endblock %}
