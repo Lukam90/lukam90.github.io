@@ -8,25 +8,19 @@
 
 {% block content %}
 
-<p>{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}</p>
-
 {% include bpath + "signe-croix.jinja" %}
 
 {{ mc.anchor("mysteres", "=") }}
 
 {% include rpath + "rs-mysteres.jinja" %}
 
-{% include bpath + "notre-pere.jinja" %}
+<p>"Si Jésus vous libère, vous serez vraiment libres." (Jean 8, 36)</p>
 
 <hr />
 
 {% include bpath + "ste-marie-min.jinja" %}
 
 {{ mc.grains("dizaine", "dz_grains") }}
-
-<hr />
-
-{% include bpath + "gloire-pere.jinja" %}
 
 {{ mc.return_link("mysteres") }}
 
