@@ -39,7 +39,7 @@ prieres = [
 convert_jinja_single("prieres/ch-ames")
 convert_jinja_single("prieres/ch-liberation")
 #convert_jinja_single("prieres/dizaines")
-#convert_jinja_single("prieres/dz-min")
+convert_jinja_single("prieres/dz-min")
 #convert_jinja_single("prieres/ex-trentain")
 #convert_jinja_single("prieres/litanies")
 
