@@ -3,11 +3,11 @@
 {% set bpath = "prieres/base/" %}
 {% set spath = "prieres/special/" %}
 
-{% set title = "Chapelet de la méthode Ho'oponopono" %}
+{% set title = "Chapelet de libération" %}
 
 {% block content %}
 <p>
-Le chapelet s'inspire de la <b>méthode Ho'oponopono</b>.<br>
+Le chapelet est personnel et s'inspire de la <b>méthode Ho'oponopono</b>.<br>
 La <b>prière de transmutation</b> se récite sur la <b>croix</b>.
 </p>
 
@@ -25,17 +25,17 @@ en amour inconditionnel.
 
 <p>Ronde {{ mc.select("sel_rondes") }}</p>
 
-<p>
-Que toutes ces mémoires négatives du passé<br>
-soient transmutées en amour inconditionnel.
-</p>
+<p>Je demande à être libéré dans l'amour.</p>
 
 <hr />
 
-<p>Je te remercie. Je t'aime. (x 10)</p>
+<p>Désolé. Pardon. Merci. Je t'aime.</p>
+
+{{ mc.grains("dizaine", "dz_grains") }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
+{{ mc.script("reset.js") }}
 
 {% endblock %}
