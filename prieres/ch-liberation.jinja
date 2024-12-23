@@ -8,38 +8,19 @@
 {% block content %}
 <p>
 Le chapelet est personnel et s'inspire de la <b>méthode Ho'oponopono</b>.<br>
-La <b>prière de transmutation</b> se récite sur la <b>croix</b>.
+La <b>prière de Morrnah</b>, revue et simplifiée, se récite sur la <b>croix</b> et les <b>gros grains</b>.
 </p>
 
 {{ mc.anchor("croix", "=") }}
 
 {% include bpath + "signe-croix.jinja" %}
 
-<p>
-Je demande la transmutation divine de toutes ces mémoires négatives en moi<br>
-et liées à <input type="text" id="txt_intention" placeholder="ma situation actuelle" />
-en amour inconditionnel.
-</p>
+{% include spath + "ex-hopono.jinja" %}
 
 <hr />
 
-<p>Je te remercie. Je t'aime. (x 3)</p>
+<p>Je te remercie. Je t'aime. (x 3, 10)</p>
 
-{{ mc.anchor("rondes", "=") }}
-
-<p>Ronde {{ mc.select("sel_rondes") }}</p>
-
-<p>Que toute cette négativité soit transmutée en amour inconditionnel.</p>
-
-<hr />
-
-<p>Je te remercie. Je t'aime.</p>
-
-{{ mc.grains("dizaine", "dz_grains") }}
-
-<!-- Scripts -->
-
-{{ mc.script("utils.js") }}
-{{ mc.script("reset.js") }}
+{{ mc.grains("cinq", "dz_rondes") }}
 
 {% endblock %}
