@@ -5,7 +5,7 @@
     ],
     "prieres" : [
         { "href" : "chapelet", "title" : "Chapelet traditionnel (rosaire)" },
-        { "href" : "ch-ames", "title" : "Chapelet des âmes" },
+        { "href" : "ch-devotion", "title" : "Chapelet de dévotion" },
         { "href" : "ch-liberation", "title" : "Chapelet de libération (*)" },
         { "href" : "dizaines", "title" : "Dizaines de neuvaine" },
         { "href" : "dz-min", "title" : "Dizaines minimales" },
