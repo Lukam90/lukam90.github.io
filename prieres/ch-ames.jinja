@@ -33,7 +33,9 @@
 
 {{ mc.anchor("niveaux", "=") }}
 
-{% include spath + "ex-niveaux.jinja" %}
+<p>Niveau : <span id="niveau" class="gras">Médaille</span></p>
+
+{{ mc.grains("treizaine", "trz_niveaux") }}
 
 {% include bpath + "ste-marie.jinja" %}
 

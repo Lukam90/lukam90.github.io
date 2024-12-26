@@ -8,6 +8,8 @@
         "trio" : range(0, 4),
         "cinq" : range(0, 6),
         "dizaine" : range(0, 11),
+        "douzaine" : range(0, 13),
+        "treizaine" : range(0, 14),
     }
 %}
 
@@ -117,20 +119,20 @@
 <!-- Bouton radio -->
 
 {% macro radio_btn(value, name, id, event = None) %}
-<input type="radio" name="{{ name }}" id="{{ id }}" {% if event %} onclick="{{ event }}" {% endif %} />
+<input type="radio" name="{{ name }}" id="{{ id }}" value="{{ value }}" {% if event %} onclick="{{ event }}" {% endif %} />
 <label for="{{ id }}">{{ value }}</label>
 {% endmacro %}
 
 <!-- Boutons radios => Grains -->
 
-{% macro grains(type, name) %}
+{% macro grains(type, name, event = None) %}
     {% set values = lists[type] %}
 
     <p class="grains" id="{{ name }}">
     {% for val in values %}
         {% set id = name + "_" + loop.index | string %}
 
-        {{ radio_btn(val, name, id) }}
+        {{ radio_btn(val, name, id, event) }}
     {% endfor %}
     </p>
 {% endmacro %}
