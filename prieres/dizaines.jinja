@@ -3,7 +3,7 @@
 {% set bpath = "prieres/base/" %}
 {% set rpath = "prieres/rosaire/" %}
 
-{% set title = "Dizaines de neuvaine" %}
+{% set title = "Dizaines simples" %}
 
 {% block content %}
 
@@ -13,7 +13,9 @@
 
 <p>Je prie à l'intention de <input type="text" id="intention" />.</p>
 
-{% include rpath + "rs-dizaine-min.jinja" %}
+{{ mc.anchor("mysteres", "=") }}
+
+{% include rpath + "rs-dizaine.jinja" %}
 
 {% include bpath + "signe-croix.jinja" %}
 
@@ -21,7 +23,6 @@
 
 <!-- Scripts -->
 
-{{ mc.script("utils.js") }}
-{{ mc.script("latin.js") }}
+{% include rpath + "rs-scripts.jinja" %}
 
 {% endblock %}
