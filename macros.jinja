@@ -90,11 +90,29 @@
 <li class="separation"></li>
 {% endmacro %}
 
+<!-- Séparateur d'un tableau -->
+
+{% macro table_separator() %}
+<tr>
+    <td colspan="2"><br /></td>
+</tr>
+{% endmacro %}
+
 <!-- Louange -->
 
-{% macro louange(id, latin, fr) %}
-<a href="#{{ id }}" id="{{ id }}" class="gras">{{ latin }}</a>, ora pro nobis.<br>
-{{ fr }}, prie pour nous.<br>
+{% macro louange(id, latin, fr, first = False) %}
+<tr>
+    <td>
+        <a href="#{{ id }}" id="{{ id }}" class="gras">{{ latin }}</a>
+        {% if first %}, ora pro nobis.{% endif %}
+    </td>
+
+    <td>
+        {{ fr }}
+
+        {% if first %}, prie pour nous.{% endif %}
+    </td>
+</tr>
 {% endmacro %}
 
 <!-- Lien simple -->
