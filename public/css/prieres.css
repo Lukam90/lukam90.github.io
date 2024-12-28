@@ -109,6 +109,10 @@ table tr:nth-child(even) {
     padding-top: 20px;
 }
 
+.texte-gauche {
+    text-align: left;
+}
+
 /* Evénements */
 
 label:hover {
