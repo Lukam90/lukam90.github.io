@@ -6,6 +6,7 @@
     "prieres" : [
         { "href" : "chapelet", "title" : "Chapelet traditionnel du rosaire" },
         { "href" : "ch-ames", "title" : "Chapelet du salut des âmes" },
+        { "href" : "ch-liberation", "title" : "Chapelet de libération (*)" },
         { "href" : "dizaines", "title" : "Dizaines simples" },
         { "href" : "ex-trentain", "title" : "Trentain de Ste Thérèse" },
         { "href" : "litanies", "title" : "Litanies de Lorette" }
