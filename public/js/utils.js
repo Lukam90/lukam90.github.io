@@ -5,6 +5,10 @@ const $all = (selector) => document.querySelectorAll(selector);
 
 const $name = (name) => document.getElementsByName(name);
 
+// Eléments
+
+const maskable = $all(".maskable");
+
 /* Fonctions utilitaires */
 
 /* Blocs */
