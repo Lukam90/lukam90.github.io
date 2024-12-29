@@ -31,6 +31,29 @@
 
 <p>Je prie à l'intention de <input type="text" id="intention" />.</p>
 
+<p><b>joyeux</b> (L, S) - <b>lumineux</b> (J) - <b>douloureux</b> (Ma, V) - <b>glorieux</b> (Me, D)</p>
+
+<p>
+    <select id="sel_type" onchange="majMysteres();">
+        <option>joyeux</option>
+        <option>lumineux</option>
+        <option>douloureux</option>
+        <option>glorieux</option>
+    </select>
+
+    <select id="sel_mysteres" onchange="majInfos();">
+        <option>1. L'annonciation</option>
+        <option>2. La visitation</option>
+        <option>3. La nativité</option>
+        <option>4. La présentation de Jésus au temple</option>
+        <option>5. Le recouvrement de Jésus au temple</option>
+    </select>
+</p>
+
+<p>Fruit : <span id="fruit" class="gras">l'humilité</span></p>
+
+<!-- Prières -->
+
 <p class="fr maskable">
 Notre Père, qui est aux cieux,<br>
 que ton nom soit sanctifié,<br>
@@ -57,15 +80,7 @@ sed libera nos a malo.<br>
 Amen.
 </p>
 
-
-<div id="dz_ste_marie">
-    <a href="#dz_ste_marie">
-    
-    ***
-    
-    </a>
-</div>
-
+<hr />
 
 <p class="fr maskable">
 Je vous salue Marie, pleine de grâce,<br>
@@ -97,92 +112,84 @@ Amen.
         
 
         
-<input type="radio" name="dz_grains" id="dz_grains_1"  />
+<input type="radio" name="dz_grains" id="dz_grains_1" value="0"  />
 <label for="dz_grains_1">0</label>
 
     
         
 
         
-<input type="radio" name="dz_grains" id="dz_grains_2"  />
+<input type="radio" name="dz_grains" id="dz_grains_2" value="1"  />
 <label for="dz_grains_2">1</label>
 
     
         
 
         
-<input type="radio" name="dz_grains" id="dz_grains_3"  />
+<input type="radio" name="dz_grains" id="dz_grains_3" value="2"  />
 <label for="dz_grains_3">2</label>
 
     
         
 
         
-<input type="radio" name="dz_grains" id="dz_grains_4"  />
+<input type="radio" name="dz_grains" id="dz_grains_4" value="3"  />
 <label for="dz_grains_4">3</label>
 
     
         
 
         
-<input type="radio" name="dz_grains" id="dz_grains_5"  />
+<input type="radio" name="dz_grains" id="dz_grains_5" value="4"  />
 <label for="dz_grains_5">4</label>
 
     
         
 
         
-<input type="radio" name="dz_grains" id="dz_grains_6"  />
+<input type="radio" name="dz_grains" id="dz_grains_6" value="5"  />
 <label for="dz_grains_6">5</label>
 
     
         
 
         
-<input type="radio" name="dz_grains" id="dz_grains_7"  />
+<input type="radio" name="dz_grains" id="dz_grains_7" value="6"  />
 <label for="dz_grains_7">6</label>
 
     
         
 
         
-<input type="radio" name="dz_grains" id="dz_grains_8"  />
+<input type="radio" name="dz_grains" id="dz_grains_8" value="7"  />
 <label for="dz_grains_8">7</label>
 
     
         
 
         
-<input type="radio" name="dz_grains" id="dz_grains_9"  />
+<input type="radio" name="dz_grains" id="dz_grains_9" value="8"  />
 <label for="dz_grains_9">8</label>
 
     
         
 
         
-<input type="radio" name="dz_grains" id="dz_grains_10"  />
+<input type="radio" name="dz_grains" id="dz_grains_10" value="9"  />
 <label for="dz_grains_10">9</label>
 
     
         
 
         
-<input type="radio" name="dz_grains" id="dz_grains_11"  />
+<input type="radio" name="dz_grains" id="dz_grains_11" value="10"  />
 <label for="dz_grains_11">10</label>
 
     
     </p>
 
 
-
-<div id="dz_gloire_pere">
-    <a href="#dz_gloire_pere">
-    
-    ***
-    
-    </a>
-</div>
-
+<hr />
 
 <p class="fr maskable">
 Gloire au Père, et au Fils, et au Saint-Esprit,<br>
@@ -240,6 +247,23 @@ Sa confiance inconditionnelle et son abandon d'enfant lui faisaient espérer<br>
 
 
 <script src="/public/js/latin.js"></script>
+
+
+
+<script src="/public/js/mysteres/ch-joyeux.js"></script>
+
+
+<script src="/public/js/mysteres/ch-lumineux.js"></script>
+
+
+<script src="/public/js/mysteres/ch-douloureux.js"></script>
+
+
+<script src="/public/js/mysteres/ch-glorieux.js"></script>
+
+
+
+<script src="/public/js/chapelets/ch-rosaire.js"></script>
 
 
 
