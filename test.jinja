@@ -2,14 +2,19 @@
 
 {% set title = "Tests" %}
 
-{% set lpath = "prieres/latin/lt-" %}
-
-{% set name = lpath + "pater-noster"  %}
+{% set bpath = "prieres/base/" %}
 
 {% block content %}
 
-{% include name + ".jinja" %}
+<p>{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}</p>
 
-{{ mc.grains("cdizaine", "dz_grains") }}
+{% include bpath + "priere-fatima.jinja" %}
+
+{{ mc.grains("dizaine", "dz_grains") }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
 
 {% endblock %}

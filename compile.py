@@ -17,7 +17,7 @@ from functions import *
 index = convert_json_data("index")
 
 convert_jinja_single("index", index)
-#convert_jinja_single("test")
+convert_jinja_single("test")
 
 ## Profil
 
@@ -29,7 +29,7 @@ profil = ["cv-imprime", "portfolio"]
 
 prieres = ["chapelet", "dizaines", "ex-trentain", "litanies"]
 
-convert_jinja_list("prieres", prieres)
+#convert_jinja_list("prieres", prieres)
 
 #convert_jinja_single("prieres/chapelet")
 #convert_jinja_single("prieres/dizaines")
