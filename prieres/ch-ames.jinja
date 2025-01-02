@@ -1,0 +1,75 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/special/" %}
+
+{% set root = "https://boutique.labonnenouvelle.net/chapelets-et-rosaire/" %}
+{% set url = root + "1073-chapelet-des-ames-du-purgatoire-9502379583487.html" %}
+
+{% set title = "Chapelet des âmes" %}
+
+{% block content %}
+<p>Il s'agit du {{ mc.link(url, "chapelet des 13 vertus de Notre-Dame") }}.</p>
+
+<hr />
+
+<p>{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}</p>
+
+{% include bpath + "signe-croix.jinja" %}
+
+<!-- Base -->
+
+{{ mc.anchor("croix", "=") }}
+
+{% include bpath + "credo.jinja" %}
+
+{{ mc.anchor("pater") }}
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("gloria") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.grains("ames", "base_trio") }}
+
+{{ mc.anchor("ave") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+<!-- Jonction -->
+
+{{ mc.anchor("medaille", "=") }}
+
+{% include spath + "ex-medaille.jinja" %}
+
+<!-- Rondes -->
+
+{{ mc.anchor("niveaux", "=") }}
+
+{% include spath + "ex-niveaux.jinja" %}
+
+{% include bpath + "ste-marie.jinja" %}
+
+<hr />
+
+{% include spath + "ex-repos.jinja" %}
+
+{{ mc.grains("trio", "dz_trio") }}
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link(label = "Recommencer", reset = true) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
+
+{{ mc.script("chapelets/ch-ames.js") }}
+
+{% endblock %}

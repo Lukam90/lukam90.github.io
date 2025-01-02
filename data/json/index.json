@@ -5,6 +5,7 @@
     ],
     "prieres" : [
         { "href" : "chapelet", "title" : "Chapelet traditionnel du rosaire" },
+        { "href" : "ch-ames", "title" : "Chapelet des âmes" },
         { "href" : "dizaines", "title" : "Dizaines simples" },
         { "href" : "dz-lys", "title" : "Dizaines de lys" },
         { "href" : "ex-trentain", "title" : "Trentain de Ste Thérèse" },
