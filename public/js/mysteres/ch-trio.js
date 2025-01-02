@@ -1,6 +1,6 @@
 // Données
 
-const chapelets = {
+const rosaire = {
     joyeux : [
         "1. L'annonciation à Joseph",
         "2. La naissance de Jésus",
@@ -11,7 +11,7 @@ const chapelets = {
     douloureux : [
         "1. Joseph envisage de répudier Marie dans le secret",
         "2. L'absence de place à l'auberge de Bethléem",
-        "3. La fuite en Egypte",
+        "3. La fuite en Égypte",
         "4. Jésus perdu à Jérusalem",
         "5. La mort de Joseph"
     ],
