@@ -6,6 +6,7 @@
     "prieres" : [
         { "href" : "chapelet", "title" : "Chapelet traditionnel du rosaire" },
         { "href" : "dizaines", "title" : "Dizaines simples" },
+        { "href" : "dz-lys", "title" : "Dizaines de lys" },
         { "href" : "ex-trentain", "title" : "Trentain de Ste Thérèse" },
         { "href" : "litanies", "title" : "Litanies de Lorette" }
     ],
