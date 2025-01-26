@@ -1,0 +1,48 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text);
+    font-size: 1.6rem;
+}
+
+header {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1rem 0 2rem 0;
+}
+
+h1 {
+    font-family: monospace;
+    color: blue;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+hr {
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    line-height: 1.5;
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}

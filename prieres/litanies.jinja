@@ -1,0 +1,42 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set lpath = "prieres/litanies/" %}
+
+{% set title = "Litanies de Lorette" %}
+
+{% block content %}
+
+{% include bpath + "signe-croix.jinja" %}
+
+<!-- Intro -->
+
+{% include lpath + "lit-intro.jinja" %}
+
+<!-- Liste -->
+
+{{ mc.anchor("lor_louanges") }}
+
+{% include lpath + "lit-liste.jinja" %}
+
+<!-- Fin -->
+
+{{ mc.anchor("lor_fin", "=") }}
+
+{% include lpath + "lit-agneau-dieu.jinja" %}
+
+{{ mc.anchor("lor_dialogue") }}
+
+{% include lpath + "lit-dialogue.jinja" %}
+
+{{ mc.anchor("lor_oraison_finale") }}
+
+{% include lpath + "lit-final.jinja" %}
+
+<!-- Retour -->
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link() }}
+
+{% endblock %}

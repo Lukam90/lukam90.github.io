@@ -1,0 +1,21 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set title = "Tests" %}
+
+{% set bpath = "prieres/base/" %}
+
+{% block content %}
+<p>
+{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
+</p>
+
+{% include bpath + "priere-fatima.jinja" %}
+
+{{ mc.grains("dz_grains", range(0, 11)) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
+
+{% endblock %}
