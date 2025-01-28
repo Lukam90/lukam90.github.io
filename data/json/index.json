@@ -5,7 +5,8 @@
     ],
     "prieres" : [
         { "href" : "ex-base", "title" : "Prières de base" },
-        { "href" : "rosaire", "title" : "Chapelet du rosaire" },
+        { "href" : "chapelet", "title" : "Chapelet du rosaire" },
+        { "href" : "ch-ames", "title" : "Chapelet des âmes" },
         { "href" : "litanies", "title" : "Litanies de Lorette" }
     ],
     "exercices" : [
