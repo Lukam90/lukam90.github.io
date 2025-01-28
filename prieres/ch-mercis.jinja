@@ -1,0 +1,51 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/special/" %}
+
+{% set title = "Chapelet des 1000 mercis" %}
+
+{% block content %}
+<p>Il s'agit d'un chapelet de remerciement explicite à Jésus, pour ses grâces exaucées et futures.</p>
+
+<p>10 récitations équivalent à <b>1000 mercis</b>.</p>
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+<p>(Embrasser la croix)</p>
+
+{% include spath + "ex-intro.jinja" %}
+
+<!-- Rondes -->
+
+{{ mc.anchor("rondes", "=") }}
+
+{{ mc.grains("dz_rondes", range(1, 6)) }}
+
+<p>"Ô Jésus, je te remercie pour tout."</p>
+
+<hr />
+
+<p>"Merci Jésus." x 2 (x 10)</p>
+
+{{ mc.return_link("rondes") }}
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link(label = "Recommencer", reset = True) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+
+{{ mc.script("chapelets/ch-mercis.js") }}
+
+{% endblock %}
