@@ -21,6 +21,8 @@
 
 {% include bpath + "signe-croix.jinja" %}
 
+<hr id="credo" />
+
 {% include bpath + "credo.jinja" %}
 
 {{ mc.anchor("pater") }}
@@ -45,7 +47,7 @@
 
 <!-- Rondes -->
 
-{{ mc.anchor("rondes", "=") }}
+{{ mc.anchor("niveaux", "=") }}
 
 {{ mc.grains("nv_grains", range(1, 14)) }}
 
@@ -59,7 +61,7 @@
 
 {{ mc.grains("nv_trio", range(0, 4)) }}
 
-{{ mc.return_link("rondes") }}
+{{ mc.return_link("niveaux") }}
 
 <!-- Fin -->
 

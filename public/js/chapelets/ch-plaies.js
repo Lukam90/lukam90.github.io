@@ -15,6 +15,13 @@ let radioBtn;
 let index = 0;
 let numKey = 0;
 
+/* Evénement de clic */
+
+for (let i = 0 ; i < 5 ; i++) {
+    radioBtn = grains[i];
+    radioBtn.addEventListener("click", () => selectRonde(i));
+}
+
 /* Fonctions */
 
 // Sélection de la ronde
@@ -33,13 +40,6 @@ function resetAll() {
     goTo("#");
 
     selectRonde(0);
-}
-
-/* Evénement de clic */
-
-for (let i = 0 ; i < 5 ; i++) {
-    radioBtn = grains[i];
-    radioBtn.addEventListener("click", () => selectRonde(i));
 }
 
 /* Raccourcis */
