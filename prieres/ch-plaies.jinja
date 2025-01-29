@@ -3,20 +3,11 @@
 {% set bpath = "prieres/base/" %}
 {% set spath = "prieres/special/" %}
 
-{% set title = "Chapelet des 1000 mercis" %}
+{% set title = "Chapelet des saintes plaies" %}
 
 {% block content %}
-<p>Il s'agit d'un chapelet de remerciement explicite à Jésus, pour ses grâces exaucées et futures.</p>
-
-<p>10 récitations équivalent à <b>1000 mercis</b>.</p>
-
-<!-- Base -->
-
-{{ mc.anchor("base", "=") }}
 
 {% include bpath + "signe-croix.jinja" %}
-
-<p>(Embrasser la croix)</p>
 
 {% include spath + "ex-intro.jinja" %}
 
@@ -26,17 +17,21 @@
 
 {{ mc.grains("dz_rondes", range(1, 6)) }}
 
-<p>"Ô Jésus, je te remercie pour tout."</p>
+<p id="plaie" class="gras">1. les mains</p>
+
+<p>"Père Eternel, je t’offre les plaies de notre Seigneur Jésus-Christ pour guérir celles de nos âmes."</p>
 
 <hr />
 
-<p>"Merci Jésus." x 2 (x 10)</p>
+<p>"Mon Jésus, pardon et miséricorde, par les mérites de tes saintes plaies." (x 10)</p>
 
 {{ mc.return_link("rondes") }}
 
 <!-- Fin -->
 
 {{ mc.anchor("fin", "=") }}
+
+<p>"Père Eternel, je t’offre les plaies de notre Seigneur Jésus-Christ pour guérir celles de nos âmes." (x 3)</p>
 
 {% include bpath + "signe-croix.jinja" %}
 
@@ -46,6 +41,6 @@
 
 {{ mc.script("utils.js") }}
 
-{{ mc.script("chapelets/ch-mercis.js") }}
+{{ mc.script("chapelets/ch-plaies.js") }}
 
 {% endblock %}

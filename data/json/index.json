@@ -7,7 +7,7 @@
         { "href" : "ex-base", "title" : "Prières de base" },
         { "href" : "chapelet", "title" : "Chapelet du rosaire" },
         { "href" : "ch-ames", "title" : "Chapelet des âmes" },
-        { "href" : "ch-mercis", "title" : "Chapelet des 1000 mercis" },
+        { "href" : "ch-plaies", "title" : "Chapelet des saintes plaies" },
         { "href" : "litanies", "title" : "Litanies de Lorette" }
     ],
     "exercices" : [

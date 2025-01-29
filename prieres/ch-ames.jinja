@@ -1,15 +1,15 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set bpath = "prieres/base/" %}
-{% set rpath = "prieres/rosaire/" %}
 {% set spath = "prieres/special/" %}
 
 {% set title = "Chapelet des âmes" %}
 
-{% block content %}
-<p>Il s'agit du <b>chapelet de Ste Gertrude</b>, basé sur la dévotion du {{ mc.link("rosaire", "/prieres/chapelet.html") }}.</p>
+{% set base_url = "https://boutique.labonnenouvelle.net/chapelets-et-rosaire/" %}
+{% set ext_url = base_url + "1073-chapelet-des-ames-du-purgatoire-9502379583487.html" %}
 
-<p>Chaque récitation de la prière des dizaines permet de libérer jusqu'à <b>1000 âmes</b> du purgatoire.</p>
+{% block content %}
+<p>Il s'agit du {{ mc.link("chapelet des 13 vertus de Notre-Dame", ext_url) }}.</p>
 
 <p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
 
@@ -21,31 +21,43 @@
 
 {% include bpath + "signe-croix.jinja" %}
 
-{% include rpath + "rs-base.jinja" %}
+{% include bpath + "credo.jinja" %}
+
+{{ mc.anchor("pater") }}
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("gloria") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.grains("base_trio", ["", "Saints", "St Michel", "Anges gardiens"]) }}
+
+{{ mc.anchor("ave") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+<!-- Médaille -->
+
+{{ mc.anchor("medaille", "=") }}
+
+{% include spath + "ex-medaille.jinja" %}
 
 <!-- Rondes -->
 
 {{ mc.anchor("rondes", "=") }}
 
-{% include rpath + "rs-mysteres.jinja" %}
+{{ mc.grains("nv_grains", range(1, 14)) }}
 
-{{ mc.anchor("dz_pater") }}
+<p id="niveau" class="gras">1. Crainte de Dieu</p>
 
-{% include bpath + "notre-pere.jinja" %}
+{% include bpath + "ste-marie.jinja" %}
 
-{{ mc.anchor("dz_priere") }}
+<hr />
 
-{% include spath + "ex-pere-eternel.jinja" %}
+{% include spath + "ex-repos.jinja" %}
 
-{{ mc.grains("dz_grains", range(0, 11)) }}
-
-{{ mc.anchor("dz_coeurs") }}
-
-{% include spath + "ex-coeurs.jinja" %}
-
-{{ mc.anchor("dz_gloria") }}
-
-{% include bpath + "gloire-pere.jinja" %}
+{{ mc.grains("nv_trio", range(0, 4)) }}
 
 {{ mc.return_link("rondes") }}
 
@@ -62,7 +74,6 @@
 {{ mc.script("utils.js") }}
 {{ mc.script("latin.js") }}
 
-{{ mc.script("chapelets/ch-mysteres.js") }}
-{{ mc.script("chapelets/ch-rosaire.js") }}
+{{ mc.script("chapelets/ch-ames.js") }}
 
 {% endblock %}
