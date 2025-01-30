@@ -1,0 +1,65 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/special/" %}
+
+{% set title = "Chapelet de libération" %}
+
+{% block content %}
+<p>Le <b>chapelet de libération</b> a été réadapté, tout en se basant sur sa version de base.</p>
+
+<p class="gauche">
+Le <b>Credo</b> se récite sur la <b>croix</b>.<br />
+Le <b>Notre Père</b> se récite sur les <b>gros grains</b>.<br />
+Le <b>verset</b> se récite sur les <b>petits grains</b>.<br />
+Le <b>Salve Regina</b> se récite <b>à la fin</b>.
+</p>
+
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+<p>{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}</p>
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.anchor("credo") }}
+
+{% include bpath + "credo.jinja" %}
+
+<!-- Rondes -->
+
+{{ mc.anchor("rondes", "=") }}
+
+{{ mc.grains("dz_rondes", range(1, 6)) }}
+
+{% include bpath + "notre-pere.jinja" %}
+
+<hr />
+
+<p>"Si Jésus me libère, je serai vraiment libre." (x 10)</p>
+
+{{ mc.return_link("rondes") }}
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+{% include bpath + "salut-reine.jinja" %}
+
+<hr />
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link(label = "Recommencer", reset = True) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
+
+{{ mc.script("chapelets/ch-liberation.js") }}
+
+{% endblock %}

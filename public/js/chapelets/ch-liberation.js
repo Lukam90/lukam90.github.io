@@ -54,4 +54,8 @@ document.addEventListener("keydown", e => {
 
         selectRonde(numKey - 1);
     }
+
+    if (e.key == "c")   goTo("#credo");
+    if (e.key == "r")   goTo("#rondes");
+    if (e.key == "f")   goTo("#final");
 });
