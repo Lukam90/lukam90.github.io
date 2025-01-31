@@ -7,7 +7,7 @@
         { "href" : "ex-base", "title" : "Prières de base" },
         { "href" : "chapelet", "title" : "Chapelet du rosaire" },
         { "href" : "ch-ames", "title" : "Chapelet des âmes" },
-        { "href" : "ch-liberation", "title" : "Chapelet de libération" },
+        { "href" : "ch-sang", "title" : "Chapelet du précieux sang" },
         { "href" : "litanies", "title" : "Litanies de Lorette" }
     ],
     "exercices" : [

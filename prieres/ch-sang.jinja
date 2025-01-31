@@ -1,19 +1,13 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set bpath = "prieres/base/" %}
+{% set rpath = "prieres/rosaire/" %}
 {% set spath = "prieres/special/" %}
 
-{% set title = "Chapelet de libération" %}
+{% set title = "Chapelet du précieux sang" %}
 
 {% block content %}
-<p>Le <b>chapelet de libération</b> a été réadapté, tout en se basant sur sa version de base.</p>
-
-<p class="gauche">
-Le <b>Credo</b> se récite sur la <b>croix</b>.<br />
-Le <b>Notre Père</b> se récite sur les <b>gros grains</b>.<br />
-Le <b>verset</b> se récite sur les <b>petits grains</b>.<br />
-Le <b>Salve Regina</b> se récite <b>à la fin</b>.
-</p>
+<p>Il s'agit d'une version simplifiée du chapelet révélé à <b>Barnabas Nwoye</b> en 1995.</p>
 
 <p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
 
@@ -25,9 +19,13 @@ Le <b>Salve Regina</b> se récite <b>à la fin</b>.
 
 {% include bpath + "signe-croix.jinja" %}
 
-{{ mc.anchor("credo") }}
+{% include rpath + "rs-base.jinja" %}
 
-{% include bpath + "credo.jinja" %}
+<!-- Médaille -->
+
+{{ mc.anchor("medaille", "=") }}
+
+{% include spath + "ex-tabernacle.jinja" %}
 
 <!-- Rondes -->
 
@@ -35,11 +33,23 @@ Le <b>Salve Regina</b> se récite <b>à la fin</b>.
 
 {{ mc.grains("dz_rondes", range(1, 6)) }}
 
+{% include spath + "ex-intros.jinja" %}
+
+{{ mc.anchor("dz_pater") }}
+
 {% include bpath + "notre-pere.jinja" %}
 
-<hr />
+{{ mc.anchor("dz_ave") }}
 
-<p>"Si Jésus me libère, je serai vraiment libre." (x 10)</p>
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.anchor("dz_priere") }}
+
+<p>"Précieux Sang de Jésus-Christ, sauve-nous et le monde entier." (x 12)</p>
+
+{{ mc.anchor("dz_gloria") }}
+
+{% include bpath + "gloire-pere.jinja" %}
 
 {{ mc.return_link("rondes") }}
 
@@ -48,6 +58,14 @@ Le <b>Salve Regina</b> se récite <b>à la fin</b>.
 {{ mc.anchor("fin", "=") }}
 
 {% include bpath + "salut-reine.jinja" %}
+
+{{ mc.anchor("ex_fin") }}
+
+{% include spath + "ex-fin.jinja" %}
+
+{{ mc.anchor("ex_litanies") }}
+
+{% include spath + "ex-litanies.jinja" %}
 
 <hr />
 
@@ -60,6 +78,6 @@ Le <b>Salve Regina</b> se récite <b>à la fin</b>.
 {{ mc.script("utils.js") }}
 {{ mc.script("latin.js") }}
 
-{{ mc.script("chapelets/ch-liberation.js") }}
+{{ mc.script("chapelets/ch-sang.js") }}
 
 {% endblock %}
