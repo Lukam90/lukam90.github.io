@@ -1,14 +1,19 @@
 /* Données texte */
 
-const plaies = ["1. les mains", "2. les pieds", "3. le dos", "4. la tête", "5. le cœur"];
+const mysteres = [
+    "1. la main droite", "2. la main gauche", 
+    "3. le pied droit", "4. le pied gauche", 
+    "5. le cœur"
+];
 
 /* Eléments */
 
-const grains = $name("dz_rondes");
+const dzRondes = $name("dz_rondes");
 
-const pRonde = $("#plaie");
+const pMystere = $("#mystere");
+const pIntro = $("#intro");
 
-let radioBtn;
+let intro;
 
 /* Variables */
 
@@ -18,20 +23,25 @@ let numKey = 0;
 /* Evénement de clic */
 
 for (let i = 0 ; i < 5 ; i++) {
-    radioBtn = grains[i];
-    radioBtn.addEventListener("click", () => selectRonde(i));
+    dzRondes[i].addEventListener("click", () => setText(i));
 }
 
 /* Fonctions */
 
+selectRonde(0);
+//setText(0);
+
 // Sélection de la ronde
 
 function selectRonde(index) {
-    radioBtn = grains[index];
-    radioBtn.checked = true;
-    radioBtn.select();
+    dzRondes[index].click();
+}
 
-    pRonde.textContent = plaies[index];
+// MAJ du mystère et de l'intro
+
+function setText(index) {
+    pMystere.textContent = mysteres[index];
+    pIntro.innerText = intros[index];
 }
 
 // Réinitialisation du chapelet
@@ -58,4 +68,9 @@ document.addEventListener("keydown", e => {
     if (e.key == "c")   goTo("#credo");
     if (e.key == "r")   goTo("#rondes");
     if (e.key == "f")   goTo("#final");
+
+    if (e.key == "p")   goTo("#dz_pater");
+    if (e.key == "a")   goTo("#dz_ave");
+    if (e.key == "d")   goTo("#dz_priere");
+    if (e.key == "g")   goTo("#dz_gloria");
 });

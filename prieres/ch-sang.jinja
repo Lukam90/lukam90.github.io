@@ -2,7 +2,7 @@
 
 {% set bpath = "prieres/base/" %}
 {% set rpath = "prieres/rosaire/" %}
-{% set spath = "prieres/special/" %}
+{% set spath = "prieres/sang/" %}
 
 {% set title = "Chapelet du précieux sang" %}
 
@@ -25,7 +25,7 @@
 
 {{ mc.anchor("medaille", "=") }}
 
-{% include spath + "ex-tabernacle.jinja" %}
+{% include spath + "sg-tabernacle.jinja" %}
 
 <!-- Rondes -->
 
@@ -33,39 +33,27 @@
 
 {{ mc.grains("dz_rondes", range(1, 6)) }}
 
-{% include spath + "ex-intros.jinja" %}
+<p id="mystere" class="gras">1. la main droite</p>
 
-{{ mc.anchor("dz_pater") }}
+<p id="intro"></p>
 
-{% include bpath + "notre-pere.jinja" %}
-
-{{ mc.anchor("dz_ave") }}
-
-{% include bpath + "ste-marie.jinja" %}
-
-{{ mc.anchor("dz_priere") }}
-
-<p>"Précieux Sang de Jésus-Christ, sauve-nous et le monde entier." (x 12)</p>
-
-{{ mc.anchor("dz_gloria") }}
-
-{% include bpath + "gloire-pere.jinja" %}
+{% include spath + "sg-douzaine.jinja" %}
 
 {{ mc.return_link("rondes") }}
 
 <!-- Fin -->
 
-{{ mc.anchor("fin", "=") }}
+{{ mc.anchor("final", "=") }}
 
 {% include bpath + "salut-reine.jinja" %}
 
 {{ mc.anchor("ex_fin") }}
 
-{% include spath + "ex-fin.jinja" %}
+{% include spath + "sg-fin.jinja" %}
 
 {{ mc.anchor("ex_litanies") }}
 
-{% include spath + "ex-litanies.jinja" %}
+{% include spath + "sg-litanies.jinja" %}
 
 <hr />
 
@@ -78,6 +66,7 @@
 {{ mc.script("utils.js") }}
 {{ mc.script("latin.js") }}
 
+{{ mc.script("chapelets/ch-intros.js") }}
 {{ mc.script("chapelets/ch-sang.js") }}
 
 {% endblock %}
