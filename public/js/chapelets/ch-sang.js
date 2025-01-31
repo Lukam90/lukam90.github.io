@@ -65,7 +65,7 @@ document.addEventListener("keydown", e => {
         selectRonde(numKey - 1);
     }
 
-    if (e.key == "c")   goTo("#credo");
+    if (e.key == "c")   goTo("#b_credo");
     if (e.key == "r")   goTo("#rondes");
     if (e.key == "f")   goTo("#final");
 
@@ -73,4 +73,5 @@ document.addEventListener("keydown", e => {
     if (e.key == "a")   goTo("#dz_ave");
     if (e.key == "d")   goTo("#dz_priere");
     if (e.key == "g")   goTo("#dz_gloria");
+    if (e.key == "t")   goTo("#dz_tabernacle");
 });
