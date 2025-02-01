@@ -1,40 +1,23 @@
-/* Données texte */
-
-const niveaux = [
-    "1. Crainte de Dieu", "2. Charité", "3. Foi",
-    "4. Espérance", "5. Obéissance", "6. Patience",
-    "7. Piété", "8. Chasteté", "9. Prudence",
-    "10. Force", "11. Tempérance", "12. Pureté",
-    "13. Justice",
-];
-
 /* Eléments */
 
-const nvGrains = $name("nv_grains");
-const nvPremier = nvGrains[0];
+const grains = $name("dz_rondes");
 
 const basePremier = $("#base_trio_1");
-const trioPremier = $("#nv_trio_1");
+const dzPremier = $("#dz_grains_1");
+const finPremier = $("#fin_trio_1");
 
-const pRonde = $("#niveau");
+/* Variables */
 
-let radioBtn;
-
-/* Evénement de clic */
-
-for (let i = 0 ; i < 13 ; i++) {
-    radioBtn = nvGrains[i];
-    radioBtn.addEventListener("click", () => majNiveau(i));
-}
+let numKey = 0;
 
 /* Fonctions */
 
-// MAJ du niveau
+selectRonde(0);
 
-function majNiveau(index) {
-    goTo("#rondes");
+// Sélection de la ronde
 
-    pRonde.textContent = niveaux[index];
+function selectRonde(index) {
+    grains[index].click();
 
     resetButtons();
 }
@@ -44,7 +27,8 @@ function majNiveau(index) {
 function resetButtons()
 {
     checkButton(basePremier);
-    checkButton(trioPremier);
+    checkButton(dzPremier);
+    checkButton(finPremier);
 }
 
 // Réinitialisation du chapelet
@@ -53,20 +37,28 @@ function resetAll() {
     goTo("#");
 
     resetButtons();
-    checkButton(nvPremier);
 
-    majNiveau(0);
+    selectRonde(0);
 }
 
 /* Raccourcis */
 
 document.addEventListener("keydown", e => {
-    if (e.key == "0")   resetAll();
+    numKey = parseInt(e.key);
 
-    if (e.key == "1")   goTo("#credo");
-    if (e.key == "2")   goTo("#pater");
-    if (e.key == "3")   goTo("#gloria");
-    if (e.key == "4")   goTo("#ave");
-    if (e.key == "5")   goTo("#medaille");
-    if (e.key == "6")   goTo("#niveaux");
+    if (numKey == 0)   resetAll();
+
+    if (numKey >= 1 && numKey <= 5) {
+        goTo("#rondes");
+
+        selectRonde(numKey - 1);
+    }
+
+    if (e.key == "c")   goTo("#b_credo");
+    if (e.key == "p")   goTo("#b_pater");
+    if (e.key == "a")   goTo("#b_ave");
+    if (e.key == "g")   goTo("#b_gloria");
+
+    if (e.key == "r")   goTo("#rondes");
+    if (e.key == "f")   goTo("#final");
 });

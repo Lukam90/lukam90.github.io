@@ -1,15 +1,12 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set bpath = "prieres/base/" %}
-{% set spath = "prieres/ames/" %}
+{% set rpath = "prieres/rosaire/" %}
 
-{% set title = "Chapelet des âmes" %}
-
-{% set base_url = "https://boutique.labonnenouvelle.net/chapelets-et-rosaire/" %}
-{% set ext_url = base_url + "1073-chapelet-des-ames-du-purgatoire-9502379583487.html" %}
+{% set title = "Chapelet du salut des âmes" %}
 
 {% block content %}
-<p>Il s'agit du {{ mc.link("chapelet des 13 vertus de Notre-Dame", ext_url) }}.</p>
+<p>La récitation du chapelet permet de libérer jusqu'à <b>5000 âmes</b> sur <b>4 générations</b>.</p>
 
 <p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
 
@@ -21,51 +18,39 @@
 
 {% include bpath + "signe-croix.jinja" %}
 
-<hr id="credo" />
-
-{% include bpath + "credo.jinja" %}
-
-{{ mc.anchor("pater") }}
-
-{% include bpath + "notre-pere.jinja" %}
-
-{{ mc.anchor("gloria") }}
-
-{% include bpath + "gloire-pere.jinja" %}
-
-{{ mc.grains("base_trio", ["", "Saints", "St Michel", "Anges gardiens"]) }}
-
-{{ mc.anchor("ave") }}
-
-{% include bpath + "ste-marie.jinja" %}
-
-<!-- Médaille -->
-
-{{ mc.anchor("medaille", "=") }}
-
-{% include spath + "ex-medaille.jinja" %}
+{% include rpath + "rs-base.jinja" %}
 
 <!-- Rondes -->
 
-{{ mc.anchor("niveaux", "=") }}
+{{ mc.anchor("rondes", "=") }}
 
-{{ mc.grains("nv_grains", range(1, 14)) }}
+{{ mc.grains("dz_rondes", range(1, 6)) }}
 
-<p id="niveau" class="gras">1. Crainte de Dieu</p>
-
-{% include bpath + "ste-marie.jinja" %}
+<p>
+Père Eternel, je vous offre le Sacré-Cœur de Jésus et le Cœur Immaculé de Marie<br>
+pour le salut de nos âmes, de nos familles et du monde entier.
+</p>
 
 <hr />
 
-{% include spath + "ex-repos.jinja" %}
+<p>
+Sacré-Cœur de Jésus, aie pitié de nous.<br>
+Cœur Immaculé de Marie, priez pour nous.
+</p>
 
-{{ mc.grains("nv_trio", range(0, 4)) }}
+{{ mc.grains("dz_grains", range(0, 11)) }}
 
-{{ mc.return_link("niveaux") }}
+{{ mc.return_link("rondes") }}
 
 <!-- Fin -->
 
-{{ mc.anchor("fin", "=") }}
+{{ mc.anchor("final", "=") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.grains("fin_trio", ["-", "Père", "Fils", "Saint-Esprit"]) }}
+
+<hr />
 
 {% include bpath + "signe-croix.jinja" %}
 

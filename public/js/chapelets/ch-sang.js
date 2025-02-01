@@ -29,7 +29,6 @@ for (let i = 0 ; i < 5 ; i++) {
 /* Fonctions */
 
 selectRonde(0);
-//setText(0);
 
 // Sélection de la ronde
 
