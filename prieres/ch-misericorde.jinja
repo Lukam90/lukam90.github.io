@@ -1,0 +1,80 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set mpath = "prieres/misericorde/" %}
+
+{% set title = "Chapelet de la Miséricorde Divine" %}
+
+{% block content %}
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
+
+<p>{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}</p>
+
+{% include bpath + "signe-croix.jinja" %}
+
+<!-- Intro -->
+
+{{ mc.anchor("intro", "=") }}
+
+{% include mpath + "mis-intro.jinja" %}
+
+<!-- Base -->
+
+{{ mc.anchor("pater") }}
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("ave") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.anchor("credo") }}
+
+{% include bpath + "credo.jinja" %}
+
+<!-- Rondes -->
+
+{{ mc.anchor("rondes", "=") }}
+
+{{ mc.grains("dz_rondes", range(1, 6)) }}
+
+<p>Je prie pour la miséricorde de <input type="text" id="intention" />.</p>
+
+<p>
+Père Éternel, je Vous offre le corps et le sang,<br>
+l'âme et la divinité de Votre Fils bien-aimé,<br>
+notre Seigneur Jésus-Christ,<br>
+en réparation de nos péchés<br>
+et de ceux du monde entier.
+</p>
+
+<hr />
+
+<p>"Par sa douloureuse Passion, soyez miséricordieux pour nous et le monde entier." (x 10)</p>
+
+{{ mc.return_link("rondes") }}
+
+<!-- Fin -->
+
+{{ mc.anchor("final", "=") }}
+
+<p>"Dieu saint, Dieu fort, Dieu éternel, ayez pitié de nous et du monde entier." (x 3)</p>
+
+{{ mc.anchor("ex_fin") }}
+
+{% include mpath + "mis-fin.jinja" %}
+
+<hr />
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link(label = "Recommencer", reset = True) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
+
+{{ mc.script("chapelets/ch-misericorde.js") }}
+
+{% endblock %}
