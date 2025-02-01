@@ -2,17 +2,9 @@
 
 const dzRondes = $name("dz_rondes");
 
-const txtIntention = $("#intention");
-
 /* Variables */
 
 let numKey = 0;
-
-/* Evénement de clic */
-
-for (let i = 0 ; i < 5 ; i++) {
-    dzRondes[i].addEventListener("click", () => resetText());
-}
 
 /* Fonctions */
 
@@ -22,12 +14,6 @@ selectRonde(0);
 
 function selectRonde(index) {
     dzRondes[index].click();
-}
-
-// Réinitialisation du texte de l'intention
-
-function resetText() {
-    txtIntention.value = "";
 }
 
 // Réinitialisation du chapelet

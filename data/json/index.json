@@ -6,7 +6,8 @@
     "prieres" : [
         { "href" : "ex-base", "title" : "Prières de base" },
         { "href" : "chapelet", "title" : "Chapelet du rosaire" },
-        { "href" : "ch-liberation", "title" : "Chapelet de libération" },
+        { "href" : "ch-devotion", "title" : "Chapelet de dévotion (*)" },
+        { "href" : "ch-liberation", "title" : "Chapelet de libération (*)" },
         { "href" : "ch-misericorde", "title" : "Chapelet de la Miséricorde Divine" },
         { "href" : "litanies", "title" : "Litanies de Lorette" }
     ],
