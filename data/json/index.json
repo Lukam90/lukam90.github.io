@@ -3,14 +3,6 @@
         { "href" : "cv-imprime", "title" : "Mon nouveau CV" },
         { "href" : "portfolio", "title" : "Ma page de portfolio (en cours)" }
     ],
-    "prieres" : [
-        { "href" : "ex-base", "title" : "Prières de base" },
-        { "href" : "chapelet", "title" : "Chapelet du rosaire" },
-        { "href" : "ch-devotion", "title" : "Chapelet de dévotion (*)" },
-        { "href" : "ch-liberation", "title" : "Chapelet de libération (*)" },
-        { "href" : "ch-misericorde", "title" : "Chapelet de la Miséricorde Divine" },
-        { "href" : "litanies", "title" : "Litanies de Lorette" }
-    ],
     "exercices" : [
         { "href" : "ex-musical", "title" : "Cohérence cardiaque" }
     ]

@@ -9,7 +9,6 @@ cp -r data $target
 cp -r exercices $target
 cp -r layouts $target
 cp -r posts $target
-cp -r prieres $target
 
 cp -r public/css $target
 cp -r public/icons $target

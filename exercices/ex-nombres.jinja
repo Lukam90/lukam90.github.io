@@ -2,8 +2,6 @@
 
 {% set title = "Exercice des Nombres" %}
 
-{% set spath = "prieres/saints/" %}
-
 {% set vroot = "https://www.youtube.com/watch?v=" %}
 
 {% block content %}
@@ -25,10 +23,6 @@
 
     <p>5 8 9 3 2 4 0</p>
 
-    <h2>Ex Lecture</h2>
-
-    {% include spath + "st-esprit.jinja" %}
-
     <h2>Ex Chants Grégoriens</h2>
 
     <p>{{ mc.link("Pater Noster", vroot + "uxuSG19wuss") }}</p>
@@ -43,4 +37,5 @@
 </div>
 
 {{ mc.script("test.js") }}
+
 {% endblock %}
