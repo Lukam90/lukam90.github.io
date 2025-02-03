@@ -3,6 +3,10 @@
         { "href" : "cv-imprime", "title" : "Mon nouveau CV" },
         { "href" : "portfolio", "title" : "Ma page de portfolio (en cours)" }
     ],
+    "prieres" : [
+        { "href" : "ex-base", "title" : "Prières de base" },
+        { "href" : "rosaire", "title" : "Chapelet du rosaire" }
+    ],
     "exercices" : [
         { "href" : "ex-musical", "title" : "Cohérence cardiaque" }
     ]

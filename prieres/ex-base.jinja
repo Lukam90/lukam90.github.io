@@ -1,0 +1,49 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set rpath = "prieres/rosaire/" %}
+
+{% set title = "Prières de base" %}
+
+{% block content %}
+<h2>Signe de croix</h2>
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.header("credo", "Credo") }}
+
+{% include bpath + "credo.jinja" %}
+
+{{ mc.header("pater", "Notre Père") }}
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.header("ave", "Je vous salue Marie") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.header("gloria", "Gloire au Père") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.header("fatima", "Prière de Fatima") }}
+
+{% include bpath + "priere-fatima.jinja" %}
+
+{{ mc.header("salve", "Salut ô Reine") }}
+
+{% include bpath + "salut-reine.jinja" %}
+
+{{ mc.header("bref", "Bref de St Antoine") }}
+
+{% include bpath + "ex-bref.jinja" %}
+
+{{ mc.return_link() }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+
+{{ mc.script("chapelets/ch-base.js") }}
+
+{% endblock %}
