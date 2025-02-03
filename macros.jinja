@@ -99,12 +99,12 @@
 
 <!-- Boutons radio => Grains -->
 
-{% macro grains(name, list) %}
+{% macro grains(name, list, event = None) %}
     <p class="grains">
     {% for value in list %}
         {% set id = name + "_" + loop.index | string %}
 
-        {{ radio_btn(id, name, value) }}
+        {{ radio_btn(id, name, value, event) }}
     {% endfor %}
     </p>
 {% endmacro %}

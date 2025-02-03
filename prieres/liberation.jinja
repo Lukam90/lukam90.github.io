@@ -1,0 +1,59 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+
+{% set title = "Chapelet de libération" %}
+
+{% block content %}
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+<p>(Signe de croix)</p>
+
+<p>Credo</p>
+
+<!-- Rondes -->
+
+{{ mc.anchor("rondes", "=") }}
+
+{{ mc.grains("dz_rondes", range(0,6)) }}
+
+<p>"Si donc le Fils vous libère, vous serez réellement libres." (Jean 8,36)</p>
+
+<p>
+Jésus, aie pitié de moi !<br>
+Jésus, guéris-moi !<br>
+Jésus, sauve-moi !<br>
+Jésus, libère-moi !
+</p>
+
+<hr />
+
+<div id="trio">
+{{ mc.grains("base_trio", range(0,4)) }}
+</div>
+
+<div id="dizaines">
+{{ mc.grains("dz_grains", range(0,11)) }}
+</div>
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+<p>Salut ô reine</p>
+
+<p>(Signe de croix)</p>
+
+{{ mc.return_link(label = "Recommencer", reset = True) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+
+{{ mc.script("chapelets/ch-liberation.js") }}
+
+{% endblock %}

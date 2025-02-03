@@ -7,7 +7,8 @@
         { "href" : "ex-base", "title" : "Prières de base" },
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
-        { "href" : "plaies", "title" : "Chapelet des saintes plaies" }
+        { "href" : "plaies", "title" : "Chapelet des saintes plaies" },
+        { "href" : "liberation", "title" : "Chapelet de libération" }
     ],
     "exercices" : [
         { "href" : "ex-musical", "title" : "Cohérence cardiaque" }
