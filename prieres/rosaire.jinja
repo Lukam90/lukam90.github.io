@@ -1,0 +1,62 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set rpath = "prieres/rosaire/" %}
+
+{% set title = "Chapelet du rosaire" %}
+
+{% block content %}
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
+
+<p>Je recommande l'application {{ mc.link("Rosario", "https://rosario.app/") }} pour la méditation des <b>mystères</b>.</p>
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+<p>(Signe de croix)</p>
+
+<p>Credo</p>
+
+<p>Notre Père</p>
+
+<p>
+3 x Je vous salue Marie<br>
+(foi, espérance, charité)
+</p>
+
+<p>Gloire au Père</p>
+
+<!-- Mystères -->
+
+{{ mc.anchor("m_joyeux", "=") }}
+
+{% include rpath + "rs-joyeux.jinja" %}
+
+{{ mc.anchor("m_lumineux") }}
+
+{% include rpath + "rs-lumineux.jinja" %}
+
+{{ mc.anchor("m_douloureux") }}
+
+{% include rpath + "rs-douloureux.jinja" %}
+
+{{ mc.anchor("m_glorieux") }}
+
+{% include rpath + "rs-glorieux.jinja" %}
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+<p>(Signe de croix)</p>
+
+{{ mc.return_link(label = "Recommencer", reset = True) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+
+{{ mc.script("chapelets/ch-rosaire.js") }}
+
+{% endblock %}
