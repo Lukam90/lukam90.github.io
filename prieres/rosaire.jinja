@@ -29,21 +29,36 @@
 
 <!-- Mystères -->
 
-{{ mc.anchor("m_joyeux", "=") }}
+{{ mc.anchor("mysteres", "=") }}
 
-{% include rpath + "rs-joyeux.jinja" %}
+<p>
+    Mystères
 
-{{ mc.anchor("m_lumineux") }}
+    <select id="sel_type" onchange="selectType();">
+        <option>joyeux</option>
+        <option>lumineux</option>
+        <option>douloureux</option>
+        <option>glorieux</option>
+    </select>
+</p>
 
-{% include rpath + "rs-lumineux.jinja" %}
+<ul class="priere gauche">
+    <li>{{ mc.radio_btn("m1", "mysteres", "1. L'annonciation") }} </li>
+    <li>{{ mc.radio_btn("m2", "mysteres", "2. La visitation") }} </li>
+    <li>{{ mc.radio_btn("m3", "mysteres", "3. la naissance de Jésus") }} </li>
+    <li>{{ mc.radio_btn("m4", "mysteres", "4. la présentation de Jésus au temple de Jérusalem") }} </li>
+    <li>{{ mc.radio_btn("m5", "mysteres", "5. le recouvrement de Jésus au temple de Jérusalem") }} </li>
+</ul>
 
-{{ mc.anchor("m_douloureux") }}
+<hr />
 
-{% include rpath + "rs-douloureux.jinja" %}
+<p>Notre Père</p>
 
-{{ mc.anchor("m_glorieux") }}
+<p>10 x Je vous salue Marie</p>
 
-{% include rpath + "rs-glorieux.jinja" %}
+<p>{{ mc.grains("dz_grains", range(0,11)) }}</p>
+
+<p>Gloire Père</p>
 
 <!-- Fin -->
 
