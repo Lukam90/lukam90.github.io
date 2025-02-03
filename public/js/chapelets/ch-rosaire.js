@@ -38,7 +38,7 @@ const selType = $("#sel_type");
 const mGrains = $name("mysteres");
 const mLabels = $all("label");
 
-const dzPremier = $("#dz_grains_1");
+const dzPremier = $("#dz_debut");
 
 /* Variables */
 
