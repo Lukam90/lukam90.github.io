@@ -5,7 +5,8 @@
     ],
     "prieres" : [
         { "href" : "ex-base", "title" : "Prières de base" },
-        { "href" : "rosaire", "title" : "Chapelet du rosaire" }
+        { "href" : "rosaire", "title" : "Chapelet du rosaire" },
+        { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" }
     ],
     "exercices" : [
         { "href" : "ex-musical", "title" : "Cohérence cardiaque" }
