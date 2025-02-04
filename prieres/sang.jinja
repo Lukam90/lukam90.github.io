@@ -1,0 +1,82 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/sang/" %}
+
+{% set title = "Chapelet du précieux sang" %}
+
+{% block content %}
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
+
+<p>(*) Baisser la tête</p>
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+<p>(Signe de croix)</p>
+
+{% include spath + "ex-chant.jinja" %}
+
+{{ mc.anchor("st_esprit") }}
+
+{% include spath + "ex-saint-esprit.jinja" %}
+
+{{ mc.anchor("ex_base") }}
+
+<p>Credo</p>
+
+{% include spath + "ex-transition.jinja" %}
+
+{% include spath + "ex-fin-intro.jinja" %}
+
+<p>Notre Père</p>
+
+<p>
+3 x Je vous salue Marie<br>
+(foi, espérance, charité)
+</p>
+
+<p>Gloire au Père</p>
+
+{% include spath + "ex-transition.jinja" %}
+
+<!-- Dizaines -->
+
+{{ mc.anchor("dizaines", "=") }}
+
+<p>{{ mc.grains("dz_rondes", range(1,6)) }}</p>
+
+{# include spath + "ex-intros.jinja" #}
+
+{% include spath + "ex-fin-intro.jinja" %}
+
+<hr />
+
+<p>Notre Père</p>
+
+<p>Je vous salue Marie</p>
+
+<p>"Précieux Sang de Jésus-Christ, sauvez-nous et le monde entier." (x 12)</p>
+
+<p>Gloire au Père</p>
+
+{% include spath + "ex-transition.jinja" %}
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+<p></p>
+
+<p>(Signe de croix)</p>
+
+{{ mc.return_link(label = "Recommencer", reset = True) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+
+{{ mc.script("chapelets/ch-sang.js") }}
+
+{% endblock %}
