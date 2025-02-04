@@ -47,7 +47,9 @@
 
 <p>{{ mc.grains("dz_rondes", range(1,6)) }}</p>
 
-{# include spath + "ex-intros.jinja" #}
+<p class="gras"><span id="mystere">Enfoncement du clou dans la main droite</span> de Notre Seigneur Jésus</p>
+
+{% include spath + "ex-intros.jinja" %}
 
 {% include spath + "ex-coeur.jinja" %}
 
@@ -62,6 +64,12 @@
 <p class="gras">Gloire au Père</p>
 
 {% include spath + "ex-transition.jinja" %}
+
+<div id="dernier">
+{% include spath + "ex-coeur.jinja" %}
+</div>
+
+{{ mc.return_link("dizaines") }}
 
 <!-- Fin -->
 
