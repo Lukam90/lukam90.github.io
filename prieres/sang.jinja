@@ -24,20 +24,20 @@
 
 {{ mc.anchor("ex_base") }}
 
-<p>Credo</p>
+<p class="gras">Credo</p>
 
 {% include spath + "ex-transition.jinja" %}
 
-{% include spath + "ex-fin-intro.jinja" %}
+{% include spath + "ex-coeur.jinja" %}
 
-<p>Notre Père</p>
+<p class="gras">Notre Père</p>
 
 <p>
-3 x Je vous salue Marie<br>
+3 x <b>Je vous salue Marie</b><br>
 (foi, espérance, charité)
 </p>
 
-<p>Gloire au Père</p>
+<p class="gras">Gloire au Père</p>
 
 {% include spath + "ex-transition.jinja" %}
 
@@ -49,17 +49,17 @@
 
 {# include spath + "ex-intros.jinja" #}
 
-{% include spath + "ex-fin-intro.jinja" %}
+{% include spath + "ex-coeur.jinja" %}
 
 <hr />
 
-<p>Notre Père</p>
+<p class="gras">Notre Père</p>
 
-<p>Je vous salue Marie</p>
+<p class="gras">Je vous salue Marie</p>
 
 <p>"Précieux Sang de Jésus-Christ, sauvez-nous et le monde entier." (x 12)</p>
 
-<p>Gloire au Père</p>
+<p class="gras">Gloire au Père</p>
 
 {% include spath + "ex-transition.jinja" %}
 
@@ -67,7 +67,18 @@
 
 {{ mc.anchor("fin", "=") }}
 
-<p></p>
+{% include bpath + "salut-reine.jinja" %}
+
+<p class="gauche">
+V. Priez pour nous, sainte Mère de Dieu,<br>
+R. afin que nous devenions dignes des promesses de Jésus Christ. 
+</p>
+
+{{ mc.anchor("ex_final") }}
+
+{% include spath + "ex-final.jinja" %}
+
+<hr />
 
 <p>(Signe de croix)</p>
 
