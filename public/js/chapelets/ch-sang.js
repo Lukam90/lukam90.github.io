@@ -13,6 +13,7 @@ const mysteres = [
 const grains = $name("dz_rondes");
 
 const pMystere = $("#mystere");
+const pDernier = $("#dernier");
 
 const intros = $all(".intro");
 
@@ -45,6 +46,10 @@ function setIntro(index)
     hideAll(intros);
 
     showBlock(intro);
+
+    hideBlock(pDernier)
+
+    if (index == 4) showBlock(pDernier);
 }
 
 // Sélection d'une ronde
