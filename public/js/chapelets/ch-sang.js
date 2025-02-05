@@ -12,8 +12,6 @@ const mysteres = [
 
 const grains = $name("dz_rondes");
 
-const btnPremier = grains[0];
-
 const pMystere = $("#mystere");
 
 const intros = $all(".intro");
@@ -53,6 +51,8 @@ function setIntro(index)
 
 function selectRonde(index)
 {
+    goTo("#dizaines");
+
     grains[index].click();
 }
 
@@ -60,9 +60,9 @@ function selectRonde(index)
 
 function resetAll()
 {
-    goTo("#");
-
     selectRonde(0);
+
+    goTo("#");
 }
 
 /* Raccourcis */
