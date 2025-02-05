@@ -32,7 +32,16 @@ for (let i = 0 ; i < 5 ; i++)
 
 /* Fonctions */
 
-resetAll();
+selectRonde(0);
+
+// Changement d'intro
+
+function switchIntro()
+{
+    hideAll(intros);
+
+    showBlock(intro);
+}
 
 // MAJ de l'intro
 
@@ -43,9 +52,7 @@ function setIntro(index)
 
     pMystere.textContent = mystere;
 
-    hideAll(intros);
-
-    showBlock(intro);
+    switchIntro();
 
     hideBlock(pDernier)
 
@@ -56,8 +63,6 @@ function setIntro(index)
 
 function selectRonde(index)
 {
-    goTo("#dizaines");
-
     grains[index].click();
 }
 
@@ -65,9 +70,9 @@ function selectRonde(index)
 
 function resetAll()
 {
-    selectRonde(0);
-
     goTo("#");
+
+    selectRonde(0);
 }
 
 /* Raccourcis */
@@ -77,5 +82,9 @@ document.addEventListener("keydown", e => {
 
     if (numKey == 0)   resetAll();
 
-    if (numKey >= 1 && numKey <= 5)   selectRonde(numKey - 1);
+    if (numKey >= 1 && numKey <= 5) {
+        goTo("#dizaines");
+
+        selectRonde(numKey - 1);
+    }
 });

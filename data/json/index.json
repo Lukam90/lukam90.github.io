@@ -6,11 +6,12 @@
     "prieres" : [
         { "href" : "ex-base", "title" : "Prières de base" },
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
-        { "href" : "mercis", "title" : "Chapelet des 1000 mercis" },
         { "href" : "sang", "title" : "Chapelet du précieux sang" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
         { "href" : "plaies", "title" : "Chapelet des saintes plaies" },
-        { "href" : "liberation", "title" : "Chapelet de libération" }
+        { "href" : "devotion", "title" : "Chapelet de dévotion" },
+        { "href" : "liberation", "title" : "Chapelet de libération" },
+        { "href" : "mercis", "title" : "Chapelet des 1000 mercis" }
     ],
     "exercices" : [
         { "href" : "ex-musical", "title" : "Cohérence cardiaque" }
