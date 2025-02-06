@@ -2,7 +2,7 @@
 
 {% set title = "Exercice des Nombres" %}
 
-{% set vroot = "https://www.youtube.com/watch?v=" %}
+{% set spath = "prieres/sang/" %}
 
 {% block content %}
 <audio loop autoplay id="subliminal">
@@ -25,19 +25,7 @@
 
     <h2>Ex Lecture</h2>
 
-    <p>
-    Veni Sancte Spiritus.<br>
-    Veni Sancte Spiritus.<br>
-    Veni Sancte Spiritus.<br>
-    Veni Sancte Spiritus.<br>
-    Veni Sancte Spiritus. (5)<br>
-
-    Veni Sancte Spiritus.<br>
-    Veni Sancte Spiritus.<br>
-    Veni Sancte Spiritus.<br>
-    Veni Sancte Spiritus.<br>
-    Veni Sancte Spiritus. (10)
-    </p>
+    {% include spath + "lit-victoire.jinja" %}
 
     <h2>Ex Chants Grégoriens</h2>
 
