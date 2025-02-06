@@ -94,7 +94,7 @@
 
 {% macro radio_btn(id, name, value, event = None) %}
 <input type="radio" name="{{ name }}" id="{{ id }}" {% if event %} onclick="{{ event }}" {% endif %} />
-<label for="{{ id }}">{{ value }}</label>
+<label for="{{ id }}" class="{{ name }}">{{ value }}</label>
 {% endmacro %}
 
 <!-- Boutons radio => Grains -->

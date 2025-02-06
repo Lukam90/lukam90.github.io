@@ -36,7 +36,7 @@ const rosaire = {
 const selType = $("#sel_type");
 
 const mGrains = $name("mysteres");
-const mLabels = $all("label");
+const mLabels = $all(".mysteres");
 
 const checkboxes = $all("input[type='checkbox']");
 
