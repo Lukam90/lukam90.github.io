@@ -38,7 +38,9 @@ const selType = $("#sel_type");
 const mGrains = $name("mysteres");
 const mLabels = $all("label");
 
-const dzPremier = $("#dz_debut");
+const checkboxes = $all("input[type='checkbox']");
+
+const dzPremier = $("#dz_grains_1");
 
 /* Variables */
 
@@ -75,6 +77,8 @@ function selectType()
 function selectMystere(index)
 {
     mGrains[index].click();
+
+    resetDizaine();
 }
 
 // Réinitialisation de la dizaine
@@ -82,6 +86,8 @@ function selectMystere(index)
 function resetDizaine()
 {
     dzPremier.click();
+
+    uncheckAll(checkboxes);
 }
 
 // Réinitialisation du rosaire

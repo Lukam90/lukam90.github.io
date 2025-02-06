@@ -71,6 +71,16 @@ function checkFirst()
     btnPremier.checked = true;
 }
 
+// Décochage de toutes les cases
+
+function uncheckAll(checkboxes)
+{
+    for (let cb of checkboxes)
+    {
+        cb.checked = false;
+    }
+}
+
 /* Ancres */
 
 function goTo(anchor) {

@@ -15,16 +15,16 @@
 
 <p>(Signe de croix)</p>
 
-<p>Credo</p>
+<p>{{ mc.checkbox("b_credo", "Credo") }}</p>
 
-<p>Notre Père</p>
+<p>{{ mc.checkbox("b_pater", "Notre Père") }}</p>
 
 <p>
-3 x Je vous salue Marie<br>
+{{ mc.checkbox("b_ave", "3 x Je vous salue Marie") }}<br>
 (foi, espérance, charité)
 </p>
 
-<p>Gloire au Père</p>
+<p>{{ mc.checkbox("b_gloria", "Gloire au Père") }}</p>
 
 <!-- Mystères -->
 
@@ -51,17 +51,15 @@
 
 <hr />
 
-<p>{{ mc.radio_btn("dz_debut", "dizaine", "Notre Père") }}</p>
+<p>{{ mc.checkbox("dz_pater", "Notre Père") }}</p>
 
 <p>10 x Je vous salue Marie</p>
 
-<p>
-{% for nb in range(0,11) %}
-    {{ mc.radio_btn("dz_grains_" + nb | string, "dizaine", nb) }}
-{% endfor %}
-</p>
+{{ mc.grains("dz_grains", range(0, 11)) }}
 
-<p>{{ mc.radio_btn("dz_fin", "dizaine", "Gloire Père") }}</p>
+<p>{{ mc.checkbox("dz_gloria", "Gloire Père") }}</p>
+
+<p>{{ mc.checkbox("dz_fatima", "(Prière de Fatima)") }}</p>
 
 <!-- Fin -->
 
