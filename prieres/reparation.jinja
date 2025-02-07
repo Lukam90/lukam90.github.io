@@ -8,13 +8,15 @@
 {% block content %}
 <p>Il s'agit du chapelet enseigné par l'ange à Fatima.</p>
 
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
+
 <!-- Base -->
 
 {{ mc.anchor("base", "=") }}
 
 <p>(Signe de croix)</p>
 
-<p class="gras">Credo</p>
+<p>{{ mc.checkbox("b_credo", "Credo") }}</p>
 
 {{ mc.anchor("acte") }}
 
@@ -30,15 +32,15 @@
 
 {% include rpath + "ex-trinite.jinja" %}
 
-{{ mc.anchor("dz_priere") }}
+<hr />
 
 {% include rpath + "re-dizaine.jinja" %}
 
 {{ mc.grains("dz_grains", range(0, 11)) }}
 
-{{ mc.anchor("dz_fin") }}
+<hr />
 
-{% include bpath + "priere-fatima.jinja" %}
+<p>{{ mc.checkbox("dz_fatima", "Prière de Fatima") }}</p>
 
 <!-- Fin -->
 

@@ -2,6 +2,8 @@
 
 const dzRondes = $name("dz_rondes");
 
+const checkboxes = $all("input[type='checkbox']");
+
 const trioPremier = $("#base_trio_1");
 const btnPremier = $("#dz_grains_1");
 
@@ -31,6 +33,8 @@ function resetButtons()
 {
     checkButton(trioPremier);
     checkButton(btnPremier);
+
+    uncheckAll(checkboxes);
 }
 
 // Réinitialisation du rosaire
@@ -50,7 +54,7 @@ document.addEventListener("keydown", e => {
     if (numKey == 0)   resetAll();
 
     if (numKey >= 1 && numKey <= 5) {
-        goTo("#rondes");
+        goTo("#dz_rondes_" + numKey);
 
         selectRonde(numKey - 1);
     }
