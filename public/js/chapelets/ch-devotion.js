@@ -19,6 +19,8 @@ function resetAll()
 
 document.addEventListener("keydown", e => {
     if (e.key == "0")   resetAll();
-    if (e.key == "1")   goTo("#rondes");
-    if (e.key == "2")   goTo("#fin");
+
+    if (e.key == "1")   goTo("#pater_trio_1");
+    if (e.key == "2")   goTo("#ave_trio_1");
+    if (e.key == "3")   goTo("#gloria_trio_1");
 });
