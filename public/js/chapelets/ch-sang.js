@@ -12,6 +12,8 @@ const mysteres = [
 
 const grains = $name("dz_rondes");
 
+const checkboxes = $all("input[type='checkbox']");
+
 const pMystere = $("#mystere");
 const pDernier = $("#dernier");
 
@@ -54,7 +56,9 @@ function setIntro(index)
 
     switchIntro();
 
-    hideBlock(pDernier)
+    uncheckAll(checkboxes);
+
+    hideBlock(pDernier);
 
     if (index == 4) showBlock(pDernier);
 }

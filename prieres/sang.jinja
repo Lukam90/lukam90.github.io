@@ -24,20 +24,20 @@
 
 {{ mc.anchor("ex_base") }}
 
-<p class="gras">Credo</p>
+<p>{{ mc.checkbox("b_credo", "Credo") }}</p>
 
 {% include spath + "ex-transition.jinja" %}
 
 {% include spath + "ex-coeur.jinja" %}
 
-<p class="gras">Notre Père</p>
+<p>{{ mc.checkbox("b_pater", "Notre Père") }}</p>
 
 <p>
-3 x <b>Je vous salue Marie</b><br>
+{{ mc.checkbox("b_ave", "3 x Je vous salue Marie") }}<br>
 (foi, espérance, charité)
 </p>
 
-<p class="gras">Gloire au Père</p>
+<p>{{ mc.checkbox("b_gloria", "Gloire au Père") }}</p>
 
 {% include spath + "ex-transition.jinja" %}
 
@@ -55,13 +55,13 @@
 
 <hr />
 
-<p class="gras">Notre Père</p>
+<p>{{ mc.checkbox("dz_pater", "Notre Père") }}</p>
 
-<p class="gras">Je vous salue Marie</p>
+<p>{{ mc.checkbox("dz_ave", "Je vous salue Marie") }}</p>
 
 <p>"Précieux Sang de Jésus-Christ, sauvez-nous et le monde entier." (x 12)</p>
 
-<p class="gras">Gloire au Père</p>
+<p>{{ mc.checkbox("dz_gloria", "Gloire Père") }}</p>
 
 {% include spath + "ex-transition.jinja" %}
 
