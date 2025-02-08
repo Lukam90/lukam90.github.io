@@ -1,0 +1,87 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/ames/" %}
+
+{% set base_url = "https://boutique.labonnenouvelle.net/chapelets-et-rosaire/" %}
+{% set ext_url = base_url + "1073-chapelet-des-ames-du-purgatoire-9502379583487.html" %}
+
+{% set title = "Chapelet de libération des âmes" %}
+
+{% block content %}
+<p>Il s'agit du {{ mc.link("chapelet des 13 vertus de Notre-Dame", ext_url) }}.</p>
+
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+<p>(Signe de croix)</p>
+
+<p>{{ mc.checkbox("b_credo", "Credo") }}</p>
+
+<p>{{ mc.checkbox("b_pater", "Notre Père") }}</p>
+
+<p>
+{{ mc.checkbox("b_gloria", "3 x Gloire au Père") }}<br>
+(Saints, Saint Michel, Anges gardiens)
+</p>
+
+<p>{{ mc.checkbox("b_ave", "Je vous salue Marie") }}</p>
+
+<!-- Médaille -->
+
+{{ mc.anchor("medaille", "=") }}
+
+<p>
+Mère de la Miséricorde Divine,<br>
+intercédez pour les Saintes âmes détenues au Purgatoire,<br>
+par la puissance de Votre Cœur Immaculé,<br>
+pour glorifier Dieu en vue du Salut de toutes les âmes.
+</p>
+
+<!-- Niveaux -->
+
+{{ mc.anchor("niveaux", "=") }}
+
+<p>
+    <select id="sel_niveaux">
+        <option>1. Crainte de Dieu</option>
+        <option>2. Charité</option>
+        <option>3. Foi</option>
+        <option>4. Espérance</option>
+        <option>5. Obéissance</option>
+        <option>6. Patience</option>
+        <option>7. Piété</option>
+        <option>8. Chasteté</option>
+        <option>9. Prudence</option>
+        <option>10. Force</option>
+        <option>11. Tempérance</option>
+        <option>12. Pureté</option>
+        <option>13. Justice</option>
+    </select>
+</p>
+
+<p>{{ mc.checkbox("nv_ave", "Je vous salue Marie") }}</p>
+
+<p>
+Ô Seigneur, donnez-leur le repos éternel et faites briller sur eux la lumière éternelle.<br>
+Que les âmes des fidèles défunts reposent en paix par la miséricorde de Dieu. Amen. (x 3)
+</p>
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+<p>(Signe de croix)</p>
+
+{{ mc.return_link(label = "Recommencer", reset = True) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+
+{{ mc.script("chapelets/ch-ames.js") }}
+
+{% endblock %}
