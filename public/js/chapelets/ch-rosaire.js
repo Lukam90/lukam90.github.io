@@ -24,7 +24,7 @@ const rosaire = {
     ],
     glorieux : [
         "1. La résurrection de Jésus",
-        "2. L'ascension",
+        "2. L'ascension de Jésus",
         "3. La Pentecôte",
         "4. L'Assomption de Marie",
         "5. Le couronnement de Marie"
