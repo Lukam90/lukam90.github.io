@@ -23,6 +23,8 @@ for (let i = 0 ; i < 5 ; i++)
 
 function selectRonde(index)
 {
+    goTo("#rondes");
+
     grains[index].click();
 }
 
