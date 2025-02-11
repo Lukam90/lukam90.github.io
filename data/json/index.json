@@ -6,9 +6,8 @@
     "prieres" : [
         { "href" : "ex-base", "title" : "Prières de base" },
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
-        { "href" : "sang", "title" : "Chapelet du précieux sang" },
-        { "href" : "devotion", "title" : "Chapelet de dévotion" },
-        { "href" : "mercis", "title" : "Chapelet des 1000 mercis" }
+        { "href" : "plaies", "title" : "Chapelet des saintes plaies" },
+        { "href" : "devotion", "title" : "Chapelet de dévotion" }
     ],
     "exercices" : [
         { "href" : "ex-musical", "title" : "Cohérence cardiaque" }
