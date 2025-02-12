@@ -1,0 +1,98 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+
+{% set title = "Chapelet de libération des âmes" %}
+
+{% block content %}
+<p>Il s'agit du <b>chapelet de Ste Gertrude</b>.</p>
+
+<p>Chaque récitation de la prière des dizaines permet de libérer jusqu'à <b>1000 âmes</b> du purgatoire.</p>
+
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
+
+<p>Je recommande l'application {{ mc.link("Rosario", "https://rosario.app/") }} pour la méditation des <b>mystères</b>.</p>
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+<p>(Signe de croix)</p>
+
+<p>{{ mc.checkbox("b_credo", "Credo") }}</p>
+
+<p>{{ mc.checkbox("b_pater", "Notre Père") }}</p>
+
+<p>
+{{ mc.checkbox("b_ave", "3 x Je vous salue Marie") }}<br>
+(foi, espérance, charité)
+</p>
+
+<p>{{ mc.checkbox("b_gloria", "Gloire au Père") }}</p>
+
+<!-- Mystères -->
+
+{{ mc.anchor("mysteres", "=") }}
+
+<p>
+    Mystères
+
+    <select id="sel_type" onchange="selectType();">
+        <option>joyeux</option>
+        <option>lumineux</option>
+        <option>douloureux</option>
+        <option>glorieux</option>
+    </select>
+</p>
+
+<ul class="priere gauche">
+    <li>{{ mc.radio_btn("m1", "mysteres", "1. L'annonciation") }} </li>
+    <li>{{ mc.radio_btn("m2", "mysteres", "2. La visitation") }} </li>
+    <li>{{ mc.radio_btn("m3", "mysteres", "3. la naissance de Jésus") }} </li>
+    <li>{{ mc.radio_btn("m4", "mysteres", "4. la présentation de Jésus au temple de Jérusalem") }} </li>
+    <li>{{ mc.radio_btn("m5", "mysteres", "5. le recouvrement de Jésus au temple de Jérusalem") }} </li>
+</ul>
+
+<hr />
+
+<p>{{ mc.checkbox("dz_pater", "Notre Père") }}</p>
+
+<p>
+Père Éternel, je Vous offre le très précieux Sang<br>
+de Votre Divin Fils, Jésus,<br>
+en union avec les saintes messes célébrées<br>
+aujourd’hui à travers le monde,<br>
+pour toutes les âmes du purgatoire,<br>
+pour les pécheurs dans l’Église Universelle,<br>
+pour les pécheurs en tout lieu,<br>
+ceux de mon entourage et de ma propre famille.<br>
+Amen.
+</p>
+
+{{ mc.grains("dz_grains", range(0, 11)) }}
+
+<p>
+Cœur Sacré de Jésus,<br>
+ouvre les cœurs et les esprits des pêcheurs<br>
+à la vérité et à la lumière de Dieu, le Père.<br>
+Cœur Immaculé de Marie,<br>
+priez pour la conversion des pêcheurs et du monde.
+</p>
+
+<p>{{ mc.checkbox("dz_gloria", "Gloire Père") }}</p>
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+<p>(Signe de croix)</p>
+
+{{ mc.return_link(label = "Recommencer", reset = True) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+
+{{ mc.script("chapelets/ch-rosaire.js") }}
+
+{% endblock %}
