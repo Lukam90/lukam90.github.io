@@ -27,7 +27,7 @@ profil = ["cv-imprime", "portfolio"]
 
 ## Prières
 
-prieres = ["ex-base", "rosaire", "misericorde", "ames", "vertus", "devotion"]
+prieres = ["ex-base", "rosaire", "misericorde", "ames", "devotion"]
 
 #convert_jinja_list("prieres", prieres)
 
@@ -35,17 +35,16 @@ prieres = ["ex-base", "rosaire", "misericorde", "ames", "vertus", "devotion"]
 convert_jinja_single("prieres/rosaire")
 convert_jinja_single("prieres/misericorde")
 convert_jinja_single("prieres/ames")
-convert_jinja_single("prieres/vertus")
 convert_jinja_single("prieres/devotion")
 
 dpath = "prieres/divers/"
 
-#convert_jinja_single(dpath + "ames")
 #convert_jinja_single(dpath + "liberation")
 #convert_jinja_single(dpath + "mercis")
 #convert_jinja_single(dpath + "plaies")
-#convert_jinja_single(dpath + "sang")
 #convert_jinja_single(dpath + "reparation")
+#convert_jinja_single(dpath + "sang")
+#convert_jinja_single(dpath + "vertus")
 
 ## Exercices
 
