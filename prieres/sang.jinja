@@ -12,11 +12,11 @@
 
 <!-- Base -->
 
-{{ mc.anchor("base", "=") }}
+{{ mc.anchor("base", "=", "C") }}
 
 {% include bpath + "credo.jinja" %}
 
-{{ mc.anchor("ave") }}
+{{ mc.anchor("ave", "*", "A") }}
 
 {% include bpath + "ste-marie.jinja" %}
 
@@ -24,7 +24,7 @@
 
 <!-- Mystères -->
 
-{{ mc.anchor("mysteres", "=") }}
+{{ mc.anchor("mysteres", "=", "M") }}
 
 <ul class="priere gauche">
     <li>{{ mc.radio_btn("m1", "mysteres", "1. La circoncision") }}</li>
@@ -36,7 +36,7 @@
     <li>{{ mc.radio_btn("m7", "mysteres", "7. Le coup de lance") }}</li>
 </ul>
 
-{{ mc.anchor("serie") }}
+{{ mc.anchor("serie", "*", "P") }}
 
 {% include bpath + "notre-pere.jinja" %}
 
@@ -53,7 +53,7 @@
 Ô Seigneur, hâtez-vous de m’aider ! 
 </p>
 
-{{ mc.anchor("suite") }}
+{{ mc.anchor("suite", "*", "G") }}
 
 {% include bpath + "gloire-pere.jinja" %}
 
@@ -69,7 +69,7 @@ par votre Précieux Sang.
 
 <!-- Fin -->
 
-{{ mc.anchor("fin", "=") }}
+{{ mc.anchor("fin", "=", "F") }}
 
 <p>
 Père Éternel, je vous offre le plus Précieux Sang de Jésus-Christ<br>

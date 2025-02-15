@@ -51,9 +51,9 @@
 
 <!-- Ancres -->
 
-{% macro anchor(id, type = "*") %}
+{% macro anchor(id, type = "*", shortcut = None) %}
 <div id="{{ id }}">
-    <a href="#{{ id }}">
+    <a href="#{{ id }}" {% if shortcut %} accesskey="{{ shortcut }}" {% endif %}>
     {% if type == "=" %}
     ===
     {% else %}
