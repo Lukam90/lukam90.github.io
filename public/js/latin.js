@@ -21,3 +21,9 @@ function switchLang()
         hideAll(latinBlocks);
     }
 }
+
+/* Raccourcis */
+
+document.addEventListener("keydown", e => {
+    if (isMajKey(e) && e.key == "L")    cbLatin.click();
+});

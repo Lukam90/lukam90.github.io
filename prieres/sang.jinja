@@ -12,11 +12,11 @@
 
 <!-- Base -->
 
-{{ mc.anchor("base", "=", "C") }}
+{{ mc.anchor("base", "=") }}
 
 {% include bpath + "credo.jinja" %}
 
-{{ mc.anchor("ave", "*", "A") }}
+{{ mc.anchor("ave") }}
 
 {% include bpath + "ste-marie.jinja" %}
 
@@ -24,7 +24,7 @@
 
 <!-- Mystères -->
 
-{{ mc.anchor("mysteres", "=", "M") }}
+{{ mc.anchor("mysteres", "=") }}
 
 <ul class="priere gauche">
     <li>{{ mc.radio_btn("m1", "mysteres", "1. La circoncision") }}</li>
@@ -36,7 +36,7 @@
     <li>{{ mc.radio_btn("m7", "mysteres", "7. Le coup de lance") }}</li>
 </ul>
 
-{{ mc.anchor("serie", "*", "P") }}
+{{ mc.anchor("serie") }}
 
 {% include bpath + "notre-pere.jinja" %}
 
@@ -53,7 +53,7 @@
 Ô Seigneur, hâtez-vous de m’aider ! 
 </p>
 
-{{ mc.anchor("suite", "*", "G") }}
+{{ mc.anchor("suite") }}
 
 {% include bpath + "gloire-pere.jinja" %}
 
@@ -69,7 +69,7 @@ par votre Précieux Sang.
 
 <!-- Fin -->
 
-{{ mc.anchor("fin", "=", "F") }}
+{{ mc.anchor("fin", "=") }}
 
 <p>
 Père Éternel, je vous offre le plus Précieux Sang de Jésus-Christ<br>
@@ -80,7 +80,7 @@ et pour le soulagement des âmes du purgatoire.
 
 <hr />
 
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.jinja" %}
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 

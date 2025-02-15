@@ -86,3 +86,10 @@ function uncheckAll(checkboxes)
 function goTo(anchor) {
     window.location.href = anchor;
 }
+
+/* Clavier */
+
+function isMajKey(event)
+{
+    return event.shiftKey || event.getModifierState("CapsLock");
+}

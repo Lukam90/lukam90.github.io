@@ -64,4 +64,13 @@ document.addEventListener("keydown", e => {
 
         setBlock(numKey - 1);
     }
+
+    if (isMajKey(e)) {
+        if (e.key == "C")   goTo("#base");
+        if (e.key == "A")   goTo("#ave");
+        if (e.key == "M")   goTo("#mysteres");
+        if (e.key == "P")   goTo("#serie");
+        if (e.key == "G")   goTo("#suite");
+        if (e.key == "F")   goTo("#fin");
+    }
 });
