@@ -1,82 +1,55 @@
-/* Données texte */
-
-const mysteres = [
-    "Enfoncement du clou dans la main droite",
-    "Enfoncement du clou dans la main gauche",
-    "Enfoncement du clou dans le pied droit",
-    "Enfoncement du clou dans le pied gauche",
-    "Percement du Côté Sacré"
-];
-
 /* Eléments */
 
-const grains = $name("dz_rondes");
+const buttons = $name("mysteres");
 
-const checkboxes = $all("input[type='checkbox']");
+const divPremiers = $("#premiers");
+const divDernier = $("#dernier");
 
-const pMystere = $("#mystere");
-const pDernier = $("#dernier");
-
-const intros = $all(".intro");
-
-let intro, mystere;
+const qntPremier = $("#quintes_1");
+const basePremier = $("#base_trio_1");
+const finPremier = $("#fin_trio_1");
 
 /* Variables */
 
 let numKey = 0;
 
-/* Evénement de clic */
+/* Evénements de clic */
 
-for (let i = 0 ; i < 5 ; i++)
+for (let i = 0 ; i < 7 ; i++)
 {
-    grains[i].addEventListener("click", () => setIntro(i));
+    buttons[i].addEventListener("click", () => setBlock(i));
 }
 
 /* Fonctions */
 
-selectRonde(0);
+resetAll();
 
-// Changement d'intro
+// MAJ du bloc
 
-function switchIntro()
+function setBlock(index)
 {
-    hideAll(intros);
+    buttons[index].click();
 
-    showBlock(intro);
+    if (index < 6) {
+        switchBlocks(divPremiers, divDernier);
+
+        qntPremier.click();
+    } else {
+        switchBlocks(divDernier, divPremiers);
+
+        finPremier.click();
+    }
 }
 
-// MAJ de l'intro
-
-function setIntro(index)
-{
-    mystere = mysteres[index];
-    intro = intros[index];
-
-    pMystere.textContent = mystere;
-
-    switchIntro();
-
-    uncheckAll(checkboxes);
-
-    hideBlock(pDernier);
-
-    if (index == 4) showBlock(pDernier);
-}
-
-// Sélection d'une ronde
-
-function selectRonde(index)
-{
-    grains[index].click();
-}
-
-// Réinitialisation du rosaire
+// Réinitialisation du chapelet
 
 function resetAll()
 {
     goTo("#");
 
-    selectRonde(0);
+    setBlock(0);
+
+    basePremier.click();
 }
 
 /* Raccourcis */
@@ -86,9 +59,18 @@ document.addEventListener("keydown", e => {
 
     if (numKey == 0)   resetAll();
 
-    if (numKey >= 1 && numKey <= 5) {
-        goTo("#dizaines");
+    if (numKey >= 1 && numKey <= 7) {
+        goTo("#mysteres");
 
-        selectRonde(numKey - 1);
+        setBlock(numKey - 1);
+    }
+
+    if (isMajKey(e)) {
+        if (e.key == "C")   goTo("#base");
+        if (e.key == "A")   goTo("#ave");
+        if (e.key == "M")   goTo("#mysteres");
+        if (e.key == "P")   goTo("#serie");
+        if (e.key == "G")   goTo("#suite");
+        if (e.key == "F")   goTo("#fin");
     }
 });

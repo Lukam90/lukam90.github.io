@@ -5,15 +5,16 @@
 {% set title = "Chapelet de libération" %}
 
 {% block content %}
-<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
+
+{% include "partials/cb-latin.jinja" %}
 
 <!-- Base -->
 
-{{ mc.anchor("base", "=") }}
+{% include bpath + "signe-croix.jinja" %}
 
-<p>(Signe de croix)</p>
+<hr id="credo" />
 
-<p>Credo</p>
+{% include bpath + "credo.jinja" %}
 
 <!-- Rondes -->
 
@@ -21,16 +22,11 @@
 
 {{ mc.grains("dz_rondes", range(0,6)) }}
 
-<p>"Si donc le Fils vous libère, vous serez réellement libres." (Jean 8,36)</p>
-
-<p>
-Jésus, aie pitié de moi !<br>
-Jésus, guéris-moi !<br>
-Jésus, sauve-moi !<br>
-Jésus, libère-moi !
-</p>
+{% include bpath + "notre-pere.jinja" %}
 
 <hr />
+
+<p>"Si Jésus me libère, je serai vraiment libre." (Jean 8,36)</p>
 
 <div id="trio">
 {{ mc.grains("base_trio", range(0,4)) }}
@@ -44,15 +40,18 @@ Jésus, libère-moi !
 
 {{ mc.anchor("fin", "=") }}
 
-<p>Salut ô reine</p>
+{% include bpath + "salut-reine.jinja" %}
 
-<p>(Signe de croix)</p>
+<hr />
+
+{% include bpath + "signe-croix.jinja" %}
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-liberation.js") }}
 
