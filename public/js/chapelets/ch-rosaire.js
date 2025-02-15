@@ -38,8 +38,6 @@ const selType = $("#sel_type");
 const mGrains = $name("mysteres");
 const mLabels = $all(".mysteres");
 
-const checkboxes = $all("input[type='checkbox']");
-
 const basePremier = $("#base_trio_1");
 const dzPremier = $("#dz_grains_1");
 
@@ -87,8 +85,6 @@ function selectMystere(index)
 function resetDizaine()
 {
     dzPremier.click();
-
-    uncheckAll(checkboxes);
 }
 
 // Réinitialisation du rosaire
