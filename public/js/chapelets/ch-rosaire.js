@@ -40,6 +40,7 @@ const mLabels = $all(".mysteres");
 
 const checkboxes = $all("input[type='checkbox']");
 
+const basePremier = $("#base_trio_1");
 const dzPremier = $("#dz_grains_1");
 
 /* Variables */
@@ -98,6 +99,8 @@ function resetAll()
 
     selType.selectedIndex = 0;
 
+    basePremier.click();
+
     selectType();
 }
 
@@ -108,5 +111,9 @@ document.addEventListener("keydown", e => {
 
     if (numKey == 0)   resetAll();
 
-    if (numKey >= 1 && numKey <= 5)   selectMystere(numKey - 1);
+    if (numKey >= 1 && numKey <= 5) {
+        goTo("#mysteres");
+
+        selectMystere(numKey - 1);
+    }
 });
