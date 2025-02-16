@@ -6,7 +6,7 @@
 
 {% block content %}
 
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.jinja" %}
 
 <p>
 Ô Jésus, Divin Rédempteur, sois miséricordieux pour nous et le monde entier. Amen.<br>
@@ -35,7 +35,7 @@ Traite-nous avec miséricorde, nous t’en conjurons. Amen.
 
 <p>"Père Éternel, je t’offre les plaies de notre Seigneur Jésus-Christ pour guérir celles de nos âmes." (x 3)</p>
 
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.jinja" %}
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
