@@ -84,10 +84,10 @@
 <!-- Case à cocher -->
 
 {% macro checkbox(id, value, event = None) %}
-<label>
-    <input type="checkbox" id="{{ id }}" {% if event %} onchange="{{ event }}" {% endif %}>
-    {{ value }}
-</label>
+<p>
+    <input type="checkbox" id="{{ id }}" {% if event %} onchange="{{ event }}" {% endif %} />
+    <label for="{{ id }}">{{ value }}</label>
+</p>
 {% endmacro %}
 
 <!-- Bouton radio -->

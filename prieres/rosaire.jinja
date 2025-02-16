@@ -7,7 +7,9 @@
 
 {% block content %}
 
-{% include "partials/cb-latin.jinja" %}
+{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
+
+{{ mc.checkbox("v_ames", "Prière de libération des âmes", "switchPrayer()") }}
 
 <p>Je recommande l'application {{ mc.link("Rosario", "https://rosario.app/") }} pour la méditation des <b>mystères</b>.</p>
 
@@ -31,13 +33,19 @@
 
 {% include bpath + "notre-pere.jinja" %}
 
-<hr />
+<div id="ames">
+{{ mc.anchor("dz_ames") }}
+
+{% include rpath + "rs-ames.jinja" %}
+</div>
+
+{{ mc.anchor("dz_ave") }}
 
 {% include bpath + "ste-marie.jinja" %}
 
 {{ mc.grains("dz_grains", range(0, 11)) }}
 
-<hr />
+{{ mc.anchor("dz_gloria") }}
 
 {% include bpath + "gloire-pere.jinja" %}
 
