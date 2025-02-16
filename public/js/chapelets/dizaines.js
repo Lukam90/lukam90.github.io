@@ -32,7 +32,7 @@ document.addEventListener("keydown", e => {
 
     if (numKey == 0)   resetAll();
 
-    if (numKey >= 1 && numKey <= 5) selectMystere(numKey - 1);
+    if (numKey >= 1 && numKey <= 5) selectRonde(numKey - 1);
     
     if (isMajKey(e)) {
         if (e.key == "A")   btnPremier.click();
