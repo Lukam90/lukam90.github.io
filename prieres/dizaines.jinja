@@ -1,0 +1,38 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+
+{% set title = "Dizaines minimales" %}
+
+{% block content %}
+
+{% include "partials/cb-latin.jinja" %}
+
+{% include bpath + "signe-croix.jinja" %}
+
+<hr />
+
+<p>
+    Ronde
+
+    <select id="sel_rondes" onchange="checkFirst();">
+        {% for nb in range(1, 6) %}
+        <option>n°{{ nb }}</option>
+        {% endfor %}
+    </select>
+</p>
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.grains("dz_grains", range(0, 11)) }}
+
+{{ mc.return_link("mysteres") }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
+
+<script>const btnPremier = $("#dz_grains_1");</script>
+
+{% endblock %}
