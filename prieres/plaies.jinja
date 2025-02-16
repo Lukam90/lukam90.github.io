@@ -1,12 +1,21 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set bpath = "prieres/base/" %}
+{% set rpath = "prieres/rosaire/" %}
 
 {% set title = "Chapelet des saintes plaies" %}
 
 {% block content %}
 
+{{ mc.checkbox("v_ames", "Prière de libération des âmes", "switchPrayer()") }}
+
 {% include bpath + "signe-croix.jinja" %}
+
+<div id="ames">
+{% include rpath + "rs-ames.jinja" %}
+
+{{ mc.anchor("dz_intro") }}
+</div>
 
 <p>
 Ô Jésus, Divin Rédempteur, sois miséricordieux pour nous et le monde entier. Amen.<br>
@@ -43,6 +52,6 @@ Traite-nous avec miséricorde, nous t’en conjurons. Amen.
 
 {{ mc.script("utils.js") }}
 
-{{ mc.script("chapelets/ch-misericorde.js") }}
+{{ mc.script("chapelets/ch-plaies.js") }}
 
 {% endblock %}
