@@ -5,10 +5,6 @@ const selNiveaux = $("#sel_niveaux");
 const basePremier = $("#base_trio_1");
 const finPremier = $("#fin_trio_1");
 
-/* Variables */
-
-let numKey = 0;
-
 /* Fonctions */
 
 // Réinitialisation du trio
