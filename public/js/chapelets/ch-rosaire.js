@@ -33,8 +33,6 @@ const rosaire = {
 
 /* Eléments */
 
-const cbAmes = $("#v_ames");
-
 const selType = $("#sel_type");
 
 const mGrains = $name("mysteres");
@@ -42,8 +40,6 @@ const mLabels = $all(".mysteres");
 
 const basePremier = $("#base_trio_1");
 const dzPremier = $("#dz_grains_1");
-
-const divAmes = $("#ames");
 
 /* Variables */
 
@@ -58,19 +54,6 @@ for (let radioBtn of mGrains)
 }
 
 /* Fonctions */
-
-switchPrayer();
-
-// Affichage de la prière des âmes
-
-function switchPrayer()
-{
-    if (cbAmes.checked) {
-        showBlock(divAmes);
-    } else {
-        hideBlock(divAmes);
-    }
-}
 
 // Sélection d'un type
 
@@ -134,6 +117,7 @@ document.addEventListener("keydown", e => {
         if (e.key == "P")   goTo("#dz_pater");
         if (e.key == "A")   goTo("#dz_ames");
         if (e.key == "D")   goTo("#dz_ave");
+        if (e.key == "C")   goTo("#dz_coeurs");
         if (e.key == "G")   goTo("#dz_gloria");
 
         if (e.key == "S")   cbAmes.click();
