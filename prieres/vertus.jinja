@@ -1,7 +1,6 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set bpath = "prieres/base/" %}
-{% set spath = "prieres/ames/" %}
 
 {% set base_url = "https://boutique.labonnenouvelle.net/chapelets-et-rosaire/" %}
 {% set ext_url = base_url + "1073-chapelet-des-ames-du-purgatoire-9502379583487.html" %}
@@ -9,26 +8,32 @@
 {% set title = "Chapelet des 13 vertus de Notre-Dame" %}
 
 {% block content %}
-<p>Il existe un {{ mc.link("chapelet spécifique", ext_url) }}.</p>
 
-<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
+{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
+
+<p>Il existe un {{ mc.link("chapelet spécifique", ext_url) }}.</p>
 
 <!-- Base -->
 
+{% include bpath + "signe-croix.jinja" %}
+
 {{ mc.anchor("base", "=") }}
 
-<p>(Signe de croix)</p>
+{% include bpath + "credo.jinja" %}
 
-<p>{{ mc.checkbox("b_credo", "Credo") }}</p>
+{{ mc.anchor("pater") }}
 
-<p>{{ mc.checkbox("b_pater", "Notre Père") }}</p>
+{% include bpath + "notre-pere.jinja" %}
 
-<p>
-{{ mc.checkbox("b_gloria", "3 x Gloire au Père") }}<br>
-(Saints, Saint Michel, Anges gardiens)
-</p>
+{{ mc.anchor("gloria") }}
 
-<p>{{ mc.checkbox("b_ave", "Je vous salue Marie") }}</p>
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.grains("base_trio", ["-", "Saints", "Saint Michel", "Anges gardiens"]) }}
+
+{{ mc.anchor("ave") }}
+
+{% include bpath + "ste-marie.jinja" %}
 
 <!-- Médaille -->
 
@@ -46,7 +51,7 @@ pour glorifier Dieu en vue du Salut de toutes les âmes.
 {{ mc.anchor("niveaux", "=") }}
 
 <p>
-    <select id="sel_niveaux">
+    <select id="sel_niveaux" onchange="resetTrio();">
         <option>1. Crainte de Dieu</option>
         <option>2. Charité</option>
         <option>3. Foi</option>
@@ -63,24 +68,29 @@ pour glorifier Dieu en vue du Salut de toutes les âmes.
     </select>
 </p>
 
-<p>{{ mc.checkbox("nv_ave", "Je vous salue Marie") }}</p>
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.anchor("nv_trio") }}
 
 <p>
 Ô Seigneur, donnez-leur le repos éternel et faites briller sur eux la lumière éternelle.<br>
-Que les âmes des fidèles défunts reposent en paix par la miséricorde de Dieu. Amen. (x 3)
+Que les âmes des fidèles défunts reposent en paix par la miséricorde de Dieu. Amen.
 </p>
+
+{{ mc.grains("fin_trio", range(0, 4)) }}
+
+<hr />
 
 <!-- Fin -->
 
-{{ mc.anchor("fin", "=") }}
-
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.jinja" %}
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-vertus.js") }}
 

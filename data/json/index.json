@@ -8,6 +8,7 @@
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
         { "href" : "plaies", "title" : "Chapelet des saintes plaies" },
         { "href" : "devotion", "title" : "Chapelet de dévotion" },
+        { "href" : "vertus", "title" : "Chapelet des 13 vertus de Notre-Dame" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" }
     ],
     "exercices" : [
