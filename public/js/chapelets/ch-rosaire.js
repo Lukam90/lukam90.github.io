@@ -115,10 +115,9 @@ document.addEventListener("keydown", e => {
 
     if (isMajKey(e)) {
         if (e.key == "P")   goTo("#dz_pater");
-        if (e.key == "A")   goTo("#dz_ames");
         if (e.key == "D")   goTo("#dz_ave");
-        if (e.key == "C")   goTo("#dz_coeurs");
         if (e.key == "G")   goTo("#dz_gloria");
+        if (e.key == "F")   goTo("#dz_fatima");
 
         if (e.key == "S")   cbAmes.click();
     }

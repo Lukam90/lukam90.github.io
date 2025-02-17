@@ -7,7 +7,6 @@
         { "href" : "ex-base", "title" : "Prières de base" },
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
         { "href" : "devotion", "title" : "Chapelet de dévotion" },
-        { "href" : "ames", "title" : "Chapelet de libération des âmes" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" }
     ],
     "exercices" : [
