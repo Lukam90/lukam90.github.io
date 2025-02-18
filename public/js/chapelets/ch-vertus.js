@@ -7,6 +7,16 @@ const finPremier = $("#fin_trio_1");
 
 /* Fonctions */
 
+// Sélection du niveau (raccourci)
+
+function selectNiveau(index)
+{
+    selNiveaux.selectedIndex = index;
+    selNiveaux.focus();
+
+    resetTrio();
+}
+
 // Réinitialisation du trio
 
 function resetTrio()
@@ -29,7 +39,15 @@ function resetAll()
 /* Raccourcis */
 
 document.addEventListener("keydown", e => {
-    if (e.key == "0")   resetAll();
+    numKey = parseInt(e.key);
+
+    if (numKey == 0)   resetAll();
+
+    if (numKey >= 1 && numKey <= 9) {
+        goTo("#niveaux");
+
+        selectNiveau(numKey - 1);
+    }
 
     if (isMajKey(e)) {
         if (e.key == "C")   goTo("#base");
