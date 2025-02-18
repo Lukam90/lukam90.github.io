@@ -7,7 +7,8 @@
         { "href" : "ex-base", "title" : "Prières de base" },
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
         { "href" : "devotion", "title" : "Chapelet de dévotion" },
-        { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" }
+        { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
+        { "href" : "vertus", "title" : "Chapelet des 13 vertus de Notre-Dame" }
     ],
     "exercices" : [
         { "href" : "ex-musical", "title" : "Cohérence cardiaque" }
