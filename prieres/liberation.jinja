@@ -1,57 +1,40 @@
 {% extends "layouts/prieres.jinja" %}
 
-{% set bpath = "prieres/base/" %}
-
-{% set title = "Chapelet de libération" %}
+{% set title = "Chapelet de libération (*)" %}
 
 {% block content %}
-
-{% include "partials/cb-latin.jinja" %}
-
-<!-- Base -->
-
-{% include bpath + "signe-croix.jinja" %}
-
-<hr id="credo" />
-
-{% include bpath + "credo.jinja" %}
+<p>
+Ce chapelet est personnel et se base sur la <b>méthode Ho'oponopono</b>.<br>
+La <b>prière de Morrnah</b>, revue et simplifiée, se récite sur les <b>petits grains</b>.
+</p>
 
 <!-- Rondes -->
 
-{{ mc.anchor("rondes", "=") }}
-
-{{ mc.grains("dz_rondes", range(0,6)) }}
-
-{% include bpath + "notre-pere.jinja" %}
-
 <hr />
 
-<p>"Si Jésus me libère, je serai vraiment libre." (Jean 8,36)</p>
+{{ mc.grains("dz_rondes", range(1,6)) }}
 
-<div id="trio">
-{{ mc.grains("base_trio", range(0,4)) }}
-</div>
+<p>
+Créateur Divin,<br>
+si moi, ma famille, mes proches ou mes ancêtres,<br>
+vous ont offensé ou ont offensé<br>
+votre famille, vos proches ou vos ancêtres,<br>
+en pensées, en paroles ou en actions,<br>
+nous vous demandons pardon.<br>
+Que toutes ces mémoires du passé<br>
+soient transmutées en amour inconditionnel.<br>
+Je te remercie. Je t'aime.
+</p>
 
-<div id="dizaines">
 {{ mc.grains("dz_grains", range(0,11)) }}
-</div>
-
-<!-- Fin -->
-
-{{ mc.anchor("fin", "=") }}
-
-{% include bpath + "salut-reine.jinja" %}
 
 <hr />
-
-{% include bpath + "signe-croix.jinja" %}
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
-{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-liberation.js") }}
 
