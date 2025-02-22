@@ -2,11 +2,6 @@
 
 const grains = $name("dz_rondes");
 
-const btnPremier = grains[0];
-
-const cbAmes = $("#v_ames");
-const divAmes = $("#ames");
-
 let grain;
 
 /* Variables */
@@ -14,19 +9,6 @@ let grain;
 let numKey = 0;
 
 /* Fonctions */
-
-switchPrayer();
-
-// Affichage de la prière des âmes
-
-function switchPrayer()
-{
-    if (cbAmes.checked) {
-        showBlock(divAmes);
-    } else {
-        hideBlock(divAmes);
-    }
-}
 
 // Sélection d'une ronde (raccourci)
 
@@ -60,9 +42,5 @@ document.addEventListener("keydown", e => {
         selectRonde(numKey - 1);
     }
 
-    if (isMajKey(e)) {
-        if (e.key == "I")   goTo("#dz_intro");
-
-        if (e.key == "S")   cbAmes.click();
-    }
+    if (isMajKey(e) && e.key == "I")    goTo("#dz_intro");
 });
