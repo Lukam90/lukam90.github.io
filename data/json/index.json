@@ -6,8 +6,6 @@
     "prieres" : [
         { "href" : "ex-base", "title" : "Prières de base" },
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
-        { "href" : "ames", "title" : "Chapelet de libération des âmes" },
-        { "href" : "devotion", "title" : "Chapelet de dévotion" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
         { "href" : "plaies", "title" : "Chapelet des saintes plaies" }
     ],
