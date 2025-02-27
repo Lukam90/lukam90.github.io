@@ -8,6 +8,7 @@
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
         { "href" : "plaies", "title" : "Chapelet des saintes plaies" },
+        { "href" : "sang", "title" : "Chapelet du précieux sang" },
         { "href" : "mercis", "title" : "Chapelet des 1000 mercis" }
     ],
     "exercices" : [

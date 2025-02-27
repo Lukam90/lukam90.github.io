@@ -1,86 +1,108 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set bpath = "prieres/base/" %}
+{% set spath = "prieres/sang/" %}
 
 {% set title = "Chapelet du précieux sang" %}
 
 {% block content %}
+<p>La dévotion est complémentaire au {{ mc.link("Saint Rosaire", "/prieres/rosaire.html") }}.</p>
 
-{% include "partials/cb-latin.jinja" %}
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
 
-{% include bpath + "signe-croix.jinja" %}
+<p>(*) Incliner la tête</p>
+
+<p>(Signe de croix)</p>
 
 <!-- Base -->
 
 {{ mc.anchor("base", "=") }}
 
+{% include spath + "sg-chant.jinja" %}
+
+{{ mc.anchor("st_esprit") }}
+
+{% include spath + "sg-esprit.jinja" %}
+
+{{ mc.anchor("credo") }}
+
 {% include bpath + "credo.jinja" %}
 
-{{ mc.anchor("ave") }}
+{{ mc.anchor("b_outro") }}
 
-{% include bpath + "ste-marie.jinja" %}
+{% include spath + "sg-outro.jinja" %}
 
-{{ mc.grains("base_trio", ["-", "Père", "Fils", "Saint-Esprit"]) }}
+{% include spath + "sg-dialogue.jinja" %}
 
-<!-- Mystères -->
+{{ mc.anchor("b_prieres") }}
 
-{{ mc.anchor("mysteres", "=") }}
+<p class="gras">Notre Père</p>
+
+<p>
+    <span class="gras">Je vous salue Marie</span> <br>
+    (foi, espérance, charité)
+</p>
+
+<p class="gras">Gloire au Père</p>
+
+{{ mc.anchor("b_refrain") }}
+
+{% include spath + "sg-outro.jinja" %}
+
+<!-- Rondes -->
+
+{{ mc.anchor("rondes", "=") }}
 
 <ul class="priere gauche">
-    <li>{{ mc.radio_btn("m1", "mysteres", "1. La circoncision") }}</li>
-    <li>{{ mc.radio_btn("m2", "mysteres", "2. L'agonie à Gethsémani") }}</li>
-    <li>{{ mc.radio_btn("m3", "mysteres", "3. La flagellation") }}</li>
-    <li>{{ mc.radio_btn("m4", "mysteres", "4. Le couronnement d'épines") }}</li>
-    <li>{{ mc.radio_btn("m5", "mysteres", "5. La montée au Calvaire") }}</li>
-    <li>{{ mc.radio_btn("m6", "mysteres", "6. La crucifixion") }}</li>
-    <li>{{ mc.radio_btn("m7", "mysteres", "7. Le coup de lance") }}</li>
+    <li>{{ mc.radio_btn("r1", "rondes", "1. La main droite") }}</li>
+    <li>{{ mc.radio_btn("r2", "rondes", "2. La main gauche") }}</li>
+    <li>{{ mc.radio_btn("r3", "rondes", "3. Le pied droit") }}</li>
+    <li>{{ mc.radio_btn("r4", "rondes", "4. Le pied gauche") }}</li>
+    <li>{{ mc.radio_btn("r5", "rondes", "5. Le côté sacré") }}</li>
 </ul>
 
-{{ mc.anchor("serie") }}
+{% include spath + "sg-intros.jinja" %}
 
-{% include bpath + "notre-pere.jinja" %}
+{% include spath + "sg-dialogue.jinja" %}
 
-<div id="premiers">
-{{ mc.grains("quintes", range(1, 6)) }}
-</div>
+{{ mc.anchor("douzaines") }}
+
+<p class="gras">Notre Père</p>
+
+<p class="gras">Je vous salue Marie</p>
+
+<p>"Précieux Sang de Jésus-Christ, sauve-nous et le monde entier." (x 12)</p>
+
+<p class="gras">Gloire au Père</p>
 
 <div id="dernier">
-{{ mc.grains("fin_trio", range(1, 4)) }}
+{% include spath + "sg-dialogue.jinja" %}
 </div>
 
-<p>
-Ô Dieu, venez à mon aide.<br>
-Ô Seigneur, hâtez-vous de m’aider ! 
-</p>
-
-{{ mc.anchor("suite") }}
-
-{% include bpath + "gloire-pere.jinja" %}
-
-<hr />
-
-<p>
-Nous vous supplions, Seigneur,<br>
-aidez vos servants que vous avez rachetés<br>
-par votre Précieux Sang.
-</p>
-
-{{ mc.return_link("mysteres") }}
+{{ mc.return_link("rondes") }}
 
 <!-- Fin -->
 
 {{ mc.anchor("fin", "=") }}
 
+<p class="gras">Salut ô reine</p>
+
 <p>
-Père Éternel, je vous offre le plus Précieux Sang de Jésus-Christ<br>
-en réparation de mes péchés,<br>
-pour les besoins de la sainte Eglise<br>
-et pour le soulagement des âmes du purgatoire.
+V. Priez pour nous, sainte Mère de Dieu,<br>
+R. afin que nous devenions dignes des promesses de Jésus Christ.
 </p>
+
+{{ mc.anchor("final") }}
+
+{% include spath + "sg-final.jinja" %}
+
+{{ mc.anchor("litanies") }}
+
+{% include spath + "sg-min-litanies.jinja" %}
 
 <hr />
 
-{% include bpath + "signe-croix.jinja" %}
+<p>(Signe de croix)</p>
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
