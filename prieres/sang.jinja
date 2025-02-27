@@ -75,6 +75,8 @@
 
 <p class="gras">Gloire au Père</p>
 
+{% include spath + "sg-outro.jinja" %}
+
 <div id="dernier">
 {% include spath + "sg-dialogue.jinja" %}
 </div>
@@ -109,7 +111,6 @@ R. afin que nous devenions dignes des promesses de Jésus Christ.
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
-{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-sang.js") }}
 

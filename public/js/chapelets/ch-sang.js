@@ -1,13 +1,12 @@
 /* Eléments */
 
-const buttons = $name("mysteres");
+const grains = $name("rondes");
 
-const divPremiers = $("#premiers");
+const intros = $all(".intro");
+
 const divDernier = $("#dernier");
 
-const qntPremier = $("#quintes_1");
-const basePremier = $("#base_trio_1");
-const finPremier = $("#fin_trio_1");
+let grain, intro;
 
 /* Variables */
 
@@ -15,29 +14,47 @@ let numKey = 0;
 
 /* Evénements de clic */
 
-for (let i = 0 ; i < 7 ; i++)
+for (let i = 0 ; i < 5 ; i++)
 {
-    buttons[i].addEventListener("click", () => setBlock(i));
+    grains[i].addEventListener("click", () => setIntro(i));
 }
 
 /* Fonctions */
 
 resetAll();
 
-// MAJ du bloc
+// Sélection d'une ronde (raccourci)
 
-function setBlock(index)
+function selectRonde(index)
 {
-    buttons[index].click();
+    setIntro(index);
 
-    if (index < 6) {
-        switchBlocks(divPremiers, divDernier);
+    grain = grains[index];
 
-        qntPremier.click();
+    grain.select();
+    grain.click();
+}
+
+// MAJ de l'intro
+
+function setIntro(index)
+{
+    let intro = intros[index];
+
+    hideAll(intros);
+    showBlock(intro);
+
+    switchLast(index);
+}
+
+// MAJ du dernier bloc
+
+function switchLast(index)
+{
+    if (index == 4) {
+        showBlock(divDernier);
     } else {
-        switchBlocks(divDernier, divPremiers);
-
-        finPremier.click();
+        hideBlock(divDernier);
     }
 }
 
@@ -47,9 +64,7 @@ function resetAll()
 {
     goTo("#");
 
-    setBlock(0);
-
-    basePremier.click();
+    setIntro(0);
 }
 
 /* Raccourcis */
@@ -59,18 +74,15 @@ document.addEventListener("keydown", e => {
 
     if (numKey == 0)   resetAll();
 
-    if (numKey >= 1 && numKey <= 7) {
-        goTo("#mysteres");
+    if (numKey >= 1 && numKey <= 5) {
+        goTo("#rondes");
 
-        setBlock(numKey - 1);
+        selectRonde(numKey - 1);
     }
 
     if (isMajKey(e)) {
         if (e.key == "C")   goTo("#base");
-        if (e.key == "A")   goTo("#ave");
-        if (e.key == "M")   goTo("#mysteres");
-        if (e.key == "P")   goTo("#serie");
-        if (e.key == "G")   goTo("#suite");
+        if (e.key == "D")   goTo("#douzaines");
         if (e.key == "F")   goTo("#fin");
     }
 });
