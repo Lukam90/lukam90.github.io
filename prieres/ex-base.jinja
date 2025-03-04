@@ -7,8 +7,6 @@
 
 {% block content %}
 
-{% include "partials/cb-latin.jinja" %}
-
 {{ mc.header("croix", "Signe de croix") }}
 
 {% include bpath + "signe-croix.jinja" %}
@@ -46,7 +44,6 @@
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
-{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-base.js") }}
 
