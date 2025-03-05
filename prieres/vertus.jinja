@@ -9,31 +9,25 @@
 
 {% block content %}
 
-{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
-
 <p>Il existe un {{ mc.link("chapelet spécifique", ext_url) }}.</p>
+
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
 
 <!-- Base -->
 
-{% include bpath + "signe-croix.jinja" %}
-
 {{ mc.anchor("base", "=") }}
 
-{% include bpath + "credo.jinja" %}
+<p>(Signe de croix)</p>
 
-{{ mc.anchor("pater") }}
+<p class="gras">Credo</p>
 
-{% include bpath + "notre-pere.jinja" %}
+<p class="gras">Notre Père</p>
 
-{{ mc.anchor("gloria") }}
-
-{% include bpath + "gloire-pere.jinja" %}
+<p class="gras">Gloire au Père</p>
 
 {{ mc.grains("base_trio", ["-", "Saints", "Saint Michel", "Anges gardiens"]) }}
 
-{{ mc.anchor("ave") }}
-
-{% include bpath + "ste-marie.jinja" %}
+<p class="gras">Je vous salue Marie</p>
 
 <!-- Médaille -->
 
@@ -68,9 +62,7 @@ pour glorifier Dieu en vue du Salut de toutes les âmes.
     </select>
 </p>
 
-{% include bpath + "ste-marie.jinja" %}
-
-{{ mc.anchor("nv_trio") }}
+<p class="gras">Je vous salue Marie</p>
 
 <p>
 Ô Seigneur, donnez-leur le repos éternel et faites briller sur eux la lumière éternelle.<br>
@@ -79,18 +71,17 @@ Que les âmes des fidèles défunts reposent en paix par la miséricorde de Dieu
 
 {{ mc.grains("fin_trio", range(0, 4)) }}
 
-<hr />
-
 <!-- Fin -->
 
-{% include bpath + "signe-croix.jinja" %}
+{{ mc.anchor("fin", "=") }}
+
+<p>(Signe de croix)</p>
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
-{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-vertus.js") }}
 
