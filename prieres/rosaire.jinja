@@ -9,9 +9,7 @@
 
 <p>Je recommande l'application {{ mc.link("Rosario", "https://rosario.app/") }} pour la méditation des <b>mystères</b>.</p>
 
-<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
-
-<hr />
+{{ mc.anchor("base", "=") }}
 
 <!-- Base -->
 
@@ -25,21 +23,33 @@
 
 {% include rpath + "rs-mysteres.jinja" %}
 
-<p class="gras">Notre Père</p>
+{{ mc.anchor("dz_pater") }}
 
-<p class="gras">Je vous salue Marie</p>
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("dz_ave") }}
+
+{% include bpath + "ste-marie.jinja" %}
 
 {{ mc.grains("dz_grains", range(0, 11)) }}
 
-<p class="gras">Gloire au Père</p>
+{{ mc.anchor("dz_gloria") }}
 
-<p class="gras">(Prière de Fatima)</p>
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.anchor("dz_fatima") }}
+
+{% include bpath + "priere-fatima.jinja" %}
 
 {{ mc.return_link("mysteres") }}
 
 <!-- Fin -->
 
-<p>(Signe de croix)</p>
+{{ mc.anchor("fin", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 

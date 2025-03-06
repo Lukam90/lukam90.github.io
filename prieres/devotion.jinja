@@ -6,15 +6,15 @@
 
 {% block content %}
 <p>
-Le chapelet est basé sur la <b>dévotion de St Bernard de Clairvaux</b>,<br>
-en l'honneur de la <b>plaie inconnue de l'épaule</b> de Jésus.
+Le chapelet est basé sur le {{ mc.link("Saint Rosaire", "/prieres/rosaire") }},<br>
+avec l'ajout de la prière de <b>St Joseph</b> pour les dizaines.
 </p>
 
 <!-- Base -->
 
 {{ mc.anchor("base", "=") }}
 
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.jinja" %}
 
 <p class="gauche">
 Très aimé Seigneur, très doux agneau de Dieu,<br>
