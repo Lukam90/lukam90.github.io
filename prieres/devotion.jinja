@@ -1,14 +1,19 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set bpath = "prieres/base/" %}
+{% set rpath = "prieres/rosaire/" %}
+{% set spath = "prieres/saints/" %}
 
-{% set title = "Chapelet de dévotion à Marie et Joseph" %}
+{% set title = "Chapelet de dévotion à Marie et Joseph (*)" %}
 
 {% block content %}
 <p>
-Le chapelet est basé sur le {{ mc.link("Saint Rosaire", "/prieres/rosaire") }},<br>
-avec l'ajout de la prière de <b>St Joseph</b> pour les dizaines.
+Le chapelet est basé sur le {{ mc.link("Saint Rosaire", "/prieres/rosaire.html") }},<br>
+avec l'ajout de la prière de <b>St Joseph</b> pour les dizaines<br>
+et une prière au <b>St Esprit</b> avant le <b>Gloire au Père</b>.
 </p>
+
+<p>Il s'inspire entres autres d'un {{ mc.link("live de Romuald Corbin", "https://www.youtube.com/watch?v=iCY1fW9PdBY") }}.</p>
 
 <!-- Base -->
 
@@ -16,48 +21,54 @@ avec l'ajout de la prière de <b>St Joseph</b> pour les dizaines.
 
 {% include bpath + "signe-croix.jinja" %}
 
-<p class="gauche">
-Très aimé Seigneur, très doux agneau de Dieu,<br>
-moi pauvre pécheur, j'adore et vénère la très sainte Plaie<br>
-que Vous avez reçue à l'épaule<br>
-en portant au Calvaire la très lourde croix<br>
-qui laissa découverts trois os saints,<br>
-occasionnant une immense douleur.<br>
-<br>
-Je Vous supplie, en vertu des mérites de ladite Plaie,<br>
-d'avoir pitié de moi, en me pardonnant de<br>
-tous mes péchés mortels ou véniels,<br>
-en m'assistant à l'heure de ma mort,<br>
-et en me conduisant dans Votre heureux Royaume.<br>
-<br>
-Amen.
-</p>
+{% include rpath + "rs-base.jinja" %}
 
-<!-- Rondes -->
+{{ mc.anchor("b_esprit") }}
 
-{{ mc.anchor("rondes", "=") }}
+{% include spath + "st-esprit.jinja" %}
 
-<p class="gras">Notre Père</p>
+<!-- Mystères -->
 
-{{ mc.grains("pater_trio", range(0, 4)) }}
+{{ mc.anchor("mysteres", "=") }}
 
-<p class="gras">Je vous salue Marie</p>
+{% include rpath + "rs-mysteres.jinja" %}
 
-{{ mc.grains("ave_trio", range(0, 4)) }}
+{{ mc.anchor("dz_pater") }}
 
-<p class="gras">Gloire au Père</p>
+{% include bpath + "notre-pere.jinja" %}
 
-{{ mc.grains("gloria_trio", range(0, 4)) }}
+{{ mc.anchor("dz_ave") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+<hr />
+
+{% include spath + "st-joseph.jinja" %}
+
+{{ mc.grains("dz_grains", range(0, 11)) }}
+
+{{ mc.anchor("dz_esprit") }}
+
+{% include spath + "st-esprit.jinja" %}
+
+{{ mc.anchor("dz_gloria") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.return_link("mysteres") }}
 
 <!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
-{{ mc.script("latin.js") }}
 
-{{ mc.script("chapelets/ch-devotion.js") }}
+{{ mc.script("chapelets/ch-rosaire.js") }}
 
 {% endblock %}
