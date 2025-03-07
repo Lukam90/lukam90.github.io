@@ -1,9 +1,10 @@
 /* Eléments */
 
-const grains = $name("rondes");
+const grains = $name("dz_rondes");
 
 const intros = $all(".intro");
 
+const basePremier = $("#base_trio_1");
 const divDernier = $("#dernier");
 
 let grain, intro;
@@ -64,7 +65,9 @@ function resetAll()
 {
     goTo("#");
 
-    setIntro(0);
+    selectRonde(0);
+
+    basePremier.click();
 }
 
 /* Raccourcis */

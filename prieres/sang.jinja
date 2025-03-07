@@ -38,10 +38,9 @@
 
 <p class="gras">Notre Père</p>
 
-<p>
-    <span class="gras">Je vous salue Marie</span> <br>
-    (foi, espérance, charité)
-</p>
+<p class="gras">Je vous salue Marie</p>
+
+{{ mc.grains("base_trio", ["-", "foi", "espérance", "charité"]) }}
 
 <p class="gras">Gloire au Père</p>
 
@@ -53,13 +52,7 @@
 
 {{ mc.anchor("rondes", "=") }}
 
-<ul class="priere gauche">
-    <li>{{ mc.radio_btn("r1", "rondes", "1. La main droite") }}</li>
-    <li>{{ mc.radio_btn("r2", "rondes", "2. La main gauche") }}</li>
-    <li>{{ mc.radio_btn("r3", "rondes", "3. Le pied droit") }}</li>
-    <li>{{ mc.radio_btn("r4", "rondes", "4. Le pied gauche") }}</li>
-    <li>{{ mc.radio_btn("r5", "rondes", "5. Le côté sacré") }}</li>
-</ul>
+{{ mc.grains("dz_rondes", range(1,6)) }}
 
 {% include spath + "sg-intros.jinja" %}
 
