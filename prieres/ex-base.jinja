@@ -7,35 +7,39 @@
 
 {% block content %}
 
-{{ mc.header("croix", "Signe de croix") }}
+{{ mc.header("0", "Signe de croix") }}
 
 {% include bpath + "signe-croix.jinja" %}
 
-{{ mc.header("credo", "Credo (1)") }}
+{{ mc.header("1", "Credo (1)") }}
 
 {% include bpath + "credo.jinja" %}
 
-{{ mc.header("pater", "Notre Père (2)") }}
+{{ mc.header("2", "Notre Père (2)") }}
 
 {% include bpath + "notre-pere.jinja" %}
 
-{{ mc.header("ave", "Je vous salue Marie (3)") }}
+{{ mc.header("3", "Je vous salue Marie (3)") }}
 
 {% include bpath + "ste-marie.jinja" %}
 
-{{ mc.header("gloria", "Gloire au Père (4)") }}
+{{ mc.header("4", "Gloire au Père (4)") }}
 
 {% include bpath + "gloire-pere.jinja" %}
 
-{{ mc.header("fatima", "Prière de Fatima (5)") }}
+{{ mc.header("5", "Prière de Fatima (5)") }}
 
 {% include bpath + "priere-fatima.jinja" %}
 
-{{ mc.header("salve", "Salut ô Reine (6)") }}
+{{ mc.header("6", "Salut ô Reine (6)") }}
 
 {% include bpath + "salut-reine.jinja" %}
 
-{{ mc.header("bref", "Bref de St Antoine (7)") }}
+{{ mc.header("7", "Acte de contrition (7)") }}
+
+{% include bpath + "acte-contrition.jinja" %}
+
+{{ mc.header("8", "Bref de St Antoine (8)") }}
 
 {% include bpath + "ex-bref.jinja" %}
 

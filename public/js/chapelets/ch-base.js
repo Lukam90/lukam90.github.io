@@ -1,12 +1,13 @@
+/* Variables */
+
+let numKey = 0;
+
 /* Raccourcis */
 
 document.addEventListener("keydown", e => {
+    numKey = parseInt(e.key);
+
     if (e.key == "0")   goTo("#");
-    if (e.key == "1")   goTo("#credo");
-    if (e.key == "2")   goTo("#pater");
-    if (e.key == "3")   goTo("#ave");
-    if (e.key == "4")   goTo("#gloria");
-    if (e.key == "5")   goTo("#fatima");
-    if (e.key == "6")   goTo("#salve");
-    if (e.key == "7")   goTo("#bref");
+
+    if (numKey >= 1 && numKey <= 9) goTo("#" + e.key);
 });
