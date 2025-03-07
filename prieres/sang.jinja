@@ -3,7 +3,7 @@
 {% set bpath = "prieres/base/" %}
 {% set spath = "prieres/sang/" %}
 
-{% set title = "Chapelet du précieux sang" %}
+{% set title = "Chapelet du précieux sang de Jésus" %}
 
 {% block content %}
 <p>La dévotion est complémentaire au {{ mc.link("Saint Rosaire", "/prieres/rosaire.html") }}.</p>
@@ -26,7 +26,7 @@
 
 {{ mc.anchor("credo") }}
 
-{% include bpath + "credo.jinja" %}
+<p class="gras">Credo</p>
 
 {{ mc.anchor("b_outro") }}
 
@@ -87,7 +87,7 @@
 
 {{ mc.anchor("fin", "=") }}
 
-<p class="gras">Salut ô reine</p>
+{% include bpath + "salut-reine.jinja" %}
 
 <p>
 V. Priez pour nous, sainte Mère de Dieu,<br>
