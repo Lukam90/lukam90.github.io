@@ -1,0 +1,60 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set rpath = "prieres/rosaire/" %}
+{% set spath = "prieres/ames/" %}
+
+{% set title = "Chapelet du salut des âmes" %}
+
+{% block content %}
+<p>Ce chapelet permet de libérer jusqu'à <b>5000 âmes</b> sur <b>4 générations</b>.</p>
+
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+<p>(Signe de croix)</p>
+
+{% include rpath + "rs-base.jinja" %}
+
+<!-- Rondes -->
+
+{{ mc.anchor("rondes", "=") }}
+
+{{ mc.grains("dz_rondes", range(1,6), "checkFirst()") }}
+
+<p>
+Père Éternel, je vous offre le Sacré-Cœur de Jésus et le Cœur Immaculé de Marie<br>
+pour le salut de nos âmes, de nos familles et du monde entier.
+</p>
+
+<hr />
+
+<p>
+Sacré-Cœur de Jésus, aie pitié de nous.<br>
+Cœur Immaculé de Marie, prie pour nous.
+</p>
+
+{{ mc.grains("dz_grains", range(0, 11)) }}
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+<p class="gras">Gloire au Père</p>
+
+{{ mc.grains("fin_trio", ["-", "Père", "Fils", "St-Esprit"]) }}
+
+<p>(Signe de croix)</p>
+
+{{ mc.return_link(label = "Recommencer", reset = True) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+
+{{ mc.script("chapelets/ch-ames.js") }}
+
+{% endblock %}

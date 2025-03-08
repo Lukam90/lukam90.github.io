@@ -10,6 +10,7 @@
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
         { "href" : "plaies", "title" : "Chapelet des saintes plaies" },
         { "href" : "vertus", "title" : "Chapelet des 13 vertus de Notre-Dame" },
+        { "href" : "ames", "title" : "Chapelet du salut des âmes" },
         { "href" : "mercis", "title" : "Chapelet des 1000 mercis" }
     ],
     "exercices" : [
