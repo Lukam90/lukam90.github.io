@@ -42,23 +42,11 @@ pour glorifier Dieu en vue du Salut de toutes les âmes.
 
 {{ mc.anchor("niveaux", "=") }}
 
-<p>
-    <select id="sel_niveaux" onchange="resetTrio();">
-        <option>1. Crainte de Dieu</option>
-        <option>2. Charité</option>
-        <option>3. Foi</option>
-        <option>4. Espérance</option>
-        <option>5. Obéissance</option>
-        <option>6. Patience</option>
-        <option>7. Piété</option>
-        <option>8. Chasteté</option>
-        <option>9. Prudence</option>
-        <option>10. Force</option>
-        <option>11. Tempérance</option>
-        <option>12. Pureté</option>
-        <option>13. Justice</option>
-    </select>
-</p>
+{{ mc.grains("sel_niveaux", range(1,14)) }}
+
+<p id="niveau" class="gras">1. Crainte de Dieu</p>
+
+<hr />
 
 <p class="gras">Je vous salue Marie</p>
 
