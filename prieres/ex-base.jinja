@@ -7,6 +7,8 @@
 
 {% block content %}
 
+{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
+
 {{ mc.header("0", "Signe de croix") }}
 
 {% include bpath + "signe-croix.jinja" %}
@@ -48,6 +50,7 @@
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-base.js") }}
 
