@@ -1,6 +1,7 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set bpath = "prieres/base/" %}
+{% set rpath = "prieres/rosaire/" %}
 {% set spath = "prieres/sang/" %}
 
 {% set title = "Chapelet du précieux sang de Jésus" %}
@@ -10,39 +11,23 @@
 
 <p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
 
-<p>(*) Incliner la tête</p>
-
-<p>(Signe de croix)</p>
+<p>Le chapelet a été simplifié en allant à l'essentiel.</p>
 
 <!-- Base -->
 
 {{ mc.anchor("base", "=") }}
 
-{% include spath + "sg-chant.jinja" %}
-
-{{ mc.anchor("st_esprit") }}
+<p>(Signe de croix)</p>
 
 {% include spath + "sg-esprit.jinja" %}
 
-<p class="gras">Credo</p>
-
-{% include spath + "sg-outro.jinja" %}
-
-{% include spath + "sg-dialogue.jinja" %}
-
 {{ mc.anchor("b_prieres") }}
 
-<p class="gras">Notre Père</p>
+{% include rpath + "rs-base.jinja" %}
 
-<p class="gras">Je vous salue Marie</p>
+{{ mc.anchor("medaille", "=") }}
 
-{{ mc.grains("base_trio", ["-", "foi", "espérance", "charité"]) }}
-
-<p class="gras">Gloire au Père</p>
-
-{{ mc.anchor("b_refrain") }}
-
-{% include spath + "sg-outro.jinja" %}
+{% include spath + "sg-medaille.jinja" %}
 
 <!-- Rondes -->
 
@@ -52,10 +37,6 @@
 
 {% include spath + "sg-intros.jinja" %}
 
-{% include spath + "sg-dialogue.jinja" %}
-
-{{ mc.anchor("douzaines") }}
-
 <p class="gras">Notre Père</p>
 
 <p class="gras">Je vous salue Marie</p>
@@ -63,12 +44,6 @@
 <p>"Précieux Sang de Jésus-Christ, sauve-nous et le monde entier." (x 12)</p>
 
 <p class="gras">Gloire au Père</p>
-
-{% include spath + "sg-outro.jinja" %}
-
-<div id="dernier">
-{% include spath + "sg-dialogue.jinja" %}
-</div>
 
 {{ mc.return_link("rondes") }}
 
@@ -78,18 +53,9 @@
 
 <p class="gras">Salut ô Reine</p>
 
-<p>
-V. Priez pour nous, sainte Mère de Dieu,<br>
-R. afin que nous devenions dignes des promesses de Jésus Christ.
-</p>
-
 {{ mc.anchor("final") }}
 
 {% include spath + "sg-final.jinja" %}
-
-{{ mc.anchor("litanies") }}
-
-{% include spath + "sg-min-litanies.jinja" %}
 
 <hr />
 

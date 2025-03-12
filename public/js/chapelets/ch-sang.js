@@ -5,7 +5,6 @@ const grains = $name("dz_rondes");
 const intros = $all(".intro");
 
 const basePremier = $("#base_trio_1");
-const divDernier = $("#dernier");
 
 let grain, intro;
 
@@ -44,19 +43,6 @@ function setIntro(index)
 
     hideAll(intros);
     showBlock(intro);
-
-    switchLast(index);
-}
-
-// MAJ du dernier bloc
-
-function switchLast(index)
-{
-    if (index == 4) {
-        showBlock(divDernier);
-    } else {
-        hideBlock(divDernier);
-    }
 }
 
 // Réinitialisation du chapelet
