@@ -36,10 +36,10 @@ prieres = [
 
 convert_jinja_single("prieres/ex-base")
 #convert_jinja_single("prieres/rosaire")
-convert_jinja_single("prieres/sang")
+#convert_jinja_single("prieres/sang")
 #convert_jinja_single("prieres/misericorde")
-#convert_jinja_single("prieres/plaies")
-convert_jinja_single("prieres/ames")
+convert_jinja_single("prieres/plaies")
+#convert_jinja_single("prieres/ames")
 #convert_jinja_single("prieres/abandon")
 #convert_jinja_single("prieres/mercis")
 
