@@ -9,8 +9,7 @@
         { "href" : "sang", "title" : "Chapelet du précieux sang de Jésus" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
         { "href" : "plaies", "title" : "Chapelet des saintes plaies" },
-        { "href" : "ames", "title" : "Chapelet du salut des âmes" },
-        { "href" : "abandon", "title" : "Chapelet de l'abandon" },
+        { "href" : "larmes", "title" : "Chapelet des larmes de sang" },
         { "href" : "mercis", "title" : "Chapelet des 1000 mercis" }
     ],
     "exercices" : [
