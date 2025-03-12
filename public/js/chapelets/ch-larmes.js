@@ -20,7 +20,7 @@ const mysteres = [
 
 /* Evénements de clic */
 
-for (let index = 0 ; index < 8 ; index++)
+for (let index = 0 ; index < 7 ; index++)
 {
     grains[index].addEventListener("click", () => majMystere(index));
 }
@@ -40,7 +40,7 @@ function majMystere(index)
 
 function selectRonde(index)
 {
-    setIntro(index);
+    majMystere(index);
 
     grain = grains[index];
 
