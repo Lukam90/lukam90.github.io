@@ -2,10 +2,6 @@
 
 const grains = $name("dz_rondes");
 
-const paterN1 = $("#pater_trio_1");
-const aveN1 = $("#ave_trio_1");
-const gloriaN1 = $("#gloria_trio_1");
-
 let grain;
 
 /* Variables */
@@ -24,15 +20,6 @@ function selectRonde(index)
     grain.click();
 }
 
-// Réinitialisation des boutons
-
-function resetButtons()
-{
-    paterN1.click();
-    aveN1.click();
-    gloriaN1.click();
-}
-
 // Réinitialisation du rosaire
 
 function resetAll()
@@ -40,8 +27,6 @@ function resetAll()
     goTo("#");
 
     selectRonde(0);
-
-    resetButtons();
 }
 
 /* Raccourcis */
