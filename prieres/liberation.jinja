@@ -10,11 +10,13 @@ La <b>prière de Morrnah</b>, revue et simplifiée, se récite sur les <b>petits
 
 <!-- Rondes -->
 
-<hr />
+{{ mc.anchor("rondes", "=") }}
 
-{{ mc.grains("dz_rondes", range(1,6)) }}
+<p>(Signe de croix)</p>
 
-<p>
+{{ mc.grains("dz_rondes", range(1,6), "checkFirst()") }}
+
+<p class="gauche">
 Créateur Divin,<br>
 si moi, ma famille, mes proches ou mes ancêtres,<br>
 vous ont offensé ou ont offensé<br>
