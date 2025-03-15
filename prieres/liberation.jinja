@@ -5,56 +5,42 @@
 {% set title = "Chapelet de libération" %}
 
 {% block content %}
-<p>Ce chapelet de libération reprend la structure de base, à quelques différences près.</p>
+<p>Ce chapelet de libération est personnel et se base sur la <b>méthode Ho'oponopono</b>.</p>
 
 <p class="gauche">
-Le <b>Credo</b> se récite sur la <b>croix</b>.<br>
-Le <b>Notre Père</b> se récite sur les <b>gros grains</b>.<br>
-Le <b>verset de St Jean</b> (Jn 8,36) se récite sur les <b>petits grains</b>.<br>
-Le <b>bref de St Antoine</b> se récite <b>après</b> chaque dizaine.<br>
-Le <b>Salut ô Reine</b> se récite à la fin.
+La <b>prière de Morrnah Simeona</b>, revue et simplifiée, se récite sur les <b>gros grains</b>.<br>
+Le <b>verset de St Jean</b> (Jn 8,36) se récite sur les <b>petits grains</b>.
 </p>
-
-{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
-
-<!-- Base -->
-
-{{ mc.anchor("base", "=") }}
-
-{% include bpath + "signe-croix.jinja" %}
-
-{% include bpath + "credo.jinja" %}
 
 <!-- Rondes -->
 
 {{ mc.anchor("rondes", "=") }}
 
-{{ mc.grains("dz_rondes", range(0,6)) }}
+{% include bpath + "signe-croix.jinja" %}
 
-{% include bpath + "notre-pere.jinja" %}
+{{ mc.grains("dz_rondes", range(1,6)) }}
+
+<p class="gauche">
+Créateur Divin,<br>
+si moi, ma famille, mes proches ou mes ancêtres,<br>
+vous ont offensé ou ont offensé<br>
+votre famille, vos proches ou vos ancêtres,<br>
+en pensées, en paroles ou en actions,<br>
+nous vous demandons pardon.<br>
+Que toutes ces mémoires du passé<br>
+soient transmutées en amour inconditionnel.<br>
+Amen.
+</p>
 
 {{ mc.anchor("dz_verset") }}
 
-<p>"Si Jésus nous libère, nous serons vraiment libres." (x <span id="nombre">3</span>)</p>
-
-{{ mc.anchor("dz_bref") }}
-
-{% include bpath + "ex-bref.jinja" %}
+<p>"Si Jésus nous libère, nous serons vraiment libres." (x 10)</p>
 
 {{ mc.return_link("rondes") }}
-
-{{ mc.anchor("fin", "=") }}
-
-{% include bpath + "salut-reine.jinja" %}
-
-{% include bpath + "signe-croix.jinja" %}
-
-{{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
-{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-liberation.js") }}
 
