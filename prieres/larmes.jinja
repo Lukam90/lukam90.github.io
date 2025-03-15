@@ -2,7 +2,6 @@
 
 {% set bpath = "prieres/base/" %}
 {% set rpath = "prieres/rosaire/" %}
-{% set spath = "prieres/sang/" %}
 
 {% set title = "Chapelet des larmes de sang" %}
 
@@ -11,24 +10,34 @@
 
 <p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
 
+{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
+
 <!-- Base -->
 
 {{ mc.anchor("base", "=") }}
 
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.jinja" %}
 
-<p class="gras">Credo</p>
+{{ mc.anchor("credo") }}
 
-<p class="gras">Notre Père</p>
+{% include bpath + "credo.jinja" %}
 
-<p class="gras">Je vous salue Marie</p>
+{{ mc.anchor("pater") }}
 
-<p class="gras">Gloire au Père</p>
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("ave") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.anchor("gloria") }}
+
+{% include bpath + "gloire-pere.jinja" %}
 
 {{ mc.anchor("intro", "=") }}
 
 <p class="gauche">
-Jésus crucifié, prosternés à tes pieds,<br>
+Jésus crucifié, prosterné à tes pieds,<br>
 je t’offre les larmes de sang de celle qui t’a accompagné pendant toute ta vie<br>
 et pendant ton si douloureux chemin de croix avec un tendre et compatissant amour.<br>
 Fait, Ô bon maître, que je prenne à cœur<br>
@@ -72,13 +81,14 @@ de la confusion qui le menace. Amen.<br>
 
 <hr />
 
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.jinja" %}
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-larmes.js") }}
 

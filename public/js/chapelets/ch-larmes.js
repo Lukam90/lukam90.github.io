@@ -72,6 +72,12 @@ document.addEventListener("keydown", e => {
 
     if (isMajKey(e)) {
         if (e.key == "B")   goTo("#base");
+
+        if (e.key == "C")   goTo("#credo");
+        if (e.key == "P")   goTo("#pater");
+        if (e.key == "A")   goTo("#ave");
+        if (e.key == "G")   goTo("#gloria");
+
         if (e.key == "I")   goTo("#intro");
         if (e.key == "R")   goTo("#rondes");
         if (e.key == "F")   goTo("#fin");
