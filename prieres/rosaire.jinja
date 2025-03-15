@@ -1,20 +1,22 @@
 {% extends "layouts/prieres.jinja" %}
 
+{% set bpath = "prieres/base/" %}
 {% set rpath = "prieres/rosaire/" %}
 
 {% set title = "Chapelet du rosaire" %}
 
 {% block content %}
-
 <p>Je recommande l'application {{ mc.link("Rosario", "https://rosario.app/") }} pour la méditation des <b>mystères</b>.</p>
 
 <p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
+
+{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
 
 {{ mc.anchor("base", "=") }}
 
 <!-- Base -->
 
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.jinja" %}
 
 {% include rpath + "rs-base.jinja" %}
 
@@ -24,17 +26,7 @@
 
 {% include rpath + "rs-mysteres.jinja" %}
 
-<hr />
-
-<p class="gras">Notre Père</p>
-
-<p class="gras">Je vous salue Marie</p>
-
-{{ mc.grains("dz_grains", range(0, 11)) }}
-
-<p class="gras">Gloire au Père</p>
-
-<p class="gras">(Prière de Fatima)</p>
+{% include rpath + "rs-dizaines.jinja" %}
 
 {{ mc.return_link("mysteres") }}
 
@@ -42,13 +34,14 @@
 
 {{ mc.anchor("fin", "=") }}
 
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.jinja" %}
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-rosaire.js") }}
 

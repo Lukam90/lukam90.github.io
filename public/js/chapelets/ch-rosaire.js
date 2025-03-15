@@ -123,7 +123,5 @@ document.addEventListener("keydown", e => {
         if (e.key == "D")   goTo("#dz_ave");
         if (e.key == "G")   goTo("#dz_gloria");
         if (e.key == "F")   goTo("#dz_fatima");
-
-        if (e.key == "S")   cbAmes.click();
     }
 });
