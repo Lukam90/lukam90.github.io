@@ -6,17 +6,6 @@ const btnPremier = $("#dz_grains_1");
 
 let radioBtn;
 
-/* Variables */
-
-let numKey = 0;
-
-/* Evénement de clic */
-
-for (let i = 0 ; i < 5 ; i++)
-{
-    rondes[i].addEventListener("click", () => checkFirst());
-}
-
 /* Fonctions */
 
 // Sélection d'une ronde
@@ -27,6 +16,8 @@ function selectRonde(index)
 
     radioBtn.click();
     radioBtn.focus();
+
+    majNombre(index);
 }
 
 // Réinitialisation du rosaire
@@ -41,7 +32,7 @@ function resetAll()
 /* Raccourcis */
 
 document.addEventListener("keydown", e => {
-    numKey = parseInt(e.key);
+    let numKey = parseInt(e.key);
 
     if (numKey == 0)   resetAll();
 
