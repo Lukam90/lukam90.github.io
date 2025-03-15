@@ -1,6 +1,7 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set bpath = "prieres/base/" %}
+{% set rpath = "prieres/rosaire/" %}
 
 {% set title = "Dizaines de libération des âmes" %}
 
@@ -13,45 +14,38 @@ révélée par Jésus à <b>Sainte Gertrude</b>,<br>
 permet de libérer jusqu'à <b>1000 âmes</b>.
 </p>
 
-<!-- Rondes -->
+{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
 
-{{ mc.anchor("rondes", "=") }}
+{{ mc.anchor("base", "=") }}
 
-<p>(Signe de croix)</p>
+<!-- Base -->
 
-{{ mc.grains("dz_rondes", range(1,6), "checkFirst()") }}
+{% include bpath + "signe-croix.jinja" %}
 
-<p>
-<b>Cœur Sacré de Jésus</b>, ouvrez les cœurs et les esprits des pêcheurs<br>
-à la vérité et à la lumière de Dieu, le Père.<br>
-<b>Cœur Immaculé de Marie</b>, priez pour la conversion des pêcheurs et du monde.
-</p>
+{% include rpath + "rs-base.jinja" %}
 
-{{ mc.anchor("dizaines") }}
+<!-- Mystères -->
 
-<p>
-Père Éternel, je vous offre le très précieux Sang de votre Divin Fils, Jésus,<br>
-en union avec les saintes messes célébrées aujourd’hui à travers le monde,<br>
-pour toutes les âmes du purgatoire,<br>
-pour les pécheurs dans l’Église Universelle,<br>
-les pécheurs en tout lieu,<br>
-ceux de mon entourage et de ma propre famille. Amen.
-</p>
+{{ mc.anchor("mysteres", "=") }}
 
-{{ mc.grains("dz_grains", range(0, 11)) }}
+{% include rpath + "rs-mysteres.jinja" %}
 
-{{ mc.return_link("rondes") }}
+{% include rpath + "spe-dizaines.jinja" %}
+
+{{ mc.return_link("mysteres") }}
 
 {{ mc.anchor("fin", "=") }}
 
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.jinja" %}
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
 
+{{ mc.script("chapelets/ch-rosaire.js") }}
 {{ mc.script("chapelets/ch-ames.js") }}
 
 {% endblock %}
