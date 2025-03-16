@@ -81,8 +81,11 @@ document.addEventListener("keydown", e => {
     }
 
     if (isMajKey(e)) {
-        if (e.key == "B")   goTo("#base");
+        if (e.key == "C")   goTo("#base");
+        if (e.key == "P")   goTo("#pater");
+        if (e.key == "G")   goTo("#gloria");
+        if (e.key == "A")   goTo("#ave");
+
         if (e.key == "M")   goTo("#medaille");
-        if (e.key == "N")   goTo("#niveaux");
     }
 });

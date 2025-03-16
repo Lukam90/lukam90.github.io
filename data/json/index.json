@@ -5,9 +5,10 @@
     ],
     "prieres" : [
         { "href" : "ex-base", "title" : "Prières de base" },
-        { "href" : "liberation", "title" : "Chapelet de libération (*)" },
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
+        { "href" : "ames", "title" : "Chapelet du salut des âmes" },
+        { "href" : "vertus", "title" : "Chapelet des 13 vertus de Notre-Dame" },
         { "href" : "plaies", "title" : "Chapelet des saintes plaies" },
         { "href" : "larmes", "title" : "Chapelet des larmes de sang" }
     ],

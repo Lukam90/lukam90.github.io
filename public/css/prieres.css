@@ -140,7 +140,7 @@ label:hover {
 /* Responsive */
 
 @media screen and (max-width: 768px){
-    br {
-        display: none;
+    p {
+        text-align: left;
     }
 }
