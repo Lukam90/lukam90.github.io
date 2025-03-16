@@ -52,4 +52,14 @@ document.addEventListener("keydown", e => {
     if (numKey == 0)    resetAll();
 
     if (numKey >= 1 && numKey <= 5) selectRonde(numKey - 1);
+
+    if (isMajKey(e)) {
+        if (e.key == "C")   goTo("#b_credo");
+        if (e.key == "P")   goTo("#b_pater");
+        if (e.key == "A")   goTo("#b_ave");
+        if (e.key == "G")   goTo("#b_gloria");
+
+        if (e.key == "R")   goTo("#rondes");
+        if (e.key == "F")   goTo("#fin");
+    }
 });
