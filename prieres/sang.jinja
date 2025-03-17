@@ -17,7 +17,7 @@
 
 {{ mc.anchor("base", "=") }}
 
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.jinja" %}
 
 {% include spath + "sg-esprit.jinja" %}
 
@@ -57,6 +57,8 @@
 
 {% include spath + "sg-intros.jinja" %}
 
+{% include spath + "sg-coeur.jinja" %}
+
 {{ mc.anchor("dz_pater") }}
 
 {% include bpath + "notre-pere.jinja" %}
@@ -77,6 +79,10 @@
 
 {% include spath + "sg-refrain.jinja" %}
 
+<div id="dernier">
+{% include spath + "sg-coeur.jinja" %}
+</div>
+
 {{ mc.return_link("rondes") }}
 
 <!-- Fin -->
@@ -94,9 +100,11 @@ R. Afin que nous devenions dignes des promesses de Jésus-Christ.
 
 {% include spath + "sg-final.jinja" %}
 
-<hr />
+{{ mc.anchor("litanies") }}
 
-<p>(Signe de croix)</p>
+{% include spath + "sg-min-litanies.jinja" %}
+
+{% include bpath + "signe-croix.jinja" %}
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
