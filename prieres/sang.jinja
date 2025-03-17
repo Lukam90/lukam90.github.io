@@ -9,9 +9,9 @@
 {% block content %}
 <p>La dévotion est complémentaire au {{ mc.link("Saint Rosaire", "/prieres/rosaire.html") }}.</p>
 
-<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
+<p>(*) Incliner la tête</p>
 
-<p>Le chapelet a été simplifié en allant à l'essentiel.</p>
+{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
 
 <!-- Base -->
 
@@ -21,13 +21,33 @@
 
 {% include spath + "sg-esprit.jinja" %}
 
-{{ mc.anchor("b_prieres") }}
+{{ mc.anchor("b_credo") }}
 
-{% include rpath + "rs-base.jinja" %}
+{% include bpath + "credo.jinja" %}
 
-{{ mc.anchor("medaille", "=") }}
+{{ mc.anchor("b1_refrain") }}
 
-{% include spath + "sg-medaille.jinja" %}
+{% include spath + "sg-refrain.jinja" %}
+
+{% include spath + "sg-coeur.jinja" %}
+
+{{ mc.anchor("b_pater") }}
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("b_ave") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.grains("base_trio", ["-", "foi", "espérance", "charité"]) }}
+
+{{ mc.anchor("b_gloria") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.anchor("b2_refrain") }}
+
+{% include spath + "sg-refrain.jinja" %}
 
 <!-- Rondes -->
 
@@ -37,13 +57,25 @@
 
 {% include spath + "sg-intros.jinja" %}
 
-<p class="gras">Notre Père</p>
+{{ mc.anchor("dz_pater") }}
 
-<p class="gras">Je vous salue Marie</p>
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("dz_ave") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.anchor("douzaine") }}
 
 <p>"Précieux Sang de Jésus-Christ, sauve-nous et le monde entier." (x 12)</p>
 
-<p class="gras">Gloire au Père</p>
+{{ mc.anchor("dz_gloria") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.anchor("dz_refrain") }}
+
+{% include spath + "sg-refrain.jinja" %}
 
 {{ mc.return_link("rondes") }}
 
@@ -51,7 +83,12 @@
 
 {{ mc.anchor("fin", "=") }}
 
-<p class="gras">Salut ô Reine</p>
+{% include bpath + "salut-reine.jinja" %}
+
+<p>
+V. Prie pour nous, sainte Mère de Dieu,<br>
+R. Afin que nous devenions dignes des promesses de Jésus-Christ.
+</p>
 
 {{ mc.anchor("final") }}
 
@@ -66,6 +103,7 @@
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-sang.js") }}
 
