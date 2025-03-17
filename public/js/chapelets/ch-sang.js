@@ -94,7 +94,5 @@ document.addEventListener("keydown", e => {
         if (e.key == "R")   goTo("#dz_refrain");
 
         if (e.key == "F")   goTo("#fin");
-
-        if (e.key == "L")   goTo("#litanies");
     }
 });
