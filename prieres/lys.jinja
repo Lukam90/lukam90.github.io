@@ -1,0 +1,41 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/saints/" %}
+
+{% set title = "Dizaines des lys de St Joseph" %}
+
+{% block content %}
+
+{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
+
+<!-- Base -->
+
+{% include bpath + "signe-croix.jinja" %}
+
+<!-- Dizaines -->
+
+{{ mc.anchor("pater", "=") }}
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("ave") }}
+
+{% include spath + "st-joseph.jinja" %}
+
+{{ mc.grains("dz_grains", range(0, 11)) }}
+
+{{ mc.anchor("gloria") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.return_link("dizaines") }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
+
+{{ mc.script("chapelets/ch-lys.js") }}
+
+{% endblock %}
