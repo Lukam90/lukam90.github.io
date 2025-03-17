@@ -6,6 +6,8 @@ const intros = $all(".intro");
 
 const basePremier = $("#base_trio_1");
 
+const divDernier = $("#dernier");
+
 let grain, intro;
 
 /* Variables */
@@ -43,6 +45,19 @@ function setIntro(index)
 
     hideAll(intros);
     showBlock(intro);
+
+    switchLast(index);
+}
+
+// Affichage du dernier bloc
+
+function switchLast(index)
+{
+    hideBlock(divDernier);
+
+    if (index == 4) {
+        showBlock(divDernier);
+    }
 }
 
 // Réinitialisation du chapelet
@@ -70,8 +85,16 @@ document.addEventListener("keydown", e => {
     }
 
     if (isMajKey(e)) {
-        if (e.key == "C")   goTo("#base");
-        if (e.key == "D")   goTo("#douzaines");
+        if (e.key == "C")   goTo("#credo");
+
+        if (e.key == "P")   goTo("#dz_pater");
+        if (e.key == "A")   goTo("#dz_ave");
+        if (e.key == "D")   goTo("#douzaine");
+        if (e.key == "G")   goTo("#dz_gloria");
+        if (e.key == "R")   goTo("#dz_refrain");
+
         if (e.key == "F")   goTo("#fin");
+
+        if (e.key == "L")   goTo("#litanies");
     }
 });
