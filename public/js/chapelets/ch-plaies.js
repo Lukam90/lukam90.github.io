@@ -14,6 +14,8 @@ let numKey = 0;
 
 function selectRonde(index)
 {
+    goTo("#rondes");
+
     grain = grains[index];
 
     grain.select();
@@ -24,9 +26,9 @@ function selectRonde(index)
 
 function resetAll()
 {
-    goTo("#");
-
     selectRonde(0);
+
+    goTo("#");
 }
 
 /* Raccourcis */
@@ -36,15 +38,5 @@ document.addEventListener("keydown", e => {
 
     if (numKey == 0)   resetAll();
 
-    if (numKey >= 1 && numKey <= 5) {
-        goTo("#rondes");
-
-        selectRonde(numKey - 1);
-    }
-
-    if (isMajKey(e)) {
-        if (e.key == "R")   goTo("#rondes");
-        if (e.key == "B")   goTo("#bonus");
-        if (e.key == "X")   goTo("#ex_prieres");
-    }
+    if (numKey >= 1 && numKey <= 5) selectRonde(numKey - 1);
 });
