@@ -1,30 +1,23 @@
 /* Eléments */
 
-const dzRondes = $name("dz_rondes");
-
-const checkboxes = $all("input[type='checkbox']");
+const grains = $name("dz_rondes");
 
 const trioPremier = $("#base_trio_1");
 const btnPremier = $("#dz_grains_1");
 
-/* Variables */
-
-let numKey = 0;
-
-/* Evénement de clic */
-
-for (let i = 0 ; i < 5 ; i++)
-{
-    dzRondes[i].addEventListener("click", () => resetButtons());
-}
+let grain;
 
 /* Fonctions */
 
-// Sélection d'une ronde
+// Sélection d'une ronde (raccourci)
 
 function selectRonde(index)
 {
-    dzRondes[index].click();
+    goTo("#rondes");
+
+    grain = grains[index];
+    grain.select();
+    grain.click();
 }
 
 // Réinitialisation des boutons
@@ -33,8 +26,6 @@ function resetButtons()
 {
     checkButton(trioPremier);
     checkButton(btnPremier);
-
-    uncheckAll(checkboxes);
 }
 
 // Réinitialisation du rosaire
@@ -49,13 +40,20 @@ function resetAll()
 /* Raccourcis */
 
 document.addEventListener("keydown", e => {
-    numKey = parseInt(e.key);
+    let numKey = parseInt(e.key);
 
     if (numKey == 0)   resetAll();
 
     if (numKey >= 1 && numKey <= 5) {
-        goTo("#dz_rondes_" + numKey);
-
         selectRonde(numKey - 1);
+    }
+
+    if (isMajKey(e)) {
+        if (e.key == "C")   goTo("#credo");
+        if (e.key == "A")   goTo("#acte");
+        if (e.key == "R")   goTo("#rondes");
+
+        if (e.key == "D")   goTo("#dz_priere");
+        if (e.key == "F")   goTo("#dz_fatima");
     }
 });
