@@ -8,12 +8,7 @@
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
         { "href" : "sang", "title" : "Chapelet du précieux sang de Jésus" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
-        { "href" : "reparation", "title" : "Chapelet de réparation de Fatima" },
-        { "href" : "plaies", "title" : "Chapelet des saintes plaies" },
-        { "href" : "devotion", "title" : "Chapelet de dévotion de St Bernard de Clairvaux" },
-        { "href" : "larmes", "title" : "Chapelet des larmes de sang" },
-        { "href" : "mercis", "title" : "Chapelet des 1000 mercis" },
-        { "href" : "lys", "title" : "Dizaines des lys de St Joseph" }
+        { "href" : "plaies", "title" : "Chapelet des saintes plaies" }
     ],
     "exercices" : [
         { "href" : "ex-musical", "title" : "Cohérence cardiaque" }
