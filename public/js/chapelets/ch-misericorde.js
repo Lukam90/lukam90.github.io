@@ -2,7 +2,7 @@
 
 const grains = $name("dz_rondes");
 
-const btnPremier = grains[0];
+let grain;
 
 /* Variables */
 
@@ -16,22 +16,24 @@ function selectRonde(index)
 {
     goTo("#rondes");
 
-    grains[index].click();
+    grain = grains[index];
+    grain.select();
+    grain.click();
 }
 
 // Réinitialisation du rosaire
 
 function resetAll()
 {
-    goTo("#");
+    selectRonde(0);
 
-    btnPremier.click();
+    goTo("#");
 }
 
 /* Raccourcis */
 
 document.addEventListener("keydown", e => {
-    numKey = parseInt(e.key);
+    let numKey = parseInt(e.key);
 
     if (numKey == 0)   resetAll();
 

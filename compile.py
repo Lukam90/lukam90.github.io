@@ -34,7 +34,7 @@ prieres = ["ex-base", "rosaire", "sang", "misericorde", "plaies"]
 #convert_jinja_single("prieres/ex-base")
 #convert_jinja_single("prieres/rosaire")
 #convert_jinja_single("prieres/sang")
-#convert_jinja_single("prieres/misericorde")
+convert_jinja_single("prieres/misericorde")
 convert_jinja_single("prieres/plaies")
 
 ## Exercices
