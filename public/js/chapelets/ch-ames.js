@@ -4,20 +4,10 @@ const grains = $name("dz_rondes");
 
 const basePremier = $("#base_trio_1");
 const btnPremier = $("#dz_grains_1");
-const finPremier = $("#fin_trio_1");
 
 let grain;
 
 /* Fonctions */
-
-// Réinitialisation des boutons
-
-function resetButtons()
-{
-    basePremier.click();
-    btnPremier.click();
-    finPremier.click();
-}
 
 // Sélection d'une ronde (raccourci)
 
@@ -37,7 +27,7 @@ function selectRonde(index)
 
 function resetAll()
 {
-    resetButtons();
+    basePremier.click();
 
     selectRonde(0);
 
@@ -54,12 +44,10 @@ document.addEventListener("keydown", e => {
     if (numKey >= 1 && numKey <= 5) selectRonde(numKey - 1);
 
     if (isMajKey(e)) {
-        if (e.key == "C")   goTo("#b_credo");
-        if (e.key == "P")   goTo("#b_pater");
-        if (e.key == "A")   goTo("#b_ave");
-        if (e.key == "G")   goTo("#b_gloria");
-
-        if (e.key == "R")   goTo("#rondes");
-        if (e.key == "F")   goTo("#fin");
+        if (e.key == "P" || e.key == "R")   goTo("#rondes");
+        
+        if (e.key == "A")   goTo("#dz_ames");
+        if (e.key == "C")   goTo("#dz_coeurs");
+        if (e.key == "G")   goTo("#dz_gloria");
     }
 });

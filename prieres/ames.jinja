@@ -4,10 +4,14 @@
 {% set rpath = "prieres/rosaire/" %}
 {% set spath = "prieres/ames/" %}
 
-{% set title = "Chapelet du salut des âmes" %}
+{% set title = "Chapelet de libération des âmes" %}
 
 {% block content %}
-<p>Ce chapelet permet de libérer jusqu'à <b>5000 âmes</b> sur <b>4 générations</b>.</p>
+<p>Le chapelet reprend la structure du {{ mc.link("Saint Rosaire", "/prieres/rosaire.html") }}.</p>
+
+<p>
+La prière des dizaines, révélée par Jésus à <b>Sainte Gertrude</b>,<br>
+permet de libérer jusqu'à <b>1000 âmes</b> à chaque récitation.</p>
 
 {{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
 
@@ -25,27 +29,27 @@
 
 {{ mc.grains("dz_rondes", range(1,6), "checkFirst()") }}
 
-<p>
-Père Éternel, je vous offre le Sacré-Cœur de Jésus et le Cœur Immaculé de Marie<br>
-pour le salut de nos âmes, de nos familles et du monde entier.
-</p>
+{% include bpath + "notre-pere.jinja" %}
 
-<hr />
+{{ mc.anchor("dz_ames") }}
 
-<p>
-Sacré-Cœur de Jésus, aie pitié de nous.<br>
-Cœur Immaculé de Marie, prie pour nous.
-</p>
+{% include spath + "ex-ames.jinja" %}
 
 {{ mc.grains("dz_grains", range(0, 11)) }}
+
+{{ mc.anchor("dz_coeurs") }}
+
+{% include spath + "ex-coeurs.jinja" %}
+
+{{ mc.anchor("dz_gloria") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.return_link("rondes") }}
 
 <!-- Fin -->
 
 {{ mc.anchor("fin", "=") }}
-
-{% include bpath + "gloire-pere.jinja" %}
-
-{{ mc.grains("fin_trio", ["-", "Père", "Fils", "St-Esprit"]) }}
 
 {% include bpath + "signe-croix.jinja" %}
 
