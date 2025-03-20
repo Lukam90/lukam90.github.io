@@ -235,11 +235,11 @@ et in saecula saeculorum.<br>
 Amen.
 </p>
 
-<!-- Rondes -->
+<!-- Mystères -->
 
 
-<div id="rondes">
-    <a href="#rondes" >
+<div id="mysteres">
+    <a href="#mysteres" >
     
     ===
     
@@ -247,45 +247,48 @@ Amen.
 </div>
 
 
+<p>
+    Mystères
 
-    <p class="grains">
+    <select id="sel_type" onchange="selectType();">
+        <option>joyeux</option>
+        <option>lumineux</option>
+        <option>douloureux</option>
+        <option>glorieux</option>
+    </select>
+</p>
+
+<ul class="priere gauche">
+    <li>
+<input type="radio" name="mysteres" id="m1"  />
+<label for="m1" class="mysteres">1. L'annonciation</label>
+ </li>
+    <li>
+<input type="radio" name="mysteres" id="m2"  />
+<label for="m2" class="mysteres">2. La visitation</label>
+ </li>
+    <li>
+<input type="radio" name="mysteres" id="m3"  />
+<label for="m3" class="mysteres">3. la naissance de Jésus</label>
+ </li>
+    <li>
+<input type="radio" name="mysteres" id="m4"  />
+<label for="m4" class="mysteres">4. la présentation de Jésus au temple de Jérusalem</label>
+ </li>
+    <li>
+<input type="radio" name="mysteres" id="m5"  />
+<label for="m5" class="mysteres">5. le recouvrement de Jésus au temple de Jérusalem</label>
+ </li>
+</ul>
+
+
+<div id="dz_pater">
+    <a href="#dz_pater" >
     
-        
-
-        
-<input type="radio" name="dz_rondes" id="dz_rondes_1"  onclick="checkFirst()"  />
-<label for="dz_rondes_1" class="dz_rondes">1</label>
-
+    ***
     
-        
-
-        
-<input type="radio" name="dz_rondes" id="dz_rondes_2"  onclick="checkFirst()"  />
-<label for="dz_rondes_2" class="dz_rondes">2</label>
-
-    
-        
-
-        
-<input type="radio" name="dz_rondes" id="dz_rondes_3"  onclick="checkFirst()"  />
-<label for="dz_rondes_3" class="dz_rondes">3</label>
-
-    
-        
-
-        
-<input type="radio" name="dz_rondes" id="dz_rondes_4"  onclick="checkFirst()"  />
-<label for="dz_rondes_4" class="dz_rondes">4</label>
-
-    
-        
-
-        
-<input type="radio" name="dz_rondes" id="dz_rondes_5"  onclick="checkFirst()"  />
-<label for="dz_rondes_5" class="dz_rondes">5</label>
-
-    
-    </p>
+    </a>
+</div>
 
 
 <p class="fr">
@@ -325,13 +328,16 @@ Amen.
 
 
 <p>
-Père Éternel, je vous offre le très précieux Sang de votre Divin Fils, Jésus,<br>
-en union avec les saintes messes célébrées aujourd’hui à travers le monde,<br>
+Père Éternel, je vous offre le très précieux Sang<br>
+de votre Divin Fils, Jésus,<br>
+en union avec les saintes messes célébrées<br>
+aujourd’hui à travers le monde,<br>
 pour toutes les âmes du purgatoire,<br>
 pour les pécheurs dans l’Église Universelle,<br>
 les pécheurs en tout lieu,<br>
 ceux de mon entourage<br>
-et de ma propre famille. Amen.
+et de ma propre famille.<br>
+Amen.
 </p>
 
 
@@ -460,7 +466,7 @@ Amen.
 </p>
 
 
-<p><a href="#rondes" class="bleu" >Retour en haut</a></p>
+<p><a href="#mysteres" class="bleu" >Retour en haut</a></p>
 
 
 <!-- Fin -->
@@ -491,6 +497,9 @@ Amen.
 
 <script src="/public/js/latin.js"></script>
 
+
+
+<script src="/public/js/chapelets/ch-rosaire.js"></script>
 
 
 <script src="/public/js/chapelets/ch-ames.js"></script>

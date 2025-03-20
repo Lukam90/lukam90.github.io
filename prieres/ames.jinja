@@ -23,11 +23,13 @@ permet de libérer jusqu'à <b>1000 âmes</b> à chaque récitation.</p>
 
 {% include rpath + "rs-base.jinja" %}
 
-<!-- Rondes -->
+<!-- Mystères -->
 
-{{ mc.anchor("rondes", "=") }}
+{{ mc.anchor("mysteres", "=") }}
 
-{{ mc.grains("dz_rondes", range(1,6), "checkFirst()") }}
+{% include rpath + "rs-mysteres.jinja" %}
+
+{{ mc.anchor("dz_pater") }}
 
 {% include bpath + "notre-pere.jinja" %}
 
@@ -45,7 +47,7 @@ permet de libérer jusqu'à <b>1000 âmes</b> à chaque récitation.</p>
 
 {% include bpath + "gloire-pere.jinja" %}
 
-{{ mc.return_link("rondes") }}
+{{ mc.return_link("mysteres") }}
 
 <!-- Fin -->
 
@@ -60,6 +62,7 @@ permet de libérer jusqu'à <b>1000 âmes</b> à chaque récitation.</p>
 {{ mc.script("utils.js") }}
 {{ mc.script("latin.js") }}
 
+{{ mc.script("chapelets/ch-rosaire.js") }}
 {{ mc.script("chapelets/ch-ames.js") }}
 
 {% endblock %}
