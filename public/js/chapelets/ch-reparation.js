@@ -3,7 +3,7 @@
 const grains = $name("dz_rondes");
 
 const trioPremier = $("#base_trio_1");
-const btnPremier = $("#dz_grains_1");
+const dzPremier = $("#dz_grains_1");
 
 let grain;
 
@@ -20,12 +20,22 @@ function selectRonde(index)
     grain.click();
 }
 
+// Sélection de la dizaine
+
+function selectDizaine()
+{
+    goTo("#dz_priere");
+
+    dzPremier.select();
+    dzPremier.click();
+}
+
 // Réinitialisation des boutons
 
 function resetButtons()
 {
     checkButton(trioPremier);
-    checkButton(btnPremier);
+    checkButton(dzPremier);
 }
 
 // Réinitialisation du rosaire
@@ -42,7 +52,7 @@ function resetAll()
 document.addEventListener("keydown", e => {
     let numKey = parseInt(e.key);
 
-    if (numKey == 0)   resetAll();
+    if (numKey == 0)   selectDizaine();
 
     if (numKey >= 1 && numKey <= 5) {
         selectRonde(numKey - 1);
