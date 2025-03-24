@@ -22,7 +22,7 @@ function resetAll()
 document.addEventListener("keydown", e => {
     let numKey = parseInt(e.key);
 
-    if (numKey == 0)   resetDizaine();
+    if (numKey == 0)   selectDizaine();
 
     if (numKey >= 1 && numKey <= 5) {
         goTo("#mysteres");
@@ -32,7 +32,7 @@ document.addEventListener("keydown", e => {
 
     if (isMajKey(e)) {
         if (e.key == "P")   goTo("#dz_pater");
-        if (e.key == "D")   goTo("#dz_ave");
+        if (e.key == "D")   goTo("#dizaine");
         if (e.key == "G")   goTo("#dz_gloria");
         if (e.key == "F")   goTo("#dz_fatima");
     }

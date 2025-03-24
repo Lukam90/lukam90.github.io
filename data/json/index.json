@@ -5,7 +5,7 @@
     ],
     "prieres" : [
         { "href" : "ex-base", "title" : "Prières de base" },
-        { "href" : "rosaire", "title" : "Chapelet du rosaire" },
+        { "href" : "chapelet", "title" : "Chapelet du rosaire" },
         { "href" : "reparation", "title" : "Chapelet de réparation de Fatima" },
         { "href" : "ames", "title" : "Chapelet du salut des âmes" },
         { "href" : "sang", "title" : "Chapelet du précieux sang de Jésus" },

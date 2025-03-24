@@ -84,10 +84,12 @@ function selectMystere(index)
     resetDizaine();
 }
 
-// Réinitialisation de la dizaine
+// Sélection de la dizaine
 
-function resetDizaine()
+function selectDizaine()
 {
+    goTo("#dizaine");
+
     dzPremier.select();
     dzPremier.click();
 }
