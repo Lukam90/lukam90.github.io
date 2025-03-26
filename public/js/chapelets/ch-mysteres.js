@@ -1,12 +1,12 @@
 /* Données texte */
 
-const rosaire = {
+let rosaire = {
     joyeux : [
         "1. L'annonciation",
         "2. La visitation",
-        "3. la naissance de Jésus",
-        "4. la présentation de Jésus au temple de Jérusalem",
-        "5. le recouvrement de Jésus au temple de Jérusalem"
+        "3. La naissance de Jésus",
+        "4. La présentation de Jésus au temple de Jérusalem",
+        "5. Le recouvrement de Jésus au temple de Jérusalem"
     ],
     lumineux : [
         "1. Le baptême de Jésus",
@@ -84,12 +84,19 @@ function selectMystere(index)
     resetDizaine();
 }
 
+// Réinitialisation de la dizaine
+
+function resetDizaine()
+{
+    dzPremier.select();
+    dzPremier.click();
+}
+
 // Sélection de la dizaine
 
 function selectDizaine()
 {
     goTo("#dizaine");
 
-    dzPremier.select();
-    dzPremier.click();
+    resetDizaine();
 }
