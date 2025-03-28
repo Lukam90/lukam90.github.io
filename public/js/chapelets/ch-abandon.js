@@ -22,7 +22,7 @@ for (let index = 0 ; index < 5 ; index++)
 
 function setNom(index)
 {
-    nom = (index % 2 == 0) ? "Sainte Marie" : "Jésus";
+    nom = (index % 2 == 0) ? "Maman Marie" : "Jésus";
 
     spanNom.textContent = nom;
 }
