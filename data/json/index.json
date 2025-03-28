@@ -6,12 +6,12 @@
     "prieres" : [
         { "href" : "ex-base", "title" : "Prières de base" },
         { "href" : "chapelet", "title" : "Chapelet du rosaire" },
-        { "href" : "lys", "title" : "Dizaines de lys de St Joseph" },
+        { "href" : "abandon", "title" : "Chapelet de l'abandon" },
         { "href" : "reparation", "title" : "Chapelet de réparation de Fatima" },
-        { "href" : "ames", "title" : "Chapelet du salut des âmes" },
         { "href" : "sang", "title" : "Chapelet du précieux sang de Jésus" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
-        { "href" : "plaies", "title" : "Chapelet des saintes plaies" }
+        { "href" : "plaies", "title" : "Chapelet des saintes plaies" },
+        { "href" : "devotion", "title" : "Chapelet de dévotion de St Bernard de Clairvaux" }
     ],
     "exercices" : [
         { "href" : "ex-musical", "title" : "Cohérence cardiaque" }

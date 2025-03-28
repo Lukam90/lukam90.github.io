@@ -17,6 +17,9 @@
         <h1>Dizaines des lys de St Joseph</h1>
 
         
+<p>Le <b>lys</b> est le symbôle de <b>St Joseph</b> comme la rose l'est pour <b>Ste Marie</b>.</p>
+
+<p>La prière du <b>Je vous salue Joseph</b> a été revue et simplifiée.</p>
 
 
 <p>
@@ -31,13 +34,56 @@
 
 <p class="latin">(In nomine <b>Patris</b>, et <b>Filii</b> et <b>Spiritus Sancti</b>. Amen.)</p>
 
-<!-- Dizaines -->
+<!-- Mystères -->
 
 
-<div id="pater">
-    <a href="#pater" >
+<div id="mysteres">
+    <a href="#mysteres" >
     
     ===
+    
+    </a>
+</div>
+
+
+<p>
+    Mystères
+
+    <select id="sel_type" onchange="selectType();">
+        <option>joyeux</option>
+        <option>douloureux</option>
+        <option>glorieux</option>
+    </select>
+</p>
+
+<ul class="priere gauche">
+    <li>
+<input type="radio" name="mysteres" id="m1"  />
+<label for="m1" class="mysteres">1. L'annonciation à St Joseph</label>
+ </li>
+    <li>
+<input type="radio" name="mysteres" id="m2"  />
+<label for="m2" class="mysteres">2. La naissance de Jésus</label>
+ </li>
+    <li>
+<input type="radio" name="mysteres" id="m3"  />
+<label for="m3" class="mysteres">3. L'attribution du nom de Jésus</label>
+ </li>
+    <li>
+<input type="radio" name="mysteres" id="m4"  />
+<label for="m4" class="mysteres">4. La présentation de Jésus au temple de Jérusalem</label>
+ </li>
+    <li>
+<input type="radio" name="mysteres" id="m5"  />
+<label for="m5" class="mysteres">5. Le recouvrement de Jésus au temple de Jérusalem</label>
+ </li>
+</ul>
+
+
+<div id="dz_pater">
+    <a href="#dz_pater" >
+    
+    ***
     
     </a>
 </div>
@@ -70,8 +116,8 @@ Amen.
 </p>
 
 
-<div id="ave">
-    <a href="#ave" >
+<div id="dizaine">
+    <a href="#dizaine" >
     
     ***
     
@@ -80,14 +126,14 @@ Amen.
 
 
 <p>
-Je vous salue Joseph, vous que la grâce divine a comblé,<br>
-Le Sauveur a reposé dans vos bras et grandi sous vos yeux.<br>
+Je vous salue Joseph,<br>
+vous que la grâce divine a comblé,<br>
+le Sauveur a grandi avec vous.<br>
 Vous êtes béni entre tous les hommes,<br>
 et Jésus, l'enfant divin de votre virginale épouse, est béni.<br>
 Saint Joseph, donné pour père au Fils de Dieu,<br>
-priez pour nous, dans nos soucis de famille, de santé et de travail,<br>
-jusqu'à nos derniers jours,<br>
-et daignez nous secourir à l'heure de notre mort.<br>
+priez pour nous, pécheurs,<br>
+maintenant et à l'heure de notre mort.<br>
 Amen.
 </p>
 
@@ -175,8 +221,8 @@ Amen.
 
 
 
-<div id="gloria">
-    <a href="#gloria" >
+<div id="dz_gloria">
+    <a href="#dz_gloria" >
     
     ***
     
@@ -201,7 +247,35 @@ Amen.
 </p>
 
 
-<p><a href="#dizaines" class="bleu" >Retour en haut</a></p>
+<div id="dz_fatima">
+    <a href="#dz_fatima" >
+    
+    ***
+    
+    </a>
+</div>
+
+
+<p class="fr">
+Seigneur Jésus,<br>
+pardonne-nous nos péchés,<br>
+préserve-nous du feu de l'enfer,<br>
+et conduis au ciel toutes les âmes,<br>
+surtout celles qui ont le plus besoin de ta miséricorde.<br>
+Amen.
+</p>
+
+<p class="latin">
+Domine Jesu,<br>
+dimitte nobis debita nostra,<br>
+salva nos ab igne inferiori,<br>
+perduc in caelum omnes animas,<br>
+praesertim eas, quae misericordiae tuae maxime indigent.<br>
+Amen.
+</p>
+
+
+<p><a href="#mysteres" class="bleu" >Retour en haut</a></p>
 
 
 <!-- Scripts -->
@@ -212,6 +286,9 @@ Amen.
 
 <script src="/public/js/latin.js"></script>
 
+
+
+<script src="/public/js/chapelets/ch-mysteres.js"></script>
 
 
 <script src="/public/js/chapelets/ch-lys.js"></script>

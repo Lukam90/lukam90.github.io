@@ -1,11 +1,15 @@
 {% extends "layouts/prieres.jinja" %}
 
 {% set bpath = "prieres/base/" %}
+{% set rpath = "prieres/rosaire/" %}
 {% set spath = "prieres/saints/" %}
 
 {% set title = "Dizaines des lys de St Joseph" %}
 
 {% block content %}
+<p>Le <b>lys</b> est le symbôle de <b>St Joseph</b> comme la rose l'est pour <b>Ste Marie</b>.</p>
+
+<p>La prière du <b>Je vous salue Joseph</b> a été revue et simplifiée.</p>
 
 {{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
 
@@ -13,29 +17,22 @@
 
 {% include bpath + "signe-croix.jinja" %}
 
-<!-- Dizaines -->
+<!-- Mystères -->
 
-{{ mc.anchor("pater", "=") }}
+{{ mc.anchor("mysteres", "=") }}
 
-{% include bpath + "notre-pere.jinja" %}
+{% include rpath + "lys-mysteres.jinja" %}
 
-{{ mc.anchor("ave") }}
+{% include rpath + "lys-dizaines.jinja" %}
 
-{% include spath + "st-joseph.jinja" %}
-
-{{ mc.grains("dz_grains", range(0, 11)) }}
-
-{{ mc.anchor("gloria") }}
-
-{% include bpath + "gloire-pere.jinja" %}
-
-{{ mc.return_link("dizaines") }}
+{{ mc.return_link("mysteres") }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
 {{ mc.script("latin.js") }}
 
+{{ mc.script("chapelets/ch-mysteres.js") }}
 {{ mc.script("chapelets/ch-lys.js") }}
 
 {% endblock %}

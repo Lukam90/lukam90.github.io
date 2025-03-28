@@ -8,9 +8,9 @@
 {% block content %}
 <p>Ce chapelet est basé sur l'acte d'abandon de <b>Don Dolindo</b>.</p>
 
-<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} sont listées sur une page dédiée.</p>
+{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
 
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.jinja" %}
 
 <!-- Base -->
 
@@ -39,21 +39,26 @@ Amen ! Alléluia !
 
 <p>"<span id="nom" class="gras">Jésus</span>, c'est à toi d'y penser." (x 10)</p>
 
-<p class="gras">Gloire au Père</p>
+{{ mc.anchor("gloria") }}
+
+{% include bpath + "gloire-pere.jinja" %}
 
 <!-- Fin -->
 
 {{ mc.anchor("fin", "=") }}
 
-<p class="gras">Salut ô Reine</p>
+{% include bpath + "salut-reine.jinja" %}
 
-<p class="gras">Notre Père</p>
+{{ mc.anchor("pater") }}
+
+{% include bpath + "notre-pere.jinja" %}
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-abandon.js") }}
 
