@@ -21,8 +21,4 @@ function resetAll()
 
 document.addEventListener("keydown", e => {
     if (e.key == "0")   resetAll();
-
-    if (e.key == "R")   goTo("#rondes");
-    if (e.key == "A")   goTo("#ave");
-    if (e.key == "G")   goTo("#gloria");
 });

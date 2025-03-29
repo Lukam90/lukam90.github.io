@@ -29,11 +29,4 @@ document.addEventListener("keydown", e => {
 
         selectMystere(numKey - 1);
     }
-
-    if (isMajKey(e)) {
-        if (e.key == "P")   goTo("#dz_pater");
-        if (e.key == "D")   goTo("#dizaine");
-        if (e.key == "G")   goTo("#dz_gloria");
-        if (e.key == "F")   goTo("#dz_fatima");
-    }
 });

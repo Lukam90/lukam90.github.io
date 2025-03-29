@@ -8,40 +8,55 @@
 {% block content %}
 <p>Je recommande l'application {{ mc.link("Rosario", "https://rosario.app/") }} pour la méditation des <b>mystères</b>.</p>
 
-{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} se trouvent sur une page dédiée.</p>
 
 <!-- Base -->
 
 {{ mc.anchor("base", "=") }}
 
-{% include bpath + "signe-croix.jinja" %}
+<p>(Signe de croix)</p>
 
-{% include rpath + "rs-base.jinja" %}
+<p class="gras">Credo</p>
 
-<!-- Mystères -->
+<p class="gras">Notre Père</p>
 
-{{ mc.anchor("mysteres", "=") }}
+<p class="gras">Je vous salue Marie</p>
+
+{{ mc.grains("base_trio", ["-", "foi", "espérance", "charité"]) }}
+
+<p class="gras">Gloire au Père</p>
+
+<!-- Dizaines -->
+
+{{ mc.anchor("dizaines", "=") }}
 
 {% include rpath + "rs-mysteres.jinja" %}
 
 <p>Je prie à l'intention <input type="text" id="intention" /></p>
 
-{% include rpath + "rs-dizaines.jinja" %}
+<p class="gras">Notre Père</p>
 
-{{ mc.return_link("mysteres") }}
+<p class="gras">Je vous salue Marie</p>
+
+{{ mc.grains("dz_grains", range(0, 11)) }}
+
+<p class="gras">Gloire au Père</p>
+
+<p class="gras">(Prière de Fatima)</p>
+
+{{ mc.return_link("dizaines") }}
 
 <!-- Fin -->
 
 {{ mc.anchor("fin", "=") }}
 
-{% include bpath + "signe-croix.jinja" %}
+<p>(Signe de croix)</p>
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
-{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-mysteres.js") }}
 {{ mc.script("chapelets/ch-rosaire.js") }}

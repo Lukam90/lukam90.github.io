@@ -57,13 +57,4 @@ document.addEventListener("keydown", e => {
     if (numKey >= 1 && numKey <= 5) {
         selectRonde(numKey - 1);
     }
-
-    if (isMajKey(e)) {
-        if (e.key == "C")   goTo("#credo");
-        if (e.key == "A")   goTo("#acte");
-        if (e.key == "R")   goTo("#rondes");
-
-        if (e.key == "D")   goTo("#dz_priere");
-        if (e.key == "F")   goTo("#dz_fatima");
-    }
 });

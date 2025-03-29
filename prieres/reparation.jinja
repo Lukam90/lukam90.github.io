@@ -6,20 +6,15 @@
 {% set title = "Chapelet de réparation de Fatima" %}
 
 {% block content %}
-
-{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} se trouvent sur une page dédiée.</p>
 
 <!-- Base -->
 
 {{ mc.anchor("base", "=") }}
 
-{% include bpath + "signe-croix.jinja" %}
+<p>(Signe de croix)</p>
 
-{{ mc.anchor("credo") }}
-
-{% include bpath + "credo.jinja" %}
-
-{{ mc.anchor("acte") }}
+<p class="gras">Credo</p>
 
 {% include rpath + "acte-contrition.jinja" %}
 
@@ -39,9 +34,7 @@
 
 {{ mc.grains("dz_grains", range(0, 11)) }}
 
-{{ mc.anchor("dz_fatima") }}
-
-{% include bpath + "priere-fatima.jinja" %}
+<p class="gras">Prière de Fatima</p>
 
 {{ mc.return_link("rondes") }}
 
@@ -51,14 +44,13 @@
 
 <p>"Dieu Saint, Saint Fort, Saint Immortel, prends pitié de nous et du monde entier." (x 3)</p>
 
-{% include bpath + "signe-croix.jinja" %}
+<p>(Signe de croix)</p>
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
-{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-reparation.js") }}
 

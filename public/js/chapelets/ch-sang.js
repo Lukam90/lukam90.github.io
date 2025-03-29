@@ -83,16 +83,4 @@ document.addEventListener("keydown", e => {
 
         selectRonde(numKey - 1);
     }
-
-    if (isMajKey(e)) {
-        if (e.key == "C")   goTo("#credo");
-
-        if (e.key == "P")   goTo("#dz_pater");
-        if (e.key == "A")   goTo("#dz_ave");
-        if (e.key == "D")   goTo("#douzaine");
-        if (e.key == "G")   goTo("#dz_gloria");
-        if (e.key == "R")   goTo("#dz_refrain");
-
-        if (e.key == "F")   goTo("#fin");
-    }
 });

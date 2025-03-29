@@ -7,11 +7,11 @@
 
 {% block content %}
 
-{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} se trouvent sur une page dédiée.</p>
 
 {{ mc.anchor("base", "=") }}
 
-{% include bpath + "signe-croix.jinja" %}
+<p>(Signe de croix)</p>
 
 <p class="gauche">
 Très aimé Seigneur, très doux agneau de Dieu,<br>
@@ -32,32 +32,27 @@ Amen.
 
 {{ mc.anchor("rondes", "=") }}
 
-{% include bpath + "notre-pere.jinja" %}
+<p class="gras">Notre Père</p>
 
 {{ mc.grains("pater_trio", range(0,4)) }}
 
-{{ mc.anchor("ave") }}
-
-{% include bpath + "ste-marie.jinja" %}
+<p class="gras">Je vous salue Marie</p>
 
 {{ mc.grains("ave_trio", range(0,4)) }}
 
-{{ mc.anchor("gloria") }}
-
-{% include bpath + "gloire-pere.jinja" %}
+<p class="gras">Gloire au Père</p>
 
 {{ mc.grains("gloria_trio", range(0,4)) }}
 
 {{ mc.anchor("fin", "=") }}
 
-{% include bpath + "signe-croix.jinja" %}
+<p>(Signe de croix)</p>
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
-{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-devotion.js") }}
 
