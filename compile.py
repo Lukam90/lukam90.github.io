@@ -32,13 +32,13 @@ prieres = [
     "sang", "misericorde", "plaies", "devotion"
 ]
 
-convert_jinja_list("prieres", prieres)
+#convert_jinja_list("prieres", prieres)
 
 #convert_jinja_single("prieres/ex-base")
-convert_jinja_single("prieres/chapelet")
+#convert_jinja_single("prieres/chapelet")
 #convert_jinja_single("prieres/abandon")
 #convert_jinja_single("prieres/reparation")
-#convert_jinja_single("prieres/sang")
+convert_jinja_single("prieres/sang")
 #convert_jinja_single("prieres/misericorde")
 #convert_jinja_single("prieres/plaies")
 #convert_jinja_single("prieres/devotion")

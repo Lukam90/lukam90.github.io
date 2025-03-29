@@ -5,24 +5,19 @@
 {% set title = "Chapelet de la Miséricorde Divine" %}
 
 {% block content %}
-
 <p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} se trouvent sur une page dédiée.</p>
 
 <!-- Base -->
 
+{{ mc.anchor("base", "=") }}
+
 <p>(Signe de croix)</p>
 
-<hr id="pater" />
+<p class="gras">Notre Père</p>
 
-{% include bpath + "notre-pere.jinja" %}
+<p class="gras">Je vous salue Marie</p>
 
-{{ mc.anchor("ave") }}
-
-{% include bpath + "ste-marie.jinja" %}
-
-{{ mc.anchor("credo") }}
-
-{% include bpath + "credo.jinja" %}
+<p class="gras">Credo</p>
 
 <!-- Rondes -->
 
@@ -48,14 +43,13 @@ en réparation de nos péchés et de ceux du monde entier.
 
 <p>"Dieu saint, Dieu fort, Dieu éternel, ayez pitié de nous et du monde entier." (x 3)</p>
 
-{% include bpath + "signe-croix.jinja" %}
+<p>(Signe de croix)</p>
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
-{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-misericorde.js") }}
 
