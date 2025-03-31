@@ -8,6 +8,7 @@
         { "href" : "chapelet", "title" : "Chapelet du rosaire" },
         { "href" : "abandon", "title" : "Chapelet de l'abandon" },
         { "href" : "reparation", "title" : "Chapelet de réparation de Fatima" },
+        { "href" : "anges", "title" : "Chapelet de St Michel et des anges" },
         { "href" : "sang", "title" : "Chapelet du précieux sang de Jésus" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
         { "href" : "plaies", "title" : "Chapelet des saintes plaies" }
