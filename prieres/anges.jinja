@@ -8,13 +8,11 @@
 {% block content %}
 <p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} se trouvent sur une page dédiée.</p>
 
-<hr />
-
-<p>(Signe de croix)</p>
-
 <!-- Base -->
 
 {{ mc.anchor("base", "=") }}
+
+<p>(Signe de croix)</p>
 
 {% include spath + "st-michel.jinja" %}
 
@@ -32,7 +30,7 @@
 
 <p class="gras">Je vous salue Marie</p>
 
-{{ mc.grains("ch_trio", range(0,4)) }}
+{{ mc.grains("choeur_trio", range(0,4)) }}
 
 <!-- Fin -->
 
@@ -56,8 +54,6 @@
 
 {{ mc.script("utils.js") }}
 
-{#
 {{ mc.script("chapelets/ch-anges.js") }}
-#}
 
 {% endblock %}
