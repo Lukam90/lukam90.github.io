@@ -1,0 +1,51 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set dpath = "prieres/dzames/" %}
+
+{% set title = "Dizaines de libération des âmes" %}
+
+{% block content %}
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} se trouvent sur une page dédiée.</p>
+
+<p>
+La prière des dizaines, révélée par Jésus à <b>Ste Gertrude</b>,<br>
+permet de libérer jusqu'à <b>1000 âmes</b> à chaque récitation.
+</p>
+
+<!-- Rondes -->
+
+{{ mc.anchor("rondes", "=") }}
+
+<p>(Signe de croix)</p>
+
+{{ mc.grains("rondes", range(1, 6), "checkFirst()") }}
+
+<p class="gras">Notre Père</p>
+
+{% include dpath + "ex-ames.jinja" %}
+
+{{ mc.grains("dz_grains", range(0, 11)) }}
+
+{{ mc.anchor("ex_coeurs") }}
+
+{% include dpath + "ex-coeurs.jinja" %}
+
+<p class="gras">Gloire au Père</p>
+
+{{ mc.return_link("rondes") }}
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+<p>(Signe de croix)</p>
+
+{{ mc.return_link(label = "Recommencer", reset = True) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+
+{{ mc.script("chapelets/dz-ames.js") }}
+
+{% endblock %}
