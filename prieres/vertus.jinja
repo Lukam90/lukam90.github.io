@@ -8,34 +8,25 @@
 {% set title = "Chapelet des 13 vertus de Notre-Dame" %}
 
 {% block content %}
-
 <p>Il existe un {{ mc.link("chapelet spécifique", ext_url) }}.</p>
 
-{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} se trouvent sur une page dédiée.</p>
 
 <!-- Base -->
 
 {{ mc.anchor("base", "=") }}
 
-{% include bpath + "signe-croix.jinja" %}
+<p>(Signe de croix)</p>
 
-{{ mc.anchor("credo") }}
+<p class="gras">Credo</p>
 
-{% include bpath + "credo.jinja" %}
+<p class="gras">Notre Père</p>
 
-{{ mc.anchor("pater") }}
-
-{% include bpath + "notre-pere.jinja" %}
-
-{{ mc.anchor("gloria") }}
-
-{% include bpath + "gloire-pere.jinja" %}
+<p class="gras">Gloire au Père</p>
 
 {{ mc.grains("base_trio", ["-", "Saints", "Saint Michel", "Anges gardiens"]) }}
 
-{{ mc.anchor("ave") }}
-
-{% include bpath + "ste-marie.jinja" %}
+<p class="gras">Je vous salue Marie</p>
 
 <!-- Médaille -->
 
@@ -58,9 +49,7 @@ pour glorifier Dieu en vue du Salut de toutes les âmes.
 
 <hr />
 
-{% include bpath + "ste-marie.jinja" %}
-
-{{ mc.anchor("nv_trio") }}
+<p class="gras">Je vous salue Marie</p>
 
 <p>
 Ô Seigneur, donnez-leur le repos éternel et faites briller sur eux la lumière éternelle.<br>
@@ -80,7 +69,6 @@ Que les âmes des fidèles défunts reposent en paix par la miséricorde de Dieu
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
-{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-vertus.js") }}
 
