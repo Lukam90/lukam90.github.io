@@ -45,8 +45,8 @@ prieres = [
 convert_jinja_single("prieres/plaies")
 #convert_jinja_single("prieres/impossible")
 #convert_jinja_single("prieres/vertus")
-#convert_jinja_single("prieres/dzames")
-convert_jinja_single("prieres/lys")
+convert_jinja_single("prieres/dzames")
+#convert_jinja_single("prieres/lys")
 
 ## Exercices
 
