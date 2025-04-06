@@ -1,6 +1,5 @@
 {% extends "layouts/prieres.jinja" %}
 
-{% set bpath = "prieres/base/" %}
 {% set rpath = "prieres/rosaire/" %}
 {% set spath = "prieres/saints/" %}
 
@@ -9,17 +8,11 @@
 {% block content %}
 <p>Le <b>lys</b> est le symbôle de <b>St Joseph</b> comme la rose l'est pour <b>Ste Marie</b>.</p>
 
-<p>La prière du <b>Je vous salue Joseph</b> a été revue et simplifiée.</p>
-
-{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
-
-<!-- Base -->
-
-{% include bpath + "signe-croix.jinja" %}
-
 <!-- Mystères -->
 
 {{ mc.anchor("mysteres", "=") }}
+
+<p>(Signe de croix)</p>
 
 {% include rpath + "lys-mysteres.jinja" %}
 
