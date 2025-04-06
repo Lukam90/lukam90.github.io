@@ -1,7 +1,5 @@
 {% extends "layouts/prieres.jinja" %}
 
-{% set bpath = "prieres/base/" %}
-
 {% set base_url = "https://boutique.labonnenouvelle.net/chapelets-et-rosaire/" %}
 {% set ext_url = base_url + "1073-chapelet-des-ames-du-purgatoire-9502379583487.html" %}
 
@@ -62,7 +60,7 @@ Que les âmes des fidèles défunts reposent en paix par la miséricorde de Dieu
 
 {{ mc.anchor("fin", "=") }}
 
-{% include bpath + "signe-croix.jinja" %}
+<p>(Signe de croix)</p>
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
