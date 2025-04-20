@@ -1,0 +1,7 @@
+*.css.map
+*-lock.json
+
+__pycache__
+_old/
+draft/
+node_modules/

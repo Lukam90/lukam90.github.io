@@ -1,0 +1,37 @@
+.mb-2 {
+    margin-bottom: 2rem !important;
+}
+
+.mb-5 {
+    margin-bottom: 5rem !important;
+}
+
+.gras {
+    font-weight: bold
+}
+
+.icone {
+    transform: scale(1.5);
+}
+
+.intitule {
+    font-weight: bold;
+    color: blue;
+}
+
+.title {
+    &-small {
+        letter-spacing: 0.5rem;
+        font-size: 1.7rem;
+    }
+}
+
+.text {
+    &-primary {
+        color: var(--primary);
+    }
+
+    &-hint {
+        color: var(--hint);
+    }
+}

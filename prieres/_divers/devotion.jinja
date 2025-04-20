@@ -1,0 +1,59 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set rpath = "prieres/rosaire/" %}
+
+{% set title = "Chapelet de dévotion de St Bernard de Clairvaux" %}
+
+{% block content %}
+
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} se trouvent sur une page dédiée.</p>
+
+{{ mc.anchor("base", "=") }}
+
+<p>(Signe de croix)</p>
+
+<p class="gauche">
+Très aimé Seigneur, très doux agneau de Dieu,<br>
+moi pauvre pécheur, j'adore et vénère la très sainte Plaie<br>
+que Vous avez reçue à l'épaule<br>
+en portant au Calvaire la très lourde croix<br>
+qui laissa découverts trois os saints,<br>
+occasionnant une immense douleur.<br>
+<br>
+Je Vous supplie, en vertu des mérites de ladite Plaie,<br>
+d'avoir pitié de moi, en me pardonnant de<br>
+tous mes péchés mortels ou véniels,<br>
+en m'assistant à l'heure de ma mort,<br>
+et en me conduisant dans Votre heureux Royaume.<br>
+<br>
+Amen.
+</p>
+
+{{ mc.anchor("rondes", "=") }}
+
+<p class="gras">Notre Père</p>
+
+{{ mc.grains("pater_trio", range(0,4)) }}
+
+<p class="gras">Je vous salue Marie</p>
+
+{{ mc.grains("ave_trio", range(0,4)) }}
+
+<p class="gras">Gloire au Père</p>
+
+{{ mc.grains("gloria_trio", range(0,4)) }}
+
+{{ mc.anchor("fin", "=") }}
+
+<p>(Signe de croix)</p>
+
+{{ mc.return_link(label = "Recommencer", reset = True) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+
+{{ mc.script("chapelets/ch-devotion.js") }}
+
+{% endblock %}

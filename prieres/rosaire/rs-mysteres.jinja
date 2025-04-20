@@ -1,0 +1,18 @@
+<p>
+    Mystères
+
+    <select id="sel_type" onchange="selectType();">
+        <option>joyeux</option>
+        <option>lumineux</option>
+        <option>douloureux</option>
+        <option>glorieux</option>
+    </select>
+</p>
+
+<ul class="priere gauche">
+    <li>{{ mc.radio_btn("m1", "mysteres", "1. L'annonciation") }} </li>
+    <li>{{ mc.radio_btn("m2", "mysteres", "2. La visitation") }} </li>
+    <li>{{ mc.radio_btn("m3", "mysteres", "3. La naissance de Jésus") }} </li>
+    <li>{{ mc.radio_btn("m4", "mysteres", "4. La présentation de Jésus au temple de Jérusalem") }} </li>
+    <li>{{ mc.radio_btn("m5", "mysteres", "5. Le recouvrement de Jésus au temple de Jérusalem") }} </li>
+</ul>

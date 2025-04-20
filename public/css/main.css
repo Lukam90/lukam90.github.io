@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+
+    -webkit-text-size-adjust: 100%;
+}
+
+main {
+    display: flow-root;
+    /* 1 */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p, 
+h2,
+h3,
+h4 {
+    margin-bottom: 20px;
+}
+
+* + p,
+* + h2,
+* + h3,
+* + h4 {
+    margin-top: 20px;
+}
+
+li {
+    list-style-type: "-";
+    padding-left: 20px;
+}
+
+li.contents {
+    list-style-type: none;
+    padding-bottom: 20px;
+}
+
+hr {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+
+label:hover {
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-collapse: collapse;
+    border-spacing: 2px;
+}
+
+table td,
+table th {
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Classes */
+
+.bleu {
+    color: blue;
+}
+
+.bottom {
+    margin-bottom: 50px;
+}
+
+.gras {
+    font-weight: bold;
+}
+
+.info {background-color: #2196F3;}
+.info:hover {background: #0b7dda;}

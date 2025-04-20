@@ -1,0 +1,44 @@
+{% set path = "profil/portfolio/" %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="/public/css/portfolio.css">
+</head>
+
+<body>
+    <div id="contenu">
+        <div id="profil">
+            <div id="photo">
+                <img src="/public/images/photo-pro.png" alt="photo pro">
+            </div>
+
+            <h1>Lucien HAMM</h1>
+
+            <h2>Développeur Web et Mobile</h2>
+
+            {% include path + "p_liens.jinja" %}
+        </div>
+
+        <hr>
+
+        {% include path + "p_intro.jinja" %}
+
+        <hr>
+
+        {% include path + "p_competences.jinja" %}
+
+        <hr>
+
+        {% include path + "p_certificats.jinja" %}
+
+        <hr>
+
+        {% include path + "p_projets.jinja" %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set rpath = "prieres/rosaire/" %}
+
+{% set title = "Chapelet des larmes de sang" %}
+
+{% block content %}
+<p>La dévotion est complémentaire au {{ mc.link("Saint Rosaire", "/prieres/rosaire.html") }}.</p>
+
+{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+<p>Je demande <input type="text" id="intention" /></p>
+
+{{ mc.anchor("credo") }}
+
+{% include bpath + "credo.jinja" %}
+
+{{ mc.anchor("pater") }}
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("ave") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.anchor("gloria") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.anchor("intro", "=") }}
+
+<p class="gauche">
+Jésus crucifié, prosterné à tes pieds,<br>
+je t’offre les larmes de sang de celle qui t’a accompagné pendant toute ta vie<br>
+et pendant ton si douloureux chemin de croix avec un tendre et compatissant amour.<br>
+Fait, Ô bon maître, que je prenne à cœur<br>
+les enseignements des larmes de sang de ta très Sainte Mère<br>
+pour qu’en accomplissant ta sainte volonté sur Terre,<br>
+je puisse te louer et te glorifier au Ciel pour toute l’Éternité. Amen.
+</p>
+
+<!-- Rondes -->
+
+{{ mc.anchor("rondes", "=") }}
+
+{{ mc.grains("dz_rondes", range(1,8)) }}
+
+<p id="mystere" class="gras">1. la prophétie de Siméon</p>
+
+<p>
+"Ô Jésus, regarde les larmes de celle qui t’a le plus aimé sur la Terre 
+et qui t’aime au Ciel le plus intensément."
+</p>
+
+<p>"Ô Jésus, écoute nos prières à cause des larmes de sang de ta très Sainte Mère." (x 7)</p>
+
+{{ mc.return_link("rondes") }}
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+<p class="gauche">
+Ô Marie, Mère du Bel Amour, Mère de Douleur, et Mère de Miséricorde,<br>
+nous te demandons d’unir tes prières aux nôtres pour que Jésus, ton Divin Fils,<br>
+que nous invoquons au nom de tes larmes de sang maternel, exauce nos supplications<br>
+et qu’il nous accorde avec les grâces que nous demandons aujourd’hui,<br>
+la couronne de la Vie Éternelle. Amen.<br>
+<br>
+Tes larmes de sang, Ô Mère douloureuse, anéantissent le pouvoir de l’enfer.<br>
+Ô Jésus, enchaîné, que ta divine douceur préserve le monde<br>
+de la confusion qui le menace. Amen.<br>
+</p>
+
+<hr />
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link(label = "Recommencer", reset = True) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
+
+{{ mc.script("chapelets/ch-larmes.js") }}
+
+{% endblock %}

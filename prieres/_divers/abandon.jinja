@@ -1,0 +1,62 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set spath = "prieres/sang/" %}
+
+{% set title = "Chapelet de l'abandon" %}
+
+{% block content %}
+<p>Ce chapelet est basé sur l'acte d'abandon de <b>Don Dolindo</b>.</p>
+
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} se trouvent sur une page dédiée.</p>
+
+<p>(Signe de croix)</p>
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+<p>
+Dieu, viens à mon aide !<br>
+
+Seigneur, à notre secours !<br>
+
+Gloire au Père et au Fils et au Saint-Esprit,<br>
+au Dieu qui est, qui était et qui vient,<br>
+pour les siècles des siècles.<br>
+Amen ! Alléluia !
+</p>
+
+<!-- Rondes -->
+
+{{ mc.anchor("rondes", "=") }}
+
+{{ mc.grains("dz_rondes", range(1,6)) }}
+
+<p>"Seigneur, que soit béni ton nom et que soit faite ta volonté !"</p>
+
+<hr />
+
+<p>"<span id="nom" class="gras">Jésus</span>, c'est à toi d'y penser." (x 10)</p>
+
+<p class="gras">Gloire au Père</p>
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+<p class="gras">Salut ô Reine</p>
+
+<p class="gras">Notre Père</p>
+
+<p>(Signe de croix)</p>
+
+{{ mc.return_link(label = "Recommencer", reset = True) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+
+{{ mc.script("chapelets/ch-abandon.js") }}
+
+{% endblock %}

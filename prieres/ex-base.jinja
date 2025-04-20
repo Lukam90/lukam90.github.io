@@ -1,0 +1,58 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+{% set rpath = "prieres/rosaire/" %}
+{% set spath = "prieres/reparation/" %}
+
+{% set title = "Prières de base" %}
+
+{% block content %}
+
+{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
+
+{{ mc.header("0", "Signe de croix") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.header("1", "Acte de contrition (1)") }}
+
+{% include spath + "acte-contrition.jinja" %}
+
+{{ mc.header("2", "Credo (2)") }}
+
+{% include bpath + "credo.jinja" %}
+
+{{ mc.header("3", "Notre Père (3)") }}
+
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.header("4", "Je vous salue Marie (4)") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.header("5", "Gloire au Père (5)") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.header("6", "Prière de Fatima (6)") }}
+
+{% include bpath + "priere-fatima.jinja" %}
+
+{{ mc.header("7", "Salut ô Reine (7)") }}
+
+{% include bpath + "salut-reine.jinja" %}
+
+{{ mc.header("8", "Bref de St Antoine (8)") }}
+
+{% include bpath + "ex-bref.jinja" %}
+
+{{ mc.return_link() }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
+
+{{ mc.script("chapelets/ex-base.js") }}
+
+{% endblock %}

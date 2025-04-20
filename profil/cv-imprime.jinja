@@ -1,0 +1,51 @@
+{% set path = "profil/cv/" %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CV-Lucien-HAMM-Dev-Web-Mobile-2024</title>
+    
+    <link rel="stylesheet" href="/public/css/cv-imprime.css" />
+</head>
+
+<body>
+    <page size="A4">
+        <div class="container">
+            <div id="gauche">
+                <section id="photo">
+                    <img src="/public/images/photo-pro.png" alt="photo" />
+                </section>
+
+                {% include path + "cv_infos.jinja" %}
+
+                {% include path + "cv_liens.jinja" %}
+
+                {% include path + "cv_competences.jinja" %}
+
+                {% include path + "cv_certifications.jinja" %}
+
+                {% include path + "cv_langues.jinja" %}
+
+                {% include path + "cv_loisirs.jinja" %}
+            </div>
+
+            <div id="droite">
+                <header>
+                    <h1>Lucien HAMM</h1>
+
+                    <h2 class="nom-poste">Développeur Web / Mobile / Data</h2>
+                </header>
+
+                <hr />
+
+                {% include path + "cv_experience.jinja" %}
+
+                {% include path + "cv_formation.jinja" %}
+            </div>
+        </div>
+    </page>
+</body>

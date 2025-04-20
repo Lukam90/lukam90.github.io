@@ -1,0 +1,73 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set base_url = "https://boutique.labonnenouvelle.net/chapelets-et-rosaire/" %}
+{% set ext_url = base_url + "1073-chapelet-des-ames-du-purgatoire-9502379583487.html" %}
+
+{% set title = "Chapelet des 13 vertus de Notre-Dame" %}
+
+{% block content %}
+<p>Il existe un {{ mc.link("chapelet spécifique", ext_url) }}.</p>
+
+<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} se trouvent sur une page dédiée.</p>
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+<p>(Signe de croix)</p>
+
+<p class="gras">Credo</p>
+
+<p class="gras">Notre Père</p>
+
+<p class="gras">Gloire au Père</p>
+
+{{ mc.grains("base_trio", ["-", "Saints", "Saint Michel", "Anges gardiens"]) }}
+
+<p class="gras">Je vous salue Marie</p>
+
+<!-- Médaille -->
+
+{{ mc.anchor("medaille", "=") }}
+
+<p>
+Mère de la Miséricorde Divine,<br>
+intercédez pour les Saintes âmes détenues au Purgatoire,<br>
+par la puissance de Votre Cœur Immaculé,<br>
+pour glorifier Dieu en vue du Salut de toutes les âmes.
+</p>
+
+<!-- Niveaux -->
+
+{{ mc.anchor("niveaux", "=") }}
+
+{{ mc.grains("sel_niveaux", range(1,14)) }}
+
+<p id="niveau" class="gras">1. Crainte de Dieu</p>
+
+<hr />
+
+<p class="gras">Je vous salue Marie</p>
+
+<p>
+Ô Seigneur, donnez-leur le repos éternel et faites briller sur eux la lumière éternelle.<br>
+Que les âmes des fidèles défunts reposent en paix par la miséricorde de Dieu. Amen.
+</p>
+
+{{ mc.grains("fin_trio", range(0, 4)) }}
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+<p>(Signe de croix)</p>
+
+{{ mc.return_link(label = "Recommencer", reset = True) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+
+{{ mc.script("chapelets/ch-vertus.js") }}
+
+{% endblock %}

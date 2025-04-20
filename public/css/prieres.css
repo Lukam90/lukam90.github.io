@@ -1,0 +1,146 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+main {
+    display: flow-root;
+    /* 1 */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+select,
+option {
+    word-wrap: break-word;
+}
+
+select,
+option,
+input
+{
+    background-color: transparent;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+input[type="radio"] {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    line-height: 2rem;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+hr {
+    width: 30%;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-collapse: collapse;
+    border-spacing: 2px;
+}
+
+table td,
+table th {
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Classes */
+
+.bleu {
+    color: blue;
+}
+
+.centre {
+    text-align: center;
+}
+
+.gauche {
+    text-align: left; 
+    display: inline-block;
+}
+
+.gras {
+    font-weight: bold;
+}
+
+.invisible,
+.latin {
+    display: none;
+}
+
+.priere {
+    line-height: 2rem;
+}
+
+.priere a {
+    color: black;
+    font-weight: bold;
+}
+
+.separation {
+    padding-top: 20px;
+}
+
+.tab-responsive {
+    overflow-x: auto;
+}
+
+.texte-gauche {
+    text-align: left;
+}
+
+/* Evénements */
+
+label:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.priere a:hover,
+.signe:hover,
+.traduction:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+/* Attributs */
+
+[lang="latin"] {
+    display: none;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px){
+    br {
+        display: none;
+    }
+}

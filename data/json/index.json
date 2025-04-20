@@ -1,0 +1,18 @@
+{
+    "profil" : [
+        { "href" : "cv-imprime", "title" : "Mon nouveau CV" },
+        { "href" : "portfolio", "title" : "Ma page de portfolio (en cours)" }
+    ],
+    "prieres" : [
+        { "href" : "ex-base", "title" : "Prières de base" },
+        { "href" : "chapelet", "title" : "Chapelet du rosaire" },
+        { "href" : "sang", "title" : "Chapelet du précieux sang de Jésus" },
+        { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
+        { "href" : "vertus", "title" : "Chapelet des 13 vertus de Notre-Dame" },
+        { "href" : "plaies", "title" : "Chapelet des saintes plaies" },
+        { "href" : "devotion", "title" : "Chapelet de dévotion de St Bernard de Clairvaux" }
+    ],
+    "exercices" : [
+        { "href" : "ex-musical", "title" : "Cohérence cardiaque" }
+    ]
+}

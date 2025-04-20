@@ -1,0 +1,119 @@
+<!-- Script JS -->
+
+{% macro script(path) %}
+<script src="/public/js/{{ path }}"></script>
+{% endmacro %}
+
+<!-- Audio -->
+
+{% macro audio(name, type = "mpeg") %}
+<p>
+    <audio controls>
+        <source src="/public/music/{{ name }}" type="audio/{{ type }}">
+    
+        Le navigateur ne supporte pas le format audio.
+    </audio>
+</p>
+{% endmacro %}
+
+<!-- Vidéo YouTube -->
+
+{% macro yvideo(link) %}
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/{{ link }}" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+</iframe>
+{% endmacro %}
+
+<!-- Liste de liens -->
+
+{% macro links(data, path, title) %}
+<h2>{{ title }}</h2>
+
+<ul>
+    {% for link in data[path] %}
+    <li><a href="{{ path }}/{{ link.href }}.html" target="_blank">{{ link.title }}</a></li>
+    {% endfor %}
+</ul>
+{% endmacro %}
+
+<!-- Titres (H2) -->
+
+{% macro header(id, title) %}
+<h2 id="{{ id }}"><a href="#{{ id }}">{{ title }}</a></h2>
+{% endmacro %}
+
+<!-- Ancres -->
+
+{% macro anchor(id, type = "*", shortcut = None) %}
+<div id="{{ id }}">
+    <a href="#{{ id }}" {% if shortcut %} accesskey="{{ shortcut }}" {% endif %}>
+    {% if type == "=" %}
+    ===
+    {% else %}
+    ***
+    {% endif %}
+    </a>
+</div>
+{% endmacro %}
+
+<!-- Ancre d'une liste -->
+
+{% macro list_anchor(id, text) %}
+<a href="#{{ id }}" id="{{ id }}" class="gras">{{ text }}</a>
+{% endmacro %}
+
+<!-- Lien simple -->
+
+{% macro link(title, url) %}
+<a href="{{ url }}" class="bleu" target="_blank">{{ title }}</a>
+{% endmacro %}
+
+<!-- Lien de retour vers le haut -->
+
+{% macro return_link(id = "", label = "Retour en haut", reset = False) %}
+<p><a href="#{{ id }}" class="bleu" {% if reset %} onclick="resetAll()" {% endif %}>{{ label }}</a></p>
+{% endmacro %}
+
+<!-- Case à cocher -->
+
+{% macro checkbox(id, value, event = None) %}
+<p>
+    <input type="checkbox" id="{{ id }}" {% if event %} onchange="{{ event }}" {% endif %} />
+    <label for="{{ id }}">{{ value }}</label>
+</p>
+{% endmacro %}
+
+<!-- Bouton radio -->
+
+{% macro radio_btn(id, name, value, event = None) %}
+<input type="radio" name="{{ name }}" id="{{ id }}" {% if event %} onclick="{{ event }}" {% endif %} />
+<label for="{{ id }}" class="{{ name }}">{{ value }}</label>
+{% endmacro %}
+
+<!-- Boutons radio => Grains -->
+
+{% macro grains(name, list, event = None) %}
+    <p class="grains">
+    {% for value in list %}
+        {% set id = name + "_" + loop.index | string %}
+
+        {{ radio_btn(id, name, value, event) }}
+    {% endfor %}
+    </p>
+{% endmacro %}
+
+<!-- Ligne d'un tableau -->
+{% macro table_line(cols) %}
+<tr>
+    {% for value in cols %}
+    <td>{{ value }}</td>
+    {% endfor %}
+</tr>
+{% endmacro %}

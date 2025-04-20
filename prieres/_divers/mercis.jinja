@@ -1,0 +1,59 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "prieres/base/" %}
+
+{% set title = "Chapelet des 1000 mercis" %}
+
+{% block content %}
+<p>
+Il s'agit d'un chapelet de remerciement explicite.<br>
+10 récitations équivalent à 1000 mercis.
+</p>
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+<p>(Embrasser la croix)</p>
+
+<p>
+Seigneur Jésus-Christ, je me tourne vers Toi pour Te remercier<br>
+pour tout ce que Tu as fait dans ma vie passée,<br>
+présente et pour ce que Tu feras à l'avenir<br>
+et aussi pour ce que Tu as souffert pour moi à Gethsémani.<br>
+<br>
+Enfin, et surtout, je veux Te remercier pour le don que Tu as fait<br>
+de Ton être tout entier comme nourriture pour mon âme,<br>
+sous l'apparence du pain et du vin,<br>
+dans le Très Saint Sacrement de l'Eucharistie.
+</p>
+
+<!-- Rondes -->
+
+{{ mc.anchor("rondes", "=") }}
+
+<p>{{ mc.grains("dz_rondes", range(1,6)) }}</p>
+
+<p>"Seigneur Jésus, je te remercie pour tout."</p>
+
+<hr />
+
+<p>"Merci Jésus." (x 20)</p>
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link(label = "Recommencer", reset = True) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+
+{{ mc.script("chapelets/ch-misericorde.js") }}
+
+{% endblock %}

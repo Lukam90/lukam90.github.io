@@ -1,0 +1,260 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Chapelet du rosaire</title>
+
+    <link rel="stylesheet" href="/public/css/prieres.css" />
+</head>
+
+<body>
+    <main>
+        <h1>Chapelet du rosaire</h1>
+
+        
+<p>Je recommande l'application 
+<a href="https://rosario.app/" class="bleu" target="_blank">Rosario</a>
+ pour la méditation des <b>mystères</b>.</p>
+
+<p>Les 
+<a href="/prieres/ex-base.html" class="bleu" target="_blank">prières de base</a>
+ se trouvent sur une page dédiée.</p>
+
+<!-- Base -->
+
+
+<div id="base">
+    <a href="#base" >
+    
+    ===
+    
+    </a>
+</div>
+
+
+<p>(Signe de croix)</p>
+
+<p class="gras">Credo</p>
+
+<p class="gras">Notre Père</p>
+
+<p class="gras">Je vous salue Marie</p>
+
+
+    <p class="grains">
+    
+        
+
+        
+<input type="radio" name="base_trio" id="base_trio_1"  />
+<label for="base_trio_1" class="base_trio">-</label>
+
+    
+        
+
+        
+<input type="radio" name="base_trio" id="base_trio_2"  />
+<label for="base_trio_2" class="base_trio">foi</label>
+
+    
+        
+
+        
+<input type="radio" name="base_trio" id="base_trio_3"  />
+<label for="base_trio_3" class="base_trio">espérance</label>
+
+    
+        
+
+        
+<input type="radio" name="base_trio" id="base_trio_4"  />
+<label for="base_trio_4" class="base_trio">charité</label>
+
+    
+    </p>
+
+
+<p class="gras">Gloire au Père</p>
+
+<!-- Dizaines -->
+
+
+<div id="dizaines">
+    <a href="#dizaines" >
+    
+    ===
+    
+    </a>
+</div>
+
+
+<p>
+    Mystères
+
+    <select id="sel_type" onchange="selectType();">
+        <option>joyeux</option>
+        <option>lumineux</option>
+        <option>douloureux</option>
+        <option>glorieux</option>
+    </select>
+</p>
+
+<ul class="priere gauche">
+    <li>
+<input type="radio" name="mysteres" id="m1"  />
+<label for="m1" class="mysteres">1. L'annonciation</label>
+ </li>
+    <li>
+<input type="radio" name="mysteres" id="m2"  />
+<label for="m2" class="mysteres">2. La visitation</label>
+ </li>
+    <li>
+<input type="radio" name="mysteres" id="m3"  />
+<label for="m3" class="mysteres">3. La naissance de Jésus</label>
+ </li>
+    <li>
+<input type="radio" name="mysteres" id="m4"  />
+<label for="m4" class="mysteres">4. La présentation de Jésus au temple de Jérusalem</label>
+ </li>
+    <li>
+<input type="radio" name="mysteres" id="m5"  />
+<label for="m5" class="mysteres">5. Le recouvrement de Jésus au temple de Jérusalem</label>
+ </li>
+</ul>
+
+<p>Je prie à l'intention <input type="text" id="intention" /></p>
+
+<p class="gras">Notre Père</p>
+
+<p class="gras">Je vous salue Marie</p>
+
+
+    <p class="grains">
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_1"  />
+<label for="dz_grains_1" class="dz_grains">0</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_2"  />
+<label for="dz_grains_2" class="dz_grains">1</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_3"  />
+<label for="dz_grains_3" class="dz_grains">2</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_4"  />
+<label for="dz_grains_4" class="dz_grains">3</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_5"  />
+<label for="dz_grains_5" class="dz_grains">4</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_6"  />
+<label for="dz_grains_6" class="dz_grains">5</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_7"  />
+<label for="dz_grains_7" class="dz_grains">6</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_8"  />
+<label for="dz_grains_8" class="dz_grains">7</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_9"  />
+<label for="dz_grains_9" class="dz_grains">8</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_10"  />
+<label for="dz_grains_10" class="dz_grains">9</label>
+
+    
+        
+
+        
+<input type="radio" name="dz_grains" id="dz_grains_11"  />
+<label for="dz_grains_11" class="dz_grains">10</label>
+
+    
+    </p>
+
+
+<p class="gras">Gloire au Père</p>
+
+<p class="gras">(Prière de Fatima)</p>
+
+
+<p><a href="#dizaines" class="bleu" >Retour en haut</a></p>
+
+
+<!-- Fin -->
+
+
+<div id="fin">
+    <a href="#fin" >
+    
+    ===
+    
+    </a>
+</div>
+
+
+<p>(Signe de croix)</p>
+
+
+<p><a href="#" class="bleu"  onclick="resetAll()" >Recommencer</a></p>
+
+
+<!-- Scripts -->
+
+
+<script src="/public/js/utils.js"></script>
+
+
+
+<script src="/public/js/chapelets/ch-mysteres.js"></script>
+
+
+<script src="/public/js/chapelets/ch-rosaire.js"></script>
+
+
+
+    </main>
+</body>
