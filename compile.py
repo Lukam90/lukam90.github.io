@@ -29,17 +29,17 @@ profil = ["cv-imprime", "portfolio"]
 
 prieres = [
     "ex-base",
-    "chapelet", "sang", "misericorde",
-    "vertus", "plaies", "devotion"
+    "chapelet", "lys", "sang",
+    "misericorde", "plaies", "devotion"
 ]
 
 #convert_jinja_list("prieres", prieres)
 
 #convert_jinja_single("prieres/ex-base")
 #convert_jinja_single("prieres/chapelet")
+convert_jinja_single("prieres/lys")
 #convert_jinja_single("prieres/sang")
 #convert_jinja_single("prieres/misericorde")
-convert_jinja_single("prieres/vertus")
 #convert_jinja_single("prieres/plaies")
 #convert_jinja_single("prieres/devotion")
 
