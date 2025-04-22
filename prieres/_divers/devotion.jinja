@@ -1,13 +1,14 @@
 {% extends "layouts/prieres.jinja" %}
 
-{% set bpath = "prieres/base/" %}
-{% set rpath = "prieres/rosaire/" %}
-
 {% set title = "Chapelet de dévotion de St Bernard de Clairvaux" %}
 
 {% block content %}
+<p>
+La dévotion est basée sur la prière de <b>St Bernard de Clairvaux</b>,<br>
+en l'honneur de la <b>plaie inconnue de l'épaule de Jésus</b>.
+</p>
 
-<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} se trouvent sur une page dédiée.</p>
+<!-- Base -->
 
 {{ mc.anchor("base", "=") }}
 
@@ -30,30 +31,18 @@ et en me conduisant dans Votre heureux Royaume.<br>
 Amen.
 </p>
 
-{{ mc.anchor("rondes", "=") }}
+<!-- Trios -->
 
-<p class="gras">Notre Père</p>
+{{ mc.anchor("trios", "=") }}
 
-{{ mc.grains("pater_trio", range(0,4)) }}
+<p class="gras">Notre Père x 3</p>
 
-<p class="gras">Je vous salue Marie</p>
+<p class="gras">Je vous salue Marie x 3</p>
 
-{{ mc.grains("ave_trio", range(0,4)) }}
-
-<p class="gras">Gloire au Père</p>
-
-{{ mc.grains("gloria_trio", range(0,4)) }}
-
-{{ mc.anchor("fin", "=") }}
+<p class="gras">Gloire au Père x 3</p>
 
 <p>(Signe de croix)</p>
 
-{{ mc.return_link(label = "Recommencer", reset = True) }}
-
-<!-- Scripts -->
-
-{{ mc.script("utils.js") }}
-
-{{ mc.script("chapelets/ch-devotion.js") }}
+{{ mc.return_link() }}
 
 {% endblock %}
