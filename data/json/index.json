@@ -6,6 +6,7 @@
     "prieres" : [
         { "href" : "ex-base", "title" : "Prières de base" },
         { "href" : "chapelet", "title" : "Chapelet du rosaire" },
+        { "href" : "reparation", "title" : "Chapelet de réparation de Fatima" },
         { "href" : "sang", "title" : "Chapelet du précieux sang de Jésus" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
         { "href" : "plaies", "title" : "Chapelet des saintes plaies" }
