@@ -12,6 +12,8 @@
         { "href" : "plaies", "title" : "Chapelet des saintes plaies" }
     ],
     "litanies" : [
+        { "href" : "lorette", "title" : "Litanies de Lorette" },
+        { "href" : "lt-joseph", "title" : "Litanies de St Joseph" },
         { "href" : "lt-sang", "title" : "Litanies du précieux sang" }
     ],
     "exercices" : [

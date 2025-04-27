@@ -1,0 +1,102 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set title = "Litanies de Lorette" %}
+
+{% block content %}
+<p>Les litanies sont complémentaires au {{ mc.link("Saint Rosaire", "/chapelets/rosaire.html") }}.</p>
+
+<p>(Signe de croix)</p>
+
+{% include "litanies/lt-intro.jinja" %}
+
+{{ mc.anchor("stl0") }}
+
+<ul class="priere gauche">
+    <li><b>Sainte Marie</b>, prie pour nous</li>
+    <li>Sainte Mère de Dieu , ...</li>
+    <li>Sainte Vierge des vierges , ...</li>
+
+	<li class="separation"></li>
+    
+    <li>{{ mc.list_anchor("stl1", "(1) Mère du Christ") }}, ...</li>
+    <li>Mère de l'Eglise, ...</li>
+    <li>Mère de la divine grâce, ...</li>
+    <li>Mère très pure, ...</li>
+    <li>Mère très chaste, ...</li>
+    <li>Mère toujours vierge, ...</li>
+    <li>Mère sans tache, ...</li>
+    <li>Mère aimable, ...</li>
+    <li>Mère admirable, ...</li>
+    <li>Mère du bon conseil, ...</li>
+    <li>Mère du Créateur, ...</li>
+    <li>Mère du Sauveur, ...</li>
+	
+    <li class="separation"></li>
+    
+    <li>{{ mc.list_anchor("stl2", "(2) Vierge très prudente") }}, ...</li>
+    <li>Vierge vénérable, ...</li>
+    <li>Vierge digne de louanges, ...</li>
+    <li>Vierge puissante, ...</li>
+    <li>Vierge clémente, ...</li>
+    <li>Vierge fidèle, ...</li>
+    
+	<li class="separation"></li>
+    
+    <li>{{ mc.list_anchor("stl3", "(3) Miroir de justice") }}, ...</li>
+    <li>Siège de la sagesse, ...</li>
+    <li>Cause de notre joie, ...</li>
+    <li>Vase spirituel, ...</li>
+    <li>Vase honorable, ...</li>
+    <li>Vase insigne de la dévotion, ...</li>
+    <li>Rose mystique, ...</li>
+    <li>Tour de David, ...</li>
+    <li>Tour d'ivoire, ...</li>
+    <li>Maison d'or, ...</li>
+    <li>Arche d'alliance, ...</li>
+    <li>Porte du ciel, ...</li>
+    <li>Etoile du matin, ...</li>
+    <li>Salut des infirmes, ...</li>
+    <li>Refuge des pécheurs, ...</li>
+    <li>Consolatrice des affligés, ...</li>
+    <li>Secours des chrétiens, ...</li>
+    
+    <li class="separation"></li>
+    
+    <li>{{ mc.list_anchor("stl4", "(4) Reine des Anges") }}, ...</li>
+    <li>Reine des Patriarches, ...</li>
+    <li>Reine des Prophètes, ...</li>
+    <li>Reine des Apôtres, ...</li>
+    <li>Reine des Martyrs, ...</li>
+    <li>Reine des Confesseurs, ...</li>
+    <li>Reine des Vierges, ...</li>
+    <li>Reine de tous les Saints, ...</li>
+    <li>Reine conçue sans le péché originel, ...</li>
+    <li>Reine élevée au ciel, ...</li>
+    <li>Reine du très saint Rosaire, ...</li>
+    <li>Reine des familles, ...</li>
+    <li>Reine de la paix, ...</li>
+</ul>
+
+{{ mc.anchor("stl_agnus") }}
+
+{% include "litanies/lt-agneau.jinja" %}
+
+{{ mc.anchor("stl_fin") }}
+
+<p class="priere gauche">
+V. Priez pour nous, Sainte Mère de Dieu.<br>
+R. Afin que nous devenions dignes des promesses de Jésus-Christ.<br>
+<br>
+Seigneur, daignez nous accorder, à nous vos serviteurs,<br>
+de jouir toujours de la santé de l’âme et du corps,<br>
+et par la glorieuse intercession de la bienheureuse Marie toujours vierge,<br> 
+délivrez-nous des tristesses de la vie présente,<br>
+et donnez-nous d’avoir part aux joies éternelles.<br>
+Par Jésus-Christ, notre Seigneur. Amen.
+</p>
+
+<p>(Signe de croix)</p>
+
+{{ mc.return_link() }}
+
+{% endblock %}
