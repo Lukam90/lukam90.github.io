@@ -1,0 +1,82 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set title = "Litanies de St Joseph" %}
+
+{% block content %}
+<p>(Signe de croix)</p>
+
+{% include "litanies/lt-intro.jinja" %}
+
+{{ mc.anchor("stj0") }}
+
+<ul class="priere gauche">
+    <li><b>Sainte Marie</b>, prie pour nous</li>
+    <li><b>Saint Joseph</b>, ...</li>
+    <li>Illustre descendant de David, ...</li>
+    <li>Lumière des Patriarches, ...</li>
+
+	<li class="separation"></li>
+    
+    <li>{{ mc.list_anchor("stj1", "(1) Époux de la Mère de Dieu") }}, ...</li>
+    <li>Chaste gardien de la Vierge, ...</li>
+    <li>Nourricier du fils de Dieu, ...</li>
+    <li>Zélé défenseur de Jésus, ...</li>
+	
+    <li class="separation"></li>
+    
+    <li>{{ mc.list_anchor("stj2", "(2) Chef de la Sainte Famille") }}, ...</li>
+    <li>Joseph très juste, ...</li>
+    <li>Joseph très chaste, ...</li>
+    <li>Joseph très prudent, ...</li>
+
+	<li class="separation"></li>
+    
+    <li>{{ mc.list_anchor("stj3", "(3) Joseph très courageux") }}, ...</li>
+    <li>Joseph très obéissant, ...</li>
+    <li>Joseph très fidèle, ...</li>
+    <li>Miroir de patience, ...</li>
+	
+    <li class="separation"></li>
+    
+    <li>{{ mc.list_anchor("stj4", "(4) Ami de la pauvreté") }}, ...</li>
+    <li>Modèle des travailleurs, ...</li>
+    <li>Gloire de la vie de famille, ...</li>
+    <li>Gardien des vierges, ...</li>
+
+	<li class="separation"></li>
+    
+    <li>{{ mc.list_anchor("stj5", "(5) Soutien des familles") }}, ...</li>
+    <li>Consolation des malheureux, ...</li>
+    <li>Espérance des malades, ...</li>
+	
+    <li class="separation"></li>
+
+    <li>{{ mc.list_anchor("stj6", "(6) Patron des mourants") }}, ...</li>
+    <li>Terreur des démons, ...</li>
+    <li>Protecteur de la Sainte Eglise, ...</li>
+</ul>
+
+{{ mc.anchor("stj_agnus") }}
+
+{% include "litanies/lt-agneau.jinja" %}
+
+{{ mc.anchor("stj_fin") }}
+
+<p class="priere gauche">
+V: Il l'a établi le chef de sa maison,<br>
+R: et l'intendant de tous ses biens.<br>
+<br>
+Dieu, qui, par une providence ineffable,<br>
+a daigné choisir le bienheureux Joseph,<br>
+pour être l'époux de ta Sainte Mère, <br>
+faites, nous t'en prions, que,<br>
+l'honorant ici-bas comme protecteur,<br>
+nous méritions de l'avoir pour intercesseur dans le ciel.<br>
+Toi qui vis et règnes dans les siècles des siècles. Amen.
+</p>
+
+<p>(Signe de croix)</p>
+
+{{ mc.return_link() }}
+
+{% endblock %}
