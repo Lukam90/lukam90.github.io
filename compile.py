@@ -34,10 +34,10 @@ chapelets = [
 
 #convert_jinja_list("chapelets", chapelets)
 
-convert_jinja_single("chapelets/ex-base")
+#convert_jinja_single("chapelets/ex-base")
 convert_jinja_single("chapelets/rosaire")
-#convert_jinja_single("chapelets/lys")
-convert_jinja_single("chapelets/sang")
+convert_jinja_single("chapelets/lys")
+#convert_jinja_single("chapelets/sang")
 #convert_jinja_single("chapelets/misericorde")
 #convert_jinja_single("chapelets/plaies")
 
@@ -48,7 +48,7 @@ litanies = ["lorette", "lt-sang"]
 #convert_jinja_list("litanies", litanies)
 
 #convert_jinja_single("litanies/lorette")
-convert_jinja_single("litanies/lt-sang")
+#convert_jinja_single("litanies/lt-sang")
 
 ## Exercices
 
