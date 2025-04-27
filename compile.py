@@ -25,23 +25,23 @@ profil = ["cv-imprime", "portfolio"]
 
 #convert_jinja_list("profil", profil)
 
-## Prières
+## Chapelets
 
-prieres = [
-    "ex-base", "litanies", "chapelet", 
+chapelets = [
+    "ex-base", "litanies", "rosaire", 
     "lys", "sang", "misericorde", "plaies",
 ]
 
-#convert_jinja_list("prieres", prieres)
+#convert_jinja_list("chapelets", chapelets)
 
-#convert_jinja_single("prieres/ex-base")
-#convert_jinja_single("prieres/litanies")
+#convert_jinja_single("chapelets/ex-base")
+#convert_jinja_single("chapelets/litanies")
 
-#convert_jinja_single("prieres/chapelet")
-convert_jinja_single("prieres/lys")
-#convert_jinja_single("prieres/sang")
-#convert_jinja_single("prieres/misericorde")
-#convert_jinja_single("prieres/plaies")
+#convert_jinja_single("chapelets/rosaire")
+#convert_jinja_single("chapelets/lys")
+#convert_jinja_single("chapelets/sang")
+#convert_jinja_single("chapelets/misericorde")
+#convert_jinja_single("chapelets/plaies")
 
 ## Exercices
 
