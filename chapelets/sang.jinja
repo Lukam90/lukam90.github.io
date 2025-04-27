@@ -1,17 +1,14 @@
 {% extends "layouts/prieres.jinja" %}
 
-{% set bpath = "prieres/base/" %}
-{% set rpath = "prieres/rosaire/" %}
-{% set spath = "prieres/sang/" %}
+{% set bpath = "chapelets/base/" %}
+{% set spath = "chapelets/sang/" %}
 
 {% set title = "Chapelet du précieux sang de Jésus" %}
 
 {% block content %}
-<p>La dévotion est complémentaire au {{ mc.link("Saint Rosaire", "/prieres/rosaire.html") }}.</p>
+<p>Les {{ mc.link("prières de base", "/chapelets/ex-base.html") }} se trouvent sur une page dédiée.</p>
 
-<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} se trouvent sur une page dédiée.</p>
-
-<p>Les {{ mc.link("litanies", "/prieres/litanies.html") }} sont complémentaires.</p>
+<p>Les {{ mc.link("litanies", "/litanies/lt-sang.html") }} sont complémentaires.</p>
 
 <p>(*) Incliner la tête</p>
 

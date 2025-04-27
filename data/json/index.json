@@ -11,6 +11,9 @@
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
         { "href" : "plaies", "title" : "Chapelet des saintes plaies" }
     ],
+    "litanies" : [
+        { "href" : "lt-sang", "title" : "Litanies du précieux sang" }
+    ],
     "exercices" : [
         { "href" : "ex-musical", "title" : "Cohérence cardiaque" }
     ]

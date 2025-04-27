@@ -1,8 +1,7 @@
 {% extends "layouts/prieres.jinja" %}
 
-{% set bpath = "prieres/base/" %}
-{% set rpath = "prieres/rosaire/" %}
-{% set spath = "prieres/reparation/" %}
+{% set bpath = "chapelets/base/" %}
+{% set spath = "chapelets/reparation/" %}
 
 {% set title = "Prières de base" %}
 
@@ -16,7 +15,7 @@
 
 {{ mc.header("1", "Acte de contrition (1)") }}
 
-{% include spath + "acte-contrition.jinja" %}
+{% include bpath + "acte-contrition.jinja" %}
 
 {{ mc.header("2", "Credo (2)") }}
 

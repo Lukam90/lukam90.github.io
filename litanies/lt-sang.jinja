@@ -1,13 +1,9 @@
 {% extends "layouts/prieres.jinja" %}
 
-{% set bpath = "prieres/base/" %}
-{% set rpath = "prieres/rosaire/" %}
-{% set spath = "prieres/sang/" %}
-
 {% set title = "Litanies du précieux sang de Jésus" %}
 
 {% block content %}
-<p>Les litanies sont complémentaires au {{ mc.link("chapelet du précieux sang de Jésus", "/prieres/sang.html") }}.</p>
+<p>Les litanies sont complémentaires au {{ mc.link("chapelet du précieux sang de Jésus", "/chapelets/sang.html") }}.</p>
 
 <!-- Base -->
 
@@ -15,12 +11,7 @@
 
 <p>(Signe de croix)</p>
 
-<ul class="priere gauche">
-    <li><b>Seigneur</b>, aie pitié de nous.</li>
-    <li><b>Jesus-Christ</b>, ...</li>
-    <li><b>Esprit Saint</b>, qui es Dieu, ...</li>
-    <li><b>Trinité sainte</b>, qui es un seul Dieu, ...</li>
-</ul>
+{% include "litanies/lt-intro.jinja" %}
 
 {{ mc.anchor("sg_liste") }}
 
@@ -67,11 +58,7 @@
 
 {{ mc.anchor("sg_agnus") }}
 
-<ul class="priere gauche">
-    <li>Agneau de Dieu, qui efface les péchés du monde, <b>pardonne-nous</b>, Seigneur.</li>
-    <li>Agneau de Dieu, qui efface les péchés du monde, <b>exauce-nous</b>, Seigneur.</li>
-    <li>Agneau de Dieu, qui efface les péchés du monde, <b>aie pitié de nous</b>.</li>
-</ul>
+{% include "litanies/lt-agneau.jinja" %}
 
 {{ mc.anchor("sg_fin") }}
 
