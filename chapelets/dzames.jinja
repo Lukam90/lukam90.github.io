@@ -1,12 +1,8 @@
 {% extends "layouts/prieres.jinja" %}
 
-{% set dpath = "prieres/dzames/" %}
-
 {% set title = "Dizaines de libération des âmes" %}
 
 {% block content %}
-<p>Les {{ mc.link("prières de base", "/prieres/ex-base.html") }} se trouvent sur une page dédiée.</p>
-
 <p>
 La prière des dizaines, révélée par Jésus à <b>Ste Gertrude</b>,<br>
 permet de libérer jusqu'à <b>1000 âmes</b> à chaque récitation.
@@ -17,8 +13,6 @@ permet de libérer jusqu'à <b>1000 âmes</b> à chaque récitation.
 {{ mc.anchor("rondes", "=") }}
 
 <p>(Signe de croix)</p>
-
-{{ mc.grains("rondes", range(1, 6), "checkFirst()") }}
 
 <p>
 <b>Cœur Sacré de Jésus</b>, ouvre les cœurs et les esprits des pécheurs<br>
@@ -44,19 +38,5 @@ Amen.
 {{ mc.grains("dz_grains", range(0, 11)) }}
 
 {{ mc.return_link("rondes") }}
-
-<!-- Fin -->
-
-{{ mc.anchor("fin", "=") }}
-
-<p>(Signe de croix)</p>
-
-{{ mc.return_link(label = "Recommencer", reset = True) }}
-
-<!-- Scripts -->
-
-{{ mc.script("utils.js") }}
-
-{{ mc.script("chapelets/dz-ames.js") }}
 
 {% endblock %}

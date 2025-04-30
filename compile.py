@@ -28,7 +28,7 @@ profil = ["cv-imprime", "portfolio"]
 ## Chapelets
 
 chapelets = [
-    "ex-base", "rosaire", "lys",
+    "ex-base", "rosaire", "dzames",
     "sang", "misericorde", "plaies",
 ]
 
@@ -36,7 +36,7 @@ chapelets = [
 
 #convert_jinja_single("chapelets/ex-base")
 convert_jinja_single("chapelets/rosaire")
-convert_jinja_single("chapelets/lys")
+convert_jinja_single("chapelets/dzames")
 #convert_jinja_single("chapelets/sang")
 #convert_jinja_single("chapelets/misericorde")
 #convert_jinja_single("chapelets/plaies")
