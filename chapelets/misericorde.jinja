@@ -1,21 +1,25 @@
 {% extends "layouts/prieres.jinja" %}
 
+{% set bpath = "chapelets/base/" %}
+
 {% set title = "Chapelet de la Miséricorde Divine" %}
 
 {% block content %}
-<p>Les {{ mc.link("prières de base", "/chapelets/ex-base.html") }} se trouvent sur une page dédiée.</p>
-
 <!-- Base -->
 
-{{ mc.anchor("base", "=") }}
+{% include bpath + "signe-croix.jinja" %}
 
-<p>(Signe de croix)</p>
+{{ mc.anchor("notre_pere") }}
 
-<p class="gras">Notre Père</p>
+{% include bpath + "notre-pere.jinja" %}
 
-<p class="gras">Je vous salue Marie</p>
+{{ mc.anchor("ste_marie") }}
 
-<p class="gras">Credo</p>
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.anchor("credo") }}
+
+{% include bpath + "credo.jinja" %}
 
 <!-- Rondes -->
 
@@ -41,7 +45,7 @@ en réparation de nos péchés et de ceux du monde entier.
 
 <p>"Dieu saint, Dieu fort, Dieu éternel, ayez pitié de nous et du monde entier." (x 3)</p>
 
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.jinja" %}
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
