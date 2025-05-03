@@ -16,7 +16,7 @@
 
 {{ mc.anchor("base", "=") }}
 
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.jinja" %}
 
 {% include spath + "sg-chant.jinja" %}
 
@@ -24,21 +24,31 @@
 
 {% include spath + "sg-esprit.jinja" %}
 
-<p class="gras">Credo</p>
+{{ mc.anchor("credo") }}
+
+{% include bpath + "credo.jinja" %}
+
+{{ mc.anchor("refrain_n1") }}
 
 {% include spath + "sg-refrain.jinja" %}
 
 {% include spath + "sg-coeur.jinja" %}
 
-{{ mc.anchor("ex_base") }}
+{{ mc.anchor("b_notre_pere") }}
 
-<p class="gras">Notre Père</p>
+{% include bpath + "notre-pere.jinja" %}
 
-<p class="gras">Je vous salue Marie</p>
+{{ mc.anchor("b_ste_marie") }}
+
+{% include bpath + "ste-marie.jinja" %}
 
 {{ mc.grains("base_trio", ["-", "foi", "espérance", "charité"]) }}
 
-<p class="gras">Gloire au Père</p>
+{{ mc.anchor("b_gloire_pere") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.anchor("refrain_n2") }}
 
 {% include spath + "sg-refrain.jinja" %}
 
@@ -54,13 +64,21 @@
 
 {{ mc.anchor("dz_prieres") }}
 
-<p class="gras">Notre Père</p>
+{% include bpath + "notre-pere.jinja" %}
 
-<p class="gras">Je vous salue Marie</p>
+{{ mc.anchor("dz_ste_marie") }}
+
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.anchor("dz_sang") }}
 
 <p>"Précieux Sang de Jésus-Christ, sauve-nous et le monde entier." (x 12)</p>
 
-<p class="gras">Gloire au Père</p>
+{{ mc.anchor("dz_gloire") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.anchor("dz_refrain") }}
 
 {% include spath + "sg-refrain.jinja" %}
 
@@ -89,7 +107,7 @@ R. Afin que nous devenions dignes des promesses de Jésus-Christ.
 
 {% include spath + "sg-min-litanies.jinja" %}
 
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.jinja" %}
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
