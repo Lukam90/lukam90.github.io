@@ -1,5 +1,7 @@
 {% extends "layouts/prieres.jinja" %}
 
+{% set bpath = "chapelets/base/" %}
+
 {% set title = "Chapelet de dévotion de St Bernard de Clairvaux" %}
 
 {% block content %}
@@ -12,7 +14,7 @@ en l'honneur de la <b>plaie inconnue de l'épaule de Jésus</b>.
 
 {{ mc.anchor("base", "=") }}
 
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.jinja" %}
 
 <p class="gauche">
 Très aimé Seigneur, très doux agneau de Dieu,<br>
@@ -35,14 +37,30 @@ Amen.
 
 {{ mc.anchor("trios", "=") }}
 
-<p class="gras">Notre Père x 3</p>
+{% include bpath + "notre-pere.jinja" %}
 
-<p class="gras">Je vous salue Marie x 3</p>
+{{ mc.grains("np_trio", range(0, 4)) }}
 
-<p class="gras">Gloire au Père x 3</p>
+{{ mc.anchor("ave") }}
 
-<p>(Signe de croix)</p>
+{% include bpath + "ste-marie.jinja" %}
 
-{{ mc.return_link() }}
+{{ mc.grains("m_trio", range(0, 4)) }}
+
+{{ mc.anchor("gloria") }}
+
+{% include bpath + "gloire-pere.jinja" %}
+
+{{ mc.grains("g_trio", range(0, 4)) }}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link(label = "Recommencer", reset = True) }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+
+{{ mc.script("chapelets/ch-devotion.js") }}
 
 {% endblock %}

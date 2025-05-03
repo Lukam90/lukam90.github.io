@@ -4,10 +4,6 @@ const grains = $name("dz_rondes");
 
 let grain;
 
-/* Variables */
-
-let numKey = 0;
-
 /* Fonctions */
 
 // Sélection d'une ronde (raccourci)
@@ -34,7 +30,7 @@ function resetAll()
 /* Raccourcis */
 
 document.addEventListener("keydown", e => {
-    numKey = parseInt(e.key);
+    let numKey = parseInt(e.key);
 
     if (numKey == 0)   resetAll();
 
