@@ -1,9 +1,15 @@
-<p class="gras">Credo</p>
+{% include bpath + "credo.jinja" %}
 
-<p class="gras">Notre Père</p>
+{{ mc.anchor("b_notre_pere") }}
 
-<p class="gras">Je vous salue Marie</p>
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("b_ste_marie") }}
+
+{% include bpath + "ste-marie.jinja" %}
 
 {{ mc.grains("base_trio", ["-", "foi", "espérance", "charité"]) }}
 
-<p class="gras">Gloire au Père</p>
+{{ mc.anchor("b_gloire") }}
+
+{% include bpath + "gloire-pere.jinja" %}
