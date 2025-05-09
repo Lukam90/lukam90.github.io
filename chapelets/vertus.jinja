@@ -1,5 +1,7 @@
 {% extends "layouts/prieres.jinja" %}
 
+{% set bpath = "chapelets/base/" %}
+
 {% set base_url = "https://boutique.labonnenouvelle.net/chapelets-et-rosaire/" %}
 {% set ext_url = base_url + "1073-chapelet-des-ames-du-purgatoire-9502379583487.html" %}
 
@@ -14,17 +16,21 @@
 
 {{ mc.anchor("base", "=") }}
 
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.jinja" %}
 
-<p class="gras">Credo</p>
+{% include bpath + "credo.jinja" %}
 
-<p class="gras">Notre Père</p>
+{{ mc.anchor("notre_pere") }}
 
-<p class="gras">Gloire au Père</p>
+{% include bpath + "notre-pere.jinja" %}
+
+{{ mc.anchor("gloire") }}
+
+{% include bpath + "gloire-pere.jinja" %}
 
 {{ mc.grains("base_trio", ["-", "Saints", "Saint Michel", "Anges gardiens"]) }}
 
-<p class="gras">Je vous salue Marie</p>
+{% include bpath + "ste-marie.jinja" %}
 
 <!-- Médaille -->
 
@@ -47,7 +53,9 @@ pour glorifier Dieu en vue du Salut de toutes les âmes.
 
 <hr />
 
-<p class="gras">Je vous salue Marie</p>
+{% include bpath + "ste-marie.jinja" %}
+
+{{ mc.anchor("nv_trio") }}
 
 <p>
 Ô Seigneur, donnez-leur le repos éternel et faites briller sur eux la lumière éternelle.<br>

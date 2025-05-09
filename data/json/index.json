@@ -8,7 +8,9 @@
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
         { "href" : "plaies", "title" : "Chapelet des saintes plaies" },
         { "href" : "devotion", "title" : "Chapelet de dévotion de St Bernard de Clairvaux (*)" },
+        { "href" : "vertus", "title" : "Chapelet des 13 vertus de Notre-Dame" },
         { "href" : "sang", "title" : "Chapelet du précieux sang de Jésus" },
+        { "href" : "dzames", "title" : "Dizaines de libération des âmes" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" }
     ],
     "litanies" : [
