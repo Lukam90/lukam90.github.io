@@ -44,7 +44,7 @@ litanies = ["lorette", "lt-sang", "lt-joseph"]
 
 #convert_jinja_list("litanies", litanies)
 
-convert_jinja_single("litanies/lorette")
+#convert_jinja_single("litanies/lorette")
 #convert_jinja_single("litanies/lt-sang")
 #convert_jinja_single("litanies/lt-joseph")
 
