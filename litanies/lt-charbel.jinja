@@ -1,0 +1,81 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "chapelets/base/" %}
+
+{% set title = "Litanies de St Charbel" %}
+
+{% block content %}
+
+{% include bpath + "signe-croix.jinja" %}
+
+{% include "litanies/lt-intro.jinja" %}
+
+{{ mc.anchor("n0") }}
+
+<ul class="priere gauche">
+	<li><b>Saint Charbel</b>, prie pour nous</li>
+	<li>Fidèle ami de Dieu, ...</li>
+	<li>Merveille de la grâce trinitaire, ...</li>
+	<li>Héros de piété, de travail et d'amour, ...</li>
+    
+    <li class="separation"></li>
+
+	<li>{{ mc.list_anchor("n1", "(1) Fontaine pure qui adoucis toute soif") }}, ...</li>
+	<li>Médecin du corps et de l’âme, ...</li>
+	<li>Fontaine abondante de la miséricorde divine, ...</li>
+	<li>Ermite, célèbre pour tes miracles, ...</li>
+    
+    <li class="separation"></li>
+	
+    <li>{{ mc.list_anchor("n2", "(2) Toi qui tu as su renoncer à toutes les richesses de ce monde") }}, ...</li>
+	<li>Agneau docile au cœur plein d'amour, ...</li>
+	<li>Baume précieux répandu dans le monde, ...</li>
+	<li>Serviteur de l'Eucharistie et de la Mère de Dieu, ...</li>
+    
+    <li class="separation"></li>
+	
+    <li>{{ mc.list_anchor("n3", "(3) Bienfaiteur généreux, qui bénis la création") }}, ...</li>
+	<li>Encens parfumé des cèdres du Liban, ...</li>
+	<li>Phare qui éclaires l'Église de Dieu, ...</li>
+	<li>Lumière glorieuse qui s'échappe du sépulcre, ...</li>
+
+    <li class="separation"></li>
+	
+    <li>{{ mc.list_anchor("n4", "(4) Toi qui intercèdes pour tous, fidèles et mécréants") }}, ...</li>
+	<li>Chasteté et obéissance, digne de toute éloge, ...</li>
+	<li>Ami de tous, ...</li>
+	<li>Exemple de pauvreté, toi qui as aimé les privations, ...</li>
+    
+    <li class="separation"></li>
+	
+    <li>{{ mc.list_anchor("n5", "(5) Voix qui réveille les consciences") }}, ...</li>
+	<li>Couronne précieuse de la vie consacrée, ...</li>
+	<li>Saint Charbel, notre exemple et trésor, ...</li>
+</ul>
+
+{{ mc.anchor("agnus") }}
+
+{% include "litanies/lt-agneau.jinja" %}
+
+{{ mc.anchor("fin") }}
+
+<p class="priere gauche">
+Nous te louons, ô Dieu, pour la victoire de ton Fils,<br>
+notre Seigneur Jésus-Christ.<br>
+Nous te louons pour notre Mère, la Vierge Marie, <br>
+et pour notre puissant intercesseur saint Charbel. <br>
+Par leur intercession accorde nous la délivrance des maux qui nous affligent, <br>
+libère-nous des ténèbres et des dangers de l’âme et du corps, <br>
+afin que nous vivions dans la liberté des enfants de Dieu. Amen.
+</p>
+
+{% include bpath + "signe-croix.jinja" %}
+
+{{ mc.return_link() }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("keynums.js") }}
+
+{% endblock %}
