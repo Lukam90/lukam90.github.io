@@ -8,13 +8,15 @@
 {% block content %}
 <p>Je recommande l'application {{ mc.link("Rosario", "https://rosario.app/") }} pour la méditation des <b>mystères</b>.</p>
 
+<p>Les {{ mc.link("prières de base", "/chapelets/ex-base.html") }} se trouvent sur une page dédiée.</p>
+
 <p>Les {{ mc.link("litanies de Lorette", "/litanies/lorette.html") }} sont complémentaires.</p>
 
 <!-- Base -->
 
 {{ mc.anchor("base", "=") }}
 
-{% include bpath + "signe-croix.jinja" %}
+<p>(Signe de croix)</p>
 
 {% include rpath + "rs-base.jinja" %}
 
@@ -34,7 +36,7 @@
 
 {{ mc.anchor("fin", "=") }}
 
-{% include bpath + "signe-croix.jinja" %}
+<p>(Signe de croix)</p>
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
