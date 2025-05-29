@@ -32,10 +32,10 @@ chapelets = ["ex-base", "rosaire", "plaies", "sang", "misericorde"]
 #convert_jinja_list("chapelets", chapelets)
 
 #convert_jinja_single("chapelets/ex-base")
-convert_jinja_single("chapelets/rosaire")
+#convert_jinja_single("chapelets/rosaire")
 #convert_jinja_single("chapelets/plaies")
-convert_jinja_single("chapelets/sang")
-#convert_jinja_single("chapelets/misericorde")
+#convert_jinja_single("chapelets/sang")
+convert_jinja_single("chapelets/misericorde")
 
 ## Litanies
 
