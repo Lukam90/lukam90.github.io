@@ -1,7 +1,5 @@
 {% extends "layouts/prieres.jinja" %}
 
-{% set bpath = "chapelets/base/" %}
-
 {% set title = "Chapelet des saintes plaies" %}
 
 {% block content %}
@@ -12,7 +10,7 @@ La prière de <b>St Bernard de Clairvaux</b> en l'honneur de la <b>plaie inconnu
 
 {{ mc.anchor("base", "=") }}
 
-{% include bpath + "signe-croix.jinja" %}
+<p>(Signe de croix)</p>
 
 <p>
 Ô Jésus, Divin Rédempteur, sois miséricordieux pour nous et le monde entier. Amen.<br>
@@ -60,7 +58,7 @@ et en me conduisant dans Votre heureux Royaume.<br>
 Amen.
 </p>
 
-{% include bpath + "signe-croix.jinja" %}
+<p>(Signe de croix)</p>
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
