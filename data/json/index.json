@@ -9,6 +9,7 @@
         { "href" : "plaies", "title" : "Chapelet des saintes plaies" },
         { "href" : "sang", "title" : "Chapelet du précieux sang de Jésus" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
+        { "href" : "ames", "title" : "Chapelet du salut des âmes" },
         { "href" : "mercis", "title" : "Chapelet des 1000 mercis" }
     ],
     "litanies" : [
