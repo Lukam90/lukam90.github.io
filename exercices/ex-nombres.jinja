@@ -23,9 +23,18 @@
 
     <p>5 8 9 3 2 4 0</p>
 
-    <h2>Ex Mémoire</h2>
+    <h2>Ex Lecture</h2>
 
-    {{ mc.link("Lien vers l'exercice musical", "/exercices/ex-musical.html") }}
+    {% for nb in range(1,8) %}
+    <p>
+    {{ nb }}. Je SUIS Esprit et je suis prêt à puiser dans la Vie Infinie.<br>
+    Je guéris dans l'Amour Divin.
+    </p>
+    {% endfor %}
+
+    <h2>Ex Vidéo</h2>
+
+    {{ mc.yvideo("RZopVZmYMJw?si=9twHnryWOf2IuaiZ") }}
 
     <span style="margin-bottom: 500px;"></span>
 </div>
