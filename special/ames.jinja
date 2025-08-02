@@ -1,0 +1,38 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set title = "Prière de libération des âmes" %}
+
+{% block content %}
+<p>
+Cette dévotion est basée sur la prière révélée par Jésus à <b>Ste Gertrude de Helfta</b>,<br>
+qui permet de libérer jusqu'à <b>1000 âmes</b> à chaque récitation, avec foi et amour.
+</p>
+
+{{ mc.anchor("debut", "=") }}
+
+<p>(Signe de croix)</p>
+
+<p>
+<b>Cœur Sacré de Jésus</b>, ouvre les cœurs et les esprits des pécheurs<br>
+à la vérité et à la lumière de Dieu, le Père.<br>
+<b>Cœur Immaculé de Marie</b>, priez pour la conversion des pécheurs et du monde.
+</p>
+
+{{ mc.anchor("fin", "=") }}
+
+<p>
+Père Éternel, je vous offre le très précieux Sang<br>
+de votre Divin Fils, Jésus,<br>
+en union avec les saintes messes célébrées<br>
+aujourd’hui à travers le monde,<br>
+pour toutes les âmes du purgatoire,<br>
+pour les pécheurs dans l’Église Universelle,<br>
+les pécheurs en tout lieu,<br>
+ceux de mon entourage<br>
+et de ma propre famille.<br>
+Amen.
+</p>
+
+{{ mc.return_link("debut") }}
+
+{% endblock %}

@@ -9,7 +9,6 @@
         { "href" : "plaies", "title" : "Chapelet des saintes plaies" },
         { "href" : "sang", "title" : "Chapelet du précieux sang de Jésus" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
-        { "href" : "ames", "title" : "Chapelet du salut des âmes" },
         { "href" : "mercis", "title" : "Chapelet des 1000 mercis" }
     ],
     "litanies" : [
@@ -17,6 +16,9 @@
         { "href" : "lt-sang", "title" : "Litanies du précieux sang" },
         { "href" : "lt-joseph", "title" : "Litanies de St Joseph" },
         { "href" : "lt-charbel", "title" : "Litanies de St Charbel" }
+    ],
+    "special" : [
+        { "href" : "ames", "title" : "Prière de libération des âmes" }
     ],
     "exercices" : [
         { "href" : "ex-musical", "title" : "Cohérence cardiaque" }
