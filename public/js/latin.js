@@ -7,7 +7,9 @@ const cbLatin = $("#v_latine");
 
 /* Fonctions */
 
-switchLang();
+window.addEventListener("load", (event) => {
+    switchLang();
+});
 
 // Changement de langue (FR - Latin)
 

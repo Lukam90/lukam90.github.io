@@ -1,10 +1,8 @@
 /* Eléments */
 
-const rondes = $name("dz_rondes");
+const grains = $name("mysteres");
 
-const btnPremier = $("#dz_grains_1");
-
-let radioBtn;
+let grain;
 
 /* Fonctions */
 
@@ -12,21 +10,20 @@ let radioBtn;
 
 function selectRonde(index)
 {
-    radioBtn = rondes[index];
+    goTo("#rondes");
 
-    radioBtn.click();
-    radioBtn.focus();
-
-    majNombre(index);
+    grain = grains[index];
+    grain.select();
+    grain.click();
 }
 
 // Réinitialisation du rosaire
 
 function resetAll()
 {
-    goTo("#");
-
     selectRonde(0);
+
+    goTo("#");
 }
 
 /* Raccourcis */
@@ -36,5 +33,5 @@ document.addEventListener("keydown", e => {
 
     if (numKey == 0)   resetAll();
 
-    if (numKey >= 1 && numKey <= 5) selectRonde(numKey - 1);
+    if (numKey >= 1 && numKey <= 7)   selectRonde(numKey - 1);
 });

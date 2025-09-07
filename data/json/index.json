@@ -2,7 +2,8 @@
     "chapelets" : [
         { "href" : "ex-base", "title" : "Prières de base" },
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
-        { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" }
+        { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
+        { "href" : "larmes", "title" : "Chapelet des larmes de sang" }
     ],
     "exercices" : [
         { "href" : "ex-musical", "title" : "Cohérence cardiaque" }
