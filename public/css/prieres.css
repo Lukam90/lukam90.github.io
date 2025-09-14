@@ -136,3 +136,15 @@ label:hover {
 [lang="latin"] {
     display: none;
 }
+
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+    .responsive {
+        text-align: justify;
+    }
+    
+    .responsive br {
+        display: none;
+    }
+}
