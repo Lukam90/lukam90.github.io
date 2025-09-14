@@ -3,7 +3,8 @@
         { "href" : "ex-base", "title" : "Prières de base" },
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
-        { "href" : "devotion", "title" : "Chapelet de dévotion de St Bernard de Clairvaux" }
+        { "href" : "devotion", "title" : "Chapelet de dévotion de St Bernard de Clairvaux" },
+        { "href" : "litanies", "title" : "Litanies de St Joseph" }
     ],
     "exercices" : [
         { "href" : "ex-musical", "title" : "Cohérence cardiaque" }

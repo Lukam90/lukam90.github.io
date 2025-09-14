@@ -1,0 +1,98 @@
+{% extends "layouts/prieres.jinja" %}
+
+{% set bpath = "chapelets/base/" %}
+
+{% set title = "Litanies de St Joseph" %}
+
+{% block content %}
+<p>(Signe de croix)</p>
+
+<ul class="priere gauche">
+    <li><b>Seigneur</b>, aie pitié de nous.</li>
+    <li><b>Jesus-Christ</b>, ...</li>
+    <li><b>Esprit Saint</b>, qui es Dieu, ...</li>
+    <li><b>Trinité sainte</b>, qui es un seul Dieu, ...</li>
+</ul>
+
+{{ mc.anchor("n0") }}
+
+<ul class="priere gauche">
+    <li><b>Sainte Marie</b>, prie pour nous</li>
+    <li><b>Saint Joseph</b>, ...</li>
+    <li>Illustre descendant de David, ...</li>
+    <li>Lumière des Patriarches, ...</li>
+
+	<li class="separation"></li>
+    
+    <li>{{ mc.list_anchor("n1", "(1) Époux de la Mère de Dieu") }}, ...</li>
+    <li>Chaste gardien de la Vierge, ...</li>
+    <li>Nourricier du fils de Dieu, ...</li>
+    <li>Zélé défenseur de Jésus, ...</li>
+	
+    <li class="separation"></li>
+    
+    <li>{{ mc.list_anchor("n2", "(2) Chef de la Sainte Famille") }}, ...</li>
+    <li>Joseph très juste, ...</li>
+    <li>Joseph très chaste, ...</li>
+    <li>Joseph très prudent, ...</li>
+
+	<li class="separation"></li>
+    
+    <li>{{ mc.list_anchor("n3", "(3) Joseph très courageux") }}, ...</li>
+    <li>Joseph très obéissant, ...</li>
+    <li>Joseph très fidèle, ...</li>
+    <li>Miroir de patience, ...</li>
+	
+    <li class="separation"></li>
+    
+    <li>{{ mc.list_anchor("n4", "(4) Ami de la pauvreté") }}, ...</li>
+    <li>Modèle des travailleurs, ...</li>
+    <li>Gloire de la vie de famille, ...</li>
+    <li>Gardien des vierges, ...</li>
+
+	<li class="separation"></li>
+    
+    <li>{{ mc.list_anchor("n5", "(5) Soutien des familles") }}, ...</li>
+    <li>Consolation des malheureux, ...</li>
+    <li>Espérance des malades, ...</li>
+	
+    <li class="separation"></li>
+
+    <li>{{ mc.list_anchor("n6", "(6) Patron des mourants") }}, ...</li>
+    <li>Terreur des démons, ...</li>
+    <li>Protecteur de la Sainte Eglise, ...</li>
+</ul>
+
+{{ mc.anchor("agnus") }}
+
+<ul class="priere gauche">
+    <li>Agneau de Dieu, qui efface les péchés du monde, <b>pardonne-nous</b>, Seigneur.</li>
+    <li>Agneau de Dieu, qui efface les péchés du monde, <b>exauce-nous</b>, Seigneur.</li>
+    <li>Agneau de Dieu, qui efface les péchés du monde, <b>aie pitié de nous</b>.</li>
+</ul>
+
+{{ mc.anchor("fin") }}
+
+<p class="priere gauche">
+V: Il l'a établi le chef de sa maison,<br>
+R: et l'intendant de tous ses biens.<br>
+<br>
+Dieu, qui, par une providence ineffable,<br>
+a daigné choisir le bienheureux Joseph,<br>
+pour être l'époux de ta Sainte Mère, <br>
+faites, nous t'en prions, que,<br>
+l'honorant ici-bas comme protecteur,<br>
+nous méritions de l'avoir pour intercesseur dans le ciel.<br>
+Toi qui vis et règnes dans les siècles des siècles. Amen.
+</p>
+
+<p>(Signe de croix)</p>
+
+{{ mc.return_link() }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("keynums.js") }}
+
+{% endblock %}
