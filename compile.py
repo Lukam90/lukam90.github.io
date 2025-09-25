@@ -21,7 +21,7 @@ convert_jinja_single("test")
 
 ## Chapelets
 
-chapelets = ["ex-base", "litanies", "rosaire", "misericorde", "devotion"]
+chapelets = ["ex-base", "litanies", "rosaire", "misericorde", "vertus"]
 
 #convert_jinja_list("chapelets", chapelets)
 
@@ -29,7 +29,7 @@ chapelets = ["ex-base", "litanies", "rosaire", "misericorde", "devotion"]
 convert_jinja_single("chapelets/litanies")
 #convert_jinja_single("chapelets/rosaire")
 convert_jinja_single("chapelets/misericorde")
-#convert_jinja_single("chapelets/devotion")
+convert_jinja_single("chapelets/vertus")
 
 ## Exercices
 
