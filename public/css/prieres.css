@@ -1,7 +1,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
-    text-align: center;
+    text-align: left;
 }
 
 main {
@@ -49,6 +49,7 @@ ul {
 
 li {
     list-style-type: none;
+    line-height: 2rem;
 }
 
 hr {
