@@ -1,4 +1,4 @@
-{% extends "layouts/prieres.jinja" %}
+{% extends "layouts/prieres.html" %}
 
 {% set bpath = "chapelets/base/" %}
 {% set rpath = "chapelets/rosaire/" %}
@@ -18,17 +18,17 @@
 
 <p>(Signe de croix)</p>
 
-{% include rpath + "rs-base.jinja" %}
+{% include rpath + "rs-base.html" %}
 
 <!-- Dizaines -->
 
 {{ mc.anchor("dizaines", "=") }}
 
-{% include rpath + "rs-mysteres.jinja" %}
+{% include rpath + "rs-mysteres.html" %}
 
 <p>Je prie à l'intention <input type="text" id="intention" /></p>
 
-{% include rpath + "rs-dizaines.jinja" %}
+{% include rpath + "rs-dizaines.html" %}
 
 {{ mc.return_link("dizaines") }}
 

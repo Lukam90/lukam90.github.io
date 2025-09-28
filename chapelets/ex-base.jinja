@@ -1,4 +1,4 @@
-{% extends "layouts/prieres.jinja" %}
+{% extends "layouts/prieres.html" %}
 
 {% set bpath = "chapelets/base/" %}
 {% set spath = "chapelets/reparation/" %}
@@ -11,43 +11,43 @@
 
 {{ mc.header("0", "Signe de croix") }}
 
-{% include bpath + "signe-croix.jinja" %}
+{% include bpath + "signe-croix.html" %}
 
 {{ mc.header("1", "Acte de contrition (1)") }}
 
-{% include bpath + "acte-contrition.jinja" %}
+{% include bpath + "acte-contrition.html" %}
 
 {{ mc.header("2", "Credo (2)") }}
 
-{% include bpath + "credo.jinja" %}
+{% include bpath + "credo.html" %}
 
 {{ mc.header("3", "Notre Père (3)") }}
 
-{% include bpath + "notre-pere.jinja" %}
+{% include bpath + "notre-pere.html" %}
 
 {{ mc.header("4", "Je vous salue Marie (4)") }}
 
-{% include bpath + "ste-marie.jinja" %}
+{% include bpath + "ste-marie.html" %}
 
 {{ mc.header("5", "Gloire au Père (5)") }}
 
-{% include bpath + "gloire-pere.jinja" %}
+{% include bpath + "gloire-pere.html" %}
 
 {{ mc.header("6", "Prière de Fatima (6)") }}
 
-{% include bpath + "priere-fatima.jinja" %}
+{% include bpath + "priere-fatima.html" %}
 
 {{ mc.header("7", "Salut ô Reine (7)") }}
 
-{% include bpath + "salut-reine.jinja" %}
+{% include bpath + "salut-reine.html" %}
 
 {{ mc.header("8", "Bref de St Antoine (8)") }}
 
-{% include bpath + "ex-bref.jinja" %}
+{% include bpath + "ex-bref.html" %}
 
 {{ mc.header("9", "Prière de Ste Gertrude (9)") }}
 
-{% include bpath + "ex-ames.jinja" %}
+{% include bpath + "ex-ames.html" %}
 
 {{ mc.return_link() }}
 
