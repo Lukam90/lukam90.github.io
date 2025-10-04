@@ -3,7 +3,7 @@
         { "href" : "ex-base", "title" : "Prières de base" },
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
-        { "href" : "sang", "title" : "Chapelet du précieux sang de Jésus" },
+        { "href" : "plaies", "title" : "Chapelet des saintes plaies" },
         { "href" : "litanies", "title" : "Litanies de St Joseph" }
     ],
     "exercices" : [
