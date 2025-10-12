@@ -1,0 +1,55 @@
+{% extends "layouts/prieres.html" %}
+
+{% set bpath = "chapelets/base/" %}
+{% set rpath = "chapelets/rosaire/" %}
+
+{% set title = "Chapelet de libération" %}
+
+{% block content %}
+<p>Les {{ mc.link("prières de base", "/chapelets/ex-base.html") }} se trouvent sur une page dédiée.</p>
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+<p>(Signe de croix)</p>
+
+<p class="gras">Credo</p>
+
+<p>
+Jésus, aie pitié de __ !<br>
+Jésus, guéris __ !<br>
+Jésus, sauve __ !<br>
+Jésus, libère __ !<br>
+(x 3)
+</p>
+
+<!-- Rondes -->
+
+{{ mc.anchor("rondes", "=") }}
+
+<p>{{ mc.grains("dz_rondes", range(1,6)) }}</p>
+
+<p class="responsive">"Si Jésus vous libère, vous serez vraiment libres." (Jn 8,36)</p>
+
+<hr />
+
+<p>
+Jésus, aie pitié de __ !<br>
+Jésus, guéris __ !<br>
+Jésus, sauve __ !<br>
+Jésus, libère __ !<br>
+(x 10)
+</p>
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+<p class="gras">Salut ô Reine</p>
+
+<p>(Signe de croix)</p>
+
+{{ mc.return_link() }}
+
+{% endblock %}

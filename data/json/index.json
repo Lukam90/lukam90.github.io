@@ -3,6 +3,7 @@
         { "href" : "ex-base", "title" : "Prières de base" },
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
+        { "href" : "liberation", "title" : "Chapelet de libération" },
         { "href" : "impossible", "title" : "Chapelet du Dieu de l'impossible" },
         { "href" : "litanies", "title" : "Litanies du Sacré-Coeur de Jésus" }
     ],
