@@ -7,6 +7,10 @@
 
 {% set title = "Chapelet des 13 vertus de Notre-Dame" %}
 
+{% macro niveau(num, label) %}
+    {{ mc.radio_btn("nv" + num | string, "niveaux", num | string + ". " + label) }}
+{% endmacro %}
+
 {% block content %}
 <p>Il existe un {{ mc.link("chapelet spécifique", ext_url) }}.</p>
 
@@ -45,13 +49,25 @@ pour glorifier Dieu en vue du Salut de toutes les âmes.
 
 {{ mc.anchor("niveaux", "=") }}
 
-<ul class="priere gauche">
-    <li>{{ mc.radio_btn("nv1-3", "niveaux", "1. Crainte de Dieu - 2. Charité - 3. Foi") }}</li>
-    <li>{{ mc.radio_btn("nv4-6", "niveaux", "4. Espérance - 5. Obéissance - 6. Patience") }}</li>
-    <li>{{ mc.radio_btn("nv7-9", "niveaux", "7. Piété - 8. Chasteté - 9. Prudence") }}</li>
-    <li>{{ mc.radio_btn("nv10-12", "niveaux", "10. Force - 11. Tempérance - 12. Pureté") }}</li>
-    <li>{{ mc.radio_btn("nv13", "niveaux", "13. Justice") }}</li>
-</ul>
+<p>
+{{ niveau(1, "Crainte de Dieu") }}
+{{ niveau(2, "Charité") }}
+{{ niveau(3, "Foi") }}
+<br>
+{{ niveau(4, "Espérance") }}
+{{ niveau(5, "Obéissance") }}
+{{ niveau(6, "Patience") }}
+<br>
+{{ niveau(7, "Piété") }}
+{{ niveau(8, "Chasteté") }}
+{{ niveau(9, "Prudence") }}
+<br>
+{{ niveau(10, "Force") }}
+{{ niveau(11, "Tempérance") }}
+{{ niveau(12, "Pureté") }}
+<br>
+{{ niveau(13, "Justice") }}
+</p>
 
 <p class="gras">Je vous salue Marie</p>
 
