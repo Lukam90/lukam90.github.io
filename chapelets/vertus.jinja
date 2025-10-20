@@ -1,0 +1,87 @@
+{% extends "layouts/prieres.html" %}
+
+{% set bpath = "chapelets/base/" %}
+
+{% set base_url = "https://boutique.labonnenouvelle.net/chapelets-et-rosaire/" %}
+{% set ext_url = base_url + "1073-chapelet-des-ames-du-purgatoire-9502379583487.html" %}
+
+{% set title = "Chapelet des 13 vertus de Notre-Dame" %}
+
+{% macro niveau(num, label) %}
+    {{ mc.radio_btn("nv" + num | string, "niveaux", num | string + ". " + label) }}
+{% endmacro %}
+
+{% block content %}
+<p>Il existe un {{ mc.link("chapelet spécifique", ext_url) }}.</p>
+
+<p>Les {{ mc.link("prières de base", "/chapelets/ex-base.html") }} se trouvent sur une page dédiée.</p>
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+<p>(Signe de croix)</p>
+
+<p class="gras">Credo</p>
+
+<p class="gras">Notre Père</p>
+
+<p>
+<b>Gloire au Père</b>
+<br>
+(Saints, St Michel, Anges gardiens)
+</p>
+
+<p class="gras">Je vous salue Marie</p>
+
+<!-- Médaille -->
+
+{{ mc.anchor("medaille", "=") }}
+
+<p>
+Mère de la Miséricorde Divine,<br>
+intercédez pour les Saintes âmes détenues au Purgatoire,<br>
+par la puissance de Votre Cœur Immaculé,<br>
+pour glorifier Dieu en vue du Salut de toutes les âmes.
+</p>
+
+<!-- Niveaux -->
+
+{{ mc.anchor("niveaux", "=") }}
+
+<p>
+{{ niveau(1, "Crainte de Dieu") }}
+{{ niveau(2, "Charité") }}
+{{ niveau(3, "Foi") }}
+<br>
+{{ niveau(4, "Espérance") }}
+{{ niveau(5, "Obéissance") }}
+{{ niveau(6, "Patience") }}
+<br>
+{{ niveau(7, "Piété") }}
+{{ niveau(8, "Chasteté") }}
+{{ niveau(9, "Prudence") }}
+<br>
+{{ niveau(10, "Force") }}
+{{ niveau(11, "Tempérance") }}
+{{ niveau(12, "Pureté") }}
+<br>
+{{ niveau(13, "Justice") }}
+</p>
+
+<p class="gras">Je vous salue Marie</p>
+
+<p>
+"Ô Seigneur, donnez-leur le repos éternel et faites briller sur eux la lumière éternelle.<br>
+Que les âmes des fidèles défunts reposent en paix par la miséricorde de Dieu. Amen." x 3
+</p>
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+<p>(Signe de croix)</p>
+
+{{ mc.return_link() }}
+
+{% endblock %}
