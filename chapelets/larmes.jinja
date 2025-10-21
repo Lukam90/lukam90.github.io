@@ -1,0 +1,87 @@
+{% extends "layouts/prieres.html" %}
+
+{% set title = "Chapelet des larmes de sang" %}
+
+{% block content %}
+<p>(Signe de croix)</p>
+
+<p class="gras">Credo</p>
+
+<p class="gras">Notre Père</p>
+
+<p class="gras">Je vous salue Marie</p>
+
+<p class="gras">Gloire au Père</p>
+
+<!-- Base -->
+
+{{ mc.anchor("base", "=") }}
+
+<p class="responsive">
+Jésus crucifié, prosterné à tes pieds,<br>
+je t’offre les larmes de sang de celle qui t’a accompagné pendant toute ta vie<br>
+et pendant ton si douloureux chemin de croix avec un tendre et compatissant amour.
+</p>
+
+<p class="responsive">
+Fait, Ô bon maître, que je prenne à cœur<br>
+les enseignements des larmes de sang de ta très Sainte Mère<br>
+pour qu’en accomplissant ta sainte volonté sur Terre,<br>
+je puisse te louer et te glorifier au Ciel pour toute l’Éternité.<br>
+Amen.
+</p>
+
+<!-- Rondes -->
+
+{{ mc.anchor("rondes", "=") }}
+
+<ul class="priere gauche">
+    <li>{{ mc.radio_btn("m1", "mysteres", "1. la prophétie de Siméon lors de la présentation de Jésus au temple") }} </li>
+    <li>{{ mc.radio_btn("m2", "mysteres", "2. l’exil en Egypte de la sainte famille") }} </li>
+    <li>{{ mc.radio_btn("m3", "mysteres", "3. la quête de Jésus, âgé de 12 ans, avant de le retrouver au temple") }} </li>
+    <li>{{ mc.radio_btn("m4", "mysteres", "4. la passion de Jésus") }} </li>
+    <li>{{ mc.radio_btn("m5", "mysteres", "5. l’agonie et la mort de Jésus sur la croix") }} </li>
+    <li>{{ mc.radio_btn("m6", "mysteres", "6. la descente de la croix") }} </li>
+    <li>{{ mc.radio_btn("m7", "mysteres", "7. Jésus placé au tombeau") }} </li>
+</ul>
+
+<p class="responsive">
+"Ô Jésus, regarde les larmes de celle qui t’a le plus aimé sur Terre,<br>
+et qui au Ciel t’aime le plus tendrement."
+</p>
+
+<hr />
+
+<p>"Ô Jésus, écoute nos prières à cause des larmes de sang de ta très Sainte Mère." (x 7)</p>
+
+{{ mc.return_link("rondes") }}
+
+<!-- Fin -->
+
+{{ mc.anchor("fin", "=") }}
+
+<p class="responsive">
+Ô Marie, Mère de l'Amour, des Douleurs et de la Miséricorde,<br>
+nous te demandons d'unir tes prières aux nôtres,<br>
+afin que Jésus, ton divin Fils, auquel nous nous adressons<br>
+au nom de tes maternelles larmes de sang,<br>
+veuille exaucer nos supplications<br>
+et nous accorder, avec les grâces demandées,<br>
+la couronne de la Vie Éternelle. Amen.
+</p>
+
+<p class="responsive">
+Tes larmes de sang, Ô Mère Douloureuse,<br>
+anéantissent le pouvoir de l'enfer.<br>
+</p>
+
+<p class="responsive">
+Que ta divine douceur, Ô Jésus enchaîné,<br>
+préserve le monde de la confusion qui le menace. Amen.
+</p>
+
+<p>(Signe de croix)</p>
+
+{{ mc.return_link(label = "Recommencer") }}
+
+{% endblock %}
