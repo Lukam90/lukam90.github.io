@@ -1,9 +1,11 @@
-<p class="gras">Notre Père</p>
+{% include bpath + "notre-pere.html" %}
 
-<p class="gras">Je vous salue Marie</p>
+{{ mc.anchor("dz_ave") }}
+
+{% include bpath + "ste-marie.html" %}
 
 {{ mc.grains("dz_grains", range(0, 11)) }}
 
-<p class="gras">Gloire au Père</p>
+{{ mc.anchor("dz_gloria") }}
 
-<p class="gras">(Prière de Fatima)</p>
+{% include bpath + "gloire-pere.html" %}

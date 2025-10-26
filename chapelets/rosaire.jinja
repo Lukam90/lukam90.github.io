@@ -16,7 +16,9 @@
 
 {{ mc.anchor("base", "=") }}
 
-<p>(Signe de croix)</p>
+{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
+
+{% include bpath + "signe-croix.html" %}
 
 {% include rpath + "rs-base.html" %}
 
@@ -36,13 +38,14 @@
 
 {{ mc.anchor("fin", "=") }}
 
-<p>(Signe de croix)</p>
+{% include bpath + "signe-croix.html" %}
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
+{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-mysteres.js") }}
 {{ mc.script("chapelets/ch-rosaire.js") }}
