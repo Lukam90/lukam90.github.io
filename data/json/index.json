@@ -4,7 +4,7 @@
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
         { "href" : "cplaies", "title" : "Chapelet des saintes plaies" },
-        { "href" : "litanies", "title" : "Litanies du Sacré-Coeur de Jésus" }
+        { "href" : "vertus", "title" : "Chapelet des 13 vertus de Notre-Dame" }
     ],
     "exercices" : [
         { "href" : "ex-musical", "title" : "Cohérence cardiaque" }
