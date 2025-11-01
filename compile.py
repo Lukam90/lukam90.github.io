@@ -27,7 +27,7 @@ chapelets = ["ex-base", "litanies", "rosaire", "misericorde", "cplaies"]
 
 #convert_jinja_single("chapelets/ex-base")
 convert_jinja_single("chapelets/litanies")
-#convert_jinja_single("chapelets/rosaire")
+convert_jinja_single("chapelets/rosaire")
 convert_jinja_single("chapelets/misericorde")
 #convert_jinja_single("chapelets/cplaies")
 

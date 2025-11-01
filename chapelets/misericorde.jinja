@@ -11,19 +11,13 @@
 
 {{ mc.anchor("base", "=") }}
 
-{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
+<p>(Signe de croix)</p>
 
-{% include bpath + "signe-croix.html" %}
+<p class="gras">Notre Père</p>
 
-{% include bpath + "notre-pere.html" %}
+<p class="gras">Je vous salue Marie</p>
 
-{{ mc.anchor("b_ave") }}
-
-{% include bpath + "ste-marie.html" %}
-
-{{ mc.anchor("b_credo") }}
-
-{% include bpath + "credo.html" %}
+<p class="gras">Credo</p>
 
 <!-- Rondes -->
 
@@ -49,14 +43,13 @@ en réparation de nos péchés et de ceux du monde entier.
 
 <p class="responsive">"Dieu saint, Dieu fort, Dieu éternel, ayez pitié de nous et du monde entier." (x 3)</p>
 
-{% include bpath + "signe-croix.html" %}
+<p>(Signe de croix)</p>
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
-{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-misericorde.js") }}
 

@@ -10,15 +10,11 @@
 
 <p>Les {{ mc.link("prières de base", "/chapelets/ex-base.html") }} se trouvent sur une page dédiée.</p>
 
-<p>Les {{ mc.link("litanies de Lorette", "/litanies/lorette.html") }} sont complémentaires.</p>
-
 <!-- Base -->
 
 {{ mc.anchor("base", "=") }}
 
-{{ mc.checkbox("v_latine", "Version latine", "switchLang()") }}
-
-{% include bpath + "signe-croix.html" %}
+<p>(Signe de croix)</p>
 
 {% include rpath + "rs-base.html" %}
 
@@ -32,20 +28,17 @@
 
 {% include rpath + "rs-dizaines.html" %}
 
-{{ mc.return_link("dizaines") }}
-
 <!-- Fin -->
 
 {{ mc.anchor("fin", "=") }}
 
-{% include bpath + "signe-croix.html" %}
+<p>(Signe de croix)</p>
 
 {{ mc.return_link(label = "Recommencer", reset = True) }}
 
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
-{{ mc.script("latin.js") }}
 
 {{ mc.script("chapelets/ch-mysteres.js") }}
 {{ mc.script("chapelets/ch-rosaire.js") }}
