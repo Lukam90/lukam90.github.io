@@ -21,16 +21,23 @@ convert_jinja_single("test")
 
 ## Chapelets
 
-chapelets = ["ex-base", "litanies", "rosaire", "misericorde", "cplaies", "liberation"]
+chapelets = ["rosaire", "misericorde", "splaies", "liberation"]
 
-#convert_jinja_list("chapelets", chapelets)
+convert_jinja_list("chapelets", chapelets)
 
-#convert_jinja_single("chapelets/ex-base")
-convert_jinja_single("chapelets/litanies")
 #convert_jinja_single("chapelets/rosaire")
 #convert_jinja_single("chapelets/misericorde")
-#convert_jinja_single("chapelets/cplaies")
-convert_jinja_single("chapelets/liberation")
+#convert_jinja_single("chapelets/splaies")
+#convert_jinja_single("chapelets/liberation")
+
+## Prières
+
+prieres = ["ex-base", "litanies"]
+
+convert_jinja_list("prieres", prieres)
+
+#convert_jinja_single("prieres/ex-base")
+#convert_jinja_single("prieres/litanies")
 
 ## Exercices
 

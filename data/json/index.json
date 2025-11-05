@@ -1,11 +1,13 @@
 {
-    "chapelets" : [
+    "prieres" : [
         { "href" : "ex-base", "title" : "Prières de base" },
+        { "href" : "litanies", "title" : "Litanies du précieux sang de Jésus" }
+    ],
+    "chapelets" : [
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
-        { "href" : "cplaies", "title" : "Chapelet des saintes plaies" },
-        { "href" : "liberation", "title" : "Chapelet de libération" },
-        { "href" : "litanies", "title" : "Litanies du précieux sang de Jésus" }
+        { "href" : "splaies", "title" : "Chapelet des saintes plaies" },
+        { "href" : "liberation", "title" : "Chapelet de libération" }
     ],
     "exercices" : [
         { "href" : "ex-musical", "title" : "Cohérence cardiaque" }
