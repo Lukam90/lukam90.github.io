@@ -1,0 +1,98 @@
+{% extends "layouts/prieres.html" %}
+
+{% set bpath = "prieres/base/" %}
+{% set rpath = "prieres/rosaire/" %}
+{% set spath = "prieres/sang/" %}
+
+{% set title = "Litanies du précieux sang de Jésus" %}
+
+{% block content %}
+<p>(Signe de croix)</p>
+
+<ul class="priere gauche">
+    <li><b>Seigneur</b>, aie pitié de nous.</li>
+    <li><b>Jesus-Christ</b>, ...</li>
+    <li><b>Esprit Saint</b>, qui es Dieu, ...</li>
+    <li><b>Trinité sainte</b>, qui es un seul Dieu, ...</li>
+</ul>
+
+{{ mc.anchor("sg_liste") }}
+
+<ul class="priere gauche">
+    <li>SC, {{ mc.list_anchor("sg1", "(1) Fils unique du Père Eternel") }}</li>
+    <li>SC, Verbe incarné, ...</li>
+    <li>SC, Nouvelle et Eternelle Alliance, ...</li>
+    <li>SC, répandu sur la terre pendant son agonie, ...</li>
+
+    <li class="separation"></li>
+
+    <li>SC, {{ mc.list_anchor("sg2", "(2) versé dans la flagellation") }}, ...</li>
+    <li>SC, émanant de la couronne d’épines, ...</li>
+    <li>SC, répandu sur la Croix, ...</li>
+    <li>SC, prix de notre salut, ...</li>
+
+    <li class="separation"></li>
+
+    <li>SC, {{ mc.list_anchor("sg3", "(3) sans lequel il ne peut y avoir de rémission") }}, ...</li>
+    <li>SC, nourriture eucharistique et purification des âmes, ...</li>
+    <li>SC, fleuve de miséricorde, ...</li>
+    <li>SC, victoire sur les démons, ...</li>
+
+    <li class="separation"></li>
+
+    <li>SC, {{ mc.list_anchor("sg4", "(4) force des martyrs") }}, ...</li>
+    <li>SC, vertu des confesseurs, ...</li>
+    <li>SC, source de virginité, ...</li>
+    <li>SC, soutien de ceux qui sont dans le danger, ...</li>
+    
+    <li class="separation"></li>
+
+    <li>SC, {{ mc.list_anchor("sg5", "(5) soulagement de ceux qui peinent") }}, ...</li>
+    <li>SC, espoir des pénitents, ...</li>
+    <li>SC, secours des mourants, ...</li>
+    <li>SC, paix et douceur des cœurs, ...</li>
+    
+    <li class="separation"></li>
+
+    <li>SC, {{ mc.list_anchor("sg6", "(6) gage de vie éternelle") }}, ...</li>
+    <li>SC, qui délivre les âmes du Purgatoire, ...</li>
+    <li>SC, digne de tout honneur et de toute gloire, ...</li>
+</ul>
+
+{{ mc.anchor("sg_agnus") }}
+
+<ul class="priere gauche">
+    <li>Agneau de Dieu, qui efface les péchés du monde, <b>pardonne-nous</b>, Seigneur.</li>
+    <li>Agneau de Dieu, qui efface les péchés du monde, <b>exauce-nous</b>, Seigneur.</li>
+    <li>Agneau de Dieu, qui efface les péchés du monde, <b>aie pitié de nous</b>.</li>
+</ul>
+
+{{ mc.anchor("sg_fin") }}
+
+<p class="priere">
+V. Tu nous as rachetés, Seigneur, par ton Sang.<br>
+R. Et tu as fait de nous le royaume de Dieu.
+</p>
+
+{{ mc.anchor("final") }}
+
+<p class="priere">
+Dieu éternel et tout-puissant qui as constitué<br>
+ton Fils Unique, Rédempteur du monde,<br>
+et a voulu être apaisé par son sang, fais, nous t'en prions que,<br>
+vénérant le prix de notre salut et étant par lui protégés<br>
+sur la terre contre les maux de cette vie,<br>
+nous recueillions la récompense éternelle dans le Ciel.<br>
+Par le même Jésus-Christ, Notre-Seigneur. Amen.
+</p>
+
+<p>(Signe de croix)</p>
+
+{{ mc.return_link() }}
+
+<!-- Scripts -->
+
+{{ mc.script("utils.js") }}
+{{ mc.script("keynums.js") }}
+
+{% endblock %}
