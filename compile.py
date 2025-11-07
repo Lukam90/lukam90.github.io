@@ -23,10 +23,10 @@ convert_jinja_single("test")
 
 chapelets = ["rosaire", "misericorde", "splaies", "liberation"]
 
-convert_jinja_list("chapelets", chapelets)
+#convert_jinja_list("chapelets", chapelets)
 
 #convert_jinja_single("chapelets/rosaire")
-#convert_jinja_single("chapelets/misericorde")
+convert_jinja_single("chapelets/misericorde")
 #convert_jinja_single("chapelets/splaies")
 #convert_jinja_single("chapelets/liberation")
 
