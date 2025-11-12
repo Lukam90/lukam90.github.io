@@ -21,14 +21,15 @@ convert_jinja_single("test")
 
 ## Chapelets
 
-chapelets = ["rosaire", "misericorde", "splaies", "liberation"]
+chapelets = ["rosaire", "sang", "misericorde", "splaies", "larmes"]
 
 #convert_jinja_list("chapelets", chapelets)
 
 #convert_jinja_single("chapelets/rosaire")
+convert_jinja_single("chapelets/sang")
 convert_jinja_single("chapelets/misericorde")
 #convert_jinja_single("chapelets/splaies")
-#convert_jinja_single("chapelets/liberation")
+#convert_jinja_single("chapelets/larmes")
 
 ## Prières
 

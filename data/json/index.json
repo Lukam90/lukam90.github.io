@@ -5,6 +5,7 @@
     ],
     "chapelets" : [
         { "href" : "rosaire", "title" : "Chapelet du rosaire" },
+        { "href" : "sang", "title" : "Chapelet du précieux sang de Jésus" },
         { "href" : "misericorde", "title" : "Chapelet de la Miséricorde Divine" },
         { "href" : "splaies", "title" : "Chapelet des saintes plaies" },
         { "href" : "larmes", "title" : "Chapelet des larmes de sang" }
