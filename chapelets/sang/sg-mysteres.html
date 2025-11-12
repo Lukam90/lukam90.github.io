@@ -1,6 +1,28 @@
-<p class="gras">{{ mc.radio_btn("m1", "mysteres", "1. La main droite de Jésus") }}</p>
+{# 
+    
+{% macro grains(name, list, event = None) %}
+    <p class="grains">
+    {% for value in list %}
+        {% set id = name + "_" + loop.index | string %}
 
-<p class="responsive">
+        {{ radio_btn(id, name, value, event) }}
+    {% endfor %}
+    </p>
+{% endmacro %}
+
+{{ mc.grains("dz_rondes", range(1,6)) }}
+
+#}
+
+<ul>
+    <li>{{ mc.radio_btn("m1", "mysteres", "1. La main droite de Jésus") }}</li>
+    <li>{{ mc.radio_btn("m2", "mysteres", "2. La main gauche de Jésus") }}</li>
+    <li>{{ mc.radio_btn("m3", "mysteres", "3. Le pied droit de Jésus") }}</li>
+    <li>{{ mc.radio_btn("m4", "mysteres", "4. Le pied gauche de Jésus") }}</li>
+    <li>{{ mc.radio_btn("m5", "mysteres", "5. Le côté sacré de Jésus") }}</li>
+</ul>
+
+<p class="intro responsive">
 Par la précieuse plaie de ta <b>main droite</b><br>
 et la douleur causée par le clou qui l'a transpercée,<br>
 puisse le Précieux Sang qui s'en écoule<br>
@@ -8,9 +30,7 @@ sauver les pécheurs du monde entier<br>
 et convertir beaucoup d'âmes. Amen.
 </p>
 
-<p class="gras">{{ mc.radio_btn("m2", "mysteres", "2. La main gauche de Jésus") }}</p>
-
-<p class="responsive">
+<p class="intro responsive">
 Par la précieuse plaie de ta <b>main gauche</b><br>
 et la douleur causée par le clou qui l'a transpercée,<br>
 puisse le Précieux Sang qui s'en écoule<br>
@@ -18,9 +38,7 @@ sauver les âmes du purgatoire et protéger les mourants<br>
 contre les attaques des esprits de l'enfer. Amen.
 </p>
 
-<p class="gras">{{ mc.radio_btn("m3", "mysteres", "3. Le pied droit de Jésus") }}</p>
-
-<p class="responsive">
+<p class="intro responsive">
 Par la précieuse plaie de ton <b>pied droit</b><br>
 et la douleur causée par le clou qui l'a transpercé,<br>
 puisse le Précieux Sang qui s'en écoule<br>
@@ -28,9 +46,7 @@ protéger le fondement de l'église catholique<br>
 contre les plans du royaume occulte et des hommes mauvais. Amen.
 </p>
 
-<p class="gras">{{ mc.radio_btn("m4", "mysteres", "4. Le pied gauche de Jésus") }}</p>
-
-<p class="responsive">
+<p class="intro responsive">
 Par la précieuse plaie de ton <b>pied gauche</b><br>
 et la douleur causée par le clou qui l'a transpercé,<br>
 puisse le Précieux Sang qui s'en écoule<br>
@@ -38,15 +54,15 @@ nous protéger en tout lieu contre les plans et les attaques<br>
 des mauvais esprits et de leurs agents. Amen.
 </p>
 
-<p class="gras">{{ mc.radio_btn("m5", "mysteres", "5. Le côté sacré de Jésus") }}</p>
-
-<p class="responsive">
-Par la précieuse plaie de ton <b>côté Sacré</b><br>
+<p class="intro responsive">
+Par la précieuse plaie de ton <b>côté sacré</b><br>
 et la douleur causée par la lance qui l'a percé,<br>
 puisse le Précieux Sang et l'Eau qui s'en écoulent<br>
 guérir les malades, ressusciter les morts, régler nos problèmes actuels<br>
 et nous enseigner la Voie qui mène à Dieu pour Sa gloire éternelle. Amen. 
 </p>
+
+<hr />
 
 {% include spath + "sg-coeur.html" %}
 

@@ -1,10 +1,8 @@
 /* Eléments */
 
-const grains = $name("dz_rondes");
+const grains = $name("mysteres");
 
 const intros = $all(".intro");
-
-const basePremier = $("#base_trio_1");
 
 const divDernier = $("#dernier");
 
@@ -23,19 +21,7 @@ for (let i = 0 ; i < 5 ; i++)
 
 /* Fonctions */
 
-resetAll();
-
-// Sélection d'une ronde (raccourci)
-
-function selectRonde(index)
-{
-    setIntro(index);
-
-    grain = grains[index];
-
-    grain.select();
-    grain.click();
-}
+setIntro(0);
 
 // MAJ de l'intro
 
