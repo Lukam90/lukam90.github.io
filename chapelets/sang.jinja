@@ -82,10 +82,10 @@
 
 {% include bpath + "salut-reine.html" %}
 
-<ul class="priere gauche">
-    <li>V. Prie pour nous, sainte Mère de Dieu,</li>
-    <li>R. Afin que nous devenions dignes des promesses de Jésus-Christ.</li>
-</ul>
+<p>
+V. Prie pour nous, sainte Mère de Dieu,<br>
+R. Afin que nous devenions dignes des promesses de Jésus-Christ.
+</p>
 
 {{ mc.anchor("final") }}
 
@@ -102,5 +102,7 @@
 <!-- Scripts -->
 
 {{ mc.script("utils.js") }}
+
+{{ mc.script("chapelets/ch-sang.js") }}
 
 {% endblock %}
