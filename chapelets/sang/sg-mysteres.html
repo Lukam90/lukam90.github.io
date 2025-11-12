@@ -1,4 +1,4 @@
-<p class="gras">1. La main droite de Jésus</p>
+<p class="gras">{{ mc.radio_btn("m1", "mysteres", "1. La main droite de Jésus") }}</p>
 
 <p class="responsive">
 Par la précieuse plaie de ta <b>main droite</b><br>
@@ -8,11 +8,7 @@ sauver les pécheurs du monde entier<br>
 et convertir beaucoup d'âmes. Amen.
 </p>
 
-{{ douzaine() }}
-
-{{ mc.anchor("m2") }}
-
-<p class="gras">2. La main gauche de Jésus</p>
+<p class="gras">{{ mc.radio_btn("m2", "mysteres", "2. La main gauche de Jésus") }}</p>
 
 <p class="responsive">
 Par la précieuse plaie de ta <b>main gauche</b><br>
@@ -22,11 +18,7 @@ sauver les âmes du purgatoire et protéger les mourants<br>
 contre les attaques des esprits de l'enfer. Amen.
 </p>
 
-{{ douzaine() }}
-
-{{ mc.anchor("m3") }}
-
-<p class="gras">3. Le pied droit de Jésus</p>
+<p class="gras">{{ mc.radio_btn("m3", "mysteres", "3. Le pied droit de Jésus") }}</p>
 
 <p class="responsive">
 Par la précieuse plaie de ton <b>pied droit</b><br>
@@ -36,11 +28,7 @@ protéger le fondement de l'église catholique<br>
 contre les plans du royaume occulte et des hommes mauvais. Amen.
 </p>
 
-{{ douzaine() }}
-
-{{ mc.anchor("m4") }}
-
-<p class="gras">4. Le pied gauche de Jésus</p>
+<p class="gras">{{ mc.radio_btn("m4", "mysteres", "4. Le pied gauche de Jésus") }}</p>
 
 <p class="responsive">
 Par la précieuse plaie de ton <b>pied gauche</b><br>
@@ -50,11 +38,7 @@ nous protéger en tout lieu contre les plans et les attaques<br>
 des mauvais esprits et de leurs agents. Amen.
 </p>
 
-{{ douzaine() }}
-
-{{ mc.anchor("m5") }}
-
-<p class="gras">5. Le côté sacré de Jésus</p>
+<p class="gras">{{ mc.radio_btn("m5", "mysteres", "5. Le côté sacré de Jésus") }}</p>
 
 <p class="responsive">
 Par la précieuse plaie de ton <b>côté Sacré</b><br>
@@ -64,4 +48,19 @@ guérir les malades, ressusciter les morts, régler nos problèmes actuels<br>
 et nous enseigner la Voie qui mène à Dieu pour Sa gloire éternelle. Amen. 
 </p>
 
-{{ douzaine(last = True) }}
+{% include spath + "sg-coeur.html" %}
+
+<p class="gras">Notre Père</p>
+
+<p class="gras">Je vous salue Marie</p>
+
+<p>"Précieux Sang de Jésus-Christ, sauve-nous et le monde entier." (x 12)</p>
+
+<p class="gras">Gloire au Père</p>
+
+{% include spath + "sg-refrain.html" %}
+
+<p>
+(5) L: Ô Très Précieux Sang de Jésus-Christ,<br>
+(5) R: Cicatrise les plaies du Très Saint Coeur de Jésus.
+</p>
